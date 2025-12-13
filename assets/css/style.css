@@ -2095,3 +2095,60 @@ a:focus-visible {
     display: contents;
     /* Allow children to be part of parent grid if needed, or use dashboard-grid replacement */
 }
+/* ===== INTRO CARDS STYLING ===== */
+.intro-card {
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.intro-card-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.intro-card h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Variant: White (Default) */
+.intro-card.variant-white {
+    background: #FFFFFF;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.intro-card.variant-white h3 {
+    color: var(--primary-color);
+}
+
+/* Variant: Red (High Contrast) */
+.intro-card.variant-red {
+    background: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+}
+
+.intro-card.variant-red h3 {
+    color: #FFFFFF;
+}
+
+.intro-card.variant-red .intro-card-icon {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.intro-card.variant-red p {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+}
