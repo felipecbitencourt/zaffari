@@ -815,6 +815,49 @@ progress::-moz-progress-bar {
     pointer-events: none;
 }
 
+/* Full-bleed hero variant: permite que a seção ocupe toda a largura do viewport
+   mantendo o conteúdo centralizado. Usar na página inicial para o fundo vermelho
+   cobrir toda a área visual. */
+.page-intro.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+}
+
+.page-intro.full-bleed .content-header {
+    text-align: center;
+    color: white;
+    margin-bottom: var(--spacing-lg);
+}
+
+.page-intro.full-bleed .content-header h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+    color: white;
+}
+
+.page-intro.full-bleed .content-body {
+    background: transparent;
+    padding-top: 0;
+}
+
+/* Garantir que as cartas brancas sob fundo vermelho fiquem legíveis */
+.page-intro.full-bleed .intro-card.variant-white {
+    background: #FFFFFF;
+    color: var(--text-primary);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Ajustes para cards vermelhos para melhor contraste */
+.page-intro.full-bleed .intro-card.variant-red {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: #fff;
+}
+
 /* ===== CONTENT STYLING ===== */
 .content-header {
     margin-bottom: var(--spacing-xl);
