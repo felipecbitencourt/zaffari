@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por Dentro do SAC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Painel de Acessibilidade (Fixo) -->
+    <div id="a11y-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+        <div class="container">
+            <button id="btn-contrast" aria-label="Alto Contraste" title="Alto Contraste">◐</button>
+            <button id="btn-increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte">A+</button>
+            <button id="btn-decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte">A-</button>
+            <button id="btn-dyslexia" aria-label="Fonte para Dislexia" title="Fonte para Dislexia">D</button>
+            <button id="btn-tts" aria-label="Ler Texto da Tela" title="Ler Texto">🔊</button>
+            <div class="lang-switch">
+                <button id="btn-lang-pt" class="active" aria-label="Mudar para Português">PT</button>
+                <button id="btn-lang-es" aria-label="Mudar para Espanhol">ES</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Layout Principal -->
+    <div class="app-layout">
+
+        <!-- Menu Lateral -->
+        <nav id="sidebar" aria-label="Menu do Curso">
+            <div class="sidebar-header">
+                <h1>Por Dentro do SAC</h1>
+                <div class="progress-container">
+                    <label for="course-progress">Progresso:</label>
+                    <progress id="course-progress" value="0" max="100"></progress>
+                    <span id="progress-text">0%</span>
+                </div>
+            </div>
+
+            <div id="menu-content" class="menu-items">
+                <!-- Itens do menu gerados via JS -->
+                <p class="loading-text">Carregando curso...</p>
+            </div>
+
+            <button id="toggle-sidebar" aria-label="Recolher Menu">«</button>
+        </nav>
+
+        <!-- Área de Conteúdo -->
+        <main id="main-content" role="main" tabindex="-1">
+            <div id="content-area" class="fade-in">
+                <!-- Conteúdo da página carregado aqui -->
+            </div>
+
+            <!-- Navegação de Rodapé -->
+            <footer class="content-nav">
+                <button id="btn-prev" disabled>Anterior</button>
+                <button id="btn-next" disabled>Próximo</button>
+            </footer>
+        </main>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/scorm-api.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

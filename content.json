@@ -1,0 +1,143 @@
+{
+    "courseTitle": "Por Dentro do SAC",
+    "modules": [
+        {
+            "id": "m1",
+            "title": "Módulo 1: O Papel Estratégico do SAC",
+            "pages": [
+                {
+                    "id": "m1-p1",
+                    "title": "Boas-vindas ao SAC",
+                    "file": "paginas/pt/m1-p1-boas-vindas.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-p2",
+                    "title": "O Papel Estratégico",
+                    "file": "paginas/pt/m1-p2-papel-estrategico.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-p3",
+                    "title": "Responsabilidades do Time",
+                    "file": "paginas/pt/m1-p3-responsabilidades.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-p4",
+                    "title": "Atividade: Responsabilidades",
+                    "file": "paginas/pt/m1-p4-atividade.html",
+                    "type": "quiz_integrated"
+                },
+                {
+                    "id": "m1-p5",
+                    "title": "Prazos de Atendimento",
+                    "file": "paginas/pt/m1-p5-prazos.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-p6",
+                    "title": "Resumo do Módulo 1",
+                    "file": "paginas/pt/m1-p6-resumo.html",
+                    "type": "summary"
+                }
+            ]
+        },
+        {
+            "id": "m2",
+            "title": "Módulo 2: Consulta de Informações e Ofertas",
+            "pages": [
+                {
+                    "id": "m2-p1",
+                    "title": "Introdução ao Módulo 2",
+                    "file": "paginas/pt/m2-p1-intro.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m2-p2",
+                    "title": "Informações das Lojas (Intranet)",
+                    "file": "paginas/pt/m2-p2-intranet.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m2-p3",
+                    "title": "Atividade: Onde Consultar?",
+                    "file": "paginas/pt/m2-p3-atividade.html",
+                    "type": "quiz_integrated"
+                },
+                {
+                    "id": "m2-p4",
+                    "title": "Encartes e Site Oficial",
+                    "file": "paginas/pt/m2-p4-encartes.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m2-p5",
+                    "title": "WhatsApp de Ofertas",
+                    "file": "paginas/pt/m2-p5-whatsapp.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m2-p6",
+                    "title": "Resumo do Módulo 2",
+                    "file": "paginas/pt/m2-p6-resumo.html",
+                    "type": "summary"
+                }
+            ]
+        },
+        {
+            "id": "m3",
+            "title": "Módulo 3: Código de Defesa do Consumidor",
+            "pages": [
+                {
+                    "id": "m3-p1",
+                    "title": "Introdução ao CDC",
+                    "file": "paginas/pt/m3-p1-intro-cdc.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m3-p2",
+                    "title": "Conceitos Básicos (Serviço e Produto)",
+                    "file": "paginas/pt/m3-p2-conceitos.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m3-p3",
+                    "title": "Trocas: Sem Defeito e Arrependimento",
+                    "file": "paginas/pt/m3-p3-trocas-sem-defeito.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m3-p4",
+                    "title": "Estudo de Caso: Troca em Loja",
+                    "file": "paginas/pt/m3-p4-estudo-caso.html",
+                    "type": "quiz_integrated"
+                },
+                {
+                    "id": "m3-p5",
+                    "title": "Trocas: Com Defeito",
+                    "file": "paginas/pt/m3-p5-trocas-com-defeito.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m3-p6",
+                    "title": "Reclamações e Assistência Técnica",
+                    "file": "paginas/pt/m3-p6-reclamacoes.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m3-p7",
+                    "title": "Desafio Final: Aplicando o Conhecimento",
+                    "file": "paginas/pt/m3-p7-desafio-final.html",
+                    "type": "quiz_integrated"
+                },
+                {
+                    "id": "m3-p8",
+                    "title": "Encerramento do Curso",
+                    "file": "paginas/pt/m3-p8-encerramento.html",
+                    "type": "summary"
+                }
+            ]
+        }
+    ]
+}
