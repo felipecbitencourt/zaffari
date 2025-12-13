@@ -132,12 +132,12 @@ html {
 
 body {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 100%;
     line-height: 1.6;
     color: var(--text-primary);
     background: var(--bg-primary);
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     -webkit-font-smoothing: antialiased;
@@ -236,6 +236,7 @@ body {
     display: flex;
     flex: 1;
     height: calc(100vh - 52px);
+    overflow: hidden;
     position: relative;
     background: var(--bg-primary);
 }
