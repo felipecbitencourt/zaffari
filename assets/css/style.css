@@ -5,10 +5,12 @@
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
     /* Primary Colors - Rich Red Palette */
-    --primary-color: #E53935;
-    --primary-light: #FF6F60;
-    --primary-dark: #AB000D;
-    --primary-gradient: linear-gradient(135deg, #E53935 0%, #FF6F60 50%, #E53935 100%);
+    /* Primary Colors - Stronger Red Palette */
+    --primary-color: #D32F2F;
+    --primary-light: #FF5252;
+    --primary-dark: #B71C1C;
+    --primary-gradient: linear-gradient(135deg, #D32F2F 0%, #FF5252 50%, #D32F2F 100%);
+    --primary-glow: 0 4px 30px rgba(211, 47, 47, 0.35);
     --primary-glow: 0 4px 30px rgba(229, 57, 53, 0.35);
 
     /* Accent Colors */
@@ -2031,4 +2033,65 @@ a:focus-visible {
 
 .step-line.completed {
     background: var(--success);
+}/* ===== HORIZONTAL LAYOUT UTILITIES ===== */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .grid-2-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.media-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .media-row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .media-row>figure {
+        flex: 0 0 40%;
+        margin: 0;
+    }
+
+    .media-row>.text-content {
+        flex: 1;
+    }
+}
+
+/* Dashboard Grid for Intro */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Enhancing Intro Cards for Dashboard */
+.intro-cards-grid {
+    display: contents;
+    /* Allow children to be part of parent grid if needed, or use dashboard-grid replacement */
 }
