@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Por Dentro do SAC</title>
+    <meta name="description"
+        content="Treinamento Por Dentro do SAC - Capacitação para a equipe de Serviço de Atendimento ao Cliente">
+    <meta name="theme-color" content="#E53935">
+    <title>Por Dentro do SAC | Treinamento</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Skip Link para Acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <!-- Painel de Acessibilidade (Fixo) -->
     <div id="a11y-bar" role="region" aria-label="Ferramentas de Acessibilidade">
@@ -37,9 +43,8 @@
             <div class="sidebar-header">
                 <h1>Por Dentro do SAC</h1>
                 <div class="progress-container">
-                    <label for="course-progress">Progresso:</label>
+                    <label for="course-progress">Progresso: <span id="progress-text">0%</span></label>
                     <progress id="course-progress" value="0" max="100"></progress>
-                    <span id="progress-text">0%</span>
                 </div>
             </div>
 
@@ -59,8 +64,14 @@
 
             <!-- Navegação de Rodapé -->
             <footer class="content-nav">
-                <button id="btn-prev" disabled>Anterior</button>
-                <button id="btn-next" disabled>Próximo</button>
+                <button id="btn-prev" disabled>
+                    <span class="btn-icon">←</span>
+                    <span class="btn-text">Anterior</span>
+                </button>
+                <button id="btn-next" disabled>
+                    <span class="btn-text">Próximo</span>
+                    <span class="btn-icon">→</span>
+                </button>
             </footer>
         </main>
 
