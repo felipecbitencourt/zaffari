@@ -138,6 +138,18 @@
                     "type": "summary"
                 }
             ]
+        },
+        {
+            "id": "extras",
+            "title": "📚 Extras",
+            "pages": [
+                {
+                    "id": "extras-p1",
+                    "title": "Material Bibliográfico",
+                    "file": "paginas/pt/extras-bibliografia.html",
+                    "type": "extras"
+                }
+            ]
         }
     ]
 }

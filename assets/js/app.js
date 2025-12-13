@@ -219,9 +219,20 @@ const App = {
 
         // Sidebar Toggle
         const sidebar = document.getElementById('sidebar');
-        document.getElementById('toggle-sidebar').onclick = () => {
+        const toggleSidebar = () => {
             sidebar.classList.toggle('collapsed');
+            const btnMenu = document.getElementById('btn-menu');
+            if (sidebar.classList.contains('collapsed')) {
+                btnMenu.classList.add('active');
+                btnMenu.setAttribute('aria-label', 'Abrir Menu');
+            } else {
+                btnMenu.classList.remove('active');
+                btnMenu.setAttribute('aria-label', 'Fechar Menu');
+            }
         };
+
+        document.getElementById('toggle-sidebar').onclick = toggleSidebar;
+        document.getElementById('btn-menu').onclick = toggleSidebar;
 
         // Accessibility
         this.bindA11y();
@@ -268,13 +279,25 @@ const App = {
             document.getElementById('btn-contrast').classList.toggle('active');
         };
 
-        // Font Size (Simple Zoom approach or class approach? Class is better strictly but zoom is easier)
-        let fontSize = 100;
+        // Font Size - Ajusta o tamanho base do HTML (rem é relativo ao html)
+        let fontSize = 16;
         document.getElementById('btn-increase-font').onclick = () => {
-            if (fontSize < 150) { fontSize += 10; document.body.style.fontSize = fontSize + "%"; }
+            if (fontSize < 24) {
+                fontSize += 2;
+                document.documentElement.style.fontSize = fontSize + "px";
+                document.getElementById('btn-increase-font').classList.add('active');
+                document.getElementById('btn-decrease-font').classList.add('active');
+            }
         };
         document.getElementById('btn-decrease-font').onclick = () => {
-            if (fontSize > 80) { fontSize -= 10; document.body.style.fontSize = fontSize + "%"; }
+            if (fontSize > 12) {
+                fontSize -= 2;
+                document.documentElement.style.fontSize = fontSize + "px";
+                if (fontSize === 16) {
+                    document.getElementById('btn-increase-font').classList.remove('active');
+                    document.getElementById('btn-decrease-font').classList.remove('active');
+                }
+            }
         };
 
         // Dyslexia
