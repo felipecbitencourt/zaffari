@@ -962,14 +962,45 @@ progress::-moz-progress-bar {
     background: radial-gradient(circle, rgba(255, 152, 0, 0.15) 0%, transparent 70%);
 }
 
-.box-attention h3 {
-    color: #E65100 !important;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-md);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
+/* ===== IMAGENS E ICONES ===== */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-rounded {
+    border-radius: var(--radius-lg);
+}
+
+.img-shadow {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.icon-inline {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    object-fit: contain;
+}
+
+figure {
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+figure img {
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+figcaption {
+    margin-top: var(--spacing-sm);
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    font-style: italic;
 }
 
 /* Card Concepts */
