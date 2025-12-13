@@ -23,7 +23,7 @@
         <div class="container">
             <button id="btn-menu" aria-label="Abrir/Fechar Menu" title="Menu" class="btn-menu">☰</button>
             <div class="a11y-tools">
-                <button id="btn-contrast" aria-label="Alto Contraste" title="Alto Contraste">◐</button>
+                <button id="btn-contrast" aria-label="Modo Monocromático" title="Modo Monocromático">◐</button>
                 <button id="btn-increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte">A+</button>
                 <button id="btn-decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte">A-</button>
                 <button id="btn-dyslexia" aria-label="Fonte para Dislexia" title="Fonte para Dislexia">D</button>
@@ -36,6 +36,14 @@
         </div>
     </div>
 
+    <!-- Barra de Progresso Global -->
+    <div id="progress-bar" role="progressbar" aria-label="Progresso do Curso">
+        <div class="progress-wrapper">
+            <span id="progress-text">0%</span>
+            <progress id="course-progress" value="0" max="100"></progress>
+        </div>
+    </div>
+
     <!-- Layout Principal -->
     <div class="app-layout">
 
@@ -43,10 +51,6 @@
         <nav id="sidebar" aria-label="Menu do Curso">
             <div class="sidebar-header">
                 <h1>Por Dentro do SAC</h1>
-                <div class="progress-container">
-                    <label for="course-progress">Progresso: <span id="progress-text">0%</span></label>
-                    <progress id="course-progress" value="0" max="100"></progress>
-                </div>
             </div>
 
             <div id="menu-content" class="menu-items">

@@ -2,9 +2,27 @@
     "courseTitle": "Por Dentro do SAC",
     "modules": [
         {
+            "id": "intro",
+            "title": "🎯 Início",
+            "pages": [
+                {
+                    "id": "intro-p1",
+                    "title": "Bem-vindo ao Curso",
+                    "file": "paginas/pt/intro-curso.html",
+                    "type": "intro"
+                }
+            ]
+        },
+        {
             "id": "m1",
             "title": "Módulo 1: O Papel Estratégico do SAC",
             "pages": [
+                {
+                    "id": "m1-abertura",
+                    "title": "📍 Início do Módulo 1",
+                    "file": "paginas/pt/m1-abertura.html",
+                    "type": "module_start"
+                },
                 {
                     "id": "m1-p1",
                     "title": "Boas-vindas ao SAC",
@@ -48,6 +66,12 @@
             "title": "Módulo 2: Consulta de Informações e Ofertas",
             "pages": [
                 {
+                    "id": "m2-abertura",
+                    "title": "📍 Início do Módulo 2",
+                    "file": "paginas/pt/m2-abertura.html",
+                    "type": "module_start"
+                },
+                {
                     "id": "m2-p1",
                     "title": "Introdução ao Módulo 2",
                     "file": "paginas/pt/m2-p1-intro.html",
@@ -89,6 +113,12 @@
             "id": "m3",
             "title": "Módulo 3: Código de Defesa do Consumidor",
             "pages": [
+                {
+                    "id": "m3-abertura",
+                    "title": "📍 Início do Módulo 3",
+                    "file": "paginas/pt/m3-abertura.html",
+                    "type": "module_start"
+                },
                 {
                     "id": "m3-p1",
                     "title": "Introdução ao CDC",
