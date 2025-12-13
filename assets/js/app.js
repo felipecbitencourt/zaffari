@@ -12,7 +12,7 @@ const App = {
         // 1. Initialize SCORM
         scorm.init();
 
-        // 2. Initialize Audio
+        // 2. Initialize Audio (if available)
         if (typeof AudioManager !== 'undefined') {
             AudioManager.init();
         }
@@ -31,42 +31,184 @@ const App = {
         this.bindEvents();
     },
 
-    // ... (keep usage of this.loadContent through this.updateMenuState unchanged) ...
+    loadContent: async function () {
+        try {
+            const response = await fetch('content.json');
+            this.data = await response.json();
 
-    showFeedback: function (message, type = 'info') {
-        const modal = document.getElementById('modal-feedback');
-        const titleEl = document.getElementById('feedback-title');
-        const msgEl = document.getElementById('feedback-message');
-        const btn = document.getElementById('feedback-btn');
+            // Flatten pages for easy linear navigation
+            this.flatPages = [];
+            this.data.modules.forEach(mod => {
+                mod.pages.forEach(page => {
+                    this.flatPages.push({
+                        ...page,
+                        moduleId: mod.id,
+                        moduleTitle: mod.title
+                    });
+                });
+            });
 
-        if (!modal) return;
+            console.log("Content loaded. Total pages:", this.flatPages.length);
+        } catch (error) {
+            console.error("Failed to load content.json", error);
+            document.getElementById('content-area').innerHTML = "<p class='error'>Erro ao carregar conteúdo.</p>";
+        }
+    },
 
-        // Reset classes
-        modal.classList.remove('success', 'error', 'info');
-        modal.classList.add(type);
+    restoreProgres: function () {
+        const location = scorm.getValue("cmi.core.lesson_location");
+        console.log("Restoring location:", location);
 
-        // Set Content
-        msgEl.textContent = message;
-
-        if (type === 'success') {
-            titleEl.textContent = '🎉 Muito Bem!';
-            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
-        } else if (type === 'error') {
-            titleEl.textContent = '❌ Atenção';
-            if (typeof AudioManager !== 'undefined') AudioManager.playError();
-        } else {
-            titleEl.textContent = 'ℹ️ Informação';
+        if (location) {
+            // Find index of the page ID
+            const idx = this.flatPages.findIndex(p => p.id === location);
+            if (idx >= 0) {
+                this.currentIndex = idx;
+                this.maxIndexReached = idx; // Simplified resume behavior
+            }
         }
 
-        // Show
-        modal.classList.add('active');
-        btn.focus();
+        // Update Progress Bar
+        this.updateProgress();
+    },
 
-        // Bind logic to close
-        btn.onclick = () => {
-            modal.classList.remove('active');
-            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
-        };
+    saveProgress: function () {
+        // Save current page
+        const currentPage = this.flatPages[this.currentIndex];
+        scorm.setValue("cmi.core.lesson_location", currentPage.id);
+
+        // Update max index
+        if (this.currentIndex > this.maxIndexReached) {
+            this.maxIndexReached = this.currentIndex;
+        }
+
+        // Check completion
+        if (this.currentIndex === this.flatPages.length - 1) {
+            scorm.setValue("cmi.core.lesson_status", "completed");
+        }
+
+        // Commit happens in wrapper
+        this.updateProgress();
+        this.updateMenuState();
+    },
+
+    updateProgress: function () {
+        const percent = Math.round(((this.currentIndex + 1) / this.flatPages.length) * 100);
+        document.getElementById('course-progress').value = percent;
+        document.getElementById('progress-text').innerText = percent + "%";
+    },
+
+    renderMenu: function () {
+        const menuEl = document.getElementById('menu-content');
+        menuEl.innerHTML = "";
+
+        this.data.modules.forEach(mod => {
+            const group = document.createElement('div');
+            group.className = 'module-group';
+
+            const title = document.createElement('span');
+            title.className = 'module-title';
+            title.textContent = mod.title;
+            group.appendChild(title);
+
+            mod.pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = "#";
+                link.className = 'menu-link locked';
+                link.dataset.id = page.id;
+                link.textContent = page.title;
+                link.onclick = (e) => {
+                    e.preventDefault();
+                    // Find global index
+                    const idx = this.flatPages.findIndex(p => p.id === page.id);
+                    const isExtras = mod.id === 'extras';
+                    // Extras são sempre acessíveis
+                    if (idx <= this.maxIndexReached || isExtras) {
+                        this.currentIndex = idx;
+                        this.loadPage(idx);
+                        this.saveProgress(); // Ensure location updates if they jumped back
+                    }
+                };
+                group.appendChild(link);
+            });
+
+            menuEl.appendChild(group);
+        });
+
+        this.updateMenuState();
+    },
+
+    updateMenuState: function () {
+        const links = document.querySelectorAll('.menu-link');
+        links.forEach(link => {
+            const pageId = link.dataset.id;
+            const idx = this.flatPages.findIndex(p => p.id === pageId);
+            const pageData = this.flatPages[idx];
+
+            link.classList.remove('active', 'locked', 'completed');
+
+            if (idx === this.currentIndex) {
+                link.classList.add('active');
+            }
+
+            // Extras são sempre desbloqueados
+            const isExtras = pageData && pageData.moduleId === 'extras';
+
+            if (idx <= this.maxIndexReached || isExtras) {
+                // Unlocked
+            } else {
+                link.classList.add('locked');
+            }
+
+            if (idx < this.currentIndex && !isExtras) {
+                link.classList.add('completed');
+            }
+        });
+
+        // Navigation Buttons
+        document.getElementById('btn-prev').disabled = (this.currentIndex === 0);
+        document.getElementById('btn-next').disabled = (this.currentIndex === this.flatPages.length - 1);
+    },
+
+    loadPage: async function (index) {
+        const pageData = this.flatPages[index];
+        const contentArea = document.getElementById('content-area');
+
+        // Handle Language swap path
+        let fileUrl = pageData.file;
+        if (this.currentLang === 'es') {
+            fileUrl = fileUrl.replace('/pt/', '/es/');
+        }
+
+        // Fetch HTML content
+        try {
+            const res = await fetch(fileUrl);
+            if (res.ok) {
+                const html = await res.text();
+                // Inject
+                contentArea.innerHTML = html;
+
+                // Enhance content (Accessibility descriptions handling could go here)
+
+                // Scroll to top
+                document.getElementById('main-content').scrollTop = 0;
+
+                // Animate
+                contentArea.classList.remove('fade-in');
+                void contentArea.offsetWidth; // Trigger reflow
+                contentArea.classList.add('fade-in');
+
+                // Inicializar componentes interativos
+                this.initInteractiveComponents();
+
+            } else {
+                contentArea.innerHTML = `<h2>Erro 404</h2><p>Página não encontrada: ${fileUrl}</p>`;
+            }
+        } catch (e) {
+            contentArea.innerHTML = `<h2>Erro</h2><p>Falha ao carregar conteúdo.</p>`;
+        }
+
+        this.updateMenuState();
     },
 
     bindEvents: function () {
@@ -75,6 +217,7 @@ const App = {
             if (typeof AudioManager !== 'undefined') AudioManager.playClick();
         };
 
+        // Navigation
         const btnNext = document.getElementById('btn-next');
         const btnPrev = document.getElementById('btn-prev');
 
@@ -130,7 +273,7 @@ const App = {
                 // Reset siblings
                 parent.querySelectorAll('.quiz-option').forEach(b => {
                     b.classList.remove('selected', 'correct', 'incorrect');
-                    b.disabled = true;
+                    b.disabled = true; // keep disabled until validation or reset
                 });
 
                 btn.classList.add('selected');
@@ -141,7 +284,7 @@ const App = {
                     const feedback = parent.querySelector('.feedback');
                     if (feedback) feedback.style.display = 'block';
 
-                    // Show Success Feedback
+                    // Show Success Feedback with sound
                     this.showFeedback("Resposta Correta! Você demonstrou conhecimento.", 'success');
 
                 } else {
@@ -152,9 +295,7 @@ const App = {
                     setTimeout(() => {
                         this.showFeedback("Resposta incorreta. Tente novamente!", 'error');
 
-                        // Re-enable options after modal closes (conceptually, but here we just re-enable immediately for simplicity or attach to modal close if we wanted valid strictness)
-                        // For a better UX, we re-enable them after a slight delay or when modal closes. 
-                        // Let's re-enable them here so the user can interact after closing the modal.
+                        // Re-enable options after modal closes
                         parent.querySelectorAll('.quiz-option').forEach(b => b.disabled = false);
                         btn.classList.remove('selected', 'incorrect');
                         btn.style.backgroundColor = '';
@@ -162,6 +303,42 @@ const App = {
                 }
             }
         });
+    },
+
+    showFeedback: function (message, type = 'info') {
+        const modal = document.getElementById('modal-feedback');
+        const titleEl = document.getElementById('feedback-title');
+        const msgEl = document.getElementById('feedback-message');
+        const btn = document.getElementById('feedback-btn');
+
+        if (!modal) return;
+
+        // Reset classes
+        modal.classList.remove('success', 'error', 'info');
+        modal.classList.add(type);
+
+        // Set Content
+        msgEl.textContent = message;
+
+        if (type === 'success') {
+            titleEl.textContent = '🎉 Muito Bem!';
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+        } else if (type === 'error') {
+            titleEl.textContent = '❌ Atenção';
+            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+        } else {
+            titleEl.textContent = 'ℹ️ Informação';
+        }
+
+        // Show
+        modal.classList.add('active');
+        btn.focus();
+
+        // Bind logic to close
+        btn.onclick = () => {
+            modal.classList.remove('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
     },
 
     bindA11y: function () {
