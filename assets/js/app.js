@@ -118,7 +118,9 @@ const App = {
                     e.preventDefault();
                     // Find global index
                     const idx = this.flatPages.findIndex(p => p.id === page.id);
-                    if (idx <= this.maxIndexReached) {
+                    const isExtras = mod.id === 'extras';
+                    // Extras são sempre acessíveis
+                    if (idx <= this.maxIndexReached || isExtras) {
                         this.currentIndex = idx;
                         this.loadPage(idx);
                         this.saveProgress(); // Ensure location updates if they jumped back
@@ -138,6 +140,7 @@ const App = {
         links.forEach(link => {
             const pageId = link.dataset.id;
             const idx = this.flatPages.findIndex(p => p.id === pageId);
+            const pageData = this.flatPages[idx];
 
             link.classList.remove('active', 'locked', 'completed');
 
@@ -145,13 +148,16 @@ const App = {
                 link.classList.add('active');
             }
 
-            if (idx <= this.maxIndexReached) {
+            // Extras são sempre desbloqueados
+            const isExtras = pageData && pageData.moduleId === 'extras';
+
+            if (idx <= this.maxIndexReached || isExtras) {
                 // Unlocked
             } else {
                 link.classList.add('locked');
             }
 
-            if (idx < this.currentIndex) {
+            if (idx < this.currentIndex && !isExtras) {
                 link.classList.add('completed');
             }
         });
@@ -188,6 +194,9 @@ const App = {
                 contentArea.classList.remove('fade-in');
                 void contentArea.offsetWidth; // Trigger reflow
                 contentArea.classList.add('fade-in');
+
+                // Inicializar componentes interativos
+                this.initInteractiveComponents();
 
             } else {
                 contentArea.innerHTML = `<h2>Erro 404</h2><p>Página não encontrada: ${fileUrl}</p>`;
@@ -349,6 +358,112 @@ const App = {
                 this.loadPage(this.currentIndex);
             }
         };
+    },
+
+    // Inicializa componentes interativos após carregar conteúdo
+    initInteractiveComponents: function () {
+        const contentArea = document.getElementById('content-area');
+
+        // 1. MODAIS
+        contentArea.querySelectorAll('.btn-modal-trigger').forEach(btn => {
+            btn.onclick = (e) => {
+                e.preventDefault();
+                const modalId = btn.dataset.modal;
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.add('active');
+                    modal.querySelector('.modal-close')?.focus();
+                }
+            };
+        });
+
+        contentArea.querySelectorAll('.modal-overlay').forEach(overlay => {
+            // Fechar ao clicar no overlay
+            overlay.onclick = (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                }
+            };
+            // Fechar com botão
+            overlay.querySelector('.modal-close')?.addEventListener('click', () => {
+                overlay.classList.remove('active');
+            });
+        });
+
+        // Fechar modais com ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(m => {
+                    m.classList.remove('active');
+                });
+            }
+        });
+
+        // 2. SLIDERS
+        contentArea.querySelectorAll('.content-slider').forEach(slider => {
+            const slides = slider.querySelectorAll('.slider-slide');
+            const dots = slider.querySelectorAll('.slider-dot');
+            const prevBtn = slider.querySelector('.slider-prev');
+            const nextBtn = slider.querySelector('.slider-next');
+            let currentSlide = 0;
+
+            const showSlide = (index) => {
+                slides.forEach((s, i) => {
+                    s.classList.toggle('hidden', i !== index);
+                });
+                dots.forEach((d, i) => {
+                    d.classList.toggle('active', i === index);
+                });
+                if (prevBtn) prevBtn.disabled = index === 0;
+                if (nextBtn) nextBtn.disabled = index === slides.length - 1;
+                currentSlide = index;
+            };
+
+            showSlide(0);
+
+            if (prevBtn) {
+                prevBtn.onclick = () => {
+                    if (currentSlide > 0) showSlide(currentSlide - 1);
+                };
+            }
+            if (nextBtn) {
+                nextBtn.onclick = () => {
+                    if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+                };
+            }
+            dots.forEach((dot, i) => {
+                dot.onclick = () => showSlide(i);
+            });
+        });
+
+        // 3. CARDS INTERATIVOS
+        contentArea.querySelectorAll('.interactive-card').forEach(card => {
+            card.onclick = () => {
+                card.classList.toggle('expanded');
+            };
+            card.onkeypress = (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.classList.toggle('expanded');
+                }
+            };
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+        });
+
+        // 4. REVELAR CONTEÚDO
+        contentArea.querySelectorAll('.reveal-btn').forEach(btn => {
+            btn.onclick = () => {
+                const container = btn.closest('.reveal-container');
+                const content = container?.querySelector('.reveal-content');
+                if (content) {
+                    content.classList.add('visible');
+                    btn.classList.add('revealed');
+                    btn.textContent = '✓ Revelado';
+                    btn.disabled = true;
+                }
+            };
+        });
     }
 };
 

@@ -5,23 +5,97 @@
 
 <div class="content-body">
     <!-- INICIO DO TEXTO EDITÁVEL -->
-    <p>O <strong>Código de Defesa do Consumidor (CDC)</strong>, Lei nº 8.078/90, foi criado para proteger os
-        consumidores e garantir relações de consumo justas e equilibradas.</p>
+    <p>O <strong>Código de Defesa do Consumidor (CDC)</strong>,
+        <span class="tooltip-trigger" data-tooltip="Lei nº 8.078, de 11 de setembro de 1990">Lei nº 8.078/90</span>,
+        foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.
+    </p>
 
     <p>Ele estabelece direitos, deveres, prazos, padrões de conduta e penalidades para fornecedores e prestadores de
         serviços.</p>
 
-    <div class="card-concept">
-        <h3>Por que é importante para o SAC?</h3>
-        <ul>
-            <li>Segurança na orientação ao cliente;</li>
-            <li>Respostas corretas e alinhadas à lei;</li>
-            <li>Redução de retrabalho;</li>
-            <li>Mais profissionalismo, confiança e credibilidade.</li>
-        </ul>
+    <!-- DESTAQUE: Você Sabia? com Modal -->
+    <div class="highlight-box sabia">
+        <span class="icon">💡</span>
+        <div class="highlight-box-content">
+            <h4>Você Sabia?</h4>
+            <p>O CDC brasileiro é considerado um dos mais completos do mundo!
+                <button class="btn-modal-trigger" data-modal="modal-cdc">Saiba mais</button>
+            </p>
+        </div>
     </div>
 
-    <!-- QUESTÃO 8 (Quiz) -->
+    <!-- MODAL -->
+    <div id="modal-cdc" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>📚 Curiosidades sobre o CDC</h3>
+                <button class="modal-close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal-body">
+                <p>O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo
+                    para legislações de outros países.</p>
+                <ul>
+                    <li>É considerado um dos mais avançados do mundo</li>
+                    <li>Protege o consumidor em todas as fases da relação de consumo</li>
+                    <li>Prevê inversão do ônus da prova em favor do consumidor</li>
+                    <li>Estabelece responsabilidade objetiva do fornecedor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS: Importância para o SAC -->
+    <h3>Por que é importante para o SAC?</h3>
+    <div class="interactive-cards">
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">🛡️</span>
+                <span>Segurança</span>
+            </div>
+            <div class="interactive-card-content">
+                <p>Segurança na orientação ao cliente, sabendo exatamente o que a lei permite ou não.</p>
+            </div>
+        </div>
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">✅</span>
+                <span>Conformidade</span>
+            </div>
+            <div class="interactive-card-content">
+                <p>Respostas corretas e alinhadas à lei, evitando problemas jurídicos para a empresa.</p>
+            </div>
+        </div>
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">⚡</span>
+                <span>Eficiência</span>
+            </div>
+            <div class="interactive-card-content">
+                <p>Redução de retrabalho ao resolver questões corretamente na primeira vez.</p>
+            </div>
+        </div>
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">⭐</span>
+                <span>Credibilidade</span>
+            </div>
+            <div class="interactive-card-content">
+                <p>Mais profissionalismo, confiança e credibilidade no atendimento.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESTAQUE: Atenção -->
+    <div class="highlight-box atencao">
+        <span class="icon">⚠️</span>
+        <div class="highlight-box-content">
+            <h4>Atenção</h4>
+            <p>Conhecer o CDC não significa decorar todos os artigos, mas sim entender os <strong>princípios
+                    básicos</strong> que guiam as relações de consumo.</p>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
     <div class="quiz-block">
         <p class="question">Por que o conhecimento do Código de Defesa do Consumidor é essencial para quem atua no SAC?
         </p>
