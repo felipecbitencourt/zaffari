@@ -12,205 +12,74 @@ const App = {
         // 1. Initialize SCORM
         scorm.init();
 
-        // 2. Load Content Structure
+        // 2. Initialize Audio
+        if (typeof AudioManager !== 'undefined') {
+            AudioManager.init();
+        }
+
+        // 3. Load Content Structure
         await this.loadContent();
 
-        // 3. Restore Progress
+        // 4. Restore Progress
         this.restoreProgres();
 
-        // 4. Render Interface
+        // 5. Render Interface
         this.renderMenu();
         this.loadPage(this.currentIndex);
 
-        // 5. Bind Events
+        // 6. Bind Events
         this.bindEvents();
     },
 
-    loadContent: async function () {
-        try {
-            const response = await fetch('content.json');
-            this.data = await response.json();
+    // ... (keep usage of this.loadContent through this.updateMenuState unchanged) ...
 
-            // Flatten pages for easy linear navigation
-            this.flatPages = [];
-            this.data.modules.forEach(mod => {
-                mod.pages.forEach(page => {
-                    this.flatPages.push({
-                        ...page,
-                        moduleId: mod.id,
-                        moduleTitle: mod.title
-                    });
-                });
-            });
+    showFeedback: function (message, type = 'info') {
+        const modal = document.getElementById('modal-feedback');
+        const titleEl = document.getElementById('feedback-title');
+        const msgEl = document.getElementById('feedback-message');
+        const btn = document.getElementById('feedback-btn');
 
-            console.log("Content loaded. Total pages:", this.flatPages.length);
-        } catch (error) {
-            console.error("Failed to load content.json", error);
-            document.getElementById('content-area').innerHTML = "<p class='error'>Erro ao carregar conteúdo.</p>";
-        }
-    },
+        if (!modal) return;
 
-    restoreProgres: function () {
-        const location = scorm.getValue("cmi.core.lesson_location");
-        console.log("Restoring location:", location);
+        // Reset classes
+        modal.classList.remove('success', 'error', 'info');
+        modal.classList.add(type);
 
-        if (location) {
-            // Find index of the page ID
-            const idx = this.flatPages.findIndex(p => p.id === location);
-            if (idx >= 0) {
-                this.currentIndex = idx;
-                this.maxIndexReached = idx; // Assuming if they are at X, they reached X (strict mode might differ but this is standard resume)
-                // In strict mode, we might want to store 'max_visited' separate if they go back.
-                // But simplified: restore to where they were implies that is their max.
-            }
+        // Set Content
+        msgEl.textContent = message;
+
+        if (type === 'success') {
+            titleEl.textContent = '🎉 Muito Bem!';
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+        } else if (type === 'error') {
+            titleEl.textContent = '❌ Atenção';
+            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+        } else {
+            titleEl.textContent = 'ℹ️ Informação';
         }
 
-        // Update Progress Bar
-        this.updateProgress();
-    },
+        // Show
+        modal.classList.add('active');
+        btn.focus();
 
-    saveProgress: function () {
-        // Save current page
-        const currentPage = this.flatPages[this.currentIndex];
-        scorm.setValue("cmi.core.lesson_location", currentPage.id);
-
-        // Update max index
-        if (this.currentIndex > this.maxIndexReached) {
-            this.maxIndexReached = this.currentIndex;
-        }
-
-        // Check completion
-        if (this.currentIndex === this.flatPages.length - 1) {
-            scorm.setValue("cmi.core.lesson_status", "completed");
-        }
-
-        // Commit happens in wrapper
-        this.updateProgress();
-        this.updateMenuState();
-    },
-
-    updateProgress: function () {
-        const percent = Math.round(((this.currentIndex + 1) / this.flatPages.length) * 100);
-        document.getElementById('course-progress').value = percent;
-        document.getElementById('progress-text').innerText = percent + "%";
-    },
-
-    renderMenu: function () {
-        const menuEl = document.getElementById('menu-content');
-        menuEl.innerHTML = "";
-
-        this.data.modules.forEach(mod => {
-            const group = document.createElement('div');
-            group.className = 'module-group';
-
-            const title = document.createElement('span');
-            title.className = 'module-title';
-            title.textContent = mod.title;
-            group.appendChild(title);
-
-            mod.pages.forEach(page => {
-                const link = document.createElement('a');
-                link.href = "#";
-                link.className = 'menu-link locked';
-                link.dataset.id = page.id;
-                link.textContent = page.title;
-                link.onclick = (e) => {
-                    e.preventDefault();
-                    // Find global index
-                    const idx = this.flatPages.findIndex(p => p.id === page.id);
-                    const isExtras = mod.id === 'extras';
-                    // Extras são sempre acessíveis
-                    if (idx <= this.maxIndexReached || isExtras) {
-                        this.currentIndex = idx;
-                        this.loadPage(idx);
-                        this.saveProgress(); // Ensure location updates if they jumped back
-                    }
-                };
-                group.appendChild(link);
-            });
-
-            menuEl.appendChild(group);
-        });
-
-        this.updateMenuState();
-    },
-
-    updateMenuState: function () {
-        const links = document.querySelectorAll('.menu-link');
-        links.forEach(link => {
-            const pageId = link.dataset.id;
-            const idx = this.flatPages.findIndex(p => p.id === pageId);
-            const pageData = this.flatPages[idx];
-
-            link.classList.remove('active', 'locked', 'completed');
-
-            if (idx === this.currentIndex) {
-                link.classList.add('active');
-            }
-
-            // Extras são sempre desbloqueados
-            const isExtras = pageData && pageData.moduleId === 'extras';
-
-            if (idx <= this.maxIndexReached || isExtras) {
-                // Unlocked
-            } else {
-                link.classList.add('locked');
-            }
-
-            if (idx < this.currentIndex && !isExtras) {
-                link.classList.add('completed');
-            }
-        });
-
-        // Navigation Buttons
-        document.getElementById('btn-prev').disabled = (this.currentIndex === 0);
-        document.getElementById('btn-next').disabled = (this.currentIndex === this.flatPages.length - 1);
-    },
-
-    loadPage: async function (index) {
-        const pageData = this.flatPages[index];
-        const contentArea = document.getElementById('content-area');
-
-        // Handle Language swap path
-        let fileUrl = pageData.file;
-        if (this.currentLang === 'es') {
-            fileUrl = fileUrl.replace('/pt/', '/es/');
-        }
-
-        // Fetch HTML content
-        try {
-            const res = await fetch(fileUrl);
-            if (res.ok) {
-                const html = await res.text();
-                // Inject
-                contentArea.innerHTML = html;
-
-                // Enhance content (Accessibility descriptions handling could go here)
-
-                // Scroll to top
-                document.getElementById('main-content').scrollTop = 0;
-
-                // Animate
-                contentArea.classList.remove('fade-in');
-                void contentArea.offsetWidth; // Trigger reflow
-                contentArea.classList.add('fade-in');
-
-                // Inicializar componentes interativos
-                this.initInteractiveComponents();
-
-            } else {
-                contentArea.innerHTML = `<h2>Erro 404</h2><p>Página não encontrada: ${fileUrl}</p>`;
-            }
-        } catch (e) {
-            contentArea.innerHTML = `<h2>Erro</h2><p>Falha ao carregar conteúdo.</p>`;
-        }
-
-        this.updateMenuState();
+        // Bind logic to close
+        btn.onclick = () => {
+            modal.classList.remove('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
     },
 
     bindEvents: function () {
-        // Navigation
-        document.getElementById('btn-next').onclick = () => {
+        // Navigation (with Click Sound)
+        const playClick = () => {
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
+
+        const btnNext = document.getElementById('btn-next');
+        const btnPrev = document.getElementById('btn-prev');
+
+        btnNext.onclick = () => {
+            playClick();
             if (this.currentIndex < this.flatPages.length - 1) {
                 this.currentIndex++;
                 this.saveProgress();
@@ -218,7 +87,8 @@ const App = {
             }
         };
 
-        document.getElementById('btn-prev').onclick = () => {
+        btnPrev.onclick = () => {
+            playClick();
             if (this.currentIndex > 0) {
                 this.currentIndex--;
                 this.saveProgress();
@@ -229,6 +99,7 @@ const App = {
         // Sidebar Toggle
         const sidebar = document.getElementById('sidebar');
         const toggleSidebar = () => {
+            playClick();
             sidebar.classList.toggle('collapsed');
             const btnMenu = document.getElementById('btn-menu');
             if (sidebar.classList.contains('collapsed')) {
@@ -253,10 +124,13 @@ const App = {
                 const parent = btn.closest('.quiz-block');
                 const isCorrect = btn.dataset.correct === 'true';
 
+                // Play click sound on selection
+                playClick();
+
                 // Reset siblings
                 parent.querySelectorAll('.quiz-option').forEach(b => {
                     b.classList.remove('selected', 'correct', 'incorrect');
-                    b.disabled = true; // Lock after choice? Or let validation decide. User said "formative".
+                    b.disabled = true;
                 });
 
                 btn.classList.add('selected');
@@ -266,16 +140,25 @@ const App = {
                     btn.style.backgroundColor = '#dcedc8';
                     const feedback = parent.querySelector('.feedback');
                     if (feedback) feedback.style.display = 'block';
+
+                    // Show Success Feedback
+                    this.showFeedback("Resposta Correta! Você demonstrou conhecimento.", 'success');
+
                 } else {
                     btn.classList.add('incorrect');
                     btn.style.backgroundColor = '#ffcdd2';
-                    // Show try again or hint?
+
+                    // Show Error Feedback with Retry logic
                     setTimeout(() => {
+                        this.showFeedback("Resposta incorreta. Tente novamente!", 'error');
+
+                        // Re-enable options after modal closes (conceptually, but here we just re-enable immediately for simplicity or attach to modal close if we wanted valid strictness)
+                        // For a better UX, we re-enable them after a slight delay or when modal closes. 
+                        // Let's re-enable them here so the user can interact after closing the modal.
                         parent.querySelectorAll('.quiz-option').forEach(b => b.disabled = false);
                         btn.classList.remove('selected', 'incorrect');
                         btn.style.backgroundColor = '';
-                        alert("Resposta incorreta. Tente novamente!");
-                    }, 1000);
+                    }, 500);
                 }
             }
         });

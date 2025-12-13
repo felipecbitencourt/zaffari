@@ -2152,3 +2152,82 @@ a:focus-visible {
     color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
 }
+/* ===== FEEDBACK MODAL ===== */
+.feedback-modal .modal {
+    max-width: 400px;
+    text-align: center;
+    border-radius: var(--radius-xl);
+}
+
+.feedback-modal .modal-header {
+    justify-content: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.feedback-modal .modal-body {
+    padding-top: var(--spacing-sm);
+}
+
+.feedback-modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feedback-modal p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.feedback-modal #feedback-btn {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.feedback-modal #feedback-btn:hover {
+    background: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Success State */
+.feedback-modal.success .modal-header h3 {
+    color: var(--success);
+}
+
+.feedback-modal.success .modal {
+    border-top: 6px solid var(--success);
+}
+
+.feedback-modal.success #feedback-btn {
+    background: var(--success);
+}
+
+.feedback-modal.success #feedback-btn:hover {
+    background: #2E7D32;
+}
+
+/* Error State */
+.feedback-modal.error .modal-header h3 {
+    color: var(--error);
+}
+
+.feedback-modal.error .modal {
+    border-top: 6px solid var(--error);
+}
+
+.feedback-modal.error #feedback-btn {
+    background: var(--error);
+}
+
+.feedback-modal.error #feedback-btn:hover {
+    background: #C62828;
+}
