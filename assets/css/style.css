@@ -75,16 +75,245 @@
     --z-modal: 1000;
 }
 
-/* ===== MONOCHROME MODE ===== */
+/* ===== DARK MODE ===== */
 body.high-contrast {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --bg-dark: #0A0A0A;
+    --text-primary: #E8E8E8;
+    --text-secondary: #B0B0B0;
+    --text-muted: #757575;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --glass-bg: rgba(30, 30, 30, 0.95);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
+body.high-contrast #sidebar {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .sidebar-header {
+    background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .brand-text {
+    color: var(--text-primary);
+}
+
+body.high-contrast .menu-link {
+    color: var(--text-secondary);
+}
+
+body.high-contrast .menu-link:hover:not(.locked) {
+    background: rgba(229, 57, 53, 0.15);
+    color: var(--text-primary);
+}
+
+body.high-contrast .menu-link.active {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.2) 0%, rgba(255, 111, 96, 0.15) 100%);
+    color: var(--primary-light);
+}
+
+body.high-contrast #main-content {
+    background: var(--bg-primary);
+}
+
+body.high-contrast #content-area {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .content-header h1 {
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-light) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.high-contrast .content-body {
+    color: var(--text-secondary);
+}
+
+body.high-contrast .content-body p,
+body.high-contrast .content-body li {
+    color: var(--text-secondary);
+}
+
+body.high-contrast .content-body strong {
+    color: var(--text-primary);
+}
+
+/* Dark Mode - Cards e Componentes */
+body.high-contrast .card-concept {
+    background: linear-gradient(135deg, #1A237E 0%, #283593 100%) !important;
+    border-left-color: #5C6BC0 !important;
+}
+
+body.high-contrast .card-concept h3 {
+    color: #90CAF9 !important;
+}
+
+body.high-contrast .card-concept li {
+    border-color: rgba(92, 107, 192, 0.3);
+    color: #E3F2FD;
+}
+
+body.high-contrast .highlight-box {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .highlight-box.atencao {
+    background: linear-gradient(135deg, #3E2723 0%, #4E342E 100%);
+    border-left-color: var(--warning);
+}
+
+body.high-contrast .highlight-box.sabia {
+    background: linear-gradient(135deg, #1A237E 0%, #283593 100%);
+    border-left-color: var(--info);
+}
+
+body.high-contrast .highlight-box h4,
+body.high-contrast .highlight-box-content h4 {
+    color: var(--text-primary);
+}
+
+body.high-contrast .highlight-box p,
+body.high-contrast .highlight-box-content p {
+    color: var(--text-secondary);
+}
+
+/* Dark Mode - Quiz e Interativos */
+body.high-contrast .quiz-block {
+    background: linear-gradient(135deg, #2D2D2D 0%, #1E1E1E 100%);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .quiz-block .question {
+    color: var(--text-primary);
+}
+
+body.high-contrast .quiz-option {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.high-contrast .quiz-option:hover:not(:disabled) {
+    background: rgba(229, 57, 53, 0.15);
+    border-color: var(--primary-light);
+}
+
+body.high-contrast .interactive-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .interactive-card:hover {
+    border-color: var(--primary-light);
+}
+
+body.high-contrast .interactive-card-header {
+    color: var(--text-primary);
+}
+
+/* Dark Mode - Module Cards Intro */
+body.high-contrast .module-card-intro {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .module-card-intro h3 {
+    color: var(--primary-light);
+}
+
+body.high-contrast .module-card-intro p {
+    color: var(--text-secondary);
+}
+
+/* Dark Mode - Boxes */
+body.high-contrast .box-attention {
+    background: linear-gradient(135deg, #3E2723 0%, #4E342E 100%) !important;
+}
+
+/* Dark Mode - Reveal */
+body.high-contrast .reveal-btn {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.high-contrast .reveal-content {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+/* Dark Mode - Accordion */
+body.high-contrast .accordion details {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .accordion summary {
+    color: var(--text-primary);
+}
+
+/* Dark Mode - Footer e Navegação */
+body.high-contrast .nav-footer {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .btn-nav {
+    background: var(--bg-primary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.high-contrast .btn-nav.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+}
+
+/* Dark Mode - Accessibility Bar */
+body.high-contrast #accessibility-bar {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .a11y-btn {
+    color: var(--text-secondary);
+    background: transparent;
+}
+
+body.high-contrast .a11y-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+/* Dark Mode - Modal */
+body.high-contrast .modal {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .modal-header h3 {
+    color: var(--text-primary);
+}
+
+body.high-contrast .modal-body {
+    color: var(--text-secondary);
+}
+
+/* Dark Mode - Images keep original colors */
 body.high-contrast img,
 body.high-contrast video {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    opacity: 0.9;
 }
 
 /* ===== DYSLEXIA MODE ===== */
@@ -849,7 +1078,7 @@ progress::-moz-progress-bar {
 .page-intro.full-bleed .intro-card.variant-white {
     background: #FFFFFF;
     color: var(--text-primary);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 /* Ajustes para cards vermelhos para melhor contraste */
@@ -2076,7 +2305,9 @@ a:focus-visible {
 
 .step-line.completed {
     background: var(--success);
-}/* ===== HORIZONTAL LAYOUT UTILITIES ===== */
+}
+
+/* ===== HORIZONTAL LAYOUT UTILITIES ===== */
 .grid-2-col {
     display: grid;
     grid-template-columns: 1fr;
@@ -2138,6 +2369,7 @@ a:focus-visible {
     display: contents;
     /* Allow children to be part of parent grid if needed, or use dashboard-grid replacement */
 }
+
 /* ===== INTRO CARDS STYLING ===== */
 .intro-card {
     border-radius: var(--radius-lg);
@@ -2195,6 +2427,7 @@ a:focus-visible {
     color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
 }
+
 /* ===== FEEDBACK MODAL ===== */
 .feedback-modal .modal {
     max-width: 400px;
@@ -2273,4 +2506,96 @@ a:focus-visible {
 
 .feedback-modal.error #feedback-btn:hover {
     background: #C62828;
+}
+
+/* ===== MODULE CARDS - INTRO PAGE ===== */
+.module-cards-intro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.module-card-intro {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.module-card-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    z-index: 0;
+}
+
+.module-card-intro:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-6px);
+    box-shadow: var(--primary-glow);
+}
+
+.module-card-intro:hover::before {
+    opacity: 1;
+}
+
+.module-card-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-gradient);
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    z-index: 1;
+    transition: all var(--transition-normal);
+}
+
+.module-card-intro:hover .module-card-number {
+    background: white;
+    color: var(--primary-color);
+}
+
+.module-card-intro h3 {
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    z-index: 1;
+    transition: color var(--transition-normal);
+}
+
+.module-card-intro:hover h3 {
+    color: white;
+}
+
+.module-card-intro p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    transition: color var(--transition-normal);
+}
+
+.module-card-intro:hover p {
+    color: rgba(255, 255, 255, 0.9);
 }
