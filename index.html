@@ -18,31 +18,21 @@
 
 <body>
 
-    <!-- Painel de Acessibilidade (Fixo) -->
-    <div id="a11y-bar" role="region" aria-label="Ferramentas de Acessibilidade">
-        <div class="container">
-            <button id="btn-menu" aria-label="Abrir/Fechar Menu" title="Menu" class="btn-menu">☰</button>
-            <div class="a11y-tools">
-                <button id="btn-contrast" aria-label="Modo Monocromático" title="Modo Monocromático">◐</button>
-                <button id="btn-increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte">A+</button>
-                <button id="btn-decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte">A-</button>
-                <button id="btn-dyslexia" aria-label="Fonte para Dislexia" title="Fonte para Dislexia">D</button>
-                <button id="btn-tts" aria-label="Ler Texto da Tela" title="Ler Texto">🔊</button>
+    <!-- Header Simplificado -->
+    <header id="main-header" role="banner">
+        <div class="header-container">
+            <div class="header-left">
+                <button id="btn-menu" aria-label="Abrir/Fechar Menu" title="Menu" class="header-btn">☰</button>
+                <button id="btn-settings" aria-label="Configurações" title="Configurações"
+                    class="header-btn">⚙️</button>
+                <button id="btn-tts" aria-label="Ler Página" title="Ler Página" class="header-btn">🔊</button>
             </div>
-            <div class="lang-switch">
-                <button id="btn-lang-pt" class="active" aria-label="Mudar para Português">PT</button>
-                <button id="btn-lang-es" aria-label="Mudar para Espanhol">ES</button>
+            <div class="header-progress">
+                <progress id="course-progress" value="0" max="100"></progress>
+                <span id="progress-text">0%</span>
             </div>
         </div>
-    </div>
-
-    <!-- Barra de Progresso Global -->
-    <div id="progress-bar" role="progressbar" aria-label="Progresso do Curso">
-        <div class="progress-wrapper">
-            <span id="progress-text">0%</span>
-            <progress id="course-progress" value="0" max="100"></progress>
-        </div>
-    </div>
+    </header>
 
     <!-- Layout Principal -->
     <div class="app-layout">
@@ -92,6 +82,101 @@
             <div class="modal-body">
                 <p id="feedback-message">Mensagem aqui</p>
                 <button id="feedback-btn" class="btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="modal-settings" class="modal-overlay">
+        <div class="modal settings-modal">
+            <div class="modal-header">
+                <h3>⚙️ Configurações</h3>
+                <button class="modal-close" id="btn-settings-close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal-body settings-body">
+
+                <!-- Dark Mode -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🌙</span>
+                        <span>Modo Escuro</span>
+                    </div>
+                    <button id="btn-contrast" class="toggle-btn" aria-label="Modo Escuro">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
+                <!-- Font Size -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🔤</span>
+                        <span>Tamanho da Fonte</span>
+                    </div>
+                    <div class="font-controls">
+                        <button id="btn-decrease-font" class="font-btn" aria-label="Diminuir Fonte">A-</button>
+                        <span id="font-size-display">100%</span>
+                        <button id="btn-increase-font" class="font-btn" aria-label="Aumentar Fonte">A+</button>
+                    </div>
+                </div>
+
+                <!-- Reading Assistance -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">📖</span>
+                        <span>Assistência de Leitura</span>
+                    </div>
+                    <button id="btn-dyslexia" class="toggle-btn" aria-label="Assistência de Leitura">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="settings-divider"></div>
+
+                <!-- Reading Speed -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">⏩</span>
+                        <span>Velocidade de Leitura</span>
+                    </div>
+                    <div class="speed-controls">
+                        <button class="speed-btn" data-speed="0.75">0.75x</button>
+                        <button class="speed-btn active" data-speed="1">1x</button>
+                        <button class="speed-btn" data-speed="1.25">1.25x</button>
+                        <button class="speed-btn" data-speed="1.5">1.5x</button>
+                        <button class="speed-btn" data-speed="2">2x</button>
+                    </div>
+                </div>
+
+                <!-- Voice Selection -->
+                <div class="settings-row settings-row-vertical">
+                    <div class="settings-label">
+                        <span class="settings-icon">🎤</span>
+                        <span>Voz de Leitura</span>
+                    </div>
+                    <div class="voice-controls">
+                        <select id="voice-select" class="voice-select">
+                            <option value="">Carregando vozes...</option>
+                        </select>
+                        <button id="btn-voice-preview" class="btn-secondary-sm">▶ Testar</button>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="settings-divider"></div>
+
+                <!-- Language -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🌐</span>
+                        <span>Idioma</span>
+                    </div>
+                    <div class="lang-controls">
+                        <button id="btn-lang-pt" class="lang-btn active">PT</button>
+                        <button id="btn-lang-es" class="lang-btn">ES</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

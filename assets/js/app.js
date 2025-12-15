@@ -369,43 +369,162 @@ const App = {
     },
 
     bindA11y: function () {
-        // Contrast
-        document.getElementById('btn-contrast').onclick = () => {
-            document.body.classList.toggle('high-contrast');
-            document.getElementById('btn-contrast').classList.toggle('active');
+        // Settings Modal
+        const settingsBtn = document.getElementById('btn-settings');
+        const settingsModal = document.getElementById('modal-settings');
+        const settingsClose = document.getElementById('btn-settings-close');
+
+        settingsBtn.onclick = () => {
+            settingsModal.classList.add('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
         };
 
-        // Font Size - Ajusta o tamanho base do HTML (rem é relativo ao html)
-        let fontSize = 16;
-        document.getElementById('btn-increase-font').onclick = () => {
-            if (fontSize < 24) {
-                fontSize += 2;
-                document.documentElement.style.fontSize = fontSize + "px";
-                document.getElementById('btn-increase-font').classList.add('active');
-                document.getElementById('btn-decrease-font').classList.add('active');
+        settingsClose.onclick = () => {
+            settingsModal.classList.remove('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
+
+        // Close modal when clicking outside
+        settingsModal.onclick = (e) => {
+            if (e.target === settingsModal) {
+                settingsModal.classList.remove('active');
             }
         };
+
+        // Contrast (Dark Mode) - Toggle Button
+        const contrastBtn = document.getElementById('btn-contrast');
+        contrastBtn.onclick = () => {
+            document.body.classList.toggle('high-contrast');
+            contrastBtn.classList.toggle('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
+
+        // Font Size
+        let fontSize = 100; // percentage
+        const fontSizeDisplay = document.getElementById('font-size-display');
+
+        document.getElementById('btn-increase-font').onclick = () => {
+            if (fontSize < 150) {
+                fontSize += 10;
+                document.documentElement.style.fontSize = (fontSize / 100 * 16) + "px";
+                fontSizeDisplay.textContent = fontSize + '%';
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            }
+        };
+
         document.getElementById('btn-decrease-font').onclick = () => {
-            if (fontSize > 12) {
-                fontSize -= 2;
-                document.documentElement.style.fontSize = fontSize + "px";
-                if (fontSize === 16) {
-                    document.getElementById('btn-increase-font').classList.remove('active');
-                    document.getElementById('btn-decrease-font').classList.remove('active');
+            if (fontSize > 70) {
+                fontSize -= 10;
+                document.documentElement.style.fontSize = (fontSize / 100 * 16) + "px";
+                fontSizeDisplay.textContent = fontSize + '%';
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            }
+        };
+
+        // Reading Assistance (ex-Dyslexia) - Toggle Button
+        const dyslexiaBtn = document.getElementById('btn-dyslexia');
+        dyslexiaBtn.onclick = () => {
+            document.body.classList.toggle('dyslexia-mode');
+            dyslexiaBtn.classList.toggle('active');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
+
+        // TTS
+        const ttsBtn = document.getElementById('btn-tts');
+        let speaking = false;
+        let ttsSpeed = 1.0;
+        let selectedVoice = null;
+        let availableVoices = [];
+
+        // Speed Buttons
+        document.querySelectorAll('.speed-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                ttsSpeed = parseFloat(btn.dataset.speed);
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+
+                // If speaking, restart with new speed
+                if (speaking) {
+                    window.speechSynthesis.cancel();
+                    const text = document.getElementById('main-content').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
+                    utterance.rate = ttsSpeed;
+                    if (selectedVoice) utterance.voice = selectedVoice;
+                    window.speechSynthesis.speak(utterance);
+                    utterance.onend = () => {
+                        speaking = false;
+                        ttsBtn.classList.remove('active');
+                    };
+                }
+            };
+        });
+
+        // Voice Selector
+        const voiceSelect = document.getElementById('voice-select');
+        const voicePreviewBtn = document.getElementById('btn-voice-preview');
+
+        const loadVoices = () => {
+            availableVoices = window.speechSynthesis.getVoices();
+            if (availableVoices.length > 0) {
+                voiceSelect.innerHTML = '';
+
+                const langFilter = this.currentLang === 'pt' ? 'pt' : 'es';
+                const filteredVoices = availableVoices.filter(v => v.lang.toLowerCase().startsWith(langFilter));
+                const otherVoices = availableVoices.filter(v => !v.lang.toLowerCase().startsWith(langFilter));
+
+                filteredVoices.forEach((voice) => {
+                    const option = document.createElement('option');
+                    option.value = voice.name;
+                    option.textContent = `${voice.name} (${voice.lang})`;
+                    if (voice.name.includes('Google')) option.textContent += ' ⭐';
+                    voiceSelect.appendChild(option);
+                });
+
+                if (filteredVoices.length > 0 && otherVoices.length > 0) {
+                    const separator = document.createElement('option');
+                    separator.disabled = true;
+                    separator.textContent = '── Outras vozes ──';
+                    voiceSelect.appendChild(separator);
+                }
+
+                otherVoices.forEach((voice) => {
+                    const option = document.createElement('option');
+                    option.value = voice.name;
+                    option.textContent = `${voice.name} (${voice.lang})`;
+                    voiceSelect.appendChild(option);
+                });
+
+                const savedVoice = localStorage.getItem('tts-voice');
+                if (savedVoice) {
+                    voiceSelect.value = savedVoice;
+                    selectedVoice = availableVoices.find(v => v.name === savedVoice);
                 }
             }
         };
 
-        // Dyslexia
-        document.getElementById('btn-dyslexia').onclick = () => {
-            document.body.classList.toggle('dyslexia-mode');
-            document.getElementById('btn-dyslexia').classList.toggle('active');
+        loadVoices();
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+
+        voiceSelect.onchange = () => {
+            selectedVoice = availableVoices.find(v => v.name === voiceSelect.value);
+            localStorage.setItem('tts-voice', voiceSelect.value);
         };
 
-        // TTS (Simple implementation)
-        const ttsBtn = document.getElementById('btn-tts');
-        let speaking = false;
+        voicePreviewBtn.onclick = () => {
+            window.speechSynthesis.cancel();
+            const testText = this.currentLang === 'pt'
+                ? 'Olá! Esta é uma prévia da voz.'
+                : 'Hola! Esta es una vista previa.';
+            const utterance = new SpeechSynthesisUtterance(testText);
+            const voice = availableVoices.find(v => v.name === voiceSelect.value);
+            if (voice) utterance.voice = voice;
+            utterance.rate = ttsSpeed;
+            window.speechSynthesis.speak(utterance);
+        };
 
+        // TTS Button
         ttsBtn.onclick = () => {
             if (speaking) {
                 window.speechSynthesis.cancel();
@@ -415,6 +534,8 @@ const App = {
                 const text = document.getElementById('main-content').innerText;
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
+                utterance.rate = ttsSpeed;
+                if (selectedVoice) utterance.voice = selectedVoice;
                 window.speechSynthesis.speak(utterance);
                 speaking = true;
                 ttsBtn.classList.add('active');
@@ -426,14 +547,16 @@ const App = {
             }
         };
 
-        // Language
+        // Language Buttons
         document.getElementById('btn-lang-pt').onclick = () => {
             if (this.currentLang !== 'pt') {
                 this.currentLang = 'pt';
                 document.getElementById('btn-lang-pt').classList.add('active');
                 document.getElementById('btn-lang-es').classList.remove('active');
                 this.loadPage(this.currentIndex);
-                this.renderMenu(); // Re-render menu titles if we had translated JSON (TODO: translate menu titles)
+                this.renderMenu();
+                loadVoices(); // Refresh voices for new language
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
             }
         };
 
@@ -443,6 +566,8 @@ const App = {
                 document.getElementById('btn-lang-es').classList.add('active');
                 document.getElementById('btn-lang-pt').classList.remove('active');
                 this.loadPage(this.currentIndex);
+                loadVoices();
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
             }
         };
     },
@@ -459,71 +584,11 @@ const App = {
                 const modal = document.getElementById(modalId);
                 if (modal) {
                     modal.classList.add('active');
-                    modal.querySelector('.modal-close')?.focus();
                 }
             };
         });
 
-        contentArea.querySelectorAll('.modal-overlay').forEach(overlay => {
-            // Fechar ao clicar no overlay
-            overlay.onclick = (e) => {
-                if (e.target === overlay) {
-                    overlay.classList.remove('active');
-                }
-            };
-            // Fechar com botão
-            overlay.querySelector('.modal-close')?.addEventListener('click', () => {
-                overlay.classList.remove('active');
-            });
-        });
-
-        // Fechar modais com ESC
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.modal-overlay.active').forEach(m => {
-                    m.classList.remove('active');
-                });
-            }
-        });
-
-        // 2. SLIDERS
-        contentArea.querySelectorAll('.content-slider').forEach(slider => {
-            const slides = slider.querySelectorAll('.slider-slide');
-            const dots = slider.querySelectorAll('.slider-dot');
-            const prevBtn = slider.querySelector('.slider-prev');
-            const nextBtn = slider.querySelector('.slider-next');
-            let currentSlide = 0;
-
-            const showSlide = (index) => {
-                slides.forEach((s, i) => {
-                    s.classList.toggle('hidden', i !== index);
-                });
-                dots.forEach((d, i) => {
-                    d.classList.toggle('active', i === index);
-                });
-                if (prevBtn) prevBtn.disabled = index === 0;
-                if (nextBtn) nextBtn.disabled = index === slides.length - 1;
-                currentSlide = index;
-            };
-
-            showSlide(0);
-
-            if (prevBtn) {
-                prevBtn.onclick = () => {
-                    if (currentSlide > 0) showSlide(currentSlide - 1);
-                };
-            }
-            if (nextBtn) {
-                nextBtn.onclick = () => {
-                    if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
-                };
-            }
-            dots.forEach((dot, i) => {
-                dot.onclick = () => showSlide(i);
-            });
-        });
-
-        // 3. CARDS INTERATIVOS
+        // 2. CARDS INTERATIVOS
         contentArea.querySelectorAll('.interactive-card').forEach(card => {
             card.onclick = () => {
                 card.classList.toggle('expanded');
@@ -601,12 +666,12 @@ const App = {
             }, 500);
         };
 
-        // Primeira execução após 2 segundos
+        // Primeira execução após 3 segundos
         setTimeout(() => {
             triggerWiggle();
-            // Depois a cada 3 segundos
-            this.wiggleInterval = setInterval(triggerWiggle, 3000);
-        }, 2000);
+            // Depois a cada 5 segundos
+            this.wiggleInterval = setInterval(triggerWiggle, 5000);
+        }, 3000);
     }
 };
 

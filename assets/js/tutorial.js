@@ -9,29 +9,39 @@ const Tutorial = {
     // Passos do tutorial com seletor do elemento e texto explicativo
     steps: [
         {
-            selector: '#sidebar',
-            text: '📋 <strong>Menu Lateral</strong><br>Aqui você encontra todos os módulos e páginas do curso. Clique no título de um módulo para expandir ou recolher suas páginas.',
-            position: 'right'
-        },
-        {
-            selector: '#a11y-bar',
-            text: '⚙️ <strong>Barra de Acessibilidade</strong><br>Use estes botões para personalizar sua experiência: alterar tamanho da fonte, ativar modo escuro, fonte para dislexia e ouvir o texto da página.',
+            selector: '#btn-menu',
+            text: '☰ <strong>Menu Lateral</strong><br>Clique aqui para abrir o menu com todos os módulos e páginas do curso.',
             position: 'bottom'
         },
         {
-            selector: '#btn-contrast',
-            text: '🌙 <strong>Modo Escuro</strong><br>Clique aqui para ativar ou desativar o modo escuro, ideal para ambientes com pouca luz.',
+            selector: '#sidebar',
+            text: '📋 <strong>Navegação do Curso</strong><br>Aqui você encontra todos os módulos. Clique no título de um módulo para expandir ou recolher.',
+            position: 'right'
+        },
+        {
+            selector: '#btn-settings',
+            text: '⚙️ <strong>Configurações</strong><br>Abra para personalizar: modo escuro, tamanho da fonte, assistência de leitura, velocidade de voz, e idioma.',
+            position: 'bottom'
+        },
+        {
+            selector: '#btn-tts',
+            text: '🔊 <strong>Leitura em Voz Alta</strong><br>Clique para ouvir o conteúdo da página sendo lido. Clique novamente para parar.',
+            position: 'bottom'
+        },
+        {
+            selector: '.header-progress',
+            text: '📊 <strong>Progresso do Curso</strong><br>Acompanhe seu avanço no treinamento. O progresso é salvo automaticamente!',
             position: 'bottom'
         },
         {
             selector: '.content-nav',
-            text: '➡️ <strong>Navegação</strong><br>Use os botões "Anterior" e "Próximo" para navegar entre as páginas. Seu progresso é salvo automaticamente!',
+            text: '➡️ <strong>Navegação</strong><br>Use "Anterior" e "Próximo" para navegar entre as páginas do curso.',
             position: 'top'
         },
         {
-            selector: '.interactive-card',
-            text: '👆 <strong>Elementos Interativos</strong><br>Elementos que <em>tremem</em> são clicáveis! Clique neles para revelar mais conteúdo. Você ouvirá um som ao interagir.',
-            position: 'bottom'
+            selector: '#btn-start-tutorial',
+            text: '👆 <strong>Elementos Interativos</strong><br>Elementos que <em>tremem</em> são clicáveis! Clique neles para revelar conteúdo adicional.',
+            position: 'top'
         }
     ],
 
@@ -62,6 +72,7 @@ const Tutorial = {
     },
 
     start: function () {
+        if (typeof AudioManager !== 'undefined') AudioManager.playClick();
         this.currentStep = 0;
         this.isActive = true;
         document.body.classList.add('tutorial-active');
@@ -71,6 +82,7 @@ const Tutorial = {
     },
 
     next: function () {
+        if (typeof AudioManager !== 'undefined') AudioManager.playClick();
         // Remove highlight do elemento anterior
         this.clearHighlight();
 
@@ -160,6 +172,7 @@ const Tutorial = {
     },
 
     end: function () {
+        if (typeof AudioManager !== 'undefined') AudioManager.playClick();
         this.isActive = false;
         this.clearHighlight();
         document.body.classList.remove('tutorial-active');
