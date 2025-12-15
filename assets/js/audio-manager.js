@@ -58,5 +58,11 @@ const AudioManager = {
         // Dissonant low buzz
         this.playTone(150, 'sawtooth', 0.3, 0, 0.1);
         this.playTone(142, 'sawtooth', 0.3, 0.05, 0.1);
+    },
+
+    playExpand: function () {
+        // Soft 'pop' sound for expanding/revealing content
+        this.playTone(440, 'sine', 0.08, 0, 0.08);      // A4
+        this.playTone(554.37, 'sine', 0.1, 0.05, 0.06); // C#5 - creates a pleasant minor 3rd
     }
 };

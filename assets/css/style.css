@@ -106,6 +106,15 @@ body.high-contrast .brand-text {
     color: var(--text-primary);
 }
 
+body.high-contrast .module-title {
+    color: var(--primary-light);
+    background: linear-gradient(90deg, rgba(229, 57, 53, 0.12) 0%, transparent 100%);
+}
+
+body.high-contrast .module-title:hover {
+    background: linear-gradient(90deg, rgba(229, 57, 53, 0.2) 0%, transparent 100%);
+}
+
 body.high-contrast .menu-link {
     color: var(--text-secondary);
 }
@@ -336,6 +345,35 @@ body.dyslexia-mode li {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* ===== TYPOGRAPHY: PREVENT WORD BREAKING ===== */
+p,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button,
+a {
+    word-break: keep-all;
+    /* Não quebra palavras */
+    overflow-wrap: normal;
+    /* Não força quebra */
+    hyphens: none;
+    /* Remove hifenização automática */
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+}
+
+/* Text justification for body content */
+.content-body p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 html {
@@ -723,27 +761,68 @@ progress::-moz-progress-bar {
     margin-bottom: var(--spacing-lg);
 }
 
+.module-group.collapsed .module-pages {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.module-pages {
+    max-height: 1000px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height var(--transition-normal), opacity var(--transition-fast), margin var(--transition-fast);
+    margin-top: var(--spacing-xs);
+}
+
 .module-title {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: var(--spacing-sm);
+    width: 100%;
     font-weight: 700;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
     background: linear-gradient(90deg, rgba(229, 57, 53, 0.08) 0%, transparent 100%);
     border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: left;
 }
 
-.module-title::before {
+.module-title:hover {
+    background: linear-gradient(90deg, rgba(229, 57, 53, 0.15) 0%, transparent 100%);
+}
+
+.module-title-text {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.module-title-text::before {
     content: '';
     width: 4px;
     height: 16px;
     background: var(--primary-gradient);
     border-radius: var(--radius-full);
+    flex-shrink: 0;
+}
+
+.module-toggle-icon {
+    font-size: 0.65rem;
+    transition: transform var(--transition-fast);
+    opacity: 0.7;
+}
+
+.module-group.collapsed .module-toggle-icon {
+    transform: rotate(-90deg);
 }
 
 .menu-link {
@@ -1983,6 +2062,8 @@ a:focus-visible {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--spacing-md);
     margin: var(--spacing-lg) 0;
+    align-items: start;
+    /* Impede que cards estiquem verticalmente para igualar altura */
 }
 
 .interactive-card {
@@ -2020,6 +2101,11 @@ a:focus-visible {
 
 .interactive-card.expanded {
     border-color: var(--primary-color);
+    box-shadow: 0 4px 20px rgba(229, 57, 53, 0.15);
+}
+
+.interactive-card.expanded::before {
+    transform: scaleX(1);
 }
 
 .interactive-card-header {
@@ -2598,4 +2684,371 @@ a:focus-visible {
 
 .module-card-intro:hover p {
     color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== TUTORIAL INTERATIVO ===== */
+.tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.tutorial-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Bloquear toda a página durante o tutorial */
+body.tutorial-active {
+    overflow: hidden;
+}
+
+body.tutorial-active *:not(.tutorial-highlight):not(.tutorial-highlight *):not(.tutorial-tooltip):not(.tutorial-tooltip *):not(.tutorial-overlay) {
+    pointer-events: none !important;
+}
+
+body.tutorial-active .tutorial-highlight,
+body.tutorial-active .tutorial-highlight *,
+body.tutorial-active .tutorial-tooltip,
+body.tutorial-active .tutorial-tooltip * {
+    pointer-events: auto !important;
+}
+
+/* Elemento destacado com efeito spotlight */
+.tutorial-highlight {
+    position: relative;
+    z-index: 10000 !important;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75),
+        0 0 30px 10px rgba(229, 57, 53, 0.4) !important;
+    border-radius: var(--radius-md);
+    animation: tutorialPulse 2s ease-in-out infinite;
+}
+
+@keyframes tutorialPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75),
+            0 0 30px 10px rgba(229, 57, 53, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75),
+            0 0 50px 15px rgba(229, 57, 53, 0.6);
+    }
+}
+
+/* Tooltip do tutorial */
+.tutorial-tooltip {
+    position: fixed;
+    z-index: 10002;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 4px rgba(229, 57, 53, 0.3);
+    max-width: 360px;
+    min-width: 280px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.tutorial-tooltip.active {
+    opacity: 1;
+    visibility: visible;
+    animation: tooltipFadeIn 0.3s ease-out;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tutorial-tooltip-content {
+    padding: var(--spacing-lg);
+}
+
+.tutorial-tooltip-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.tutorial-tooltip-content strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.tutorial-tooltip-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+}
+
+#tutorial-step-indicator {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.tutorial-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.tutorial-btn-skip {
+    padding: 0.5em 1em;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.tutorial-btn-skip:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.tutorial-btn-next {
+    padding: 0.5em 1.25em;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
+}
+
+.tutorial-btn-next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+}
+
+/* Botão de iniciar tutorial na página intro */
+.btn-tutorial {
+    margin-top: var(--spacing-md);
+    padding: 0.75em 1.5em;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
+}
+
+.btn-tutorial:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+}
+
+/* Dark mode para tutorial */
+body.high-contrast .tutorial-tooltip {
+    background: var(--bg-secondary);
+}
+
+body.high-contrast .tutorial-tooltip-content p {
+    color: var(--text-secondary);
+}
+
+body.high-contrast .tutorial-tooltip-content strong {
+    color: var(--text-primary);
+}
+
+body.high-contrast .tutorial-tooltip-actions {
+    background: var(--bg-primary);
+    border-color: var(--border-color);
+}
+
+body.high-contrast .tutorial-btn-skip {
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+body.high-contrast .tutorial-btn-skip:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* ===== ANIMAÇÃO DE INDICAÇÃO DE CLICÁVEL ===== */
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-3px);
+    }
+
+    40% {
+        transform: translateX(3px);
+    }
+
+    60% {
+        transform: translateX(-2px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+}
+
+/* Classe aplicada via JS para sincronizar */
+.wiggle-animate {
+    animation: wiggle 0.4s ease-in-out;
+}
+
+/* Desativa animação quando expandido/revelado ou em hover */
+.interactive-card.expanded,
+.accordion details[open],
+.reveal-btn.revealed,
+.interactive-card:hover,
+.accordion details:hover,
+.reveal-btn:hover,
+.module-card-intro:hover {
+    animation: none !important;
+}
+
+/* Respeita preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    .wiggle-animate {
+        animation: none !important;
+    }
+}
+
+/* ===== PBL: QUESTÕES DO MÓDULO ===== */
+.module-questions {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.module-questions p {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--spacing-md);
+}
+
+.module-questions ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.module-questions li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.module-questions li:last-child {
+    border-bottom: none;
+}
+
+.module-questions li::before {
+    content: '❓';
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Q&A SUMMARY STYLING ===== */
+.qa-summary {
+    margin: var(--spacing-xl) 0;
+}
+
+.qa-summary .accordion details {
+    margin-bottom: var(--spacing-md);
+    border: 2px solid var(--border-color);
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.02) 0%, transparent 100%);
+}
+
+.qa-summary .accordion details[open] {
+    border-color: var(--primary-color);
+}
+
+.qa-summary .accordion summary {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.qa-summary .qa-answer {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    margin: 0;
+}
+
+.qa-summary .qa-answer p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.qa-summary .qa-answer ul,
+.qa-summary .qa-answer ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+.qa-summary .qa-answer li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+/* Highlight box success variant */
+.highlight-box.sucesso {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-left: 4px solid var(--success);
+}
+
+.highlight-box.sucesso h4 {
+    color: #2E7D32;
+}
+
+/* Dark mode support for Q&A */
+body.high-contrast .qa-summary .accordion details {
+    background: var(--bg-secondary);
+}
+
+body.high-contrast .qa-summary .qa-answer {
+    background: linear-gradient(135deg, #1B3B1A 0%, #2E5C2D 100%);
+}
+
+body.high-contrast .module-questions {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
 }

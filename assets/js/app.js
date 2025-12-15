@@ -102,13 +102,32 @@ const App = {
         const menuEl = document.getElementById('menu-content');
         menuEl.innerHTML = "";
 
-        this.data.modules.forEach(mod => {
+        this.data.modules.forEach((mod, modIndex) => {
             const group = document.createElement('div');
             group.className = 'module-group';
+            group.dataset.moduleId = mod.id;
 
-            const title = document.createElement('span');
+            // Container for pages (collapsible)
+            const pagesContainer = document.createElement('div');
+            pagesContainer.className = 'module-pages';
+
+            const title = document.createElement('button');
             title.className = 'module-title';
-            title.textContent = mod.title;
+            title.setAttribute('type', 'button');
+            title.setAttribute('aria-expanded', 'true');
+            title.innerHTML = `
+                <span class="module-title-text">${mod.title}</span>
+                <span class="module-toggle-icon">▼</span>
+            `;
+
+            // Toggle collapse/expand on click
+            title.onclick = () => {
+                const isExpanded = title.getAttribute('aria-expanded') === 'true';
+                title.setAttribute('aria-expanded', !isExpanded);
+                pagesContainer.classList.toggle('collapsed');
+                group.classList.toggle('collapsed');
+            };
+
             group.appendChild(title);
 
             mod.pages.forEach(page => {
@@ -116,22 +135,30 @@ const App = {
                 link.href = "#";
                 link.className = 'menu-link locked';
                 link.dataset.id = page.id;
+                link.dataset.moduleId = mod.id;
                 link.textContent = page.title;
                 link.onclick = (e) => {
                     e.preventDefault();
                     // Find global index
                     const idx = this.flatPages.findIndex(p => p.id === page.id);
                     const isExtras = mod.id === 'extras';
-                    // Extras são sempre acessíveis
+                    // Extras são sempre acessíveis (mas não alteram o progresso)
                     if (idx <= this.maxIndexReached || isExtras) {
                         this.currentIndex = idx;
                         this.loadPage(idx);
-                        this.saveProgress(); // Ensure location updates if they jumped back
+                        // Só salva progresso se NÃO for extras
+                        if (!isExtras) {
+                            this.saveProgress();
+                        } else {
+                            // Apenas atualiza menu visual sem salvar progresso
+                            this.updateMenuState();
+                        }
                     }
                 };
-                group.appendChild(link);
+                pagesContainer.appendChild(link);
             });
 
+            group.appendChild(pagesContainer);
             menuEl.appendChild(group);
         });
 
@@ -500,11 +527,13 @@ const App = {
         contentArea.querySelectorAll('.interactive-card').forEach(card => {
             card.onclick = () => {
                 card.classList.toggle('expanded');
+                if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
             };
             card.onkeypress = (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
                     card.classList.toggle('expanded');
+                    if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
                 }
             };
             card.setAttribute('tabindex', '0');
@@ -521,9 +550,63 @@ const App = {
                     btn.classList.add('revealed');
                     btn.textContent = '✓ Revelado';
                     btn.disabled = true;
+                    if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
                 }
             };
         });
+
+        // 5. ACCORDIONS - Som ao expandir
+        contentArea.querySelectorAll('.accordion details').forEach(details => {
+            details.addEventListener('toggle', () => {
+                if (details.open && typeof AudioManager !== 'undefined') {
+                    AudioManager.playExpand();
+                }
+            });
+        });
+
+        // Iniciar animação de wiggle sincronizada
+        this.startWiggleSync();
+    },
+
+    // Sincroniza animação de wiggle em todos os elementos interativos
+    wiggleInterval: null,
+    startWiggleSync: function () {
+        // Limpar intervalo anterior se existir
+        if (this.wiggleInterval) {
+            clearInterval(this.wiggleInterval);
+        }
+
+        const triggerWiggle = () => {
+            // Selecionar APENAS elementos que são realmente clicáveis e expandem/revelam conteúdo
+            // NÃO incluir .module-card-intro que apenas têm efeitos de hover (sem ação de clique)
+            const elements = document.querySelectorAll(
+                '.interactive-card:not(.expanded), ' +  // Cards que expandem ao clicar
+                '.accordion details:not([open]), ' +    // Accordions expandíveis
+                '.reveal-btn:not(.revealed), ' +        // Botões de revelar conteúdo
+                '#btn-start-tutorial'                   // Botão de iniciar tutorial
+            );
+
+            elements.forEach(el => {
+                // Remover classe primeiro para reiniciar animação
+                el.classList.remove('wiggle-animate');
+                // Forçar reflow
+                void el.offsetWidth;
+                // Adicionar classe de animação
+                el.classList.add('wiggle-animate');
+            });
+
+            // Remover classe após animação terminar (400ms)
+            setTimeout(() => {
+                elements.forEach(el => el.classList.remove('wiggle-animate'));
+            }, 500);
+        };
+
+        // Primeira execução após 2 segundos
+        setTimeout(() => {
+            triggerWiggle();
+            // Depois a cada 3 segundos
+            this.wiggleInterval = setInterval(triggerWiggle, 3000);
+        }, 2000);
     }
 };
 

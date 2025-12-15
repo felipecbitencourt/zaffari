@@ -96,9 +96,27 @@
         </div>
     </div>
 
+    <!-- Tutorial Overlay (fundo escuro) -->
+    <div id="tutorial-overlay" class="tutorial-overlay"></div>
+
+    <!-- Tutorial Tooltip (separado para z-index funcionar) -->
+    <div id="tutorial-tooltip" class="tutorial-tooltip">
+        <div class="tutorial-tooltip-content">
+            <p id="tutorial-text"></p>
+        </div>
+        <div class="tutorial-tooltip-actions">
+            <span id="tutorial-step-indicator"></span>
+            <div class="tutorial-buttons">
+                <button id="tutorial-skip" class="tutorial-btn-skip">Pular</button>
+                <button id="tutorial-next" class="tutorial-btn-next">Próximo →</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/scorm-api.js"></script>
     <script src="assets/js/audio-manager.js"></script>
+    <script src="assets/js/tutorial.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
