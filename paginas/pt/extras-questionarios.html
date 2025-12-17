@@ -14,7 +14,7 @@
             <div class="quiz-module-header-left">
                 <span class="quiz-module-icon">🎯</span>
                 <h3 data-i18n="extras.quiz.modules.m1.title">Módulo 1: Papel Estratégico do SAC</h3>
-                <span class="quiz-count" data-i18n="extras.quiz.modules.m1.count">3 questões</span>
+                <span class="quiz-count" data-i18n="extras.quiz.modules.m1.count">5 questões</span>
             </div>
             <div class="quiz-module-header-right">
                 <span class="quiz-status locked-status" data-i18n="extras.quiz.lock_msg">🔒 Conclua o módulo para
@@ -95,6 +95,52 @@
                 <div class="feedback" style="display:none;"
                     data-i18n="[html]extras.quiz.modules.m1.questions.q3.feedback">
                     <strong>Resposta Correta!</strong> O sistema calcula o prazo baseado na categoria registrada.
+                </div>
+            </div>
+
+            <!-- Questão 4: Atendimentos Ativos -->
+            <div class="quiz-block" data-question="m1-q4">
+                <p class="question"><strong>Questão 4:</strong> Quais atividades fazem parte dos atendimentos ATIVOS do
+                    SAC?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Receber reclamações é atendimento RECEPTIVO, não ativo.">A) Receber
+                        reclamações e sugestões dos clientes.</button>
+                    <button class="quiz-option" data-correct="true">B) Ativação de cartões, comunicação de promoções e
+                        reversão de cancelamentos.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Responder e-mails é atendimento RECEPTIVO. Atendimento ativo é quando o SAC inicia o contato.">C)
+                        Responder e-mails de clientes.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Consultar informações é uma atividade interna, não um tipo de atendimento.">D)
+                        Consultar informações na Intranet.</button>
+                </div>
+                <div class="feedback" style="display:none;">
+                    <strong>Resposta Correta!</strong> Atendimentos ativos são quando o SAC entra em contato com o
+                    cliente proativamente.
+                </div>
+            </div>
+
+            <!-- Questão 5: Melhoria Contínua -->
+            <div class="quiz-block" data-question="m1-q5">
+                <p class="question"><strong>Questão 5:</strong> Você percebe que vários clientes ligam com a mesma
+                    dúvida sobre uma nova promoção. Qual atitude demonstra compromisso com a melhoria contínua?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Atender sem sinalizar não resolve o problema estrutural.">A) Continuar
+                        atendendo cada um individualmente sem sinalizar o padrão.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Reclamar não contribui para a melhoria do processo.">B) Comentar com os
+                        colegas que os clientes não leem o regulamento.</button>
+                    <button class="quiz-option" data-correct="true">C) Sinalizar o padrão observado ao supervisor para
+                        ajustar a comunicação.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Mandar o cliente buscar informação sozinho demonstra falta de cuidado.">D)
+                        Dizer ao cliente para procurar no site.</button>
+                </div>
+                <div class="feedback" style="display:none;">
+                    <strong>Resposta Correta!</strong> Identificar padrões e sinalizar problemas ajuda a melhorar o
+                    processo para todos.
                 </div>
             </div>
         </div>
@@ -212,7 +258,7 @@
             <div class="quiz-module-header-left">
                 <span class="quiz-module-icon">⚖️</span>
                 <h3 data-i18n="extras.quiz.modules.m3.title">Módulo 3: CDC e Legislação</h3>
-                <span class="quiz-count" data-i18n="extras.quiz.modules.m3.count">4 questões</span>
+                <span class="quiz-count" data-i18n="extras.quiz.modules.m3.count">7 questões</span>
             </div>
             <div class="quiz-module-header-right">
                 <span class="quiz-status locked-status" data-i18n="extras.quiz.lock_msg">🔒 Conclua o módulo para
@@ -320,6 +366,74 @@
                     <strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏
                 </div>
             </div>
+
+            <!-- Questão 5: Caminho do Sistema - Assistência Técnica -->
+            <div class="quiz-block" data-question="m3-q5">
+                <p class="question"><strong>Questão 5:</strong> Um cliente comprou um liquidificador há 2 meses e o
+                    motor queimou. Onde você registra esse atendimento?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="RECLAMAÇÃO é para produtos com problema na entrega ou qualidade, não para orientar sobre assistência.">A)
+                        RECLAMAÇÃO → ELETRO</button>
+                    <button class="quiz-option" data-correct="true">B) INFORMAÇÃO → COMPRAS → DADOS DA ASSISTÊNCIA
+                        TÉCNICA</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="2 meses ainda está dentro dos 90 dias para produtos duráveis. Podemos ajudar!">C)
+                        Informo que não podemos ajudar pois passou de 30 dias.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="TROCA DE MERCADORIAS é para produtos comprados por engano (tamanho, cor, voltagem).">D)
+                        INFORMAÇÃO → COMPRAS → TROCA DE MERCADORIAS</button>
+                </div>
+                <div class="feedback" style="display:none;">
+                    <strong>Resposta Correta!</strong> Produtos Eletro devem ser direcionados à assistência técnica da
+                    marca.
+                </div>
+            </div>
+
+            <!-- Questão 6: Perecíveis Online -->
+            <div class="quiz-block" data-question="m3-q6">
+                <p class="question"><strong>Questão 6:</strong> Qual é o prazo para troca de produtos perecíveis com
+                    validade curta (carnes, laticínios) comprados online?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="7 dias é para produtos não perecíveis. Perecíveis têm prazo menor por segurança alimentar.">A)
+                        7 dias corridos após o recebimento.</button>
+                    <button class="quiz-option" data-correct="true">B) 24 horas após a entrega.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="30 dias é o prazo para o fornecedor resolver defeitos, não para troca de perecíveis.">C)
+                        30 dias após a compra.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Existe sim a possibilidade de troca de perecíveis, desde que em até 24h.">D)
+                        Não há possibilidade de troca para perecíveis online.</button>
+                </div>
+                <div class="feedback" style="display:none;">
+                    <strong>Resposta Correta!</strong> Por segurança alimentar, perecíveis devem ser trocados em até
+                    24h.
+                </div>
+            </div>
+
+            <!-- Questão 7: Boas Práticas -->
+            <div class="quiz-block" data-question="m3-q7">
+                <p class="question"><strong>Questão 7:</strong> Quais são as 4 boas práticas essenciais para um
+                    atendimento de qualidade?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Velocidade sem qualidade não garante bom atendimento. Precisamos ouvir e registrar corretamente.">A)
+                        Atender rápido, transferir para outro setor, encerrar o atendimento, fechar o caso.</button>
+                    <button class="quiz-option" data-correct="true">B) Escuta ativa, sondagem completa,
+                        cordialidade/empatia e registro preciso.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Ler o script mecanicamente não demonstra empatia. O atendimento deve ser humanizado.">C)
+                        Ler o script, confirmar dados, encerrar o contato, aguardar retorno.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-feedback-wrong="Resolver o problema é importante, mas sem as boas práticas o cliente pode ficar insatisfeito mesmo com solução.">D)
+                        Resolver o problema, não importa como.</button>
+                </div>
+                <div class="feedback" style="display:none;">
+                    <strong>Resposta Correta!</strong> Essas 4 práticas garantem atendimentos claros, organizados e sem
+                    retrabalho.
+                </div>
+            </div>
         </div>
         <div class="quiz-locked-overlay">
             <span class="lock-icon">🔒</span>
@@ -404,7 +518,47 @@
 
         // Inicializar handlers de quiz
         initQuizHandlers();
+
+        // Restaurar progresso salvo
+        restoreQuizProgress();
     })();
+
+    // Restaurar progresso dos quizzes
+    function restoreQuizProgress() {
+        const progress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
+
+        Object.keys(progress).forEach(questionId => {
+            const quizBlock = document.querySelector(`.quiz-block[data-question="${questionId}"]`);
+            if (quizBlock) {
+                const isCorrect = progress[questionId];
+                const feedback = quizBlock.querySelector('.feedback');
+
+                quizBlock.classList.add('answered');
+
+                // Marcar opção correta/selecionada
+                quizBlock.querySelectorAll('.quiz-option').forEach(opt => {
+                    opt.disabled = true;
+                    if (opt.dataset.correct === 'true') {
+                        opt.classList.add('correct');
+                    } else if (!isCorrect && opt.dataset.correct === 'false') {
+                        // Se errou, não sabemos exatamente qual incorreta clicou sem salvar índice, 
+                        // mas podemos deixar sem destaque negativo específico ou assumir a lógica visual padrão
+                    }
+                });
+
+                if (isCorrect) {
+                    feedback.classList.add('correct');
+                } else {
+                    feedback.classList.add('incorrect');
+                    // Restaurar texto de erro se necessário
+                    const incorrectMsg = (window.i18n && window.i18n.t) ? window.i18n.t('extras.quiz.feedback_incorrect') : '<strong>Resposta Incorreta!</strong> Veja a alternativa correta destacada em verde.';
+                    feedback.innerHTML = incorrectMsg;
+                }
+
+                feedback.style.display = 'block';
+            }
+        });
+    }
 
     // Inicializar handlers de quiz
     function initQuizHandlers() {
@@ -441,6 +595,14 @@
                 }
 
                 feedback.style.display = 'block';
+
+                // Salvar progresso
+                const questionId = quizBlock.dataset.question;
+                if (questionId) {
+                    const progress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
+                    progress[questionId] = isCorrect;
+                    localStorage.setItem('quiz_progress', JSON.stringify(progress));
+                }
             });
         });
     }

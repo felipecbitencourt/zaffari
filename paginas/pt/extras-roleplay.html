@@ -227,11 +227,22 @@
         // Iniciar música automaticamente ao carregar
         bgMusic.play().catch(() => { });
 
-        // Parar música ao sair da página
-        window.addEventListener('beforeunload', function () {
+        // Função de cleanup para parar música (chamada pelo app.js ao trocar página)
+        function cleanupRoleplay() {
             bgMusic.pause();
             bgMusic.currentTime = 0;
-        });
+            stopMurmur();
+            if (audioContext) {
+                audioContext.close().catch(() => { });
+                audioContext = null;
+            }
+        }
+
+        // Registrar cleanup globalmente para que app.js possa chamar
+        window.roleplayCleanup = cleanupRoleplay;
+
+        // Parar música ao sair da página (fallback)
+        window.addEventListener('beforeunload', cleanupRoleplay);
 
         // Elementos DOM
         const clienteFala = document.getElementById('cliente-fala');

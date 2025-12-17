@@ -11,7 +11,7 @@
         "hero": {
             "welcome": "Bienvenido al curso",
             "title": "Dentro del SAC",
-            "subtitle": "Capacítese para ofrecer una atención de excelencia y transformar cada interacción en una experiencia positiva para el cliente.",
+            "subtitle": "Capacítese para ofrecer un <strong>Servicio de Atención al Cliente</strong> de excelencia y transformar cada interacción en una experiencia positiva.",
             "badge": "✨ Entrenamiento Oficial",
             "img_alt": "Operador de call center confiado conversando con cliente"
         },
@@ -80,7 +80,8 @@
             "img_alt": "Joven consultora sonriendo y hablando por los auriculares",
             "sabia": {
                 "title": "¿Sabías que...?",
-                "text": "Estudios muestran que <strong>86% de los consumidores</strong> están dispuestos a pagar más por una mejor experiencia de atención!"
+                "text": "Estudios muestran que <strong>86% de los consumidores</strong> están dispuestos a pagar más por una mejor experiencia de atención!",
+                "source": "Fuente: RightNow Customer Experience Impact Report (Oracle, 2012)"
             },
             "learning_path": "A lo largo del curso, comprenderás mejor:",
             "cards": {
@@ -131,7 +132,7 @@
             "card_text": "Una atención humanizada, eficiente y de alta calidad no solo resuelve demandas: construye confianza, fortalece vínculos y contribuye directamente a la fidelización de los clientes.",
             "text3": "Además del público externo, el SAC también desempeña un papel fundamental en el soporte a los colaboradores de la empresa, aclarando dudas sobre procesos, sistemas y estándares de atención. Esta actuación contribuye a la estandarización, la organización interna y la excelencia del servicio prestado.",
             "box_attention": {
-                "title": "💡 Curiosidad:",
+                "title": "Curiosidad",
                 "text": "Estudios sobre experiencia del cliente indican que una sola interacción negativa puede impactar más la percepción de la marca que varias interacciones positivas. Por eso, <strong>cada contacto cuenta</strong>."
             },
             "text4": "El SAC va mucho más allá de atender llamadas. Representa la voz de la empresa en el contacto directo con el cliente. Cada atención influye en cómo el consumidor percibe la marca y evalúa su experiencia.",
@@ -222,6 +223,28 @@
                 "opt_c": "C) No hay diferencia práctica, el plazo es siempre el mismo.",
                 "opt_d": "D) Solo para cumplir con una formalidad burocrática.",
                 "feedback": "<strong>¡Correcto!</strong> Categorías específicas tienen flujos y plazos específicos (SLA). Usar la categoría incorrecta puede generar atrasos y frustración."
+            }
+        },
+        "p5": {
+            "title": "¿Cuándo realizar llamadas activas?",
+            "intro": "Además de la atención receptiva, el SAC realiza contactos activos con clientes, especialmente en campañas promocionales y acciones relacionadas con Tarjetas del Grupo:",
+            "timeline": {
+                "t1": {
+                    "title": "1. Activación de tarjetas",
+                    "text": "Contactar clientes para activar nuevas tarjetas emitidas."
+                },
+                "t2": {
+                    "title": "2. Actualización catastral",
+                    "text": "Mantener los datos de los clientes siempre actualizados."
+                },
+                "t3": {
+                    "title": "3. Comunicación de promociones",
+                    "text": "Informar sobre ofertas exclusivas y beneficios."
+                },
+                "t4": {
+                    "title": "4. Reversión de cancelaciones",
+                    "text": "Trabajar para retener clientes que desean cancelar servicios."
+                }
             }
         },
         "p6": {
@@ -656,6 +679,10 @@
                 "especiais": {
                     "title": "⭐ Especiales",
                     "subtitle": "Actividades exclusivas desbloqueadas al completar módulos específicos."
+                },
+                "referencias": {
+                    "title": "🔗 Referencias",
+                    "subtitle": "Materiales complementarios y enlaces útiles."
                 }
             },
             "cards": {
@@ -682,6 +709,22 @@
                 "roleplay": {
                     "title": "Roleplay",
                     "desc": "Practique situaciones reales de atención a través de simulaciones interactivas."
+                },
+                "ref1": {
+                    "title": "Material Complementario 1",
+                    "desc": "Espacio reservado para futuro archivo de referencia."
+                },
+                "ref2": {
+                    "title": "Material Complementario 2",
+                    "desc": "Espacio reservado para futuro archivo de referencia."
+                },
+                "ref3": {
+                    "title": "Material Complementario 3",
+                    "desc": "Espacio reservado para futuro archivo de referencia."
+                },
+                "ref4": {
+                    "title": "Material Complementario 4",
+                    "desc": "Espacio reservado para futuro archivo de referencia."
                 }
             },
             "lock_msg": "Complete los módulos para desbloquear",

@@ -9,9 +9,9 @@
     },
     "intro": {
         "hero": {
-            "welcome": "Bem-Vindo ao curso",
+            "welcome": "Como aproveitar este curso?",
             "title": "Por Dentro do SAC",
-            "subtitle": "Capacite-se para oferecer um atendimento de excelência e transformar cada interação em uma experiência positiva para o cliente.",
+            "subtitle": "Capacite-se para oferecer um <strong>Serviço de Atendimento ao Cliente</strong> de excelência e transformar cada interação em uma experiência positiva.",
             "badge": "✨ Treinamento Oficial",
             "img_alt": "Operador de call center confiante conversando com cliente"
         },
@@ -80,7 +80,8 @@
             "img_alt": "Jovem consultora sorrindo falando ao headset",
             "sabia": {
                 "title": "Você Sabia?",
-                "text": "Estudos mostram que <strong>86% dos consumidores</strong> estão dispostos a pagar mais por uma experiência de atendimento melhor!"
+                "text": "Estudos mostram que <strong>86% dos consumidores</strong> estão dispostos a pagar mais por uma experiência de atendimento melhor!",
+                "source": "Fonte: RightNow Customer Experience Impact Report (Oracle, 2012)"
             },
             "learning_path": "Ao longo do curso, você irá compreender melhor:",
             "cards": {
@@ -131,7 +132,7 @@
             "card_text": "Um atendimento humanizado, eficiente e de alta qualidade não apenas resolve demandas: ele constrói confiança, fortalece vínculos e contribui diretamente para a fidelização dos clientes.",
             "text3": "Além do público externo, o SAC também desempenha um papel fundamental no suporte aos colaboradores da empresa, esclarecendo dúvidas sobre processos, sistemas e padrões de atendimento. Essa atuação contribui para a padronização, a organização interna e a excelência do serviço prestado.",
             "box_attention": {
-                "title": "💡 Curiosidade:",
+                "title": "Curiosidade",
                 "text": "Estudos de experiência do cliente indicam que uma única interação negativa pode impactar mais a percepção da marca do que várias interações positivas. Por isso, <strong>cada contato conta</strong>."
             },
             "text4": "O SAC vai muito além de atender ligações. Ele representa a voz da empresa no contato direto com o cliente. Cada atendimento influencia a forma como o consumidor percebe a marca e avalia sua experiência.",
@@ -224,8 +225,30 @@
                 "feedback": "<strong>Resposta Correta!</strong> A categoria correta define o prazo correto (8 dias), gerenciando a expectativa do cliente."
             }
         },
+        "p5": {
+            "title": "Quando realizar atendimentos ativos?",
+            "intro": "Além dos atendimentos receptivos, o SAC realiza contatos ativos com clientes, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
+            "timeline": {
+                "t1": {
+                    "title": "1. Ativação de cartões",
+                    "text": "Entrar em contato com clientes para ativar novos cartões emitidos."
+                },
+                "t2": {
+                    "title": "2. Atualização cadastral",
+                    "text": "Manter os dados dos clientes sempre atualizados."
+                },
+                "t3": {
+                    "title": "3. Comunicação de promoções",
+                    "text": "Informar sobre ofertas exclusivas e benefícios."
+                },
+                "t4": {
+                    "title": "4. Reversão de cancelamentos",
+                    "text": "Trabalhar para reter clientes que desejam cancelar serviços."
+                }
+            }
+        },
         "p6": {
-            "title": "📝 Resumo: Perguntas e Respostas",
+            "title": "📝 O que aprendemos no Módulo 1?",
             "lead": "Parabéns por concluir o primeiro módulo! Veja abaixo as principais questões que exploramos e suas respostas.",
             "accordion": {
                 "a1": {
@@ -268,7 +291,7 @@
             }
         },
         "conquistas": {
-            "title": "Parabéns!",
+            "title": "🏆 Quais foram minhas conquistas?",
             "subtitle": "Você completou o <strong>Módulo 1: Por que o SAC é estratégico?</strong>",
             "badges_title": "Medalhas Conquistadas",
             "badges_subtitle": "Essas medalhas ajudam a desbloquear os materiais de Fixação!",
@@ -391,8 +414,16 @@
                 "feedback": "<strong>Resposta Correta!</strong> O cliente deve entrar ativamente via Link ou QR Code da loja específica."
             }
         },
+        "p4": {
+            "title": "Como encontrar no encarte?",
+            "intro": "Agora que você conhece o caminho da Intranet, vamos testar na prática!"
+        },
+        "p5": {
+            "title": "Por que consultar corretamente?",
+            "intro": "Consultar a fonte oficial evita erros e garante a satisfação do cliente."
+        },
         "p6": {
-            "title": "📝 Resumo: Perguntas e Respostas",
+            "title": "📝 O que aprendemos no Módulo 2?",
             "lead": "Excelente! Você concluiu o módulo sobre consulta de informações. Revise as principais questões abordadas.",
             "accordion": {
                 "a1": {
@@ -430,7 +461,7 @@
             }
         },
         "conquistas": {
-            "title": "Parabéns!",
+            "title": "🏆 Quais foram minhas conquistas?",
             "subtitle": "Você completou o <strong>Módulo 2: Onde encontrar informações?</strong>",
             "badges_title": "Medalhas Conquistadas",
             "badges_subtitle": "Essas medalhas ajudam a desbloquear os materiais de Fixação!",
@@ -575,14 +606,14 @@
             }
         },
         "p7": {
-            "title": "🏆 Desafio Final",
+            "title": "🏆 Você está pronto para o desafio?",
             "intro": "A qualidade do atendimento depende de atenção, escuta ativa, empatia e registros completos e corretos.",
             "box_title": "💭 Para Refletir",
             "box_text": "<strong>Imagine que você é um supervisor analisando um caso de reclamação antiga. Você encontra um registro anterior que diz apenas 'Cliente reclamou'. Como isso afeta sua capacidade de resolver o problema hoje? Reflita sobre o impacto dos detalhes.</strong>",
             "placeholder": "Sua resposta..."
         },
         "p8": {
-            "title": "📝 Resumo e Encerramento",
+            "title": "📝 O que aprendemos no curso?",
             "lead": "Parabéns! Você chegou ao final do curso 'Por Dentro do SAC'. 🎉",
             "intro_summary": "Antes de encerrar, veja um resumo das principais questões que respondemos sobre o CDC:",
             "accordion": {
@@ -627,7 +658,7 @@
             "success_text": "Siga sempre em frente - cada atendimento é uma oportunidade de fazer a diferença."
         },
         "conquistas": {
-            "title": "Parabéns!",
+            "title": "🏆 Quais foram minhas conquistas?",
             "subtitle": "Você completou o <strong>Módulo 3: Como aplicar o CDC?</strong>",
             "badges_title": "Medalhas Conquistadas",
             "badges_subtitle": "Você conquistou todas as medalhas! A seção Fixação está totalmente desbloqueada!",
@@ -656,6 +687,10 @@
                 "especiais": {
                     "title": "⭐ Especiais",
                     "subtitle": "Atividades exclusivas desbloqueadas ao completar módulos específicos."
+                },
+                "referencias": {
+                    "title": "🔗 Referências",
+                    "subtitle": "Materiais de apoio e documentos complementares para aprofundar seu conhecimento."
                 }
             },
             "cards": {
@@ -682,6 +717,22 @@
                 "roleplay": {
                     "title": "Roleplay",
                     "desc": "Pratique situações reais de atendimento através de simulações interativas."
+                },
+                "ref1": {
+                    "title": "Material Complementar 1",
+                    "desc": "Espaço reservado para futuro arquivo de referência."
+                },
+                "ref2": {
+                    "title": "Material Complementar 2",
+                    "desc": "Espaço reservado para futuro arquivo de referência."
+                },
+                "ref3": {
+                    "title": "Material Complementar 3",
+                    "desc": "Espaço reservado para futuro arquivo de referência."
+                },
+                "ref4": {
+                    "title": "Material Complementar 4",
+                    "desc": "Espaço reservado para futuro arquivo de referência."
                 }
             },
             "lock_msg": "Complete os módulos para desbloquear",
@@ -1019,4 +1070,3 @@
         }
     }
 }
-```

@@ -63,6 +63,11 @@ const Tutorial = {
             text: '➡️ <strong>Navegação</strong><br>Use "Anterior" e "Próximo" para navegar entre as páginas do curso.',
             position: 'top',
             hideInteractiveDemo: true
+        },
+        {
+            selector: '.content-nav',
+            text: '⌨️ <strong>Atalhos de Teclado</strong><br>Você também pode navegar usando o teclado:<br>• <kbd>←</kbd> Página anterior<br>• <kbd>→</kbd> Próxima página<br>• <kbd>Esc</kbd> Fechar popups<br>• <kbd>M</kbd> Abrir/fechar menu<br>• <kbd>?</kbd> Ver atalhos',
+            position: 'top'
         }
     ],
 

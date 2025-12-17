@@ -49,13 +49,19 @@
                 },
                 {
                     "id": "m1-p5",
-                    "title": "Atendimentos Ativos",
-                    "file": "paginas/pt/m1-p5-prazos.html",
+                    "title": "Quando realizar atendimentos ativos?",
+                    "file": "paginas/pt/m1-p5-atendimentos-ativos.html",
                     "type": "content"
                 },
                 {
                     "id": "m1-p6",
-                    "title": "📝 Resumo: Perguntas e Respostas",
+                    "title": "Quais são os prazos de atendimento?",
+                    "file": "paginas/pt/m1-p5-prazos.html",
+                    "type": "content"
+                },
+                {
+                    "id": "m1-p7",
+                    "title": "📝 O que aprendemos no Módulo 1?",
                     "file": "paginas/pt/m1-p6-resumo.html",
                     "type": "summary"
                 },
@@ -97,19 +103,19 @@
                 },
                 {
                     "id": "m2-p4",
-                    "title": "Colocando em Prática",
+                    "title": "Como encontrar no encarte?",
                     "file": "paginas/pt/m2-p4-encartes.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p5",
-                    "title": "Benefícios da Consulta Correta",
+                    "title": "Por que consultar corretamente?",
                     "file": "paginas/pt/m2-p5-whatsapp.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p6",
-                    "title": "📝 Resumo: Perguntas e Respostas",
+                    "title": "📝 O que aprendemos no Módulo 2?",
                     "file": "paginas/pt/m2-p6-resumo.html",
                     "type": "summary"
                 },
@@ -169,13 +175,13 @@
                 },
                 {
                     "id": "m3-p7",
-                    "title": "🏆 Desafio Final",
+                    "title": "🏆 Você está pronto para o desafio?",
                     "file": "paginas/pt/m3-p7-desafio-final.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m3-p8",
-                    "title": "📝 Resumo e Encerramento",
+                    "title": "📝 O que aprendemos no curso?",
                     "file": "paginas/pt/m3-p8-encerramento.html",
                     "type": "summary"
                 },
@@ -195,6 +201,12 @@
                     "id": "extras-hub",
                     "title": "🧠 Menu de Fixação",
                     "file": "paginas/pt/extras-hub.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-metricas",
+                    "title": "📊 Meu Desempenho",
+                    "file": "paginas/pt/extras-metricas.html",
                     "type": "extras"
                 },
                 {

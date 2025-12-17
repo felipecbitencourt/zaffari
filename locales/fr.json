@@ -11,7 +11,7 @@
         "hero": {
             "welcome": "Bienvenue à la formation",
             "title": "Au Cœur du SAC",
-            "subtitle": "Formez-vous pour offrir un service d'excellence et transformer chaque interaction en une expérience positive pour le client.",
+            "subtitle": "Formez-vous pour offrir un <strong>Service Client</strong> d'excellence et transformer chaque interaction en une expérience positive.",
             "badge": "✨ Formation Officielle",
             "img_alt": "Opérateur de centre d'appels confiant en conversation avec un client"
         },
@@ -80,7 +80,8 @@
             "img_alt": "Jeune conseillère souriante parlant avec un casque",
             "sabia": {
                 "title": "Le Saviez-Vous ?",
-                "text": "Des études montrent que <strong>86% des consommateurs</strong> sont prêts à payer plus pour une meilleure expérience de service !"
+                "text": "Des études montrent que <strong>86% des consommateurs</strong> sont prêts à payer plus pour une meilleure expérience de service !",
+                "source": "Source : RightNow Customer Experience Impact Report (Oracle, 2012)"
             },
             "learning_path": "Tout au long du cours, vous comprendrez mieux :",
             "cards": {
@@ -131,7 +132,7 @@
             "card_text": "Un service humanisé, efficace et de haute qualité ne résout pas seulement les demandes : il crée la confiance, renforce les liens et contribue directement à la fidélisation des clients.",
             "text3": "En plus du public externe, le SAC joue également un rôle fondamental dans le soutien aux employés de l'entreprise, clarifiant les doutes sur les processus, les systèmes et les normes de service. Cette action contribue à la standardisation, à l'organisation interne et à l'excellence du service fourni.",
             "box_attention": {
-                "title": "💡 Curiosité :",
+                "title": "Curiosité",
                 "text": "Des études sur l'expérience client indiquent qu'une seule interaction négative peut avoir plus d'impact sur la perception de la marque que plusieurs interactions positives. C'est pourquoi <strong>chaque contact compte</strong>."
             },
             "text4": "Le SAC va bien au-delà de répondre aux appels. Il représente la voix de l'entreprise dans le contact direct avec le client. Chaque service influence la façon dont le consommateur perçoit la marque et évalue son expérience.",
@@ -656,6 +657,10 @@
                 "especiais": {
                     "title": "⭐ Spéciaux",
                     "subtitle": "Activités exclusives débloquées en complétant des modules spécifiques."
+                },
+                "referencias": {
+                    "title": "🔗 Références",
+                    "subtitle": "Matériaux complémentaires et liens utiles."
                 }
             },
             "cards": {
@@ -681,7 +686,23 @@
                 },
                 "roleplay": {
                     "title": "Jeu de Rôle",
-                    "desc": "Pratiquez des situations de service réelles à travers des simulations interactives."
+                    "desc": "Pratique des situations de service réelles à travers des simulations interactives."
+                },
+                "ref1": {
+                    "title": "Matériel Complémentaire 1",
+                    "desc": "Espace réservé pour futur fichier de référence."
+                },
+                "ref2": {
+                    "title": "Matériel Complémentaire 2",
+                    "desc": "Espace réservé pour futur fichier de référence."
+                },
+                "ref3": {
+                    "title": "Matériel Complémentaire 3",
+                    "desc": "Espace réservé pour futur fichier de référence."
+                },
+                "ref4": {
+                    "title": "Matériel Complémentaire 4",
+                    "desc": "Espace réservé pour futur fichier de référence."
                 }
             },
             "lock_msg": "Complétez les modules pour débloquer",

@@ -2901,6 +2901,19 @@ body.tutorial-active button.tutorial-highlight {
     font-weight: 700;
 }
 
+.tutorial-tooltip-content kbd {
+    display: inline-block;
+    padding: 0.15em 0.5em;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: 'Inter', monospace;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--primary-color);
+    box-shadow: 0 2px 0 var(--border-color);
+}
+
 .tutorial-tooltip-actions {
     display: flex;
     align-items: center;
@@ -6610,4 +6623,104 @@ body.high-contrast .conquistas-mascot {
 
 .fc-status.unlocked-status~.fc-card-count {
     color: var(--success);
+}
+
+/* ===== GLOSSÁRIO INTERATIVO ===== */
+.glossary-term {
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px dotted var(--primary-color);
+    padding: 0 2px;
+    transition: all var(--transition-fast);
+}
+
+.glossary-term:hover,
+.glossary-term:focus {
+    background: rgba(229, 57, 53, 0.1);
+    border-bottom-style: solid;
+    outline: none;
+}
+
+.glossary-popup {
+    position: fixed;
+    z-index: 10000;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    min-width: 280px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-fast);
+}
+
+.glossary-popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.glossary-popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #C62828 100%);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.glossary-popup-term {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.glossary-popup-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.glossary-popup-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.glossary-popup-definition {
+    padding: var(--spacing-lg);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* Dark mode */
+body.high-contrast .glossary-popup {
+    background: var(--bg-secondary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+body.high-contrast .glossary-popup-definition {
+    color: var(--text-secondary);
+}
+
+body.high-contrast .glossary-term {
+    color: #FF6B6B;
+    border-bottom-color: #FF6B6B;
+}
+
+body.high-contrast .glossary-term:hover,
+body.high-contrast .glossary-term:focus {
+    background: rgba(255, 107, 107, 0.2);
 }
