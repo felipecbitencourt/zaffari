@@ -1,0 +1,1022 @@
+{
+    "global": {
+        "btn_proximo": "Próximo",
+        "btn_anterior": "Anterior",
+        "menu_fixacao": "Menu de Fixação",
+        "menu_videos": "Vídeos",
+        "menu_atividades": "Atividades",
+        "menu_impressao": "Impressão"
+    },
+    "intro": {
+        "hero": {
+            "welcome": "Bem-Vindo ao curso",
+            "title": "Por Dentro do SAC",
+            "subtitle": "Capacite-se para oferecer um atendimento de excelência e transformar cada interação em uma experiência positiva para o cliente.",
+            "badge": "✨ Treinamento Oficial",
+            "img_alt": "Operador de call center confiante conversando com cliente"
+        },
+        "stats": {
+            "modules": "Módulos",
+            "activities": "Atividades",
+            "certification": "Certificação"
+        },
+        "journey": {
+            "title": "Jornada de Aprendizado",
+            "m1": {
+                "title": "Papel Estratégico",
+                "desc": "Entenda como o SAC influencia a reputação da marca e suas responsabilidades.",
+                "tag": "Conceitos"
+            },
+            "m2": {
+                "title": "Ferramentas e Processos",
+                "desc": "Domine a intranet, encartes e canais para respostas rápidas e precisas.",
+                "tag": "Prático"
+            },
+            "m3": {
+                "title": "Legislação e Reclamações",
+                "desc": "Aplique o CDC no dia a dia e reduza reclamações com conhecimento.",
+                "tag": "Legal"
+            }
+        },
+        "fixation": {
+            "title": "Fixação",
+            "quiz": {
+                "title": "Questionários",
+                "desc": "Teste seus conhecimentos com quiz de todos os módulos.",
+                "tag": "Avaliação"
+            },
+            "resume": {
+                "title": "Resumos",
+                "desc": "Revise os principais conceitos e pontos-chave do curso.",
+                "tag": "Revisão"
+            },
+            "activities": {
+                "title": "Atividades",
+                "desc": "Exercícios interativos, flashcards e simulações práticas.",
+                "tag": "Prática"
+            }
+        },
+        "cta": {
+            "title": "Primeira vez aqui?",
+            "desc": "Descubra os recursos de acessibilidade e aprenda a navegar pela plataforma.",
+            "btn": "▶ Iniciar Tutorial"
+        },
+        "start_msg": "Por favor, clique em <strong>\"Iniciar Tutorial\"</strong> antes de dar continuidade."
+    },
+    "m1": {
+        "abertura": {
+            "title": "📍 Por que o SAC é estratégico?",
+            "subtitle": "Neste módulo, vamos explorar a importância do SAC como área estratégica e descobrir como cada atendimento impacta diretamente a imagem da marca.",
+            "questions_title": "Questões que vamos responder:",
+            "q1": "O que o cliente espera ao nos contatar?",
+            "q2": "Qual o papel do SAC além de resolver problemas?",
+            "q3": "Quais são as responsabilidades do nosso time?",
+            "q4": "Por que os prazos de atendimento importam?"
+        },
+        "p1": {
+            "title": "O que o cliente espera?",
+            "lead": "Seja bem-vindo ao treinamento <strong>⚙️ Por Dentro do SAC</strong>.",
+            "intro": "Este curso foi desenvolvido especialmente para o time do Serviço de Atendimento ao Cliente, com o objetivo de fortalecer conhecimentos, alinhar práticas e aprimorar continuamente a qualidade do atendimento oferecido aos clientes no dia a dia.",
+            "img_alt": "Jovem consultora sorrindo falando ao headset",
+            "sabia": {
+                "title": "Você Sabia?",
+                "text": "Estudos mostram que <strong>86% dos consumidores</strong> estão dispostos a pagar mais por uma experiência de atendimento melhor!"
+            },
+            "learning_path": "Ao longo do curso, você irá compreender melhor:",
+            "cards": {
+                "c1": {
+                    "title": "Como funciona o SAC",
+                    "text": "Entenda a estrutura, os canais de atendimento e o fluxo de trabalho da equipe."
+                },
+                "c2": {
+                    "title": "Responsabilidades estratégicas",
+                    "text": "Conheça o papel fundamental que você desempenha na satisfação do cliente e na imagem da marca."
+                },
+                "c3": {
+                    "title": "Impacto no cliente",
+                    "text": "Descubra por que cada atendimento realizado tem impacto direto na experiência do cliente."
+                }
+            },
+            "accordion": {
+                "a1": {
+                    "title": "O que você vai aprender neste módulo?",
+                    "l1": "O papel estratégico do SAC dentro da empresa",
+                    "l2": "Principais responsabilidades da equipe",
+                    "l3": "Importância dos prazos de atendimento",
+                    "l4": "Como cada interação afeta a percepção da marca"
+                },
+                "a2": {
+                    "title": "Por que este treinamento é importante?",
+                    "text": "Um atendimento de excelência não apenas resolve demandas: ele <strong>constrói confiança</strong>, fortalece vínculos e contribui diretamente para a fidelização dos clientes."
+                }
+            },
+            "reflexao": {
+                "title": "Pare e Pense",
+                "text": "Antes de avançar, reflita: <strong>Quando um cliente entra em contato com o SAC, o que você acredita que ele espera encontrar além da solução do problema?</strong>"
+            },
+            "reveal": {
+                "btn": "👁️ Ver possíveis respostas",
+                "title": "O cliente geralmente espera:",
+                "l1": "Ser ouvido com atenção e empatia",
+                "l2": "Receber um atendimento ágil e eficiente",
+                "l3": "Sentir que a empresa se importa com ele",
+                "l4": "Ter clareza sobre os próximos passos",
+                "l5": "Sair satisfeito, mesmo quando a resposta não é a ideal"
+            }
+        },
+        "p2": {
+            "title": "Qual o papel do SAC?",
+            "text1": "O <strong>Serviço de Atendimento ao Cliente</strong> é responsável por gerenciar os canais de relacionamento com os clientes, incluindo atendimentos eletrônicos e telefônicos.",
+            "text2": "Mais do que um setor operacional, o SAC é uma <strong>área estratégica</strong>, essencial para a preservação dos valores, da reputação e da credibilidade das marcas do Grupo.",
+            "card_text": "Um atendimento humanizado, eficiente e de alta qualidade não apenas resolve demandas: ele constrói confiança, fortalece vínculos e contribui diretamente para a fidelização dos clientes.",
+            "text3": "Além do público externo, o SAC também desempenha um papel fundamental no suporte aos colaboradores da empresa, esclarecendo dúvidas sobre processos, sistemas e padrões de atendimento. Essa atuação contribui para a padronização, a organização interna e a excelência do serviço prestado.",
+            "box_attention": {
+                "title": "💡 Curiosidade:",
+                "text": "Estudos de experiência do cliente indicam que uma única interação negativa pode impactar mais a percepção da marca do que várias interações positivas. Por isso, <strong>cada contato conta</strong>."
+            },
+            "text4": "O SAC vai muito além de atender ligações. Ele representa a voz da empresa no contato direto com o cliente. Cada atendimento influencia a forma como o consumidor percebe a marca e avalia sua experiência.",
+            "quiz": {
+                "question": "Um cliente entra em contato frustrado porque seu problema ainda não foi resolvido. Como um operador de SAC com visão estratégica deve encarar esse atendimento?",
+                "opt_a": "A) Como um incômodo que deve ser encerrado o mais rápido possível.",
+                "opt_b": "B) Como uma oportunidade de reverter uma experiência negativa e fortalecer a confiança na marca.",
+                "opt_c": "C) Como uma falha de outro setor que não é sua responsabilidade.",
+                "opt_d": "D) Apenas seguindo o script padrão sem demonstrar empatia.",
+                "feedback": "<strong>Resposta Correta!</strong> Visão estratégica transforma crises em oportunidades de fidelização."
+            }
+        },
+        "p3": {
+            "title": "Quais são nossas responsabilidades?",
+            "intro_list": "Entre as principais atribuições do Serviço de Atendimento ao Cliente, destacam-se:",
+            "intro_p": "O SAC atua como a voz da empresa para o cliente e a voz do cliente para a empresa, garantindo um fluxo constante de informações e melhorias.",
+            "img_alt": "Equipe de call center trabalhando em ambiente moderno",
+            "cards": {
+                "c1": {
+                    "title": "Atendimento Multicanal",
+                    "text": "Oferecer atendimento de excelência por meio de diferentes canais: telefone, e-mail, chat e meios eletrônicos."
+                },
+                "c2": {
+                    "title": "Atendimento Receptivo",
+                    "text": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções."
+                }
+            },
+            "active_title": "📢 Atendimentos Ativos",
+            "active_text": "Realizar atendimentos ativos, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
+            "timeline": {
+                "t1": {
+                    "title": "1. Ativação de cartões",
+                    "text": "Contatar clientes para ativar novos cartões emitidos."
+                },
+                "t2": {
+                    "title": "2. Atualização cadastral",
+                    "text": "Manter os dados dos clientes sempre atualizados."
+                },
+                "t3": {
+                    "title": "3. Comunicação de promoções",
+                    "text": "Informar sobre ofertas exclusivas e benefícios."
+                },
+                "t4": {
+                    "title": "4. Reversão de cancelamentos",
+                    "text": "Trabalhar para reter clientes que desejam cancelar serviços."
+                }
+            },
+            "accordion": {
+                "a1": {
+                    "title": "📋 Gestão e Melhoria Contínua",
+                    "l1": "Organizar e tabular dados, elaborar relatórios e dar suporte às demandas da equipe.",
+                    "l2": "Atuar de forma proativa na identificação de melhorias em scripts e padrões de atendimento.",
+                    "l3": "Contribuir para a evolução contínua do serviço prestado."
+                },
+                "a2": {
+                    "title": "🎓 Desenvolvimento profissional",
+                    "text": "O conhecimento das responsabilidades permite que você atue com mais segurança e assertividade, contribuindo para sua evolução na carreira."
+                }
+            },
+            "quiz": {
+                "question": "Você percebe que vários clientes estão ligando com a mesma dúvida sobre uma nova promoção. Qual a melhor atitude alinhada às responsabilidades de melhoria contínua do SAC?",
+                "opt_a": "A) Continuar atendendo cada um individualmente sem relatar o fato.",
+                "opt_b": "B) Reclamar com os colegas que os clientes não sabem ler o regulamento.",
+                "opt_c": "C) Relatar o padrão observado ao supervisor para que a comunicação da promoção seja ajustada.",
+                "opt_d": "D) Dizer ao cliente para procurar a informação no site.",
+                "feedback": "<strong>Resposta Correta!</strong> Proatividade em identificar padrões ajuda a melhorar o processo para todos."
+            }
+        },
+        "p4": {
+            "title": "Por que registrar corretamente?",
+            "intro": "Outro ponto essencial no trabalho do SAC é o cumprimento dos prazos de atendimento. Prazos bem definidos garantem organização, previsibilidade e eficiência, além de demonstrarem respeito ao cliente e fortalecerem a confiança na marca.",
+            "standard_box": {
+                "title": "⏳ Prazos Padrão",
+                "l1": "<strong>Solicitações:</strong> até 3 dias úteis",
+                "l2": "<strong>Informações:</strong> até 2 dias úteis",
+                "l3": "<strong>Reclamações:</strong> até 2 dias úteis"
+            },
+            "special_box": {
+                "title": "⚠ Prazos Especiais",
+                "l1": "<strong>Danos:</strong> até 5 dias úteis para retorno",
+                "l2": "<strong>Duplicidade de pagamento:</strong> até 8 dias úteis"
+            },
+            "text_footer": "O correto registro da categoria de atendimento é fundamental para que o prazo adequado seja respeitado e o cliente receba retorno no tempo correto.",
+            "quiz": {
+                "question": "Um cliente informa que pagou a fatura duas vezes. Você precisa registrar o atendimento para que ele seja ressarcido. Por que é crucial selecionar a categoria 'Duplicidade de pagamento' em vez de uma categoria genérica de 'Reclamação'?",
+                "opt_a": "A) Porque 'Duplicidade' tem um prazo específico (até 8 dias úteis) para análise financeira detalhada, evitando promessas falsas de solução rápida.",
+                "opt_b": "B) Porque 'Reclamação' é uma categoria que só deve ser usada para mau atendimento na loja física.",
+                "opt_c": "C) Não faz diferença prática, pois o prazo de retorno ao cliente é sempre de 2 dias úteis para qualquer caso.",
+                "opt_d": "D) Apenas para cumprir uma formalidade burocrática, sem impacto real no tratamento do caso.",
+                "feedback": "<strong>Resposta Correta!</strong> A categoria correta define o prazo correto (8 dias), gerenciando a expectativa do cliente."
+            }
+        },
+        "p6": {
+            "title": "📝 Resumo: Perguntas e Respostas",
+            "lead": "Parabéns por concluir o primeiro módulo! Veja abaixo as principais questões que exploramos e suas respostas.",
+            "accordion": {
+                "a1": {
+                    "title": "❓ O que o cliente espera ao nos contatar?",
+                    "text": "O cliente espera mais do que a solução do problema. Ele busca:",
+                    "l1": "Ser ouvido com atenção e empatia",
+                    "l2": "Receber um atendimento ágil e eficiente",
+                    "l3": "Sentir que a empresa se importa com ele",
+                    "l4": "Ter clareza sobre os próximos passos",
+                    "l5": "Sair satisfeito, mesmo quando a resposta não é a ideal"
+                },
+                "a2": {
+                    "title": "❓ Qual o papel do SAC além de resolver problemas?",
+                    "text": "O SAC representa a <strong>voz da empresa</strong> no contato direto com o cliente. Mais do que um setor operacional, é uma área estratégica essencial para:",
+                    "l1": "Preservar valores e reputação da marca",
+                    "l2": "Construir confiança e fortalecer vínculos",
+                    "l3": "Contribuir para a fidelização dos clientes"
+                },
+                "a3": {
+                    "title": "❓ Quais são as responsabilidades do nosso time?",
+                    "text": "As principais responsabilidades incluem:",
+                    "l1": "<strong>Atendimento Multicanal:</strong> telefone, e-mail, chat e meios eletrônicos",
+                    "l2": "<strong>Atendimento Receptivo:</strong> informações, reclamações, sugestões e elogios",
+                    "l3": "<strong>Atendimentos Ativos:</strong> campanhas, ativação de cartões, atualizações cadastrais",
+                    "l4": "<strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias",
+                    "note": "Nota: Definir leis de proteção ao consumidor NÃO é responsabilidade do SAC - o SAC segue as leis."
+                },
+                "a4": {
+                    "title": "❓ Por que os prazos de atendimento importam?",
+                    "text": "Prazos bem definidos garantem organização, previsibilidade e eficiência. O correto registro da categoria de atendimento é fundamental porque o sistema calcula o prazo baseado nela.",
+                    "box_title": "Prazos Padrão",
+                    "l1": "<strong>Solicitações:</strong> até 3 dias úteis",
+                    "l2": "<strong>Informações:</strong> até 2 dias úteis",
+                    "l3": "<strong>Reclamações:</strong> até 2 dias úteis"
+                }
+            },
+            "conclusion": {
+                "title": "Conclusão do Módulo 1",
+                "text": "Agora você entende <strong>por que o SAC é estratégico</strong> para a empresa. No próximo módulo, vamos descobrir <strong>onde encontrar as informações</strong> que o cliente precisa!"
+            }
+        },
+        "conquistas": {
+            "title": "Parabéns!",
+            "subtitle": "Você completou o <strong>Módulo 1: Por que o SAC é estratégico?</strong>",
+            "badges_title": "Medalhas Conquistadas",
+            "badges_subtitle": "Essas medalhas ajudam a desbloquear os materiais de Fixação!",
+            "badges": {
+                "resumo": "Resumo",
+                "quiz": "Questionário",
+                "flashcard": "Flashcard",
+                "drag_drop": "Arraste e Solte",
+                "m1_desc": "Módulo 1",
+                "exclusive_desc": "Exclusivo"
+            },
+            "progress_label": "Progresso para Fixação",
+            "progress_text": "1 de 3 módulos completos",
+            "footer_text": "Continue para o próximo módulo e conquiste mais medalhas!"
+        }
+    },
+    "m2": {
+        "abertura": {
+            "title": "📍 Onde encontrar informações?",
+            "subtitle": "Aprenda onde e como consultar informações essenciais para um atendimento ágil e preciso.",
+            "questions_title": "Questões que vamos responder:",
+            "q1": "Por que precisamos saber onde buscar informações?",
+            "q2": "Onde consultar dados das lojas?",
+            "q3": "Onde consultar ofertas e promoções?",
+            "q4": "Como funciona o WhatsApp de ofertas?"
+        },
+        "p1": {
+            "title": "Por que precisamos saber buscar?",
+            "intro_p1": "Durante o atendimento, é comum que os clientes tenham dúvidas sobre informações básicas das lojas, como endereço, horário de funcionamento e formas de contato.",
+            "intro_p2": "Saber onde encontrar essas informações e como orientá-los corretamente demonstra:",
+            "cards": {
+                "c1": {
+                    "title": "Segurança",
+                    "text": "Transmita confiança ao cliente com informações corretas e atualizadas."
+                },
+                "c2": {
+                    "title": "Agilidade",
+                    "text": "Resolva dúvidas rapidamente, sem precisar transferir ou consultar terceiros."
+                },
+                "c3": {
+                    "title": "Cuidado",
+                    "text": "Demonstre atenção e zelo pelo cliente em cada interação."
+                }
+            },
+            "box_title": "Objetivo do Módulo",
+            "box_text": "Vamos aprender onde encontrar todas essas informações para um atendimento mais ágil e preciso!"
+        },
+        "p2": {
+            "title": "Onde consultar dados das lojas?",
+            "lead": "Todas as informações essenciais estão disponíveis na <strong>Intranet</strong> da empresa.",
+            "intro_p": "Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.",
+            "highlight_title": "O Caminho das Pedras",
+            "highlight_text": "Intranet → Filiais → Dados cadastrais e horários",
+            "slider_title": "📍 Como consultar na Intranet:",
+            "slider_steps": {
+                "s1": {
+                    "title": "Passo 1: Acessar a Intranet",
+                    "text": "Abra o navegador e acesse o portal interno da empresa. Faça login com suas credenciais corporativas."
+                },
+                "s2": {
+                    "title": "Passo 2: Navegar até Filiais",
+                    "text": "No menu principal, localize e clique na opção <strong>'Filiais'</strong> ou <strong>'Lojas'</strong>."
+                },
+                "s3": {
+                    "title": "Passo 3: Dados Cadastrais",
+                    "text": "Selecione <strong>'Dados cadastrais e horários'</strong> para acessar as informações completas de cada loja."
+                },
+                "s4": {
+                    "title": "Passo 4: Consultar e Informar",
+                    "text": "Agora você pode consultar endereço, telefone e horários de funcionamento para orientar o cliente!"
+                }
+            },
+            "list_intro": "Lá é possível consultar:",
+            "list_items": {
+                "l1": "Endereço das lojas",
+                "l2": "Horários de funcionamento",
+                "l3": "Formas de contato"
+            },
+            "quiz1": {
+                "question": "Um cliente liga perguntando se a loja do Centro está aberta no feriado de amanhã. Você não sabe essa informação de cabeça. Qual o procedimento mais ágil e seguro?",
+                "opt_a": "A) Perguntar rapidamente no grupo de WhatsApp da equipe para ver se alguém sabe.",
+                "opt_b": "B) Consultar a Intranet em 'Filiais' > 'Dados cadastrais e horários' para ter a informação oficial.",
+                "opt_c": "C) Procurar no Google Maps, pois lá sempre está atualizado.",
+                "opt_d": "D) Informar que provavelmente estará fechada, para evitar que o cliente perca a viagem.",
+                "feedback": "<strong>Resposta Correta!</strong> A Intranet é a única fonte oficial e confiável para horários de filiais."
+            },
+            "importance_title": "Por que isso importa?",
+            "importance_text": "Dominar essa consulta garante <strong>agilidade</strong> no atendimento, respostas mais <strong>assertivas</strong>, padronização das informações e uma experiência mais positiva para o cliente.",
+            "quiz2": {
+                "question": "Dominar a consulta de informações na Intranet contribui para:",
+                "opt_a": "A) Aumentar o tempo de atendimento.",
+                "opt_b": "B) Reduzir a padronização das respostas.",
+                "opt_c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
+                "opt_d": "D) Tornar o atendimento mais informal.",
+                "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão."
+            }
+        },
+        "p3": {
+            "title": "Onde consultar ofertas?",
+            "intro": "O SAC também orienta os clientes sobre ofertas e promoções. Utilize os <strong>encartes</strong> e o <strong>site oficial</strong> da empresa para obter dados essenciais.",
+            "accordion": {
+                "a1": {
+                    "title": "📰 Encartes e Site Oficial",
+                    "text": "Consulte os encartes atualizados para informar sobre ofertas vigentes. O site oficial também possui uma seção de promoções constantemente atualizada.",
+                    "l1": "<strong>Encartes:</strong> disponíveis na loja e na Intranet",
+                    "l2": "<strong>Site:</strong> seção de ofertas e promoções"
+                },
+                "a2": {
+                    "title": "📱 WhatsApp de Ofertas",
+                    "text": "Uma forma prática de comunicação é o WhatsApp de ofertas. Por meio dele, o cliente recebe promoções diretamente no celular, de forma personalizada.",
+                    "step": "<strong>Passo a passo:</strong> Selecionar a loja → Acessar a comunidade pelo link ou QR Code → Receber ofertas"
+                }
+            },
+            "quiz": {
+                "question": "Dona Maria está na linha e diz que 'minha vizinha recebe ofertas do Zaffari no celular e eu não'. Como você deve orientá-la para aderir ao serviço de forma segura e oficial?",
+                "opt_a": "A) 'Dona Maria, por favor me passe seu número que eu cadastro a senhora agora mesmo no sistema.'",
+                "opt_b": "B) 'A senhora deve selecionar sua loja de preferência e acessar a comunidade através do link oficial ou QR Code.'",
+                "opt_c": "C) 'Peça para sua vizinha te adicionar no grupo dela, é mais fácil.'",
+                "opt_d": "D) 'Esse serviço foi suspenso temporariamente, acompanhe apenas pelo site.'",
+                "feedback": "<strong>Resposta Correta!</strong> O cliente deve entrar ativamente via Link ou QR Code da loja específica."
+            }
+        },
+        "p6": {
+            "title": "📝 Resumo: Perguntas e Respostas",
+            "lead": "Excelente! Você concluiu o módulo sobre consulta de informações. Revise as principais questões abordadas.",
+            "accordion": {
+                "a1": {
+                    "title": "❓ Por que precisamos saber onde buscar informações?",
+                    "text": "Saber onde encontrar informações demonstra ao cliente:",
+                    "l1": "<strong>Segurança</strong> - transmitir confiança",
+                    "l2": "<strong>Agilidade</strong> - resolver rapidamente",
+                    "l3": "<strong>Cuidado</strong> - mostrar que nos importamos"
+                },
+                "a2": {
+                    "title": "❓ Onde consultar dados das lojas?",
+                    "text": "Na <strong>Intranet</strong> da empresa!",
+                    "box_title": "O Caminho das Pedras",
+                    "box_text": "Intranet → Filiais → Dados cadastrais e horários",
+                    "footer": "Lá você encontra: endereço das lojas, horários de funcionamento e formas de contato."
+                },
+                "a3": {
+                    "title": "❓ Onde consultar ofertas e promoções?",
+                    "text": "As ofertas podem ser consultadas em:",
+                    "l1": "<strong>Encartes</strong> - materiais promocionais físicos e digitais",
+                    "l2": "<strong>Site oficial</strong> da empresa",
+                    "l3": "<strong>WhatsApp de ofertas</strong> - canal direto com o cliente"
+                },
+                "a4": {
+                    "title": "❓ Como funciona o WhatsApp de ofertas?",
+                    "text": "É simples e direto! A sequência é:",
+                    "l1": "<strong>Selecionar a loja</strong> de interesse",
+                    "l2": "<strong>Acessar a comunidade</strong> pelo link ou QR Code",
+                    "l3": "<strong>Receber ofertas</strong> personalizadas no celular"
+                }
+            },
+            "conclusion": {
+                "title": "Conclusão do Módulo 2",
+                "text": "Agora você sabe <strong>onde encontrar as informações</strong> que o cliente precisa. No próximo módulo, vamos aprender <strong>como aplicar o CDC</strong> no atendimento!"
+            }
+        },
+        "conquistas": {
+            "title": "Parabéns!",
+            "subtitle": "Você completou o <strong>Módulo 2: Onde encontrar informações?</strong>",
+            "badges_title": "Medalhas Conquistadas",
+            "badges_subtitle": "Essas medalhas ajudam a desbloquear os materiais de Fixação!",
+            "badges": {
+                "resumo": "Resumo",
+                "quiz": "Questionário",
+                "flashcard": "Flashcard",
+                "find_error": "Ache o Erro",
+                "m2_desc": "Módulo 2",
+                "exclusive_desc": "Exclusivo"
+            },
+            "progress_label": "Progresso para Fixação",
+            "progress_text": "2 de 3 módulos completos",
+            "footer_text": "Continue para o próximo módulo e conquiste mais medalhas!"
+        }
+    },
+    "m3": {
+        "abertura": {
+            "title": "📍 Como aplicar o CDC?",
+            "subtitle": "Entenda os direitos do consumidor e como aplicá-los corretamente no dia a dia do atendimento.",
+            "questions_title": "Questões que vamos responder:",
+            "q1": "O que é o CDC e por que conhecê-lo?",
+            "q2": "Qual a diferença entre produto e serviço?",
+            "q3": "Quando o cliente pode trocar sem defeito?",
+            "q4": "Quando há defeito, qual o procedimento?",
+            "q5": "Como encaminhar para assistência técnica?"
+        },
+        "p1": {
+            "title": "O que é o CDC?",
+            "intro_p1": "O <strong>⚖️ Código de Defesa do Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Lei nº 8.078, de 11 de setembro de 1990'>Lei nº 8.078/90</span>, foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.",
+            "intro_p2": "Ele estabelece direitos, deveres, prazos, padrões de conduta e penalidades para fornecedores e prestadores de serviços.",
+            "sabia_title": "Você Sabia?",
+            "sabia_text": "O CDC brasileiro é considerado um dos mais completos do mundo!",
+            "btn_saiba_mais": "Saiba mais",
+            "modal": {
+                "title": "📚 Curiosidades sobre o CDC",
+                "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países.",
+                "l1": "É considerado um dos mais avançados do mundo",
+                "l2": "Protege o consumidor em todas as fases da relação de consumo",
+                "l3": "Prevê inversão do ônus da prova em favor do consumidor",
+                "l4": "Estabelece responsabilidade objetiva do fornecedor"
+            },
+            "importance_title": "Por que é importante para o SAC?",
+            "cards": {
+                "c1": {
+                    "title": "Segurança",
+                    "text": "Segurança na orientação ao cliente, sabendo exatamente o que a lei permite ou não."
+                },
+                "c2": {
+                    "title": "Conformidade",
+                    "text": "Respostas corretas e alinhadas à lei, evitando problemas jurídicos para a empresa."
+                },
+                "c3": {
+                    "title": "Eficiência",
+                    "text": "Redução de retrabalho ao resolver questões corretamente na primeira vez."
+                },
+                "c4": {
+                    "title": "Credibilidade",
+                    "text": "Mais profissionalismo, confiança e credibilidade no atendimento."
+                }
+            },
+            "attention_title": "Atenção",
+            "attention_text": "Conhecer o CDC não significa decorar todos os artigos, mas sim entender os <strong>princípios básicos</strong> que guiam as relações de consumo.",
+            "quiz": {
+                "question": "Um cliente afirma exaltado: 'O Código de Defesa do Consumidor diz que eu tenho razão sempre! Por isso vocês são obrigados a fazer o que eu quero!'. Com base no equilíbrio proposto pelo CDC, como você interpreta essa fala?",
+                "opt_a": "A) 'O cliente está sempre certo', e o CDC foi criado justamente para garantir que sua vontade prevaleça em qualquer situação.",
+                "opt_b": "B) O cliente está equivocado. O CDC busca equilibrar a relação, protegendo a parte mais fraca (consumidor), mas também estabelecendo deveres e limites para evitar abusos.",
+                "opt_c": "C) O cliente está errado, pois o CDC é uma lei que serve apenas para punir empresas que cometem crimes contra a economia popular.",
+                "opt_d": "D) O cliente tem razão parcial, o CDC garante que ele tenha razão, mas apenas se ele apresentar a nota fiscal original.",
+                "feedback": "<strong>Resposta Correta!</strong> O objetivo do CDC é a harmonia e equilíbrio nas relações de consumo, não o favorecimento cego."
+            }
+        },
+        "p2": {
+            "title": "Qual a diferença: produto x serviço?",
+            "intro": "Para aplicar o CDC, precisamos entender dois conceitos fundamentais:",
+            "accordion": {
+                "service_title": "Serviço",
+                "service_text": "Atividade oferecida mediante remuneração, como atendimento ao cliente, entrega de produtos e serviços financeiros dos Cartões do Grupo.",
+                "product_title": "Produto",
+                "product_text": "Toda mercadoria vendida nas lojas.",
+                "product_l1": "<strong>Durável:</strong> eletrodomésticos, eletrônicos e utilidades duráveis.",
+                "product_l2": "<strong>Não durável:</strong> alimentos, higiene, limpeza, perfumaria, hortifrúti e panificação."
+            }
+        },
+        "p3": {
+            "title": "Quando trocar sem defeito?",
+            "h3_physical": "Troca de produtos sem defeito – Loja Física",
+            "p_physical_1": "O CDC <strong>não obriga</strong> a troca quando o produto está em perfeito estado e o cliente deseja trocar por preferência (cor, tamanho).",
+            "p_physical_2": "Nesses casos, a troca é uma <strong>política comercial</strong> da empresa, uma cortesia, e não um direito legal.",
+            "quiz1": {
+                "question": "Um cliente comprou uma camisa na Loja Física, provou no provador e levou. Dois dias depois, retorna querendo trocar porque a esposa disse que a cor não combina com ele. O produto está perfeito e com etiqueta. A loja é obrigada por lei a trocar?",
+                "opt_a": "A) Sim, o CDC garante 7 dias para troca por qualquer motivo.",
+                "opt_b": "B) Não, mas pode trocar por liberalidade (política comercial de cortesia) para fidelizar o cliente.",
+                "opt_c": "C) Sim, mas apenas se o cliente pagar uma taxa de 10%.",
+                "opt_d": "D) Não, e a loja é proibida de aceitar a troca para não gerar prejuízo.",
+                "feedback": "<strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei para lojas físicas."
+            },
+            "h3_online": "Troca de produtos sem defeito – Loja Online",
+            "p_online_1": "Para compras online, o CDC garante o <strong>Direito de Arrependimento</strong>.",
+            "p_online_2": "O cliente pode desistir da compra em até <strong>7 dias corridos</strong> após o recebimento. Importante: Isso não vale para compra em loja física!",
+            "quiz2": {
+                "question": "João comprou uma cafeteira pelo site. Ao receber, viu que é muito grande para sua cozinha, embora funcione perfeitamente. Ele liga no 5º dia querendo devolver. O que você informa?",
+                "opt_a": "A) 'Senhor, como não tem defeito, não podemos aceitar a devolução.'",
+                "opt_b": "B) 'O senhor pode exercer seu Direito de Arrependimento e devolver o produto, recebendo o reembolso integral, pois está dentro do prazo de 7 dias.'",
+                "opt_c": "C) 'Podemos trocar, mas o senhor arca com o frete de devolução.'",
+                "opt_d": "D) 'O senhor deve tentar vender para um conhecido, pois a venda foi finalizada.'",
+                "feedback": "<strong>Resposta Correta!</strong> Compras online têm garantia de arrependimento (7 dias), independente de defeito."
+            }
+        },
+        "p5": {
+            "title": "Quando há defeito, o que fazer?",
+            "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
+            "accordion": {
+                "options_title": "🔄 Opções do cliente se não houver solução em 30 dias",
+                "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
+                "l2": "<strong>Abatimento proporcional</strong> do valor pago",
+                "l3": "<strong>Devolução integral</strong> do valor pago"
+            },
+            "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
+            "h3_assist": "Assistência Técnica 🔧",
+            "accordion_electro": {
+                "title": "📦 Procedimento para produtos Eletro",
+                "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+            }
+        },
+        "p6": {
+            "title": "Como encaminhar reclamações?",
+            "intro": "Cada tipo de produto exige um procedimento específico de reclamação. Clique em cada categoria para ver os detalhes:",
+            "accordion": {
+                "food_title": "🍎 Produtos Alimentícios",
+                "food_intro": "A troca ocorre apenas quando o produto está <strong>impróprio para consumo</strong>.",
+                "food_l1": "Cliente deve levar produto + cupom à loja",
+                "food_l2": "Avaliação da gerência",
+                "food_l3": "Preenchimento correto de <strong>Motivo, Marca e Lote</strong> é essencial",
+                "nonfood_title": "📦 Produtos Não Alimentícios",
+                "nonfood_intro": "Devem ser registradas com todas as informações sobre o defeito.",
+                "nonfood_box": "Cliente leva produto + cupom à loja (exceto Eletro → Assistência Técnica).",
+                "wrong_title": "❌ Compra Errada",
+                "wrong_l1": "<strong>Não perecíveis:</strong> item não pode estar violado",
+                "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)",
+                "wrong_attention": "⚠️ Perecíveis uma vez retirados da loja não podem ser reacondicionados por questões de segurança alimentar."
+            }
+        },
+        "p7": {
+            "title": "🏆 Desafio Final",
+            "intro": "A qualidade do atendimento depende de atenção, escuta ativa, empatia e registros completos e corretos.",
+            "box_title": "💭 Para Refletir",
+            "box_text": "<strong>Imagine que você é um supervisor analisando um caso de reclamação antiga. Você encontra um registro anterior que diz apenas 'Cliente reclamou'. Como isso afeta sua capacidade de resolver o problema hoje? Reflita sobre o impacto dos detalhes.</strong>",
+            "placeholder": "Sua resposta..."
+        },
+        "p8": {
+            "title": "📝 Resumo e Encerramento",
+            "lead": "Parabéns! Você chegou ao final do curso 'Por Dentro do SAC'. 🎉",
+            "intro_summary": "Antes de encerrar, veja um resumo das principais questões que respondemos sobre o CDC:",
+            "accordion": {
+                "a1": {
+                    "title": "❓ O que é o CDC e por que conhecê-lo?",
+                    "text": "<strong>✅ Resposta:</strong> O CDC (Lei nº 8.078/90) protege os consumidores e garante relações de consumo justas. Conhecê-lo é essencial para:",
+                    "l1": "Responder com segurança",
+                    "l2": "Evitar retrabalho",
+                    "l3": "Transmitir credibilidade ao cliente"
+                },
+                "a2": {
+                    "title": "❓ Quando o cliente pode trocar um produto sem defeito?",
+                    "text": "<strong>✅ Resposta:</strong>",
+                    "l1": "<strong>Loja física:</strong> O CDC NÃO obriga a troca - é uma política comercial (cortesia)",
+                    "l2": "<strong>Loja online:</strong> O cliente tem o Direito de Arrependimento (até 7 dias corridos após recebimento)"
+                },
+                "a3": {
+                    "title": "❓ Quando há defeito, qual o procedimento?",
+                    "text": "<strong>✅ Resposta:</strong> O fornecedor tem até <strong>30 dias</strong> para solucionar via assistência técnica. Caso não resolva, o cliente pode optar por:",
+                    "l1": "Troca do produto",
+                    "l2": "Abatimento proporcional do valor",
+                    "l3": "Devolução do valor pago",
+                    "note": "<em>Prazo para reclamar: 90 dias para produtos duráveis.</em>"
+                },
+                "a4": {
+                    "title": "❓ Como encaminhar reclamações de produtos?",
+                    "text": "<strong>✅ Resposta:</strong>",
+                    "l1": "<strong>Alimentícios:</strong> Cliente leva produto + cupom à loja (avaliação da gerência)",
+                    "l2": "<strong>Não alimentícios:</strong> Produto + cupom à loja (exceto Eletro → Assistência Técnica)",
+                    "l3": "<strong>Compra errada:</strong> Não perecíveis podem ser trocados se não violados; perecíveis não trocamos"
+                }
+            },
+            "quiz_final": {
+                "question": "Depois de toda essa jornada, você recebe um novo colega na equipe que pergunta: 'No final das contas, o que é mais importante aqui?'. Qual resposta resume melhor a missão do SAC que aprendemos?",
+                "opt_a": "A) 'O mais importante é atender rápido para bater a meta de tempo, não importa se resolveu ou não.'",
+                "opt_b": "B) 'O importante é seguir a lei rigorosamente para a empresa não ser processada, o resto é detalhe.'",
+                "opt_c": "C) 'Nossa missão é ser a ponte estratégica entre a empresa e o cliente, resolvendo problemas com eficiência, humanidade e respeito às leis.'",
+                "opt_d": "D) 'O foco principal é evitar ao máximo que o cliente peça para falar com a gerência.'",
+                "feedback": "<strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏"
+            },
+            "success_title": "Obrigado por participar!",
+            "success_text": "Siga sempre em frente - cada atendimento é uma oportunidade de fazer a diferença."
+        },
+        "conquistas": {
+            "title": "Parabéns!",
+            "subtitle": "Você completou o <strong>Módulo 3: Como aplicar o CDC?</strong>",
+            "badges_title": "Medalhas Conquistadas",
+            "badges_subtitle": "Você conquistou todas as medalhas! A seção Fixação está totalmente desbloqueada!",
+            "badges": {
+                "resumo": "Resumo",
+                "quiz": "Questionário",
+                "flashcard": "Flashcard",
+                "roleplay": "Role Play",
+                "m3_desc": "Módulo 3",
+                "exclusive_desc": "Exclusivo"
+            },
+            "progress_label": "🎊 Fixação Desbloqueada!",
+            "progress_text": "3 de 3 módulos completos",
+            "footer_text": "🌟 Todas as medalhas conquistadas! Volte à página inicial para acessar o material de Fixação."
+        }
+    },
+    "extras": {
+        "hub": {
+            "title": "🧠 Menu de Fixação",
+            "lead": "Explore recursos adicionais para reforçar seu aprendizado! Complete os módulos para desbloquear os materiais.",
+            "sections": {
+                "acompanhamento": {
+                    "title": "📚 Acompanhamento",
+                    "subtitle": "Materiais que acompanham seu progresso - liberam gradualmente conforme você avança."
+                },
+                "especiais": {
+                    "title": "⭐ Especiais",
+                    "subtitle": "Atividades exclusivas desbloqueadas ao completar módulos específicos."
+                }
+            },
+            "cards": {
+                "resumo": {
+                    "title": "Resumo do Curso",
+                    "desc": "Revise os principais conceitos e pontos-chave de todos os módulos em um só lugar."
+                },
+                "flashcard": {
+                    "title": "Flash Cards",
+                    "desc": "Memorize conceitos importantes com cartões de estudo interativos."
+                },
+                "quiz": {
+                    "title": "Questionários",
+                    "desc": "Teste seus conhecimentos com todos os questionários do curso reunidos em um só lugar."
+                },
+                "drag_drop": {
+                    "title": "Arraste e Solte",
+                    "desc": "Associe conceitos e categorias arrastando os itens para os lugares corretos."
+                },
+                "find_error": {
+                    "title": "Ache o Erro",
+                    "desc": "Identifique erros em situações de atendimento e aprenda como corrigi-los."
+                },
+                "roleplay": {
+                    "title": "Roleplay",
+                    "desc": "Pratique situações reais de atendimento através de simulações interativas."
+                }
+            },
+            "lock_msg": "Complete os módulos para desbloquear",
+            "lock_msg_m1": "Complete o Módulo 1 para desbloquear",
+            "lock_msg_m2": "Complete o Módulo 2 para desbloquear",
+            "lock_msg_m3": "Complete o Módulo 3 para desbloquear",
+            "tip": "💡 <strong>Dica:</strong> Complete os módulos do curso para desbloquear todos os materiais. Cada módulo concede medalhas que liberam novos recursos!",
+            "unlocked_msg": "de 3 módulos desbloqueados"
+        },
+        "resumo": {
+            "title": "📖 Resumo do Curso",
+            "lead": "Revise os principais conceitos abordados em cada módulo do treinamento.",
+            "modules": {
+                "m1": {
+                    "title": "Módulo 1: Papel Estratégico do SAC",
+                    "lock": "🔒 Conclua o módulo para desbloquear",
+                    "unlock": "✓ Disponível",
+                    "overlay": "Complete o Módulo 1 para desbloquear este resumo"
+                },
+                "m2": {
+                    "title": "Módulo 2: Onde encontrar informações?",
+                    "lock": "🔒 Conclua o módulo para desbloquear",
+                    "unlock": "✓ Disponível",
+                    "overlay": "Complete o Módulo 2 para desbloquear este resumo"
+                },
+                "m3": {
+                    "title": "Módulo 3: CDC e Legislação",
+                    "lock": "🔒 Conclua o módulo para desbloquear",
+                    "unlock": "✓ Disponível",
+                    "overlay": "Complete o Módulo 3 para desbloquear este resumo"
+                }
+            },
+            "content": {
+                "m1": {
+                    "q1": "❓ O que o cliente espera ao nos contatar?",
+                    "a1": "<p><strong>✅ Resposta:</strong> O cliente espera mais do que a solução do problema. Ele busca:</p><ul><li>Ser ouvido com atenção e empatia</li><li>Receber um atendimento ágil e eficiente</li><li>Sentir que a empresa se importa com ele</li><li>Ter clareza sobre os próximos passos</li><li>Sair satisfeito, mesmo quando a resposta não é a ideal</li></ul>",
+                    "q2": "❓ Qual o papel do SAC além de resolver problemas?",
+                    "a2": "<p><strong>✅ Resposta:</strong> O SAC representa a <strong>voz da empresa</strong> no contato direto com o cliente. Mais do que um setor operacional, é uma área estratégica essencial para:</p><ul><li>Preservar valores e reputação da marca</li><li>Construir confiança e fortalecer vínculos</li><li>Contribuir para a fidelização dos clientes</li></ul>",
+                    "q3": "❓ Quais são as responsabilidades do nosso time?",
+                    "a3": "<p><strong>✅ Resposta:</strong> As principais responsabilidades incluem:</p><ul><li><strong>Atendimento Multicanal:</strong> telefone, e-mail, chat e meios eletrônicos</li><li><strong>Atendimento Receptivo:</strong> informações, reclamações, sugestões e elogios</li><li><strong>Atendimentos Ativos:</strong> campanhas, ativação de cartões, atualizações cadastrais</li><li><strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias</li></ul><p><em>Nota: Definir leis de proteção ao consumidor NÃO é responsabilidade do SAC - o SAC segue as leis.</em></p>",
+                    "q4": "❓ Por que os prazos de atendimento importam?",
+                    "a4": "<p><strong>✅ Resposta:</strong> Prazos bem definidos garantem organização, previsibilidade e eficiência. O correto registro da categoria de atendimento é fundamental porque o sistema calcula o prazo baseado nela.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Prazos Padrão</h4><ul><li><strong>Solicitações:</strong> até 3 dias úteis</li><li><strong>Informações:</strong> até 2 dias úteis</li><li><strong>Reclamações:</strong> até 2 dias úteis</li></ul></div></div>"
+                },
+                "m2": {
+                    "q1": "❓ Por que precisamos saber onde buscar informações?",
+                    "a1": "<p><strong>✅ Resposta:</strong> Saber onde encontrar informações demonstra ao cliente:</p><ul><li><strong>Segurança</strong> - transmitir confiança</li><li><strong>Agilidade</strong> - resolver rapidamente</li><li><strong>Cuidado</strong> - mostrar que nos importamos</li></ul>",
+                    "q2": "❓ Onde consultar dados das lojas?",
+                    "a2": "<p><strong>✅ Resposta:</strong> Na <strong>Intranet</strong> da empresa!</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>O Caminho das Pedras</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Filiais → Dados cadastrais e horários</strong></p></div></div><p>Lá você encontra: endereço das lojas, horários de funcionamento e formas de contato.</p>",
+                    "q3": "❓ Onde consultar ofertas e promoções?",
+                    "a3": "<p><strong>✅ Resposta:</strong> As ofertas podem ser consultadas em:</p><ul><li><strong>Encartes</strong> - materiais promocionais físicos e digitais</li><li><strong>Site oficial</strong> da empresa</li><li><strong>WhatsApp de ofertas</strong> - canal direto com o cliente</li></ul>",
+                    "q4": "❓ Como funciona o WhatsApp de ofertas?",
+                    "a4": "<p><strong>✅ Resposta:</strong> É simples e direto! A sequência é:</p><ol><li><strong>Selecionar a loja</strong> de interesse</li><li><strong>Acessar a comunidade</strong> pelo link ou QR Code</li><li><strong>Receber ofertas</strong> personalizadas no celular</li></ol>"
+                },
+                "m3": {
+                    "q1": "❓ O que é o CDC e por que conhecê-lo?",
+                    "a1": "<p><strong>✅ Resposta:</strong> O CDC (Lei nº 8.078/90) protege os consumidores e garante relações de consumo justas. Conhecê-lo é essencial para:</p><ul><li>Responder com segurança</li><li>Evitar retrabalho</li><li>Transmitir credibilidade ao cliente</li></ul>",
+                    "q2": "❓ Quando o cliente pode trocar um produto sem defeito?",
+                    "a2": "<p><strong>✅ Resposta:</strong></p><ul><li><strong>Loja física:</strong> O CDC NÃO obriga a troca - é uma política comercial (cortesia)</li><li><strong>Loja online:</strong> O cliente tem o Direito de Arrependimento (até 7 dias corridos após recebimento)</li></ul>",
+                    "q3": "❓ Quando há defeito, qual o procedimento?",
+                    "a3": "<p><strong>✅ Resposta:</strong> O fornecedor tem até <strong>30 dias</strong> para solucionar via assistência técnica. Caso não resolva, o cliente pode optar por:</p><ul><li>Troca do produto</li><li>Abatimento proporcional do valor</li><li>Devolução do valor pago</li></ul><p><em>Prazo para reclamar: 90 dias para produtos duráveis.</em></p>",
+                    "q4": "❓ Como encaminhar reclamações de produtos?",
+                    "a4": "<p><strong>✅ Resposta:</strong></p><ul><li><strong>Alimentícios:</strong> Cliente leva produto + cupom à loja (avaliação da gerência)</li><li><strong>Não alimentícios:</strong> Produto + cupom à loja (exceto Eletro → Assistência Técnica)</li><li><strong>Compra errada:</strong> Não perecíveis podem ser trocados se não violados; perecíveis não trocamos</li></ul>"
+                }
+            },
+            "tip_box": "💡 Use este resumo como material de consulta rápida durante seu trabalho.",
+            "back_btn": "← Voltar ao Menu de Extras"
+        },
+        "quiz": {
+            "title": "📝 Questionários",
+            "lead": "Teste seus conhecimentos com todos os questionários do curso reunidos em um só lugar.",
+            "lock_msg": "🔒 Conclua o módulo para desbloquear",
+            "unlock_msg": "✓ Disponível",
+            "modules": {
+                "m1": {
+                    "title": "Módulo 1: Papel Estratégico do SAC",
+                    "count": "3 questões",
+                    "overlay": "Complete o Módulo 1 para desbloquear estes questionários",
+                    "questions": {
+                        "q1": {
+                            "text": "<strong>Questão 1:</strong> Qual das alternativas melhor representa o papel estratégico do SAC?",
+                            "options": {
+                                "a": "A) Atender ligações e registrar reclamações.",
+                                "b": "B) Resolver problemas pontuais sem impacto na imagem da empresa.",
+                                "c": "C) Representar a voz da empresa no contato direto com o cliente e fortalecer a reputação da marca.",
+                                "d": "D) Atuar apenas quando outros setores não conseguem resolver demandas."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> O SAC é a voz da empresa e fortalece a reputação da marca."
+                        },
+                        "q2": {
+                            "text": "<strong>Questão 2:</strong> Qual das atividades abaixo <strong>não</strong> faz parte das responsabilidades do SAC?",
+                            "options": {
+                                "a": "A) Atendimento receptivo e ativo.",
+                                "b": "B) Organização de dados e elaboração de relatórios.",
+                                "c": "C) Definição das leis de proteção ao consumidor.",
+                                "d": "D) Proposição de melhorias em scripts e padrões de atendimento."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> O SAC segue as leis, mas quem as define é o governo (Legislativo)."
+                        },
+                        "q3": {
+                            "text": "<strong>Questão 3 (Verdadeiro ou Falso):</strong> O correto registro da categoria de atendimento influencia diretamente o prazo de retorno ao cliente.",
+                            "options": {
+                                "a": "A) Verdadeiro",
+                                "b": "B) Falso"
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> O sistema calcula o prazo baseado na categoria registrada."
+                        }
+                    }
+                },
+                "m2": {
+                    "title": "Módulo 2: Onde encontrar informações?",
+                    "count": "3 questões",
+                    "overlay": "Complete o Módulo 2 para desbloquear estes questionários",
+                    "questions": {
+                        "q1": {
+                            "text": "<strong>Questão 1:</strong> Para consultar endereço, horário de funcionamento e formas de contato das lojas, o atendente deve acessar:",
+                            "options": {
+                                "a": "A) O site da empresa.",
+                                "b": "B) A Intranet → Filiais → Dados cadastrais e horários.",
+                                "c": "C) O Google Maps.",
+                                "d": "D) Um grupo interno de mensagens."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> A Intranet é a fonte oficial e segura."
+                        },
+                        "q2": {
+                            "text": "<strong>Questão 2:</strong> Dominar a consulta de informações na Intranet contribui para:",
+                            "options": {
+                                "a": "A) Aumentar o tempo de atendimento.",
+                                "b": "B) Reduzir a padronização das respostas.",
+                                "c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
+                                "d": "D) Tornar o atendimento mais informal."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão."
+                        },
+                        "q3": {
+                            "text": "<strong>Questão 3:</strong> Qual é a sequência correta para o cliente começar a receber ofertas pelo WhatsApp?",
+                            "options": {
+                                "a": "A) Acessar o site → escolher produtos → cadastrar telefone.",
+                                "b": "B) Selecionar a loja → acessar a comunidade pelo link ou QR Code → receber ofertas.",
+                                "c": "C) Entrar em contato com o SAC → solicitar cadastro → aguardar confirmação.",
+                                "d": "D) Baixar um aplicativo exclusivo → criar login → aceitar termos."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> Simples e direto: Loja -> QR Code/Link -> Ofertas."
+                        }
+                    }
+                },
+                "m3": {
+                    "title": "Módulo 3: CDC e Legislação",
+                    "count": "4 questões",
+                    "overlay": "Complete o Módulo 3 para desbloquear estes questionários",
+                    "questions": {
+                        "q1": {
+                            "text": "<strong>Questão 1:</strong> Por que o conhecimento do Código de Defesa do Consumidor é essencial para quem atua no SAC?",
+                            "options": {
+                                "a": "A) Apenas para cumprir exigências legais.",
+                                "b": "B) Para responder com segurança, evitar retrabalho e transmitir credibilidade ao cliente.",
+                                "c": "C) Para substituir as políticas internas da empresa.",
+                                "d": "D) Apenas para lidar com reclamações formais."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> Conhecimento gera segurança e credibilidade."
+                        },
+                        "q2": {
+                            "text": "<strong>Questão 2 (Verdadeiro ou Falso):</strong> A troca de produtos sem defeito em loja física é um direito garantido pelo Código de Defesa do Consumidor.",
+                            "options": {
+                                "a": "A) Verdadeiro",
+                                "b": "B) Falso"
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei."
+                        },
+                        "q3": {
+                            "text": "<strong>Questão 3:</strong> O direito de arrependimento permite que o cliente:",
+                            "options": {
+                                "a": "A) Troque qualquer produto comprado em loja física em até 7 dias.",
+                                "b": "B) Desista de uma compra online em até 7 dias corridos após o recebimento.",
+                                "c": "C) Solicite devolução apenas de produtos com defeito.",
+                                "d": "D) Exija troca imediata sem análise."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> Exclusivo para compras fora do estabelecimento comercial (online/telefone)."
+                        },
+                        "q4": {
+                            "text": "<strong>Questão 4 (Síntese Final):</strong> Após concluir o curso, qual das alternativas melhor resume o papel do SAC?",
+                            "options": {
+                                "a": "A) Resolver problemas pontuais de clientes.",
+                                "b": "B) Atender ligações e registrar informações.",
+                                "c": "C) Atuar de forma estratégica, humanizada e alinhada à legislação, fortalecendo a experiência do cliente e a reputação da marca.",
+                                "d": "D) Encaminhar demandas para outros setores."
+                            },
+                            "feedback": "<strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏"
+                        }
+                    }
+                }
+            },
+            "tip_box": "💡 Refaça os questionários quantas vezes quiser para fixar o conhecimento!",
+            "feedback_incorrect": "<strong>Resposta Incorreta!</strong> Veja a alternativa correta destacada em verde.",
+            "back_btn": "← Voltar ao Menu de Extras"
+        },
+        "flashcards": {
+            "title": "🃏 Flash Cards",
+            "lead": "Memorize os conceitos do curso com cartões de estudo interativos. Clique no cartão para revelar a resposta!",
+            "ui": {
+                "back_to_modules": "← Voltar aos Módulos",
+                "back_menu": "← Voltar ao Menu de Extras",
+                "card_counter": "Card <span id=\"fc-current\">1</span> de <span id=\"fc-total\">8</span>",
+                "hint_front": "👆 Clique para ver a resposta",
+                "hint_back": "👆 Clique para voltar",
+                "prev": "← Anterior",
+                "next": "Próximo →",
+                "shuffle": "🔀 Embaralhar",
+                "tip": "💡 <strong>Dica:</strong> Revise os flash cards regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!"
+            },
+            "modules": {
+                "m1": {
+                    "title": "Módulo 1: Papel Estratégico",
+                    "desc": "Papel Estratégico do SAC",
+                    "count": "8 cards",
+                    "lock_msg": "🔒 Conclua o módulo",
+                    "unlock_msg": "✓ Disponível",
+                    "cards": {
+                        "c1": {
+                            "q": "O que 86% dos consumidores estão dispostos a fazer por uma experiência de atendimento melhor?",
+                            "a": "Pagar mais! Estudos mostram que 86% dos consumidores pagam mais por uma experiência de atendimento melhor."
+                        },
+                        "c2": {
+                            "q": "Qual é o papel do SAC além de resolver problemas?",
+                            "a": "O SAC representa a VOZ DA EMPRESA no contato direto com o cliente. É uma área estratégica, essencial para preservar valores, reputação e credibilidade da marca."
+                        },
+                        "c3": {
+                            "q": "O que o cliente geralmente espera ao contatar o SAC?",
+                            "a": "Ser ouvido com atenção e empatia, receber atendimento ágil e eficiente, sentir que a empresa se importa, ter clareza sobre os próximos passos e sair satisfeito."
+                        },
+                        "c4": {
+                            "q": "Quais são os canais de Atendimento Multicanal do SAC?",
+                            "a": "Telefone, e-mail, chat e meios eletrônicos."
+                        },
+                        "c5": {
+                            "q": "O que inclui o Atendimento Receptivo do SAC?",
+                            "a": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções."
+                        },
+                        "c6": {
+                            "q": "Quais são as ações realizadas no Atendimento Ativo?",
+                            "a": "Ativação de cartões, atualização cadastral, comunicação de promoções e reversão de cancelamentos."
+                        },
+                        "c7": {
+                            "q": "Qual o prazo padrão para Solicitações?",
+                            "a": "Até 3 dias úteis."
+                        },
+                        "c8": {
+                            "q": "Qual o prazo padrão para Informações e Reclamações?",
+                            "a": "Até 2 dias úteis."
+                        }
+                    }
+                },
+                "m2": {
+                    "title": "Módulo 2: Onde encontrar informações",
+                    "desc": "Onde encontrar informações?",
+                    "count": "6 cards",
+                    "lock_msg": "🔒 Conclua o módulo",
+                    "unlock_msg": "✓ Disponível",
+                    "cards": {
+                        "c1": {
+                            "q": "Qual é a principal fonte de informações sobre as lojas?",
+                            "a": "A Intranet da empresa! É a principal ferramenta de trabalho para consultas rápidas e precisas."
+                        },
+                        "c2": {
+                            "q": "Qual o caminho na Intranet para consultar dados das lojas?",
+                            "a": "Intranet → Filiais → Dados cadastrais e horários."
+                        },
+                        "c3": {
+                            "q": "Que informações podem ser consultadas na seção de Filiais da Intranet?",
+                            "a": "Endereço das lojas, horários de funcionamento e formas de contato."
+                        },
+                        "c4": {
+                            "q": "Quais benefícios de dominar a consulta de informações na Intranet?",
+                            "a": "Agilidade no atendimento, respostas mais assertivas, padronização das informações e melhor experiência para o cliente."
+                        },
+                        "c5": {
+                            "q": "Onde o cliente pode consultar ofertas e promoções?",
+                            "a": "Nos encartes (físicos e digitais), no site oficial da empresa e no WhatsApp de ofertas."
+                        },
+                        "c6": {
+                            "q": "Como funciona a sequência do WhatsApp de ofertas?",
+                            "a": "1) Selecionar a loja de interesse, 2) Acessar a comunidade pelo link ou QR Code, 3) Receber ofertas personalizadas no celular."
+                        }
+                    }
+                },
+                "m3": {
+                    "title": "Módulo 3: CDC e Legislação",
+                    "desc": "CDC e Legislação",
+                    "count": "10 cards",
+                    "lock_msg": "🔒 Conclua o módulo",
+                    "unlock_msg": "✓ Disponível",
+                    "cards": {
+                        "c1": {
+                            "q": "O que é o CDC e qual sua lei?",
+                            "a": "É o Código de Defesa do Consumidor, Lei nº 8.078/90, criado para proteger consumidores e garantir relações de consumo justas e equilibradas."
+                        },
+                        "c2": {
+                            "q": "Por que conhecer o CDC é importante para o SAC?",
+                            "a": "Para responder com segurança, evitar retrabalho e transmitir credibilidade ao cliente."
+                        },
+                        "c3": {
+                            "q": "O CDC obriga a troca de produtos sem defeito em loja física?",
+                            "a": "NÃO! A troca de produtos sem defeito em loja física é uma POLÍTICA COMERCIAL (cortesia da empresa), não um direito legal."
+                        },
+                        "c4": {
+                            "q": "O que é o Direito de Arrependimento e quando se aplica?",
+                            "a": "É o direito de desistir de uma compra em até 7 DIAS CORRIDOS após o recebimento. Aplica-se apenas a compras ONLINE ou fora do estabelecimento comercial."
+                        },
+                        "c5": {
+                            "q": "Quantos dias o fornecedor tem para solucionar defeito via assistência técnica?",
+                            "a": "Até 30 DIAS para solucionar o defeito."
+                        },
+                        "c6": {
+                            "q": "Se o defeito não for solucionado em 30 dias, quais opções o cliente tem?",
+                            "a": "Troca do produto por outro igual ou similar, abatimento proporcional do valor pago, ou devolução integral do valor pago."
+                        },
+                        "c7": {
+                            "q": "Qual o prazo para reclamar de defeitos em produtos duráveis?",
+                            "a": "90 DIAS a partir da constatação do defeito."
+                        },
+                        "c8": {
+                            "q": "Como proceder com reclamação de produtos alimentícios?",
+                            "a": "Cliente leva produto + cupom à loja. Avaliação é feita pela gerência. Preenchimento de Motivo, Marca e Lote é essencial."
+                        },
+                        "c9": {
+                            "q": "Por que produtos perecíveis não podem ser trocados após compra errada?",
+                            "a": "Porque uma vez retirados da loja não podem ser reacondicionados por questões de segurança alimentar (risco de temperatura)."
+                        },
+                        "c10": {
+                            "q": "Qual o procedimento para produtos Eletro com defeito?",
+                            "a": "Devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa realiza troca mediante ordem de serviço."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```

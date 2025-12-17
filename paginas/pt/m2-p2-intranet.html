@@ -1,21 +1,23 @@
 ﻿<!-- Módulo 2 - Página 2: Intranet -->
 <div class="content-header">
-    <h1>Informações das Lojas</h1>
+    <h1 data-i18n="m2.p2.title">Onde consultar dados das lojas?</h1>
 </div>
 
 <div class="content-body">
     <!-- INICIO DO TEXTO EDITÁVEL -->
-    <!-- INICIO DO TEXTO EDITÁVEL -->
     <div class="grid-2-col">
         <div>
-            <p class="lead" style="margin-bottom: 1em;">Todas as informações essenciais estão disponíveis na
-                <strong>Intranet</strong> da empresa.</p>
-            <p>Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.</p>
+            <p class="lead" style="margin-bottom: 1em;" data-i18n="m2.p2.lead">Todas as informações essenciais estão
+                disponíveis na
+                <strong>Intranet</strong> da empresa.
+            </p>
+            <p data-i18n="m2.p2.intro_p">Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.
+            </p>
         </div>
-        <figure style="margin: 0;">
+        <figure style="margin: 0; display: flex; justify-content: flex-end;">
             <img src="assets/Imagens/escritorio-de-helpdesk.jpg"
                 alt="Ambiente de escritório moderno representando a central de informações"
-                class="img-fluid img-rounded img-shadow">
+                class="img-fluid img-rounded img-shadow" style="max-width: 50%;">
         </figure>
     </div>
 
@@ -23,93 +25,57 @@
     <div class="highlight-box dica">
         <span class="icon">🎯</span>
         <div class="highlight-box-content">
-            <h4>O Caminho das Pedras</h4>
-            <p style="font-size: 1.1em;"><strong>Intranet → Filiais → Dados cadastrais e horários</strong></p>
+            <h4 data-i18n="m2.p2.highlight_title">O Caminho das Pedras</h4>
+            <p style="font-size: 1.1em;"><strong data-i18n="m2.p2.highlight_text">Intranet → Filiais → Dados cadastrais
+                    e horários</strong></p>
         </div>
     </div>
 
     <!-- SLIDER: Passo a passo -->
     <div class="content-slider">
-        <h4 style="margin-bottom: 15px;">📍 Como consultar na Intranet:</h4>
+        <h4 style="margin-bottom: 15px;" data-i18n="m2.p2.slider_title">📍 Como consultar na Intranet:</h4>
 
         <div class="slider-slide">
-            <h5>Passo 1: Acessar a Intranet</h5>
-            <p>Abra o navegador e acesse o portal interno da empresa. Faça login com suas credenciais corporativas.</p>
+            <h5 data-i18n="m2.p2.slider_steps.s1.title">Passo 1: Acessar a Intranet</h5>
+            <p data-i18n="m2.p2.slider_steps.s1.text">Abra o navegador e acesse o portal interno da empresa. Faça login
+                com suas credenciais corporativas.</p>
         </div>
         <div class="slider-slide hidden">
-            <h5>Passo 2: Navegar até Filiais</h5>
-            <p>No menu principal, localize e clique na opção <strong>"Filiais"</strong> ou <strong>"Lojas"</strong>.</p>
+            <h5 data-i18n="m2.p2.slider_steps.s2.title">Passo 2: Navegar até Filiais</h5>
+            <p data-i18n="m2.p2.slider_steps.s2.text">No menu principal, localize e clique na opção
+                <strong>"Filiais"</strong> ou <strong>"Lojas"</strong>.
+            </p>
         </div>
         <div class="slider-slide hidden">
-            <h5>Passo 3: Dados Cadastrais</h5>
-            <p>Selecione <strong>"Dados cadastrais e horários"</strong> para acessar as informações completas de cada
+            <h5 data-i18n="m2.p2.slider_steps.s3.title">Passo 3: Dados Cadastrais</h5>
+            <p data-i18n="m2.p2.slider_steps.s3.text">Selecione <strong>"Dados cadastrais e horários"</strong> para
+                acessar as informações completas de cada
                 loja.</p>
         </div>
         <div class="slider-slide hidden">
-            <h5>Passo 4: Consultar e Informar</h5>
-            <p>Agora você pode consultar endereço, telefone e horários de funcionamento para orientar o cliente!</p>
+            <h5 data-i18n="m2.p2.slider_steps.s4.title">Passo 4: Consultar e Informar</h5>
+            <p data-i18n="m2.p2.slider_steps.s4.text">Agora você pode consultar endereço, telefone e horários de
+                funcionamento para orientar o cliente!</p>
         </div>
 
         <div class="slider-controls">
-            <button class="slider-btn slider-prev" disabled>← Anterior</button>
+            <button class="slider-btn slider-prev" disabled>← <span
+                    data-i18n="global.btn_anterior">Anterior</span></button>
             <div class="slider-dots">
                 <button class="slider-dot active"></button>
                 <button class="slider-dot"></button>
                 <button class="slider-dot"></button>
                 <button class="slider-dot"></button>
             </div>
-            <button class="slider-btn slider-next">Próximo →</button>
+            <button class="slider-btn slider-next"><span data-i18n="global.btn_proximo">Próximo</span> →</button>
         </div>
     </div>
 
-    <p>Lá é possível consultar:</p>
+    <p data-i18n="m2.p2.list_intro">Lá é possível consultar:</p>
     <ul class="feature-list">
-        <li>Endereço das lojas</li>
-        <li>Horários de funcionamento</li>
-        <li>Formas de contato</li>
+        <li data-i18n="m2.p2.list_items.l1">Endereço das lojas</li>
+        <li data-i18n="m2.p2.list_items.l2">Horários de funcionamento</li>
+        <li data-i18n="m2.p2.list_items.l3">Formas de contato</li>
     </ul>
-
-    <!-- QUIZ 1 -->
-    <div class="quiz-block">
-        <p class="question">Para consultar endereço, horário de funcionamento e formas de contato das lojas, o atendente
-            deve acessar:</p>
-        <div class="options">
-            <button class="quiz-option" data-correct="false">A) O site da empresa.</button>
-            <button class="quiz-option" data-correct="true">B) A Intranet → Filiais → Dados cadastrais e
-                horários.</button>
-            <button class="quiz-option" data-correct="false">C) O Google Maps.</button>
-            <button class="quiz-option" data-correct="false">D) Um grupo interno de mensagens.</button>
-        </div>
-        <div class="feedback" style="display:none;">
-            <strong>Resposta Correta!</strong> A Intranet é a fonte oficial e segura.
-        </div>
-    </div>
-
-    <!-- DESTAQUE -->
-    <div class="highlight-box importante">
-        <span class="icon">⚡</span>
-        <div class="highlight-box-content">
-            <h4>Por que isso importa?</h4>
-            <p>Dominar essa consulta garante <strong>agilidade</strong> no atendimento, respostas mais
-                <strong>assertivas</strong>, padronização das informações e uma experiência mais positiva para o
-                cliente.
-            </p>
-        </div>
-    </div>
-
-    <!-- QUIZ 2 -->
-    <div class="quiz-block">
-        <p class="question">Dominar a consulta de informações na Intranet contribui para:</p>
-        <div class="options">
-            <button class="quiz-option" data-correct="false">A) Aumentar o tempo de atendimento.</button>
-            <button class="quiz-option" data-correct="false">B) Reduzir a padronização das respostas.</button>
-            <button class="quiz-option" data-correct="true">C) Garantir agilidade, assertividade e melhor experiência
-                para o cliente.</button>
-            <button class="quiz-option" data-correct="false">D) Tornar o atendimento mais informal.</button>
-        </div>
-        <div class="feedback" style="display:none;">
-            <strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão.
-        </div>
-    </div>
     <!-- FIM DO TEXTO EDITÁVEL -->
 </div>

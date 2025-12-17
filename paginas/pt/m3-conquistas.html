@@ -1,0 +1,65 @@
+<!-- Página de Conquistas - Módulo 3 -->
+<div class="conquistas-page">
+    <div class="conquistas-header">
+        <div class="conquistas-celebration-row">
+            <img src="assets/marca/mascote.png" alt="Mascote Zaffari celebrando" class="conquistas-mascot">
+            <div class="conquistas-celebration">🏆</div>
+        </div>
+        <h1 data-i18n="m3.conquistas.title">Parabéns!</h1>
+        <p data-i-18n="[html]m3.conquistas.subtitle">Você completou o <strong>Módulo 3: Como aplicar o CDC?</strong></p>
+    </div>
+
+    <div class="conquistas-content">
+        <h2 data-i18n="m3.conquistas.badges_title">Medalhas Conquistadas</h2>
+        <p class="conquistas-subtitle" data-i18n="m3.conquistas.badges_subtitle">Você conquistou todas as medalhas! A
+            seção Fixação está totalmente desbloqueada!
+        </p>
+
+        <div class="conquistas-badges">
+            <div class="conquista-item" data-badge="resumo">
+                <span class="conquista-icon">📄</span>
+                <span class="conquista-name" data-i18n="m3.conquistas.badges.resumo">Resumo</span>
+                <span class="conquista-desc" data-i18n="m3.conquistas.badges.m3_desc">Módulo 3</span>
+            </div>
+            <div class="conquista-item" data-badge="quiz">
+                <span class="conquista-icon">❓</span>
+                <span class="conquista-name" data-i18n="m3.conquistas.badges.quiz">Questionário</span>
+                <span class="conquista-desc" data-i18n="m3.conquistas.badges.m3_desc">Módulo 3</span>
+            </div>
+            <div class="conquista-item" data-badge="flashcard">
+                <span class="conquista-icon">🃏</span>
+                <span class="conquista-name" data-i18n="m3.conquistas.badges.flashcard">Flashcard</span>
+                <span class="conquista-desc" data-i18n="m3.conquistas.badges.m3_desc">Módulo 3</span>
+            </div>
+            <div class="conquista-item special" data-badge="roleplay">
+                <span class="conquista-icon">🎭</span>
+                <span class="conquista-name" data-i18n="m3.conquistas.badges.roleplay">Role Play</span>
+                <span class="conquista-desc" data-i18n="m3.conquistas.badges.exclusive_desc">Exclusivo</span>
+            </div>
+        </div>
+
+        <div class="conquistas-progress complete">
+            <div class="progress-label" data-i18n="m3.conquistas.progress_label">🎊 Fixação Desbloqueada!</div>
+            <div class="progress-bar-conquistas">
+                <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+            <div class="progress-text" data-i18n="m3.conquistas.progress_text">3 de 3 módulos completos</div>
+        </div>
+    </div>
+
+    <div class="conquistas-footer">
+        <p data-i18n="m3.conquistas.footer_text">🌟 Todas as medalhas conquistadas! Volte à página inicial para acessar
+            o material de Fixação.</p>
+    </div>
+</div>
+
+<script>
+    // Salvar insígnias do Módulo 3 no localStorage
+    (function () {
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+        badges.m3 = ['resumo', 'quiz', 'flashcard', 'roleplay'];
+        localStorage.setItem('badges', JSON.stringify(badges));
+        console.log('Módulo 3 concluído! Insígnias salvas:', badges.m3);
+        console.log('🏆 Todas as insígnias conquistadas!');
+    })();
+</script>

@@ -9,6 +9,9 @@ const App = {
     init: async function () {
         console.log("Initializing App...");
 
+        // 0. Initialize I18n
+        await I18n.init();
+
         // 1. Initialize SCORM
         scorm.init();
 
@@ -93,7 +96,17 @@ const App = {
     },
 
     updateProgress: function () {
-        const percent = Math.round(((this.currentIndex + 1) / this.flatPages.length) * 100);
+        // Contar apenas páginas de módulos (não extras)
+        const modulePages = this.flatPages.filter(p => p.type !== 'extras');
+        const currentModuleIndex = modulePages.findIndex(p => p.id === this.flatPages[this.currentIndex].id);
+
+        // Se página atual é extras, usar a última posição de módulo conhecida
+        const effectiveIndex = currentModuleIndex >= 0 ? currentModuleIndex :
+            modulePages.findIndex(p => this.flatPages.indexOf(p) <= this.currentIndex);
+
+        const percent = modulePages.length > 0 ?
+            Math.round(((Math.max(0, effectiveIndex) + 1) / modulePages.length) * 100) : 0;
+
         document.getElementById('course-progress').value = percent;
         document.getElementById('progress-text').innerText = percent + "%";
     },
@@ -142,6 +155,19 @@ const App = {
                     // Find global index
                     const idx = this.flatPages.findIndex(p => p.id === page.id);
                     const isExtras = mod.id === 'extras';
+
+                    // Se for página de extras, verificar se está desbloqueada
+                    if (isExtras && page.id !== 'extras-hub') {
+                        const isUnlocked = this.checkExtrasUnlocked(page.id);
+                        if (!isUnlocked) {
+                            // Mostrar feedback de bloqueio
+                            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+                            link.classList.add('shake');
+                            setTimeout(() => link.classList.remove('shake'), 500);
+                            return;
+                        }
+                    }
+
                     // Extras são sempre acessíveis (mas não alteram o progresso)
                     if (idx <= this.maxIndexReached || isExtras) {
                         this.currentIndex = idx;
@@ -172,17 +198,23 @@ const App = {
             const idx = this.flatPages.findIndex(p => p.id === pageId);
             const pageData = this.flatPages[idx];
 
-            link.classList.remove('active', 'locked', 'completed');
+            link.classList.remove('active', 'locked', 'completed', 'extras-locked');
 
             if (idx === this.currentIndex) {
                 link.classList.add('active');
             }
 
-            // Extras são sempre desbloqueados
+            // Extras são sempre desbloqueados por navegação, MAS podem ter bloqueio de insígnias
             const isExtras = pageData && pageData.moduleId === 'extras';
 
             if (idx <= this.maxIndexReached || isExtras) {
-                // Unlocked
+                // Unlocked por progresso
+                // Mas verificar se extras está bloqueado por insígnias
+                if (isExtras && pageId !== 'extras-hub') {
+                    if (!this.checkExtrasUnlocked(pageId)) {
+                        link.classList.add('extras-locked');
+                    }
+                }
             } else {
                 link.classList.add('locked');
             }
@@ -193,19 +225,35 @@ const App = {
         });
 
         // Navigation Buttons
-        document.getElementById('btn-prev').disabled = (this.currentIndex === 0);
-        document.getElementById('btn-next').disabled = (this.currentIndex === this.flatPages.length - 1);
+        const currentPage = this.flatPages[this.currentIndex];
+        const isExtras = currentPage && currentPage.moduleId === 'extras';
+        const navFooter = document.querySelector('.content-nav');
+
+        // Esconder navegação nas páginas de extras
+        if (isExtras) {
+            navFooter.style.display = 'none';
+        } else {
+            navFooter.style.display = '';
+            document.getElementById('btn-prev').disabled = (this.currentIndex === 0);
+
+            // Bloquear próximo na página intro até tutorial ser concluído
+            const isIntroPage = this.currentIndex === 0;
+            const tutorialCompleted = localStorage.getItem('tutorial-completed') === 'true';
+
+            if (isIntroPage && !tutorialCompleted) {
+                document.getElementById('btn-next').disabled = true;
+            } else {
+                document.getElementById('btn-next').disabled = (this.currentIndex === this.flatPages.length - 1);
+            }
+        }
     },
 
     loadPage: async function (index) {
         const pageData = this.flatPages[index];
         const contentArea = document.getElementById('content-area');
 
-        // Handle Language swap path
+        // Usar sempre o mesmo template (i18n cuida da tradução via JSON)
         let fileUrl = pageData.file;
-        if (this.currentLang === 'es') {
-            fileUrl = fileUrl.replace('/pt/', '/es/');
-        }
 
         // Fetch HTML content
         try {
@@ -214,6 +262,21 @@ const App = {
                 const html = await res.text();
                 // Inject
                 contentArea.innerHTML = html;
+
+                // Traduzir a página carregada
+                I18n.translatePage();
+
+                // Execute inline scripts (scripts inside innerHTML don't run automatically)
+                const scripts = contentArea.querySelectorAll('script');
+                scripts.forEach(oldScript => {
+                    const newScript = document.createElement('script');
+                    if (oldScript.src) {
+                        newScript.src = oldScript.src;
+                    } else {
+                        newScript.textContent = oldScript.textContent;
+                    }
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                });
 
                 // Enhance content (Accessibility descriptions handling could go here)
 
@@ -227,6 +290,14 @@ const App = {
 
                 // Inicializar componentes interativos
                 this.initInteractiveComponents();
+
+                // Atualizar cards de Fixação (se estiver na intro)
+                this.updateFixacaoCards();
+
+                // Iniciar leitura automática se habilitada
+                if (this.startAutoRead) {
+                    setTimeout(() => this.startAutoRead(), 500);
+                }
 
             } else {
                 contentArea.innerHTML = `<h2>Erro 404</h2><p>Página não encontrada: ${fileUrl}</p>`;
@@ -249,6 +320,21 @@ const App = {
         const btnPrev = document.getElementById('btn-prev');
 
         btnNext.onclick = () => {
+            // Verificar se está na página intro (index 0) e tutorial não foi feito
+            const isIntroPage = this.currentIndex === 0;
+            const tutorialCompleted = localStorage.getItem('tutorial-completed') === 'true';
+
+            if (isIntroPage && !tutorialCompleted) {
+                // Não permitir avançar - mostrar feedback
+                if (typeof AudioManager !== 'undefined') AudioManager.playError();
+                const startMsg = document.querySelector('.start-message');
+                if (startMsg) {
+                    startMsg.style.animation = 'shake 0.5s ease-in-out';
+                    setTimeout(() => startMsg.style.animation = '', 500);
+                }
+                return;
+            }
+
             playClick();
             if (this.currentIndex < this.flatPages.length - 1) {
                 this.currentIndex++;
@@ -391,6 +477,34 @@ const App = {
             }
         };
 
+        // Feedback Modal close bindings
+        const feedbackModal = document.getElementById('modal-feedback');
+        const feedbackClose = document.getElementById('btn-feedback-close');
+        const feedbackBtn = document.getElementById('feedback-btn');
+
+        if (feedbackClose) {
+            feedbackClose.onclick = () => {
+                feedbackModal.classList.remove('active');
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            };
+        }
+
+        if (feedbackBtn) {
+            feedbackBtn.onclick = () => {
+                feedbackModal.classList.remove('active');
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            };
+        }
+
+        // Close feedback modal when clicking outside
+        if (feedbackModal) {
+            feedbackModal.onclick = (e) => {
+                if (e.target === feedbackModal) {
+                    feedbackModal.classList.remove('active');
+                }
+            };
+        }
+
         // Contrast (Dark Mode) - Toggle Button
         const contrastBtn = document.getElementById('btn-contrast');
         contrastBtn.onclick = () => {
@@ -431,10 +545,69 @@ const App = {
 
         // TTS
         const ttsBtn = document.getElementById('btn-tts');
+        const ttsControls = document.getElementById('tts-controls');
+        const volumeSlider = document.getElementById('volume-slider');
+        const volumeRange = document.getElementById('volume-range');
         let speaking = false;
         let ttsSpeed = 1.0;
+        let ttsVolume = 1.0;
         let selectedVoice = null;
         let availableVoices = [];
+        let autoReadEnabled = localStorage.getItem('auto-read') === 'true';
+
+        // Auto-read toggle
+        const autoReadBtn = document.getElementById('btn-auto-read');
+        if (autoReadEnabled) {
+            autoReadBtn.classList.add('active');
+            ttsControls.classList.add('auto-read-mode');
+            ttsBtn.textContent = '▶️';
+            ttsBtn.title = 'Pausar/Continuar Leitura';
+        }
+
+        autoReadBtn.onclick = () => {
+            autoReadEnabled = !autoReadEnabled;
+            autoReadBtn.classList.toggle('active');
+            localStorage.setItem('auto-read', autoReadEnabled);
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+
+            if (autoReadEnabled) {
+                ttsControls.classList.add('auto-read-mode');
+                ttsBtn.textContent = '▶️';
+                ttsBtn.title = 'Pausar/Continuar Leitura';
+                // Iniciar leitura da página atual
+                this.startAutoRead();
+            } else {
+                ttsControls.classList.remove('auto-read-mode');
+                ttsBtn.textContent = '🔊';
+                ttsBtn.title = 'Ler Página';
+                window.speechSynthesis.cancel();
+                speaking = false;
+                ttsBtn.classList.remove('active', 'tts-playing');
+            }
+        };
+
+        // Volume control
+        if (volumeRange) {
+            volumeRange.oninput = () => {
+                ttsVolume = volumeRange.value / 100;
+                // Se estiver falando, reiniciar com novo volume
+                if (speaking) {
+                    window.speechSynthesis.cancel();
+                    const text = document.getElementById('main-content').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
+                    utterance.rate = ttsSpeed;
+                    utterance.volume = ttsVolume;
+                    if (selectedVoice) utterance.voice = selectedVoice;
+                    window.speechSynthesis.speak(utterance);
+                    utterance.onend = () => {
+                        speaking = false;
+                        ttsBtn.classList.remove('active', 'tts-playing');
+                        if (autoReadEnabled) ttsBtn.textContent = '▶️';
+                    };
+                }
+            };
+        }
 
         // Speed Buttons
         document.querySelectorAll('.speed-btn').forEach(btn => {
@@ -451,11 +624,13 @@ const App = {
                     const utterance = new SpeechSynthesisUtterance(text);
                     utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
                     utterance.rate = ttsSpeed;
+                    utterance.volume = ttsVolume;
                     if (selectedVoice) utterance.voice = selectedVoice;
                     window.speechSynthesis.speak(utterance);
                     utterance.onend = () => {
                         speaking = false;
-                        ttsBtn.classList.remove('active');
+                        ttsBtn.classList.remove('active', 'tts-playing');
+                        if (autoReadEnabled) ttsBtn.textContent = '▶️';
                     };
                 }
             };
@@ -496,10 +671,23 @@ const App = {
                     voiceSelect.appendChild(option);
                 });
 
+                // Verificar se há voz salva
                 const savedVoice = localStorage.getItem('tts-voice');
-                if (savedVoice) {
+                if (savedVoice && availableVoices.find(v => v.name === savedVoice)) {
                     voiceSelect.value = savedVoice;
                     selectedVoice = availableVoices.find(v => v.name === savedVoice);
+                } else {
+                    // Auto-selecionar voz Google (⭐) como preset se disponível
+                    const googleVoice = filteredVoices.find(v => v.name.includes('Google'));
+                    if (googleVoice) {
+                        voiceSelect.value = googleVoice.name;
+                        selectedVoice = googleVoice;
+                        localStorage.setItem('tts-voice', googleVoice.name);
+                    } else if (filteredVoices.length > 0) {
+                        // Fallback para primeira voz do idioma
+                        voiceSelect.value = filteredVoices[0].name;
+                        selectedVoice = filteredVoices[0];
+                    }
                 }
             }
         };
@@ -521,38 +709,82 @@ const App = {
             const voice = availableVoices.find(v => v.name === voiceSelect.value);
             if (voice) utterance.voice = voice;
             utterance.rate = ttsSpeed;
+            utterance.volume = ttsVolume;
             window.speechSynthesis.speak(utterance);
         };
 
-        // TTS Button
-        ttsBtn.onclick = () => {
-            if (speaking) {
-                window.speechSynthesis.cancel();
-                speaking = false;
-                ttsBtn.classList.remove('active');
-            } else {
-                const text = document.getElementById('main-content').innerText;
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
-                utterance.rate = ttsSpeed;
-                if (selectedVoice) utterance.voice = selectedVoice;
-                window.speechSynthesis.speak(utterance);
-                speaking = true;
-                ttsBtn.classList.add('active');
+        // Função para iniciar leitura automática
+        this.startAutoRead = () => {
+            if (!autoReadEnabled) return;
 
-                utterance.onend = () => {
+            window.speechSynthesis.cancel();
+            const text = document.getElementById('main-content').innerText;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
+            utterance.rate = ttsSpeed;
+            utterance.volume = ttsVolume;
+            if (selectedVoice) utterance.voice = selectedVoice;
+
+            window.speechSynthesis.speak(utterance);
+            speaking = true;
+            ttsBtn.classList.add('active', 'tts-playing');
+            ttsBtn.textContent = '⏸️';
+
+            utterance.onend = () => {
+                speaking = false;
+                ttsBtn.classList.remove('active', 'tts-playing');
+                if (autoReadEnabled) ttsBtn.textContent = '▶️';
+            };
+        };
+
+        // TTS Button - Muda comportamento baseado no modo auto-read
+        ttsBtn.onclick = () => {
+            if (autoReadEnabled) {
+                // Modo auto-read: play/pause
+                if (speaking) {
+                    if (window.speechSynthesis.paused) {
+                        window.speechSynthesis.resume();
+                        ttsBtn.textContent = '⏸️';
+                        ttsBtn.classList.add('tts-playing');
+                    } else {
+                        window.speechSynthesis.pause();
+                        ttsBtn.textContent = '▶️';
+                        ttsBtn.classList.remove('tts-playing');
+                    }
+                } else {
+                    this.startAutoRead();
+                }
+            } else {
+                // Modo manual: toggle leitura
+                if (speaking) {
+                    window.speechSynthesis.cancel();
                     speaking = false;
                     ttsBtn.classList.remove('active');
-                };
+                } else {
+                    const text = document.getElementById('main-content').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = this.currentLang === 'pt' ? 'pt-BR' : 'es-ES';
+                    utterance.rate = ttsSpeed;
+                    utterance.volume = ttsVolume;
+                    if (selectedVoice) utterance.voice = selectedVoice;
+                    window.speechSynthesis.speak(utterance);
+                    speaking = true;
+                    ttsBtn.classList.add('active');
+
+                    utterance.onend = () => {
+                        speaking = false;
+                        ttsBtn.classList.remove('active');
+                    };
+                }
             }
         };
 
         // Language Buttons
-        document.getElementById('btn-lang-pt').onclick = () => {
+        document.getElementById('btn-lang-pt').onclick = async () => {
             if (this.currentLang !== 'pt') {
                 this.currentLang = 'pt';
-                document.getElementById('btn-lang-pt').classList.add('active');
-                document.getElementById('btn-lang-es').classList.remove('active');
+                await I18n.setLanguage('pt');
+                this.updateLangButtons('pt');
                 this.loadPage(this.currentIndex);
                 this.renderMenu();
                 loadVoices(); // Refresh voices for new language
@@ -560,16 +792,55 @@ const App = {
             }
         };
 
-        document.getElementById('btn-lang-es').onclick = () => {
+        document.getElementById('btn-lang-es').onclick = async () => {
             if (this.currentLang !== 'es') {
                 this.currentLang = 'es';
-                document.getElementById('btn-lang-es').classList.add('active');
-                document.getElementById('btn-lang-pt').classList.remove('active');
+                await I18n.setLanguage('es');
+                this.updateLangButtons('es');
                 this.loadPage(this.currentIndex);
+                this.renderMenu();
                 loadVoices();
                 if (typeof AudioManager !== 'undefined') AudioManager.playClick();
             }
         };
+
+        document.getElementById('btn-lang-fr').onclick = async () => {
+            if (this.currentLang !== 'fr') {
+                this.currentLang = 'fr';
+                await I18n.setLanguage('fr');
+                this.updateLangButtons('fr');
+                this.loadPage(this.currentIndex);
+                this.renderMenu();
+                loadVoices();
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            }
+        };
+
+        document.getElementById('btn-lang-en').onclick = async () => {
+            if (this.currentLang !== 'en') {
+                this.currentLang = 'en';
+                await I18n.setLanguage('en');
+                this.updateLangButtons('en');
+                this.loadPage(this.currentIndex);
+                this.renderMenu();
+                loadVoices();
+                if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+            }
+        };
+    },
+
+    // Helper to update language button states
+    updateLangButtons: function (activeLang) {
+        ['pt', 'es', 'fr', 'en'].forEach(lang => {
+            const btn = document.getElementById(`btn-lang-${lang}`);
+            if (btn) {
+                if (lang === activeLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            }
+        });
     },
 
     // Inicializa componentes interativos após carregar conteúdo
@@ -584,6 +855,28 @@ const App = {
                 const modal = document.getElementById(modalId);
                 if (modal) {
                     modal.classList.add('active');
+                    if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+                }
+            };
+        });
+
+        // Fechar modais com botão X
+        contentArea.querySelectorAll('.modal-close').forEach(btn => {
+            btn.onclick = (e) => {
+                e.preventDefault();
+                const modal = btn.closest('.modal-overlay');
+                if (modal) {
+                    modal.classList.remove('active');
+                    if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+                }
+            };
+        });
+
+        // Fechar modais clicando fora
+        contentArea.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.onclick = (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
                 }
             };
         });
@@ -629,6 +922,51 @@ const App = {
             });
         });
 
+        // 6. SLIDERS (Content Slider)
+        contentArea.querySelectorAll('.content-slider').forEach(slider => {
+            const slides = slider.querySelectorAll('.slider-slide');
+            const prevBtn = slider.querySelector('.slider-prev');
+            const nextBtn = slider.querySelector('.slider-next');
+            const dots = slider.querySelectorAll('.slider-dot');
+            let currentSlide = 0;
+
+            const showSlide = (index) => {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('hidden', i !== index);
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+                currentSlide = index;
+            };
+
+            prevBtn.onclick = () => {
+                if (currentSlide > 0) {
+                    showSlide(currentSlide - 1);
+                    if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+                }
+            };
+
+            nextBtn.onclick = () => {
+                if (currentSlide < slides.length - 1) {
+                    showSlide(currentSlide + 1);
+                    if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+                }
+            };
+
+            dots.forEach((dot, i) => {
+                dot.onclick = () => {
+                    showSlide(i);
+                    if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+                };
+            });
+
+            // Inicializar no primeiro slide
+            showSlide(0);
+        });
+
         // Iniciar animação de wiggle sincronizada
         this.startWiggleSync();
     },
@@ -672,12 +1010,108 @@ const App = {
             // Depois a cada 5 segundos
             this.wiggleInterval = setInterval(triggerWiggle, 5000);
         }, 3000);
+    },
+
+    // Atualiza estado dos cards de Fixação baseado nas insígnias conquistadas
+    updateFixacaoCards: function () {
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+        const fixacaoCards = document.querySelectorAll('.fixacao-card');
+
+        if (fixacaoCards.length === 0) return;
+
+        // Contar insígnias por tipo
+        const count = {
+            resumo: 0,
+            video: 0,
+            quiz: 0,
+            flashcard: 0,
+            'drag-drop': 0,
+            'find-error': 0,
+            'roleplay': 0
+        };
+
+        // Contar quantas insígnias de cada tipo o usuário tem
+        Object.values(badges).forEach(moduleBadges => {
+            if (Array.isArray(moduleBadges)) {
+                moduleBadges.forEach(badge => {
+                    if (count.hasOwnProperty(badge)) {
+                        count[badge]++;
+                    }
+                });
+            }
+        });
+
+        // Atualizar cada card
+        fixacaoCards.forEach(card => {
+            const type = card.dataset.type;
+            const required = parseInt(card.dataset.required) || 1;
+            const currentCount = count[type] || 0;
+
+            // Atualizar ícones individuais
+            const badgeIcons = card.querySelectorAll('.badge-icon');
+            badgeIcons.forEach(icon => {
+                const moduleNum = parseInt(icon.dataset.module);
+                if (badges['m' + moduleNum] && badges['m' + moduleNum].includes(type)) {
+                    icon.classList.add('earned');
+                }
+            });
+
+            // Verificar se está desbloqueado
+            if (currentCount >= required) {
+                card.classList.remove('locked');
+                card.classList.add('unlocked');
+            }
+        });
+    },
+
+    // Verifica se uma página de extras está desbloqueada baseado nas medalhas
+    checkExtrasUnlocked: function (pageId) {
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+
+        // Contar módulos completos
+        const modulosCompletos = {
+            m1: badges.m1 && badges.m1.length > 0,
+            m2: badges.m2 && badges.m2.length > 0,
+            m3: badges.m3 && badges.m3.length > 0
+        };
+        const numModulosCompletos = (modulosCompletos.m1 ? 1 : 0) + (modulosCompletos.m2 ? 1 : 0) + (modulosCompletos.m3 ? 1 : 0);
+
+        // Acompanhamento: liberado se pelo menos 1 módulo completo
+        const acompanhamento = ['extras-resumo', 'extras-videos', 'extras-flashcards', 'extras-questionarios'];
+        if (acompanhamento.includes(pageId)) {
+            return numModulosCompletos >= 1;
+        }
+
+        // Especiais: liberado por módulo específico
+        const especiais = {
+            'extras-arraste': 'm1',
+            'extras-ache-erro': 'm2',
+            'extras-roleplay': 'm3'
+        };
+        if (especiais[pageId]) {
+            return modulosCompletos[especiais[pageId]];
+        }
+
+        return true; // Se não tiver requisito, está desbloqueado
     }
 };
 
 // Start
 window.onload = function () {
     App.init();
+};
+
+// Função global para navegação a partir do conteúdo das páginas
+window.navigateToPage = function (pageId) {
+    const idx = App.flatPages.findIndex(p => p.id === pageId);
+    if (idx >= 0) {
+        App.currentIndex = idx;
+        App.loadPage(idx);
+        App.updateMenuState();
+        if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+    } else {
+        console.error('Page not found:', pageId);
+    }
 };
 
 window.onunload = function () {

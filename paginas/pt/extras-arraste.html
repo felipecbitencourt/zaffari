@@ -1,0 +1,1020 @@
+<!-- Extras - Arraste e Solte -->
+<div class="content-header">
+    <h1>🎯 Arraste e Solte</h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+    <p class="lead">Associe conceitos e categorias arrastando os itens para os lugares corretos.</p>
+
+    <!-- Indicador de Fases -->
+    <div class="dnd-phase-indicator">
+        <div class="phase-dot active" data-phase="1">1</div>
+        <div class="phase-line"></div>
+        <div class="phase-dot" data-phase="2">2</div>
+        <div class="phase-line"></div>
+        <div class="phase-dot" data-phase="3">3</div>
+    </div>
+
+    <!-- Container do Jogo -->
+    <div class="dnd-game-container" id="dnd-game">
+
+        <!-- FASE 1: Tipos de Atendimento -->
+        <div class="dnd-phase" id="phase-1" data-phase="1">
+            <div class="dnd-phase-header">
+                <h3>Fase 1: Tipos de Atendimento</h3>
+                <p>Arraste cada tipo de atendimento para sua descrição correta</p>
+                <div class="dnd-progress">
+                    <span class="dnd-progress-text"><span id="phase1-correct">0</span> de 3 corretos</span>
+                </div>
+            </div>
+
+            <div class="dnd-items-container" id="phase1-items">
+                <div class="dnd-item" draggable="true" data-item="multicanal">
+                    <span class="dnd-item-icon">📞</span>
+                    <span class="dnd-item-text">Atendimento Multicanal</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="receptivo">
+                    <span class="dnd-item-icon">✉️</span>
+                    <span class="dnd-item-text">Atendimento Receptivo</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="ativo">
+                    <span class="dnd-item-icon">📢</span>
+                    <span class="dnd-item-text">Atendimento Ativo</span>
+                </div>
+            </div>
+
+            <div class="dnd-dropzones-container">
+                <div class="dnd-dropzone" data-accepts="multicanal">
+                    <span class="dnd-zone-label">Telefone, e-mail, chat e meios eletrônicos</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+                <div class="dnd-dropzone" data-accepts="receptivo">
+                    <span class="dnd-zone-label">Receber reclamações, sugestões e elogios</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+                <div class="dnd-dropzone" data-accepts="ativo">
+                    <span class="dnd-zone-label">Ativação de cartões, promoções e reversão</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASE 2: Prazos de Atendimento -->
+        <div class="dnd-phase" id="phase-2" data-phase="2" style="display: none;">
+            <div class="dnd-phase-header">
+                <h3>Fase 2: Prazos de Atendimento</h3>
+                <p>Arraste cada tipo de demanda para o prazo correto</p>
+                <div class="dnd-progress">
+                    <span class="dnd-progress-text"><span id="phase2-correct">0</span> de 5 corretos</span>
+                </div>
+            </div>
+
+            <div class="dnd-items-container" id="phase2-items">
+                <div class="dnd-item" draggable="true" data-item="solicitacoes">
+                    <span class="dnd-item-icon">📋</span>
+                    <span class="dnd-item-text">Solicitações</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="informacoes">
+                    <span class="dnd-item-icon">ℹ️</span>
+                    <span class="dnd-item-text">Informações</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="reclamacoes">
+                    <span class="dnd-item-icon">📣</span>
+                    <span class="dnd-item-text">Reclamações</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="danos">
+                    <span class="dnd-item-icon">⚠️</span>
+                    <span class="dnd-item-text">Danos</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="duplicidade">
+                    <span class="dnd-item-icon">💳</span>
+                    <span class="dnd-item-text">Duplicidade de pagamento</span>
+                </div>
+            </div>
+
+            <div class="dnd-dropzones-container dnd-prazos-grid">
+                <div class="dnd-dropzone" data-accepts="informacoes,reclamacoes">
+                    <span class="dnd-zone-label">Até 2 dias úteis</span>
+                    <div class="dnd-zone-placeholder">Solte aqui (2 itens)</div>
+                    <div class="dnd-zone-items"></div>
+                </div>
+                <div class="dnd-dropzone" data-accepts="solicitacoes">
+                    <span class="dnd-zone-label">Até 3 dias úteis</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+                <div class="dnd-dropzone" data-accepts="danos">
+                    <span class="dnd-zone-label">Até 5 dias úteis</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+                <div class="dnd-dropzone" data-accepts="duplicidade">
+                    <span class="dnd-zone-label">Até 8 dias úteis</span>
+                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASE 3: Responsabilidades do SAC -->
+        <div class="dnd-phase" id="phase-3" data-phase="3" style="display: none;">
+            <div class="dnd-phase-header">
+                <h3>Fase 3: Responsabilidades do SAC</h3>
+                <p>Classifique: o que é e o que NÃO é responsabilidade do SAC</p>
+                <div class="dnd-progress">
+                    <span class="dnd-progress-text"><span id="phase3-correct">0</span> de 8 corretos</span>
+                </div>
+            </div>
+
+            <div class="dnd-items-container dnd-items-wrap" id="phase3-items">
+                <div class="dnd-item" draggable="true" data-item="atendimento">
+                    <span class="dnd-item-text">Atendimento receptivo e ativo</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="relatorios">
+                    <span class="dnd-item-text">Elaborar relatórios</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="scripts">
+                    <span class="dnd-item-text">Propor melhorias em scripts</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="suporte">
+                    <span class="dnd-item-text">Suporte a colaboradores</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="leis">
+                    <span class="dnd-item-text">Definir leis de proteção ao consumidor</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="orcamento">
+                    <span class="dnd-item-text">Aprovar orçamento da empresa</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="contratar">
+                    <span class="dnd-item-text">Contratar funcionários</span>
+                </div>
+                <div class="dnd-item" draggable="true" data-item="contratos">
+                    <span class="dnd-item-text">Negociar contratos com fornecedores</span>
+                </div>
+            </div>
+
+            <div class="dnd-dropzones-container dnd-two-columns">
+                <div class="dnd-dropzone dnd-zone-yes" data-accepts="atendimento,relatorios,scripts,suporte">
+                    <span class="dnd-zone-label">✅ SAC faz</span>
+                    <div class="dnd-zone-placeholder">Solte aqui (4 itens)</div>
+                    <div class="dnd-zone-items"></div>
+                </div>
+                <div class="dnd-dropzone dnd-zone-no" data-accepts="leis,orcamento,contratar,contratos">
+                    <span class="dnd-zone-label">❌ SAC não faz</span>
+                    <div class="dnd-zone-placeholder">Solte aqui (4 itens)</div>
+                    <div class="dnd-zone-items"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tela de Conclusão -->
+        <div class="dnd-complete" id="dnd-complete" style="display: none;">
+            <div class="dnd-complete-content">
+                <span class="dnd-complete-icon">🎉</span>
+                <h2>Parabéns!</h2>
+                <p>Você completou todas as 3 fases do jogo de Arraste e Solte!</p>
+                <div class="dnd-complete-actions">
+                    <button class="btn-dnd-restart" onclick="restartGame()">🔄 Jogar Novamente</button>
+                    <button class="btn-extras-back" onclick="navigateToPage('extras-hub')">← Voltar ao Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup de Parabéns por Fase -->
+    <div class="phase-popup-overlay" id="phase-popup" style="display: none;">
+        <div class="confetti-container" id="confetti-container"></div>
+        <div class="phase-popup">
+            <span class="phase-popup-icon">🎉</span>
+            <h3 id="popup-title">Fase 1 Completa!</h3>
+            <p id="popup-message">Excelente trabalho!</p>
+        </div>
+    </div>
+
+    <!-- Controles de Navegação entre Fases -->
+    <div class="dnd-controls" id="dnd-controls">
+        <button class="btn-dnd-next" id="btn-next-phase" style="display: none;" onclick="nextPhase()">
+            Próxima Fase →
+        </button>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>
+
+<script>
+    (function () {
+        // Estado do jogo
+        let currentPhase = 1;
+        let phaseScores = { 1: 0, 2: 0, 3: 0 };
+        let phaseTotals = { 1: 3, 2: 5, 3: 8 };
+        let draggedItem = null;
+
+        // Inicializar jogo
+        function initGame() {
+            setupDragAndDrop();
+            updatePhaseIndicator();
+        }
+
+        // Configurar drag and drop
+        function setupDragAndDrop() {
+            // Itens arrastáveis
+            document.querySelectorAll('.dnd-item').forEach(item => {
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
+
+                // Touch support
+                item.addEventListener('touchstart', handleTouchStart, { passive: false });
+                item.addEventListener('touchmove', handleTouchMove, { passive: false });
+                item.addEventListener('touchend', handleTouchEnd);
+            });
+
+            // Zonas de drop
+            document.querySelectorAll('.dnd-dropzone').forEach(zone => {
+                zone.addEventListener('dragover', handleDragOver);
+                zone.addEventListener('dragleave', handleDragLeave);
+                zone.addEventListener('drop', handleDrop);
+            });
+        }
+
+        // Drag handlers
+        function handleDragStart(e) {
+            if (this.classList.contains('placed')) return;
+
+            draggedItem = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', this.dataset.item);
+        }
+
+        function handleDragEnd(e) {
+            this.classList.remove('dragging');
+            document.querySelectorAll('.dnd-dropzone').forEach(zone => {
+                zone.classList.remove('drag-over');
+            });
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            this.classList.add('drag-over');
+        }
+
+        function handleDragLeave(e) {
+            this.classList.remove('drag-over');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            this.classList.remove('drag-over');
+
+            if (!draggedItem) return;
+
+            const itemId = draggedItem.dataset.item;
+            const acceptedItems = this.dataset.accepts.split(',');
+
+            if (acceptedItems.includes(itemId)) {
+                // Correto!
+                handleCorrectDrop(draggedItem, this);
+            } else {
+                // Errado!
+                handleWrongDrop(draggedItem);
+            }
+
+            draggedItem = null;
+        }
+
+        // Touch handlers para mobile
+        let touchClone = null;
+        let touchStartX, touchStartY;
+
+        function handleTouchStart(e) {
+            if (this.classList.contains('placed')) return;
+
+            e.preventDefault();
+            draggedItem = this;
+
+            const touch = e.touches[0];
+            touchStartX = touch.clientX;
+            touchStartY = touch.clientY;
+
+            // Criar clone visual
+            touchClone = this.cloneNode(true);
+            touchClone.classList.add('touch-clone');
+            touchClone.style.position = 'fixed';
+            touchClone.style.pointerEvents = 'none';
+            touchClone.style.zIndex = '9999';
+            document.body.appendChild(touchClone);
+
+            this.classList.add('dragging');
+            updateTouchClonePosition(touch);
+        }
+
+        function handleTouchMove(e) {
+            if (!draggedItem || !touchClone) return;
+            e.preventDefault();
+
+            const touch = e.touches[0];
+            updateTouchClonePosition(touch);
+
+            // Highlight zone under touch
+            const elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
+            const zone = elementBelow?.closest('.dnd-dropzone');
+
+            document.querySelectorAll('.dnd-dropzone').forEach(z => z.classList.remove('drag-over'));
+            if (zone) zone.classList.add('drag-over');
+        }
+
+        function handleTouchEnd(e) {
+            if (!draggedItem) return;
+
+            // Find zone under last touch position
+            const touch = e.changedTouches[0];
+            const elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
+            const zone = elementBelow?.closest('.dnd-dropzone');
+
+            if (zone) {
+                const itemId = draggedItem.dataset.item;
+                const acceptedItems = zone.dataset.accepts.split(',');
+
+                if (acceptedItems.includes(itemId)) {
+                    handleCorrectDrop(draggedItem, zone);
+                } else {
+                    handleWrongDrop(draggedItem);
+                }
+            }
+
+            // Cleanup
+            if (touchClone) {
+                touchClone.remove();
+                touchClone = null;
+            }
+            draggedItem.classList.remove('dragging');
+            document.querySelectorAll('.dnd-dropzone').forEach(z => z.classList.remove('drag-over'));
+            draggedItem = null;
+        }
+
+        function updateTouchClonePosition(touch) {
+            if (!touchClone) return;
+            const rect = draggedItem.getBoundingClientRect();
+            touchClone.style.left = (touch.clientX - rect.width / 2) + 'px';
+            touchClone.style.top = (touch.clientY - rect.height / 2) + 'px';
+        }
+
+        // Handlers de resultado
+        function handleCorrectDrop(item, zone) {
+            // Mover item para a zona
+            const zoneItems = zone.querySelector('.dnd-zone-items');
+            if (zoneItems) {
+                zoneItems.appendChild(item);
+            } else {
+                zone.appendChild(item);
+            }
+
+            item.classList.add('placed', 'correct');
+            item.setAttribute('draggable', 'false');
+            zone.querySelector('.dnd-zone-placeholder')?.classList.add('hidden');
+
+            // Atualizar pontuação
+            phaseScores[currentPhase]++;
+            updateProgressDisplay();
+
+            // Feedback
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+
+            // Verificar se fase completa
+            if (phaseScores[currentPhase] >= phaseTotals[currentPhase]) {
+                handlePhaseComplete();
+            }
+        }
+
+        function handleWrongDrop(item) {
+            item.classList.add('wrong');
+            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+
+            setTimeout(() => {
+                item.classList.remove('wrong', 'dragging');
+            }, 500);
+        }
+
+        function handlePhaseComplete() {
+            // Mostrar popup de parabéns
+            showPhasePopup();
+
+            // Mostrar botão de próxima fase
+            const nextBtn = document.getElementById('btn-next-phase');
+
+            if (currentPhase < 3) {
+                nextBtn.style.display = 'inline-flex';
+                nextBtn.classList.add('pulse-animation');
+            } else {
+                // Jogo completo!
+                setTimeout(showComplete, 2500);
+            }
+        }
+
+        function showPhasePopup() {
+            const popup = document.getElementById('phase-popup');
+            const title = document.getElementById('popup-title');
+            const message = document.getElementById('popup-message');
+
+            const messages = {
+                1: { title: 'Fase 1 Completa!', msg: 'Você dominou os tipos de atendimento!' },
+                2: { title: 'Fase 2 Completa!', msg: 'Excelente! Os prazos não são mais segredo!' },
+                3: { title: 'Todas as Fases Completas!', msg: 'Você é um expert no SAC!' }
+            };
+
+            title.textContent = messages[currentPhase].title;
+            message.textContent = messages[currentPhase].msg;
+
+            popup.style.display = 'flex';
+            createConfetti();
+
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+
+            // Auto-hide depois de 2.5 segundos
+            setTimeout(() => {
+                popup.style.display = 'none';
+                clearConfetti();
+            }, 2500);
+        }
+
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#e53935', '#ff6f60', '#ffd54f', '#4caf50', '#2196f3', '#9c27b0'];
+
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                container.appendChild(confetti);
+            }
+        }
+
+        function clearConfetti() {
+            const container = document.getElementById('confetti-container');
+            container.innerHTML = '';
+        }
+
+        // Navegação entre fases
+        window.nextPhase = function () {
+            if (currentPhase >= 3) return;
+
+            // Esconder fase atual
+            document.getElementById('phase-' + currentPhase).style.display = 'none';
+
+            // Avançar
+            currentPhase++;
+
+            // Mostrar próxima fase
+            document.getElementById('phase-' + currentPhase).style.display = 'block';
+
+            // Atualizar indicador
+            updatePhaseIndicator();
+
+            // Esconder botão
+            const nextBtn = document.getElementById('btn-next-phase');
+            nextBtn.style.display = 'none';
+            nextBtn.classList.remove('pulse-animation');
+
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        };
+
+        function showComplete() {
+            document.getElementById('phase-3').style.display = 'none';
+            document.getElementById('dnd-controls').style.display = 'none';
+            document.getElementById('dnd-complete').style.display = 'flex';
+
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+        }
+
+        window.restartGame = function () {
+            // Reset state
+            currentPhase = 1;
+            phaseScores = { 1: 0, 2: 0, 3: 0 };
+
+            // Reset UI
+            document.querySelectorAll('.dnd-phase').forEach((phase, i) => {
+                phase.style.display = i === 0 ? 'block' : 'none';
+            });
+            document.getElementById('dnd-complete').style.display = 'none';
+            document.getElementById('dnd-controls').style.display = 'flex';
+            document.getElementById('btn-next-phase').style.display = 'none';
+
+            // Reset items
+            document.querySelectorAll('.dnd-item').forEach(item => {
+                item.classList.remove('placed', 'correct', 'wrong');
+                item.setAttribute('draggable', 'true');
+
+                // Mover de volta para container original
+                const phase = item.closest('.dnd-phase');
+                const container = phase.querySelector('.dnd-items-container');
+                container.appendChild(item);
+            });
+
+            // Reset zones
+            document.querySelectorAll('.dnd-zone-placeholder').forEach(p => p.classList.remove('hidden'));
+
+            // Reset progress displays
+            updateProgressDisplay();
+            updatePhaseIndicator();
+        };
+
+        function updateProgressDisplay() {
+            for (let i = 1; i <= 3; i++) {
+                const el = document.getElementById('phase' + i + '-correct');
+                if (el) el.textContent = phaseScores[i];
+            }
+        }
+
+        function updatePhaseIndicator() {
+            document.querySelectorAll('.phase-dot').forEach(dot => {
+                const phase = parseInt(dot.dataset.phase);
+                dot.classList.remove('active', 'completed');
+
+                if (phase < currentPhase) {
+                    dot.classList.add('completed');
+                } else if (phase === currentPhase) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        // Iniciar
+        setTimeout(initGame, 50);
+    })();
+</script>
+
+<style>
+    /* Indicador de Fases */
+    .dnd-phase-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .phase-dot {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--bg-secondary);
+        border: 2px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: var(--text-secondary);
+        transition: all var(--transition-fast);
+    }
+
+    .phase-dot.active {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(229, 57, 53, 0.4);
+    }
+
+    .phase-dot.completed {
+        background: var(--success);
+        border-color: var(--success);
+        color: white;
+    }
+
+    .phase-line {
+        width: 60px;
+        height: 3px;
+        background: var(--border-color);
+    }
+
+    /* Container do Jogo */
+    .dnd-game-container {
+        min-height: 400px;
+    }
+
+    /* Fase */
+    .dnd-phase {
+        animation: fadeIn 0.3s ease;
+    }
+
+    .dnd-phase-header {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .dnd-phase-header h3 {
+        margin: 0 0 var(--spacing-xs);
+        color: var(--primary-color);
+    }
+
+    .dnd-phase-header p {
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .dnd-progress {
+        display: inline-block;
+        background: var(--bg-secondary);
+        padding: var(--spacing-xs) var(--spacing-md);
+        border-radius: var(--radius-full);
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    /* Itens Arrastáveis */
+    .dnd-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+        justify-content: center;
+        margin-bottom: var(--spacing-xl);
+        min-height: 60px;
+    }
+
+    .dnd-items-wrap {
+        flex-wrap: wrap;
+    }
+
+    .dnd-item {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-sm) var(--spacing-lg);
+        background: var(--bg-secondary);
+        border: 2px solid var(--border-color);
+        border-radius: var(--radius-md);
+        cursor: grab;
+        user-select: none;
+        transition: all var(--transition-fast);
+        font-weight: 500;
+    }
+
+    .dnd-item:hover:not(.placed) {
+        border-color: var(--primary-color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .dnd-item.dragging {
+        opacity: 0.5;
+        cursor: grabbing;
+    }
+
+    .dnd-item.placed {
+        cursor: default;
+        opacity: 1;
+    }
+
+    .dnd-item.correct {
+        background: rgba(76, 175, 80, 0.15);
+        border-color: var(--success);
+        color: #2e7d32;
+    }
+
+    .dnd-item.correct::after {
+        content: '✓';
+        margin-left: var(--spacing-sm);
+        font-weight: 700;
+    }
+
+    .dnd-item.wrong {
+        animation: shake 0.5s ease;
+        border-color: var(--error);
+        background: rgba(244, 67, 54, 0.1);
+    }
+
+    .dnd-item-icon {
+        font-size: 1.2rem;
+    }
+
+    /* Touch Clone */
+    .touch-clone {
+        opacity: 0.9;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+
+    /* Zonas de Drop */
+    .dnd-dropzones-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .dnd-prazos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .dnd-two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .dnd-dropzone {
+        background: var(--bg-primary);
+        border: 2px dashed var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-lg);
+        min-height: 80px;
+        transition: all var(--transition-fast);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dnd-dropzone.drag-over {
+        border-color: var(--primary-color);
+        background: rgba(229, 57, 53, 0.05);
+        transform: scale(1.02);
+    }
+
+    .dnd-zone-label {
+        font-weight: 600;
+        margin-bottom: var(--spacing-sm);
+        color: var(--text-primary);
+        text-align: center;
+    }
+
+    .dnd-zone-placeholder {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        padding: var(--spacing-md);
+        border: 1px dashed var(--border-color);
+        border-radius: var(--radius-md);
+        width: 100%;
+        text-align: center;
+    }
+
+    .dnd-zone-placeholder.hidden {
+        display: none;
+    }
+
+    .dnd-zone-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dnd-zone-yes {
+        border-color: rgba(76, 175, 80, 0.5);
+        background: rgba(76, 175, 80, 0.05);
+    }
+
+    .dnd-zone-no {
+        border-color: rgba(244, 67, 54, 0.5);
+        background: rgba(244, 67, 54, 0.05);
+    }
+
+    /* Controles */
+    .dnd-controls {
+        display: flex;
+        justify-content: center;
+        margin-top: var(--spacing-xl);
+    }
+
+    .btn-dnd-next {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-xl);
+        background: var(--primary-gradient);
+        color: white;
+        border: none;
+        border-radius: var(--radius-md);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+    }
+
+    .btn-dnd-next:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--primary-glow);
+    }
+
+    .pulse-animation {
+        animation: pulse-btn 1.5s infinite;
+    }
+
+    @keyframes pulse-btn {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    /* Tela de Conclusão */
+    .dnd-complete {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: var(--spacing-2xl);
+        animation: fadeIn 0.5s ease;
+    }
+
+    .dnd-complete-icon {
+        font-size: 4rem;
+        margin-bottom: var(--spacing-lg);
+        animation: bounce 0.5s ease;
+    }
+
+    .dnd-complete h2 {
+        margin: 0 0 var(--spacing-sm);
+        color: var(--success);
+    }
+
+    .dnd-complete p {
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .dnd-complete-actions {
+        display: flex;
+        gap: var(--spacing-md);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-dnd-restart {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-xl);
+        background: var(--success);
+        color: white;
+        border: none;
+        border-radius: var(--radius-md);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+    }
+
+    .btn-dnd-restart:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    /* Dark mode */
+    body.high-contrast .dnd-item {
+        background: var(--bg-secondary);
+        border-color: var(--border-color);
+    }
+
+    body.high-contrast .dnd-dropzone {
+        background: var(--bg-secondary);
+    }
+
+    body.high-contrast .phase-dot {
+        background: var(--bg-primary);
+    }
+
+    /* Popup de Parabéns */
+    .phase-popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .phase-popup {
+        background: white;
+        padding: var(--spacing-2xl);
+        border-radius: var(--radius-xl);
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        z-index: 10;
+    }
+
+    .phase-popup-icon {
+        font-size: 4rem;
+        display: block;
+        margin-bottom: var(--spacing-md);
+        animation: bounce 0.6s infinite alternate;
+    }
+
+    .phase-popup h3 {
+        margin: 0 0 var(--spacing-sm);
+        color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+
+    .phase-popup p {
+        margin: 0;
+        color: var(--text-secondary);
+    }
+
+    @keyframes popIn {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Confetti */
+    .confetti-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .confetti {
+        position: absolute;
+        top: -20px;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        animation: confettiFall linear forwards;
+    }
+
+    @keyframes confettiFall {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(100vh) rotate(720deg);
+            opacity: 0;
+        }
+    }
+
+    body.high-contrast .phase-popup {
+        background: var(--bg-secondary);
+    }
+
+    body.high-contrast .phase-popup p {
+        color: var(--text-secondary);
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+
+        .dnd-prazos-grid,
+        .dnd-two-columns {
+            grid-template-columns: 1fr;
+        }
+
+        .dnd-items-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .dnd-item {
+            justify-content: center;
+        }
+
+        .phase-popup {
+            margin: var(--spacing-md);
+            padding: var(--spacing-xl);
+        }
+
+        .phase-popup-icon {
+            font-size: 3rem;
+        }
+    }
+</style>

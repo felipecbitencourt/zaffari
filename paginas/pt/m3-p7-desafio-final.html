@@ -1,20 +1,54 @@
 ﻿<!-- Módulo 3 - Página 7: Desafio Final -->
 <div class="content-header">
-    <h1>Reflexão Final</h1>
+    <h1 data-i18n="m3.p7.title">🏆 Desafio Final</h1>
 </div>
 
 <div class="content-body">
     <!-- INICIO DO TEXTO EDITÁVEL -->
-    <p>A qualidade do atendimento depende de atenção, escuta ativa, empatia e registros completos e corretos.</p>
+    <p data-i18n="m3.p7.intro">A qualidade do atendimento depende de atenção, escuta ativa, empatia e registros
+        completos e corretos.</p>
 
     <!-- QUESTÃO 11 (Reflexiva) -->
     <div class="box-attention"
         style="background-color: #e1f5fe; border-left: 5px solid #03a9f4; padding: 15px; margin-top: 20px;">
-        <h3>💭 Para Refletir</h3>
-        <p><strong>Por que registros completos e corretos são fundamentais para a qualidade do atendimento e para evitar
-                retrabalho?</strong></p>
-        <textarea placeholder="Sua resposta..."
+        <h3 data-i18n="m3.p7.box_title">💭 Para Refletir</h3>
+        <p><strong data-i18n="m3.p7.box_text">Imagine que você é um supervisor analisando um caso de reclamação antiga.
+                Você encontra um registro
+                anterior que diz apenas "Cliente reclamou". Como isso afeta sua capacidade de resolver o problema hoje?
+                Reflita sobre o impacto dos detalhes.</strong></p>
+        <textarea id="resposta-desafio" data-i18n="[placeholder]m3.p7.placeholder" placeholder="Sua resposta..."
             style="width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px;"></textarea>
+        <button id="btn-enviar-desafio" class="btn-primary"
+            style="margin-top: 15px; padding: 12px 30px; background: var(--primary-gradient); color: white; border: none; border-radius: var(--radius-md); font-weight: 600; cursor: pointer;"
+            data-i18n="m3.p7.btn_submit">Enviar Reflexão</button>
+        <div id="feedback-desafio"
+            style="display: none; margin-top: 15px; padding: 15px; background: #e8f5e9; border-radius: var(--radius-md); border-left: 4px solid #4caf50;">
+            <p style="margin: 0; color: #2e7d32;"><strong>✅ Reflexão registrada!</strong> Muito bom! Registros completos
+                e detalhados são essenciais para um atendimento de qualidade. Continue aplicando esse pensamento no seu
+                dia a dia.</p>
+        </div>
     </div>
     <!-- FIM DO TEXTO EDITÁVEL -->
 </div>
+
+<script>
+    (function () {
+        const btn = document.getElementById('btn-enviar-desafio');
+        const textarea = document.getElementById('resposta-desafio');
+        const feedback = document.getElementById('feedback-desafio');
+
+        if (btn && textarea && feedback) {
+            btn.onclick = function () {
+                // Mostrar feedback
+                feedback.style.display = 'block';
+                btn.disabled = true;
+                btn.textContent = '✔ Enviado';
+                btn.style.background = '#4caf50';
+                textarea.disabled = true;
+
+                // Som de sucesso
+                if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+            };
+        }
+    })();
+</script>

@@ -1,0 +1,667 @@
+<!-- Extras - Questionários -->
+<div class="content-header">
+    <h1 data-i18n="extras.quiz.title">📝 Questionários</h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+    <p class="lead" data-i18n="extras.quiz.lead">Teste seus conhecimentos com todos os questionários do curso reunidos
+        em um só lugar.</p>
+
+    <!-- MÓDULO 1: Papel Estratégico do SAC -->
+    <div class="quiz-module" data-module="1" id="quiz-m1">
+        <div class="quiz-module-header" onclick="toggleQuizModule('m1')">
+            <div class="quiz-module-header-left">
+                <span class="quiz-module-icon">🎯</span>
+                <h3 data-i18n="extras.quiz.modules.m1.title">Módulo 1: Papel Estratégico do SAC</h3>
+                <span class="quiz-count" data-i18n="extras.quiz.modules.m1.count">3 questões</span>
+            </div>
+            <div class="quiz-module-header-right">
+                <span class="quiz-status locked-status" data-i18n="extras.quiz.lock_msg">🔒 Conclua o módulo para
+                    desbloquear</span>
+                <span class="quiz-status unlocked-status" style="display:none;" data-i18n="extras.quiz.unlock_msg">✓
+                    Disponível</span>
+                <span class="quiz-toggle">▼</span>
+            </div>
+        </div>
+        <div class="quiz-module-content" style="display:none;">
+            <!-- Questão 1 -->
+            <div class="quiz-block" data-question="m1-q1">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m1.questions.q1.text"><strong>Questão
+                        1:</strong> Qual das alternativas melhor representa o papel
+                    estratégico do SAC?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q1.options.a">A) Atender ligações e registrar
+                        reclamações.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q1.options.b">B) Resolver problemas pontuais sem
+                        impacto na
+                        imagem da empresa.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m1.questions.q1.options.c">C) Representar a voz da empresa no
+                        contato direto
+                        com o cliente e fortalecer a reputação da marca.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q1.options.d">D) Atuar apenas quando outros setores
+                        não conseguem
+                        resolver demandas.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m1.questions.q1.feedback">
+                    <strong>Resposta Correta!</strong> O SAC é a voz da empresa e fortalece a reputação da marca.
+                </div>
+            </div>
+
+            <!-- Questão 2 -->
+            <div class="quiz-block" data-question="m1-q2">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m1.questions.q2.text"><strong>Questão
+                        2:</strong> Qual das atividades abaixo <strong>não</strong> faz
+                    parte das responsabilidades do SAC?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q2.options.a">A) Atendimento receptivo e
+                        ativo.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q2.options.b">B) Organização de dados e elaboração
+                        de
+                        relatórios.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m1.questions.q2.options.c">C) Definição das leis de proteção ao
+                        consumidor.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q2.options.d">D) Proposição de melhorias em scripts
+                        e padrões de
+                        atendimento.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m1.questions.q2.feedback">
+                    <strong>Resposta Correta!</strong> O SAC segue as leis, mas quem as define é o governo
+                    (Legislativo).
+                </div>
+            </div>
+
+            <!-- Questão 3 (V/F) -->
+            <div class="quiz-block" data-question="m1-q3">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m1.questions.q3.text"><strong>Questão 3
+                        (Verdadeiro ou Falso):</strong> O correto registro da categoria de
+                    atendimento influencia diretamente o prazo de retorno ao cliente.</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m1.questions.q3.options.a">A) Verdadeiro</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m1.questions.q3.options.b">B) Falso</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m1.questions.q3.feedback">
+                    <strong>Resposta Correta!</strong> O sistema calcula o prazo baseado na categoria registrada.
+                </div>
+            </div>
+        </div>
+        <div class="quiz-locked-overlay">
+            <span class="lock-icon">🔒</span>
+            <p data-i18n="extras.quiz.modules.m1.overlay">Complete o Módulo 1 para desbloquear estes questionários</p>
+        </div>
+    </div>
+
+    <!-- MÓDULO 2: Onde encontrar informações? -->
+    <div class="quiz-module" data-module="2" id="quiz-m2">
+        <div class="quiz-module-header" onclick="toggleQuizModule('m2')">
+            <div class="quiz-module-header-left">
+                <span class="quiz-module-icon">🔧</span>
+                <h3 data-i18n="extras.quiz.modules.m2.title">Módulo 2: Onde encontrar informações?</h3>
+                <span class="quiz-count" data-i18n="extras.quiz.modules.m2.count">3 questões</span>
+            </div>
+            <div class="quiz-module-header-right">
+                <span class="quiz-status locked-status" data-i18n="extras.quiz.lock_msg">🔒 Conclua o módulo para
+                    desbloquear</span>
+                <span class="quiz-status unlocked-status" style="display:none;" data-i18n="extras.quiz.unlock_msg">✓
+                    Disponível</span>
+                <span class="quiz-toggle">▼</span>
+            </div>
+        </div>
+        <div class="quiz-module-content" style="display:none;">
+            <!-- Questão 1 -->
+            <div class="quiz-block" data-question="m2-q1">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m2.questions.q1.text"><strong>Questão
+                        1:</strong> Para consultar endereço, horário de funcionamento e
+                    formas de contato das lojas, o atendente deve acessar:</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q1.options.a">A) O site da empresa.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m2.questions.q1.options.b">B) A Intranet → Filiais → Dados
+                        cadastrais e
+                        horários.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q1.options.c">C) O Google Maps.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q1.options.d">D) Um grupo interno de
+                        mensagens.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m2.questions.q1.feedback">
+                    <strong>Resposta Correta!</strong> A Intranet é a fonte oficial e segura.
+                </div>
+            </div>
+
+            <!-- Questão 2 -->
+            <div class="quiz-block" data-question="m2-q2">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m2.questions.q2.text"><strong>Questão
+                        2:</strong> Dominar a consulta de informações na Intranet contribui
+                    para:</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q2.options.a">A) Aumentar o tempo de
+                        atendimento.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q2.options.b">B) Reduzir a padronização das
+                        respostas.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m2.questions.q2.options.c">C) Garantir agilidade, assertividade e
+                        melhor
+                        experiência para o cliente.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q2.options.d">D) Tornar o atendimento mais
+                        informal.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m2.questions.q2.feedback">
+                    <strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão.
+                </div>
+            </div>
+
+            <!-- Questão 3 -->
+            <div class="quiz-block" data-question="m2-q3">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m2.questions.q3.text"><strong>Questão
+                        3:</strong> Qual é a sequência correta para o cliente começar a
+                    receber ofertas pelo WhatsApp?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q3.options.a">A) Acessar o site → escolher produtos
+                        → cadastrar
+                        telefone.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m2.questions.q3.options.b">B) Selecionar a loja → acessar a
+                        comunidade pelo
+                        link ou QR Code → receber ofertas.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q3.options.c">C) Entrar em contato com o SAC →
+                        solicitar cadastro
+                        → aguardar confirmação.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m2.questions.q3.options.d">D) Baixar um aplicativo exclusivo →
+                        criar login →
+                        aceitar termos.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m2.questions.q3.feedback">
+                    <strong>Resposta Correta!</strong> Simples e direto: Loja -> QR Code/Link -> Ofertas.
+                </div>
+            </div>
+        </div>
+        <div class="quiz-locked-overlay">
+            <span class="lock-icon">🔒</span>
+            <p data-i18n="extras.quiz.modules.m2.overlay">Complete o Módulo 2 para desbloquear estes questionários</p>
+        </div>
+    </div>
+
+    <!-- MÓDULO 3: CDC e Legislação -->
+    <div class="quiz-module" data-module="3" id="quiz-m3">
+        <div class="quiz-module-header" onclick="toggleQuizModule('m3')">
+            <div class="quiz-module-header-left">
+                <span class="quiz-module-icon">⚖️</span>
+                <h3 data-i18n="extras.quiz.modules.m3.title">Módulo 3: CDC e Legislação</h3>
+                <span class="quiz-count" data-i18n="extras.quiz.modules.m3.count">4 questões</span>
+            </div>
+            <div class="quiz-module-header-right">
+                <span class="quiz-status locked-status" data-i18n="extras.quiz.lock_msg">🔒 Conclua o módulo para
+                    desbloquear</span>
+                <span class="quiz-status unlocked-status" style="display:none;" data-i18n="extras.quiz.unlock_msg">✓
+                    Disponível</span>
+                <span class="quiz-toggle">▼</span>
+            </div>
+        </div>
+        <div class="quiz-module-content" style="display:none;">
+            <!-- Questão 1 -->
+            <div class="quiz-block" data-question="m3-q1">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m3.questions.q1.text"><strong>Questão
+                        1:</strong> Por que o conhecimento do Código de Defesa do Consumidor
+                    é essencial para quem atua no SAC?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q1.options.a">A) Apenas para cumprir exigências
+                        legais.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m3.questions.q1.options.b">B) Para responder com segurança,
+                        evitar retrabalho e
+                        transmitir credibilidade ao cliente.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q1.options.c">C) Para substituir as políticas
+                        internas da
+                        empresa.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q1.options.d">D) Apenas para lidar com reclamações
+                        formais.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m3.questions.q1.feedback">
+                    <strong>Resposta Correta!</strong> Conhecimento gera segurança e credibilidade.
+                </div>
+            </div>
+
+            <!-- Questão 2 (V/F) -->
+            <div class="quiz-block" data-question="m3-q2">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m3.questions.q2.text"><strong>Questão 2
+                        (Verdadeiro ou Falso):</strong> A troca de produtos sem defeito em
+                    loja física é um direito garantido pelo Código de Defesa do Consumidor.</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q2.options.a">A) Verdadeiro</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m3.questions.q2.options.b">B) Falso</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m3.questions.q2.feedback">
+                    <strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei.
+                </div>
+            </div>
+
+            <!-- Questão 3 -->
+            <div class="quiz-block" data-question="m3-q3">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m3.questions.q3.text"><strong>Questão
+                        3:</strong> O direito de arrependimento permite que o cliente:</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q3.options.a">A) Troque qualquer produto comprado em
+                        loja física
+                        em até 7 dias.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m3.questions.q3.options.b">B) Desista de uma compra online em até
+                        7 dias
+                        corridos após o recebimento.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q3.options.c">C) Solicite devolução apenas de
+                        produtos com
+                        defeito.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q3.options.d">D) Exija troca imediata sem
+                        análise.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m3.questions.q3.feedback">
+                    <strong>Resposta Correta!</strong> Exclusivo para compras fora do estabelecimento comercial
+                    (online/telefone).
+                </div>
+            </div>
+
+            <!-- Questão 4 (Síntese Final) -->
+            <div class="quiz-block" data-question="m3-q4">
+                <p class="question" data-i18n="[html]extras.quiz.modules.m3.questions.q4.text"><strong>Questão 4
+                        (Síntese Final):</strong> Após concluir o curso, qual das
+                    alternativas melhor resume o papel do SAC?</p>
+                <div class="options">
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q4.options.a">A) Resolver problemas pontuais de
+                        clientes.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q4.options.b">B) Atender ligações e registrar
+                        informações.</button>
+                    <button class="quiz-option" data-correct="true"
+                        data-i18n="extras.quiz.modules.m3.questions.q4.options.c">C) Atuar de forma estratégica,
+                        humanizada e alinhada
+                        à legislação, fortalecendo a experiência do cliente e a reputação da marca.</button>
+                    <button class="quiz-option" data-correct="false"
+                        data-i18n="extras.quiz.modules.m3.questions.q4.options.d">D) Encaminhar demandas para outros
+                        setores.</button>
+                </div>
+                <div class="feedback" style="display:none;"
+                    data-i18n="[html]extras.quiz.modules.m3.questions.q4.feedback">
+                    <strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏
+                </div>
+            </div>
+        </div>
+        <div class="quiz-locked-overlay">
+            <span class="lock-icon">🔒</span>
+            <p data-i18n="extras.quiz.modules.m3.overlay">Complete o Módulo 3 para desbloquear estes questionários</p>
+        </div>
+    </div>
+
+    <div class="box-attention">
+        <p data-i18n="extras.quiz.tip_box">💡 Refaça os questionários quantas vezes quiser para fixar o conhecimento!
+        </p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <div class="extras-back-container" style="margin-top: var(--spacing-xl); text-align: center;">
+        <button class="btn-extras-back" onclick="navigateToPage('extras-hub')" data-i18n="extras.quiz.back_btn">← Voltar
+            ao Menu de Extras</button>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>
+
+<script>
+    // Função para alternar visibilidade do módulo de quiz
+    function toggleQuizModule(moduleId) {
+        const quizDiv = document.getElementById('quiz-' + moduleId);
+        if (!quizDiv) return;
+
+        // Verificar se está desbloqueado
+        if (quizDiv.classList.contains('locked')) {
+            // Se bloqueado, não permite expandir
+            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+            quizDiv.classList.add('shake');
+            setTimeout(() => quizDiv.classList.remove('shake'), 500);
+            return;
+        }
+
+        const content = quizDiv.querySelector('.quiz-module-content');
+        const toggle = quizDiv.querySelector('.quiz-toggle');
+
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            toggle.textContent = '▲';
+            quizDiv.classList.add('expanded');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        } else {
+            content.style.display = 'none';
+            toggle.textContent = '▼';
+            quizDiv.classList.remove('expanded');
+            if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+        }
+    }
+
+    // Inicializar estado dos questionários baseado nas medalhas
+    (function () {
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+
+        // Verificar cada módulo
+        ['m1', 'm2', 'm3'].forEach(moduleKey => {
+            const quizDiv = document.getElementById('quiz-' + moduleKey);
+            if (!quizDiv) return;
+
+            const isUnlocked = badges[moduleKey] && badges[moduleKey].length > 0;
+            const lockedStatus = quizDiv.querySelector('.locked-status');
+            const unlockedStatus = quizDiv.querySelector('.unlocked-status');
+            const overlay = quizDiv.querySelector('.quiz-locked-overlay');
+
+            if (isUnlocked) {
+                // Desbloqueado
+                quizDiv.classList.remove('locked');
+                quizDiv.classList.add('unlocked');
+                if (lockedStatus) lockedStatus.style.display = 'none';
+                if (unlockedStatus) unlockedStatus.style.display = 'inline';
+                if (overlay) overlay.style.display = 'none';
+            } else {
+                // Bloqueado
+                quizDiv.classList.add('locked');
+                quizDiv.classList.remove('unlocked');
+                if (lockedStatus) lockedStatus.style.display = 'inline';
+                if (unlockedStatus) unlockedStatus.style.display = 'none';
+                if (overlay) overlay.style.display = 'flex';
+            }
+        });
+
+        // Inicializar handlers de quiz
+        initQuizHandlers();
+    })();
+
+    // Inicializar handlers de quiz
+    function initQuizHandlers() {
+        document.querySelectorAll('.quiz-module-content .quiz-option').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const quizBlock = this.closest('.quiz-block');
+                if (quizBlock.classList.contains('answered')) return;
+
+                const isCorrect = this.dataset.correct === 'true';
+                const feedback = quizBlock.querySelector('.feedback');
+
+                // Marcar como respondida
+                quizBlock.classList.add('answered');
+
+                // Desabilitar todos os botões
+                quizBlock.querySelectorAll('.quiz-option').forEach(opt => {
+                    opt.disabled = true;
+                    if (opt.dataset.correct === 'true') {
+                        opt.classList.add('correct');
+                    }
+                });
+
+                if (isCorrect) {
+                    this.classList.add('correct');
+                    feedback.classList.add('correct');
+                    if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+                } else {
+                    this.classList.add('incorrect');
+                    feedback.classList.add('incorrect');
+                    // Use i18n for incorrect message
+                    const incorrectMsg = (window.i18n && window.i18n.t) ? window.i18n.t('extras.quiz.feedback_incorrect') : '<strong>Resposta Incorreta!</strong> Veja a alternativa correta destacada em verde.';
+                    feedback.innerHTML = incorrectMsg;
+                    if (typeof AudioManager !== 'undefined') AudioManager.playError();
+                }
+
+                feedback.style.display = 'block';
+            });
+        });
+    }
+</script>
+
+<style>
+    /* Estilos para os módulos de quiz */
+    .quiz-module {
+        background: var(--bg-secondary);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-md);
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        transition: all var(--transition-normal);
+        position: relative;
+    }
+
+    .quiz-module.locked {
+        opacity: 0.7;
+    }
+
+    .quiz-module.locked .quiz-module-header {
+        cursor: not-allowed;
+    }
+
+    .quiz-module.unlocked:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .quiz-module-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--spacing-md) var(--spacing-lg);
+        background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        cursor: pointer;
+        transition: background var(--transition-fast);
+    }
+
+    .quiz-module.unlocked .quiz-module-header:hover {
+        background: linear-gradient(135deg, rgba(229, 57, 53, 0.08) 0%, rgba(255, 111, 96, 0.05) 100%);
+    }
+
+    .quiz-module-header-left {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .quiz-module-icon {
+        font-size: 1.5rem;
+    }
+
+    .quiz-module-header-left h3 {
+        margin: 0;
+        color: var(--text-primary);
+        font-size: 1.1rem;
+    }
+
+    .quiz-count {
+        background: var(--primary-color);
+        color: white;
+        padding: 2px 10px;
+        border-radius: var(--radius-full);
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .quiz-module-header-right {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .quiz-status {
+        font-size: 0.85rem;
+        padding: 4px 10px;
+        border-radius: var(--radius-full);
+    }
+
+    .quiz-status.locked-status {
+        background: rgba(255, 152, 0, 0.15);
+        color: #e65100;
+    }
+
+    .quiz-status.unlocked-status {
+        background: rgba(76, 175, 80, 0.15);
+        color: #2e7d32;
+    }
+
+    .quiz-toggle {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        transition: transform var(--transition-fast);
+    }
+
+    .quiz-module.expanded .quiz-toggle {
+        transform: rotate(180deg);
+    }
+
+    .quiz-module-content {
+        padding: var(--spacing-lg);
+        border-top: 1px solid var(--border-color);
+        animation: slideDown 0.3s ease;
+    }
+
+    .quiz-module-content .quiz-block {
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-md);
+        background: var(--bg-primary);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+    }
+
+    .quiz-module-content .quiz-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .quiz-module-content .quiz-block.answered .quiz-option {
+        cursor: not-allowed;
+    }
+
+    .quiz-module-content .quiz-option.correct {
+        background: rgba(76, 175, 80, 0.2) !important;
+        border-color: #4caf50 !important;
+        color: #2e7d32 !important;
+    }
+
+    .quiz-module-content .quiz-option.incorrect {
+        background: rgba(244, 67, 54, 0.2) !important;
+        border-color: #f44336 !important;
+        color: #c62828 !important;
+    }
+
+    .quiz-module-content .feedback.correct {
+        background: rgba(76, 175, 80, 0.1);
+        border-left: 4px solid #4caf50;
+        padding: var(--spacing-sm) var(--spacing-md);
+        margin-top: var(--spacing-sm);
+        border-radius: var(--radius-sm);
+    }
+
+    .quiz-module-content .feedback.incorrect {
+        background: rgba(255, 152, 0, 0.1);
+        border-left: 4px solid #ff9800;
+        padding: var(--spacing-sm) var(--spacing-md);
+        margin-top: var(--spacing-sm);
+        border-radius: var(--radius-sm);
+    }
+
+    .quiz-locked-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-sm);
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    .quiz-locked-overlay .lock-icon {
+        font-size: 2rem;
+        opacity: 0.7;
+    }
+
+    .quiz-locked-overlay p {
+        margin: 0;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .quiz-module.unlocked .quiz-locked-overlay {
+        display: none;
+    }
+
+    /* Dark mode adaptations */
+    body.high-contrast .quiz-module {
+        background: var(--bg-secondary);
+        border-color: var(--border-color);
+    }
+
+    body.high-contrast .quiz-locked-overlay {
+        background: rgba(30, 30, 30, 0.95);
+    }
+
+    body.high-contrast .quiz-status.locked-status {
+        background: rgba(255, 152, 0, 0.25);
+        color: #ffb74d;
+    }
+
+    body.high-contrast .quiz-status.unlocked-status {
+        background: rgba(76, 175, 80, 0.25);
+        color: #81c784;
+    }
+
+    body.high-contrast .quiz-module-content .quiz-block {
+        background: var(--bg-secondary);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .quiz-module-header {
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            text-align: center;
+        }
+
+        .quiz-module-header-left {
+            flex-direction: column;
+        }
+
+        .quiz-module-header-right {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+</style>

@@ -1,33 +1,43 @@
 <!-- Página Inicial - Introdução ao Curso -->
 <!-- Hero Section Premium -->
-<div class="hero-premium">
-    <div class="hero-content">
-        <div class="hero-badge">✨ Treinamento Oficial</div>
-        <h1 class="hero-title">Por Dentro do SAC</h1>
-        <p class="hero-subtitle">Capacite-se para oferecer um atendimento de excelência e transformar cada interação em
-            uma experiência positiva para o cliente.</p>
+<div class="hero-premium hero-fullwidth">
+    <div class="hero-mascot-welcome hero-mascot-horizontal">
+        <img src="assets/marca/mascote.png" alt="Mascote Zaffari" class="hero-mascot">
+        <p class="hero-welcome" data-i18n="intro.hero.welcome">Bem-Vindo ao curso</p>
+    </div>
+    <div class="hero-main">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="intro.hero.title">Por Dentro do SAC</h1>
+            <p class="hero-subtitle" data-i18n="intro.hero.subtitle">Capacite-se para oferecer um atendimento de
+                excelência
+                e transformar cada interação
+                em
+                uma experiência positiva para o cliente.</p>
 
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-number">3</span>
-                <span class="stat-label">Módulos</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number">15+</span>
-                <span class="stat-label">Atividades</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-number">🎯</span>
-                <span class="stat-label">Certificação</span>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label" data-i18n="intro.stats.modules">Módulos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label" data-i18n="intro.stats.activities">Atividades</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">🎯</span>
+                    <span class="stat-label" data-i18n="intro.stats.certification">Certificação</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="hero-image">
-        <img src="assets/Imagens/operador-confiante-de-call-center-conversando-com-o-cliente.jpg"
-            alt="Operador de call center confiante conversando com cliente" class="img-fluid">
+        <div class="hero-image">
+            <img src="assets/Imagens/operador-confiante-de-call-center-conversando-com-o-cliente.jpg"
+                data-i18n="intro.hero.img_alt" alt="Operador de call center confiante conversando com cliente"
+                class="img-fluid">
+            <div class="hero-badge" data-i18n="intro.hero.badge">✨ Treinamento Oficial</div>
+        </div>
     </div>
 </div>
 
@@ -35,7 +45,7 @@
 <div class="content-body">
     <h2 class="section-title">
         <span class="section-icon">📚</span>
-        Jornada de Aprendizado
+        <span data-i18n="intro.journey.title">Jornada de Aprendizado</span>
     </h2>
 
     <div class="premium-cards-grid">
@@ -44,10 +54,11 @@
                 <div class="premium-card-number">01</div>
                 <div class="premium-card-icon">🎯</div>
             </div>
-            <h3>Papel Estratégico</h3>
-            <p>Entenda como o SAC influencia a reputação da marca e suas responsabilidades.</p>
+            <h3 data-i18n="intro.journey.m1.title">Papel Estratégico</h3>
+            <p data-i18n="intro.journey.m1.desc">Entenda como o SAC influencia a reputação da marca e suas
+                responsabilidades.</p>
             <div class="premium-card-footer">
-                <span class="card-tag">Conceitos</span>
+                <span class="card-tag" data-i18n="intro.journey.m1.tag">Conceitos</span>
             </div>
         </article>
 
@@ -56,10 +67,11 @@
                 <div class="premium-card-number">02</div>
                 <div class="premium-card-icon">🔧</div>
             </div>
-            <h3>Ferramentas e Processos</h3>
-            <p>Domine a intranet, encartes e canais para respostas rápidas e precisas.</p>
+            <h3 data-i18n="intro.journey.m2.title">Ferramentas e Processos</h3>
+            <p data-i18n="intro.journey.m2.desc">Domine a intranet, encartes e canais para respostas rápidas e
+                precisas.</p>
             <div class="premium-card-footer">
-                <span class="card-tag">Prático</span>
+                <span class="card-tag" data-i18n="intro.journey.m2.tag">Prático</span>
             </div>
         </article>
 
@@ -68,22 +80,54 @@
                 <div class="premium-card-number">03</div>
                 <div class="premium-card-icon">⚖️</div>
             </div>
-            <h3>Legislação e Reclamações</h3>
-            <p>Aplique o CDC no dia a dia e reduza reclamações com conhecimento.</p>
+            <h3 data-i18n="intro.journey.m3.title">Legislação e Reclamações</h3>
+            <p data-i18n="intro.journey.m3.desc">Aplique o CDC no dia a dia e reduza reclamações com conhecimento.</p>
             <div class="premium-card-footer">
-                <span class="card-tag">Legal</span>
+                <span class="card-tag" data-i18n="intro.journey.m3.tag">Legal</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Seção Fixação -->
+    <h2 class="section-title" style="margin-top: var(--spacing-2xl);">
+        <span class="section-icon">🧠</span>
+        <span data-i18n="intro.fixation.title">Fixação</span>
+    </h2>
+
+    <div class="premium-cards-grid">
+        <article class="premium-card premium-card-extras" onclick="navigateToPage('extras-questionarios')">
+            <div class="premium-card-header">
+                <div class="premium-card-number">+</div>
+                <div class="premium-card-icon">📝</div>
+            </div>
+            <h3 data-i18n="intro.fixation.quiz.title">Questionários</h3>
+            <p data-i18n="intro.fixation.quiz.desc">Teste seus conhecimentos com quiz de todos os módulos.</p>
+            <div class="premium-card-footer">
+                <span class="card-tag" data-i18n="intro.fixation.quiz.tag">Avaliação</span>
             </div>
         </article>
 
-        <article class="premium-card premium-card-extras" data-module="extras">
+        <article class="premium-card premium-card-extras" onclick="navigateToPage('extras-resumo')">
             <div class="premium-card-header">
                 <div class="premium-card-number">+</div>
                 <div class="premium-card-icon">📖</div>
             </div>
-            <h3>Extras</h3>
-            <p>Material complementar e recursos adicionais para aprofundar conhecimentos.</p>
+            <h3 data-i18n="intro.fixation.resume.title">Resumos</h3>
+            <p data-i18n="intro.fixation.resume.desc">Revise os principais conceitos e pontos-chave do curso.</p>
             <div class="premium-card-footer">
-                <span class="card-tag">Bônus</span>
+                <span class="card-tag" data-i18n="intro.fixation.resume.tag">Revisão</span>
+            </div>
+        </article>
+
+        <article class="premium-card premium-card-extras" onclick="navigateToPage('extras-hub')">
+            <div class="premium-card-header">
+                <div class="premium-card-number">+</div>
+                <div class="premium-card-icon">🎯</div>
+            </div>
+            <h3 data-i18n="intro.fixation.activities.title">Atividades</h3>
+            <p data-i18n="intro.fixation.activities.desc">Exercícios interativos, flashcards e simulações práticas.</p>
+            <div class="premium-card-footer">
+                <span class="card-tag" data-i18n="intro.fixation.activities.tag">Prática</span>
             </div>
         </article>
     </div>
@@ -93,10 +137,11 @@
         <div class="cta-content">
             <div class="cta-icon">🎓</div>
             <div class="cta-text">
-                <h4>Primeira vez aqui?</h4>
-                <p>Descubra os recursos de acessibilidade e aprenda a navegar pela plataforma.</p>
+                <h4 data-i18n="intro.cta.title">Primeira vez aqui?</h4>
+                <p data-i18n="intro.cta.desc">Descubra os recursos de acessibilidade e aprenda a navegar pela
+                    plataforma.</p>
             </div>
-            <button id="btn-start-tutorial" class="btn-tutorial btn-premium">
+            <button id="btn-start-tutorial" class="btn-tutorial btn-premium" data-i18n="intro.cta.btn">
                 ▶ Iniciar Tutorial
             </button>
         </div>
@@ -104,6 +149,7 @@
 
     <p class="start-message">
         <span class="pulse-dot"></span>
-        Clique em <strong>"Próximo"</strong> para começar sua jornada!
+        <span data-i18n="intro.start_msg">Por favor, clique em <strong>"Iniciar Tutorial"</strong> antes de dar
+            continuidade.</span>
     </p>
 </div>

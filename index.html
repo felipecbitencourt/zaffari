@@ -25,7 +25,13 @@
                 <button id="btn-menu" aria-label="Abrir/Fechar Menu" title="Menu" class="header-btn">☰</button>
                 <button id="btn-settings" aria-label="Configurações" title="Configurações"
                     class="header-btn">⚙️</button>
-                <button id="btn-tts" aria-label="Ler Página" title="Ler Página" class="header-btn">🔊</button>
+                <!-- TTS Controls - muda dinamicamente baseado no modo auto-read -->
+                <div id="tts-controls" class="tts-controls">
+                    <button id="btn-tts" aria-label="Ler Página" title="Ler Página" class="header-btn">🔊</button>
+                    <div id="volume-slider" class="volume-slider">
+                        <input type="range" id="volume-range" min="0" max="100" value="100" aria-label="Volume">
+                    </div>
+                </div>
             </div>
             <div class="header-progress">
                 <progress id="course-progress" value="0" max="100"></progress>
@@ -48,6 +54,11 @@
                 <p class="loading-text">Carregando curso...</p>
             </div>
 
+            <div class="sidebar-footer-logo">
+                <img src="assets/marca/Logo-Grupo-Zaffari_Preto.png" alt="Logo Grupo Zaffari" class="sidebar-logo-img"
+                    id="sidebar-logo-img">
+            </div>
+
             <button id="toggle-sidebar" aria-label="Recolher Menu">«</button>
         </nav>
 
@@ -68,6 +79,11 @@
                     <span class="btn-icon">→</span>
                 </button>
             </footer>
+
+            <!-- Brand Footer -->
+            <div class="brand-logo-footer">
+                <img src="assets/marca/Logo-Grupo-Zaffari_Preto.png" alt="Logo Grupo Zaffari" id="footer-logo-img">
+            </div>
         </main>
 
     </div>
@@ -77,7 +93,7 @@
         <div class="modal">
             <div class="modal-header">
                 <h3 id="feedback-title">Feedback</h3>
-                <button class="modal-close" aria-label="Fechar">×</button>
+                <button class="modal-close" id="btn-feedback-close" aria-label="Fechar">×</button>
             </div>
             <div class="modal-body">
                 <p id="feedback-message">Mensagem aqui</p>
@@ -130,6 +146,17 @@
                     </button>
                 </div>
 
+                <!-- Auto Read -->
+                <div class="settings-row">
+                    <div class="settings-label">
+                        <span class="settings-icon">🔄</span>
+                        <span>Leitura Automática</span>
+                    </div>
+                    <button id="btn-auto-read" class="toggle-btn" aria-label="Leitura Automática">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+
                 <!-- Divider -->
                 <div class="settings-divider"></div>
 
@@ -174,6 +201,8 @@
                     <div class="lang-controls">
                         <button id="btn-lang-pt" class="lang-btn active">PT</button>
                         <button id="btn-lang-es" class="lang-btn">ES</button>
+                        <button id="btn-lang-fr" class="lang-btn">FR</button>
+                        <button id="btn-lang-en" class="lang-btn">EN</button>
                     </div>
                 </div>
 
@@ -198,7 +227,19 @@
         </div>
     </div>
 
+    <!-- Tutorial Interactive Demo (popup com exemplo de elemento interativo) -->
+    <div id="tutorial-interactive-demo" class="tutorial-demo-popup" style="display: none;">
+        <div class="tutorial-demo-card wiggle-animate">
+            <div class="tutorial-demo-icon">💡</div>
+            <div class="tutorial-demo-text">
+                <strong>Você Sabia?</strong>
+                <p>Este é um exemplo de elemento interativo!</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/scorm-api.js"></script>
     <script src="assets/js/audio-manager.js"></script>
     <script src="assets/js/tutorial.js"></script>

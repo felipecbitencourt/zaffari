@@ -1,0 +1,431 @@
+<!-- Extras - Ache o Erro -->
+<div class="content-header">
+    <h1>🔍 Ache o Erro</h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+    <p class="lead">Analise os e-mails fictícios do SAC e identifique os erros clicando diretamente nas frases
+        incorretas.</p>
+
+    <div class="ache-erro-game" id="ache-erro-game">
+        <!-- Seletor de E-mails -->
+        <div class="email-selector">
+            <button class="email-tab active" data-email="0">📧 E-mail 1</button>
+            <button class="email-tab" data-email="1">📧 E-mail 2</button>
+            <button class="email-tab" data-email="2">📧 E-mail 3</button>
+            <button class="email-tab" data-email="3">📧 E-mail 4</button>
+        </div>
+
+        <!-- Status do Jogo -->
+        <div class="game-status">
+            <div class="game-stars" id="game-stars">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+            </div>
+            <div class="game-progress-text">
+                Erros encontrados: <span id="erros-encontrados">0</span>/<span id="erros-total">3</span>
+            </div>
+        </div>
+
+        <!-- Container do E-mail -->
+        <div class="email-container" id="email-container">
+            <div class="email-header-bar">
+                <span class="email-icon">📧</span>
+                <span class="email-title">Caixa de Entrada</span>
+            </div>
+            <div class="email-meta">
+                <div class="email-field"><strong>De:</strong> <span id="email-de">sac@empresa.com.br</span></div>
+                <div class="email-field"><strong>Para:</strong> <span id="email-para">cliente@email.com</span></div>
+                <div class="email-field"><strong>Assunto:</strong> <span id="email-assunto">Re: Solicitação</span>
+                </div>
+            </div>
+            <div class="email-divider"></div>
+            <div class="email-body" id="email-body">
+                <!-- Conteúdo do e-mail será injetado via JS -->
+            </div>
+        </div>
+
+        <!-- Feedback dos Erros Encontrados -->
+        <div class="erros-feedback" id="erros-feedback">
+            <h4>✅ Erros Identificados:</h4>
+            <div class="erros-list" id="erros-list">
+                <!-- Erros encontrados aparecem aqui -->
+            </div>
+        </div>
+
+        <!-- Mensagem de Conclusão -->
+        <div class="email-completo" id="email-completo" style="display: none;">
+            <div class="email-completo-content">
+                <span class="email-completo-icon">🎉</span>
+                <h3>Parabéns!</h3>
+                <p>Você encontrou todos os erros deste e-mail!</p>
+                <button class="btn-proximo-email" id="btn-proximo-email">Próximo E-mail →</button>
+            </div>
+        </div>
+
+        <!-- Resumo Final -->
+        <div class="resumo-final" id="resumo-final" style="display: none;">
+            <div class="resumo-final-content">
+                <span class="resumo-icon">🏆</span>
+                <h3>Jogo Concluído!</h3>
+                <p>Você completou todos os e-mails!</p>
+                <div class="resumo-estrelas" id="resumo-estrelas"></div>
+                <button class="btn-reiniciar" id="btn-reiniciar">🔄 Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão Voltar -->
+    <div class="extras-back-container" style="margin-top: var(--spacing-xl); text-align: center;">
+        <button class="btn-extras-back" onclick="navigateToPage('extras-hub')">← Voltar ao Menu de Extras</button>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>
+
+<script>
+    function initAcheErro() {
+        // Dados dos E-mails
+        const emailsData = [
+            {
+                de: "sac@zaffari.com.br",
+                para: "joao.silva@email.com",
+                assunto: "Re: Solicitação de troca #12345",
+                corpo: `Prezado João,
+
+Agradecemos seu contato. Sobre sua solicitação de troca do produto adquirido em nossa loja física, informamos que <span class="erro" data-erro="1">você tem direito garantido por lei à troca</span> em até <span class="erro" data-erro="2">7 dias úteis</span>.
+
+Por favor, <span class="erro" data-erro="3">envie o produto para nossa assistência técnica</span> para darmos andamento.
+
+Atenciosamente,
+Equipe SAC`,
+                erros: {
+                    1: {
+                        texto: "você tem direito garantido por lei à troca",
+                        explicacao: "A troca de produto SEM DEFEITO em loja física é uma POLÍTICA COMERCIAL (cortesia da empresa), não um direito garantido por lei. O CDC só obriga troca em caso de defeito."
+                    },
+                    2: {
+                        texto: "7 dias úteis",
+                        explicacao: "Quando aplicável (compras online), o prazo do Direito de Arrependimento é de 7 dias CORRIDOS, não úteis."
+                    },
+                    3: {
+                        texto: "envie o produto para nossa assistência técnica",
+                        explicacao: "Produto SEM DEFEITO não deve ser encaminhado para assistência técnica. A assistência técnica é para reparos de produtos COM DEFEITO."
+                    }
+                }
+            },
+            {
+                de: "sac@zaffari.com.br",
+                para: "maria.santos@email.com",
+                assunto: "Re: Desistência de compra #67890",
+                corpo: `Prezada Maria,
+
+Recebemos sua solicitação de desistência da compra realizada em nossa loja física na última semana.
+
+Informamos que <span class="erro" data-erro="1">você pode exercer o direito de arrependimento</span> normalmente. Ao devolver o produto, <span class="erro" data-erro="2">devolveremos 80% do valor pago</span>.
+
+Lembramos que <span class="erro" data-erro="3">após a devolução, não haverá mais possibilidade de reclamação sobre o produto</span>.
+
+Atenciosamente,
+Equipe SAC`,
+                erros: {
+                    1: {
+                        texto: "você pode exercer o direito de arrependimento",
+                        explicacao: "O Direito de Arrependimento (7 dias) só se aplica a compras ONLINE ou realizadas fora do estabelecimento comercial. NÃO se aplica a compras em loja física."
+                    },
+                    2: {
+                        texto: "devolveremos 80% do valor pago",
+                        explicacao: "Quando o arrependimento é aplicável, a devolução do valor deve ser INTEGRAL (100%), incluindo frete. Nunca parcial."
+                    },
+                    3: {
+                        texto: "após a devolução, não haverá mais possibilidade de reclamação sobre o produto",
+                        explicacao: "O cliente sempre mantém o direito de reclamar de VÍCIOS OCULTOS (defeitos que aparecem depois), mesmo após devoluções ou trocas anteriores."
+                    }
+                }
+            },
+            {
+                de: "sac@zaffari.com.br",
+                para: "carlos.oliveira@email.com",
+                assunto: "Re: Defeito em eletrodoméstico #11223",
+                corpo: `Prezado Carlos,
+
+Lamentamos o inconveniente com seu eletrodoméstico. Conforme o Código de Defesa do Consumidor, <span class="erro" data-erro="1">você tem até 15 dias para resolver o problema através da assistência técnica</span>.
+
+Caso o problema não seja solucionado neste prazo, <span class="erro" data-erro="2">faremos apenas o abatimento proporcional no valor</span>.
+
+Por favor, dirija-se à assistência técnica autorizada da marca para avaliação.
+
+Atenciosamente,
+Equipe SAC`,
+                erros: {
+                    1: {
+                        texto: "você tem até 15 dias para resolver o problema através da assistência técnica",
+                        explicacao: "O prazo correto é de 30 DIAS para o fornecedor solucionar o defeito via assistência técnica, não 15 dias."
+                    },
+                    2: {
+                        texto: "faremos apenas o abatimento proporcional no valor",
+                        explicacao: "Após os 30 dias sem solução, o cliente tem TRÊS opções: troca do produto, abatimento proporcional OU devolução integral do valor. Não apenas uma opção."
+                    }
+                }
+            },
+            {
+                de: "sac@zaffari.com.br",
+                para: "ana.costa@email.com",
+                assunto: "Re: Troca de alimento #44556",
+                corpo: `Prezada Ana,
+
+Sobre sua solicitação de troca do produto alimentício, informamos que <span class="erro" data-erro="1">você pode devolver o produto a qualquer loja da nossa rede</span>.
+
+Para agilizar o processo, <span class="erro" data-erro="2">não é necessário trazer o cupom fiscal</span>. Basta trazer o produto.
+
+Após análise, <span class="erro" data-erro="3">trocaremos por qualquer produto de sua escolha no mesmo valor</span>.
+
+Atenciosamente,
+Equipe SAC`,
+                erros: {
+                    1: {
+                        texto: "você pode devolver o produto a qualquer loja da nossa rede",
+                        explicacao: "Produtos alimentícios devem ser levados à LOJA ONDE FOI REALIZADA A COMPRA, junto com o cupom fiscal, para avaliação da gerência."
+                    },
+                    2: {
+                        texto: "não é necessário trazer o cupom fiscal",
+                        explicacao: "O CUPOM FISCAL É OBRIGATÓRIO para validar a compra e proceder com qualquer reclamação ou troca de produtos."
+                    },
+                    3: {
+                        texto: "trocaremos por qualquer produto de sua escolha no mesmo valor",
+                        explicacao: "A troca de alimentícios só ocorre quando o produto está IMPRÓPRIO PARA CONSUMO, não por preferência do cliente. É necessário avaliar motivo, marca e lote."
+                    }
+                }
+            }
+        ];
+
+        // Estado do jogo
+        let currentEmail = 0;
+        let errosEncontrados = [];
+        let cliquesErrados = 0;
+        let estrelasTotal = [];
+
+        // Elementos DOM
+        const emailContainer = document.getElementById('email-container');
+        const emailBody = document.getElementById('email-body');
+        const emailDe = document.getElementById('email-de');
+        const emailPara = document.getElementById('email-para');
+        const emailAssunto = document.getElementById('email-assunto');
+        const errosEncontradosEl = document.getElementById('erros-encontrados');
+        const errosTotalEl = document.getElementById('erros-total');
+        const errosList = document.getElementById('erros-list');
+        const errosFeedback = document.getElementById('erros-feedback');
+        const emailCompleto = document.getElementById('email-completo');
+        const resumoFinal = document.getElementById('resumo-final');
+        const gameStars = document.getElementById('game-stars');
+        const emailTabs = document.querySelectorAll('.email-tab');
+
+        // Carregar e-mail
+        function loadEmail(index) {
+            const email = emailsData[index];
+            currentEmail = index;
+            errosEncontrados = [];
+            cliquesErrados = 0;
+
+            // Atualizar header
+            emailDe.textContent = email.de;
+            emailPara.textContent = email.para;
+            emailAssunto.textContent = email.assunto;
+
+            // Atualizar corpo (converter quebras de linha)
+            emailBody.innerHTML = email.corpo.replace(/\n/g, '<br>');
+
+            // Atualizar contadores
+            const totalErros = Object.keys(email.erros).length;
+            errosEncontradosEl.textContent = '0';
+            errosTotalEl.textContent = totalErros;
+
+            // Limpar feedback
+            errosList.innerHTML = '';
+            errosFeedback.style.display = 'none';
+            emailCompleto.style.display = 'none';
+
+            // Reset estrelas
+            updateStars(3);
+
+            // Atualizar tabs
+            emailTabs.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+                if (estrelasTotal[i] !== undefined) {
+                    tab.classList.add('completed');
+                }
+            });
+
+            // Bind eventos nos erros
+            bindErroEvents();
+        }
+
+        // Bind eventos de clique nos erros
+        function bindErroEvents() {
+            const erroElements = emailBody.querySelectorAll('.erro');
+            erroElements.forEach(el => {
+                el.addEventListener('click', handleErroClick);
+            });
+
+            // Clique em área normal (não erro)
+            emailBody.addEventListener('click', function (e) {
+                if (!e.target.classList.contains('erro') && !e.target.closest('.erro')) {
+                    handleWrongClick();
+                }
+            });
+        }
+
+        // Clique em erro correto
+        function handleErroClick(e) {
+            e.stopPropagation();
+            const el = e.target;
+            const erroId = el.dataset.erro;
+            const email = emailsData[currentEmail];
+
+            if (el.classList.contains('found')) return;
+
+            // Marcar como encontrado
+            el.classList.add('found');
+            errosEncontrados.push(erroId);
+
+            // Atualizar contador
+            errosEncontradosEl.textContent = errosEncontrados.length;
+
+            // Mostrar explicação
+            const erroInfo = email.erros[erroId];
+            const feedbackItem = document.createElement('div');
+            feedbackItem.className = 'erro-feedback-item';
+            feedbackItem.innerHTML = `
+                <div class="erro-texto">"${erroInfo.texto}"</div>
+                <div class="erro-explicacao">${erroInfo.explicacao}</div>
+            `;
+            errosList.appendChild(feedbackItem);
+            errosFeedback.style.display = 'block';
+
+            // Som de sucesso
+            if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+
+            // Verificar se completou
+            const totalErros = Object.keys(email.erros).length;
+            if (errosEncontrados.length === totalErros) {
+                completeEmail();
+            }
+        }
+
+        // Clique errado
+        function handleWrongClick() {
+            cliquesErrados++;
+            updateStars(calcStars());
+
+            // Feedback visual
+            emailContainer.classList.add('shake');
+            setTimeout(() => emailContainer.classList.remove('shake'), 500);
+
+            // Som de erro
+            if (typeof AudioManager !== 'undefined') AudioManager.playError();
+        }
+
+        // Calcular estrelas
+        function calcStars() {
+            if (cliquesErrados === 0) return 3;
+            if (cliquesErrados <= 2) return 2;
+            return 1;
+        }
+
+        // Atualizar estrelas visuais
+        function updateStars(count) {
+            const stars = gameStars.querySelectorAll('.star');
+            stars.forEach((star, i) => {
+                star.classList.toggle('active', i < count);
+                star.classList.toggle('inactive', i >= count);
+            });
+        }
+
+        // E-mail completo
+        function completeEmail() {
+            estrelasTotal[currentEmail] = calcStars();
+
+            // Atualizar tab visualmente
+            emailTabs[currentEmail].classList.add('completed');
+            emailTabs[currentEmail].innerHTML = `📧 E-mail ${currentEmail + 1} ${'⭐'.repeat(estrelasTotal[currentEmail])}`;
+
+            // Disparar confete
+            createConfetti();
+
+            // Aguardar para mostrar o popup, permitindo ler a explicação
+            setTimeout(() => {
+                emailCompleto.style.display = 'flex';
+            }, 3000);
+
+            // Verificar se todos completos
+            if (estrelasTotal.filter(s => s !== undefined).length === emailsData.length) {
+                document.getElementById('btn-proximo-email').textContent = 'Ver Resumo Final';
+            }
+        }
+
+        // Função simples de confete
+        function createConfetti() {
+            const colors = ['#D32F2F', '#FFC107', '#2196F3', '#4CAF50'];
+            for (let i = 0; i < 50; i++) {
+                const confetto = document.createElement('div');
+                confetto.classList.add('confetti');
+                confetto.style.left = Math.random() * 100 + 'vw';
+                confetto.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetto.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                document.body.appendChild(confetto);
+
+                // Remover após animação
+                setTimeout(() => confetto.remove(), 4000);
+            }
+        }
+
+        // Próximo e-mail
+        document.getElementById('btn-proximo-email').addEventListener('click', function () {
+            if (estrelasTotal.filter(s => s !== undefined).length === emailsData.length) {
+                showResumo();
+            } else {
+                const nextEmail = (currentEmail + 1) % emailsData.length;
+                loadEmail(nextEmail);
+            }
+        });
+
+        // Mostrar resumo final
+        function showResumo() {
+            emailCompleto.style.display = 'none';
+            resumoFinal.style.display = 'flex';
+
+            const totalEstrelas = estrelasTotal.reduce((a, b) => a + b, 0);
+            const maxEstrelas = emailsData.length * 3;
+
+            document.getElementById('resumo-estrelas').innerHTML = `
+                <p>Total: ${totalEstrelas}/${maxEstrelas} estrelas</p>
+                <div class="estrelas-grandes">${'⭐'.repeat(Math.round(totalEstrelas / emailsData.length))}</div>
+            `;
+        }
+
+        // Reiniciar
+        document.getElementById('btn-reiniciar').addEventListener('click', function () {
+            estrelasTotal = [];
+            resumoFinal.style.display = 'none';
+            emailTabs.forEach((tab, i) => {
+                tab.classList.remove('completed');
+                tab.innerHTML = `📧 E-mail ${i + 1}`;
+            });
+            loadEmail(0);
+        });
+
+        // Tabs de e-mail
+        emailTabs.forEach((tab, i) => {
+            tab.addEventListener('click', function () {
+                loadEmail(i);
+            });
+        });
+
+        // Iniciar
+        loadEmail(0);
+    }
+
+    // Inicializar após pequeno delay
+    setTimeout(initAcheErro, 50);
+</script>

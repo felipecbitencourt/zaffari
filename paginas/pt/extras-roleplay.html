@@ -1,0 +1,481 @@
+<!-- Extras - Roleplay -->
+<div class="content-header">
+    <h1>🎭 Roleplay - Simulação de Atendimento</h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+    <p class="lead">Pratique suas habilidades de atendimento! Você é o atendente SAC e deve escolher as melhores
+        respostas.</p>
+
+    <div class="roleplay-game" id="roleplay-game">
+        <!-- Container do Jogo -->
+        <div class="roleplay-scene">
+            <!-- Cenário de Fundo -->
+            <div class="roleplay-background">
+                <img src="assets/images/roleplay/cenario.png" alt="Cenário SAC">
+            </div>
+
+            <!-- Personagem Cliente -->
+            <div class="roleplay-character cliente">
+                <img src="assets/images/roleplay/cliente_neutro.png" alt="Cliente" id="cliente-img">
+            </div>
+
+            <!-- Balão de Fala do Cliente -->
+            <div class="roleplay-speech-bubble" id="speech-bubble">
+                <p id="cliente-fala">Carregando...</p>
+            </div>
+
+            <!-- Personagem Atendente (oculto até resposta correta) -->
+            <div class="roleplay-character atendente" id="atendente-container" style="display: none;">
+                <img src="assets/images/roleplay/atendente.png" alt="Atendente" id="atendente-img">
+            </div>
+
+            <!-- Balão de Fala do Atendente (oculto até resposta correta) -->
+            <div class="roleplay-speech-bubble atendente-bubble" id="atendente-bubble" style="display: none;">
+                <p id="atendente-fala"></p>
+            </div>
+
+            <!-- Indicador de Etapa -->
+            <div class="roleplay-step-indicator">
+                <span id="step-current">1</span> / <span id="step-total">4</span>
+            </div>
+        </div>
+
+        <!-- Opções de Resposta -->
+        <div class="roleplay-options" id="roleplay-options">
+            <!-- Opções serão injetadas via JS -->
+        </div>
+
+        <!-- Feedback -->
+        <div class="roleplay-feedback" id="roleplay-feedback" style="display: none;">
+            <div class="feedback-content" id="feedback-content"></div>
+            <button class="btn-continuar" id="btn-continuar">Continuar →</button>
+        </div>
+
+        <!-- Resultado Final -->
+        <div class="roleplay-resultado" id="roleplay-resultado" style="display: none;">
+            <div class="resultado-content">
+                <span class="resultado-icon">🎉</span>
+                <h3>Parabéns!</h3>
+                <p>Você completou a simulação de atendimento!</p>
+                <div class="resultado-score" id="resultado-score"></div>
+                <button class="btn-reiniciar-roleplay" id="btn-reiniciar-roleplay">🔄 Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão Voltar -->
+    <div class="extras-back-container" style="margin-top: var(--spacing-xl); text-align: center;">
+        <button class="btn-extras-back" onclick="navigateToPage('extras-hub')">← Voltar ao Menu de Extras</button>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>
+
+<script>
+    function initRoleplay() {
+        // Dados do Cenário
+        const cenario = {
+            titulo: "Troca de Produto",
+            etapas: [
+                {
+                    id: 1,
+                    nome: "Apresentação",
+                    clienteFala: "Olá, boa tarde! Comprei esse liquidificador aqui ontem e gostaria de trocar por outro modelo.",
+                    opcoes: [
+                        {
+                            texto: "Boa tarde! Claro, posso ajudá-lo com isso. O produto apresenta algum defeito ou problema?",
+                            correta: true,
+                            feedback: "Excelente! Você cumprimentou o cliente de forma cordial e já fez uma pergunta importante para entender a situação."
+                        },
+                        {
+                            texto: "Infelizmente não é possível trocar produtos que já foram comprados e levados para casa.",
+                            correta: false,
+                            feedback: "Essa resposta é muito negativa e não acolhe o cliente. Sempre devemos primeiro entender a situação antes de negar algo."
+                        },
+                        {
+                            texto: "Pode deixar o produto aí no balcão que depois alguém vai verificar para você.",
+                            correta: false,
+                            feedback: "Essa resposta é informal demais e não demonstra interesse em ajudar o cliente. O atendimento deve ser sempre cordial e profissional."
+                        }
+                    ]
+                },
+                {
+                    id: 2,
+                    nome: "Questão do Cliente",
+                    clienteFala: "Não, não está com defeito. É que eu vi outro modelo que me agradou mais. Vi na internet que tenho direito de trocar em 7 dias, não é?",
+                    opcoes: [
+                        {
+                            texto: "Sim, com certeza! Você tem esse direito garantido por lei. Vamos fazer a troca agora mesmo.",
+                            correta: false,
+                            feedback: "Cuidado! O direito de arrependimento de 7 dias só vale para compras ONLINE. Em loja física, a troca é política comercial, não direito legal."
+                        },
+                        {
+                            texto: "O direito de 7 dias vale para compras online. Em loja física é cortesia. Posso verificar nossa política!",
+                            correta: true,
+                            feedback: "Perfeito! Você explicou corretamente a diferença entre o direito legal (compras online) e a política comercial (loja física), sem negar ajuda ao cliente."
+                        },
+                        {
+                            texto: "Essa regra dos 7 dias é só para compras online, então aqui não se aplica. Sinto muito.",
+                            correta: false,
+                            feedback: "Embora a informação sobre o online esteja correta, a resposta é muito negativa. Sempre devemos buscar alternativas para ajudar o cliente."
+                        }
+                    ]
+                },
+                {
+                    id: 3,
+                    nome: "Dúvida Adicional",
+                    clienteFala: "Ah entendi... então vocês não vão trocar? E se o produto tiver defeito depois, posso reclamar?",
+                    opcoes: [
+                        {
+                            texto: "Pode sim! Para defeitos você tem 90 dias. E nossa política permite troca em 30 dias com nota fiscal!",
+                            correta: true,
+                            feedback: "Excelente! Você informou corretamente o prazo de 90 dias para reclamar de defeitos em produtos duráveis E ainda ofereceu a possibilidade de troca pela política da empresa."
+                        },
+                        {
+                            texto: "Para defeitos você pode reclamar sim, mas o prazo é de apenas 7 dias após a compra.",
+                            correta: false,
+                            feedback: "Incorreto! O prazo para reclamar de defeitos em produtos duráveis é de 90 DIAS, não 7 dias."
+                        },
+                        {
+                            texto: "Se o produto não apresenta defeito agora, depois não temos como fazer nada, infelizmente.",
+                            correta: false,
+                            feedback: "Incorreto! Vícios ocultos (defeitos que aparecem depois) podem ser reclamados em até 90 dias para produtos duráveis."
+                        }
+                    ]
+                },
+                {
+                    id: 4,
+                    nome: "Fechamento",
+                    clienteFala: "Que ótimo! Então eu posso trocar pelo outro modelo? O produto ainda está lacrado e tenho a nota fiscal.",
+                    opcoes: [
+                        {
+                            texto: "Não posso fazer a troca porque, como expliquei, não é uma obrigação legal da loja.",
+                            correta: false,
+                            feedback: "Resposta inadequada. O cliente atende aos requisitos da política comercial (produto lacrado + nota fiscal)."
+                        },
+                        {
+                            texto: "Com produto lacrado e nota fiscal, posso fazer a troca sim! Qual modelo você prefere?",
+                            correta: true,
+                            feedback: "Parabéns! Você finalizou o atendimento de forma positiva, confirmando que o cliente atende aos requisitos e prosseguindo com a troca."
+                        },
+                        {
+                            texto: "Preciso chamar meu gerente para autorizar esse tipo de procedimento de troca aqui.",
+                            correta: false,
+                            feedback: "Desnecessário neste caso. Como o cliente atende aos requisitos da política (lacrado + nota), você pode resolver sem precisar escalar."
+                        }
+                    ]
+                }
+            ]
+        };
+
+        // Estado do jogo
+        let currentStep = 0;
+        let acertos = 0;
+        let totalSteps = cenario.etapas.length;
+
+        // ===== AUDIO SETUP =====
+        // Música de fundo (volume baixo)
+        const bgMusic = new Audio('assets/mixkit-disco-aint-old-school-935.mp3');
+        bgMusic.loop = true;
+        bgMusic.volume = 0.15; // Volume baixo
+
+        // Web Audio API para efeito de murmúrio
+        let audioContext = null;
+        let murmurOscillator = null;
+        let murmurGain = null;
+
+        function startMurmur() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (murmurOscillator) return; // Já está tocando
+
+            murmurOscillator = audioContext.createOscillator();
+            murmurGain = audioContext.createGain();
+
+            // Configurar oscilador para som de murmúrio suave
+            murmurOscillator.type = 'sine';
+            murmurOscillator.frequency.setValueAtTime(180, audioContext.currentTime);
+
+            // Volume muito baixo
+            murmurGain.gain.setValueAtTime(0.03, audioContext.currentTime);
+
+            // Conectar
+            murmurOscillator.connect(murmurGain);
+            murmurGain.connect(audioContext.destination);
+
+            // Modulação para parecer fala
+            const lfo = audioContext.createOscillator();
+            const lfoGain = audioContext.createGain();
+            lfo.frequency.setValueAtTime(8, audioContext.currentTime);
+            lfoGain.gain.setValueAtTime(20, audioContext.currentTime);
+            lfo.connect(lfoGain);
+            lfoGain.connect(murmurOscillator.frequency);
+            lfo.start();
+
+            murmurOscillator.start();
+        }
+
+        function stopMurmur() {
+            if (murmurOscillator) {
+                murmurOscillator.stop();
+                murmurOscillator = null;
+            }
+        }
+
+        // Iniciar música automaticamente ao carregar
+        bgMusic.play().catch(() => { });
+
+        // Parar música ao sair da página
+        window.addEventListener('beforeunload', function () {
+            bgMusic.pause();
+            bgMusic.currentTime = 0;
+        });
+
+        // Elementos DOM
+        const clienteFala = document.getElementById('cliente-fala');
+        const speechBubble = document.getElementById('speech-bubble');
+        const optionsContainer = document.getElementById('roleplay-options');
+        const feedbackContainer = document.getElementById('roleplay-feedback');
+        const feedbackContent = document.getElementById('feedback-content');
+        const btnContinuar = document.getElementById('btn-continuar');
+        const resultadoContainer = document.getElementById('roleplay-resultado');
+        const stepCurrent = document.getElementById('step-current');
+        const stepTotal = document.getElementById('step-total');
+
+        if (!clienteFala || !optionsContainer) {
+            console.error('Roleplay elements not found');
+            setTimeout(initRoleplay, 100);
+            return;
+        }
+
+        // Efeito máquina de escrever para cliente
+        function typeWriter(element, text, speed, callback) {
+            let i = 0;
+            element.textContent = '';
+            const clienteImg = document.getElementById('cliente-img');
+
+            // Adicionar classe de tremor ao cliente e iniciar murmúrio
+            if (clienteImg) {
+                clienteImg.classList.add('speaking');
+            }
+            startMurmur();
+
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    // Remover tremor e parar murmúrio quando terminar
+                    if (clienteImg) {
+                        clienteImg.classList.remove('speaking');
+                    }
+                    stopMurmur();
+                    if (callback) callback();
+                }
+            }
+            type();
+        }
+
+        // Efeito máquina de escrever para atendente (treme o atendente)
+        function typeWriterAtendente(element, text, speed, callback) {
+            let i = 0;
+            element.textContent = '';
+            const atendenteImg = document.getElementById('atendente-img');
+
+            // Adicionar classe de tremor ao atendente e iniciar murmúrio
+            if (atendenteImg) {
+                atendenteImg.classList.add('speaking');
+            }
+            startMurmur();
+
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    // Remover tremor e parar murmúrio quando terminar
+                    if (atendenteImg) {
+                        atendenteImg.classList.remove('speaking');
+                    }
+                    stopMurmur();
+                    if (callback) callback();
+                }
+            }
+            type();
+        }
+
+        // Carregar etapa
+        function loadStep(stepIndex) {
+            const etapa = cenario.etapas[stepIndex];
+            currentStep = stepIndex;
+
+            // Atualizar indicador
+            stepCurrent.textContent = stepIndex + 1;
+            stepTotal.textContent = totalSteps;
+
+            // Esconder atendente da etapa anterior
+            const atendenteContainer = document.getElementById('atendente-container');
+            const atendenteBubble = document.getElementById('atendente-bubble');
+            if (atendenteContainer) atendenteContainer.style.display = 'none';
+            if (atendenteBubble) atendenteBubble.style.display = 'none';
+
+            // Esconder opções enquanto texto aparece
+            optionsContainer.style.display = 'none';
+            optionsContainer.innerHTML = '';
+
+            // Efeito typewriter na fala do cliente
+            typeWriter(clienteFala, etapa.clienteFala, 30, function () {
+                // Mostrar opções depois que o texto terminar
+                etapa.opcoes.forEach((opcao, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'roleplay-option';
+                    btn.innerHTML = `<span class="option-letter">${String.fromCharCode(65 + index)}</span> ${opcao.texto}`;
+                    btn.addEventListener('click', function () {
+                        handleOptionClick(opcao, btn);
+                    });
+                    optionsContainer.appendChild(btn);
+                });
+                optionsContainer.style.display = 'flex';
+            });
+
+            // Esconder feedback
+            feedbackContainer.style.display = 'none';
+        }
+
+        // Clique em opção
+        function handleOptionClick(opcao, btn) {
+            // Referência para todas as opções (usada depois)
+            const allOptions = optionsContainer.querySelectorAll('.roleplay-option');
+
+            // Marcar selecionada
+            btn.classList.add('selected');
+
+            // Elementos do atendente
+            const atendenteContainer = document.getElementById('atendente-container');
+            const atendenteBubble = document.getElementById('atendente-bubble');
+            const atendenteFala = document.getElementById('atendente-fala');
+            const atendenteImg = document.getElementById('atendente-img');
+
+            if (opcao.correta) {
+                btn.classList.add('correct');
+                acertos++;
+                if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
+
+                // Desabilitar todas as opções ao acertar
+                allOptions.forEach(opt => {
+                    opt.disabled = true;
+                    opt.classList.add('disabled');
+                });
+
+                // Esconder opções de resposta
+                optionsContainer.style.display = 'none';
+
+                // Mostrar atendente com resposta
+                if (atendenteContainer && atendenteBubble) {
+                    atendenteContainer.style.display = 'block';
+                    atendenteBubble.style.display = 'block';
+
+                    // Typewriter para resposta do atendente (treme o atendente)
+                    typeWriterAtendente(atendenteFala, opcao.texto, 25, function () {
+                        // Após terminar, mostrar feedback
+                        feedbackContent.innerHTML = `
+                            <div class="feedback-icon">✅</div>
+                            <p>${opcao.feedback}</p>
+                        `;
+                        feedbackContainer.style.display = 'block';
+                        feedbackContainer.className = 'roleplay-feedback success';
+                    });
+                }
+            } else {
+                btn.classList.add('incorrect');
+                if (typeof AudioManager !== 'undefined') AudioManager.playError();
+
+                // Esconder atendente em resposta errada
+                if (atendenteContainer) atendenteContainer.style.display = 'none';
+                if (atendenteBubble) atendenteBubble.style.display = 'none';
+
+                // Mostrar feedback temporário
+                feedbackContent.innerHTML = `
+                    <div class="feedback-icon">❌</div>
+                    <p>${opcao.feedback}</p>
+                `;
+                feedbackContainer.style.display = 'block';
+                feedbackContainer.className = 'roleplay-feedback error';
+
+                // Permitir tentar novamente - reabilitar outras opções
+                setTimeout(() => {
+                    btn.disabled = true; // Desabilitar só a opção errada
+                    btn.classList.add('disabled');
+                    feedbackContainer.style.display = 'none';
+
+                    // Habilitar outras opções que não foram marcadas como incorretas
+                    allOptions.forEach(opt => {
+                        if (!opt.classList.contains('incorrect')) {
+                            opt.disabled = false;
+                            opt.classList.remove('disabled');
+                        }
+                    });
+                }, 2000);
+            }
+        }
+
+        // Continuar para próxima etapa
+        btnContinuar.addEventListener('click', function () {
+            if (currentStep < totalSteps - 1) {
+                loadStep(currentStep + 1);
+            } else {
+                showResultado();
+            }
+        });
+
+        // Mostrar resultado
+        function showResultado() {
+            optionsContainer.style.display = 'none';
+            feedbackContainer.style.display = 'none';
+            speechBubble.style.display = 'none';
+            resultadoContainer.style.display = 'flex';
+
+            const porcentagem = Math.round((acertos / totalSteps) * 100);
+            let mensagem = '';
+            let estrelas = '';
+
+            if (porcentagem === 100) {
+                mensagem = 'Perfeito! Você demonstrou excelente conhecimento!';
+                estrelas = '⭐⭐⭐';
+            } else if (porcentagem >= 75) {
+                mensagem = 'Muito bem! Você está no caminho certo!';
+                estrelas = '⭐⭐';
+            } else if (porcentagem >= 50) {
+                mensagem = 'Bom, mas você pode melhorar. Revise o conteúdo!';
+                estrelas = '⭐';
+            } else {
+                mensagem = 'Precisa estudar mais. Revise os módulos do curso!';
+                estrelas = '';
+            }
+
+            document.getElementById('resultado-score').innerHTML = `
+                <div class="score-estrelas">${estrelas}</div>
+                <div class="score-texto">Você acertou ${acertos} de ${totalSteps} respostas</div>
+                <div class="score-mensagem">${mensagem}</div>
+            `;
+        }
+
+        // Reiniciar
+        document.getElementById('btn-reiniciar-roleplay').addEventListener('click', function () {
+            acertos = 0;
+            resultadoContainer.style.display = 'none';
+            speechBubble.style.display = 'block';
+            loadStep(0);
+        });
+
+        // Iniciar
+        loadStep(0);
+    }
+
+    // Inicializar após delay
+    setTimeout(initRoleplay, 50);
+</script>

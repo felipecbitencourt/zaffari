@@ -15,7 +15,7 @@
         },
         {
             "id": "m1",
-            "title": "❓ Por que o SAC é estratégico?",
+            "title": "1️⃣ Por que o SAC é estratégico?",
             "pages": [
                 {
                     "id": "m1-abertura",
@@ -49,7 +49,7 @@
                 },
                 {
                     "id": "m1-p5",
-                    "title": "Por que os prazos importam?",
+                    "title": "Atendimentos Ativos",
                     "file": "paginas/pt/m1-p5-prazos.html",
                     "type": "content"
                 },
@@ -58,12 +58,18 @@
                     "title": "📝 Resumo: Perguntas e Respostas",
                     "file": "paginas/pt/m1-p6-resumo.html",
                     "type": "summary"
+                },
+                {
+                    "id": "m1-conquistas",
+                    "title": "🏆 Conquistas do Módulo 1",
+                    "file": "paginas/pt/m1-conquistas.html",
+                    "type": "rewards"
                 }
             ]
         },
         {
             "id": "m2",
-            "title": "❓ Onde encontrar informações?",
+            "title": "2️⃣ Onde encontrar informações?",
             "pages": [
                 {
                     "id": "m2-abertura",
@@ -91,27 +97,33 @@
                 },
                 {
                     "id": "m2-p4",
-                    "title": "Como usar encartes e site?",
+                    "title": "Colocando em Prática",
                     "file": "paginas/pt/m2-p4-encartes.html",
-                    "type": "content"
+                    "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p5",
-                    "title": "Como funciona o WhatsApp?",
+                    "title": "Benefícios da Consulta Correta",
                     "file": "paginas/pt/m2-p5-whatsapp.html",
-                    "type": "content"
+                    "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p6",
                     "title": "📝 Resumo: Perguntas e Respostas",
                     "file": "paginas/pt/m2-p6-resumo.html",
                     "type": "summary"
+                },
+                {
+                    "id": "m2-conquistas",
+                    "title": "🏆 Conquistas do Módulo 2",
+                    "file": "paginas/pt/m2-conquistas.html",
+                    "type": "rewards"
                 }
             ]
         },
         {
             "id": "m3",
-            "title": "❓ Como aplicar o CDC?",
+            "title": "3️⃣ Como aplicar o CDC?",
             "pages": [
                 {
                     "id": "m3-abertura",
@@ -139,9 +151,9 @@
                 },
                 {
                     "id": "m3-p4",
-                    "title": "📋 Estudo de Caso",
+                    "title": "Por que o CDC é importante?",
                     "file": "paginas/pt/m3-p4-estudo-caso.html",
-                    "type": "quiz_integrated"
+                    "type": "content"
                 },
                 {
                     "id": "m3-p5",
@@ -166,17 +178,59 @@
                     "title": "📝 Resumo e Encerramento",
                     "file": "paginas/pt/m3-p8-encerramento.html",
                     "type": "summary"
+                },
+                {
+                    "id": "m3-conquistas",
+                    "title": "🏆 Conquistas do Módulo 3",
+                    "file": "paginas/pt/m3-conquistas.html",
+                    "type": "rewards"
                 }
             ]
         },
         {
             "id": "extras",
-            "title": "📚 Extras",
+            "title": "🧠 Fixação",
             "pages": [
                 {
-                    "id": "extras-p1",
-                    "title": "Material Bibliográfico",
-                    "file": "paginas/pt/extras-bibliografia.html",
+                    "id": "extras-hub",
+                    "title": "🧠 Menu de Fixação",
+                    "file": "paginas/pt/extras-hub.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-resumo",
+                    "title": "📖 Resumo do Curso",
+                    "file": "paginas/pt/extras-resumo.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-questionarios",
+                    "title": "📝 Questionários",
+                    "file": "paginas/pt/extras-questionarios.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-flashcards",
+                    "title": "🃏 Flash Cards",
+                    "file": "paginas/pt/extras-flashcards.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-arraste",
+                    "title": "🎯 Arraste e Solte",
+                    "file": "paginas/pt/extras-arraste.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-ache-erro",
+                    "title": "🔍 Ache o Erro",
+                    "file": "paginas/pt/extras-ache-erro.html",
+                    "type": "extras"
+                },
+                {
+                    "id": "extras-roleplay",
+                    "title": "🎭 Roleplay",
+                    "file": "paginas/pt/extras-roleplay.html",
                     "type": "extras"
                 }
             ]
