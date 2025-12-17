@@ -134,31 +134,33 @@
 <script>
     // Aguardar DOM carregar
     function initFlashcards() {
-        // Dados dos Flash Cards - Carregados via i18n
-        let flashcardsData = {};
+        // Dados dos Flash Cards - Carregados via I18n (sistema customizado)
+        let flashcardsData = { m1: [], m2: [], m3: [] };
 
-        if (window.i18n && window.i18n.t) {
-            // Helper para extrair valores de objeto
-            const extractValues = (key) => {
-                const data = window.i18n.t(key);
-                return (typeof data === 'object') ? Object.values(data) : [];
-            };
+        // Usar o sistema I18n customizado do projeto
+        if (typeof I18n !== 'undefined' && I18n.translations && I18n.translations.extras && I18n.translations.extras.flashcards) {
+            const modules = I18n.translations.extras.flashcards.modules;
+            console.log('[Flashcards] Found I18n.translations, modules:', modules);
 
-            flashcardsData = {
-                m1: extractValues('extras.flashcards.modules.m1.cards'),
-                m2: extractValues('extras.flashcards.modules.m2.cards'),
-                m3: extractValues('extras.flashcards.modules.m3.cards')
-            };
+            if (modules) {
+                ['m1', 'm2', 'm3'].forEach(key => {
+                    if (modules[key] && modules[key].cards) {
+                        flashcardsData[key] = Object.values(modules[key].cards);
+                        console.log('[Flashcards] Loaded ' + key + ':', flashcardsData[key].length + ' cards');
+                    }
+                });
+            }
         } else {
-            console.error('[Flashcards] i18n not ready, defaulting to empty.');
-            // Fallback minimalista se der erro
-            flashcardsData = { m1: [], m2: [], m3: [] };
+            console.error('[Flashcards] I18n.translations not available yet');
         }
 
+        console.log('[Flashcards] Final loaded data:', flashcardsData);
+
+        // Nomes dos decks
         const deckNames = {
-            m1: (window.i18n && window.i18n.t) ? window.i18n.t('extras.flashcards.modules.m1.title') : 'Módulo 1',
-            m2: (window.i18n && window.i18n.t) ? window.i18n.t('extras.flashcards.modules.m2.title') : 'Módulo 2',
-            m3: (window.i18n && window.i18n.t) ? window.i18n.t('extras.flashcards.modules.m3.title') : 'Módulo 3'
+            m1: (typeof I18n !== 'undefined' && I18n.t) ? I18n.t('extras.flashcards.modules.m1.title') : 'Módulo 1',
+            m2: (typeof I18n !== 'undefined' && I18n.t) ? I18n.t('extras.flashcards.modules.m2.title') : 'Módulo 2',
+            m3: (typeof I18n !== 'undefined' && I18n.t) ? I18n.t('extras.flashcards.modules.m3.title') : 'Módulo 3'
         };
 
         // Estado

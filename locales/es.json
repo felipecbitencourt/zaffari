@@ -5,7 +5,11 @@
         "menu_fixacao": "Menú de Fijación",
         "menu_videos": "Vídeos",
         "menu_atividades": "Actividades",
-        "menu_impressao": "Impresión"
+        "menu_impressao": "Impresión",
+        "btn_ver_doc": "📄 Ver Documento Completo",
+        "btn_ver_artigo": "🔗 Ver Artículo Completo",
+        "btn_cdc_pdf": "📄 CDC Completo (PDF)",
+        "btn_cdc_noticia": "🔗 35 Años del CDC (Noticia)"
     },
     "intro": {
         "hero": {
@@ -711,20 +715,20 @@
                     "desc": "Practique situaciones reales de atención a través de simulaciones interactivas."
                 },
                 "ref1": {
-                    "title": "Material Complementario 1",
-                    "desc": "Espacio reservado para futuro archivo de referencia."
+                    "title": "Impacto del Mal Servicio",
+                    "desc": "Artículo: 65% de los consumidores consideran cambiar de marca tras experiencia negativa."
                 },
                 "ref2": {
-                    "title": "Material Complementario 2",
-                    "desc": "Espacio reservado para futuro archivo de referencia."
+                    "title": "35 Años del CDC",
+                    "desc": "Noticia: Código de Defensa del Consumidor cumple 35 años como referencia."
                 },
                 "ref3": {
-                    "title": "Material Complementario 3",
-                    "desc": "Espacio reservado para futuro archivo de referencia."
+                    "title": "Código de Defensa del Consumidor",
+                    "desc": "PDF completo del CDC (2013) para consulta y descarga."
                 },
                 "ref4": {
-                    "title": "Material Complementario 4",
-                    "desc": "Espacio reservado para futuro archivo de referencia."
+                    "title": "Estrategia de CX (Oracle)",
+                    "desc": "Brief ejecutivo sobre estrategias de ejecución de Customer Service."
                 }
             },
             "lock_msg": "Complete los módulos para desbloquear",

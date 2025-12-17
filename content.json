@@ -43,24 +43,12 @@
                 },
                 {
                     "id": "m1-p4",
-                    "title": "Por que registrar corretamente?",
+                    "title": "Por que prazos são importantes?",
                     "file": "paginas/pt/m1-p4-atividade.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m1-p5",
-                    "title": "Quando realizar atendimentos ativos?",
-                    "file": "paginas/pt/m1-p5-atendimentos-ativos.html",
-                    "type": "content"
-                },
-                {
-                    "id": "m1-p6",
-                    "title": "Quais são os prazos de atendimento?",
-                    "file": "paginas/pt/m1-p5-prazos.html",
-                    "type": "content"
-                },
-                {
-                    "id": "m1-p7",
                     "title": "📝 O que aprendemos no Módulo 1?",
                     "file": "paginas/pt/m1-p6-resumo.html",
                     "type": "summary"

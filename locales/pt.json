@@ -5,11 +5,15 @@
         "menu_fixacao": "Menu de Fixação",
         "menu_videos": "Vídeos",
         "menu_atividades": "Atividades",
-        "menu_impressao": "Impressão"
+        "menu_impressao": "Impressão",
+        "btn_ver_doc": "📄 Ver Documento Completo",
+        "btn_ver_artigo": "🔗 Ver Artigo Completo",
+        "btn_cdc_pdf": "📄 CDC na Íntegra (PDF)",
+        "btn_cdc_noticia": "🔗 35 Anos do CDC (Notícia)"
     },
     "intro": {
         "hero": {
-            "welcome": "Como aproveitar este curso?",
+            "welcome": "Boas-Vindas!",
             "title": "Por Dentro do SAC",
             "subtitle": "Capacite-se para oferecer um <strong>Serviço de Atendimento ao Cliente</strong> de excelência e transformar cada interação em uma experiência positiva.",
             "badge": "✨ Treinamento Oficial",
@@ -128,14 +132,14 @@
         "p2": {
             "title": "Qual o papel do SAC?",
             "text1": "O <strong>Serviço de Atendimento ao Cliente</strong> é responsável por gerenciar os canais de relacionamento com os clientes, incluindo atendimentos eletrônicos e telefônicos.",
-            "text2": "Mais do que um setor operacional, o SAC é uma <strong>área estratégica</strong>, essencial para a preservação dos valores, da reputação e da credibilidade das marcas do Grupo.",
+            "text2": "Mais do que um setor operacional, o SAC é uma <strong>área estratégica</strong>, essencial para a manutenção dos valores, da reputação e da credibilidade das marcas do Grupo.",
             "card_text": "Um atendimento humanizado, eficiente e de alta qualidade não apenas resolve demandas: ele constrói confiança, fortalece vínculos e contribui diretamente para a fidelização dos clientes.",
-            "text3": "Além do público externo, o SAC também desempenha um papel fundamental no suporte aos colaboradores da empresa, esclarecendo dúvidas sobre processos, sistemas e padrões de atendimento. Essa atuação contribui para a padronização, a organização interna e a excelência do serviço prestado.",
+            "text3": "Além do público externo, o SAC também desempenha um papel fundamental no <strong>suporte aos colaboradores da empresa</strong>, esclarecendo dúvidas sobre processos, sistemas e padrões de atendimento. Essa atuação contribui para a <strong>padronização, organização e excelência</strong> do serviço prestado.",
             "box_attention": {
                 "title": "Curiosidade",
                 "text": "Estudos de experiência do cliente indicam que uma única interação negativa pode impactar mais a percepção da marca do que várias interações positivas. Por isso, <strong>cada contato conta</strong>."
             },
-            "text4": "O SAC vai muito além de atender ligações. Ele representa a voz da empresa no contato direto com o cliente. Cada atendimento influencia a forma como o consumidor percebe a marca e avalia sua experiência.",
+            "text4": "O SAC vai muito além de atender ligações. Ele representa <strong>a voz da empresa</strong> no contato direto com o cliente. Cada atendimento influencia a forma como o consumidor percebe a marca e avalia sua experiência.",
             "quiz": {
                 "question": "Um cliente entra em contato frustrado porque seu problema ainda não foi resolvido. Como um operador de SAC com visão estratégica deve encarar esse atendimento?",
                 "opt_a": "A) Como um incômodo que deve ser encerrado o mais rápido possível.",
@@ -147,8 +151,8 @@
         },
         "p3": {
             "title": "Quais são nossas responsabilidades?",
-            "intro_list": "Entre as principais atribuições do Serviço de Atendimento ao Cliente, destacam-se:",
-            "intro_p": "O SAC atua como a voz da empresa para o cliente e a voz do cliente para a empresa, garantindo um fluxo constante de informações e melhorias.",
+            "intro_list": "Entre as principais responsabilidades do Serviço de Atendimento ao Cliente, destacam-se:",
+            "intro_p": "",
             "img_alt": "Equipe de call center trabalhando em ambiente moderno",
             "cards": {
                 "c1": {
@@ -157,9 +161,18 @@
                 },
                 "c2": {
                     "title": "Atendimento Receptivo",
-                    "text": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções."
+                    "text": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções de primeiro nível sempre que possível."
+                },
+                "c3": {
+                    "title": "Atendimentos Ativos",
+                    "text": "Realizar contatos ativos com clientes, especialmente em campanhas promocionais e ações de marketing relacionadas aos Cartões do Grupo. Isso inclui ativação de cartões, atualização cadastral, comunicação de promoções e reversão de cancelamentos."
+                },
+                "c4": {
+                    "title": "Organização e Tabulação",
+                    "text": "Organizar e tabular dados, elaborar relatórios e dar suporte às demandas da equipe de apoio e da Coordenação."
                 }
             },
+            "proatividade": "Os profissionais do SAC também atuam de forma proativa, identificando melhorias nos scripts e nos padrões de atendimento, com base na observação do dia a dia e na análise de oportunidades. Essas contribuições são essenciais para a evolução constante do serviço prestado e para a manutenção da excelência no relacionamento com o cliente.",
             "active_title": "📢 Atendimentos Ativos",
             "active_text": "Realizar atendimentos ativos, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
             "timeline": {
@@ -202,20 +215,22 @@
             }
         },
         "p4": {
-            "title": "Por que registrar corretamente?",
-            "intro": "Outro ponto essencial no trabalho do SAC é o cumprimento dos prazos de atendimento. Prazos bem definidos garantem organização, previsibilidade e eficiência, além de demonstrarem respeito ao cliente e fortalecerem a confiança na marca.",
+            "title": "Por que prazos são importantes?",
+            "intro": "Outro ponto essencial no trabalho do SAC é o cumprimento dos prazos de atendimento. Prazos bem definidos garantem organização, previsibilidade e eficiência, além de demonstrarem respeito ao cliente e fortalecerem a confiança na marca. Além disso, seguir os prazos definidos ajuda o time a manter a organização dos processos internos, evitando retrabalhos ou escalonamentos desnecessários.",
             "standard_box": {
                 "title": "⏳ Prazos Padrão",
+                "comment": "Esses prazos garantem agilidade, organização e consistência no atendimento do dia a dia.",
                 "l1": "<strong>Solicitações:</strong> até 3 dias úteis",
                 "l2": "<strong>Informações:</strong> até 2 dias úteis",
                 "l3": "<strong>Reclamações:</strong> até 2 dias úteis"
             },
             "special_box": {
                 "title": "⚠ Prazos Especiais",
+                "comment": "Esses atendimentos exigem análises mais detalhadas, por isso contam com prazos maiores.",
                 "l1": "<strong>Danos:</strong> até 5 dias úteis para retorno",
                 "l2": "<strong>Duplicidade de pagamento:</strong> até 8 dias úteis"
             },
-            "text_footer": "O correto registro da categoria de atendimento é fundamental para que o prazo adequado seja respeitado e o cliente receba retorno no tempo correto.",
+            "text_footer": "⚠️ <strong>IMPORTANTE:</strong> O correto registro da categoria de atendimento é fundamental para que o prazo adequado seja respeitado e o cliente receba retorno no tempo correto.",
             "quiz": {
                 "question": "Um cliente informa que pagou a fatura duas vezes. Você precisa registrar o atendimento para que ele seja ressarcido. Por que é crucial selecionar a categoria 'Duplicidade de pagamento' em vez de uma categoria genérica de 'Reclamação'?",
                 "opt_a": "A) Porque 'Duplicidade' tem um prazo específico (até 8 dias úteis) para análise financeira detalhada, evitando promessas falsas de solução rápida.",
@@ -263,7 +278,7 @@
                 "a2": {
                     "title": "❓ Qual o papel do SAC além de resolver problemas?",
                     "text": "O SAC representa a <strong>voz da empresa</strong> no contato direto com o cliente. Mais do que um setor operacional, é uma área estratégica essencial para:",
-                    "l1": "Preservar valores e reputação da marca",
+                    "l1": "Manter valores e reputação da marca",
                     "l2": "Construir confiança e fortalecer vínculos",
                     "l3": "Contribuir para a fidelização dos clientes"
                 },
@@ -273,16 +288,13 @@
                     "l1": "<strong>Atendimento Multicanal:</strong> telefone, e-mail, chat e meios eletrônicos",
                     "l2": "<strong>Atendimento Receptivo:</strong> informações, reclamações, sugestões e elogios",
                     "l3": "<strong>Atendimentos Ativos:</strong> campanhas, ativação de cartões, atualizações cadastrais",
-                    "l4": "<strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias",
-                    "note": "Nota: Definir leis de proteção ao consumidor NÃO é responsabilidade do SAC - o SAC segue as leis."
+                    "l4": "<strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias"
                 },
                 "a4": {
                     "title": "❓ Por que os prazos de atendimento importam?",
                     "text": "Prazos bem definidos garantem organização, previsibilidade e eficiência. O correto registro da categoria de atendimento é fundamental porque o sistema calcula o prazo baseado nela.",
-                    "box_title": "Prazos Padrão",
-                    "l1": "<strong>Solicitações:</strong> até 3 dias úteis",
-                    "l2": "<strong>Informações:</strong> até 2 dias úteis",
-                    "l3": "<strong>Reclamações:</strong> até 2 dias úteis"
+                    "prazos_padrao": "<strong>Prazos Padrões:</strong> Solicitações: até 3 dias úteis | Informações: até 2 dias úteis | Reclamações: até 2 dias úteis",
+                    "prazos_especiais": "<strong>Prazos Especiais:</strong> Danos: até 5 dias úteis | Duplicidade de pagamento: até 8 dias úteis"
                 }
             },
             "conclusion": {
@@ -329,7 +341,7 @@
                 },
                 "c2": {
                     "title": "Agilidade",
-                    "text": "Resolva dúvidas rapidamente, sem precisar transferir ou consultar terceiros."
+                    "text": "Resolva dúvidas de forma rápida e eficaz, promovendo a satisfação dos clientes."
                 },
                 "c3": {
                     "title": "Cuidado",
@@ -343,28 +355,28 @@
             "title": "Onde consultar dados das lojas?",
             "lead": "Todas as informações essenciais estão disponíveis na <strong>Intranet</strong> da empresa.",
             "intro_p": "Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.",
-            "highlight_title": "O Caminho das Pedras",
+            "highlight_title": "Passo a Passo",
             "highlight_text": "Intranet → Filiais → Dados cadastrais e horários",
             "slider_title": "📍 Como consultar na Intranet:",
             "slider_steps": {
                 "s1": {
                     "title": "Passo 1: Acessar a Intranet",
-                    "text": "Abra o navegador e acesse o portal interno da empresa. Faça login com suas credenciais corporativas."
+                    "text": "Acesse a página interna da empresa (Intranet)."
                 },
                 "s2": {
                     "title": "Passo 2: Navegar até Filiais",
-                    "text": "No menu principal, localize e clique na opção <strong>'Filiais'</strong> ou <strong>'Lojas'</strong>."
+                    "text": "Clique na opção <strong>'Filiais'</strong>."
                 },
                 "s3": {
                     "title": "Passo 3: Dados Cadastrais",
-                    "text": "Selecione <strong>'Dados cadastrais e horários'</strong> para acessar as informações completas de cada loja."
+                    "text": "Em seguida, clique em <strong>'Dados cadastrais e horários'</strong>."
                 },
                 "s4": {
                     "title": "Passo 4: Consultar e Informar",
-                    "text": "Agora você pode consultar endereço, telefone e horários de funcionamento para orientar o cliente!"
+                    "text": "Agora você pode consultar informações de todas as unidades do grupo, incluindo: Endereço, Horário de funcionamento e Formas de contato para orientar o cliente!"
                 }
             },
-            "list_intro": "Lá é possível consultar:",
+            "list_intro": "O que você consegue consultar:",
             "list_items": {
                 "l1": "Endereço das lojas",
                 "l2": "Horários de funcionamento",
@@ -379,7 +391,7 @@
                 "feedback": "<strong>Resposta Correta!</strong> A Intranet é a única fonte oficial e confiável para horários de filiais."
             },
             "importance_title": "Por que isso importa?",
-            "importance_text": "Dominar essa consulta garante <strong>agilidade</strong> no atendimento, respostas mais <strong>assertivas</strong>, padronização das informações e uma experiência mais positiva para o cliente.",
+            "importance_text": "Dominar essa consulta garante <strong>agilidade</strong> no atendimento, respostas mais <strong>assertivas</strong>, <strong>padronização</strong> das informações e uma <strong>experiência mais positiva</strong> para o cliente.",
             "quiz2": {
                 "question": "Dominar a consulta de informações na Intranet contribui para:",
                 "opt_a": "A) Aumentar o tempo de atendimento.",
@@ -436,7 +448,7 @@
                 "a2": {
                     "title": "❓ Onde consultar dados das lojas?",
                     "text": "Na <strong>Intranet</strong> da empresa!",
-                    "box_title": "O Caminho das Pedras",
+                    "box_title": "Passo a Passo",
                     "box_text": "Intranet → Filiais → Dados cadastrais e horários",
                     "footer": "Lá você encontra: endereço das lojas, horários de funcionamento e formas de contato."
                 },
@@ -449,7 +461,7 @@
                 },
                 "a4": {
                     "title": "❓ Como funciona o WhatsApp de ofertas?",
-                    "text": "É simples e direto! A sequência é:",
+                    "text": "Passo a passo para instruir o cliente:",
                     "l1": "<strong>Selecionar a loja</strong> de interesse",
                     "l2": "<strong>Acessar a comunidade</strong> pelo link ou QR Code",
                     "l3": "<strong>Receber ofertas</strong> personalizadas no celular"
@@ -457,7 +469,7 @@
             },
             "conclusion": {
                 "title": "Conclusão do Módulo 2",
-                "text": "Agora você sabe <strong>onde encontrar as informações</strong> que o cliente precisa. No próximo módulo, vamos aprender <strong>como aplicar o CDC</strong> no atendimento!"
+                "text": "Agora você sabe <strong>onde encontrar as informações</strong> que o cliente precisa. No próximo módulo, vamos aprender <strong>como aplicar o CDC (Código de Defesa do Consumidor)</strong> no atendimento!"
             }
         },
         "conquistas": {
@@ -719,20 +731,20 @@
                     "desc": "Pratique situações reais de atendimento através de simulações interativas."
                 },
                 "ref1": {
-                    "title": "Material Complementar 1",
-                    "desc": "Espaço reservado para futuro arquivo de referência."
+                    "title": "Impacto do Atendimento Ruim",
+                    "desc": "Artigo: 65% dos consumidores consideram mudar de marca após experiência negativa."
                 },
                 "ref2": {
-                    "title": "Material Complementar 2",
-                    "desc": "Espaço reservado para futuro arquivo de referência."
+                    "title": "35 Anos do CDC",
+                    "desc": "Notícia: Código de Defesa do Consumidor completa 35 anos como referência."
                 },
                 "ref3": {
-                    "title": "Material Complementar 3",
-                    "desc": "Espaço reservado para futuro arquivo de referência."
+                    "title": "Código de Defesa do Consumidor",
+                    "desc": "PDF completo do CDC (2013) para consulta e download."
                 },
                 "ref4": {
-                    "title": "Material Complementar 4",
-                    "desc": "Espaço reservado para futuro arquivo de referência."
+                    "title": "Estratégia de CX (Oracle)",
+                    "desc": "Brief executivo sobre estratégias de execução de Customer Service."
                 }
             },
             "lock_msg": "Complete os módulos para desbloquear",

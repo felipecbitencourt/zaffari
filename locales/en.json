@@ -5,7 +5,11 @@
         "menu_fixacao": "Review Menu",
         "menu_videos": "Videos",
         "menu_atividades": "Activities",
-        "menu_impressao": "Print"
+        "menu_impressao": "Print",
+        "btn_ver_doc": "📄 View Full Document",
+        "btn_ver_artigo": "🔗 View Full Article",
+        "btn_cdc_pdf": "📄 CDC Full Text (PDF)",
+        "btn_cdc_noticia": "🔗 CDC 35th Anniversary (News)"
     },
     "intro": {
         "hero": {
@@ -711,20 +715,20 @@
                     "desc": "Pratique situações reais de atendimento através de simulações interativas."
                 },
                 "ref1": {
-                    "title": "Reference Material 1",
-                    "desc": "Placeholder for future reference file."
+                    "title": "Bad Service Impact",
+                    "desc": "Article: 65% of Consumers Say Negative Interactions Motivate Them to Switch Brands."
                 },
                 "ref2": {
-                    "title": "Reference Material 2",
-                    "desc": "Placeholder for future reference file."
+                    "title": "CDC 35th Anniversary",
+                    "desc": "News: Consumer Protection Code turns 35 as a reference in consumption relations."
                 },
                 "ref3": {
-                    "title": "Reference Material 3",
-                    "desc": "Placeholder for future reference file."
+                    "title": "Consumer Protection Code",
+                    "desc": "Full PDF of the Brazilian CDC (2013) for consultation."
                 },
                 "ref4": {
-                    "title": "Reference Material 4",
-                    "desc": "Placeholder for future reference file."
+                    "title": "CX Strategy (Oracle)",
+                    "desc": "Executive brief on Customer Service execution strategies."
                 }
             },
             "lock_msg": "Complete os módulos para desbloquear",

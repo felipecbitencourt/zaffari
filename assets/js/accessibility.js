@@ -324,6 +324,194 @@ const AccessibilityManager = {
     },
 
     /**
+     * Extrai texto do conteúdo de forma estruturada, adicionando pausas e contexto para TTS
+     * @param {HTMLElement} container - Elemento container do conteúdo
+     * @returns {string} - Texto preparado para TTS com pausas apropriadas
+     */
+    getStructuredText: function (container) {
+        if (!container) return "";
+
+        const textParts = [];
+        const self = this;
+
+        // Ordinais para listas numeradas
+        const ordinals = ['Primeiro', 'Segundo', 'Terceiro', 'Quarto', 'Quinto', 'Sexto', 'Sétimo', 'Oitavo', 'Nono', 'Décimo'];
+
+        /**
+         * Processa um elemento e seus filhos recursivamente
+         */
+        function processElement(element, context = {}) {
+            if (!element) return;
+
+            const tagName = element.tagName;
+
+            // Ignorar elementos não desejados
+            const skipTags = ['SCRIPT', 'STYLE', 'NAV', 'FOOTER', 'INPUT', 'SELECT', 'TEXTAREA'];
+            if (skipTags.includes(tagName)) return;
+
+            // Ignorar modais e sidebar
+            if (element.closest('.modal-overlay') || element.closest('#sidebar')) return;
+
+            // Ignorar elementos ocultos (exceto BODY)
+            if (element.offsetParent === null && tagName !== 'BODY' && tagName !== 'HTML') return;
+
+            // === ACORDEÕES FECHADOS: Ignorar conteúdo de <details> que não está aberto ===
+            if (tagName === 'DETAILS' && !element.hasAttribute('open')) {
+                // Ler apenas o summary se existir
+                const summary = element.querySelector('summary');
+                if (summary) {
+                    const summaryText = self.getReadableText(summary.textContent);
+                    if (summaryText) {
+                        textParts.push(summaryText + '.');
+                    }
+                }
+                return; // Não processar o conteúdo interno
+            }
+
+            // === CARDS INTERATIVOS ===
+            if (element.classList.contains('interactive-cards') || element.classList.contains('premium-cards-grid')) {
+                const cards = element.querySelectorAll('.interactive-card, .premium-card');
+                const totalCards = cards.length;
+
+                cards.forEach((card, index) => {
+                    if (totalCards > 1) {
+                        textParts.push(`Card ${index + 1} de ${totalCards}.`);
+                    }
+
+                    // Ler header do card
+                    const header = card.querySelector('.interactive-card-header span:not(.icon), .premium-card h3');
+                    if (header) {
+                        const headerText = self.getReadableText(header.textContent);
+                        if (headerText) textParts.push(headerText + '.');
+                    }
+
+                    // Ler conteúdo do card
+                    const content = card.querySelector('.interactive-card-content p, .premium-card p');
+                    if (content) {
+                        const contentText = self.getReadableText(content.textContent);
+                        if (contentText) textParts.push(contentText);
+                    }
+                });
+                return; // Já processamos os cards
+            }
+
+            // === QUIZ BLOCK ===
+            if (element.classList.contains('quiz-block')) {
+                const question = element.querySelector('.question');
+                if (question) {
+                    textParts.push('Questão.');
+                    const questionText = self.getReadableText(question.textContent);
+                    if (questionText) textParts.push(questionText);
+                }
+
+                // Ler opções de quiz
+                const options = element.querySelectorAll('.quiz-option');
+                options.forEach((option, index) => {
+                    const optionText = self.getReadableText(option.textContent);
+                    if (optionText) textParts.push(optionText);
+                });
+                return;
+            }
+
+            // === HIGHLIGHT BOXES ===
+            if (element.classList.contains('highlight-box') || element.classList.contains('box-attention')) {
+                let intro = '';
+
+                if (element.classList.contains('atencao') || element.classList.contains('box-attention')) {
+                    intro = 'Atenção.';
+                } else if (element.classList.contains('dica')) {
+                    intro = 'Dica.';
+                } else if (element.classList.contains('sabia')) {
+                    intro = 'Você sabia?';
+                } else {
+                    intro = 'Importante.';
+                }
+
+                textParts.push(intro);
+
+                const content = element.querySelector('.highlight-box-content, p');
+                if (content) {
+                    const contentText = self.getReadableText(content.textContent);
+                    if (contentText) textParts.push(contentText);
+                }
+                return;
+            }
+
+            // === TÍTULOS (H1-H6) ===
+            if (['H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(tagName)) {
+                const headingText = self.getReadableText(element.textContent);
+                if (headingText) {
+                    textParts.push(headingText + '.');
+                }
+                return;
+            }
+
+            // === LISTAS ORDENADAS ===
+            if (tagName === 'OL') {
+                const items = element.querySelectorAll(':scope > li');
+                items.forEach((item, index) => {
+                    const ordinal = ordinals[index] || `Item ${index + 1}`;
+                    const itemText = self.getReadableText(item.textContent);
+                    if (itemText) {
+                        textParts.push(`${ordinal}. ${itemText}`);
+                    }
+                });
+                return;
+            }
+
+            // === LISTAS NÃO ORDENADAS ===
+            if (tagName === 'UL') {
+                const items = element.querySelectorAll(':scope > li');
+                items.forEach((item) => {
+                    const itemText = self.getReadableText(item.textContent);
+                    if (itemText) textParts.push(itemText);
+                });
+                return;
+            }
+
+            // === PARÁGRAFOS ===
+            if (tagName === 'P') {
+                const pText = self.getReadableText(element.textContent);
+                if (pText) textParts.push(pText);
+                return;
+            }
+
+            // === SUMMARY (em details aberto) ===
+            if (tagName === 'SUMMARY') {
+                const summaryText = self.getReadableText(element.textContent);
+                if (summaryText) textParts.push(summaryText + '.');
+                return;
+            }
+
+            // === BOTÕES DE NAVEGAÇÃO (ignorar) ===
+            if (tagName === 'BUTTON') {
+                return;
+            }
+
+            // === PROCESSAR FILHOS RECURSIVAMENTE ===
+            const children = element.children;
+            for (let i = 0; i < children.length; i++) {
+                processElement(children[i], context);
+            }
+        }
+
+        // Iniciar processamento
+        const contentArea = container.querySelector('#content-area') || container;
+        processElement(contentArea);
+
+        // Juntar todas as partes
+        let result = textParts.join(' ');
+
+        // Normalizar espaços múltiplos
+        result = result.replace(/\s+/g, ' ').trim();
+
+        // Garantir pontuação no final de frases
+        result = result.replace(/([a-záéíóúâêôãõç])(\s+[A-Z])/g, '$1.$2');
+
+        return result;
+    },
+
+    /**
      * Inicia leitura automática da página
      */
     startAutoRead: function () {
@@ -333,8 +521,8 @@ const AccessibilityManager = {
 
         window.speechSynthesis.cancel();
 
-        const rawText = document.getElementById('main-content').innerText;
-        const text = this.getReadableText(rawText);
+        const container = document.getElementById('main-content');
+        const text = this.getStructuredText(container);
 
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = currentLang === 'pt' ? 'pt-BR' : currentLang === 'es' ? 'es-ES' : currentLang === 'fr' ? 'fr-FR' : 'en-US';
@@ -366,8 +554,8 @@ const AccessibilityManager = {
 
         window.speechSynthesis.cancel();
 
-        const rawText = document.getElementById('main-content').innerText;
-        const text = this.getReadableText(rawText);
+        const container = document.getElementById('main-content');
+        const text = this.getStructuredText(container);
 
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = currentLang === 'pt' ? 'pt-BR' : currentLang === 'es' ? 'es-ES' : currentLang === 'fr' ? 'fr-FR' : 'en-US';
@@ -417,8 +605,8 @@ const AccessibilityManager = {
                 this.speaking = false;
                 if (this.ttsBtn) this.ttsBtn.classList.remove('active');
             } else {
-                const rawText = document.getElementById('main-content').innerText;
-                const text = this.getReadableText(rawText);
+                const container = document.getElementById('main-content');
+                const text = this.getStructuredText(container);
 
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = currentLang === 'pt' ? 'pt-BR' : currentLang === 'es' ? 'es-ES' : currentLang === 'fr' ? 'fr-FR' : 'en-US';

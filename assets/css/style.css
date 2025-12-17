@@ -80,9 +80,9 @@ body.high-contrast {
     --bg-primary: #121212;
     --bg-secondary: #1E1E1E;
     --bg-dark: #0A0A0A;
-    --text-primary: #E8E8E8;
-    --text-secondary: #B0B0B0;
-    --text-muted: #757575;
+    --text-primary: #F0F0F0;
+    --text-secondary: #D0D0D0;
+    --text-muted: #9E9E9E;
     --border-color: rgba(255, 255, 255, 0.12);
     --glass-bg: rgba(30, 30, 30, 0.95);
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -142,6 +142,15 @@ body.high-contrast .content-header h1 {
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-light) 100%);
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+/* Manter emojis coloridos no dark mode */
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4,
+body.high-contrast summary {
+    -webkit-text-fill-color: initial;
 }
 
 body.high-contrast .content-body {
@@ -323,6 +332,25 @@ body.high-contrast .modal-body {
 body.high-contrast img,
 body.high-contrast video {
     opacity: 0.9;
+}
+
+/* Dark Mode - Content Slider (manter texto preto em fundo claro) */
+body.high-contrast .content-slider {
+    background: linear-gradient(135deg, #F8F9FE 0%, #FFFFFF 100%);
+}
+
+body.high-contrast .content-slider h4,
+body.high-contrast .content-slider h5 {
+    color: #1A1A2E !important;
+}
+
+body.high-contrast .content-slider p {
+    color: #4A4A68 !important;
+}
+
+body.high-contrast .content-slider .slider-btn {
+    background: white;
+    color: var(--primary-color);
 }
 
 /* ===== DYSLEXIA MODE ===== */
@@ -3081,26 +3109,22 @@ body.high-contrast .tutorial-btn-skip:hover {
         transform: translateX(0);
     }
 
-    20% {
-        transform: translateX(-3px);
-    }
-
-    40% {
-        transform: translateX(3px);
-    }
-
-    60% {
+    25% {
         transform: translateX(-2px);
     }
 
-    80% {
+    50% {
         transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-1px);
     }
 }
 
 /* Classe aplicada via JS para sincronizar */
 .wiggle-animate {
-    animation: wiggle 0.4s ease-in-out;
+    animation: wiggle 0.7s ease-in-out;
 }
 
 /* Desativa animação quando expandido/revelado ou em hover */
@@ -3653,17 +3677,40 @@ body.high-contrast .premium-card h3 {
 }
 
 body.high-contrast .cta-section {
-    background: linear-gradient(135deg, #1B3B1A 0%, #2E5C2D 100%);
-    border-color: #2E5C2D;
+    background: linear-gradient(135deg, #1E1E1E 0%, #2D2D2D 100%);
+    border-color: var(--primary-color);
+    border-left: 4px solid var(--primary-color);
 }
 
-body.high-contrast .cta-text h4,
+body.high-contrast .cta-text h4 {
+    color: var(--text-primary);
+}
+
 body.high-contrast .cta-text p {
-    color: #81C784;
+    color: var(--text-secondary);
+}
+
+body.high-contrast .cta-icon {
+    color: var(--primary-light);
 }
 
 body.high-contrast .start-message {
     background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+/* Dark Mode - Highlight Box Sucesso */
+body.high-contrast .highlight-box.sucesso {
+    background: linear-gradient(135deg, #1E1E1E 0%, #2D2D2D 100%) !important;
+    border-left-color: var(--success) !important;
+}
+
+body.high-contrast .highlight-box.sucesso h4 {
+    color: var(--success) !important;
+}
+
+body.high-contrast .highlight-box.sucesso p {
+    color: var(--text-secondary) !important;
 }
 
 /* ===== PREMIUM COURSE-WIDE ENHANCEMENTS ===== */
@@ -4515,6 +4562,11 @@ body.high-contrast .speed-controls,
 body.high-contrast .lang-controls {
     background: var(--bg-primary);
     border-color: var(--border-color);
+}
+
+body.high-contrast .font-btn,
+body.high-contrast #font-size-display {
+    color: white !important;
 }
 
 /* ===== EXTRAS HUB - RESOURCE CARDS ===== */
@@ -5541,7 +5593,7 @@ body.high-contrast .resumo-final-content {
 .roleplay-scene {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 800px;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -5560,7 +5612,8 @@ body.high-contrast .resumo-final-content {
 .roleplay-background img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
 }
 
 .roleplay-character {
@@ -5576,7 +5629,7 @@ body.high-contrast .resumo-final-content {
 
 .roleplay-character.atendente {
     right: 10px;
-    bottom: 100px;
+    top: 280px;
     width: 120px;
     animation: atendenteEnter 0.4s ease-out;
 }
@@ -5594,8 +5647,8 @@ body.high-contrast .resumo-final-content {
 }
 
 .roleplay-speech-bubble.atendente-bubble {
-    top: auto;
-    bottom: 100px;
+    top: 280px;
+    bottom: auto;
     left: 20px;
     right: 150px;
     background: #e3f2fd;
@@ -5703,11 +5756,20 @@ body.high-contrast .resumo-final-content {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Opções de Resposta */
+/* Opções de Resposta - na base da imagem */
 .roleplay-options {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 10;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.95);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .roleplay-option {
@@ -5920,6 +5982,52 @@ body.high-contrast .roleplay-option {
 
 body.high-contrast .resultado-content {
     background: var(--bg-secondary);
+}
+
+/* Dark Mode - Imagens do roleplay sem transparência */
+body.high-contrast .roleplay-character img {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* Dark Mode - Feedback de resposta correta/incorreta legível */
+body.high-contrast .roleplay-feedback {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.high-contrast .roleplay-feedback.success {
+    background: linear-gradient(135deg, #1B3B1A 0%, #2E5C2D 100%) !important;
+    border-left-color: var(--success) !important;
+}
+
+body.high-contrast .roleplay-feedback.success p,
+body.high-contrast .roleplay-feedback.success strong {
+    color: #C8E6C9 !important;
+}
+
+body.high-contrast .roleplay-feedback.error {
+    background: linear-gradient(135deg, #3E2723 0%, #4E342E 100%) !important;
+    border-left-color: var(--warning) !important;
+}
+
+body.high-contrast .roleplay-feedback.error p,
+body.high-contrast .roleplay-feedback.error strong {
+    color: #FFCC80 !important;
+}
+
+body.high-contrast .roleplay-option.correct {
+    background: linear-gradient(135deg, #1B3B1A 0%, #2E5C2D 100%) !important;
+    border-color: var(--success) !important;
+}
+
+body.high-contrast .roleplay-option.incorrect {
+    background: linear-gradient(135deg, #3E2723 0%, #4E342E 100%) !important;
+    border-color: #F44336 !important;
+}
+
+body.high-contrast .roleplay-options {
+    background: rgba(30, 30, 30, 0.95) !important;
 }
 
 /* Responsive */
@@ -6448,7 +6556,7 @@ body.high-contrast .module-title:hover {
 }
 
 .hero-mascot {
-    width: 120px;
+    width: 160px;
     height: auto;
     animation: mascot-bounce 2s ease-in-out infinite;
 }
@@ -6517,7 +6625,7 @@ body.high-contrast .module-title:hover {
 }
 
 .brand-logo-footer img {
-    height: 40px;
+    height: 60px;
     width: auto;
     opacity: 0.7;
     transition: opacity var(--transition-fast);
@@ -6544,7 +6652,7 @@ body.high-contrast .conquistas-mascot {
 }
 
 .hero-mascot-horizontal .hero-mascot {
-    width: 80px;
+    width: 140px;
 }
 
 .hero-mascot-horizontal .hero-welcome {
@@ -6568,12 +6676,15 @@ body.high-contrast .conquistas-mascot {
 }
 
 .sidebar-logo-img {
-    height: 120px;
+    height: 90px;
     width: auto;
     object-fit: contain;
 }
 
-/* Dark mode - sidebar logo already white, no filter needed */
+/* Dark mode - inverter logo preta para branca */
+body.high-contrast .sidebar-logo-img {
+    filter: brightness(0) invert(1);
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -6622,7 +6733,7 @@ body.high-contrast .conquistas-mascot {
 }
 
 .fc-status.unlocked-status~.fc-card-count {
-    color: var(--success);
+    color: var(--text-secondary);
 }
 
 /* ===== GLOSSÁRIO INTERATIVO ===== */
@@ -6723,4 +6834,145 @@ body.high-contrast .glossary-term {
 body.high-contrast .glossary-term:hover,
 body.high-contrast .glossary-term:focus {
     background: rgba(255, 107, 107, 0.2);
+}
+
+/* ===== DARK MODE - FLIP CARDS ===== */
+body.high-contrast .flip-card-front,
+body.high-contrast .flip-card-back {
+    background: linear-gradient(135deg, #2D2D2D 0%, #1E1E1E 100%) !important;
+    border-left-color: var(--primary-color) !important;
+    color: var(--text-primary) !important;
+}
+
+body.high-contrast .flip-card-front h4,
+body.high-contrast .flip-card-back h4 {
+    color: var(--primary-light) !important;
+}
+
+body.high-contrast .flip-card-front p,
+body.high-contrast .flip-card-back p {
+    color: var(--text-secondary) !important;
+}
+
+body.high-contrast .flip-card-back a {
+    color: var(--primary-light) !important;
+}
+
+/* ===== DARK MODE - ACCORDION CONTENT ===== */
+body.high-contrast .accordion details>*:not(summary) {
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+body.high-contrast .accordion details li {
+    color: var(--text-secondary);
+    border-left-color: var(--primary-light);
+}
+
+/* ===== DARK MODE - HIGHLIGHT BOXES ===== */
+body.high-contrast .highlight-box.dica {
+    background: linear-gradient(135deg, #1A237E 0%, #283593 100%) !important;
+    border-left-color: #5C6BC0 !important;
+}
+
+body.high-contrast .highlight-box.dica h4 {
+    color: #90CAF9 !important;
+}
+
+body.high-contrast .highlight-box.dica p,
+body.high-contrast .highlight-box.dica li {
+    color: #E3F2FD !important;
+}
+
+/* ===== DARK MODE - ALL HIGHLIGHT BOXES (generic override) ===== */
+body.high-contrast .highlight-box {
+    background: linear-gradient(135deg, #2D2D2D 0%, #1E1E1E 100%) !important;
+    border-left-color: var(--primary-color) !important;
+}
+
+body.high-contrast .highlight-box h4,
+body.high-contrast .highlight-box-content h4 {
+    color: var(--text-primary) !important;
+}
+
+body.high-contrast .highlight-box p,
+body.high-contrast .highlight-box-content p {
+    color: var(--text-secondary) !important;
+}
+
+body.high-contrast .highlight-box strong {
+    color: var(--text-primary) !important;
+}
+
+/* ===== DARK MODE - TIMELINE ===== */
+body.high-contrast .timeline-content {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.high-contrast .timeline-content h4 {
+    color: var(--primary-light) !important;
+}
+
+body.high-contrast .timeline-content p {
+    color: var(--text-secondary) !important;
+}
+
+body.high-contrast .timeline::before {
+    background: var(--border-color) !important;
+}
+
+body.high-contrast .timeline-item::before {
+    background: var(--primary-color) !important;
+    border-color: var(--bg-primary) !important;
+}
+
+/* ===== DARK MODE - INTERACTIVE CARDS CONTENT ===== */
+body.high-contrast .interactive-card-content {
+    background: var(--bg-primary) !important;
+}
+
+body.high-contrast .interactive-card-content p {
+    color: var(--text-secondary) !important;
+}
+
+/* ===== DARK MODE - CONQUISTAS PROGRESS ===== */
+body.high-contrast .conquistas-progress {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.high-contrast .conquistas-progress .progress-label {
+    color: var(--text-primary) !important;
+}
+
+body.high-contrast .conquistas-progress .progress-text {
+    color: var(--text-secondary) !important;
+}
+
+body.high-contrast .conquistas-progress.complete {
+    background: linear-gradient(135deg, #2D2D2D 0%, #1E1E1E 100%) !important;
+    border-color: var(--success) !important;
+}
+
+body.high-contrast .conquistas-progress.complete .progress-label {
+    color: var(--success) !important;
+}
+
+/* ===== DARK MODE - FLASHCARDS BACK (texto escuro em fundo colorido) ===== */
+body.high-contrast .flashcard-back {
+    color: #1a1a1a !important;
+}
+
+body.high-contrast .flashcard-back .flashcard-answer {
+    color: #1a1a1a !important;
+}
+
+body.high-contrast .flashcard-back .flashcard-deck-tag {
+    color: #333 !important;
+    background: rgba(0, 0, 0, 0.15) !important;
+}
+
+body.high-contrast .flashcard-back .flashcard-hint {
+    color: #333 !important;
 }

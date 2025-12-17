@@ -118,6 +118,15 @@ const FeedbackManager = {
                     const quizIndex = Array.from(quizBlocks).indexOf(parent);
                     const pageId = App.flatPages[App.currentIndex]?.id || 'unknown';
                     Analytics.trackQuizAttempt(pageId, quizIndex, isCorrect, btn.textContent.trim());
+
+                    // Salvar em quiz_progress para exibir em métricas (unificação)
+                    const questionId = `${pageId}_q${quizIndex}`;
+                    const progress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
+                    // Só registra se ainda não foi respondido corretamente antes
+                    if (progress[questionId] !== true) {
+                        progress[questionId] = isCorrect;
+                        localStorage.setItem('quiz_progress', JSON.stringify(progress));
+                    }
                 }
 
                 if (isCorrect) {

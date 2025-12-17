@@ -5,7 +5,11 @@
         "menu_fixacao": "Menu de Révision",
         "menu_videos": "Vidéos",
         "menu_atividades": "Activités",
-        "menu_impressao": "Impression"
+        "menu_impressao": "Impression",
+        "btn_ver_doc": "📄 Voir Document Complet",
+        "btn_ver_artigo": "🔗 Voir Article Complet",
+        "btn_cdc_pdf": "📄 CDC Complet (PDF)",
+        "btn_cdc_noticia": "🔗 35 Ans du CDC (Actualité)"
     },
     "intro": {
         "hero": {
@@ -689,20 +693,20 @@
                     "desc": "Pratique des situations de service réelles à travers des simulations interactives."
                 },
                 "ref1": {
-                    "title": "Matériel Complémentaire 1",
-                    "desc": "Espace réservé pour futur fichier de référence."
+                    "title": "Impact du Mauvais Service",
+                    "desc": "Article : 65% des consommateurs envisagent de changer de marque après une expérience négative."
                 },
                 "ref2": {
-                    "title": "Matériel Complémentaire 2",
-                    "desc": "Espace réservé pour futur fichier de référence."
+                    "title": "35 Ans du CDC",
+                    "desc": "Actualité : Le Code de Protection du Consommateur fête ses 35 ans."
                 },
                 "ref3": {
-                    "title": "Matériel Complémentaire 3",
-                    "desc": "Espace réservé pour futur fichier de référence."
+                    "title": "Code de Protection du Consommateur",
+                    "desc": "PDF complet du CDC brésilien (2013) pour consultation."
                 },
                 "ref4": {
-                    "title": "Matériel Complémentaire 4",
-                    "desc": "Espace réservé pour futur fichier de référence."
+                    "title": "Stratégie CX (Oracle)",
+                    "desc": "Brief exécutif sur les stratégies d'exécution du Customer Service."
                 }
             },
             "lock_msg": "Complétez les modules pour débloquer",

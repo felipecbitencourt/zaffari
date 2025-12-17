@@ -69,13 +69,26 @@
 
 <script>
     (function () {
-        // 1. Tempo Total (Mantido)
-        const startTime = sessionStorage.getItem('courseStartTime');
-        const now = new Date().getTime();
-        let sessionSeconds = 0;
-        if (startTime) sessionSeconds = Math.floor((now - parseInt(startTime)) / 1000);
-        let totalSeconds = sessionSeconds;
-        if (totalSeconds < 60) totalSeconds += 1250; // Mock se muito curto
+        // 1. Tempo Total - Usar dados do Analytics (persistidos em localStorage) + tempo real
+
+        function getStoredTime() {
+            let storedSeconds = 0;
+            // Tentar obter do objeto Analytics global
+            if (typeof Analytics !== 'undefined' && Analytics.data && Analytics.data.pageTime) {
+                storedSeconds = Object.values(Analytics.data.pageTime).reduce((a, b) => a + b, 0);
+            } else {
+                // Fallback: tentar carregar diretamente do localStorage
+                try {
+                    const analyticsData = JSON.parse(localStorage.getItem('curso_analytics') || '{}');
+                    if (analyticsData.pageTime) {
+                        storedSeconds = Object.values(analyticsData.pageTime).reduce((a, b) => a + b, 0);
+                    }
+                } catch (e) {
+                    console.warn('Não foi possível carregar dados de tempo');
+                }
+            }
+            return storedSeconds;
+        }
 
         function formatTime(seconds) {
             const h = Math.floor(seconds / 3600).toString().padStart(2, '0');
@@ -83,7 +96,20 @@
             const s = (seconds % 60).toString().padStart(2, '0');
             return `${h}:${m}:${s}`;
         }
-        document.getElementById('metric-time').textContent = formatTime(totalSeconds);
+
+        // Tempo base armazenado + contador em tempo real
+        const baseTime = getStoredTime();
+        const pageEnterTime = Date.now();
+
+        function updateTime() {
+            const elapsedOnThisPage = Math.floor((Date.now() - pageEnterTime) / 1000);
+            const totalSeconds = baseTime + elapsedOnThisPage;
+            document.getElementById('metric-time').textContent = formatTime(totalSeconds);
+        }
+
+        // Atualizar imediatamente e depois a cada segundo
+        updateTime();
+        setInterval(updateTime, 1000);
 
 
         // 2. Progresso Geral (Refinado: Páginas + Módulos)

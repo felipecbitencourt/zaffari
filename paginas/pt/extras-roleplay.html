@@ -409,7 +409,7 @@
                 if (atendenteContainer) atendenteContainer.style.display = 'none';
                 if (atendenteBubble) atendenteBubble.style.display = 'none';
 
-                // Mostrar feedback temporário
+                // Mostrar feedback (permanece visível até acertar)
                 feedbackContent.innerHTML = `
                     <div class="feedback-icon">❌</div>
                     <p>${opcao.feedback}</p>
@@ -417,20 +417,9 @@
                 feedbackContainer.style.display = 'block';
                 feedbackContainer.className = 'roleplay-feedback error';
 
-                // Permitir tentar novamente - reabilitar outras opções
-                setTimeout(() => {
-                    btn.disabled = true; // Desabilitar só a opção errada
-                    btn.classList.add('disabled');
-                    feedbackContainer.style.display = 'none';
-
-                    // Habilitar outras opções que não foram marcadas como incorretas
-                    allOptions.forEach(opt => {
-                        if (!opt.classList.contains('incorrect')) {
-                            opt.disabled = false;
-                            opt.classList.remove('disabled');
-                        }
-                    });
-                }, 2000);
+                // Desabilitar opção errada imediatamente (sem esconder feedback)
+                btn.disabled = true;
+                btn.classList.add('disabled');
             }
         }
 
