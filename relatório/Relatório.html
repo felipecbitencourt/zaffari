@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Técnico-Pedagógico - Curso "Por Dentro do SAC" - Grupo Zaffari</title>
+    <style>
+        /* Reset e configurações base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Configurações de impressão */
+        @media print {
+            @page {
+                margin: 15mm;
+                size: A4;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            body {
+                font-size: 11pt;
+                line-height: 1.4;
+            }
+
+            .color-bar {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            .page-number::after {
+                content: "Página " counter(page);
+                position: absolute;
+                bottom: 10mm;
+                right: 15mm;
+                font-size: 10pt;
+                color: #666;
+            }
+        }
+
+        /* Estilos principais */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            position: relative;
+            counter-reset: page;
+        }
+
+        /* Barra de cor lateral - identidade Zaffari */
+        .color-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6mm;
+            height: 100%;
+            background: #DC3545;
+            z-index: 1;
+        }
+
+        /* Cabeçalho do documento */
+        .document-header {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .client-identification {
+            color: #666;
+            font-size: 11pt;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .report-title {
+            color: #2C3E50;
+            font-size: 24pt;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .course-title {
+            color: #DC3545;
+            font-size: 16pt;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Metadados do documento */
+        .document-metadata {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #DC3545;
+            border-radius: 4px;
+        }
+
+        .metadata-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metadata-label {
+            font-size: 9pt;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .metadata-value {
+            font-size: 11pt;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Títulos e seções */
+        h1 {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #2C3E50;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+            position: relative;
+        }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 50px;
+            height: 2px;
+            background: #DC3545;
+        }
+
+        h2 {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #444;
+            margin: 25px 0 12px 0;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #555;
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #666;
+            margin: 18px 0 8px 0;
+        }
+
+        /* Parágrafos e texto */
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            font-size: 11pt;
+        }
+
+        /* Listas */
+        ul,
+        ol {
+            margin: 0 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 11pt;
+        }
+
+        /* Tabelas profissionais */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0 20px 0;
+            font-size: 10pt;
+            border: 1px solid #ddd;
+        }
+
+        thead {
+            background: #DC3545;
+        }
+
+        th {
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th:last-child {
+            border-right: none;
+        }
+
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        /* Blocos de código e estrutura */
+        .code-block {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 10pt;
+            line-height: 1.4;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .directory {
+            color: #2C3E50;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .file {
+            color: #333;
+        }
+
+        .comment {
+            color: #666;
+            font-style: italic;
+        }
+
+        .indent {
+            margin-left: 20px;
+        }
+
+        .indent-2 {
+            margin-left: 40px;
+        }
+
+        .indent-3 {
+            margin-left: 60px;
+        }
+
+        /* Estrutura de arquivos */
+        .file-structure {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 10pt;
+            line-height: 1.6;
+        }
+
+        /* Indicadores e tags */
+        .indicator {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            font-size: 9pt;
+            font-weight: 600;
+            color: #666;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .indicator-red {
+            background: #DC3545;
+            color: white;
+        }
+
+        .indicator-blue {
+            background: #3498DB;
+            color: white;
+        }
+
+        .indicator-green {
+            background: #27AE60;
+            color: white;
+        }
+
+        /* Rodapé do documento */
+        .document-footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 10pt;
+            color: #666;
+        }
+
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .document-id {
+            font-size: 9pt;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Utilitários */
+        .text-bold {
+            font-weight: 600;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .color-primary {
+            color: #DC3545;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        /* Especificações técnicas */
+        .specification-box {
+            background: #f8f9fa;
+            border-left: 4px solid #3498DB;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .specification-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #3498DB;
+            margin-bottom: 10px;
+        }
+
+        /* Configurações de acessibilidade */
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .config-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .config-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #2C3E50;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .config-desc {
+            font-size: 10pt;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Acessibilidade e conformidade */
+        .compliance-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .compliance-item {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .compliance-item::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27AE60;
+            font-weight: bold;
+        }
+
+        /* Responsividade para impressão */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10mm;
+            }
+
+            .document-metadata {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra lateral de identidade -->
+    <div class="color-bar"></div>
+
+    <!-- Número da página (visível apenas na impressão) -->
+    <div class="page-number"></div>
+
+    <!-- Cabeçalho do documento -->
+    <div class="document-header">
+        <div class="client-identification">GRUPO ZAFFARI</div>
+        <h1 class="report-title">Relatório Técnico-Pedagógico</h1>
+        <div class="course-title">Curso Corporativo: "Por Dentro do SAC"</div>
+
+        <div class="document-metadata">
+            <div class="metadata-item">
+                <span class="metadata-label">Formato</span>
+                <span class="metadata-value"><span class="indicator indicator-red">SCORM 1.2</span></span>
+            </div>
+            <div class="metadata-item">
+                <span class="metadata-label">Tamanho</span>
+                <span class="metadata-value">7.9 MB (72 arquivos)</span>
+            </div>
+            <div class="metadata-item">
+                <span class="metadata-label">Linhas de código</span>
+                <span class="metadata-value">19.595</span>
+            </div>
+            <div class="metadata-item">
+                <span class="metadata-label">Duração estimada</span>
+                <span class="metadata-value">30-45 minutos</span>
+            </div>
+            <div class="metadata-item">
+                <span class="metadata-label">Idiomas</span>
+                <span class="metadata-value">Português, Espanhol, Francês, Inglês</span>
+            </div>
+            <div class="metadata-item">
+                <span class="metadata-label">Público-alvo</span>
+                <span class="metadata-value">Equipe do Serviço de Atendimento ao Cliente</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Objetivo do Curso -->
+    <div class="specification-box" style="margin-top: 25px; border-left-color: #DC3545;">
+        <div class="specification-title" style="color: #DC3545;">Objetivo do Curso</div>
+        <p style="margin-bottom: 0;">Capacitar a equipe de atendimento do Grupo Zaffari a atuar de forma estratégica,
+            autônoma e em conformidade com o Código de Defesa do Consumidor, desenvolvendo competências técnicas e
+            comportamentais para oferecer um atendimento de excelência ao cliente.</p>
+    </div>
+
+    <!-- Seção 1: Aspecto Pedagógico -->
+    <h1>1. Arquitetura Pedagógica</h1>
+
+    <p>O curso "Por Dentro do SAC" foi desenvolvido com base em uma arquitetura pedagógica progressiva, organizada em
+        três módulos principais seguidos de uma seção de fixação. A estrutura segue uma lógica de complexidade
+        crescente, partindo da compreensão estratégica do SAC até a aplicação prática do Código de Defesa do Consumidor.
+    </p>
+
+    <h2>1.1. Estrutura Curricular</h2>
+
+    <p>O curso está organizado em 5 seções principais, totalizando 38 páginas de conteúdo:</p>
+
+    <h3>🎯 Início</h3>
+    <ul>
+        <li>Bem-vindo ao Curso</li>
+    </ul>
+
+    <h3>1️⃣ Módulo 1: Por que o SAC é estratégico?</h3>
+    <p>Estabelece a base conceitual e estratégica do SAC dentro da organização:</p>
+    <ul>
+        <li>📍 Por que o SAC é estratégico? (Introdução)</li>
+        <li>O que o cliente espera?</li>
+        <li>Qual o papel do SAC?</li>
+        <li>Quais são nossas responsabilidades?</li>
+        <li>Por que prazos são importantes?</li>
+        <li>📝 O que aprendemos no Módulo 1? (Síntese)</li>
+        <li>🏆 Conquistas do Módulo 1</li>
+    </ul>
+
+    <h3>2️⃣ Módulo 2: Onde encontrar informações?</h3>
+    <p>Foca no desenvolvimento da autonomia informacional do atendente:</p>
+    <ul>
+        <li>📍 Onde encontrar informações? (Introdução)</li>
+        <li>Por que precisamos saber buscar?</li>
+        <li>Onde consultar dados das lojas?</li>
+        <li>Onde consultar ofertas?</li>
+        <li>Como encontrar no encarte?</li>
+        <li>Por que consultar corretamente?</li>
+        <li>📝 O que aprendemos no Módulo 2? (Síntese)</li>
+        <li>🏆 Conquistas do Módulo 2</li>
+    </ul>
+
+    <h3>3️⃣ Módulo 3: Como aplicar o CDC?</h3>
+    <p>Introduz e operacionaliza o conhecimento normativo:</p>
+    <ul>
+        <li>📍 Como aplicar o CDC? (Introdução)</li>
+        <li>O que é o CDC?</li>
+        <li>Qual a diferença: produto x serviço?</li>
+        <li>Quando trocar sem defeito?</li>
+        <li>Por que o CDC é importante?</li>
+        <li>Quando há defeito, o que fazer?</li>
+        <li>Como encaminhar reclamações?</li>
+        <li>🏆 Você está pronto para o desafio?</li>
+        <li>📝 O que aprendemos no curso? (Síntese Final)</li>
+        <li>🏆 Conquistas do Módulo 3</li>
+    </ul>
+
+    <h3>🧠 Fixação</h3>
+    <p>Atividades gamificadas para consolidação do aprendizado:</p>
+    <ul>
+        <li>🧠 Menu de Fixação</li>
+        <li>📊 Meu Desempenho</li>
+        <li>📖 Resumo do Curso</li>
+        <li>📝 Questionários</li>
+        <li>🃏 Flash Cards</li>
+        <li>🎯 Arraste e Solte</li>
+        <li>🔍 Ache o Erro</li>
+        <li>🎭 Roleplay</li>
+    </ul>
+
+    <h2>1.2. Metodologias de Ensino</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Metodologia</th>
+                <th>Implementação</th>
+                <th>Objetivo Pedagógico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Problem-Based Learning (PBL)</span></td>
+                <td>Perguntas-problema baseadas em situações reais do SAC</td>
+                <td>Contextualização imediata do aprendizado</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Microlearning</span></td>
+                <td>Conteúdo fragmentado em páginas curtas e objetivas</td>
+                <td>Aumento da retenção e redução da fadiga</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Active Recall</span></td>
+                <td>Quizzes integrados ao longo do conteúdo</td>
+                <td>Consolidação ativa do conhecimento</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">CHA Framework</span></td>
+                <td>Desenvolvimento integrado de Conhecimentos, Habilidades e Atitudes</td>
+                <td>Formação profissional completa</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Scaffolding</span></td>
+                <td>Progressão gradual de conceitos simples para complexos</td>
+                <td>Construção sólida de conhecimento</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>1.3. Sistema de Avaliação e Acompanhamento</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de Avaliação</th>
+                <th>Formato</th>
+                <th>Objetivo</th>
+                <th>Implementação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Formativa</span></td>
+                <td>Quizzes integrados ao conteúdo</td>
+                <td>Verificar compreensão imediata</td>
+                <td>15 quizzes distribuídos</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Reflexiva</span></td>
+                <td>Perguntas abertas e desafio final</td>
+                <td>Estimular pensamento crítico</td>
+                <td>1 desafio integrador</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Prática</span></td>
+                <td>Roleplay e simulações de atendimento</td>
+                <td>Aplicar conhecimento em contexto</td>
+                <td>1 atividade de roleplay</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Gamificada</span></td>
+                <td>Atividades lúdicas de fixação</td>
+                <td>Consolidação através do engajamento</td>
+                <td>4 atividades gamificadas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="mt-20"><span class="text-bold">Nota:</span> O curso não possui avaliação somativa ou nota final. O
+        critério de conclusão é baseado na visualização integral do conteúdo, com rastreamento de progresso via SCORM.
+    </p>
+
+    <!-- Seção 2: Design e Interface -->
+    <h1>2. Design e Interface do Usuário</h1>
+
+    <p>O design visual foi desenvolvido em alinhamento com a identidade institucional do Grupo Zaffari,
+        priorizando clareza, consistência e acessibilidade em todas as interações.</p>
+
+    <h2>2.1. Sistema de Design</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Especificação</th>
+                <th>Conformidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Cores Primárias</span></td>
+                <td>Vermelho (#DC3545) e Branco</td>
+                <td>Identidade Zaffari</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Tipografia</span></td>
+                <td>Inter (Google Fonts) - pesos 300 a 800</td>
+                <td>WCAG 2.1 AA</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Iconografia</span></td>
+                <td>SVG customizados e sistema nativo</td>
+                <td>Multi-resolução</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Elementos Gráficos</span></td>
+                <td>Mascote institucional e ilustrações customizadas</td>
+                <td>Consistência de marca</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2.2. Arquitetura da Interface</h2>
+
+    <div class="specification-box">
+        <div class="specification-title">Componentes Principais da Interface</div>
+        <div class="compliance-list">
+            <div class="compliance-item"><span class="text-bold">Header Fixo:</span> Menu de navegação, configurações,
+                Text-to-Speech e barra de progresso visual</div>
+            <div class="compliance-item"><span class="text-bold">Sidebar Colapsável:</span> Navegação hierárquica por
+                módulos e páginas</div>
+            <div class="compliance-item"><span class="text-bold">Área de Conteúdo Central:</span> Carregamento dinâmico
+                via AJAX com transições suaves</div>
+            <div class="compliance-item"><span class="text-bold">Footer de Navegação:</span> Botões Anterior/Próximo com
+                indicação de progresso</div>
+            <div class="compliance-item"><span class="text-bold">Sistema de Componentes:</span> Cards, timelines,
+                acordeões e modais reutilizáveis</div>
+        </div>
+    </div>
+
+    <h2>2.3. Responsividade Multi-dispositivo</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dispositivo</th>
+                <th>Breakpoint</th>
+                <th>Características</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Desktop</span></td>
+                <td>> 1024px</td>
+                <td>Layout completo com sidebar fixa, máximo de informações visíveis</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Tablet</span></td>
+                <td>768px - 1024px</td>
+                <td>Sidebar colapsável, tipografia adaptativa, otimização para toque</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Mobile</span></td>
+                <td>
+                    < 768px</td>
+                <td>Menu full-screen, hierarquia vertical, gestos habilitados</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- Seção 3: Arquitetura Técnica -->
+    <h1>3. Arquitetura Técnica</h1>
+
+    <p>O curso foi desenvolvido utilizando tecnologias web padrão em uma arquitetura modular, garantindo
+        compatibilidade, performance e facilidade de manutenção.</p>
+
+    <h2>3.1. Stack Tecnológico</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tecnologia</th>
+                <th>Versão/Especificação</th>
+                <th>Uso</th>
+                <th>Conformidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">HTML5</span></td>
+                <td>Semântico, ARIA labels</td>
+                <td>Estrutura das páginas</td>
+                <td>WCAG 2.1 AA</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">CSS3</span></td>
+                <td>Custom Properties, Flexbox, Grid</td>
+                <td>Estilos e layout</td>
+                <td>Totalmente responsivo</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">JavaScript</span></td>
+                <td>ES6+ (Vanilla)</td>
+                <td>Lógica e interatividade</td>
+                <td>Cross-browser</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">SCORM</span></td>
+                <td>1.2</td>
+                <td>Integração com LMS</td>
+                <td>Compatibilidade total</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Web Speech API</span></td>
+                <td>Nativa do navegador</td>
+                <td>Text-to-Speech</td>
+                <td>Acessibilidade</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3.2. Navegadores Suportados</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Navegador</th>
+                <th>Versão Mínima</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Google Chrome</span></td>
+                <td>90+</td>
+                <td><span class="indicator indicator-green">Totalmente Suportado</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Mozilla Firefox</span></td>
+                <td>88+</td>
+                <td><span class="indicator indicator-green">Totalmente Suportado</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Microsoft Edge</span></td>
+                <td>90+</td>
+                <td><span class="indicator indicator-green">Totalmente Suportado</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Apple Safari</span></td>
+                <td>14+</td>
+                <td><span class="indicator indicator-green">Totalmente Suportado</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Opera</span></td>
+                <td>76+</td>
+                <td><span class="indicator indicator-blue">Suportado</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><span class="text-bold">Nota:</span> O curso foi desenvolvido utilizando tecnologias web modernas e requer
+        navegadores atualizados para funcionamento completo de todos os recursos, especialmente Text-to-Speech e
+        animações CSS.</p>
+
+    <h2>3.3. Estrutura de Arquivos</h2>
+
+    <div class="file-structure">
+        <span class="directory">curso-scorm/</span><br>
+        <span class="indent">├── <span class="file">index.html</span> <span class="comment"># Shell principal da
+                aplicação</span></span><br>
+        <span class="indent">├── <span class="file">content.json</span> <span class="comment"># Estrutura de
+                navegação</span></span><br>
+        <span class="indent">├── <span class="file">imsmanifest.xml</span> <span class="comment"># Manifesto SCORM
+                1.2</span></span><br>
+        <span class="indent">│</span><br>
+        <span class="indent">├── <span class="directory">assets/</span></span><br>
+        <span class="indent-2">├── <span class="directory">css/</span></span><br>
+        <span class="indent-3">└── <span class="file">style.css</span> <span class="comment"># 143 KB - Sistema de
+                design completo</span></span><br>
+        <span class="indent-2">│</span><br>
+        <span class="indent-2">├── <span class="directory">js/</span></span><br>
+        <span class="indent-3">├── <span class="file">app.js</span> <span class="comment"># 6 KB - Núcleo
+                orquestrador</span></span><br>
+        <span class="indent-3">├── <span class="file">navigation.js</span> <span class="comment"># 12 KB - Sistema de
+                navegação SPA</span></span><br>
+        <span class="indent-3">├── <span class="file">accessibility.js</span> <span class="comment"># 17 KB - TTS e
+                acessibilidade</span></span><br>
+        <span class="indent-3">├── <span class="file">interactive.js</span> <span class="comment"># 8 KB - Componentes
+                interativos</span></span><br>
+        <span class="indent-3">├── <span class="file">gamification.js</span> <span class="comment"># 4 KB - Sistema de
+                gamificação</span></span><br>
+        <span class="indent-3">├── <span class="file">scorm-api.js</span> <span class="comment"># API SCORM
+                1.2</span></span><br>
+        <span class="indent-3">├── <span class="file">i18n.js</span> <span class="comment">#
+                Internacionalização</span></span><br>
+        <span class="indent-3">├── <span class="file">tutorial.js</span> <span class="comment"># Tutorial
+                interativo</span></span><br>
+        <span class="indent-3">├── <span class="file">audio-manager.js</span> <span class="comment"># Gerenciador de
+                áudio</span></span><br>
+        <span class="indent-3">└── <span class="file">simple-markdown.js</span> <span class="comment"># Parser Markdown
+                para edição simplificada</span></span><br>
+        <span class="indent-2">│</span><br>
+        <span class="indent-2">├── <span class="directory">imagens/</span> <span class="comment"># Assets visuais
+                otimizados</span></span><br>
+        <span class="indent-2">└── <span class="directory">marca/</span> <span class="comment"># Identidade visual
+                Zaffari</span></span><br>
+        <span class="indent">│</span><br>
+        <span class="indent">├── <span class="directory">locales/</span></span><br>
+        <span class="indent-2">├── <span class="file">pt.json</span> <span class="comment"># 72 KB - Conteúdo em
+                português</span></span><br>
+        <span class="indent-2">├── <span class="file">es.json</span> <span class="comment"># Conteúdo em
+                espanhol</span></span><br>
+        <span class="indent-2">├── <span class="file">fr.json</span> <span class="comment"># Conteúdo em
+                francês</span></span><br>
+        <span class="indent-2">└── <span class="file">en.json</span> <span class="comment"># Conteúdo em
+                inglês</span></span><br>
+        <span class="indent">│</span><br>
+        <span class="indent">├── <span class="directory">paginas/</span></span><br>
+        <span class="indent-2">└── <span class="directory">pt/</span> <span class="comment"># 37 páginas de
+                conteúdo</span></span><br>
+        <span class="indent">│</span><br>
+        <span class="indent">└── <span class="directory">tools/</span></span><br>
+        <span class="indent-2">└── <span class="file">converter.html</span> <span class="comment"># Ferramenta de edição
+                sem código</span></span><br>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>3.3. Funcionalidades SCORM 1.2</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Função</th>
+                <th>Variável SCORM</th>
+                <th>Implementação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Bookmark</span></td>
+                <td>cmi.core.lesson_location</td>
+                <td>Armazena a última página visitada</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Progresso</span></td>
+                <td>cmi.core.lesson_status</td>
+                <td>Status de conclusão por página</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Conclusão</span></td>
+                <td>cmi.core.lesson_status = "completed"</td>
+                <td>Ativado ao visualizar todas as páginas</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Tempo</span></td>
+                <td>cmi.core.session_time</td>
+                <td>Tracking de tempo total no curso</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Score</span></td>
+                <td>cmi.core.score.raw</td>
+                <td>Progresso baseado em páginas visualizadas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3.4. Sistema de Internacionalização (i18n)</h2>
+
+    <p>O curso suporta quatro idiomas através de um sistema de arquivos JSON independentes:</p>
+
+    <ul>
+        <li><span class="text-bold">Português (pt.json):</span> 72 KB - Idioma principal</li>
+        <li><span class="text-bold">Espanhol (es.json):</span> Tradução completa</li>
+        <li><span class="text-bold">Francês (fr.json):</span> Tradução completa</li>
+        <li><span class="text-bold">Inglês (en.json):</span> Tradução completa</li>
+    </ul>
+
+    <p>Todos os textos da aplicação, incluindo conteúdo instrucional, botões, mensagens e feedbacks, são carregados
+        dinamicamente a partir dos arquivos de localização correspondentes.</p>
+
+    <h2>3.5. Sistema de Configurações de Acessibilidade</h2>
+
+    <div class="specification-box">
+        <div class="specification-title">Detalhamento Técnico das Configurações</div>
+        <div class="compliance-list">
+            <div class="compliance-item">
+                <span class="text-bold">Modo Dark/Light:</span> Implementado via CSS Custom Properties, com toggle que
+                altera todas as variáveis de cor. As preferências são salvas localmente.
+            </div>
+            <div class="compliance-item">
+                <span class="text-bold">Ajuste de Fonte:</span> Sistema que modifica a propriedade font-size no elemento
+                raiz, com valores de 0.8x a 1.4x do tamanho padrão.
+            </div>
+            <div class="compliance-item">
+                <span class="text-bold">Fonte para Dislexia:</span> Alterna entre a fonte Inter padrão e OpenDyslexic,
+                incluindo ajuste automático de espaçamento entre linhas e caracteres.
+            </div>
+            <div class="compliance-item">
+                <span class="text-bold">Text-to-Speech:</span> Utiliza a Web Speech API nativa do navegador, com seleção
+                de voz entre opções disponíveis no sistema e controle de velocidade (0.5x a 2x).
+            </div>
+            <div class="compliance-item">
+                <span class="text-bold">Idiomas:</span> Sistema baseado em arquivos JSON com carregamento dinâmico.
+                Inclui fallback para português caso a tradução não esteja disponível.
+            </div>
+            <div class="compliance-item">
+                <span class="text-bold">Persistência:</span> Todas as configurações são salvas no localStorage do
+                navegador, mantendo as preferências entre sessões.
+            </div>
+        </div>
+    </div>
+
+    <h2>3.6. Conformidade com Acessibilidade (WCAG 2.1 AA)</h2>
+
+    <div class="specification-box">
+        <div class="specification-title">Critérios de Acessibilidade Atendidos</div>
+        <div class="compliance-list">
+            <div class="compliance-item"><span class="text-bold">Perceptível:</span> Texto redimensionável, alto
+                contraste, alternativas textuais para imagens</div>
+            <div class="compliance-item"><span class="text-bold">Operável:</span> Navegação completa por teclado, foco
+                visível, tempo suficiente para leitura</div>
+            <div class="compliance-item"><span class="text-bold">Compreensível:</span> Idioma definido, instruções
+                consistentes, feedback de erro claro</div>
+            <div class="compliance-item"><span class="text-bold">Robusto:</span> HTML semântico, ARIA labels,
+                compatibilidade com leitores de tela</div>
+        </div>
+    </div>
+
+    <h3>Atalhos de Teclado Implementados</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tecla</th>
+                <th>Ação</th>
+                <th>Contexto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">←</span> (Seta esquerda)</td>
+                <td>Página anterior</td>
+                <td>Navegação geral</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">→</span> (Seta direita)</td>
+                <td>Próxima página</td>
+                <td>Navegação geral</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">ESC</span></td>
+                <td>Fechar modais e popups</td>
+                <td>Interface</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">M</span></td>
+                <td>Abrir/fechar menu lateral</td>
+                <td>Navegação</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">?</span></td>
+                <td>Exibir ajuda de atalhos</td>
+                <td>Ajuda</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- Seção 4: Métricas e Estatísticas -->
+    <h1>4. Métricas e Estatísticas</h1>
+
+    <h2>4.1. Distribuição de Conteúdo</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Módulo</th>
+                <th>Páginas</th>
+                <th>Elementos Interativos</th>
+                <th>Quizzes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Introdução</span></td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Módulo 1</span></td>
+                <td>8</td>
+                <td>8 acordeões, 5 cards reveladores</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Módulo 2</span></td>
+                <td>8</td>
+                <td>6 acordeões, simulação de busca</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Módulo 3</span></td>
+                <td>10</td>
+                <td>6 acordeões, 5 cards reveladores</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Fixação</span></td>
+                <td>7</td>
+                <td>4 atividades gamificadas</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold color-primary">TOTAL</span></td>
+                <td><span class="text-bold">38</span></td>
+                <td><span class="text-bold">~30 elementos</span></td>
+                <td><span class="text-bold">15</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4.2. Análise de Performance</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Métrica</th>
+                <th>Valor</th>
+                <th>Análise</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Tamanho Total</span></td>
+                <td>7.9 MB</td>
+                <td>Otimizado para carregamento rápido</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Quantidade de Arquivos</span></td>
+                <td>72</td>
+                <td>Estrutura organizada e modular</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Linhas de Código</span></td>
+                <td>19.595</td>
+                <td>Código mantenível e documentado</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Maior Arquivo JavaScript</span></td>
+                <td>17 KB (accessibility.js)</td>
+                <td>Leve e eficiente</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Tamanho das Imagens</span></td>
+                <td>5.63 MB (71% do total)</td>
+                <td>Comprimidas e otimizadas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4.3. Distribuição por Tipo de Arquivo</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Quantidade</th>
+                <th>Tamanho</th>
+                <th>Percentual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JPG (Imagens)</td>
+                <td>4</td>
+                <td>3.87 MB</td>
+                <td>49%</td>
+            </tr>
+            <tr>
+                <td>PNG (Gráficos)</td>
+                <td>8</td>
+                <td>1.75 MB</td>
+                <td>22%</td>
+            </tr>
+            <tr>
+                <td>MP3 (Áudio)</td>
+                <td>1</td>
+                <td>1.53 MB</td>
+                <td>19%</td>
+            </tr>
+            <tr>
+                <td>JSON (Dados)</td>
+                <td>5</td>
+                <td>295 KB</td>
+                <td>4%</td>
+            </tr>
+            <tr>
+                <td>HTML (Conteúdo)</td>
+                <td>37</td>
+                <td>278 KB</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>CSS (Estilos)</td>
+                <td>1</td>
+                <td>143 KB</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <td>JS (Lógica)</td>
+                <td>13</td>
+                <td>75 KB</td>
+                <td>1%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- Seção 5: Manutenção e Suporte -->
+    <h1>5. Manutenção e Suporte</h1>
+
+    <h2>5.1. Sistema de Edição Sem Código</h2>
+
+    <p>Foram implementadas ferramentas que permitem a edição de conteúdos sem necessidade de conhecimento técnico
+        especializado:</p>
+
+    <h3>Ferramenta de Edição via Excel</h3>
+    <p><span class="text-bold">Localização:</span> <code>tools/converter.html</code></p>
+    <p><span class="text-bold">Funcionalidade:</span> Permite exportar textos para Excel, editar em formato tabular e
+        importar de volta para o sistema.</p>
+
+    <h3>Sistema de Conteúdo em Markdown</h3>
+    <p><span class="text-bold">Formato:</span> Arquivos .md com sintaxe simplificada</p>
+    <p><span class="text-bold">Parser:</span> <code>simple-markdown.js</code> - biblioteca leve integrada ao sistema</p>
+    <p><span class="text-bold">Vantagens:</span> Criação de novas páginas sem conhecimento de HTML, formatação simples e
+        intuitiva.</p>
+
+    <h2>5.2. Documentação Técnica</h2>
+
+    <ul>
+        <li><span class="text-bold">Estrutura de Arquivos:</span> Documentada no item 3.2 deste relatório</li>
+        <li><span class="text-bold">API SCORM:</span> Implementação completa conforme padrão 1.2</li>
+        <li><span class="text-bold">Sistema de Internacionalização:</span> Arquitetura baseada em JSON</li>
+        <li><span class="text-bold">Acessibilidade:</span> Conformidade WCAG 2.1 AA documentada</li>
+    </ul>
+
+    <!-- Seção 6: Contato e Suporte -->
+    <h1>6. Contato e Suporte</h1>
+
+    <p>Para dúvidas técnicas, sugestões de melhorias ou suporte relacionado ao curso, entre em contato com a equipe de
+        desenvolvimento:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="text-bold">Felipe Correa Bitencourt</span></td>
+                <td><a href="mailto:felipe.cb2511@gmail.com">felipe.cb2511@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Eduarda Tessari Pereira</span></td>
+                <td><a href="mailto:dudatessari@gmail.com">dudatessari@gmail.com</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Rodapé do documento -->
+    <div class="document-footer">
+        <div class="footer-info">
+            <div class="document-id">DOC-ZAF-SAC-2025-001</div>
+            <div class="document-id">VERSÃO 1.0</div>
+        </div>
+        <p>Relatório Técnico-Pedagógico - Curso "Por Dentro do SAC"</p>
+        <p>Documento gerado em: 18 de Dezembro de 2025 | Grupo Zaffari</p>
+    </div>
+</body>
+
+</html>
