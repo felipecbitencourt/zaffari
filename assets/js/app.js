@@ -120,24 +120,38 @@ const App = {
         try {
             const res = await fetch(fileUrl);
             if (res.ok) {
-                const html = await res.text();
+                let html = await res.text();
+
+                // Check for Markdown
+                if (fileUrl.toLowerCase().endsWith('.md')) {
+                    if (typeof SimpleMarkdown !== 'undefined') {
+                        html = SimpleMarkdown.parse(html);
+                    } else {
+                        console.warn('SimpleMarkdown not found, rendering raw text');
+                        html = `<pre>${html}</pre>`;
+                    }
+                }
+
                 // Inject
                 contentArea.innerHTML = html;
 
                 // Traduzir a página carregada
                 I18n.translatePage();
 
-                // Execute inline scripts (scripts inside innerHTML don't run automatically)
-                const scripts = contentArea.querySelectorAll('script');
-                scripts.forEach(oldScript => {
-                    const newScript = document.createElement('script');
-                    if (oldScript.src) {
-                        newScript.src = oldScript.src;
-                    } else {
-                        newScript.textContent = oldScript.textContent;
-                    }
-                    oldScript.parentNode.replaceChild(newScript, oldScript);
-                });
+                // Execute inline scripts only if it was HTML originally or if we want to support scripts in MD (usually not safe/standard)
+                // For now, keep ensuring scripts run for legacy HTML pages
+                if (!fileUrl.toLowerCase().endsWith('.md')) {
+                    const scripts = contentArea.querySelectorAll('script');
+                    scripts.forEach(oldScript => {
+                        const newScript = document.createElement('script');
+                        if (oldScript.src) {
+                            newScript.src = oldScript.src;
+                        } else {
+                            newScript.textContent = oldScript.textContent;
+                        }
+                        oldScript.parentNode.replaceChild(newScript, oldScript);
+                    });
+                }
 
                 // Scroll to top
                 document.getElementById('main-content').scrollTop = 0;

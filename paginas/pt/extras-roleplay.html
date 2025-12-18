@@ -63,7 +63,103 @@
                 <button class="btn-reiniciar-roleplay" id="btn-reiniciar-roleplay">🔄 Jogar Novamente</button>
             </div>
         </div>
+
+        <!-- Modal de Feedback para Resposta Incorreta -->
+        <div class="roleplay-modal-overlay" id="roleplay-error-modal" style="display: none;">
+            <div class="roleplay-modal">
+                <div class="roleplay-modal-icon">❌</div>
+                <div class="roleplay-modal-text" id="roleplay-modal-text"></div>
+                <button class="roleplay-modal-btn" id="btn-fechar-modal">Tentar Novamente</button>
+            </div>
+        </div>
     </div>
+
+    <style>
+        /* Modal de Feedback Incorreto */
+        .roleplay-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .roleplay-modal {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.3s ease;
+        }
+
+        .roleplay-modal-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .roleplay-modal-text {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .roleplay-modal-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .roleplay-modal-btn:hover {
+            background: #c82333;
+        }
+
+        /* Dark mode */
+        body.high-contrast .roleplay-modal {
+            background: #2d2d2d;
+        }
+
+        body.high-contrast .roleplay-modal-text {
+            color: #f0f0f0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 
     <!-- Botão Voltar -->
     <div class="extras-back-container" style="margin-top: var(--spacing-xl); text-align: center;">
@@ -409,15 +505,15 @@
                 if (atendenteContainer) atendenteContainer.style.display = 'none';
                 if (atendenteBubble) atendenteBubble.style.display = 'none';
 
-                // Mostrar feedback (permanece visível até acertar)
-                feedbackContent.innerHTML = `
-                    <div class="feedback-icon">❌</div>
-                    <p>${opcao.feedback}</p>
-                `;
-                feedbackContainer.style.display = 'block';
-                feedbackContainer.className = 'roleplay-feedback error';
+                // Mostrar modal de feedback em vez de feedback inline
+                const errorModal = document.getElementById('roleplay-error-modal');
+                const modalText = document.getElementById('roleplay-modal-text');
+                if (errorModal && modalText) {
+                    modalText.textContent = opcao.feedback;
+                    errorModal.style.display = 'flex';
+                }
 
-                // Desabilitar opção errada imediatamente (sem esconder feedback)
+                // Desabilitar opção errada imediatamente
                 btn.disabled = true;
                 btn.classList.add('disabled');
             }
@@ -470,6 +566,11 @@
             resultadoContainer.style.display = 'none';
             speechBubble.style.display = 'block';
             loadStep(0);
+        });
+
+        // Fechar modal de erro
+        document.getElementById('btn-fechar-modal').addEventListener('click', function () {
+            document.getElementById('roleplay-error-modal').style.display = 'none';
         });
 
         // Iniciar

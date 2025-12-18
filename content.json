@@ -232,6 +232,12 @@
                     "title": "🎭 Roleplay",
                     "file": "paginas/pt/extras-roleplay.html",
                     "type": "extras"
+                },
+                {
+                    "id": "extras-test-md",
+                    "title": "📄 Teste Markdown",
+                    "file": "paginas/pt/test-markdown.md",
+                    "type": "extras"
                 }
             ]
         }
