@@ -1,0 +1,10 @@
+{
+    "title": "🏆 Êtes-vous prêt pour le défi?",
+    "intro": "La qualité du service dépend de l'attention, de l'écoute active, de l'empathie et d'enregistrements complets et corrects.",
+    "box_title": "💭 Pour Réfléchir",
+    "box_text": "<strong>Imaginez que vous êtes un superviseur analysant un cas de plainte ancienne. Vous trouvez un enregistrement précédent qui dit simplement 'Client a réclamé'. Comment cela affecte-t-il votre capacité à résoudre le problème aujourd'hui? Réfléchissez à l'impact des détails.</strong>",
+    "placeholder": "Votre réponse...",
+    "btn_submit": "Envoyer Réflexion",
+    "btn_sent": "✔ Envoyé",
+    "feedback_success": "<strong>✅ Réflexion enregistrée!</strong> Très bien! Des enregistrements complets et détaillés sont essentiels pour un service de qualité. Continuez à appliquer cette pensée dans votre quotidien."
+}

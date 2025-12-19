@@ -1,0 +1,140 @@
+{
+    "title": "🃏 Flash Cards",
+    "lead": "Memorize course concepts with interactive study cards. Click the card to reveal the answer!",
+    "ui": {
+        "back_to_modules": "← Back to Modules",
+        "back_menu": "← Back to Extras Menu",
+        "card_counter": "Card <span id=\"fc-current\">1</span> of <span id=\"fc-total\">8</span>",
+        "hint_front": "👆 Click to see the answer",
+        "hint_back": "👆 Click to go back",
+        "prev": "← Previous",
+        "next": "Next →",
+        "shuffle": "🔀 Shuffle",
+        "tip": "💡 <strong>Tip:</strong> Review flash cards regularly to reinforce knowledge. Spaced repetition is one of the most effective memorization techniques!"
+    },
+    "modules": {
+        "m1": {
+            "title": "Module 1: Strategic Role",
+            "desc": "Strategic Role of Customer Service",
+            "count": "8 cards",
+            "lock_msg": "🔒 Complete module",
+            "unlock_msg": "✓ Available",
+            "cards": {
+                "c1": {
+                    "q": "What are 86% of consumers willing to do for a better service experience?",
+                    "a": "Pay more! Studies show 86% of consumers pay more for a better service experience."
+                },
+                "c2": {
+                    "q": "What is the role of Customer Service beyond solving problems?",
+                    "a": "CS represents the COMPANY'S VOICE in direct contact with the customer. It's a strategic area, essential to preserve values, reputation and brand credibility."
+                },
+                "c3": {
+                    "q": "What does the customer usually expect when contacting CS?",
+                    "a": "To be heard with attention and empathy, receive quick and efficient service, feel the company cares, have clarity about next steps and leave satisfied."
+                },
+                "c4": {
+                    "q": "What are the Multichannel Service channels?",
+                    "a": "Phone, email, chat and electronic means."
+                },
+                "c5": {
+                    "q": "What does Inbound Service include?",
+                    "a": "Provide information, handle complaints, suggestions and compliments, deal with objections and offer solutions."
+                },
+                "c6": {
+                    "q": "What actions are performed in Outbound Service?",
+                    "a": "Card activation, registration updates, promotion communication and cancellation reversal."
+                },
+                "c7": {
+                    "q": "What is the standard deadline for Requests?",
+                    "a": "Up to 3 business days."
+                },
+                "c8": {
+                    "q": "What is the standard deadline for Information and Complaints?",
+                    "a": "Up to 2 business days."
+                }
+            }
+        },
+        "m2": {
+            "title": "Module 2: Where to find information",
+            "desc": "Where to find information?",
+            "count": "6 cards",
+            "lock_msg": "🔒 Complete module",
+            "unlock_msg": "✓ Available",
+            "cards": {
+                "c1": {
+                    "q": "What is the main source of store information?",
+                    "a": "The company Intranet! It's the main work tool for quick and accurate queries."
+                },
+                "c2": {
+                    "q": "What is the Intranet path to look up store data?",
+                    "a": "Intranet → Branches → Registration data and schedules."
+                },
+                "c3": {
+                    "q": "What information can be found in the Intranet Branches section?",
+                    "a": "Store addresses, opening hours and contact methods."
+                },
+                "c4": {
+                    "q": "What are the benefits of mastering Intranet queries?",
+                    "a": "Service agility, more assertive responses, information standardization and better customer experience."
+                },
+                "c5": {
+                    "q": "Where can customers check offers and promotions?",
+                    "a": "In flyers (physical and digital), on the official company website and on the offers WhatsApp."
+                },
+                "c6": {
+                    "q": "How does the offers WhatsApp sequence work?",
+                    "a": "1) Select the store of interest, 2) Access the community via link or QR Code, 3) Receive personalized offers on phone."
+                }
+            }
+        },
+        "m3": {
+            "title": "Module 3: CDC and Legislation",
+            "desc": "CDC and Legislation",
+            "count": "10 cards",
+            "lock_msg": "🔒 Complete module",
+            "unlock_msg": "✓ Available",
+            "cards": {
+                "c1": {
+                    "q": "What is CDC and what is its law?",
+                    "a": "It's the Consumer Protection Code, Law No. 8,078/90, created to protect consumers and ensure fair and balanced consumption relations."
+                },
+                "c2": {
+                    "q": "Why is knowing CDC important for Customer Service?",
+                    "a": "To respond with confidence, avoid rework and convey credibility to the customer."
+                },
+                "c3": {
+                    "q": "Does CDC require exchange of products without defect at physical store?",
+                    "a": "NO! Exchange of products without defect at physical store is a COMMERCIAL POLICY (company courtesy), not a legal right."
+                },
+                "c4": {
+                    "q": "What is the Right of Withdrawal and when does it apply?",
+                    "a": "It's the right to cancel a purchase within 7 CALENDAR DAYS after receipt. It only applies to ONLINE purchases or outside commercial establishment."
+                },
+                "c5": {
+                    "q": "How many days does the supplier have to fix defect via technical assistance?",
+                    "a": "Up to 30 DAYS to fix the defect."
+                },
+                "c6": {
+                    "q": "If defect isn't fixed in 30 days, what options does customer have?",
+                    "a": "Exchange product for equal or similar, proportional discount on amount paid, or full refund of amount paid."
+                },
+                "c7": {
+                    "q": "What is the deadline to complain about defects in durable products?",
+                    "a": "90 DAYS from discovery of defect."
+                },
+                "c8": {
+                    "q": "How to handle food product complaints?",
+                    "a": "Customer brings product + receipt to store. Evaluation by management. Correct filling of Reason, Brand and Batch is essential."
+                },
+                "c9": {
+                    "q": "Why can't perishable products be exchanged after wrong purchase?",
+                    "a": "Because once removed from store they can't be reconditioned due to food safety issues (temperature risk)."
+                },
+                "c10": {
+                    "q": "What is the procedure for defective Appliances?",
+                    "a": "Must be sent to brand's technical assistance. If after 30 days there's no solution, company exchanges with service order."
+                }
+            }
+        }
+    }
+}

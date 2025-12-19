@@ -1,0 +1,128 @@
+{
+    "title": "📝 Quizzes",
+    "lead": "Test your knowledge with all course quizzes gathered in one place.",
+    "lock_msg": "🔒 Complete the module to unlock",
+    "unlock_msg": "✓ Available",
+    "modules": {
+        "m1": {
+            "title": "Module 1: Strategic Role of Customer Service",
+            "count": "3 questions",
+            "overlay": "Complete Module 1 to unlock these quizzes",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> Which alternative best represents the strategic role of Customer Service?",
+                    "options": {
+                        "a": "A) Answer calls and register complaints.",
+                        "b": "B) Solve specific problems without impact on company image.",
+                        "c": "C) Represent the company's voice in direct contact with the customer and strengthen brand reputation.",
+                        "d": "D) Act only when other sectors can't resolve demands."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> CS is the company's voice and strengthens brand reputation."
+                },
+                "q2": {
+                    "text": "<strong>Question 2:</strong> Which activity below is <strong>not</strong> part of Customer Service responsibilities?",
+                    "options": {
+                        "a": "A) Inbound and outbound service.",
+                        "b": "B) Data organization and report preparation.",
+                        "c": "C) Definition of consumer protection laws.",
+                        "d": "D) Proposing improvements to scripts and service standards."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> CS follows laws, but the government (Legislature) defines them."
+                },
+                "q3": {
+                    "text": "<strong>Question 3 (True or False):</strong> The correct registration of the service category directly influences the customer response deadline.",
+                    "options": {
+                        "a": "A) True",
+                        "b": "B) False"
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> The system calculates the deadline based on the registered category."
+                }
+            }
+        },
+        "m2": {
+            "title": "Module 2: Where to find information?",
+            "count": "3 questions",
+            "overlay": "Complete Module 2 to unlock these quizzes",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> To look up address, opening hours and contact methods of stores, the agent should access:",
+                    "options": {
+                        "a": "A) The company website.",
+                        "b": "B) The Intranet → Branches → Registration data and schedules.",
+                        "c": "C) Google Maps.",
+                        "d": "D) An internal messaging group."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> The Intranet is the official and safe source."
+                },
+                "q2": {
+                    "text": "<strong>Question 2:</strong> Mastering information queries on the Intranet contributes to:",
+                    "options": {
+                        "a": "A) Increasing service time.",
+                        "b": "B) Reducing response standardization.",
+                        "c": "C) Ensuring agility, assertiveness and better customer experience.",
+                        "d": "D) Making service more informal."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> Happy customer is a customer served with agility and accuracy."
+                },
+                "q3": {
+                    "text": "<strong>Question 3:</strong> What's the correct sequence for the customer to start receiving offers via WhatsApp?",
+                    "options": {
+                        "a": "A) Access website → choose products → register phone.",
+                        "b": "B) Select store → access community via link or QR Code → receive offers.",
+                        "c": "C) Contact CS → request registration → wait for confirmation.",
+                        "d": "D) Download exclusive app → create login → accept terms."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> Simple and direct: Store -> QR Code/Link -> Offers."
+                }
+            }
+        },
+        "m3": {
+            "title": "Module 3: CDC and Legislation",
+            "count": "4 questions",
+            "overlay": "Complete Module 3 to unlock these quizzes",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> Why is knowledge of Consumer Protection Code essential for those working in CS?",
+                    "options": {
+                        "a": "A) Only to comply with legal requirements.",
+                        "b": "B) To respond with confidence, avoid rework and convey credibility to the customer.",
+                        "c": "C) To replace company internal policies.",
+                        "d": "D) Only to handle formal complaints."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> Knowledge generates confidence and credibility."
+                },
+                "q2": {
+                    "text": "<strong>Question 2 (True or False):</strong> Exchange of products without defect at physical store is a right guaranteed by Consumer Protection Code.",
+                    "options": {
+                        "a": "A) True",
+                        "b": "B) False"
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> It's a commercial policy (courtesy), not law."
+                },
+                "q3": {
+                    "text": "<strong>Question 3:</strong> The right of withdrawal allows the customer to:",
+                    "options": {
+                        "a": "A) Exchange any product bought at physical store within 7 days.",
+                        "b": "B) Cancel an online purchase within 7 calendar days after receipt.",
+                        "c": "C) Request refund only for defective products.",
+                        "d": "D) Demand immediate exchange without analysis."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> Exclusive for purchases made outside the commercial establishment (online/phone)."
+                },
+                "q4": {
+                    "text": "<strong>Question 4 (Final Summary):</strong> After completing the course, which alternative best summarizes the role of Customer Service?",
+                    "options": {
+                        "a": "A) Solve specific customer problems.",
+                        "b": "B) Answer calls and register information.",
+                        "c": "C) Act strategically, with humanity and aligned with legislation, strengthening customer experience and brand reputation.",
+                        "d": "D) Forward demands to other sectors."
+                    },
+                    "feedback": "<strong>Correct Answer!</strong> You captured the essence of Customer Service! 👏👏👏"
+                }
+            }
+        }
+    },
+    "tip_box": "💡 Retake quizzes as many times as you want to reinforce your knowledge!",
+    "feedback_incorrect": "<strong>Incorrect Answer!</strong> See the correct alternative highlighted in green.",
+    "back_btn": "← Back to Extras Menu"
+}

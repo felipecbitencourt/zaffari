@@ -1995,6 +1995,14 @@ a:focus-visible {
     visibility: visible;
 }
 
+/* Esconder navegação quando modal está ativo para evitar sobreposição */
+.modal-overlay.active ~ .content-nav,
+body:has(.modal-overlay.active) .content-nav {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .modal {
     background: var(--bg-secondary);
     border-radius: var(--radius-xl);

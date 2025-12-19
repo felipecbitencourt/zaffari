@@ -1,0 +1,17 @@
+{
+    "title": "🏆 What are my achievements?",
+    "subtitle": "You completed <strong>Module 2: Where to find information?</strong>",
+    "badges_title": "Badges Earned",
+    "badges_subtitle": "These badges help unlock the Learning Hub materials!",
+    "badges": {
+        "resumo": "Summary",
+        "quiz": "Quiz",
+        "flashcard": "Flashcard",
+        "find_error": "Find the Error",
+        "m2_desc": "Module 2",
+        "exclusive_desc": "Exclusive"
+    },
+    "progress_label": "Progress to Learning Hub",
+    "progress_text": "2 of 3 modules completed",
+    "footer_text": "Continue to the next module and earn more badges!"
+}

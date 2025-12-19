@@ -1,0 +1,45 @@
+{
+  "title": "Quando realizar atendimentos ativos?",
+  "intro": "Além dos atendimentos receptivos, o SAC realiza contatos ativos com clientes, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
+  "timeline": {
+    "t1": {
+      "title": "1. Ativação de cartões",
+      "text": "Entrar em contato com clientes para ativar novos cartões emitidos."
+    },
+    "t2": {
+      "title": "2. Atualização cadastral",
+      "text": "Manter os dados dos clientes sempre atualizados."
+    },
+    "t3": {
+      "title": "3. Comunicação de promoções",
+      "text": "Informar sobre ofertas exclusivas e benefícios."
+    },
+    "t4": {
+      "title": "4. Reversão de cancelamentos",
+      "text": "Trabalhar para reter clientes que desejam cancelar serviços."
+    }
+  },
+  "accordion": {
+    "a1": {
+      "title": "📋 Gestão e Melhoria Contínua",
+      "l1": "Organizar e tabular dados, elaborar relatórios e dar suporte às demandas da equipe.",
+      "l2": "Atuar de forma proativa na identificação de melhorias nos scripts e padrões de atendimento.",
+      "l3": "Contribuir para a evolução constante do serviço prestado."
+    },
+    "a2": {
+      "title": "🎓 Desenvolvimento profissional",
+      "text": "O conhecimento das responsabilidades permite que você atue com mais segurança e assertividade, contribuindo para sua evolução de carreira."
+    }
+  },
+  "quiz": {
+    "question": "Você percebe que vários clientes ligam com a mesma dúvida sobre uma nova promoção. Qual é a melhor atitude alinhada às responsabilidades de melhoria contínua do SAC?",
+    "opt_a": "A) Continuar atendendo cada um individualmente sem sinalizar o fato.",
+    "feedback_wrong_a": "Continuar atendendo individualmente não resolve o problema estrutural e mantém o volume de ligações desnecessárias.",
+    "opt_b": "B) Reclamar com os colegas que os clientes não sabem ler o regulamento.",
+    "feedback_wrong_b": "Reclamar não é produtivo e não contribui para a melhoria do processo.",
+    "opt_c": "C) Sinalizar o padrão observado ao supervisor para que a comunicação da promoção seja ajustada.",
+    "opt_d": "D) Dizer ao cliente para procurar a informação no site.",
+    "feedback_wrong_d": "Mandar o cliente buscar a informação sozinho demonstra falta de cuidado e não resolve a questão.",
+    "feedback": "<strong>Resposta Correta!</strong> A proatividade em identificar padrões ajuda a melhorar o processo para todos."
+  }
+}

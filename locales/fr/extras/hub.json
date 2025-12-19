@@ -1,0 +1,70 @@
+{
+    "title": "🧠 Menu de Fixation",
+    "lead": "Explorez des ressources supplémentaires pour renforcer votre apprentissage! Complétez les modules pour débloquer le matériel.",
+    "sections": {
+        "acompanhamento": {
+            "title": "📚 Suivi",
+            "subtitle": "Matériaux qui suivent vos progrès - se libèrent progressivement au fur et à mesure que vous avancez."
+        },
+        "especiais": {
+            "title": "⭐ Spéciaux",
+            "subtitle": "Activités exclusives débloquées en complétant des modules spécifiques."
+        },
+        "referencias": {
+            "title": "🔗 Références",
+            "subtitle": "Matériaux complémentaires et liens utiles."
+        }
+    },
+    "cards": {
+        "resumo": {
+            "title": "Résumé du Cours",
+            "desc": "Révisez les principaux concepts et points clés de tous les modules en un seul endroit."
+        },
+        "flashcard": {
+            "title": "Flash Cards",
+            "desc": "Mémorisez des concepts importants avec des cartes d'étude interactives."
+        },
+        "quiz": {
+            "title": "Questionnaires",
+            "desc": "Testez vos connaissances avec tous les questionnaires du cours réunis en un seul endroit."
+        },
+        "metrics": {
+            "title": "Ma Performance",
+            "desc": "Suivez vos progrès, votre temps d'étude et vos résultats aux activités."
+        },
+        "drag_drop": {
+            "title": "Glisser-Déposer",
+            "desc": "Associez les concepts et les catégories en faisant glisser les éléments aux bons endroits."
+        },
+        "find_error": {
+            "title": "Trouvez l'Erreur",
+            "desc": "Identifiez les erreurs dans des situations de service et apprenez comment les corriger."
+        },
+        "roleplay": {
+            "title": "Jeu de Rôle",
+            "desc": "Pratiquez des situations réelles de service grâce à des simulations interactives."
+        },
+        "ref1": {
+            "title": "Impact du Mauvais Service",
+            "desc": "Article: 65% des consommateurs envisagent de changer de marque après une expérience négative."
+        },
+        "ref2": {
+            "title": "35 Ans du CDC",
+            "desc": "Nouvelle: Le Code de Défense du Consommateur fête ses 35 ans en tant que référence."
+        },
+        "ref3": {
+            "title": "Code de Défense du Consommateur",
+            "desc": "PDF complet du CDC (2013) pour consultation et téléchargement."
+        },
+        "ref4": {
+            "title": "Stratégie de CX (Oracle)",
+            "desc": "Brief exécutif sur les stratégies d'exécution du Service Client."
+        }
+    },
+    "lock_msg": "Complétez les modules pour débloquer",
+    "lock_msg_m1": "Complétez le Module 1 pour débloquer",
+    "lock_msg_m2": "Complétez le Module 2 pour débloquer",
+    "lock_msg_m3": "Complétez le Module 3 pour débloquer",
+    "tip": "💡 <strong>Conseil:</strong> Complétez les modules du cours pour débloquer tous les matériaux. Chaque module accorde des médailles qui libèrent de nouvelles ressources!",
+    "unlocked_msg": "modules sur 3 débloqués"
+}

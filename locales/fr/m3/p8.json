@@ -1,0 +1,73 @@
+{
+    "title": "📝 Qu'avons-nous appris dans le cours?",
+    "lead": "Félicitations! Vous êtes arrivé à la fin du cours 'Au Cœur du Service Client'. 🎉",
+    "intro_summary": "Avant de conclure, voici un résumé des principales questions auxquelles nous avons répondu sur le CDC:",
+    "accordion": {
+        "a1": {
+            "title": "❓ Qu'est-ce que le CDC et pourquoi le connaître?",
+            "text": "<strong>✅ Réponse:</strong> Le CDC (Loi nº 8.078/90) protège les consommateurs et garantit des relations de consommation justes. Le connaître est essentiel pour:",
+            "l1": "Répondre avec sécurité",
+            "l2": "Éviter le retravail",
+            "l3": "Transmettre la crédibilité au client"
+        },
+        "a2": {
+            "title": "❓ Quand le client peut-il échanger un produit sans défaut?",
+            "text": "<strong>✅ Réponse:</strong>",
+            "l1": "<strong>Magasin physique:</strong> Le CDC N'OBLIGE PAS l'échange - c'est une politique commerciale (courtoisie)",
+            "l2": "<strong>Magasin en ligne:</strong> Le client a le Droit de Rétractation (jusqu'à 7 jours calendaires après réception)"
+        },
+        "a3": {
+            "title": "❓ Quand il y a un défaut, quelle est la procédure?",
+            "text": "<strong>✅ Réponse:</strong> Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre via l'assistance technique. S'il ne résout pas, le client peut choisir:",
+            "l1": "Échange du produit",
+            "l2": "Réduction proportionnelle de la valeur",
+            "l3": "Remboursement de la valeur payée",
+            "note": "<em>Délai pour réclamer: 90 jours pour les produits durables.</em>"
+        },
+        "a4": {
+            "title": "❓ Comment acheminer les réclamations de produits?",
+            "text": "<strong>✅ Réponse:</strong>",
+            "l1": "<strong>Alimentaires:</strong> Client apporte produit + ticket au magasin (évaluation de la direction)",
+            "l2": "<strong>Non alimentaires:</strong> Produit + ticket au magasin (sauf Électro → Assistance Technique)",
+            "l3": "<strong>Achat erroné:</strong> Non périssables peuvent être échangés si non violés; périssables nous n'échangeons pas"
+        }
+    },
+    "quiz_final": {
+        "question": "Après tout ce parcours, vous recevez un nouveau collègue dans l'équipe qui demande: 'Au final, qu'est-ce qui est le plus important ici?'. Quelle réponse résume le mieux la mission du Service Client que nous avons apprise?",
+        "opt_a": "A) 'Le plus important est de répondre rapidement pour atteindre l'objectif de temps, peu importe si c'est résolu ou non.'",
+        "feedback_wrong_a": "La vitesse sans résolution ne crée pas de satisfaction. Le client veut son problème résolu, pas seulement être servi rapidement. Les métriques de temps sont importantes, mais ne sont pas l'objectif principal.",
+        "opt_b": "B) 'L'important est de suivre la loi rigoureusement pour que l'entreprise ne soit pas poursuivie, le reste est un détail.'",
+        "feedback_wrong_b": "Suivre la loi est fondamental, mais ce n'est pas suffisant. Le Service Client va au-delà: il cherche l'enchantement, la fidélisation et la construction de relations. La loi est le minimum, l'excellence est l'objectif.",
+        "opt_c": "C) 'Notre mission est d'être le pont stratégique entre l'entreprise et le client, résolvant les problèmes avec efficacité, humanité et respect des lois.'",
+        "opt_d": "D) 'L'objectif principal est d'éviter au maximum que le client demande à parler à la direction.'",
+        "feedback_wrong_d": "Éviter l'escalade n'est pas un objectif - c'est la conséquence d'un bon service. Si le client a besoin de parler à la direction, ce n'est pas nécessairement un échec. L'accent doit être mis sur la résolution du problème.",
+        "feedback": "<strong>Réponse Correcte!</strong> Vous avez saisi l'essence du Service Client! 👏👏👏"
+    },
+    "accordion_extra": {
+        "a5": {
+            "title": "❓ Quels sont les chemins du système pour chaque situation?",
+            "text": "<strong>✅ Réponse:</strong> Chaque type de demande a son chemin spécifique:",
+            "box_title": "Chemins du Système",
+            "l1": "<strong>Produit Électro avec défaut:</strong><br>INFORMATION → ACHATS → DONNÉES DE L'ASSISTANCE TECHNIQUE",
+            "l2": "<strong>Achat dans la taille/couleur/tension erronée:</strong><br>INFORMATION → ACHATS → ÉCHANGE DE MARCHANDISES",
+            "l3": "<strong>Échange non réalisé en magasin:</strong><br>RÉCLAMATION → ÉCHANGE DE MARCHANDISES"
+        },
+        "a6": {
+            "title": "❓ Quel est le délai pour l'échange de périssables en ligne?",
+            "text": "<strong>✅ Réponse:</strong> Les produits périssables à courte durée de vie (viandes, fruits et légumes, pains, charcuterie, produits laitiers) achetés en ligne ont un délai spécial de <strong>24 heures</strong> après la livraison.",
+            "attention": "⚠️ Cela garantit la sécurité alimentaire du client et de l'entreprise.",
+            "note": "<em>Différent des 7 jours du Droit de Rétractation, qui s'applique aux produits non périssables.</em>"
+        },
+        "a7": {
+            "title": "❓ Quelles sont les bonnes pratiques pour un service de qualité?",
+            "text": "<strong>✅ Réponse:</strong> Les 4 pratiques essentielles sont:",
+            "l1": "<strong>👂 Écoute active:</strong> Écouter attentivement sans interrompre",
+            "l2": "<strong>🔍 Sondage complet:</strong> Poser des questions pour comprendre la situation",
+            "l3": "<strong>💚 Cordialité et empathie:</strong> Être gentil et compréhensif",
+            "l4": "<strong>📝 Enregistrement précis:</strong> Documenter toutes les données correctement",
+            "note": "<em>Ces pratiques garantissent des services clairs, organisés et sans retravail.</em>"
+        }
+    },
+    "success_title": "Merci d'avoir participé!",
+    "success_text": "Avancez toujours - chaque interaction est une opportunité de faire la différence."
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Quando há defeito, o que fazer?",
+  "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
+  "accordion": {
+    "options_title": "🔄 Opções do cliente se não houver solução em 30 dias",
+    "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
+    "l2": "<strong>Abatimento proporcional</strong> do valor pago",
+    "l3": "<strong>Devolução integral</strong> do valor pago"
+  },
+  "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
+  "h3_assist": "Assistência Técnica 🔧",
+  "accordion_electro": {
+    "title": "📦 Procedimento para produtos Eletro",
+    "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+  },
+  "accordion_registro": {
+    "title": "📝 Como registrar no sistema",
+    "intro": "Quando o cliente solicitar informações sobre assistência técnica:",
+    "path_title": "Caminho no Sistema",
+    "path": "<strong>INFORMAÇÃO → COMPRAS → DADOS DA ASSISTÊNCIA TÉCNICA</strong>",
+    "l1": "Oriente o cliente a encaminhar o produto à assistência da marca",
+    "l2": "Informe o prazo de 30 dias para solução",
+    "l3": "Se não resolver em 30 dias, a empresa pode realizar a troca <strong>com ordem de serviço</strong>"
+  },
+  "quiz": {
+    "question": "Uma cliente comprou uma batedeira há 2 meses e o motor parou de funcionar. Onde você registra esse atendimento e o que orienta?",
+    "opt_a": "A) Registro em RECLAMAÇÃO > ELETRO e informo que pode trocar diretamente na loja.",
+    "feedback_wrong_a": "Realizar troca direta na loja não é o procedimento correto para produtos Eletro. Eles devem primeiro ir à assistência técnica.",
+    "opt_b": "B) Registro em INFORMAÇÃO > COMPRAS > DADOS DA ASSISTÊNCIA TÉCNICA e oriento a enviar à assistência da marca.",
+    "opt_c": "C) Informo que como passou de 30 dias da compra, não podemos ajudar.",
+    "feedback_wrong_c": "Dizer que não podemos ajudar é incorreto. O prazo de 90 dias para reclamar defeitos de produtos duráveis ainda está válido.",
+    "opt_d": "D) Registro em DEVOLUÇÃO e solicito reembolso imediato.",
+    "feedback_wrong_d": "Solicitar devolução de valor não é o primeiro passo. A lei dá ao fornecedor 30 dias para tentar resolver via assistência técnica.",
+    "feedback": "<strong>Resposta Correta!</strong> Produtos Eletro devem ser encaminhados à assistência técnica da marca primeiro."
+  }
+}

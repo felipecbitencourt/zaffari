@@ -1,0 +1,68 @@
+{
+    "title": "📖 Résumé du Cours",
+    "lead": "Révisez les principaux concepts abordés dans chaque module de la formation.",
+    "modules": {
+        "m1": {
+            "title": "Module 1: Rôle Stratégique du Service Client",
+            "lock": "🔒 Terminez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 1 pour débloquer ce résumé"
+        },
+        "m2": {
+            "title": "Module 2: Où trouver des informations?",
+            "lock": "🔒 Terminez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 2 pour débloquer ce résumé"
+        },
+        "m3": {
+            "title": "Module 3: CDC et Législation",
+            "lock": "🔒 Terminez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 3 pour débloquer ce résumé"
+        }
+    },
+    "content": {
+        "m1": {
+            "q1": "❓ Qu'attend le client lorsqu'il nous contacte?",
+            "a1": "<p><strong>✅ Réponse:</strong> Le client attend plus que la solution du problème. Il cherche à:</p><ul><li>Être écouté avec attention et empathie</li><li>Recevoir un service agile et efficace</li><li>Sentir que l'entreprise se soucie de lui</li><li>Avoir de la clarté sur les prochaines étapes</li><li>Sortir satisfait, même lorsque la réponse n'est pas idéale</li></ul>",
+            "q2": "❓ Quel est le rôle du Service Client au-delà de résoudre des problèmes?",
+            "a2": "<p><strong>✅ Réponse:</strong> Le Service Client représente la <strong>voix de l'entreprise</strong> dans le contact direct avec le client. Plus qu'un secteur opérationnel, c'est un domaine stratégique essentiel pour:</p><ul><li>Préserver les valeurs et la réputation de la marque</li><li>Construire la confiance et renforcer les liens</li><li>Contribuer à la fidélisation des clients</li></ul>",
+            "q3": "❓ Quelles sont les responsabilités de notre équipe?",
+            "a3": "<p><strong>✅ Réponse:</strong> Les principales responsabilités incluent:</p><ul><li><strong>Service Multicanal:</strong> téléphone, e-mail, chat et moyens électroniques</li><li><strong>Service Entrant (Réceptif):</strong> informations, réclamations, suggestions et compliments</li><li><strong>Contacts Sortants (Actifs):</strong> campagnes, activation de cartes, mises à jour des données</li><li><strong>Gestion:</strong> organiser les données, élaborer des rapports, proposer des améliorations</li></ul><p><em>Note: Définir les lois de protection du consommateur N'EST PAS la responsabilité du Service Client - le Service Client suit les lois.</em></p>",
+            "q4": "❓ Pourquoi les délais de service sont-ils importants?",
+            "a4": "<p><strong>✅ Réponse:</strong> Des délais bien définis garantissent l'organisation, la prévisibilité et l'efficacité. L'enregistrement correct de la catégorie de service est fondamental car le système calcule le délai en fonction de celle-ci.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Délais Standard</h4><ul><li><strong>Demandes:</strong> jusqu'à 3 jours ouvrables</li><li><strong>Informations:</strong> jusqu'à 2 jours ouvrables</li><li><strong>Réclamations:</strong> jusqu'à 2 jours ouvrables</li></ul></div></div>",
+            "q5": "❓ Que sont les contacts sortants?",
+            "a5": "<p><strong>✅ Réponse:</strong> Ce sont des contacts que le Service Client initie de manière proactive avec les clients, notamment liés aux Cartes du Groupe:</p><ul><li><strong>Activation de cartes:</strong> contacter les clients pour activer les nouvelles cartes</li><li><strong>Mise à jour des données:</strong> maintenir les données des clients à jour</li><li><strong>Communication de promotions:</strong> informer sur les offres et avantages</li><li><strong>Récupération de résiliations:</strong> travailler pour retenir les clients</li></ul><p><em>Note: Différent du service entrant, où le client initie le contact.</em></p>",
+            "q6": "❓ Comment contribuer à l'amélioration continue du Service Client?",
+            "a6": "<p><strong>✅ Réponse:</strong> En plus de bien servir, l'équipe du Service Client contribue à l'évolution du service:</p><ul><li><strong>Identifier des modèles:</strong> remarquer quand plusieurs clients ont la même question</li><li><strong>Signaler des problèmes:</strong> communiquer au superviseur pour ajuster les processus</li><li><strong>Proposer des améliorations:</strong> suggérer des ajustements dans les scripts et les normes de service</li><li><strong>Élaborer des rapports:</strong> organiser les données qui aident l'entreprise à s'améliorer</li></ul>"
+        },
+        "m2": {
+            "q1": "❓ Pourquoi avons-nous besoin de savoir où chercher des informations?",
+            "a1": "<p><strong>✅ Réponse:</strong> Savoir où trouver des informations démontre au client:</p><ul><li><strong>Sécurité</strong> - transmettre la confiance</li><li><strong>Agilité</strong> - résoudre rapidement</li><li><strong>Soin</strong> - montrer que nous nous soucions</li></ul>",
+            "q2": "❓ Où consulter les données des magasins?",
+            "a2": "<p><strong>✅ Réponse:</strong> Sur l'<strong>Intranet</strong> de l'entreprise!</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>Le Chemin à Suivre</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Filiales → Données cadastrais et horaires</strong></p></div></div><p>Vous y trouverez: adresse des magasins, heures d'ouverture et moyens de contact.</p>",
+            "q3": "❓ Où consulter les offres et promotions?",
+            "a3": "<p><strong>✅ Réponse:</strong> Les offres peuvent être consultées dans:</p><ul><li><strong>Prospectus</strong> - matériels promotionnels physiques et numériques</li><li><strong>Site officiel</strong> de l'entreprise</li><li><strong>WhatsApp des offres</strong> - canal direct avec le client</li></ul>",
+            "q4": "❓ Comment fonctionne le WhatsApp des offres?",
+            "a4": "<p><strong>✅ Réponse:</strong> C'est simple et direct! La séquence est:</p><ol><li><strong>Sélectionner le magasin</strong> d'intérêt</li><li><strong>Accéder à la communauté</strong> via le lien ou QR Code</li><li><strong>Recevoir des offres</strong> personnalisées sur le portable</li></ol>"
+        },
+        "m3": {
+            "q1": "❓ Qu'est-ce que le CDC et pourquoi le connaître?",
+            "a1": "<p><strong>✅ Réponse:</strong> Le CDC (Loi nº 8.078/90) protège les consommateurs et garantit des relations de consommation justes. Le connaître est essentiel pour:</p><ul><li>Répondre avec sécurité</li><li>Éviter le retravail</li><li>Transmettre la crédibilité au client</li></ul>",
+            "q2": "❓ Quand le client peut-il échanger un produit sans défaut?",
+            "a2": "<p><strong>✅ Réponse:</strong></p><ul><li><strong>Magasin physique:</strong> Le CDC N'OBLIGE PAS l'échange - c'est une politique commerciale (courtoisie)</li><li><strong>Magasin en ligne:</strong> Le client a le Droit de Rétractation (jusqu'à 7 jours calendaires après réception)</li></ul>",
+            "q3": "❓ Quand il y a un défaut, quelle est la procédure?",
+            "a3": "<p><strong>✅ Réponse:</strong> Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre via l'assistance technique. S'il ne résout pas, le client peut choisir:</p><ul><li>Troca do produto</li><li>Abatimento proporcional do valor</li><li>Devolução do valor pago</li></ul><p><em>Délai pour réclamer: 90 jours pour les produits durables.</em></p>",
+            "q4": "❓ Comment acheminer les réclamations de produits?",
+            "a4": "<p><strong>✅ Réponse:</strong></p><ul><li><strong>Alimentaires:</strong> Client apporte produit + ticket au magasin (évaluation de la direction)</li><li><strong>Non alimentaires:</strong> Produit + ticket au magasin (sauf Électro → Assistance Technique)</li><li><strong>Achat erroné:</strong> Non périssables peuvent être échangés si non violés; périssables nous n'échangeons pas</li></ul>",
+            "q5": "❓ Quels sont les chemins du système pour chaque situation?",
+            "a5": "<p><strong>✅ Réponse:</strong> Chaque type de demande a son chemin spécifique:</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>Chemins du Système</h4><ul><li><strong>Produit Électro avec défaut:</strong><br>INFORMATION → ACHATS → DONNÉES DE L'ASSISTANCE TECHNIQUE</li><li><strong>Achat dans la taille/couleur/tension erronée:</strong><br>INFORMATION → ACHATS → ÉCHANGE DE MARCHANDISES</li><li><strong>Échange non réalisé en magasin:</strong><br>RÉCLAMATION → ÉCHANGE DE MARCHANDISES</li></ul></div></div>",
+            "q6": "❓ Quel est le délai pour l'échange de périssables en ligne?",
+            "a6": "<p><strong>✅ Réponse:</strong> Les produits périssables à courte durée de vie (viandes, fruits et légumes, pains, charcuterie, produits laitiers) achetés en ligne ont un délai spécial de <strong>24 heures</strong> après la livraison.</p><div class=\"box-attention\"><p>⚠️ Cela garantit la sécurité alimentaire du client et de l'entreprise.</p></div>",
+            "q7": "❓ Quelles sont les bonnes pratiques pour un service de qualité?",
+            "a7": "<p><strong>✅ Réponse:</strong> Les 4 pratiques essentielles sont:</p><ul><li><strong>👂 Écoute active:</strong> Écouter attentivement sans interrompre</li><li><strong>🔍 Sondage complet:</strong> Poser des questions pour comprendre la situation</li><li><strong>💚 Cordialité et empathie:</strong> Être gentil et compréhensif</li><li><strong>📝 Enregistrement précis:</strong> Documenter toutes les données correctement</li></ul><p><em>Ces pratiques garantissent des services clairs, organisés et sans retravail.</em></p>"
+        }
+    },
+    "tip_box": "💡 Utilisez ce résumé comme matériel de consultation rapide pendant votre travail.",
+    "back_btn": "← Retour au Menu de Fixation"
+}

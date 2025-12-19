@@ -1,0 +1,32 @@
+{
+    "title": "Où consulter les données des magasins?",
+    "lead": "Toutes les informations essentielles sont disponibles sur l'<strong>Intranet</strong> de l'entreprise.",
+    "intro_p": "C'est votre principal outil de travail pour des consultations rapides et précises.",
+    "highlight_title": "Pas à Pas",
+    "highlight_text": "Intranet → Filiales → Données cadastrales et horaires",
+    "slider_title": "📍 Comment consulter sur l'Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Étape 1: Accéder à l'Intranet",
+            "text": "Accédez à la page interne de l'entreprise (Intranet)."
+        },
+        "s2": {
+            "title": "Étape 2: Naviguer vers Filiales",
+            "text": "Cliquez sur l'option <strong>'Filiales'</strong>."
+        },
+        "s3": {
+            "title": "Étape 3: Données Cadastrales",
+            "text": "Ensuite, cliquez sur <strong>'Données cadastrales et horaires'</strong>."
+        },
+        "s4": {
+            "title": "Étape 4: Consulter et Informer",
+            "text": "Vous pouvez maintenant consulter les informations de toutes les unités du groupe, y compris: Adresse, Heures d'ouverture et Moyens de contact pour guider le client!"
+        }
+    },
+    "list_intro": "Ce que vous pouvez consulter:",
+    "list_items": {
+        "l1": "Adresse des magasins",
+        "l2": "Heures d'ouverture",
+        "l3": "Moyens de contact"
+    }
+}

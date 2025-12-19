@@ -1,0 +1,38 @@
+{
+    "title": "📝 What did we learn in Module 2?",
+    "lead": "Excellent! You completed the module on information lookup. Review the main questions covered.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Why do we need to know where to find information?",
+            "text": "Knowing where to find information shows the customer:",
+            "l1": "<strong>Confidence</strong> - convey trust",
+            "l2": "<strong>Agility</strong> - resolve quickly",
+            "l3": "<strong>Care</strong> - show that we care"
+        },
+        "a2": {
+            "title": "❓ Where to look up store data?",
+            "text": "On the company's <strong>Intranet</strong>!",
+            "box_title": "Step by Step",
+            "box_text": "Intranet → Branches → Registration data and schedules",
+            "footer": "There you'll find: store addresses, opening hours and contact methods."
+        },
+        "a3": {
+            "title": "❓ Where to check offers and promotions?",
+            "text": "Offers can be found at:",
+            "l1": "<strong>Flyers</strong> - physical and digital promotional materials",
+            "l2": "Company's <strong>official website</strong>",
+            "l3": "<strong>Offers WhatsApp</strong> - direct channel with the customer"
+        },
+        "a4": {
+            "title": "❓ How does the offers WhatsApp work?",
+            "text": "Step by step to instruct the customer:",
+            "l1": "<strong>Select the store</strong> of interest",
+            "l2": "<strong>Access the community</strong> via link or QR Code",
+            "l3": "<strong>Receive personalized offers</strong> on your phone"
+        }
+    },
+    "conclusion": {
+        "title": "Module 2 Conclusion",
+        "text": "Now you know <strong>where to find information</strong> the customer needs. In the next module, we'll learn <strong>how to apply the Consumer Protection Code (CDC)</strong> in customer service!"
+    }
+}

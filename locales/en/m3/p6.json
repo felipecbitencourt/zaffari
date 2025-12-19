@@ -1,0 +1,36 @@
+{
+    "title": "How to forward complaints?",
+    "intro": "Each type of product requires a specific complaint procedure. Click on each category to see the details:",
+    "accordion": {
+        "food_title": "🍎 Food Products",
+        "food_intro": "Exchange occurs only when the product is <strong>unfit for consumption</strong>.",
+        "food_l1": "Customer must bring product + receipt to the store",
+        "food_l2": "Management evaluation",
+        "food_l3": "Correct filling of <strong>Reason, Brand and Batch</strong> is essential",
+        "nonfood_title": "📦 Non-Food Products",
+        "nonfood_intro": "Must be registered with all information about the defect.",
+        "nonfood_box": "Customer brings product + receipt to the store (except Appliances → Technical Assistance).",
+        "wrong_title": "❌ Wrong Purchase",
+        "wrong_intro": "If the customer bought the product in the wrong size, color or voltage:",
+        "wrong_path_title": "System Path",
+        "wrong_path": "<strong>INFORMATION → PURCHASES → PRODUCT EXCHANGE</strong>",
+        "wrong_l1": "<strong>Non-perishables:</strong> item cannot be opened/used. Customer goes to store with product + receipt.",
+        "wrong_l2": "<strong>Perishables:</strong> we don't exchange (temperature risk)",
+        "wrong_attention": "⚠️ Perishables once removed from the store cannot be reconditioned due to food safety issues.",
+        "notdone_title": "⚠️ Exchange not completed at store",
+        "notdone_intro": "If the customer reports they went to the store and the exchange was not completed:",
+        "notdone_path_title": "System Path",
+        "notdone_path": "<strong>COMPLAINT → PRODUCT EXCHANGE</strong>",
+        "notdone_l1": "Check if there's a previous record with management position",
+        "notdone_l2": "If there isn't, inform that the case will be forwarded for verification",
+        "notdone_l3": "If management position denies the exchange, maintain company guidance and close"
+    },
+    "quiz": {
+        "question": "A customer calls saying they bought a dress in the wrong size and wants to exchange it. It's sealed with tags. Where do you register and what do you advise?",
+        "opt_a": "A) Register in COMPLAINT > EXCHANGE and advise to go to the store.",
+        "opt_b": "B) Register in INFORMATION > PURCHASES > PRODUCT EXCHANGE and advise to go to the store with product + receipt.",
+        "opt_c": "C) Inform that since there's no defect, there's no possibility of exchange.",
+        "opt_d": "D) Inform about the 7-day withdrawal right and process the return.",
+        "feedback": "<strong>Correct Answer!</strong> Exchange for wrong purchase goes in INFORMATION > PURCHASES > PRODUCT EXCHANGE."
+    }
+}

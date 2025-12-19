@@ -1,0 +1,25 @@
+{
+    "title": "Where to check offers?",
+    "intro": "Customer Service also guides customers about offers and promotions. Use the <strong>flyers</strong> and the company's <strong>official website</strong> to obtain essential data.",
+    "accordion": {
+        "a1": {
+            "title": "📰 Flyers and Official Website",
+            "text": "Check updated flyers to inform about current offers. The official website also has a constantly updated promotions section.",
+            "l1": "<strong>Flyers:</strong> available in store and on the Intranet",
+            "l2": "<strong>Website:</strong> offers and promotions section"
+        },
+        "a2": {
+            "title": "📱 Offers WhatsApp",
+            "text": "A practical way of communication is the offers WhatsApp. Through it, the customer receives promotions directly on their phone, in a personalized way.",
+            "step": "<strong>Step by step:</strong> Select the store → Access the community via link or QR Code → Receive offers"
+        }
+    },
+    "quiz": {
+        "question": "Mrs. Maria is on the line and says 'my neighbor receives Zaffari offers on her phone and I don't'. How should you guide her to join the service safely and officially?",
+        "opt_a": "A) 'Mrs. Maria, please give me your number and I'll register you right now in the system.'",
+        "opt_b": "B) 'You should select your preferred store and access the community through the official link or QR Code.'",
+        "opt_c": "C) 'Ask your neighbor to add you to her group, it's easier.'",
+        "opt_d": "D) 'This service has been temporarily suspended, just follow along on the website.'",
+        "feedback": "<strong>Correct Answer!</strong> The customer must actively join via the specific store's Link or QR Code."
+    }
+}

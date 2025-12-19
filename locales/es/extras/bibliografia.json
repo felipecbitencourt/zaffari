@@ -1,0 +1,25 @@
+{
+    "title": "📚 Referencias y Bibliografía",
+    "lead": "Confira las fuentes y materiales consultados para la elaboración de este curso.",
+    "sections": {
+        "laws": {
+            "title": "⚖️ Legislación",
+            "l1": "<strong>Ley nº 8.078, de 11 de septiembre de 1990</strong> - Código de Defensa del Consumidor (CDC).",
+            "l2": "<strong>Decreto nº 2.181, de 20 de marzo de 1997</strong> - Organiza el Sistema Nacional de Defensa del Consumidor (SNDC).",
+            "link_cdc": "🔗 Acceder al CDC completo en el sitio del Planalto"
+        },
+        "internal": {
+            "title": "🏢 Documentos Internos",
+            "l1": "<strong>Manual de Procedimientos del SAC</strong> - Grupo Zaffari (2023).",
+            "l2": "<strong>Política de Cambios y Devoluciones</strong> - V. 4.0 (2024).",
+            "l3": "<strong>Guía de Atención al Cliente</strong> - Entrenamiento Interno."
+        },
+        "articles": {
+            "title": "📰 Artículos y Noticias",
+            "l1": "<strong>Oracle (2012).</strong> <em>Customer Experience Impact Report</em>. RightNow Technologies.",
+            "l2": "<strong>BusinessWire.</strong> <em>65% of Consumers Say Negative Interactions Changed Their Brand Perception</em>.",
+            "l3": "<strong>Senado Federal.</strong> <em>Código de Defensa del Consumidor completa 35 años</em> (2025)."
+        }
+    },
+    "footer": "Material elaborado para fines educativos internos. © 2025"
+}

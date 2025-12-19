@@ -1,0 +1,40 @@
+{
+    "title": "📝 Qu'avons-nous appris dans le Module 1?",
+    "lead": "Félicitations pour avoir terminé le premier module! Voyez ci-dessous les principales questions que nous avons explorées et leurs réponses.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Qu'attend le client lorsqu'il nous contacte?",
+            "text": "<strong>✅ Réponse:</strong> Le client attend plus que la solution au problème. Il cherche à:",
+            "l1": "Être écouté avec attention et empathie",
+            "l2": "Recevoir un service agile et efficace",
+            "l3": "Sentir que l'entreprise se soucie de lui",
+            "l4": "Avoir de la clarté sur les prochaines étapes",
+            "l5": "Sortir satisfait, même lorsque la réponse n'est pas idéale"
+        },
+        "a2": {
+            "title": "❓ Quel est le rôle du Service Client au-delà de résoudre des problèmes?",
+            "text": "<strong>✅ Réponse:</strong> Le Service Client représente la <strong>voix de l'entreprise</strong> dans le contact direct avec le client. Plus qu'un secteur opérationnel, c'est un domaine stratégique essentiel pour:",
+            "l1": "Maintenir les valeurs et la réputation de la marque",
+            "l2": "Construire la confiance et renforcer les liens",
+            "l3": "Contribuer à la fidélisation des clients"
+        },
+        "a3": {
+            "title": "❓ Quelles sont les responsabilités de notre équipe?",
+            "text": "<strong>✅ Réponse:</strong> Les principales responsabilités incluent:",
+            "l1": "<strong>Service Multicanal:</strong> téléphone, e-mail, chat et moyens électroniques",
+            "l2": "<strong>Service Entrant:</strong> informations, réclamations, suggestions et compliments",
+            "l3": "<strong>Contacts Sortants:</strong> campagnes, activation de cartes, mises à jour de données",
+            "l4": "<strong>Gestion:</strong> organiser les données, élaborer des rapports, proposer des améliorations"
+        },
+        "a4": {
+            "title": "❓ Pourquoi les délais de service sont-ils importants?",
+            "text": "<strong>✅ Réponse:</strong> Des délais bien définis garantissent organisation, prévisibilité et efficacité. L'enregistrement correct de la catégorie de service est fondamental car le système calcule le délai en fonction de celle-ci.",
+            "prazos_padrao": "<strong>Délais Standards:</strong> Demandes: jusqu'à 3 jours ouvrables | Informations: jusqu'à 2 jours ouvrables | Réclamations: jusqu'à 2 jours ouvrables",
+            "prazos_especiais": "<strong>Délais Spéciaux:</strong> Dommages: jusqu'à 5 jours ouvrables | Duplication de paiement: jusqu'à 8 jours ouvrables"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusion du Module 1",
+        "text": "Maintenant vous comprenez <strong>pourquoi le Service Client est stratégique</strong> pour l'entreprise. Dans le prochain module, nous découvrirons <strong>où trouver les informations</strong> dont le client a besoin!"
+    }
+}

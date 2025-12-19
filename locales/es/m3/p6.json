@@ -1,0 +1,39 @@
+{
+    "title": "¿Cómo encaminar reclamos?",
+    "intro": "Cada tipo de producto exige un procedimiento específico de reclamo. Haga clic en cada categoría para ver los detalles:",
+    "accordion": {
+        "food_title": "🍎 Productos Alimenticios",
+        "food_intro": "El cambio ocurre solo cuando el producto está <strong>inapropiado para consumo</strong>.",
+        "food_l1": "Cliente debe llevar producto + cupón a la tienda",
+        "food_l2": "Evaluación de la gerencia",
+        "food_l3": "Llenado correcto de <strong>Motivo, Marca y Lote</strong> es esencial",
+        "nonfood_title": "📦 Productos No Alimenticios",
+        "nonfood_intro": "Deben ser registrados con toda la información sobre el defecto.",
+        "nonfood_box": "Cliente lleva producto + cupón a la tienda (excepto Electro → Asistencia Técnica).",
+        "wrong_title": "❌ Compra Equivocada",
+        "wrong_intro": "Si el cliente compró el producto en el tamaño, color o voltaje equivocado:",
+        "wrong_path_title": "Camino en el Sistema",
+        "wrong_path": "<strong>INFORMACIÓN → COMPRAS → CAMBIO DE MERCANCÍAS</strong>",
+        "wrong_l1": "<strong>No perecederos:</strong> ítem no puede estar violado",
+        "wrong_l2": "<strong>Perecederos:</strong> no cambiamos (riesgo de temperatura)",
+        "wrong_attention": "⚠️ Perecederos una vez retirados de la tienda no pueden ser reacondicionados por cuestiones de seguridad alimentaria.",
+        "notdone_title": "⚠️ Cambio no realizado en la tienda",
+        "notdone_intro": "Si el cliente relata que fue a la tienda y el cambio no fue concluido:",
+        "notdone_path_title": "Camino en el Sistema",
+        "notdone_path": "<strong>RECLAMO → CAMBIO DE MERCANCÍAS</strong>",
+        "notdone_l1": "Verifique si existe registro anterior con posición de la gerencia",
+        "notdone_l2": "Si no hay, informar que el caso será encaminado para verificación",
+        "notdone_l3": "Si hay posición de la gerencia negando el cambio, mantener la orientación de la empresa y cerrar"
+    },
+    "quiz": {
+        "question": "Un cliente llama diciendo que compró un vestido en el tamaño equivocado y quiere cambiar. Está sellado y con etiqueta. ¿Dónde registras y qué orientas?",
+        "opt_a": "A) Registro en RECLAMO > CAMBIO y oriento ir a la tienda.",
+        "feedback_wrong_a": "RECLAMO es para cuando hay un problema con el producto o servicio. Cambio por tamaño equivocado es INFORMACIÓN.",
+        "opt_b": "B) Registro en INFORMACIÓN > COMPRAS > CAMBIO DE MERCANCÍAS y oriento ir a la tienda con producto + nota fiscal.",
+        "opt_c": "C) Informo que como no tiene defecto, no hay posibilidad de cambio.",
+        "feedback_wrong_c": "El CDC no obliga cambio por preferencia en tienda física, pero la empresa puede hacer por cortesía. No debemos decir que no existe posibilidad.",
+        "opt_d": "D) Informo el derecho de arrepentimiento de 7 días y proceso la devolución.",
+        "feedback_wrong_d": "El Derecho de Arrepentimiento (7 días) solo vale para compras ONLINE. Tienda física tiene política comercial diferente.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Cambio por compra equivocada va en INFORMACIÓN > COMPRAS > CAMBIO DE MERCANCÍAS."
+    }
+}

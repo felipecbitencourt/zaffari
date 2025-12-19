@@ -1,0 +1,45 @@
+{
+    "title": "¿Cuándo realizar atenciones activas?",
+    "intro": "Además de las atenciones receptivas, el SAC realiza contactos activos con clientes, especialmente en campañas promocionales y acciones relacionadas con las Tarjetas del Grupo:",
+    "timeline": {
+        "t1": {
+            "title": "1. Activación de tarjetas",
+            "text": "Entrar en contacto con clientes para activar nuevas tarjetas emitidas."
+        },
+        "t2": {
+            "title": "2. Actualización catastral",
+            "text": "Mantener los datos de los clientes siempre actualizados."
+        },
+        "t3": {
+            "title": "3. Comunicación de promociones",
+            "text": "Informar sobre ofertas exclusivas y beneficios."
+        },
+        "t4": {
+            "title": "4. Reversión de cancelaciones",
+            "text": "Trabajar para retener clientes que desean cancelar servicios."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Gestión y Mejora Continua",
+            "l1": "Organizar y tabular datos, elaborar informes y dar soporte a las demandas del equipo.",
+            "l2": "Actuar de forma proactiva en la identificación de mejoras en los guiones y estándares de atención.",
+            "l3": "Contribuir a la evolución constante del servicio prestado."
+        },
+        "a2": {
+            "title": "🎓 Desarrollo profesional",
+            "text": "El conocimiento de las responsabilidades permite que actúes con más seguridad y asertividad, contribuyendo a tu evolución de carrera."
+        }
+    },
+    "quiz": {
+        "question": "Notas que varios clientes llaman con la misma duda sobre una nueva promoción. ¿Cuál es la mejor actitud alineada a las responsabilidades de mejora continua del SAC?",
+        "opt_a": "A) Continuar atendiendo cada uno individualmente sin señalizar el hecho.",
+        "feedback_wrong_a": "Continuar atendiendo individualmente no resuelve el problema estructural y mantiene el volumen de llamadas innecesarias.",
+        "opt_b": "B) Quejarse con los colegas de que los clientes no saben leer el reglamento.",
+        "feedback_wrong_b": "Quejarse no es productivo y no contribuye a la mejora del proceso.",
+        "opt_c": "C) Señalizar el patrón observado al supervisor para que la comunicación de la promoción sea ajustada.",
+        "opt_d": "D) Decirle al cliente que busque la información en el sitio.",
+        "feedback_wrong_d": "Mandar al cliente a buscar la información solo demuestra falta de cuidado y no resuelve la cuestión.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> La proactividad en identificar patrones ayuda a mejorar el proceso para todos."
+    }
+}

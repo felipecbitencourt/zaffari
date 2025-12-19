@@ -1,0 +1,17 @@
+{
+    "title": "Mise en Pratique",
+    "intro": "Maintenant que vous connaissez le chemin de l'Intranet, testons dans la pratique!",
+    "quiz": {
+        "question": "Un client appelle pour demander si le magasin du Centre est ouvert le jour férié de demain. Vous ne connaissez pas cette information par cœur. Quelle est la procédure la plus agile et la plus sûre?",
+        "opt_a": "A) Demander rapidement dans le groupe WhatsApp de l'équipe pour voir si quelqu'un sait.",
+        "feedback_wrong_a": "Demander dans le groupe WhatsApp peut apporter des informations obsolètes ou incorrectes. La source officielle est toujours l'Intranet.",
+        "opt_b": "B) Consulter l'Intranet dans 'Filiales' > 'Données cadastrales et horaires' pour avoir l'information officielle.",
+        "opt_c": "C) Chercher sur Google Maps, car c'est toujours à jour là-bas.",
+        "feedback_wrong_c": "Google Maps n'est pas toujours mis à jour avec les horaires spéciaux des jours fériés. L'Intranet est la seule source officielle de l'entreprise.",
+        "opt_d": "D) Informer qu'il sera probablement fermé, pour éviter que le client ne se déplace pour rien.",
+        "feedback_wrong_d": "Donner une information sans certitude peut causer de la frustration au client. Ne 'supposez' jamais les réponses - consultez la source officielle.",
+        "feedback": "<strong>Réponse Correcte!</strong> L'Intranet est la seule source officielle et fiable pour les horaires des filiales."
+    },
+    "importance_title": "Pourquoi cela compte-t-il?",
+    "importance_text": "Maîtriser cette consultation garantit <strong>agilité</strong> dans le service, des réponses plus <strong>assertives</strong>, une <strong>standardisation</strong> des informations et une <strong>expérience plus positive</strong> pour le client."
+}

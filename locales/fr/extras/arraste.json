@@ -1,0 +1,69 @@
+{
+    "title": "🎯 Glisser-Déposer",
+    "lead": "Associez les concepts et les catégories en faisant glisser les éléments aux bons endroits.",
+    "back_btn": "← Retour au Menu",
+    "phases": {
+        "phase1": {
+            "title": "Phase 1: Types de Service",
+            "instruction": "Faites glisser chaque type de service vers sa description correcte",
+            "progress": "sur 3 corrects"
+        },
+        "phase2": {
+            "title": "Phase 2: Délais de Service",
+            "instruction": "Faites glisser chaque type de demande vers le délai correct",
+            "progress": "sur 5 corrects"
+        },
+        "phase3": {
+            "title": "Phase 3: Responsabilités du Service Client",
+            "instruction": "Classez: ce qui est et ce qui N'EST PAS la responsabilité du Service Client",
+            "progress": "sur 8 corrects"
+        }
+    },
+    "items": {
+        "multicanal": "Service Multicanal",
+        "receptivo": "Service Entrant",
+        "ativo": "Service Sortant",
+        "solicitacoes": "Demandes",
+        "informacoes": "Informations",
+        "reclamacoes": "Réclamations",
+        "danos": "Dommages",
+        "duplicidade": "Duplication de paiement",
+        "atendimento": "Service entrant et sortant",
+        "relatorios": "Élaborer des rapports",
+        "scripts": "Proposer des améliorations de scripts",
+        "suporte": "Support aux collaborateurs",
+        "leis": "Définir les lois de protection du consommateur",
+        "orcamento": "Approuver le budget de l'entreprise",
+        "contratar": "Embaucher des employés",
+        "contratos": "Négocier des contrats avec les fournisseurs"
+    },
+    "zones": {
+        "multicanal_desc": "Téléphone, e-mail, chat et moyens électroniques",
+        "receptivo_desc": "Recevoir des plaintes, des suggestions et des compliments",
+        "ativo_desc": "Activation de cartes, promotions et récupération",
+        "ate_2dias": "Jusqu'à 2 jours ouvrables",
+        "ate_3dias": "Jusqu'à 3 jours ouvrables",
+        "ate_5dias": "Jusqu'à 5 jours ouvrables",
+        "ate_8dias": "Jusqu'à 8 jours ouvrables",
+        "sac_faz": "✅ Le SAC fait",
+        "sac_nao_faz": "❌ Le SAC ne fait pas",
+        "solte_aqui": "Déposez ici",
+        "solte_aqui_2": "Déposez ici (2 éléments)",
+        "solte_aqui_4": "Déposez ici (4 éléments)"
+    },
+    "completion": {
+        "title": "Félicitations!",
+        "message": "Vous avez terminé les 3 phases du jeu de Glisser-Déposer!",
+        "restart_btn": "🔄 Rejouer",
+        "next_btn": "Phase Suivante →"
+    },
+    "popup": {
+        "phase1_title": "Phase 1 Complète!",
+        "phase1_msg": "Vous maîtrisez les types de service!",
+        "phase2_title": "Phase 2 Complète!",
+        "phase2_msg": "Excellent! Les délais ne sont plus un secret!",
+        "phase3_title": "Toutes les Phases Complètes!",
+        "phase3_msg": "Vous êtes un expert du Service Client!",
+        "default_msg": "Excellent travail!"
+    }
+}

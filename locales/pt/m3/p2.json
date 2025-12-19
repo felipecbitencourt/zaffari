@@ -1,0 +1,12 @@
+{
+  "title": "Qual a diferença: produto x serviço?",
+  "intro": "Para aplicar o CDC, precisamos entender dois conceitos fundamentais:",
+  "accordion": {
+    "service_title": "Serviço",
+    "service_text": "Atividade oferecida mediante remuneração, como atendimento ao cliente, entrega de produtos e serviços financeiros dos Cartões do Grupo.",
+    "product_title": "Produto",
+    "product_text": "Toda mercadoria vendida nas lojas.",
+    "product_l1": "<strong>Durável:</strong> eletrodomésticos, eletrônicos e utilidades duráveis.",
+    "product_l2": "<strong>Não durável:</strong> alimentos, higiene, limpeza, perfumaria, hortifrúti e panificação."
+  }
+}

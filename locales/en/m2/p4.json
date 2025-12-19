@@ -1,0 +1,17 @@
+{
+    "title": "Putting it into Practice",
+    "intro": "Now that you know the Intranet path, let's test it in practice!",
+    "quiz": {
+        "question": "A customer calls asking if the Downtown store is open on tomorrow's holiday. You don't know this information by heart. What is the most agile and safe procedure?",
+        "opt_a": "A) Ask quickly in the team's WhatsApp group to see if anyone knows.",
+        "feedback_wrong_a": "Asking in the WhatsApp group may bring outdated or wrong information. The official source is always the Intranet.",
+        "opt_b": "B) Consult the Intranet under 'Branches' > 'Registration data and schedules' to have the official information.",
+        "opt_c": "C) Search on Google Maps, because it is always updated there.",
+        "feedback_wrong_c": "Google Maps is not always updated with special holiday hours. The Intranet is the company's only official source.",
+        "opt_d": "D) Inform that it will probably be closed, to avoid the customer making a wasted trip.",
+        "feedback_wrong_d": "Giving information without certainty can cause frustration to the customer. Never 'assume' answers - consult the official source.",
+        "feedback": "<strong>Correct Answer!</strong> The Intranet is the only official and reliable source for branch schedules."
+    },
+    "importance_title": "Why does this matter?",
+    "importance_text": "Mastering this query ensures <strong>agility</strong> in service, more <strong>assertive</strong> answers, <strong>standardization</strong> of information and a more <strong>positive experience</strong> for the customer."
+}

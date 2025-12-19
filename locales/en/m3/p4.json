@@ -1,0 +1,35 @@
+{
+    "title": "📋 Why is CDC important for Customer Service?",
+    "intro": "Knowing CDC brings direct benefits to your daily service work:",
+    "cards": {
+        "c1": {
+            "title": "Security",
+            "text": "Security in guiding the customer, knowing exactly what the law allows or not."
+        },
+        "c2": {
+            "title": "Compliance",
+            "text": "Correct answers aligned with the law, avoiding legal problems for the company."
+        },
+        "c3": {
+            "title": "Efficiency",
+            "text": "Reduction of rework by resolving issues correctly the first time."
+        },
+        "c4": {
+            "title": "Credibility",
+            "text": "More professionalism, trust and credibility in service."
+        }
+    },
+    "attention_title": "Attention",
+    "attention_text": "Knowing the CDC does not mean memorizing all articles, but understanding the <strong>basic principles</strong> that guide consumer relations.",
+    "quiz": {
+        "question": "A customer claims heatedly: 'The Consumer Protection Code says I'm always right! That's why you are obliged to do what I want!'. Based on the balance proposed by the CDC, how do you interpret this statement?",
+        "opt_a": "A) 'The customer is always right', and the CDC was created precisely to ensure their will prevails in any situation.",
+        "feedback_wrong_a": "The CDC does not say 'the customer is always right'. It seeks BALANCE, protecting the most vulnerable part but establishing limits for everyone.",
+        "opt_b": "B) The customer is mistaken. The CDC seeks to balance the relationship, protecting the weaker party (consumer), but also establishing duties and limits to avoid abuse.",
+        "opt_c": "C) The customer is wrong, as the CDC is a law that serves only to punish companies that commit crimes against the popular economy.",
+        "feedback_wrong_c": "The CDC is much broader than punishing crimes. It regulates the ENTIRE consumption relationship: advertising, contracts, warranties, deadlines and rights.",
+        "opt_d": "D) The customer is partially right, the CDC guarantees they are right, but only if they present the original invoice.",
+        "feedback_wrong_d": "The invoice is important to prove purchase, but the consumer's right does not depend only on it. CDC's balance is not conditioned on documents.",
+        "feedback": "<strong>Correct Answer!</strong> The goal of the CDC is harmony and balance in consumer relations, not blind favoritism."
+    }
+}

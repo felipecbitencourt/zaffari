@@ -1,0 +1,52 @@
+{
+    "title": "What does the customer expect?",
+    "lead": "Welcome to the <strong>⚙️ Inside Customer Service</strong> training.",
+    "intro": "This course was developed especially for the Customer Service team, with the goal of strengthening knowledge, aligning practices and continuously improving the quality of service offered to customers on a daily basis.",
+    "img_alt": "Young consultant smiling while speaking on headset",
+    "sabia": {
+        "title": "Did You Know?",
+        "text": "Studies show that <strong>86% of consumers</strong> are willing to pay more for a better service experience!",
+        "source": "Source: RightNow Customer Experience Impact Report (Oracle, 2012)"
+    },
+    "learning_path": "Throughout the course, you will better understand:",
+    "cards": {
+        "c1": {
+            "title": "How Customer Service works",
+            "text": "Understand the structure, service channels and team workflow."
+        },
+        "c2": {
+            "title": "Strategic responsibilities",
+            "text": "Learn about the fundamental role you play in customer satisfaction and brand image."
+        },
+        "c3": {
+            "title": "Impact on customer",
+            "text": "Discover why every interaction has a direct impact on customer experience."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "What will you learn in this module?",
+            "l1": "The strategic role of Customer Service within the company",
+            "l2": "Main team responsibilities",
+            "l3": "Importance of response times",
+            "l4": "How each interaction affects brand perception"
+        },
+        "a2": {
+            "title": "Why is this training important?",
+            "text": "Excellent service not only resolves demands: it <strong>builds trust</strong>, strengthens bonds and directly contributes to customer loyalty."
+        }
+    },
+    "reflexao": {
+        "title": "Stop and Think",
+        "text": "Before moving forward, reflect: <strong>When a customer contacts Customer Service, what do you think they expect to find beyond the solution to their problem?</strong>"
+    },
+    "reveal": {
+        "btn": "👁️ See possible answers",
+        "title": "The customer usually expects:",
+        "l1": "To be heard with attention and empathy",
+        "l2": "To receive quick and efficient service",
+        "l3": "To feel that the company cares about them",
+        "l4": "To have clarity about next steps",
+        "l5": "To leave satisfied, even when the answer is not ideal"
+    }
+}

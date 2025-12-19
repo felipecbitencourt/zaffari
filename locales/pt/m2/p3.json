@@ -1,0 +1,28 @@
+{
+  "title": "Onde consultar ofertas?",
+  "intro": "O SAC também orienta os clientes sobre ofertas e promoções. Utilize os <strong>encartes</strong> e o <strong>site oficial</strong> da empresa para obter dados essenciais.",
+  "accordion": {
+    "a1": {
+      "title": "📰 Encartes e Site Oficial",
+      "text": "Consulte os encartes atualizados para informar sobre ofertas vigentes. O site oficial também possui uma seção de promoções constantemente atualizada.",
+      "l1": "<strong>Encartes:</strong> disponíveis na loja e na Intranet",
+      "l2": "<strong>Site:</strong> seção de ofertas e promoções"
+    },
+    "a2": {
+      "title": "📱 WhatsApp de Ofertas",
+      "text": "Uma forma prática de comunicação é o WhatsApp de ofertas. Por meio dele, o cliente recebe promoções diretamente no celular, de forma personalizada.",
+      "step": "<strong>Passo a passo:</strong> Selecionar a loja → Acessar a comunidade pelo link ou QR Code → Receber ofertas"
+    }
+  },
+  "quiz": {
+    "question": "Dona Maria está na linha e diz que 'minha vizinha recebe ofertas do Zaffari no celular e eu não'. Como você deve orientá-la para aderir ao serviço de forma segura e oficial?",
+    "opt_a": "A) 'Dona Maria, por favor me passe seu número que eu cadastro a senhora agora mesmo no sistema.'",
+    "feedback_wrong_a": "Nunca devemos solicitar dados pessoais do cliente para cadastrar diretamente. O processo de adesão deve ser feito pelo próprio cliente, de forma segura.",
+    "opt_b": "B) 'A senhora deve selecionar sua loja de preferência e acessar a comunidade através do link oficial ou QR Code.'",
+    "opt_c": "C) 'Peça para sua vizinha te adicionar no grupo dela, é mais fácil.'",
+    "feedback_wrong_c": "Orientar o cliente a entrar em grupos não oficiais é inseguro. Pode expor a cliente a golpes e informações falsas. Sempre direcione para canais oficiais.",
+    "opt_d": "D) 'Esse serviço foi suspenso temporariamente, acompanhe apenas pelo site.'",
+    "feedback_wrong_d": "Dar informação incorreta é grave. O serviço está funcionando normalmente. Sempre verifique antes de informar ao cliente sobre disponibilidade de serviços.",
+    "feedback": "<strong>Resposta Correta!</strong> O cliente deve entrar ativamente via Link ou QR Code da loja específica."
+  }
+}

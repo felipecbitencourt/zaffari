@@ -1,0 +1,115 @@
+{
+    "title": "🎭 Roleplay - Service Simulation",
+    "lead": "Practice your service skills! You are the SAC attendant and must choose the best answers.",
+    "back_btn": "← Back to Extras Menu",
+    "ui": {
+        "continue_btn": "Continue →",
+        "try_again_btn": "Try Again",
+        "loading": "Loading..."
+    },
+    "completion": {
+        "title": "Congratulations!",
+        "message": "You completed the service simulation!",
+        "restart_btn": "🔄 Play Again",
+        "correct_count": "You got {correct} out of {total} answers right"
+    },
+    "results": {
+        "perfect": "Perfect! You demonstrated excellent knowledge!",
+        "good": "Very well! You are on the right track!",
+        "average": "Good, but you can improve. Review the content!",
+        "needs_work": "Needs more study. Review the course modules!"
+    },
+    "scenario": {
+        "title": "Product Exchange",
+        "steps": [
+            {
+                "id": 1,
+                "name": "Introduction",
+                "client_speech": "Hello, good afternoon! I bought this blender here yesterday and would like to exchange it for another model.",
+                "options": [
+                    {
+                        "text": "Good afternoon! Sure, I can help you with that. Does the product have any defect or problem?",
+                        "correct": true,
+                        "feedback": "Excellent! You greeted the customer cordially and already asked an important question to understand the situation."
+                    },
+                    {
+                        "text": "Unfortunately, it is not possible to exchange products that have already been bought and taken home.",
+                        "correct": false,
+                        "feedback": "This answer is very negative and does not welcome the customer. We must always first understand the situation before denying something."
+                    },
+                    {
+                        "text": "You can leave the product on the counter and someone will check it for you later.",
+                        "correct": false,
+                        "feedback": "This answer is too informal and shows no interest in helping the customer. Service must always be cordial and professional."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Customer Question",
+                "client_speech": "No, it is not defective. I just saw another model that I liked more. I saw on the internet that I have the right to exchange within 7 days, right?",
+                "options": [
+                    {
+                        "text": "Yes, for sure! You have this right guaranteed by law. Let's make the exchange right now.",
+                        "correct": false,
+                        "feedback": "Careful! The 7-day right of repentance only applies to ONLINE purchases. In a physical store, exchange is a commercial policy, not a legal right."
+                    },
+                    {
+                        "text": "The 7-day right applies to online purchases. In physical stores, it is a courtesy. I can check our policy!",
+                        "correct": true,
+                        "feedback": "Perfect! You correctly explained the difference between the legal right (online purchases) and commercial policy (physical store), without refusing to help the customer."
+                    },
+                    {
+                        "text": "That 7-day rule is only for online purchases, so it doesn't apply here. Sorry.",
+                        "correct": false,
+                        "feedback": "Although the info about online is correct, the answer is too negative. We should always look for alternatives to help the customer."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Additional Doubt",
+                "client_speech": "Ah, I see... so you won't exchange it? And if the product has a defect later, can I complain?",
+                "options": [
+                    {
+                        "text": "Yes, you can! For defects, you have 90 days. And our policy allows exchange in 30 days with the invoice!",
+                        "correct": true,
+                        "feedback": "Excellent! You correctly informed the 90-day deadline to complain about defects in durable products AND also offered the possibility of exchange by company policy."
+                    },
+                    {
+                        "text": "For defects you can complain, but the deadline is only 7 days after purchase.",
+                        "correct": false,
+                        "feedback": "Incorrect! The deadline to complain about defects in durable products is 90 DAYS, not 7 days."
+                    },
+                    {
+                        "text": "If the product has no defect now, later we can't do anything, unfortunately.",
+                        "correct": false,
+                        "feedback": "Incorrect! Hidden defects (defects that appear later) can be claimed within 90 days for durable products."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Closing",
+                "client_speech": "That's great! So can I exchange it for the other model? The product is still sealed and I have the invoice.",
+                "options": [
+                    {
+                        "text": "I can't make the exchange because, as I explained, it is not a legal obligation of the store.",
+                        "correct": false,
+                        "feedback": "Inappropriate answer. The customer meets the requirements of the commercial policy (sealed product + invoice)."
+                    },
+                    {
+                        "text": "With sealed product and invoice, I can make the exchange! Which model do you prefer?",
+                        "correct": true,
+                        "feedback": "Congratulations! You finished the service positively, confirming that the customer meets the requirements and proceeding with the exchange."
+                    },
+                    {
+                        "text": "I need to call my manager to authorize this type of exchange procedure here.",
+                        "correct": false,
+                        "feedback": "Unnecessary in this case. As the customer meets the policy requirements (sealed + invoice), you can resolve it without needing to escalate."
+                    }
+                ]
+            }
+        ]
+    }
+}

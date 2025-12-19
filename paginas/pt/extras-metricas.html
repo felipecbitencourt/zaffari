@@ -30,34 +30,40 @@
                 <div class="progress-bar-fill" id="metric-progress-bar" style="width: 0%;"></div>
             </div>
             <p class="metric-desc" style="font-size: 0.85em; margin-top: 5px;">
-                Módulos: <span id="metric-modules-count">0</span>/3 concluídos<br>
-                Páginas: <span id="metric-pages-count">0</span>/<span id="metric-pages-total">0</span> visualizadas
+                <span data-i18n="extras.metrics.progress.modules">Módulos:</span> <span
+                    id="metric-modules-count">0</span>/3 <span
+                    data-i18n="extras.metrics.progress.modules_completed">concluídos</span><br>
+                <span data-i18n="extras.metrics.progress.pages">Páginas:</span> <span
+                    id="metric-pages-count">0</span>/<span id="metric-pages-total">0</span> <span
+                    data-i18n="extras.metrics.progress.pages_viewed">visualizadas</span>
             </p>
         </div>
     </div>
 
     <!-- Estatísticas dos Questionários -->
-    <h3 class="section-title" style="margin-top: 30px; margin-bottom: 20px;">
+    <h3 class="section-title" style="margin-top: 30px; margin-bottom: 20px;"
+        data-i18n="extras.metrics.quiz_stats.title">
         Desempenho nos Questionários</h3>
 
     <div class="quiz-stats-container">
         <div class="metric-card quiz-card">
             <div class="quiz-stat-item">
-                <span class="quiz-stat-label">Respondidos</span>
+                <span class="quiz-stat-label" data-i18n="extras.metrics.quiz_stats.answered">Respondidos</span>
                 <span class="quiz-stat-value" id="quiz-count">0</span>
             </div>
             <div class="quiz-stat-divider"></div>
             <div class="quiz-stat-item">
-                <span class="quiz-stat-label">Acertos</span>
+                <span class="quiz-stat-label" data-i18n="extras.metrics.quiz_stats.correct">Acertos</span>
                 <span class="quiz-stat-value" id="quiz-correct">0</span>
             </div>
             <div class="quiz-stat-divider"></div>
             <div class="quiz-stat-item">
-                <span class="quiz-stat-label">Média de Acertos</span>
+                <span class="quiz-stat-label" data-i18n="extras.metrics.quiz_stats.average">Média de Acertos</span>
                 <span class="quiz-stat-value highlight" id="quiz-average">0%</span>
             </div>
         </div>
-        <p class="quiz-footer-msg" id="quiz-msg">Continue praticando para melhorar seus resultados!</p>
+        <p class="quiz-footer-msg" id="quiz-msg" data-i18n="extras.metrics.quiz_stats.msg_keep_practicing">Continue
+            praticando para melhorar seus resultados!</p>
     </div>
 
     <!-- Botão Voltar -->
@@ -164,9 +170,17 @@
             correctCount = quizKeys.filter(k => quizProgress[k] === true).length;
             average = Math.round((correctCount / answeredCount) * 100);
 
+            const t = (window.I18n && window.I18n.t) ? window.I18n.t : (key) => {
+                const map = {
+                    'extras.metrics.quiz_stats.msg_keep_practicing': 'Continue praticando para melhorar seus resultados!',
+                    'extras.metrics.quiz_stats.msg_great_job': 'Excelente desempenho! Continue assim!'
+                };
+                return map[key] || '';
+            };
+
             document.getElementById('quiz-msg').textContent = average >= 70
-                ? "Parabéns! Você está com um ótimo desempenho."
-                : "Continue revisando o conteúdo para aumentar sua média.";
+                ? t('extras.metrics.quiz_stats.msg_great_job')
+                : t('extras.metrics.quiz_stats.msg_keep_practicing');
 
             if (average >= 70) document.getElementById('quiz-average').style.color = 'var(--success-color)';
             else if (average < 50) document.getElementById('quiz-average').style.color = '#ff9800';

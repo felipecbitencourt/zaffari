@@ -1,0 +1,40 @@
+{
+    "title": "📝 What did we learn in Module 1?",
+    "lead": "Congratulations on completing the first module! See below the main questions we explored and their answers.",
+    "accordion": {
+        "a1": {
+            "title": "❓ What does the customer expect when contacting us?",
+            "text": "The customer expects more than just the solution to the problem. They seek:",
+            "l1": "To be heard with attention and empathy",
+            "l2": "To receive quick and efficient service",
+            "l3": "To feel that the company cares about them",
+            "l4": "To have clarity about next steps",
+            "l5": "To leave satisfied, even when the answer is not ideal"
+        },
+        "a2": {
+            "title": "❓ What is the role of CS beyond solving problems?",
+            "text": "Customer Service represents the <strong>company's voice</strong> in direct contact with the customer. More than an operational sector, it is a strategic area essential to:",
+            "l1": "Maintain brand values and reputation",
+            "l2": "Build trust and strengthen bonds",
+            "l3": "Contribute to customer loyalty"
+        },
+        "a3": {
+            "title": "❓ What are our team's responsibilities?",
+            "text": "Main responsibilities include:",
+            "l1": "<strong>Multichannel Service:</strong> phone, email, chat and electronic means",
+            "l2": "<strong>Inbound Service:</strong> information, complaints, suggestions and compliments",
+            "l3": "<strong>Outbound Service:</strong> campaigns, card activation, registration updates",
+            "l4": "<strong>Management:</strong> organize data, prepare reports, propose improvements"
+        },
+        "a4": {
+            "title": "❓ Why do response deadlines matter?",
+            "text": "Well-defined deadlines ensure organization, predictability and efficiency. The correct registration of the service category is fundamental because the system calculates the deadline based on it.",
+            "prazos_padrao": "<strong>Standard Deadlines:</strong> Requests: up to 3 business days | Information: up to 2 business days | Complaints: up to 2 business days",
+            "prazos_especiais": "<strong>Special Deadlines:</strong> Damages: up to 5 business days | Duplicate payment: up to 8 business days"
+        }
+    },
+    "conclusion": {
+        "title": "Module 1 Conclusion",
+        "text": "Now you understand <strong>why Customer Service is strategic</strong> for the company. In the next module, we'll discover <strong>where to find information</strong> that the customer needs!"
+    }
+}

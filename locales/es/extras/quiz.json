@@ -1,0 +1,193 @@
+{
+    "title": "📝 Cuestionarios",
+    "lead": "Prueba tus conocimientos con todos los cuestionarios del curso reunidos en un solo lugar.",
+    "lock_msg": "🔒 Concluye el módulo para desbloquear",
+    "unlock_msg": "✓ Disponible",
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Papel Estratégico del SAC",
+            "count": "3 cuestiones",
+            "overlay": "Completa el Módulo 1 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Cuestión 1:</strong> ¿Cuál de las alternativas mejor representa el papel estratégico del SAC?",
+                    "options": {
+                        "a": "A) Atender llamadas y registrar reclamos.",
+                        "b": "B) Resolver problemas puntuales sin impacto en la imagen de la empresa.",
+                        "c": "C) Representar la voz de la empresa en el contacto directo con el cliente y fortalecer la reputación de la marca.",
+                        "d": "D) Actuar solo cuando otros sectores no logran resolver demandas."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El SAC es la voz de la empresa y fortalece la reputación de la marca."
+                },
+                "q2": {
+                    "text": "<strong>Cuestión 2:</strong> ¿Cuál de las actividades abajo <strong>no</strong> forma parte de las responsabilidades del SAC?",
+                    "options": {
+                        "a": "A) Atención receptiva y activa.",
+                        "b": "B) Organización de datos y elaboración de informes.",
+                        "c": "C) Definición de las leyes de protección al consumidor.",
+                        "d": "D) Proposición de mejoras en guiones y estándares de atención."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El SAC sigue las leyes, pero quien las define es el gobierno (Legislativo)."
+                },
+                "q3": {
+                    "text": "<strong>Cuestión 3 (Verdadero o Falso):</strong> El correcto registro de la categoría de atención influye directamente en el plazo de retorno al cliente.",
+                    "options": {
+                        "a": "A) Verdadero",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El sistema calcula el plazo basado en la categoría registrada."
+                },
+                "q4": {
+                    "text": "<strong>Cuestión 4:</strong> ¿Qué actividades forman parte de las atenciones ACTIVAS del SAC?",
+                    "options": {
+                        "a": "A) Recibir reclamos y sugerencias de los clientes.",
+                        "b": "B) Activación de tarjetas, comunicación de promociones y reversión de cancelaciones.",
+                        "c": "C) Responder e-mails de clientes.",
+                        "d": "D) Consultar información en la Intranet."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Atenciones activas son cuando el SAC entra en contacto con el cliente proactivamente.",
+                    "feedback_wrong_a": "Recibir reclamos es atención RECEPTIVA, no activa.",
+                    "feedback_wrong_c": "Responder e-mails es atención RECEPTIVA. Atención activa es cuando el SAC inicia el contacto.",
+                    "feedback_wrong_d": "Consultar información es una actividad interna, no un tipo de atención."
+                },
+                "q5": {
+                    "text": "<strong>Cuestión 5:</strong> Percibes que varios clientes llaman con la misma duda sobre una nueva promoción. ¿Qué actitud demuestra compromiso con la mejora continua?",
+                    "options": {
+                        "a": "A) Continuar atendiendo cada uno individualmente sin señalizar el patrón.",
+                        "b": "B) Comentar con los colegas que los clientes no leen el reglamento.",
+                        "c": "C) Señalizar el patrón observado al supervisor para ajustar la comunicación.",
+                        "d": "D) Decirle al cliente que busque en el sitio."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Identificar patrones y señalizar problemas ayuda a mejorar el proceso para todos.",
+                    "feedback_wrong_a": "Atender sin señalizar no resuelve el problema estructural.",
+                    "feedback_wrong_b": "Quejarse no contribuye a la mejora del proceso.",
+                    "feedback_wrong_d": "Mandar al cliente a buscar información solo demuestra falta de cuidado."
+                }
+            }
+        },
+        "m2": {
+            "title": "Módulo 2: ¿Dónde encontrar información?",
+            "count": "3 cuestiones",
+            "overlay": "Completa el Módulo 2 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Cuestión 1:</strong> Para consultar dirección, horario de atención y formas de contacto de las tiendas, el empleado debe acceder a:",
+                    "options": {
+                        "a": "A) El sitio de la empresa.",
+                        "b": "B) La Intranet → Sucursales → Datos catastrales y horarios.",
+                        "c": "C) Google Maps.",
+                        "d": "D) Un grupo interno de mensajes."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> La Intranet es la fuente oficial y segura."
+                },
+                "q2": {
+                    "text": "<strong>Cuestión 2:</strong> Dominar la consulta de información en la Intranet contribuye a:",
+                    "options": {
+                        "a": "A) Aumentar el tiempo de atención.",
+                        "b": "B) Reducir la estandarización de las respuestas.",
+                        "c": "C) Garantizar agilidad, asertividad y mejor experiencia para el cliente.",
+                        "d": "D) Hacer la atención más informal."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Cliente feliz es cliente atendido con agilidad y precisión."
+                },
+                "q3": {
+                    "text": "<strong>Cuestión 3:</strong> ¿Cuál es la secuencia correcta para que el cliente comience a recibir ofertas por WhatsApp?",
+                    "options": {
+                        "a": "A) Acceder al sitio → elegir productos → registrar teléfono.",
+                        "b": "B) Seleccionar la tienda → acceder a la comunidad por el enlace o código QR → recibir ofertas.",
+                        "c": "C) Entrar en contacto con el SAC → solicitar registro → esperar confirmación.",
+                        "d": "D) Descargar una aplicación exclusiva → crear usuario → aceptar términos."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Simple y directo: Tienda -> QR Code/Enlace -> Ofertas."
+                }
+            }
+        },
+        "m3": {
+            "title": "Módulo 3: CDC y Legislación",
+            "count": "4 cuestiones",
+            "overlay": "Completa el Módulo 3 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Cuestión 1:</strong> ¿Por qué el conocimiento del Código de Defensa del Consumidor es esencial para quien actúa en el SAC?",
+                    "options": {
+                        "a": "A) Solo para cumplir exigencias legales.",
+                        "b": "B) Para responder con seguridad, evitar retrabajo y transmitir credibilidad al cliente.",
+                        "c": "C) Para sustituir las políticas internas de la empresa.",
+                        "d": "D) Solo para lidiar con reclamos formales."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Conocimiento genera seguridad y credibilidad."
+                },
+                "q2": {
+                    "text": "<strong>Cuestión 2 (Verdadero o Falso):</strong> El cambio de productos sin defecto en tienda física es un derecho garantizado por el Código de Defensa del Consumidor.",
+                    "options": {
+                        "a": "A) Verdadero",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Es una política comercial (cortesía), no ley."
+                },
+                "q3": {
+                    "text": "<strong>Cuestión 3:</strong> El derecho de arrepentimiento permite que el cliente:",
+                    "options": {
+                        "a": "A) Cambie cualquier producto comprado en tienda física en hasta 7 días.",
+                        "b": "B) Desista de una compra online en hasta 7 días corridos tras el recibimiento.",
+                        "c": "C) Solicite devolución solo de productos con defecto.",
+                        "d": "D) Exija cambio inmediato sin análisis."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Exclusivo para compras fuera del establecimiento comercial (online/teléfono)."
+                },
+                "q4": {
+                    "text": "<strong>Cuestión 4 (Síntesis Final):</strong> Tras concluir el curso, ¿cuál de las alternativas resume mejor el papel del SAC?",
+                    "options": {
+                        "a": "A) Resolver problemas puntuales de clientes.",
+                        "b": "B) Atender llamadas y registrar información.",
+                        "c": "C) Actuar de forma estratégica, humanizada y alineada a la legislación, fortaleciendo la experiencia del cliente y la reputación de la marca.",
+                        "d": "D) Encaminar demandas para otros sectores."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> ¡Haz captado la esencia del SAC! 👏👏👏"
+                },
+                "q5": {
+                    "text": "<strong>Cuestión 5:</strong> Un cliente compró una licuadora hace 2 meses y el motor se quemó. ¿Dónde registras esta atención?",
+                    "options": {
+                        "a": "A) RECLAMO → ELECTRO",
+                        "b": "B) INFORMACIÓN → COMPRAS → DATOS DE ASISTENCIA TÉCNICA",
+                        "c": "C) Informo que no podemos ayudar pues pasó de 30 días.",
+                        "d": "D) INFORMACIÓN → COMPRAS → CAMBIO DE MERCANCÍAS"
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Productos Electro deben ser dirigidos a la asistencia técnica de la marca.",
+                    "feedback_wrong_a": "RECLAMO es para productos con problema en la entrega o calidad, no para orientar sobre asistencia.",
+                    "feedback_wrong_c": "2 meses aún está dentro de los 90 días para productos durables. ¡Podemos ayudar!",
+                    "feedback_wrong_d": "CAMBIO DE MERCANCÍAS es para productos comprados por error (tamaño, color, voltaje)."
+                },
+                "q6": {
+                    "text": "<strong>Cuestión 6:</strong> ¿Cuál es el plazo para cambio de productos perecederos con validez corta (carnes, lácteos) comprados online?",
+                    "options": {
+                        "a": "A) 7 días corridos tras el recibimiento.",
+                        "b": "B) 24 horas tras la entrega.",
+                        "c": "C) 30 días tras la compra.",
+                        "d": "D) No hay posibilidad de cambio para perecederos online."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Por seguridad alimentaria, perecederos deben ser cambiados en hasta 24h.",
+                    "feedback_wrong_a": "7 días es para productos no perecederos. Perecederos tienen plazo menor por seguridad alimentaria.",
+                    "feedback_wrong_c": "30 días es el plazo para el proveedor resolver defectos, no para cambio de perecederos.",
+                    "feedback_wrong_d": "Existe sí la posibilidad de cambio de perecederos, siempre que en hasta 24h."
+                },
+                "q7": {
+                    "text": "<strong>Cuestión 7:</strong> ¿Cuáles son las 4 buenas prácticas esenciales para una atención de calidad?",
+                    "options": {
+                        "a": "A) Atender rápido, transferir a otro sector, cerrar la atención, cerrar el caso.",
+                        "b": "B) Escucha activa, sondeo completo, cordialidad/empatía y registro preciso.",
+                        "c": "C) Leer el guion, confirmar datos, cerrar el contacto, esperar retorno.",
+                        "d": "D) Resolver el problema, no importa cómo."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Estas 4 prácticas garantizan atenciones claras, organizadas y sin retrabajo.",
+                    "feedback_wrong_a": "Velocidad sin calidad no garantiza buena atención. Necesitamos escuchar y registrar correctamente.",
+                    "feedback_wrong_c": "Leer el guion mecánicamente no demuestra empatía. La atención debe ser humanizada.",
+                    "feedback_wrong_d": "Resolver el problema es importante, pero sin las buenas prácticas el cliente puede quedar insatisfecho aún con solución."
+                }
+            }
+        }
+    },
+    "tip_box": "💡 ¡Rehaz los cuestionarios cuantas veces quieras para fijar el conocimiento!",
+    "feedback_incorrect": "<strong>¡Respuesta Incorrecta!</strong> Ve la alternativa correcta destacada en verde.",
+    "back_btn": "← Voltar ao Menu de Extras"
+}

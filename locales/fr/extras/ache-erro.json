@@ -1,0 +1,107 @@
+{
+    "title": "🔍 Trouvez l'Erreur",
+    "lead": "Analysez les e-mails fictifs du Service Client et identifiez les erreurs en cliquant directement sur les phrases incorrectes.",
+    "back_btn": "← Retour au Menu de Fixation",
+    "ui": {
+        "email_tabs": {
+            "email1": "📧 E-mail 1",
+            "email2": "📧 E-mail 2",
+            "email3": "📧 E-mail 3",
+            "email4": "📧 E-mail 4"
+        },
+        "inbox": "Boîte de Réception",
+        "from": "De:",
+        "to": "À:",
+        "subject": "Objet:",
+        "errors_found": "Erreurs trouvées:",
+        "errors_identified": "✅ Erreurs Identifiées:"
+    },
+    "completion": {
+        "title": "Félicitations!",
+        "message": "Vous avez trouvé toutes les erreurs de cet e-mail!",
+        "next_btn": "E-mail Suivant →",
+        "final_title": "Jeu Terminé!",
+        "final_message": "Vous avez complété tous les e-mails!",
+        "restart_btn": "🔄 Rejouer",
+        "view_summary": "Voir Résumé Final",
+        "total_stars": "Total: {count}/{max} étoiles"
+    },
+    "emails": [
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "joao.silva@email.com",
+            "assunto": "Re: Demande d'échange #12345",
+            "corpo": "Cher João,\n\nNous vous remercions de votre contact. Concernant votre demande d'échange du produit acheté dans notre magasin physique, nous vous informons que <span class=\"erro\" data-erro=\"1\">vous avez un droit garanti par la loi à l'échange</span> dans un délai de <span class=\"erro\" data-erro=\"2\">7 jours ouvrables</span>.\n\nVeuillez SVP <span class=\"erro\" data-erro=\"3\">envoyer le produit à notre assistance technique</span> pour que nous puissions avancer.\n\nCordialement,\nÉquipe Service Client",
+            "erros": {
+                "1": {
+                    "texto": "vous avez un droit garanti par la loi à l'échange",
+                    "explicacao": "L'échange de produit SANS DÉFAUT en magasin physique est une POLITIQUE COMMERCIALE (courtoisie), pas un droit garanti par la loi. Le CDC n'oblige l'échange qu'en cas de défaut."
+                },
+                "2": {
+                    "texto": "7 jours ouvrables",
+                    "explicacao": "Lorsqu'il est applicable (achats en ligne), le délai du Droit de Rétractation est de 7 jours CALENDAIRES, pas ouvrables."
+                },
+                "3": {
+                    "texto": "envoyer le produit à notre assistance technique",
+                    "explicacao": "Un produit SANS DÉFAUT ne doit pas être envoyé à l'assistance technique. L'assistance technique est pour les réparations de produits AVEC DÉFAUT."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "maria.santos@email.com",
+            "assunto": "Re: Désistement d'achat #67890",
+            "corpo": "Chère Maria,\n\nNous avons reçu votre demande de désistement de l'achat effectué dans notre magasin physique la semaine dernière.\n\nNous vous informons que <span class=\"erro\" data-erro=\"1\">vous pouvez exercer le droit de rétractation</span> normalement. En retournant le produit, <span class=\"erro\" data-erro=\"2\">nous vous rembourserons 80% du montant payé</span>.\n\nNous vous rappelons qu'<span class=\"erro\" data-erro=\"3\">après le retour, il n'y aura plus de possibilité de réclamation sur le produit</span>.\n\nCordialement,\nÉquipe Service Client",
+            "erros": {
+                "1": {
+                    "texto": "vous pouvez exercer le droit de rétractation",
+                    "explicacao": "Le Droit de Rétractation (7 jours) ne s'applique qu'aux achats EN LIGNE ou effectués hors établissement commercial. NE s'applique PAS aux achats en magasin physique."
+                },
+                "2": {
+                    "texto": "nous vous rembourserons 80% du montant payé",
+                    "explicacao": "Lorsque la rétractation est applicable, le remboursement doit être INTÉGRAL (100%), y compris les frais de port. Jamais partiel."
+                },
+                "3": {
+                    "texto": "après le retour, il n'y aura plus de possibilité de réclamation sur le produit",
+                    "explicacao": "Le client conserve toujours le droit de réclamer des VICES CACHÉS (défauts qui apparaissent plus tard), même après des retours ou des échanges antérieurs."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "carlos.oliveira@email.com",
+            "assunto": "Re: Défaut appareil électroménager #11223",
+            "corpo": "Cher Carlos,\n\nNous regrettons le désagrément avec votre appareil électroménager. Conformément au Code de Défense du Consommateur, <span class=\"erro\" data-erro=\"1\">vous avez jusqu'à 15 jours pour résoudre le problème via l'assistance technique</span>.\n\nSi le problème n'est pas résolu dans ce délai, <span class=\"erro\" data-erro=\"2\">nous ferons seulement une réduction proportionnelle de la valeur</span>.\n\nVeuillez vous rendre à l'assistance technique agréée de la marque pour évaluation.\n\nCordialement,\nÉquipe Service Client",
+            "erros": {
+                "1": {
+                    "texto": "vous avez jusqu'à 15 jours pour résoudre le problème via l'assistance technique",
+                    "explicacao": "Le délai correct est de 30 JOURS pour que le fournisseur résolve le défaut via l'assistance technique, et non 15 jours."
+                },
+                "2": {
+                    "texto": "nous ferons seulement une réduction proportionnelle de la valeur",
+                    "explicacao": "Après 30 jours sans solution, le client a TROIS options: échange du produit, réduction proportionnelle OU remboursement intégral. Pas seulement une option."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "ana.costa@email.com",
+            "assunto": "Re: Échange aliment #44556",
+            "corpo": "Chère Ana,\n\nConcernant votre demande d'échange de produit alimentaire, nous vous informons que <span class=\"erro\" data-erro=\"1\">vous pouvez retourner le produit dans n'importe quel magasin de notre réseau</span>.\n\nPour accélérer le processus, <span class=\"erro\" data-erro=\"2\">il n'est pas nécessaire d'apporter le ticket de caisse</span>. Apportez simplement le produit.\n\nAprès analyse, <span class=\"erro\" data-erro=\"3\">nous l'échangerons contre tout produit de votre choix de même valeur</span>.\n\nCordialement,\nÉquipe Service Client",
+            "erros": {
+                "1": {
+                    "texto": "vous pouvez retourner le produit dans n'importe quel magasin de notre réseau",
+                    "explicacao": "Les produits alimentaires doivent être rapportés au MAGASIN OÙ L'ACHAT A ÉTÉ EFFECTUÉ, avec le ticket de caisse, pour évaluation par la direction."
+                },
+                "2": {
+                    "texto": "il n'est pas nécessaire d'apporter le ticket de caisse",
+                    "explicacao": "Le TICKET DE CAISSE EST OBLIGATOIRE pour valider l'achat et procéder à toute réclamation ou échange de produits."
+                },
+                "3": {
+                    "texto": "nous l'échangerons contre tout produit de votre choix de même valeur",
+                    "explicacao": "L'échange de produits alimentaires n'a lieu que lorsque le produit est IMPROPRE À LA CONSOMMATION, pas par préférence du client. Il est nécessaire d'évaluer le motif, la marque et le lot."
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "title": "🎯 Arrastrar y Soltar",
+    "lead": "Asocia conceptos y categorías arrastrando los ítems a los lugares correctos.",
+    "back_btn": "← Volver al Menú",
+    "phases": {
+        "phase1": {
+            "title": "Fase 1: Tipos de Atención",
+            "instruction": "Arrastre cada tipo de atención a su descripción correcta",
+            "progress": "de 3 correctos"
+        },
+        "phase2": {
+            "title": "Fase 2: Plazos de Atención",
+            "instruction": "Arrastre cada tipo de demanda al plazo correcto",
+            "progress": "de 5 correctos"
+        },
+        "phase3": {
+            "title": "Fase 3: Responsabilidades del SAC",
+            "instruction": "Clasifique: qué es y qué NO es responsabilidad del SAC",
+            "progress": "de 8 correctos"
+        }
+    },
+    "items": {
+        "multicanal": "Atención Multicanal",
+        "receptivo": "Atención Receptiva",
+        "ativo": "Atención Activa",
+        "solicitacoes": "Solicitudes",
+        "informacoes": "Informaciones",
+        "reclamacoes": "Reclamos",
+        "danos": "Daños",
+        "duplicidade": "Duplicidad de pago",
+        "atendimento": "Atención receptiva y activa",
+        "relatorios": "Elaborar informes",
+        "scripts": "Proponer mejoras en guiones",
+        "suporte": "Soporte a colaboradores",
+        "leis": "Definir leyes de protección al consumidor",
+        "orcamento": "Aprobar presupuesto de la empresa",
+        "contratar": "Contratar empleados",
+        "contratos": "Negociar contratos con proveedores"
+    },
+    "zones": {
+        "multicanal_desc": "Teléfono, e-mail, chat y medios electrónicos",
+        "receptivo_desc": "Recibir reclamos, sugerencias y elogios",
+        "ativo_desc": "Activación de tarjetas, promociones y reversión",
+        "ate_2dias": "Hasta 2 días hábiles",
+        "ate_3dias": "Hasta 3 días hábiles",
+        "ate_5dias": "Hasta 5 días hábiles",
+        "ate_8dias": "Hasta 8 días hábiles",
+        "sac_faz": "✅ SAC hace",
+        "sac_nao_faz": "❌ SAC no hace",
+        "solte_aqui": "Suelte aquí",
+        "solte_aqui_2": "Suelte aquí (2 ítems)",
+        "solte_aqui_4": "Suelte aquí (4 ítems)"
+    },
+    "completion": {
+        "title": "¡Felicitaciones!",
+        "message": "¡Has completado todas las 3 fases del juego de Arrastrar y Soltar!",
+        "restart_btn": "🔄 Jugar Nuevamente",
+        "next_btn": "Próxima Fase →"
+    },
+    "popup": {
+        "phase1_title": "¡Fase 1 Completa!",
+        "phase1_msg": "¡Dominaste los tipos de atención!",
+        "phase2_title": "¡Fase 2 Completa!",
+        "phase2_msg": "¡Excelente! ¡Los plazos no son más secreto!",
+        "phase3_title": "¡Todas las Fases Completas!",
+        "phase3_msg": "¡Eres un experto en el SAC!",
+        "default_msg": "¡Excelente trabajo!"
+    }
+}

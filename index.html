@@ -46,12 +46,12 @@
         <!-- Menu Lateral -->
         <nav id="sidebar" aria-label="Menu do Curso">
             <div class="sidebar-header">
-                <h1>Por Dentro do SAC</h1>
+                <h1 data-i18n="ui.sidebar.title">Por Dentro do SAC</h1>
             </div>
 
             <div id="menu-content" class="menu-items">
                 <!-- Itens do menu gerados via JS -->
-                <p class="loading-text">Carregando curso...</p>
+                <p class="loading-text" data-i18n="ui.messages.loading">Carregando curso...</p>
             </div>
 
             <div class="sidebar-footer-logo">
@@ -72,10 +72,10 @@
             <footer class="content-nav">
                 <button id="btn-prev" disabled>
                     <span class="btn-icon">←</span>
-                    <span class="btn-text">Anterior</span>
+                    <span class="btn-text" data-i18n="ui.navigation.previous">Anterior</span>
                 </button>
                 <button id="btn-next" disabled>
-                    <span class="btn-text">Próximo</span>
+                    <span class="btn-text" data-i18n="ui.navigation.next">Próximo</span>
                     <span class="btn-icon">→</span>
                 </button>
             </footer>
@@ -106,7 +106,7 @@
     <div id="modal-settings" class="modal-overlay">
         <div class="modal settings-modal">
             <div class="modal-header">
-                <h3>⚙️ Configurações</h3>
+                <h3 data-i18n="settings.title">⚙️ Configurações</h3>
                 <button class="modal-close" id="btn-settings-close" aria-label="Fechar">×</button>
             </div>
             <div class="modal-body settings-body">
@@ -115,7 +115,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🌙</span>
-                        <span>Modo Escuro</span>
+                        <span data-i18n="settings.dark_mode">Modo Escuro</span>
                     </div>
                     <button id="btn-contrast" class="toggle-btn" aria-label="Modo Escuro">
                         <span class="toggle-slider"></span>
@@ -126,7 +126,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🔤</span>
-                        <span>Tamanho da Fonte</span>
+                        <span data-i18n="settings.font_size">Tamanho da Fonte</span>
                     </div>
                     <div class="font-controls">
                         <button id="btn-decrease-font" class="font-btn" aria-label="Diminuir Fonte">A-</button>
@@ -139,7 +139,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">📖</span>
-                        <span>Assistência de Leitura</span>
+                        <span data-i18n="settings.reading_assistance">Assistência de Leitura</span>
                     </div>
                     <button id="btn-dyslexia" class="toggle-btn" aria-label="Assistência de Leitura">
                         <span class="toggle-slider"></span>
@@ -150,7 +150,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🔄</span>
-                        <span>Leitura Automática</span>
+                        <span data-i18n="settings.auto_read">Leitura Automática</span>
                     </div>
                     <button id="btn-auto-read" class="toggle-btn" aria-label="Leitura Automática">
                         <span class="toggle-slider"></span>
@@ -164,7 +164,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">⏩</span>
-                        <span>Velocidade de Leitura</span>
+                        <span data-i18n="settings.reading_speed">Velocidade de Leitura</span>
                     </div>
                     <div class="speed-controls">
                         <button class="speed-btn" data-speed="0.75">0.75x</button>
@@ -179,13 +179,14 @@
                 <div class="settings-row settings-row-vertical">
                     <div class="settings-label">
                         <span class="settings-icon">🎤</span>
-                        <span>Voz de Leitura</span>
+                        <span data-i18n="settings.reading_voice">Voz de Leitura</span>
                     </div>
                     <div class="voice-controls">
                         <select id="voice-select" class="voice-select">
-                            <option value="">Carregando vozes...</option>
+                            <option value="" data-i18n="settings.loading_voices">Carregando vozes...</option>
                         </select>
-                        <button id="btn-voice-preview" class="btn-secondary-sm">▶ Testar</button>
+                        <button id="btn-voice-preview" class="btn-secondary-sm" data-i18n="settings.test_voice">▶
+                            Testar</button>
                     </div>
                 </div>
 
@@ -196,7 +197,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🌐</span>
-                        <span>Idioma</span>
+                        <span data-i18n="settings.language">Idioma</span>
                     </div>
                     <div class="lang-controls">
                         <button id="btn-lang-pt" class="lang-btn active">PT</button>
@@ -221,8 +222,9 @@
         <div class="tutorial-tooltip-actions">
             <span id="tutorial-step-indicator"></span>
             <div class="tutorial-buttons">
-                <button id="tutorial-skip" class="tutorial-btn-skip">Pular</button>
-                <button id="tutorial-next" class="tutorial-btn-next">Próximo →</button>
+                <button id="tutorial-skip" class="tutorial-btn-skip" data-i18n="tutorial.buttons.skip">Pular</button>
+                <button id="tutorial-next" class="tutorial-btn-next" data-i18n="tutorial.buttons.next">Próximo
+                    →</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,17 @@
+{
+    "title": "🏆 ¿Cuáles fueron mis logros?",
+    "subtitle": "Has completado el <strong>Módulo 2: ¿Dónde encontrar información?</strong>",
+    "badges_title": "Medallas Conquistadas",
+    "badges_subtitle": "¡Estas medallas ayudan a desbloquear los materiales de Fijación!",
+    "badges": {
+        "resumo": "Resumen",
+        "quiz": "Cuestionario",
+        "flashcard": "Flashcard",
+        "find_error": "Encuentra el Error",
+        "m2_desc": "Módulo 2",
+        "exclusive_desc": "Exclusivo"
+    },
+    "progress_label": "Progreso para Fijación",
+    "progress_text": "2 de 3 módulos completos",
+    "footer_text": "¡Continúa al próximo módulo y conquista más medallas!"
+}

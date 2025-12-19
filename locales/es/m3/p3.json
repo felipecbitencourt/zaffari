@@ -1,0 +1,41 @@
+{
+    "title": "¿Cuándo cambiar sin defecto?",
+    "h3_physical": "Cambio de productos sin defecto – Tienda Física",
+    "p_physical_1": "El CDC <strong>no obliga</strong> el cambio cuando el producto está en perfecto estado y el cliente desea cambiar por preferencia (color, tamaño).",
+    "p_physical_2": "En estos casos, el cambio es una <strong>política comercial</strong> de la empresa, una cortesía, y no un derecho legal.",
+    "quiz1": {
+        "question": "Un cliente compró una camisa en la Tienda Física, probó en el probador y llevó. Dos días después, regresa queriendo cambiar porque la esposa dijo que el color no combina con él. El producto está perfecto y con etiqueta. ¿La tienda está obligada por ley a cambiar?",
+        "opt_a": "A) Sí, el CDC garantiza 7 días para cambio por cualquier motivo.",
+        "feedback_wrong_a": "El derecho de 7 días de arrepentimiento solo vale para compras ONLINE. En tienda física, donde el cliente puede probar el producto, no hay esa obligación legal.",
+        "opt_b": "B) No, pero puede cambiar por liberalidad (política comercial de cortesía) para fidelizar al cliente.",
+        "opt_c": "C) Sí, pero solo si el cliente paga una tasa del 10%.",
+        "feedback_wrong_c": "No existe previsión de tasa del 10% para cambios. Si la empresa acepta cambiar por cortesía, no debe cobrar tasa adicional.",
+        "opt_d": "D) No, y la tienda está prohibida de aceptar el cambio para no generar perjuicio.",
+        "feedback_wrong_d": "La tienda NO está prohibida de aceptar. El cambio por cortesía es una estrategia de fidelización. El cliente satisfecho vuelve e indica la tienda.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Es una política comercial (cortesía), no ley para tiendas físicas."
+    },
+    "h3_online": "Cambio de productos sin defecto – Tienda Online",
+    "p_online_1": "Para compras online, el CDC garantiza el <strong>Derecho de Arrepentimiento</strong>.",
+    "p_online_2": "El cliente puede desistir de la compra en hasta <strong>7 días corridos</strong> después de la recepción. Importante: ¡Esto no vale para compra en tienda física!",
+    "accordion_online": {
+        "cond_title": "📦 Condiciones para devolución online",
+        "cond_intro": "Para ejercer el Derecho de Arrepentimiento, el producto debe estar:",
+        "cond_l1": "<strong>Sin uso</strong> - no puede haber sido utilizado",
+        "cond_l2": "<strong>Embalaje original</strong> - con todos los accesorios y manuales",
+        "cond_l3": "<strong>Sin señales de mal uso</strong> - en perfecto estado de conservación",
+        "perec_title": "🥩 Perecederos: plazo especial de 24 horas",
+        "perec_text": "<strong>⚠️ Atención:</strong> Para productos perecederos con validez corta (carnes, hortifrutis, panes, fiambres, lácteos), el cambio debe ocurrir en hasta <strong>24 horas</strong> después de la entrega.",
+        "perec_reason": "Esto garantiza la seguridad alimentaria del cliente y de la empresa."
+    },
+    "quiz2": {
+        "question": "Juan compró una cafetera por el sitio. Al recibir, vio que es muy grande para su cocina, aunque funciona perfectamente. Él llama el 5º día queriendo devolver. ¿Qué le informas?",
+        "opt_a": "A) 'Señor, como no tiene defecto, no podemos aceptar la devolución.'",
+        "feedback_wrong_a": "¡Esta respuesta está equivocada! En compras ONLINE, el cliente TIENE derecho de devolver incluso sin defecto (Derecho de Arrepentimiento - 7 días).",
+        "opt_b": "B) 'El señor puede ejercer su Derecho de Arrepentimiento y devolver el producto, recibiendo el reembolso integral, pues está dentro del plazo de 7 días.'",
+        "opt_c": "C) 'Podemos cambiar, pero el señor asume el flete de devolución.'",
+        "feedback_wrong_c": "En el Derecho de Arrepentimiento, TODOS los costos de devolución son responsabilidad del proveedor, incluyendo el flete. El cliente no paga nada.",
+        "opt_d": "D) 'El señor debe intentar vender a un conocido, pues la venta fue finalizada.'",
+        "feedback_wrong_d": "Esta orientación es completamente inadecuada y viola el CDC. El cliente tiene derecho legal de devolver dentro de 7 días.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Compras online tienen garantía de arrepentimiento (7 días), independientemente de defecto."
+    }
+}

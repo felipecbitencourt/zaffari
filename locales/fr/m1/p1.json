@@ -1,0 +1,52 @@
+{
+    "title": "Qu'attend le client?",
+    "lead": "Bienvenue à la formation <strong>⚙️ Au Cœur du Service Client</strong>.",
+    "intro": "Ce cours a été spécialement développé pour l'équipe du Service Client, dans le but de renforcer les connaissances, d'aligner les pratiques et d'améliorer continuellement la qualité du service offert aux clients au quotidien.",
+    "img_alt": "Jeune conseillère souriante parlant au casque",
+    "sabia": {
+        "title": "Le Saviez-vous?",
+        "text": "Des études montrent que <strong>86% des consommateurs</strong> sont prêts à payer plus pour une meilleure expérience client!",
+        "source": "📄 Source: RightNow Customer Experience Impact Report (Oracle, 2012)"
+    },
+    "learning_path": "Tout au long du cours, vous comprendrez mieux:",
+    "cards": {
+        "c1": {
+            "title": "Comment fonctionne le Service Client",
+            "text": "Comprenez la structure, les canaux de service et le flux de travail de l'équipe."
+        },
+        "c2": {
+            "title": "Responsabilités stratégiques",
+            "text": "Découvrez le rôle fondamental que vous jouez dans la satisfaction du client et l'image de la marque."
+        },
+        "c3": {
+            "title": "Impact sur le client",
+            "text": "Découvrez pourquoi chaque interaction réalisée a un impact direct sur l'expérience du client."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "Qu'allez-vous apprendre dans ce module?",
+            "l1": "Le rôle stratégique du Service Client au sein de l'entreprise",
+            "l2": "Principales responsabilités de l'équipe",
+            "l3": "Importance des délais de service",
+            "l4": "Comment chaque interaction affecte la perception de la marque"
+        },
+        "a2": {
+            "title": "Pourquoi cette formation est-elle importante?",
+            "text": "Un service d'excellence ne résout pas seulement les demandes: il <strong>construit la confiance</strong>, renforce les liens et contribue directement à la fidélisation des clients."
+        }
+    },
+    "reflexao": {
+        "title": "Arrêtez-vous et Réfléchissez",
+        "text": "Avant d'avancer, réfléchissez: <strong>Lorsqu'un client contacte le Service Client, qu'espérez-vous qu'il trouve au-delà de la solution à son problème?</strong>"
+    },
+    "reveal": {
+        "btn": "👁️ Voir les réponses possibles",
+        "title": "Le client attend généralement:",
+        "l1": "Être écouté avec attention et empathie",
+        "l2": "Recevoir un service agile et efficace",
+        "l3": "Sentir que l'entreprise se soucie de lui",
+        "l4": "Avoir de la clarté sur les prochaines étapes",
+        "l5": "Sortir satisfait, même lorsque la réponse n'est pas idéale"
+    }
+}

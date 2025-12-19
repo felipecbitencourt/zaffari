@@ -1,0 +1,45 @@
+{
+    "title": "When to perform outbound calls?",
+    "intro": "In addition to inbound service, Customer Service makes active contacts with customers, especially in promotional campaigns and actions related to the Group's Cards:",
+    "timeline": {
+        "t1": {
+            "title": "1. Card activation",
+            "text": "Contact customers to activate newly issued cards."
+        },
+        "t2": {
+            "title": "2. Registration update",
+            "text": "Keep customer data always up to date."
+        },
+        "t3": {
+            "title": "3. Promotion communication",
+            "text": "Inform about exclusive offers and benefits."
+        },
+        "t4": {
+            "title": "4. Cancellation reversal",
+            "text": "Work to retain customers who want to cancel services."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Management and Continuous Improvement",
+            "l1": "Organize and tabulate data, prepare reports and support team demands.",
+            "l2": "Act proactively in identifying improvements in scripts and service standards.",
+            "l3": "Contribute to the constant evolution of the service provided."
+        },
+        "a2": {
+            "title": "🎓 Professional development",
+            "text": "Knowledge of responsibilities allows you to act with more confidence and assertiveness, contributing to your career evolution."
+        }
+    },
+    "quiz": {
+        "question": "You notice that several customers call with the same question about a new promotion. What is the best attitude aligned with CS continuous improvement responsibilities?",
+        "opt_a": "A) Continue serving each one individually without flagging the fact.",
+        "feedback_wrong_a": "Continuing to serve individually does not solve the structural problem and maintains the volume of unnecessary calls.",
+        "opt_b": "B) Complain to colleagues that customers don't know how to read the regulations.",
+        "feedback_wrong_b": "Complaining is not productive and does not contribute to process improvement.",
+        "opt_c": "C) Signal the observed pattern to the supervisor so that the promotion communication can be adjusted.",
+        "opt_d": "D) Tell the customer to look for the information on the website.",
+        "feedback_wrong_d": "Sending the customer to search for information alone demonstrates a lack of care and does not resolve the issue.",
+        "feedback": "<strong>Correct Answer!</strong> Proactivity in identifying patterns helps improve the process for everyone."
+    }
+}

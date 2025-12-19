@@ -1,0 +1,35 @@
+{
+    "title": "📋 Pourquoi le CDC est-il important pour le Service Client?",
+    "intro": "Connaître le CDC apporte des avantages directs pour votre quotidien dans le service:",
+    "cards": {
+        "c1": {
+            "title": "Sécurité",
+            "text": "Sécurité dans l'orientation du client, en sachant exactement ce que la loi permet ou non."
+        },
+        "c2": {
+            "title": "Conformité",
+            "text": "Réponses correctes et alignées sur la loi, évitant des problèmes juridiques pour l'entreprise."
+        },
+        "c3": {
+            "title": "Efficacité",
+            "text": "Réduction du retravail en résolvant les questions correctement dès la première fois."
+        },
+        "c4": {
+            "title": "Crédibilité",
+            "text": "Plus de professionnalisme, de confiance et de crédibilité dans le service."
+        }
+    },
+    "attention_title": "Attention",
+    "attention_text": "Connaître le CDC ne signifie pas mémoriser tous les articles, mais plutôt comprendre les <strong>principes de base</strong> qui guident les relations de consommation.",
+    "quiz": {
+        "question": "Un client affirme avec véhémence: 'Le Code de Défense du Consommateur dit que j'ai toujours raison! C'est pourquoi vous êtes obligés de faire ce que je veux!'. Sur la base de l'équilibre proposé par le CDC, comment interprétez-vous cette déclaration?",
+        "opt_a": "A) 'Le client a toujours raison', et le CDC a été créé justement pour garantir que sa volonté prévale dans toute situation.",
+        "feedback_wrong_a": "Le CDC ne dit pas que 'le client a toujours raison'. Il recherche l'ÉQUILIBRE, protégeant la partie la plus vulnérable mais établissant des limites pour tous.",
+        "opt_b": "B) Le client se trompe. Le CDC cherche à équilibrer la relation, protégeant la partie la plus faible (consommateur), mais établissant aussi des devoirs et des limites pour éviter les abus.",
+        "opt_c": "C) Le client a tort, car le CDC est une loi qui ne sert qu'à punir les entreprises qui commettent des crimes contre l'économie populaire.",
+        "feedback_wrong_c": "Le CDC est beaucoup plus large que punir des crimes. Il réglemente TOUTE la relation de consommation: publicité, contrats, garanties, délais et droits.",
+        "opt_d": "D) Le client a partiellement raison, le CDC garantit qu'il ait raison, mais seulement s'il présente la facture originale.",
+        "feedback_wrong_d": "La facture est importante pour prouver l'achat, mais le droit du consommateur ne dépend pas seulement d'elle. L'équilibre du CDC n'est pas conditionné à des documents.",
+        "feedback": "<strong>Réponse Correcte!</strong> L'objectif du CDC est l'harmonie et l'équilibre dans les relations de consommation, pas le favoritisme aveugle."
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "title": "When to exchange without defect?",
+    "h3_physical": "Exchange of products without defect – Physical Store",
+    "p_physical_1": "CDC <strong>does not require</strong> exchange when the product is in perfect condition and the customer wants to exchange for preference (color, size).",
+    "p_physical_2": "In these cases, the exchange is a <strong>commercial policy</strong> of the company, a courtesy, not a legal right.",
+    "quiz1": {
+        "question": "A customer bought a shirt at the Physical Store, tried it in the fitting room and took it. Two days later, returns wanting to exchange because his wife said the color doesn't suit him. The product is perfect with tag. Is the store legally obligated to exchange?",
+        "opt_a": "A) Yes, CDC guarantees 7 days for exchange for any reason.",
+        "opt_b": "B) No, but can exchange as a courtesy (commercial policy) to build customer loyalty.",
+        "opt_c": "C) Yes, but only if the customer pays a 10% fee.",
+        "opt_d": "D) No, and the store is prohibited from accepting the exchange to avoid loss.",
+        "feedback": "<strong>Correct Answer!</strong> It's a commercial policy (courtesy), not law for physical stores."
+    },
+    "h3_online": "Exchange of products without defect – Online Store",
+    "p_online_1": "For online purchases, CDC guarantees the <strong>Right of Withdrawal</strong>.",
+    "p_online_2": "The customer can cancel the purchase within <strong>7 calendar days</strong> after receipt. Important: This does NOT apply to purchases at physical stores!",
+    "accordion_online": {
+        "cond_title": "📦 Conditions for online return",
+        "cond_intro": "To exercise the Right of Withdrawal, the product must be:",
+        "cond_l1": "<strong>Unused</strong> - cannot have been used",
+        "cond_l2": "<strong>Original packaging</strong> - with all accessories and manuals",
+        "cond_l3": "<strong>No signs of misuse</strong> - in perfect condition",
+        "perec_title": "🥩 Perishables: special 24-hour deadline",
+        "perec_text": "<strong>⚠️ Attention:</strong> For perishable products with short expiration (meats, produce, breads, deli, dairy), exchange must occur within <strong>24 hours</strong> of delivery.",
+        "perec_reason": "This ensures food safety for both customer and company."
+    },
+    "quiz2": {
+        "question": "John bought a coffee maker online. Upon receiving it, he saw it's too big for his kitchen, although it works perfectly. He calls on day 5 wanting to return it. What do you inform?",
+        "opt_a": "A) 'Sir, since there's no defect, we cannot accept the return.'",
+        "opt_b": "B) 'You can exercise your Right of Withdrawal and return the product, receiving full refund, as you're within the 7-day period.'",
+        "opt_c": "C) 'We can exchange, but you pay return shipping.'",
+        "opt_d": "D) 'You should try to sell to an acquaintance, as the sale was finalized.'",
+        "feedback": "<strong>Correct Answer!</strong> Online purchases have withdrawal guarantee (7 days), regardless of defect."
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Qu'est-ce que le CDC?",
+    "intro_p1": "Le <strong>⚖️ Code de Défense du Consommateur (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Loi nº 8.078, du 11 septembre 1990'>Loi nº 8.078/90</span>, a été créé pour protéger les consommateurs et garantir des relations de consommation justes et équilibrées.",
+    "intro_p2": "Il établit des droits, des devoirs, des délais, des normes de conduite et des pénalités pour les fournisseurs et les prestataires de services.",
+    "sabia_title": "Le Saviez-vous?",
+    "sabia_text": "Le CDC brésilien est considéré comme l'un des plus complets au monde!",
+    "btn_saiba_mais": "En savoir plus",
+    "modal": {
+        "title": "📚 Curiosités sur le CDC",
+        "text": "Le Code de Défense du Consommateur brésilien a été promulgué en <strong>1990</strong> et sert de modèle pour les législations d'autres pays.",
+        "l1": "Il est considéré comme l'un des plus avancés au monde",
+        "l2": "Protège le consommateur à toutes les étapes de la relation de consommation",
+        "l3": "Prévoit l'inversion de la charge de la preuve en faveur du consommateur",
+        "l4": "Établit la responsabilité objective du fournisseur",
+        "link_cdc_pdf": "📄 CDC Intégrale (PDF)"
+    }
+}

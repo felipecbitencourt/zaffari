@@ -1,0 +1,115 @@
+{
+    "title": "🎭 Roleplay - Simulación de Atención",
+    "lead": "¡Practica tus habilidades de atención! Tú eres el asistente SAC y debes elegir las mejores respuestas.",
+    "back_btn": "← Volver al Menú de Extras",
+    "ui": {
+        "continue_btn": "Continuar →",
+        "try_again_btn": "Intentar Nuevamente",
+        "loading": "Cargando..."
+    },
+    "completion": {
+        "title": "¡Felicitaciones!",
+        "message": "¡Has completado la simulación de atención!",
+        "restart_btn": "🔄 Jugar Nuevamente",
+        "correct_count": "Acertaste {correct} de {total} respuestas"
+    },
+    "results": {
+        "perfect": "¡Perfecto! ¡Demostraste excelente conocimiento!",
+        "good": "¡Muy bien! ¡Estás en el camino correcto!",
+        "average": "Bien, pero puedes mejorar. ¡Revisa el contenido!",
+        "needs_work": "Necesitas estudiar más. ¡Revisa los módulos del curso!"
+    },
+    "scenario": {
+        "title": "Cambio de Producto",
+        "steps": [
+            {
+                "id": 1,
+                "name": "Presentación",
+                "client_speech": "¡Hola, buenas tardes! Compré esta licuadora aquí ayer y me gustaría cambiarla por otro modelo.",
+                "options": [
+                    {
+                        "text": "¡Buenas tardes! Claro, puedo ayudarle con eso. ¿El producto presenta algún defecto o problema?",
+                        "correct": true,
+                        "feedback": "¡Excelente! Saludaste al cliente de forma cordial y ya hiciste una pregunta importante para entender la situación."
+                    },
+                    {
+                        "text": "Lamentablemente no es posible cambiar productos que ya fueron comprados y llevados a casa.",
+                        "correct": false,
+                        "feedback": "Esta respuesta es muy negativa y no acoge al cliente. Siempre debemos primero entender la situación antes de negar algo."
+                    },
+                    {
+                        "text": "Puede dejar el producto ahí en el mostrador que después alguien lo verifica para usted.",
+                        "correct": false,
+                        "feedback": "Esta respuesta es demasiado informal y no demuestra interés en ayudar al cliente. La atención debe ser siempre cordial y profesional."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Cuestión del Cliente",
+                "client_speech": "No, no está con defecto. Es que vi otro modelo que me agradó más. Vi en internet que tengo derecho de cambiar en 7 días, ¿no es así?",
+                "options": [
+                    {
+                        "text": "¡Sí, con seguridad! Usted tiene ese derecho garantizado por ley. Vamos a hacer el cambio ahora mismo.",
+                        "correct": false,
+                        "feedback": "¡Cuidado! El derecho de arrepentimiento de 7 días solo vale para compras ONLINE. En tienda física, el cambio es política comercial, no derecho legal."
+                    },
+                    {
+                        "text": "El derecho de 7 días vale para compras online. En tienda física es cortesía. ¡Puedo verificar nuestra política!",
+                        "correct": true,
+                        "feedback": "¡Perfecto! Explicaste correctamente la diferencia entre el derecho legal (compras online) y la política comercial (tienda física), sin negar ayuda al cliente."
+                    },
+                    {
+                        "text": "Esa regla de los 7 días es solo para compras online, entonces aquí no se aplica. Lo siento mucho.",
+                        "correct": false,
+                        "feedback": "Aunque la información sobre el online esté correcta, la respuesta es muy negativa. Siempre debemos buscar alternativas para ayudar al cliente."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Duda Adicional",
+                "client_speech": "Ah entendí... ¿entonces ustedes no van a cambiar? Y si el producto tiene defecto después, ¿puedo reclamar?",
+                "options": [
+                    {
+                        "text": "¡Puede sí! Para defectos usted tiene 90 días. ¡Y nuestra política permite cambio en 30 días con nota fiscal!",
+                        "correct": true,
+                        "feedback": "¡Excelente! Informaste correctamente el plazo de 90 días para reclamar de defectos en productos durables Y además ofreciste la posibilidad de cambio por la política de la empresa."
+                    },
+                    {
+                        "text": "Para defectos usted puede reclamar sí, pero el plazo es de apenas 7 días tras la compra.",
+                        "correct": false,
+                        "feedback": "¡Incorrecto! El plazo para reclamar de defectos en productos durables es de 90 DÍAS, no 7 días."
+                    },
+                    {
+                        "text": "Si el producto no presenta defecto ahora, después no tenemos cómo hacer nada, lamentablemente.",
+                        "correct": false,
+                        "feedback": "¡Incorrecto! Vicios ocultos (defectos que aparecen después) pueden ser reclamados en hasta 90 días para productos durables."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Cierre",
+                "client_speech": "¡Qué bueno! ¿Entonces puedo cambiar por el otro modelo? El producto aún está sellado y tengo la nota fiscal.",
+                "options": [
+                    {
+                        "text": "No puedo hacer el cambio porque, como expliqué, no es una obligación legal de la tienda.",
+                        "correct": false,
+                        "feedback": "Respuesta inadecuada. El cliente cumple los requisitos de la política comercial (producto sellado + nota fiscal)."
+                    },
+                    {
+                        "text": "¡Con producto sellado y nota fiscal, puedo hacer el cambio sí! ¿Qué modelo prefiere?",
+                        "correct": true,
+                        "feedback": "¡Felicitaciones! Finalizaste la atención de forma positiva, confirmando que el cliente cumple los requisitos y prosiguiendo con el cambio."
+                    },
+                    {
+                        "text": "Necesito llamar a mi gerente para autorizar este tipo de procedimiento de cambio aquí.",
+                        "correct": false,
+                        "feedback": "Innecesario en este caso. Como el cliente cumple los requisitos de la política (sellado + nota), puedes resolver sin necesidad de escalar."
+                    }
+                ]
+            }
+        ]
+    }
+}

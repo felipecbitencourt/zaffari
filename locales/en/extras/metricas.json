@@ -1,0 +1,24 @@
+{
+    "title": "📊 Metrics Tracking",
+    "disclaimer": "⚠️ <strong>Important:</strong> This data is only for your personal tracking and self-awareness. It <strong>does not impact</strong> your approval or final course grade.",
+    "time": {
+        "title": "Study Time",
+        "desc": "Total time dedicated to the course"
+    },
+    "progress": {
+        "title": "Overall Progress",
+        "modules": "Modules:",
+        "modules_completed": "completed",
+        "pages": "Pages:",
+        "pages_viewed": "viewed"
+    },
+    "quiz_stats": {
+        "title": "Quiz Performance",
+        "answered": "Answered",
+        "correct": "Correct",
+        "average": "Average Score",
+        "msg_keep_practicing": "Keep practicing to improve your results!",
+        "msg_great_job": "Excellent performance! Keep it up!",
+        "msg_perfect": "Perfect! You've mastered the content!"
+    }
+}

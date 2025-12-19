@@ -1,0 +1,39 @@
+{
+    "title": "Comment acheminer les réclamations?",
+    "intro": "Chaque type de produit nécessite une procédure de réclamation spécifique. Cliquez sur chaque catégorie pour voir les détails:",
+    "accordion": {
+        "food_title": "🍎 Produits Alimentaires",
+        "food_intro": "L'échange a lieu uniquement lorsque le produit est <strong>impropre à la consommation</strong>.",
+        "food_l1": "Le client doit apporter le produit + le ticket au magasin",
+        "food_l2": "Évaluation de la direction",
+        "food_l3": "Le remplissage correct de <strong>Motif, Marque et Lot</strong> est essentiel",
+        "nonfood_title": "📦 Produits Non Alimentaires",
+        "nonfood_intro": "Doivent être enregistrés avec toutes les informations sur le défaut.",
+        "nonfood_box": "Le client apporte le produit + le ticket au magasin (sauf Électro → Assistance Technique).",
+        "wrong_title": "❌ Achat Erroné",
+        "wrong_intro": "Si le client a acheté le produit dans la mauvaise taille, couleur ou tension:",
+        "wrong_path_title": "Chemin dans le Système",
+        "wrong_path": "<strong>INFORMATION → ACHATS → ÉCHANGE DE MARCHANDISES</strong>",
+        "wrong_l1": "<strong>Non périssables:</strong> l'article ne peut pas être violé",
+        "wrong_l2": "<strong>Périssables:</strong> nous n'échangeons pas (risque de température)",
+        "wrong_attention": "⚠️ Les périssables une fois sortis du magasin ne peuvent pas être reconditionnés pour des raisons de sécurité alimentaire.",
+        "notdone_title": "⚠️ Échange non réalisé en magasin",
+        "notdone_intro": "Si le client signale qu'il est allé au magasin et que l'échange n'a pas été conclu:",
+        "notdone_path_title": "Chemin dans le Système",
+        "notdone_path": "<strong>RÉCLAMATION → ÉCHANGE DE MARCHANDISES</strong>",
+        "notdone_l1": "Vérifiez s'il existe un enregistrement antérieur avec la position de la direction",
+        "notdone_l2": "S'il n'y en a pas, informez que le cas sera transmis pour vérification",
+        "notdone_l3": "S'il y a une position de la direction refusant l'échange, maintenez l'orientation de l'entreprise et clôturez"
+    },
+    "quiz": {
+        "question": "Un client appelle en disant qu'il a acheté une robe à la mauvaise taille et veut l'échanger. Elle est scellée et avec l'étiquette. Où enregistrez-vous et que conseillez-vous?",
+        "opt_a": "A) J'enregistre dans RÉCLAMATION > ÉCHANGE et j'oriente d'aller au magasin.",
+        "feedback_wrong_a": "RÉCLAMATION est pour quand il y a un problème avec le produit ou le service. L'échange pour mauvaise taille est INFORMATION.",
+        "opt_b": "B) J'enregistre dans INFORMATION > ACHATS > ÉCHANGE DE MARCHANDISES et j'oriente d'aller au magasin avec le produit + la facture.",
+        "opt_c": "C) J'informe que comme il n'y a pas de défaut, il n'y a pas de possibilité d'échange.",
+        "feedback_wrong_c": "Le CDC n'oblige pas l'échange par préférence en magasin physique, mais l'entreprise peut le faire par courtoisie. Nous ne devons pas dire qu'il n'y a pas de possibilité.",
+        "opt_d": "D) J'informe du droit de rétractation de 7 jours et je traite le retour.",
+        "feedback_wrong_d": "Le Droit de Rétractation (7 jours) ne s'applique qu'aux achats EN LIGNE. Le magasin physique a une politique commerciale différente.",
+        "feedback": "<strong>Réponse Correcte!</strong> L'échange pour achat erroné va dans INFORMATION > ACHATS > ÉCHANGE DE MARCHANDISES."
+    }
+}

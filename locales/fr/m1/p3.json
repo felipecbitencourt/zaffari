@@ -1,0 +1,65 @@
+{
+    "title": "Quelles sont nos responsabilités?",
+    "intro_list": "Parmi les principales responsabilités du Service Client, on distingue:",
+    "intro_p": "",
+    "img_alt": "Équipe de centre d'appels travaillant dans un environnement moderne",
+    "cards": {
+        "c1": {
+            "title": "Service Multicanal",
+            "text": "Offrir un service d'excellence via différents canaux: téléphone, e-mail, chat et moyens électroniques."
+        },
+        "c2": {
+            "title": "Service Entrant (Réceptif)",
+            "text": "Fournir des informations, recevoir des réclamations, suggestions et compliments, gérer les objections et offrir des solutions de premier niveau chaque fois que possible."
+        },
+        "c3": {
+            "title": "Contacts Sortants (Actifs)",
+            "text": "Réaliser des contacts actifs avec les clients, notamment dans le cadre de campagnes promotionnelles et d'actions marketing liées aux Cartes du Groupe. Cela inclut l'activation de cartes, la mise à jour des données, la communication de promotions et la récupération de résiliations."
+        },
+        "c4": {
+            "title": "Organisation et Reporting",
+            "text": "Organiser et tabuler les données, élaborer des rapports et soutenir les demandes de l'équipe de soutien et de la Coordination."
+        }
+    },
+    "proatividade": "Les professionnels du Service Client agissent également de manière proactive, en identifiant des améliorations dans les scripts et les normes de service, basées sur l'observation quotidienne et l'analyse des opportunités. Ces contributions sont essentielles pour l'évolution constante du service fourni et pour le maintien de l'excellence dans la relation client.",
+    "active_title": "📢 Contacts Sortants",
+    "active_text": "Réaliser des interactions actives, notamment dans les campagnes promotionnelles et les actions liées aux Cartes du Groupe:",
+    "timeline": {
+        "t1": {
+            "title": "1. Activation de cartes",
+            "text": "Contacter les clients pour activer les nouvelles cartes émises."
+        },
+        "t2": {
+            "title": "2. Mise à jour des données",
+            "text": "Maintenir les données des clients toujours à jour."
+        },
+        "t3": {
+            "title": "3. Communication de promotions",
+            "text": "Informer sur les offres exclusives et les avantages."
+        },
+        "t4": {
+            "title": "4. Récupération de résiliations",
+            "text": "Travailler pour retenir les clients qui souhaitent annuler des services."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Gestion et Amélioration Continue",
+            "l1": "Organiser et tabuler les données, élaborer des rapports et soutenir les demandes de l'équipe.",
+            "l2": "Agir de manière proactive dans l'identification d'améliorations des scripts et des normes de service.",
+            "l3": "Contribuer à l'évolution continue du service fourni."
+        },
+        "a2": {
+            "title": "🎓 Développement professionnel",
+            "text": "La connaissance des responsabilités vous permet d'agir avec plus de sécurité et d'assertivité, contribuant à votre évolution de carrière."
+        }
+    },
+    "quiz": {
+        "question": "Vous remarquez que plusieurs clients appellent avec la même question sur une nouvelle promotion. Quelle est la meilleure attitude alignée sur les responsabilités d'amélioration continue du Service Client?",
+        "opt_a": "A) Continuer à répondre à chacun individuellement sans signaler le fait.",
+        "opt_b": "B) Se plaindre aux collègues que les clients ne savent pas lire le règlement.",
+        "opt_c": "C) Signaler le modèle observé au superviseur afin que la communication de la promotion soit ajustée.",
+        "opt_d": "D) Dire au client de chercher l'information sur le site.",
+        "feedback": "<strong>Réponse Correcte!</strong> La proactivité dans l'identification des tendances aide à améliorer le processus pour tous."
+    }
+}

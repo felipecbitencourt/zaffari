@@ -1,0 +1,32 @@
+{
+  "title": "Onde consultar dados das lojas?",
+  "lead": "Todas as informações essenciais estão disponíveis na <strong>Intranet</strong> da empresa.",
+  "intro_p": "Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.",
+  "highlight_title": "Passo a Passo",
+  "highlight_text": "Intranet → Filiais → Dados cadastrais e horários",
+  "slider_title": "📍 Como consultar na Intranet:",
+  "slider_steps": {
+    "s1": {
+      "title": "Passo 1: Acessar a Intranet",
+      "text": "Acesse a página interna da empresa (Intranet)."
+    },
+    "s2": {
+      "title": "Passo 2: Navegar até Filiais",
+      "text": "Clique na opção <strong>'Filiais'</strong>."
+    },
+    "s3": {
+      "title": "Passo 3: Dados Cadastrais",
+      "text": "Em seguida, clique em <strong>'Dados cadastrais e horários'</strong>."
+    },
+    "s4": {
+      "title": "Passo 4: Consultar e Informar",
+      "text": "Agora você pode consultar informações de todas as unidades do grupo, incluindo: Endereço, Horário de funcionamento e Formas de contato para orientar o cliente!"
+    }
+  },
+  "list_intro": "O que você consegue consultar:",
+  "list_items": {
+    "l1": "Endereço das lojas",
+    "l2": "Horários de funcionamento",
+    "l3": "Formas de contato"
+  }
+}

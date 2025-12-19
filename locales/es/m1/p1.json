@@ -1,0 +1,52 @@
+{
+    "title": "¿Qué espera el cliente?",
+    "lead": "Bienvenido al entrenamiento <strong>⚙️ Dentro del SAC</strong>.",
+    "intro": "Este curso fue desarrollado especialmente para el equipo del Servicio de Atención al Cliente, con el objetivo de fortalecer conocimientos, alinear prácticas y mejorar continuamente la calidad de la atención ofrecida a los clientes en el día a día.",
+    "img_alt": "Joven consultora sonriendo hablando por el auricular",
+    "sabia": {
+        "title": "¿Sabías que?",
+        "text": "¡Estudios muestran que <strong>86% de los consumidores</strong> están dispuestos a pagar más por una mejor experiencia de atención!",
+        "source": "📄 Fuente: RightNow Customer Experience Impact Report (Oracle, 2012)"
+    },
+    "learning_path": "A lo largo del curso, comprenderás mejor:",
+    "cards": {
+        "c1": {
+            "title": "Cómo funciona el SAC",
+            "text": "Entiende la estructura, los canales de atención y el flujo de trabajo del equipo."
+        },
+        "c2": {
+            "title": "Responsabilidades estratégicas",
+            "text": "Conoce el papel fundamental que desempeñas en la satisfacción del cliente y en la imagen de la marca."
+        },
+        "c3": {
+            "title": "Impacto en el cliente",
+            "text": "Descubre por qué cada atención realizada tiene impacto directo en la experiencia del cliente."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "¿Qué aprenderás en este módulo?",
+            "l1": "El papel estratégico del SAC dentro de la empresa",
+            "l2": "Principales responsabilidades del equipo",
+            "l3": "Importancia de los plazos de atención",
+            "l4": "Cómo cada interacción afecta la percepción de la marca"
+        },
+        "a2": {
+            "title": "¿Por qué este entrenamiento es importante?",
+            "text": "Una atención de excelencia no solo resuelve demandas: <strong>construye confianza</strong>, fortalece vínculos y contribuye directamente a la fidelización de los clientes."
+        }
+    },
+    "reflexao": {
+        "title": "Para y Piensa",
+        "text": "Antes de avanzar, reflexiona: <strong>Cuando un cliente entra en contacto con el SAC, ¿qué crees que espera encontrar más allá de la solución del problema?</strong>"
+    },
+    "reveal": {
+        "btn": "👁️ Ver posibles respuestas",
+        "title": "El cliente generalmente espera:",
+        "l1": "Ser escuchado con atención y empatía",
+        "l2": "Recibir una atención ágil y eficiente",
+        "l3": "Sentir que la empresa se preocupa por él",
+        "l4": "Tener claridad sobre los próximos pasos",
+        "l5": "Salir satisfecho, incluso cuando la respuesta no sea la ideal"
+    }
+}

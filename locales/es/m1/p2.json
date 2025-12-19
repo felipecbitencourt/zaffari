@@ -1,0 +1,25 @@
+{
+    "title": "¿Cuál es el papel del SAC?",
+    "img_alt": "Joven consultora sonriendo hablando por el auricular",
+    "text1": "El <strong>Servicio de Atención al Cliente</strong> es responsable de gestionar los canales de relación con los clientes, incluyendo atenciones electrónicas y telefónicas.",
+    "text2": "Más que un sector operativo, el SAC es un <strong>área estratégica</strong>, esencial para el mantenimiento de los valores, la reputación y la credibilidad de las marcas del Grupo.",
+    "card_text": "Una atención humanizada, eficiente y de alta calidad no solo resuelve demandas: construye confianza, fortalece vínculos y contribuye directamente a la fidelización de los clientes.",
+    "text3": "Además del público externo, el SAC también desempeña un papel fundamental en el <strong>soporte a los colaboradores de la empresa</strong>, aclarando dudas sobre procesos, sistemas y estándares de atención. Esta actuación contribuye a la <strong>estandarización, organización y excelencia</strong> del servicio prestado.",
+    "box_attention": {
+        "title": "Curiosidad",
+        "text": "Estudios de experiencia del cliente indican que una única interacción negativa puede impactar más la percepción de la marca que varias interacciones positivas. Por eso, <strong>cada contacto cuenta</strong>.",
+        "source": "🔗 Fuente: BusinessWire - 65% of Consumers Say Negative Interactions..."
+    },
+    "text4": "El SAC va mucho más allá de atender llamadas. Representa <strong>la voz de la empresa</strong> en el contacto directo con el cliente. Cada atención influye en la forma en que el consumidor percibe la marca y evalúa su experiencia.",
+    "quiz": {
+        "question": "Un cliente entra en contacto frustrado porque su problema aún no fue resuelto. ¿Cómo un operador de SAC con visión estratégica debe encarar esta atención?",
+        "opt_a": "A) Como una molestia que debe ser cerrada lo más rápido posible.",
+        "feedback_wrong_a": "Cerrar rápidamente ignora la oportunidad de transformar frustración en fidelización. Un cliente insatisfecho bien atendido puede convertirse en el mayor promotor de la marca.",
+        "opt_b": "B) Como una oportunidad de revertir una experiencia negativa y fortalecer la confianza en la marca.",
+        "opt_c": "C) Como una falla de otro sector que no es su responsabilidad.",
+        "feedback_wrong_c": "Transferir responsabilidad no resuelve el problema del cliente. El SAC representa a toda la empresa y debe buscar soluciones, independientemente de dónde surgió el problema.",
+        "opt_d": "D) Solo siguiendo el guion estándar sin demostrar empatía.",
+        "feedback_wrong_d": "Seguir guiones sin empatía deshumaniza la atención. El cliente percibe cuando no está siendo genuinamente escuchado, lo que empeora su experiencia.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> La visión estratégica transforma crisis en oportunidades de fidelización."
+    }
+}

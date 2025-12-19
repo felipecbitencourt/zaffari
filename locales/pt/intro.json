@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "welcome": "Boas-Vindas!",
+    "title": "Por Dentro do SAC",
+    "subtitle": "Capacite-se para oferecer um <strong>Serviço de Atendimento ao Cliente</strong> de excelência e transformar cada interação em uma experiência positiva.",
+    "badge": "✨ Treinamento Oficial",
+    "img_alt": "Operador de call center confiante conversando com cliente"
+  },
+  "stats": {
+    "modules": "Módulos",
+    "activities": "Atividades",
+    "certification": "Certificação"
+  },
+  "journey": {
+    "title": "Jornada de Aprendizado",
+    "m1": {
+      "title": "Papel Estratégico",
+      "desc": "Entenda como o SAC influencia a reputação da marca e suas responsabilidades.",
+      "tag": "Conceitos"
+    },
+    "m2": {
+      "title": "Ferramentas e Processos",
+      "desc": "Domine a intranet, encartes e canais para respostas rápidas e precisas.",
+      "tag": "Prático"
+    },
+    "m3": {
+      "title": "Legislação e Reclamações",
+      "desc": "Aplique o CDC no dia a dia e reduza reclamações com conhecimento.",
+      "tag": "Legal"
+    }
+  },
+  "fixation": {
+    "title": "Fixação",
+    "quiz": {
+      "title": "Questionários",
+      "desc": "Teste seus conhecimentos com quiz de todos os módulos.",
+      "tag": "Avaliação"
+    },
+    "resume": {
+      "title": "Resumos",
+      "desc": "Revise os principais conceitos e pontos-chave do curso.",
+      "tag": "Revisão"
+    },
+    "activities": {
+      "title": "Atividades",
+      "desc": "Exercícios interativos, flashcards e simulações práticas.",
+      "tag": "Prática"
+    }
+  },
+  "cta": {
+    "title": "Primeira vez aqui?",
+    "desc": "Descubra os recursos de acessibilidade e aprenda a navegar pela plataforma.",
+    "btn": "▶ Iniciar Tutorial"
+  },
+  "start_msg": "Por favor, clique em <strong>\"Iniciar Tutorial\"</strong> antes de dar continuidade."
+}

@@ -1,0 +1,38 @@
+{
+    "title": "📝 ¿Qué aprendimos en el Módulo 2?",
+    "lead": "¡Excelente! Has concluido el módulo sobre consulta de información. Revisa las principales cuestiones abordadas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Por qué necesitamos saber donde buscar información?",
+            "text": "<strong>✅ Respuesta:</strong> Saber dónde encontrar información demuestra al cliente:",
+            "l1": "<strong>Seguridad</strong> - transmitir confianza",
+            "l2": "<strong>Agilidad</strong> - resolver rápidamente",
+            "l3": "<strong>Cuidado</strong> - mostrar que nos importa"
+        },
+        "a2": {
+            "title": "❓ ¿Dónde consultar datos de las tiendas?",
+            "text": "<strong>✅ Respuesta:</strong> ¡En la <strong>Intranet</strong> de la empresa!",
+            "box_title": "Paso a Paso",
+            "box_text": "Intranet → Sucursales → Datos catastrales y horarios",
+            "footer": "Allí encuentras: dirección de las tiendas, horarios de atención y formas de contacto."
+        },
+        "a3": {
+            "title": "❓ ¿Dónde consultar ofertas y promociones?",
+            "text": "<strong>✅ Respuesta:</strong> Las ofertas pueden ser consultadas en:",
+            "l1": "<strong>Folletos</strong> - materiales promocionales físicos y digitales",
+            "l2": "<strong>Sitio web oficial</strong> de la empresa",
+            "l3": "<strong>WhatsApp de ofertas</strong> - canal directo con el cliente"
+        },
+        "a4": {
+            "title": "❓ ¿Cómo funciona el WhatsApp de ofertas?",
+            "text": "<strong>✅ Respuesta:</strong> Paso a paso para instruir al cliente:",
+            "l1": "<strong>Seleccionar la tienda</strong> de interés",
+            "l2": "<strong>Acceder a la comunidad</strong> por el enlace o código QR",
+            "l3": "<strong>Recibir ofertas</strong> personalizadas en el celular"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusión del Módulo 2",
+        "text": "Ahora sabes <strong>dónde encontrar la información</strong> que el cliente necesita. ¡En el próximo módulo, vamos a aprender <strong>cómo aplicar el CDC (Código de Defensa del Consumidor)</strong> en la atención!"
+    }
+}

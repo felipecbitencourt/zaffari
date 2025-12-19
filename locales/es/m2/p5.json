@@ -1,0 +1,17 @@
+{
+    "title": "Beneficios de la Consulta Correcta",
+    "intro": "Usted vio cómo es simple consultar la Intranet. Pero ¿cuáles son los beneficios reales de esta práctica?",
+    "tip_title": "Consejo de Oro",
+    "tip_text": "Mantenga la Intranet siempre abierta en una pestaña del navegador durante el expediente. ¡Así gana tiempo en cada atención!",
+    "quiz": {
+        "question": "Dominar la consulta de información en la Intranet contribuye a:",
+        "opt_a": "A) Aumentar el tiempo de atención.",
+        "feedback_wrong_a": "La consulta correcta en la Intranet REDUCE el tiempo de atención, pues encuentra la información rápidamente sin necesidad de preguntar a colegas.",
+        "opt_b": "B) Reducir la estandarización de las respuestas.",
+        "feedback_wrong_b": "La Intranet AUMENTA la estandarización, pues todos consultan la misma fuente oficial, garantizando respuestas consistentes.",
+        "opt_c": "C) Garantizar agilidad, asertividad y mejor experiencia para el cliente.",
+        "opt_d": "D) Hacer la atención más informal.",
+        "feedback_wrong_d": "La consulta a fuentes oficiales hace la atención más PROFESIONAL, no informal. Muestra preparación y compromiso.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Cliente feliz es cliente atendido con agilidad y precisión."
+    }
+}

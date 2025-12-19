@@ -1,0 +1,70 @@
+{
+    "title": "🧠 Learning Hub Menu",
+    "lead": "Explore additional resources to reinforce your learning! Complete the modules to unlock materials.",
+    "sections": {
+        "acompanhamento": {
+            "title": "📚 Progress Tracking",
+            "subtitle": "Materials that follow your progress - gradually unlock as you advance."
+        },
+        "especiais": {
+            "title": "⭐ Special",
+            "subtitle": "Exclusive activities unlocked when completing specific modules."
+        },
+        "referencias": {
+            "title": "🔗 References",
+            "subtitle": "Support materials and supplementary documents to deepen your knowledge."
+        }
+    },
+    "cards": {
+        "resumo": {
+            "title": "Course Summary",
+            "desc": "Review the main concepts and key points from all modules in one place."
+        },
+        "flashcard": {
+            "title": "Flash Cards",
+            "desc": "Memorize important concepts with interactive study cards."
+        },
+        "quiz": {
+            "title": "Quizzes",
+            "desc": "Test your knowledge with all course quizzes gathered in one place."
+        },
+        "metrics": {
+            "title": "My Performance",
+            "desc": "Track your progress, study time and activity results."
+        },
+        "drag_drop": {
+            "title": "Drag and Drop",
+            "desc": "Associate concepts and categories by dragging items to the correct places."
+        },
+        "find_error": {
+            "title": "Find the Error",
+            "desc": "Identify errors in customer service situations and learn how to correct them."
+        },
+        "roleplay": {
+            "title": "Roleplay",
+            "desc": "Practice real service situations through interactive simulations."
+        },
+        "ref1": {
+            "title": "Impact of Bad Service",
+            "desc": "Article: 65% of consumers consider switching brands after a negative experience."
+        },
+        "ref2": {
+            "title": "35 Years of CDC",
+            "desc": "News: Consumer Protection Code celebrates 35 years as a reference."
+        },
+        "ref3": {
+            "title": "Consumer Protection Code",
+            "desc": "Full CDC PDF (2013) for reference and download."
+        },
+        "ref4": {
+            "title": "CX Strategy (Oracle)",
+            "desc": "Executive brief on Customer Service execution strategies."
+        }
+    },
+    "lock_msg": "Complete modules to unlock",
+    "lock_msg_m1": "Complete Module 1 to unlock",
+    "lock_msg_m2": "Complete Module 2 to unlock",
+    "lock_msg_m3": "Complete Module 3 to unlock",
+    "tip": "💡 <strong>Tip:</strong> Complete course modules to unlock all materials. Each module grants badges that unlock new resources!",
+    "unlocked_msg": "of 3 modules unlocked"
+}

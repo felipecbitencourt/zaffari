@@ -1,0 +1,35 @@
+{
+    "title": "📋 ¿Por qué el CDC es importante para el SAC?",
+    "intro": "Conocer el CDC trae beneficios directos para su día a día en la atención:",
+    "cards": {
+        "c1": {
+            "title": "Seguridad",
+            "text": "Seguridad en la orientación al cliente, sabiendo exactamente lo que la ley permite o no."
+        },
+        "c2": {
+            "title": "Conformidad",
+            "text": "Respuestas correctas y alineadas a la ley, evitando problemas jurídicos para la empresa."
+        },
+        "c3": {
+            "title": "Eficiencia",
+            "text": "Reducción de retrabajo al resolver cuestiones correctamente en la primera vez."
+        },
+        "c4": {
+            "title": "Credibilidad",
+            "text": "Más profesionalismo, confianza y credibilidad en la atención."
+        }
+    },
+    "attention_title": "Atención",
+    "attention_text": "Conocer el CDC no significa decorar todos los artículos, sino entender los <strong>principios básicos</strong> que guían las relaciones de consumo.",
+    "quiz": {
+        "question": "Un cliente afirma exaltado: '¡El Código de Defensa del Consumidor dice que yo tengo razón siempre! ¡Por eso ustedes están obligados a hacer lo que yo quiero!'. Con base en el equilibrio propuesto por el CDC, ¿cómo interpretas esa habla?",
+        "opt_a": "A) 'El cliente siempre tiene la razón', y el CDC fue creado justamente para garantizar que su voluntad prevalezca en cualquier situación.",
+        "feedback_wrong_a": "El CDC no dice que 'el cliente siempre tiene la razón'. Busca EQUILIBRIO, protegiendo la parte más vulnerable pero estableciendo límites para todos.",
+        "opt_b": "B) El cliente está equivocado. El CDC busca equilibrar la relación, protegiendo la parte más débil (consumidor), pero también estableciendo deberes y límites para evitar abusos.",
+        "opt_c": "C) El cliente está equivocado, pues el CDC es una ley que sirve solo para castigar empresas que cometen crímenes contra la economía popular.",
+        "feedback_wrong_c": "El CDC es mucho más amplio que castigar crímenes. Regula TODA la relación de consumo: publicidad, contratos, garantías, plazos y derechos.",
+        "opt_d": "D) El cliente tiene razón parcial, el CDC garantiza que él tenga razón, pero solo si presenta la nota fiscal original.",
+        "feedback_wrong_d": "La nota fiscal es importante para comprobar la compra, pero el derecho del consumidor no depende solo de ella. El equilibrio del CDC no está condicionado a documentos.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> El objetivo del CDC es la armonía y equilibrio en las relaciones de consumo, no el favor ciego."
+    }
+}

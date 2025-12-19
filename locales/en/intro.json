@@ -1,0 +1,56 @@
+{
+    "hero": {
+        "welcome": "Welcome!",
+        "title": "Inside Customer Service",
+        "subtitle": "Get trained to deliver <strong>excellent Customer Service</strong> and transform every interaction into a positive experience.",
+        "badge": "✨ Official Training",
+        "img_alt": "Confident call center agent talking to customer"
+    },
+    "stats": {
+        "modules": "Modules",
+        "activities": "Activities",
+        "certification": "Certification"
+    },
+    "journey": {
+        "title": "Learning Journey",
+        "m1": {
+            "title": "Strategic Role",
+            "desc": "Understand how Customer Service influences brand reputation and its responsibilities.",
+            "tag": "Concepts"
+        },
+        "m2": {
+            "title": "Tools and Processes",
+            "desc": "Master the intranet, flyers and channels for fast and accurate answers.",
+            "tag": "Practical"
+        },
+        "m3": {
+            "title": "Legislation and Complaints",
+            "desc": "Apply consumer protection laws in daily work and reduce complaints with knowledge.",
+            "tag": "Legal"
+        }
+    },
+    "fixation": {
+        "title": "Learning Hub",
+        "quiz": {
+            "title": "Quizzes",
+            "desc": "Test your knowledge with quizzes from all modules.",
+            "tag": "Assessment"
+        },
+        "resume": {
+            "title": "Summaries",
+            "desc": "Review the main concepts and key points of the course.",
+            "tag": "Review"
+        },
+        "activities": {
+            "title": "Activities",
+            "desc": "Interactive exercises, flashcards and practical simulations.",
+            "tag": "Practice"
+        }
+    },
+    "cta": {
+        "title": "First time here?",
+        "desc": "Discover accessibility features and learn how to navigate the platform.",
+        "btn": "▶ Start Tutorial"
+    },
+    "start_msg": "Please click <strong>\"Start Tutorial\"</strong> before continuing."
+}

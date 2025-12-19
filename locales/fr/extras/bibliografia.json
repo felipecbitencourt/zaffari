@@ -1,0 +1,20 @@
+{
+    "title": "📚 Matériel Bibliographique",
+    "lead": "Références et supports utilisés dans la construction de ce cours.",
+    "back_btn": "← Retour au Menu de Fixation",
+    "sections": {
+        "references": {
+            "title": "📖 Références Principales",
+            "text": "Les références bibliographiques utilisées pour l'élaboration du contenu de cette formation seront ajoutées prochainement."
+        },
+        "documents": {
+            "title": "📋 Documents Internes",
+            "text": "Bientôt."
+        },
+        "links": {
+            "title": "🔗 Liens Utiles",
+            "text": "Bientôt."
+        }
+    },
+    "note": "Ce matériel est complémentaire au cours et sert de référence pour des consultations ultérieures."
+}

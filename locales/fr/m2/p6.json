@@ -1,0 +1,38 @@
+{
+    "title": "📝 Qu'avons-nous appris dans le Module 2?",
+    "lead": "Excellent! Vous avez terminé le module sur la consultation d'informations. Révisez les principales questions abordées.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Pourquoi avons-nous besoin de savoir où chercher des informations?",
+            "text": "<strong>✅ Réponse:</strong> Savoir où trouver des informations démontre au client:",
+            "l1": "<strong>Sécurité</strong> - transmettre la confiance",
+            "l2": "<strong>Agilité</strong> - résoudre rapidement",
+            "l3": "<strong>Soin</strong> - montrer que nous nous soucions"
+        },
+        "a2": {
+            "title": "❓ Où consulter les données des magasins?",
+            "text": "<strong>✅ Réponse:</strong> Sur l'<strong>Intranet</strong> de l'entreprise!",
+            "box_title": "Pas à Pas",
+            "box_text": "Intranet → Filiales → Données cadastrales et horaires",
+            "footer": "Vous y trouverez: adresse des magasins, heures d'ouverture et moyens de contact."
+        },
+        "a3": {
+            "title": "❓ Où consulter les offres et promotions?",
+            "text": "<strong>✅ Réponse:</strong> Les offres peuvent être consultées dans:",
+            "l1": "<strong>Prospectus</strong> - matériels promotionnels physiques et numériques",
+            "l2": "<strong>Site officiel</strong> de l'entreprise",
+            "l3": "<strong>WhatsApp des offres</strong> - canal direct avec le client"
+        },
+        "a4": {
+            "title": "❓ Comment fonctionne le WhatsApp des offres?",
+            "text": "<strong>✅ Réponse:</strong> Pas à pas pour instruire le client:",
+            "l1": "<strong>Sélectionner le magasin</strong> d'intérêt",
+            "l2": "<strong>Accéder à la communauté</strong> via le lien ou QR Code",
+            "l3": "<strong>Recevoir des offres</strong> personnalisées sur le portable"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusion du Module 2",
+        "text": "Maintenant vous savez <strong>où trouver les informations</strong> dont le client a besoin. Dans le prochain module, nous apprendrons <strong>comment appliquer le CDC (Code de Défense du Consommateur)</strong> dans le service!"
+    }
+}

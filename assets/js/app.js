@@ -30,6 +30,7 @@ const App = {
 
         // 1. Initialize I18n
         await I18n.init();
+        this.currentLang = I18n.currentLang;
 
         // 2. Initialize SCORM
         scorm.init();
@@ -135,6 +136,9 @@ const App = {
                 // Inject
                 contentArea.innerHTML = html;
 
+                // Carregar traduções modulares para esta página (se disponível)
+                await this.loadPageTranslations(pageData);
+
                 // Traduzir a página carregada
                 I18n.translatePage();
 
@@ -196,10 +200,79 @@ const App = {
      */
     showFeedback: function (message, type = 'info') {
         FeedbackManager.show(message, type);
+    },
+
+    /**
+     * Carrega traduções modulares para uma página específica
+     * Mapeamento: pageId -> caminho do JSON modular
+     * @param {object} pageData - Dados da página (id, moduleId, etc)
+     */
+    loadPageTranslations: async function (pageData) {
+        const lang = I18n.currentLang;
+        const pageId = pageData.id;
+
+        // Mapeamento de pageId para arquivo JSON modular e mountPoint
+        const translationMap = {
+            // Intro
+            'intro': { path: 'intro.json', mount: 'intro' },
+            'intro-p1': { path: 'intro.json', mount: 'intro' },
+
+            // Módulo 1
+            'm1-abertura': { path: 'm1/abertura.json', mount: 'm1.abertura' },
+            'm1-p1': { path: 'm1/p1.json', mount: 'm1.p1' },
+            'm1-p2': { path: 'm1/p2.json', mount: 'm1.p2' },
+            'm1-p3': { path: 'm1/p3.json', mount: 'm1.p3' },
+            'm1-p4': { path: 'm1/p4.json', mount: 'm1.p4' },
+            'm1-p5': { path: 'm1/p6.json', mount: 'm1.p6' },
+            'm1-p6': { path: 'm1/p6.json', mount: 'm1.p6' },
+            'm1-conquistas': { path: 'm1/conquistas.json', mount: 'm1.conquistas' },
+
+            // Módulo 2
+            'm2-abertura': { path: 'm2/abertura.json', mount: 'm2.abertura' },
+            'm2-p1': { path: 'm2/p1.json', mount: 'm2.p1' },
+            'm2-p2': { path: 'm2/p2.json', mount: 'm2.p2' },
+            'm2-p3': { path: 'm2/p3.json', mount: 'm2.p3' },
+            'm2-p4': { path: 'm2/p4.json', mount: 'm2.p4' },
+            'm2-p5': { path: 'm2/p5.json', mount: 'm2.p5' },
+            'm2-p6': { path: 'm2/p6.json', mount: 'm2.p6' },
+            'm2-conquistas': { path: 'm2/conquistas.json', mount: 'm2.conquistas' },
+
+            // Módulo 3
+            'm3-abertura': { path: 'm3/abertura.json', mount: 'm3.abertura' },
+            'm3-p1': { path: 'm3/p1.json', mount: 'm3.p1' },
+            'm3-p2': { path: 'm3/p2.json', mount: 'm3.p2' },
+            'm3-p3': { path: 'm3/p3.json', mount: 'm3.p3' },
+            'm3-p4': { path: 'm3/p4.json', mount: 'm3.p4' },
+            'm3-p5': { path: 'm3/p5.json', mount: 'm3.p5' },
+            'm3-p6': { path: 'm3/p6.json', mount: 'm3.p6' },
+            'm3-p7': { path: 'm3/p7.json', mount: 'm3.p7' },
+            'm3-p8': { path: 'm3/p8.json', mount: 'm3.p8' },
+            'm3-conquistas': { path: 'm3/conquistas.json', mount: 'm3.conquistas' },
+
+            // Extras
+            'extras-hub': { path: 'extras/hub.json', mount: 'extras.hub' },
+            'extras-resumo': { path: 'extras/resumo.json', mount: 'extras.resumo' },
+            'extras-flashcards': { path: 'extras/flashcards.json', mount: 'extras.flashcards' },
+            'extras-questionarios': { path: 'extras/quiz.json', mount: 'extras.quiz' },
+            'extras-metricas': { path: 'extras/metricas.json', mount: 'extras.metrics' },
+            'extras-arraste': { path: 'extras/arraste.json', mount: 'extras.arraste' },
+            'extras-ache-erro': { path: 'extras/ache-erro.json', mount: 'extras.ache-erro' },
+            'extras-roleplay': { path: 'extras/roleplay.json', mount: 'extras.roleplay' }
+        };
+
+        // Carregar global.json sempre (se ainda não carregado)
+        await I18n.loadPageTranslation(lang, 'global.json', 'global');
+
+        // Carregar tradução específica da página
+        const mapping = translationMap[pageId];
+        if (mapping) {
+            await I18n.loadPageTranslation(lang, mapping.path, mapping.mount);
+        }
     }
 };
 
-// Start
+// Expor para o escopo global
+window.App = App;
 window.onload = function () {
     App.init();
 };

@@ -1,0 +1,28 @@
+{
+    "title": "¿Dónde consultar ofertas?",
+    "intro": "El SAC también orienta a los clientes sobre ofertas y promociones. Utilice los <strong>folletos</strong> y el <strong>sitio web oficial</strong> de la empresa para obtener datos esenciales.",
+    "accordion": {
+        "a1": {
+            "title": "📰 Folletos y Sitio Oficial",
+            "text": "Consulte los folletos actualizados para informar sobre ofertas vigentes. El sitio web oficial también posee una sección de promociones constantemente actualizada.",
+            "l1": "<strong>Folletos:</strong> disponibles en la tienda y en la Intranet",
+            "l2": "<strong>Sitio web:</strong> sección de ofertas y promociones"
+        },
+        "a2": {
+            "title": "📱 WhatsApp de Ofertas",
+            "text": "Una forma práctica de comunicación es el WhatsApp de ofertas. A través de él, el cliente recibe promociones directamente en el celular, de forma personalizada.",
+            "step": "<strong>Paso a paso:</strong> Seleccionar la tienda → Acceder a la comunidad por el enlace o código QR → Recibir ofertas"
+        }
+    },
+    "quiz": {
+        "question": "Doña María está en línea y dice que 'mi vecina recibe ofertas de Zaffari en el celular y yo no'. ¿Cómo debe orientarla para adherirse al servicio de forma segura y oficial?",
+        "opt_a": "A) 'Doña María, por favor páseme su número que yo la registro ahora mismo en el sistema.'",
+        "feedback_wrong_a": "Nunca debemos solicitar datos personales del cliente para registrar directamente. El proceso de adhesión debe ser hecho por el propio cliente, de forma segura.",
+        "opt_b": "B) 'La señora debe seleccionar su tienda de preferencia y acceder a la comunidad a través del enlace oficial o código QR.'",
+        "opt_c": "C) 'Pídale a su vecina que la agregue a su grupo, es más fácil.'",
+        "feedback_wrong_c": "Orientar al cliente a entrar en grupos no oficiales es inseguro. Puede exponer a la cliente a estafas e información falsa. Siempre dirija a canales oficiales.",
+        "opt_d": "D) 'Ese servicio fue suspendido temporalmente, acompañe solo por el sitio web.'",
+        "feedback_wrong_d": "Dar información incorrecta es grave. El servicio está funcionando normalmente. Siempre verifique antes de informar al cliente sobre disponibilidad de servicios.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> El cliente debe entrar activamente vía Enlace o Código QR de la tienda específica."
+    }
+}

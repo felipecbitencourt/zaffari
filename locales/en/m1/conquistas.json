@@ -1,0 +1,17 @@
+{
+    "title": "🏆 What are my achievements?",
+    "subtitle": "You completed <strong>Module 1: Why is Customer Service strategic?</strong>",
+    "badges_title": "Badges Earned",
+    "badges_subtitle": "These badges help unlock the Learning Hub materials!",
+    "badges": {
+        "resumo": "Summary",
+        "quiz": "Quiz",
+        "flashcard": "Flashcard",
+        "drag_drop": "Drag and Drop",
+        "m1_desc": "Module 1",
+        "exclusive_desc": "Exclusive"
+    },
+    "progress_label": "Progress to Learning Hub",
+    "progress_text": "1 of 3 modules completed",
+    "footer_text": "Continue to the next module and earn more badges!"
+}

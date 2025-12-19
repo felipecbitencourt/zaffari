@@ -1,11 +1,12 @@
 <!-- Extras - Arraste e Solte -->
 <div class="content-header">
-    <h1>🎯 Arraste e Solte</h1>
+    <h1 data-i18n="extras.arraste.title">🎯 Arraste e Solte</h1>
 </div>
 
 <div class="content-body">
     <!-- INICIO DO TEXTO EDITÁVEL -->
-    <p class="lead">Associe conceitos e categorias arrastando os itens para os lugares corretos.</p>
+    <p class="lead" data-i18n="extras.arraste.lead">Associe conceitos e categorias arrastando os itens para os lugares
+        corretos.</p>
 
     <!-- Indicador de Fases -->
     <div class="dnd-phase-indicator">
@@ -22,40 +23,46 @@
         <!-- FASE 1: Tipos de Atendimento -->
         <div class="dnd-phase" id="phase-1" data-phase="1">
             <div class="dnd-phase-header">
-                <h3>Fase 1: Tipos de Atendimento</h3>
-                <p>Arraste cada tipo de atendimento para sua descrição correta</p>
+                <h3 data-i18n="extras.arraste.phases.phase1.title">Fase 1: Tipos de Atendimento</h3>
+                <p data-i18n="extras.arraste.phases.phase1.instruction">Arraste cada tipo de atendimento para sua
+                    descrição correta</p>
                 <div class="dnd-progress">
-                    <span class="dnd-progress-text"><span id="phase1-correct">0</span> de 3 corretos</span>
+                    <span class="dnd-progress-text"><span id="phase1-correct">0</span> <span
+                            data-i18n="extras.arraste.phases.phase1.progress">de 3 corretos</span></span>
                 </div>
             </div>
 
             <div class="dnd-items-container" id="phase1-items">
                 <div class="dnd-item" draggable="true" data-item="multicanal">
                     <span class="dnd-item-icon">📞</span>
-                    <span class="dnd-item-text">Atendimento Multicanal</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.multicanal">Atendimento
+                        Multicanal</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="receptivo">
                     <span class="dnd-item-icon">✉️</span>
-                    <span class="dnd-item-text">Atendimento Receptivo</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.receptivo">Atendimento Receptivo</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="ativo">
                     <span class="dnd-item-icon">📢</span>
-                    <span class="dnd-item-text">Atendimento Ativo</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.ativo">Atendimento Ativo</span>
                 </div>
             </div>
 
             <div class="dnd-dropzones-container">
                 <div class="dnd-dropzone" data-accepts="multicanal">
-                    <span class="dnd-zone-label">Telefone, e-mail, chat e meios eletrônicos</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.multicanal_desc">Telefone, e-mail, chat
+                        e meios eletrônicos</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
                 <div class="dnd-dropzone" data-accepts="receptivo">
-                    <span class="dnd-zone-label">Receber reclamações, sugestões e elogios</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.receptivo_desc">Receber reclamações,
+                        sugestões e elogios</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
                 <div class="dnd-dropzone" data-accepts="ativo">
-                    <span class="dnd-zone-label">Ativação de cartões, promoções e reversão</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.ativo_desc">Ativação de cartões,
+                        promoções e reversão</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
             </div>
         </div>
@@ -63,53 +70,57 @@
         <!-- FASE 2: Prazos de Atendimento -->
         <div class="dnd-phase" id="phase-2" data-phase="2" style="display: none;">
             <div class="dnd-phase-header">
-                <h3>Fase 2: Prazos de Atendimento</h3>
-                <p>Arraste cada tipo de demanda para o prazo correto</p>
+                <h3 data-i18n="extras.arraste.phases.phase2.title">Fase 2: Prazos de Atendimento</h3>
+                <p data-i18n="extras.arraste.phases.phase2.instruction">Arraste cada tipo de demanda para o prazo
+                    correto</p>
                 <div class="dnd-progress">
-                    <span class="dnd-progress-text"><span id="phase2-correct">0</span> de 5 corretos</span>
+                    <span class="dnd-progress-text"><span id="phase2-correct">0</span> <span
+                            data-i18n="extras.arraste.phases.phase2.progress">de 5 corretos</span></span>
                 </div>
             </div>
 
             <div class="dnd-items-container" id="phase2-items">
                 <div class="dnd-item" draggable="true" data-item="solicitacoes">
                     <span class="dnd-item-icon">📋</span>
-                    <span class="dnd-item-text">Solicitações</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.solicitacoes">Solicitações</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="informacoes">
                     <span class="dnd-item-icon">ℹ️</span>
-                    <span class="dnd-item-text">Informações</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.informacoes">Informações</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="reclamacoes">
                     <span class="dnd-item-icon">📣</span>
-                    <span class="dnd-item-text">Reclamações</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.reclamacoes">Reclamações</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="danos">
                     <span class="dnd-item-icon">⚠️</span>
-                    <span class="dnd-item-text">Danos</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.danos">Danos</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="duplicidade">
                     <span class="dnd-item-icon">💳</span>
-                    <span class="dnd-item-text">Duplicidade de pagamento</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.duplicidade">Duplicidade de
+                        pagamento</span>
                 </div>
             </div>
 
             <div class="dnd-dropzones-container dnd-prazos-grid">
                 <div class="dnd-dropzone" data-accepts="informacoes,reclamacoes">
-                    <span class="dnd-zone-label">Até 2 dias úteis</span>
-                    <div class="dnd-zone-placeholder">Solte aqui (2 itens)</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.ate_2dias">Até 2 dias úteis</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui_2">Solte aqui (2 itens)
+                    </div>
                     <div class="dnd-zone-items"></div>
                 </div>
                 <div class="dnd-dropzone" data-accepts="solicitacoes">
-                    <span class="dnd-zone-label">Até 3 dias úteis</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.ate_3dias">Até 3 dias úteis</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
                 <div class="dnd-dropzone" data-accepts="danos">
-                    <span class="dnd-zone-label">Até 5 dias úteis</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.ate_5dias">Até 5 dias úteis</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
                 <div class="dnd-dropzone" data-accepts="duplicidade">
-                    <span class="dnd-zone-label">Até 8 dias úteis</span>
-                    <div class="dnd-zone-placeholder">Solte aqui</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.ate_8dias">Até 8 dias úteis</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui">Solte aqui</div>
                 </div>
             </div>
         </div>
@@ -117,49 +128,58 @@
         <!-- FASE 3: Responsabilidades do SAC -->
         <div class="dnd-phase" id="phase-3" data-phase="3" style="display: none;">
             <div class="dnd-phase-header">
-                <h3>Fase 3: Responsabilidades do SAC</h3>
-                <p>Classifique: o que é e o que NÃO é responsabilidade do SAC</p>
+                <h3 data-i18n="extras.arraste.phases.phase3.title">Fase 3: Responsabilidades do SAC</h3>
+                <p data-i18n="extras.arraste.phases.phase3.instruction">Classifique: o que é e o que NÃO é
+                    responsabilidade do SAC</p>
                 <div class="dnd-progress">
-                    <span class="dnd-progress-text"><span id="phase3-correct">0</span> de 8 corretos</span>
+                    <span class="dnd-progress-text"><span id="phase3-correct">0</span> <span
+                            data-i18n="extras.arraste.phases.phase3.progress">de 8 corretos</span></span>
                 </div>
             </div>
 
             <div class="dnd-items-container dnd-items-wrap" id="phase3-items">
                 <div class="dnd-item" draggable="true" data-item="atendimento">
-                    <span class="dnd-item-text">Atendimento receptivo e ativo</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.atendimento">Atendimento receptivo e
+                        ativo</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="relatorios">
-                    <span class="dnd-item-text">Elaborar relatórios</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.relatorios">Elaborar relatórios</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="scripts">
-                    <span class="dnd-item-text">Propor melhorias em scripts</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.scripts">Propor melhorias em
+                        scripts</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="suporte">
-                    <span class="dnd-item-text">Suporte a colaboradores</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.suporte">Suporte a colaboradores</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="leis">
-                    <span class="dnd-item-text">Definir leis de proteção ao consumidor</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.leis">Definir leis de proteção ao
+                        consumidor</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="orcamento">
-                    <span class="dnd-item-text">Aprovar orçamento da empresa</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.orcamento">Aprovar orçamento da
+                        empresa</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="contratar">
-                    <span class="dnd-item-text">Contratar funcionários</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.contratar">Contratar funcionários</span>
                 </div>
                 <div class="dnd-item" draggable="true" data-item="contratos">
-                    <span class="dnd-item-text">Negociar contratos com fornecedores</span>
+                    <span class="dnd-item-text" data-i18n="extras.arraste.items.contratos">Negociar contratos com
+                        fornecedores</span>
                 </div>
             </div>
 
             <div class="dnd-dropzones-container dnd-two-columns">
                 <div class="dnd-dropzone dnd-zone-yes" data-accepts="atendimento,relatorios,scripts,suporte">
-                    <span class="dnd-zone-label">✅ SAC faz</span>
-                    <div class="dnd-zone-placeholder">Solte aqui (4 itens)</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.sac_faz">✅ SAC faz</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui_4">Solte aqui (4 itens)
+                    </div>
                     <div class="dnd-zone-items"></div>
                 </div>
                 <div class="dnd-dropzone dnd-zone-no" data-accepts="leis,orcamento,contratar,contratos">
-                    <span class="dnd-zone-label">❌ SAC não faz</span>
-                    <div class="dnd-zone-placeholder">Solte aqui (4 itens)</div>
+                    <span class="dnd-zone-label" data-i18n="extras.arraste.zones.sac_nao_faz">❌ SAC não faz</span>
+                    <div class="dnd-zone-placeholder" data-i18n="extras.arraste.zones.solte_aqui_4">Solte aqui (4 itens)
+                    </div>
                     <div class="dnd-zone-items"></div>
                 </div>
             </div>
@@ -169,11 +189,14 @@
         <div class="dnd-complete" id="dnd-complete" style="display: none;">
             <div class="dnd-complete-content">
                 <span class="dnd-complete-icon">🎉</span>
-                <h2>Parabéns!</h2>
-                <p>Você completou todas as 3 fases do jogo de Arraste e Solte!</p>
+                <h2 data-i18n="extras.arraste.completion.title">Parabéns!</h2>
+                <p data-i18n="extras.arraste.completion.message">Você completou todas as 3 fases do jogo de Arraste e
+                    Solte!</p>
                 <div class="dnd-complete-actions">
-                    <button class="btn-dnd-restart" onclick="restartGame()">🔄 Jogar Novamente</button>
-                    <button class="btn-extras-back" onclick="navigateToPage('extras-hub')">← Voltar ao Menu</button>
+                    <button class="btn-dnd-restart" onclick="restartGame()"
+                        data-i18n="extras.arraste.completion.restart_btn">🔄 Jogar Novamente</button>
+                    <button class="btn-extras-back" onclick="navigateToPage('extras-hub')"
+                        data-i18n="extras.arraste.back_btn">← Voltar ao Menu</button>
                 </div>
             </div>
         </div>
@@ -191,7 +214,8 @@
 
     <!-- Controles de Navegação entre Fases -->
     <div class="dnd-controls" id="dnd-controls">
-        <button class="btn-dnd-next" id="btn-next-phase" style="display: none;" onclick="nextPhase()">
+        <button class="btn-dnd-next" id="btn-next-phase" style="display: none;" onclick="nextPhase()"
+            data-i18n="extras.arraste.completion.next_btn">
             Próxima Fase →
         </button>
     </div>
@@ -414,10 +438,23 @@
             const title = document.getElementById('popup-title');
             const message = document.getElementById('popup-message');
 
+            const t = (window.I18n && window.I18n.t) ? window.I18n.t : (key) => {
+                // Fallback translations if I18n is not loaded
+                const map = {
+                    'extras.arraste.popup.phase1_title': 'Fase 1 Completa!',
+                    'extras.arraste.popup.phase1_msg': 'Você dominou os tipos de atendimento!',
+                    'extras.arraste.popup.phase2_title': 'Fase 2 Completa!',
+                    'extras.arraste.popup.phase2_msg': 'Excelente! Os prazos não são mais segredo!',
+                    'extras.arraste.popup.phase3_title': 'Todas as Fases Completas!',
+                    'extras.arraste.popup.phase3_msg': 'Você é um expert no SAC!'
+                };
+                return map[key] || '';
+            };
+
             const messages = {
-                1: { title: 'Fase 1 Completa!', msg: 'Você dominou os tipos de atendimento!' },
-                2: { title: 'Fase 2 Completa!', msg: 'Excelente! Os prazos não são mais segredo!' },
-                3: { title: 'Todas as Fases Completas!', msg: 'Você é um expert no SAC!' }
+                1: { title: t('extras.arraste.popup.phase1_title'), msg: t('extras.arraste.popup.phase1_msg') },
+                2: { title: t('extras.arraste.popup.phase2_title'), msg: t('extras.arraste.popup.phase2_msg') },
+                3: { title: t('extras.arraste.popup.phase3_title'), msg: t('extras.arraste.popup.phase3_msg') }
             };
 
             title.textContent = messages[currentPhase].title;

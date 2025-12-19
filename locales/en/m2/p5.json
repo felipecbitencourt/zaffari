@@ -1,0 +1,17 @@
+{
+    "title": "Benefits of Correct Search",
+    "intro": "You've seen how simple it is to search the Intranet. But what are the real benefits of this practice?",
+    "tip_title": "Golden Tip",
+    "tip_text": "Keep the Intranet always open in a browser tab during work hours. This saves you time on every call!",
+    "quiz": {
+        "question": "Mastering information queries on the Intranet contributes to:",
+        "opt_a": "A) Increasing service time.",
+        "feedback_wrong_a": "Correct Intranet search REDUCES service time, by finding information quickly without asking colleagues.",
+        "opt_b": "B) Reducing response standardization.",
+        "feedback_wrong_b": "The Intranet INCREASES standardization, as everyone consults the same official source, ensuring consistent answers.",
+        "opt_c": "C) Ensuring agility, assertiveness and better customer experience.",
+        "opt_d": "D) Making service more informal.",
+        "feedback_wrong_d": "Consulting official sources makes service more PROFESSIONAL, not informal. It shows preparedness and commitment.",
+        "feedback": "<strong>Correct Answer!</strong> Happy customer is a customer served with agility and accuracy."
+    }
+}

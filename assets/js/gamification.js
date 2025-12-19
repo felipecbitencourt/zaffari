@@ -75,7 +75,7 @@ const GamificationManager = {
         const numModulosCompletos = (modulosCompletos.m1 ? 1 : 0) + (modulosCompletos.m2 ? 1 : 0) + (modulosCompletos.m3 ? 1 : 0);
 
         // Acompanhamento: liberado se pelo menos 1 módulo completo
-        const acompanhamento = ['extras-resumo', 'extras-videos', 'extras-flashcards', 'extras-questionarios'];
+        const acompanhamento = ['extras-resumo', 'extras-flashcards', 'extras-questionarios'];
         if (acompanhamento.includes(pageId)) {
             return numModulosCompletos >= 1;
         }

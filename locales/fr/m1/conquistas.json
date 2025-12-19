@@ -1,0 +1,17 @@
+{
+    "title": "🏆 Quels sont mes succès?",
+    "subtitle": "Vous avez terminé le <strong>Module 1: Pourquoi le Service Client est-il stratégique?</strong>",
+    "badges_title": "Médailles Gagnées",
+    "badges_subtitle": "Ces médailles aident à débloquer les matériels de Fixation!",
+    "badges": {
+        "resumo": "Résumé",
+        "quiz": "Questionnaire",
+        "flashcard": "Flashcard",
+        "drag_drop": "Glisser-Déposer",
+        "m1_desc": "Module 1",
+        "exclusive_desc": "Exclusif"
+    },
+    "progress_label": "Progrès pour la Fixation",
+    "progress_text": "1 de 3 modules complétés",
+    "footer_text": "Continuez vers le prochain module et gagnez plus de médailles!"
+}

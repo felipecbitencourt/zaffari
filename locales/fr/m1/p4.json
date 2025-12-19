@@ -1,0 +1,29 @@
+{
+    "title": "Pourquoi les délais sont-ils importants?",
+    "intro": "Un autre point essentiel dans le travail du Service Client est le respect des délais de service. Des délais bien définis garantissent l'organisation, la prévisibilité et l'efficacité, en plus de démontrer du respect pour le client et de renforcer la confiance dans la marque. De plus, suivre les délais définis aide l'équipe à maintenir l'organisation des processus internes, évitant les reprises ou les escalades inutiles.",
+    "standard_box": {
+        "title": "⏳ Délais Standards",
+        "comment": "Ces délais garantissent agilité, organisation et cohérence dans le service quotidien.",
+        "l1": "<strong>Demandes:</strong> jusqu'à 3 jours ouvrables",
+        "l2": "<strong>Informations:</strong> jusqu'à 2 jours ouvrables",
+        "l3": "<strong>Réclamations:</strong> jusqu'à 2 jours ouvrables"
+    },
+    "special_box": {
+        "title": "⚠ Délais Spéciaux",
+        "comment": "Ces interactions nécessitent des analyses plus détaillées, c'est pourquoi elles ont des délais plus longs.",
+        "l1": "<strong>Dommages:</strong> jusqu'à 5 jours ouvrables pour retour",
+        "l2": "<strong>Duplication de paiement:</strong> jusqu'à 8 jours ouvrables"
+    },
+    "text_footer": "⚠️ <strong>IMPORTANT:</strong> L'enregistrement correct de la catégorie de service est fondamental pour que le délai approprié soit respecté et que le client reçoive un retour dans le temps imparti.",
+    "quiz": {
+        "question": "Un client signale qu'il a payé la facture deux fois. Vous devez enregistrer l'interaction pour qu'il soit remboursé. Pourquoi est-il crucial de sélectionner la catégorie 'Duplication de paiement' au lieu d'une catégorie générique de 'Réclamation'?",
+        "opt_a": "A) Parce que 'Duplication' a un délai spécifique (jusqu'à 8 jours ouvrables) pour une analyse financière détaillée, évitant de fausses promesses de solution rapide.",
+        "opt_b": "B) Parce que 'Réclamation' est une catégorie qui ne doit être utilisée que pour un mauvais service en magasin physique.",
+        "feedback_wrong_b": "La catégorie 'Réclamation' n'est pas restreinte au service en magasin physique. Elle sert aux insatisfactions générales, mais chaque type de demande a son délai spécifique.",
+        "opt_c": "C) Cela ne change rien en pratique, car le délai de retour au client est toujours de 2 jours ouvrables pour n'importe quel cas.",
+        "feedback_wrong_c": "Cela change tout! La duplication de paiement nécessite 8 jours ouvrables pour l'analyse financière. Si nous promettons 2 jours, nous créons une attente que nous ne pouvons pas tenir.",
+        "opt_d": "D) Juste pour remplir une formalité bureaucratique, sans impact réel sur le traitement du cas.",
+        "feedback_wrong_d": "La catégorisation correcte impacte directement le traitement du cas: elle définit les délais, les acheminements et les attentes. Ce n'est pas de la bureaucratie, c'est de la gestion efficace.",
+        "feedback": "<strong>Réponse Correcte!</strong> La bonne catégorie définit le bon délai (8 jours), gérant l'attente du client."
+    }
+}

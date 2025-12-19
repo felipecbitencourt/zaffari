@@ -1,0 +1,68 @@
+{
+    "title": "📖 Course Summary",
+    "lead": "Review the main concepts covered in each module of the training.",
+    "modules": {
+        "m1": {
+            "title": "Module 1: Strategic Role of Customer Service",
+            "lock": "🔒 Complete the module to unlock",
+            "unlock": "✓ Available",
+            "overlay": "Complete Module 1 to unlock this summary"
+        },
+        "m2": {
+            "title": "Module 2: Where to find information?",
+            "lock": "🔒 Complete the module to unlock",
+            "unlock": "✓ Available",
+            "overlay": "Complete Module 2 to unlock this summary"
+        },
+        "m3": {
+            "title": "Module 3: CDC and Legislation",
+            "lock": "🔒 Complete the module to unlock",
+            "unlock": "✓ Available",
+            "overlay": "Complete Module 3 to unlock this summary"
+        }
+    },
+    "content": {
+        "m1": {
+            "q1": "❓ What does the customer expect when contacting us?",
+            "a1": "<p><strong>✅ Answer:</strong> The customer expects more than just the solution to the problem. They seek:</p><ul><li>To be heard with attention and empathy</li><li>Receive quick and efficient service</li><li>Feel that the company cares about them</li><li>Have clarity about next steps</li><li>Leave satisfied, even when the answer is not ideal</li></ul>",
+            "q2": "❓ What is the role of CS beyond solving problems?",
+            "a2": "<p><strong>✅ Answer:</strong> CS represents the <strong>company's voice</strong> in direct contact with the customer. More than an operational sector, it's a strategic area essential to:</p><ul><li>Preserve brand values and reputation</li><li>Build trust and strengthen bonds</li><li>Contribute to customer loyalty</li></ul>",
+            "q3": "❓ What are our team's responsibilities?",
+            "a3": "<p><strong>✅ Answer:</strong> Main responsibilities include:</p><ul><li><strong>Multichannel Service:</strong> phone, email, chat and electronic means</li><li><strong>Inbound Service:</strong> information, complaints, suggestions and compliments</li><li><strong>Outbound Service:</strong> campaigns, card activation, registration updates</li><li><strong>Management:</strong> organize data, prepare reports, propose improvements</li></ul><p><em>Note: Defining consumer protection laws is NOT CS responsibility - CS follows the laws.</em></p>",
+            "q4": "❓ Why do response deadlines matter?",
+            "a4": "<p><strong>✅ Answer:</strong> Well-defined deadlines ensure organization, predictability and efficiency. The correct registration of the service category is fundamental because the system calculates the deadline based on it.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Standard Deadlines</h4><ul><li><strong>Requests:</strong> up to 3 business days</li><li><strong>Information:</strong> up to 2 business days</li><li><strong>Complaints:</strong> up to 2 business days</li></ul></div></div>",
+            "q5": "❓ What are outbound services?",
+            "a5": "<p><strong>✅ Answer:</strong> These are contacts that CS proactively initiates with customers, especially related to Group Cards:</p><ul><li><strong>Card activation:</strong> contacting customers to activate new cards</li><li><strong>Registration update:</strong> keeping customer data up to date</li><li><strong>Promotion communication:</strong> informing offers and benefits</li><li><strong>Cancellation reversal:</strong> working to retain customers</li></ul><p><em>Note: Unlike inbound service, where the customer initiates contact.</em></p>",
+            "q6": "❓ How to contribute to continuous CS improvement?",
+            "a6": "<p><strong>✅ Answer:</strong> Besides serving well, the CS team contributes to service evolution:</p><ul><li><strong>Identify patterns:</strong> notice when several customers have the same doubt</li><li><strong>Flag problems:</strong> communicate to supervisor to adjust processes</li><li><strong>Propose improvements:</strong> suggest adjustments to scripts and service standards</li><li><strong>Prepare reports:</strong> organize data that helps the company improve</li></ul>"
+        },
+        "m2": {
+            "q1": "❓ Why do we need to know where to find information?",
+            "a1": "<p><strong>✅ Answer:</strong> Knowing where to find information shows the customer:</p><ul><li><strong>Confidence</strong> - convey trust</li><li><strong>Agility</strong> - resolve quickly</li><li><strong>Care</strong> - show that we care</li></ul>",
+            "q2": "❓ Where to look up store data?",
+            "a2": "<p><strong>✅ Answer:</strong> On the company's <strong>Intranet</strong>!</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>The Path</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Branches → Registration data and schedules</strong></p></div></div><p>There you'll find: store addresses, opening hours and contact methods.</p>",
+            "q3": "❓ Where to check offers and promotions?",
+            "a3": "<p><strong>✅ Answer:</strong> Offers can be found at:</p><ul><li><strong>Flyers</strong> - physical and digital promotional materials</li><li>Company's <strong>official website</strong></li><li><strong>Offers WhatsApp</strong> - direct channel with the customer</li></ul>",
+            "q4": "❓ How does the offers WhatsApp work?",
+            "a4": "<p><strong>✅ Answer:</strong> It's simple and direct! The sequence is:</p><ol><li><strong>Select the store</strong> of interest</li><li><strong>Access the community</strong> via link or QR Code</li><li><strong>Receive personalized offers</strong> on your phone</li></ol>"
+        },
+        "m3": {
+            "q1": "❓ What is CDC and why know it?",
+            "a1": "<p><strong>✅ Answer:</strong> CDC (Law No. 8,078/90) protects consumers and ensures fair consumption relations. Knowing it is essential to:</p><ul><li>Respond with confidence</li><li>Avoid rework</li><li>Convey credibility to the customer</li></ul>",
+            "q2": "❓ When can the customer exchange a product without defect?",
+            "a2": "<p><strong>✅ Answer:</strong></p><ul><li><strong>Physical store:</strong> CDC does NOT require exchange - it's a commercial policy (courtesy)</li><li><strong>Online store:</strong> Customer has Right of Withdrawal (up to 7 calendar days after receipt)</li></ul>",
+            "q3": "❓ When there's a defect, what's the procedure?",
+            "a3": "<p><strong>✅ Answer:</strong> The supplier has up to <strong>30 days</strong> to fix via technical assistance. If not resolved, customer can opt for:</p><ul><li>Product exchange</li><li>Proportional discount on value</li><li>Refund of amount paid</li></ul><p><em>Deadline to complain: 90 days for durable products.</em></p>",
+            "q4": "❓ How to forward product complaints?",
+            "a4": "<p><strong>✅ Answer:</strong></p><ul><li><strong>Food:</strong> Customer brings product + receipt to store (management evaluation)</li><li><strong>Non-food:</strong> Product + receipt to store (except Appliances → Technical Assistance)</li><li><strong>Wrong purchase:</strong> Non-perishables can be exchanged if unopened; perishables we don't exchange</li></ul>",
+            "q5": "❓ What are the system paths for each situation?",
+            "a5": "<p><strong>✅ Answer:</strong> Each type of demand has its specific path:</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>System Paths</h4><ul><li><strong>Durable Product with Defect:</strong><br>INFORMATION → PURCHASES → TECHNICAL ASSISTANCE DATA</li><li><strong>Wrong Size/Color/Voltage Purchase:</strong><br>INFORMATION → PURCHASES → MERCHANDISE EXCHANGE</li><li><strong>Exchange not performed in store:</strong><br>COMPLAINT → MERCHANDISE EXCHANGE</li></ul></div></div>",
+            "q6": "❓ What is the deadline for exchanging perishables online?",
+            "a6": "<p><strong>✅ Answer:</strong> Perishable products with short shelf life (meats, produce, bakery, cold cuts, dairy) bought online have a special deadline of <strong>24 hours</strong> after delivery.</p><div class=\"box-attention\"><p>⚠️ This ensures food safety for the customer and company.</p></div>",
+            "q7": "❓ What are the best practices for quality service?",
+            "a7": "<p><strong>✅ Answer:</strong> The 4 essential practices are:</p><ul><li><strong>👂 Active Listening:</strong> Listen attentively without interrupting</li><li><strong>🔍 Complete Probing:</strong> Ask questions to understand the situation</li><li><strong>💚 Cordiality and Empathy:</strong> Be kind and understanding</li><li><strong>📝 Precise Recording:</strong> Document all data correctly</li></ul><p><em>These practices ensure clear, organized and rework-free service.</em></p>"
+        }
+    },
+    "tip_box": "💡 Use this summary as a quick reference material during your work.",
+    "back_btn": "← Back to Extras Menu"
+}

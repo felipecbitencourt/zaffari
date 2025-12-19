@@ -1,0 +1,20 @@
+{
+    "title": "📚 Bibliography Material",
+    "lead": "References and support materials used in building this course.",
+    "back_btn": "← Back to Extras Menu",
+    "sections": {
+        "references": {
+            "title": "📖 Main References",
+            "text": "Bibliographic references used for the elaboration of this training content will be added soon."
+        },
+        "documents": {
+            "title": "📋 Internal Documents",
+            "text": "Coming soon."
+        },
+        "links": {
+            "title": "🔗 Useful Links",
+            "text": "Coming soon."
+        }
+    },
+    "note": "This material is complementary to the course and serves as a reference for future consultation."
+}

@@ -1,0 +1,193 @@
+{
+    "title": "📝 Questionnaires",
+    "lead": "Testez vos connaissances avec tous les questionnaires du cours réunis en un seul endroit.",
+    "lock_msg": "🔒 Terminez le module pour débloquer",
+    "unlock_msg": "✓ Disponible",
+    "modules": {
+        "m1": {
+            "title": "Module 1: Rôle Stratégique du Service Client",
+            "count": "3 questions",
+            "overlay": "Complétez le Module 1 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> Quelle alternative représente le mieux le rôle stratégique du Service Client?",
+                    "options": {
+                        "a": "A) Répondre aux appels et enregistrer les plaintes.",
+                        "b": "B) Résoudre des problèmes ponctuels sans impact sur l'image de l'entreprise.",
+                        "c": "C) Représenter la voix de l'entreprise dans le contact direct avec le client et renforcer la réputation de la marque.",
+                        "d": "D) Agir seulement lorsque d'autres secteurs ne parviennent pas à résoudre les demandes."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Le Service Client est la voix de l'entreprise et renforce la réputation de la marque."
+                },
+                "q2": {
+                    "text": "<strong>Question 2:</strong> Quelle activité ci-dessous <strong>ne fait pas</strong> partie des responsabilités du Service Client?",
+                    "options": {
+                        "a": "A) Service entrant et sortant.",
+                        "b": "B) Organisation des données et élaboration de rapports.",
+                        "c": "C) Définition des lois de protection du consommateur.",
+                        "d": "D) Proposition d'améliorations dans les scripts et les normes de service."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Le Service Client suit les lois, mais c'est le gouvernement (Législatif) qui les définit."
+                },
+                "q3": {
+                    "text": "<strong>Question 3 (Vrai ou Faux):</strong> L'enregistrement correct de la catégorie de service influence directement le délai de retour au client.",
+                    "options": {
+                        "a": "A) Vrai",
+                        "b": "B) Faux"
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Le système calcule le délai en fonction de la catégorie enregistrée."
+                },
+                "q4": {
+                    "text": "<strong>Question 4:</strong> Quelles activités font partie des contacts SORTANTS du Service Client?",
+                    "options": {
+                        "a": "A) Recevoir des plaintes et des suggestions des clients.",
+                        "b": "B) Activation de cartes, communication de promotions et récupération de résiliations.",
+                        "c": "C) Répondre aux e-mails des clients.",
+                        "d": "D) Consulter des informations sur l'Intranet."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Les contacts sortants (actifs) sont ceux où le Service Client contacte le client de manière proactive.",
+                    "feedback_wrong_a": "Recevoir des plaintes est un service ENTRANT (réceptif).",
+                    "feedback_wrong_c": "Répondre aux e-mails est un service ENTRANT. Le contact sortant est initié par le Service Client.",
+                    "feedback_wrong_d": "Consulter des informations est une activité interne, pas un type de service."
+                },
+                "q5": {
+                    "text": "<strong>Question 5:</strong> Vous remarquez que plusieurs clients appellent avec la même question sur une nouvelle promotion. Quelle attitude démontre un engagement envers l'amélioration continue?",
+                    "options": {
+                        "a": "A) Continuer à répondre à chacun individuellement sans signaler le modèle.",
+                        "b": "B) Commenter avec les collègues que les clients ne lisent pas le règlement.",
+                        "c": "C) Signaler le modèle observé au superviseur pour ajuster la communication.",
+                        "d": "D) Dire au client de chercher sur le site."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Identifier des modèles et signaler des problèmes aide à améliorer le processus pour tous.",
+                    "feedback_wrong_a": "Servir sans signaler ne résout pas le problème structurel.",
+                    "feedback_wrong_b": "Se plaindre ne contribue pas à l'amélioration du processus.",
+                    "feedback_wrong_d": "Envoyer le client chercher l'information seul démontre un manque de soin."
+                }
+            }
+        },
+        "m2": {
+            "title": "Module 2: Où trouver des informations?",
+            "count": "3 questions",
+            "overlay": "Complétez le Module 2 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> Pour consulter l'adresse, les heures d'ouverture et les moyens de contact des magasins, l'agent doit accéder à:",
+                    "options": {
+                        "a": "A) Le site web de l'entreprise.",
+                        "b": "B) L'Intranet → Filiales → Données cadastrais et horaires.",
+                        "c": "C) Google Maps.",
+                        "d": "D) Un groupe interne de messages."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> L'Intranet est la source officielle et sûre."
+                },
+                "q2": {
+                    "text": "<strong>Question 2:</strong> Maîtriser la consultation d'informations sur l'Intranet contribue à:",
+                    "options": {
+                        "a": "A) Augmenter le temps de service.",
+                        "b": "B) Réduire la standardisation des réponses.",
+                        "c": "C) Garantir agilité, assertivité et une meilleure expérience pour le client.",
+                        "d": "D) Rendre le service plus informel."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Un client heureux est un client servi avec agilité et précision."
+                },
+                "q3": {
+                    "text": "<strong>Question 3:</strong> Quelle est la séquence correcte pour que le client commence à recevoir des offres par WhatsApp?",
+                    "options": {
+                        "a": "A) Accéder au site → choisir des produits → enregistrer le téléphone.",
+                        "b": "B) Sélectionner le magasin → accéder à la communauté via le lien ou le QR Code → recevoir des offres.",
+                        "c": "C) Contacter le Service Client → demander l'inscription → attendre la confirmation.",
+                        "d": "D) Télécharger une application exclusive → créer un login → accepter les conditions."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Simple et direct: Magasin -> QR Code/Lien -> Offres."
+                }
+            }
+        },
+        "m3": {
+            "title": "Module 3: CDC et Législation",
+            "count": "4 questions",
+            "overlay": "Complétez le Module 3 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1:</strong> Pourquoi la connaissance du Code de Défense du Consommateur est-elle essentielle pour ceux qui travaillent au Service Client?",
+                    "options": {
+                        "a": "A) Seulement pour répondre aux exigences légales.",
+                        "b": "B) Pour répondre avec sécurité, éviter le retravail et transmettre la crédibilité au client.",
+                        "c": "C) Pour remplacer les politiques internes de l'entreprise.",
+                        "d": "D) Seulement pour traiter les plaintes formelles."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> La connaissance génère sécurité et crédibilité."
+                },
+                "q2": {
+                    "text": "<strong>Question 2 (Vrai ou Faux):</strong> L'échange de produits sans défaut en magasin physique est un droit garanti par le Code de Défense du Consommateur.",
+                    "options": {
+                        "a": "A) Vrai",
+                        "b": "B) Faux"
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> C'est une politique commerciale (courtoisie), pas une loi."
+                },
+                "q3": {
+                    "text": "<strong>Question 3:</strong> Le droit de rétractation permet au client de:",
+                    "options": {
+                        "a": "A) Échanger tout produit acheté en magasin physique dans les 7 jours.",
+                        "b": "B) Se désister d'un achat en ligne jusqu'à 7 jours calendaires après la réception.",
+                        "c": "C) Demander le retour uniquement des produits défectueux.",
+                        "d": "D) Exiger un échange immédiat sans analyse."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Exclusif pour les achats hors établissement commercial (en ligne/téléphone)."
+                },
+                "q4": {
+                    "text": "<strong>Question 4 (Synthèse Finale):</strong> Après avoir terminé le cours, quelle alternative résume le mieux le rôle du Service Client?",
+                    "options": {
+                        "a": "A) Résoudre des problèmes ponctuels des clients.",
+                        "b": "B) Répondre aux appels et enregistrer des informations.",
+                        "c": "C) Agir de manière stratégique, humaine et alignée sur la législation, renforçant l'expérience client et la réputation de la marque.",
+                        "d": "D) Transmettre les demandes à d'autres secteurs."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Vous avez saisi l'essence du Service Client! 👏👏👏"
+                },
+                "q5": {
+                    "text": "<strong>Question 5:</strong> Un client a acheté un mixeur il y a 2 mois et le moteur a brûlé. Où enregistrez-vous ce service?",
+                    "options": {
+                        "a": "A) RÉCLAMATION → ÉLECTRO",
+                        "b": "B) INFORMATION → ACHATS → DONNÉES DE L'ASSISTANCE TECHNIQUE",
+                        "c": "C) J'informe que nous ne pouvons pas aider car plus de 30 jours se sont écoulés.",
+                        "d": "D) INFORMATION → ACHATS → ÉCHANGE DE MARCHANDISES"
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Les produits Électro doivent être dirigés vers l'assistance technique de la marque.",
+                    "feedback_wrong_a": "RÉCLAMATION est pour les produits avec un problème de livraison ou de qualité, pas pour orienter vers l'assistance.",
+                    "feedback_wrong_c": "2 mois est encore dans les 90 jours pour les produits durables. Nous pouvons aider!",
+                    "feedback_wrong_d": "ÉCHANGE DE MARCHANDISES est pour les produits achetés par erreur (taille, couleur, voltage)."
+                },
+                "q6": {
+                    "text": "<strong>Question 6:</strong> Quel est le délai pour l'échange de produits périssables à courte durée de vie (viandes, produits laitiers) achetés en ligne?",
+                    "options": {
+                        "a": "A) 7 jours calendaires après la réception.",
+                        "b": "B) 24 heures après la livraison.",
+                        "c": "C) 30 jours après l'achat.",
+                        "d": "D) Il n'y a pas de possibilité d'échange pour les périssables en ligne."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Pour la sécurité alimentaire, les périssables doivent être échangés dans les 24h.",
+                    "feedback_wrong_a": "7 jours est pour les produits non périssables. Les périssables ont un délai plus court pour la sécurité alimentaire.",
+                    "feedback_wrong_c": "30 jours est le délai pour que le fournisseur résolve les défauts, pas pour l'échange de périssables.",
+                    "feedback_wrong_d": "Il existe bien une possibilité d'échange pour les périssables, à condition que ce soit dans les 24h."
+                },
+                "q7": {
+                    "text": "<strong>Question 7:</strong> Quelles sont les 4 bonnes pratiques essentielles pour un service de qualité?",
+                    "options": {
+                        "a": "A) Servir vite, transférer à un autre secteur, terminer le service, fermer le dossier.",
+                        "b": "B) Écoute active, sondage complet, cordialité/empathie et enregistrement précis.",
+                        "c": "C) Lire le script, confirmer les données, terminer le contact, attendre le retour.",
+                        "d": "D) Résoudre le problème, peu importe comment."
+                    },
+                    "feedback": "<strong>Réponse Correcte!</strong> Ces 4 pratiques garantissent des services clairs, organisés et sans retravail.",
+                    "feedback_wrong_a": "La vitesse sans qualité ne garantit pas un bon service. Nous devons écouter et enregistrer correctement.",
+                    "feedback_wrong_c": "Lire le script mécaniquement ne démontre pas d'empathie. Le service doit être humain.",
+                    "feedback_wrong_d": "Résoudre le problème est important, mais sans les bonnes pratiques, le client peut rester insatisfait même avec une solution."
+                }
+            }
+        }
+    },
+    "tip_box": "💡 Refaites les questionnaires autant de fois que vous le souhaitez pour fixer les connaissances!",
+    "feedback_incorrect": "<strong>Réponse Incorrecte!</strong> Voir l'alternative correcte surlignée en vert.",
+    "back_btn": "← Retour au Menu de Fixation"
+}

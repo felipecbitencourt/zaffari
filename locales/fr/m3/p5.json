@@ -1,0 +1,36 @@
+{
+    "title": "Quand il y a un défaut, que faire?",
+    "intro": "Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre le défaut via l'assistance technique agréée.",
+    "accordion": {
+        "options_title": "🔄 Options du client s'il n'y a pas de solution en 30 jours",
+        "l1": "<strong>Échange du produit</strong> pour un autre égal ou similaire",
+        "l2": "<strong>Réduction proportionnelle</strong> de la valeur payée",
+        "l3": "<strong>Remboursement intégral</strong> de la valeur payée"
+    },
+    "attention_text": "<strong>Délai pour réclamer:</strong> 90 jours pour les produits durables.",
+    "h3_assist": "Assistance Technique 🔧",
+    "accordion_electro": {
+        "title": "📦 Procédure pour les produits Électro",
+        "text": "Les produits <strong>Électro</strong> doivent être envoyés à l'assistance technique de la marque. Si après 30 jours il n'y a pas de solution, l'entreprise pourra effectuer l'échange via un ordre de service."
+    },
+    "accordion_registro": {
+        "title": "📝 Comment enregistrer dans le système",
+        "intro": "Lorsque le client demande des informations sur l'assistance technique:",
+        "path_title": "Chemin dans le Système",
+        "path": "<strong>INFORMATION → ACHATS → DONNÉES DE L'ASSISTANCE TECHNIQUE</strong>",
+        "l1": "Orientez le client pour envoyer le produit à l'assistance de la marque",
+        "l2": "Informez le délai de 30 jours pour la solution",
+        "l3": "Si ce n'est pas résolu en 30 jours, l'entreprise peut effectuer l'échange <strong>avec ordre de service</strong>"
+    },
+    "quiz": {
+        "question": "Une cliente a acheté un robot ménager il y a 2 mois et le moteur a cessé de fonctionner. Où enregistrez-vous cette interaction et que conseillez-vous?",
+        "opt_a": "A) J'enregistre dans RÉCLAMATION > ÉLECTRO et j'informe qu'elle peut échanger directement en magasin.",
+        "feedback_wrong_a": "Effectuer un échange direct en magasin n'est pas la procédure correcte pour les produits Électro. Ils doivent d'abord aller à l'assistance technique.",
+        "opt_b": "B) J'enregistre dans INFORMATION > ACHATS > DONNÉES DE L'ASSISTANCE TECHNIQUE et j'oriente pour envoyer à l'assistance de la marque.",
+        "opt_c": "C) J'informe que comme plus de 30 jours se sont écoulés depuis l'achat, nous ne pouvons pas aider.",
+        "feedback_wrong_c": "Dire que nous ne pouvons pas aider est incorrect. Le délai de 90 jours pour réclamer des défauts de produits durables est toujours valide.",
+        "opt_d": "D) J'enregistre dans RETOUR et demande le remboursement immédiat.",
+        "feedback_wrong_d": "Demander le remboursement n'est pas la première étape. La loi donne au fournisseur 30 jours pour essayer de résoudre via l'assistance technique.",
+        "feedback": "<strong>Réponse Correcte!</strong> Les produits Électro doivent d'abord être envoyés à l'assistance technique de la marque."
+    }
+}

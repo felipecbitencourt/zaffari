@@ -1,0 +1,10 @@
+{
+    "title": "🏆 ¿Estás listo para el desafío?",
+    "intro": "La calidad de la atención depende de atención, escucha activa, empatía y registros completos y correctos.",
+    "box_title": "💭 Para Reflexionar",
+    "box_text": "<strong>Imagina que eres un supervisor analizando un caso de reclamo antiguo. Encuentras un registro anterior que dice solo 'Cliente reclamó'. ¿Cómo afecta esto tu capacidad de resolver el problema hoy? Reflexiona sobre el impacto de los detalles.</strong>",
+    "placeholder": "Tu respuesta...",
+    "btn_submit": "Enviar Reflexión",
+    "btn_sent": "✔ Enviado",
+    "feedback_success": "<strong>✅ ¡Reflexión registrada!</strong> ¡Muy bien! Registros completos y detallados son esenciales para una atención de calidad. Continúa aplicando este pensamiento en tu día a día."
+}

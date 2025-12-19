@@ -1,0 +1,25 @@
+{
+    "title": "Quel est le rôle du Service Client?",
+    "img_alt": "Jeune conseillère souriante parlant au casque",
+    "text1": "Le <strong>Service Client</strong> est responsable de la gestion des canaux de relation avec les clients, y compris les services électroniques et téléphoniques.",
+    "text2": "Plus qu'un secteur opérationnel, le Service Client est un <strong>domaine stratégique</strong>, essentiel au maintien des valeurs, de la réputation et de la crédibilité des marques du Groupe.",
+    "card_text": "Un service humanisé, efficace et de haute qualité ne résout pas seulement les demandes: il construit la confiance, renforce les liens et contribue directement à la fidélisation des clients.",
+    "text3": "En plus du public externe, le Service Client joue également un rôle fondamental dans le <strong>soutien aux collaborateurs de l'entreprise</strong>, en clarifiant les doutes sur les processus, les systèmes et les normes de service. Cette action contribue à la <strong>standardisation, l'organisation et l'excellence</strong> du service fourni.",
+    "box_attention": {
+        "title": "Curiosité",
+        "text": "Les études sur l'expérience client indiquent qu'une seule interaction négative peut avoir plus d'impact sur la perception de la marque que plusieurs interactions positives. C'est pourquoi <strong>chaque contact compte</strong>.",
+        "source": "🔗 Source: BusinessWire - 65% of Consumers Say Negative Interactions..."
+    },
+    "text4": "Le Service Client va bien au-delà de répondre aux appels. Il représente <strong>la voix de l'entreprise</strong> dans le contact direct avec le client. Chaque interaction influence la façon dont le consommateur perçoit la marque et évalue son expérience.",
+    "quiz": {
+        "question": "Un client contacte l'entreprise frustré car son problème n'a pas encore été résolu. Comment un opérateur de Service Client avec une vision stratégique doit-il envisager cette interaction?",
+        "opt_a": "A) Comme une nuisance qui doit être terminée le plus rapidement possible.",
+        "feedback_wrong_a": "Terminer rapidement ignore l'opportunité de transformer la frustration en fidélisation. Un client insatisfait bien servi peut devenir le plus grand promoteur de la marque.",
+        "opt_b": "B) Comme une opportunité d'inverser une expérience négative et de renforcer la confiance dans la marque.",
+        "opt_c": "C) Comme une défaillance d'un autre secteur qui n'est pas de sa responsabilité.",
+        "feedback_wrong_c": "Transférer la responsabilité ne résout pas le problème du client. Le Service Client représente toute l'entreprise et doit chercher des solutions, peu importe d'où vient le problème.",
+        "opt_d": "D) En suivant simplement le script standard sans faire preuve d'empathie.",
+        "feedback_wrong_d": "Suivre des scripts sans empathie déshumanise le service. Le client sent quand il n'est pas vraiment écouté, ce qui aggrave son expérience.",
+        "feedback": "<strong>Réponse Correcte!</strong> Une vision stratégique transforme les crises en opportunités de fidélisation."
+    }
+}

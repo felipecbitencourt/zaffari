@@ -1,0 +1,115 @@
+{
+    "title": "🎭 Jeu de Rôle - Simulation de Service",
+    "lead": "Pratiquez vos compétences de service! Vous êtes l'agent du Service Client et devez choisir les meilleures réponses.",
+    "back_btn": "← Retour au Menu de Fixation",
+    "ui": {
+        "continue_btn": "Continuer →",
+        "try_again_btn": "Essayer à Nouveau",
+        "loading": "Chargement..."
+    },
+    "completion": {
+        "title": "Félicitations!",
+        "message": "Vous avez terminé la simulation de service!",
+        "restart_btn": "🔄 Rejouer",
+        "correct_count": "Vous avez trouvé {correct} réponses sur {total}"
+    },
+    "results": {
+        "perfect": "Parfait! Vous avez fait preuve d'une excellente connaissance!",
+        "good": "Très bien! Vous êtes sur la bonne voie!",
+        "average": "Bien, mais vous pouvez vous améliorer. Révisez le contenu!",
+        "needs_work": "Besoin d'étudier davantage. Révisez les modules du cours!"
+    },
+    "scenario": {
+        "title": "Échange de Produit",
+        "steps": [
+            {
+                "id": 1,
+                "name": "Présentation",
+                "client_speech": "Bonjour! J'ai acheté ce mixeur ici hier et j'aimerais l'échanger pour un autre modèle.",
+                "options": [
+                    {
+                        "text": "Bonjour! Bien sûr, je peux vous aider avec ça. Le produit présente-t-il un défaut ou un problème?",
+                        "correct": true,
+                        "feedback": "Excellent! Vous avez salué le client cordialement et posé une question importante pour comprendre la situation."
+                    },
+                    {
+                        "text": "Malheureusement, il n'est pas possible d'échanger des produits qui ont déjà été achetés et emmenés à la maison.",
+                        "correct": false,
+                        "feedback": "Cette réponse est trop négative et n'accueille pas le client. Nous devons toujours d'abord comprendre la situation avant de refuser quelque chose."
+                    },
+                    {
+                        "text": "Vous pouvez laisser le produit sur le comptoir, quelqu'un vérifiera pour vous plus tard.",
+                        "correct": false,
+                        "feedback": "Cette réponse est trop informelle et ne montre pas d'intérêt à aider le client. Le service doit toujours être cordial et professionnel."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Question du Client",
+                "client_speech": "Non, il n'a pas de défaut. C'est juste que j'ai vu un autre modèle qui me plaisait plus. J'ai vu sur internet que j'ai le droit d'échanger sous 7 jours, n'est-ce pas?",
+                "options": [
+                    {
+                        "text": "Oui, certainement! Vous avez ce droit garanti par la loi. Faisons l'échange tout de suite.",
+                        "correct": false,
+                        "feedback": "Attention! Le droit de rétractation de 7 jours ne vaut que pour les achats EN LIGNE. En magasin physique, l'échange est une politique commerciale, pas un droit légal."
+                    },
+                    {
+                        "text": "Le droit de 7 jours vaut pour les achats en ligne. En magasin physique, c'est une courtoisie. Je peux vérifier notre politique!",
+                        "correct": true,
+                        "feedback": "Parfait! Vous avez expliqué correctement la différence entre le droit légal (achats en ligne) et la politique commerciale (magasin physique), sans refuser d'aider le client."
+                    },
+                    {
+                        "text": "Cette règle des 7 jours est seulement pour les achats en ligne, donc ici ça ne s'applique pas. Désolé.",
+                        "correct": false,
+                        "feedback": "Bien que l'information sur le en ligne soit correcte, la réponse est trop négative. Nous devons toujours chercher des alternatives pour aider le client."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Doute Supplémentaire",
+                "client_speech": "Ah je comprends... alors vous n'allez pas échanger? Et si le produit a un défaut plus tard, je peux réclamer?",
+                "options": [
+                    {
+                        "text": "Oui bien sûr! Pour les défauts, vous avez 90 jours. Et notre politique permet l'échange sous 30 jours avec le ticket de caisse!",
+                        "correct": true,
+                        "feedback": "Excellent! Vous avez informé correctement du délai de 90 jours pour réclamer des défauts sur des produits durables ET vous avez offert la possibilité d'échange selon la politique de l'entreprise."
+                    },
+                    {
+                        "text": "Pour les défauts vous pouvez réclamer oui, mais le délai est de seulement 7 jours après l'achat.",
+                        "correct": false,
+                        "feedback": "Incorrect! Le délai pour réclamer des défauts sur des produits durables est de 90 JOURS, pas 7 jours."
+                    },
+                    {
+                        "text": "Si le produit ne présente pas de défaut maintenant, nous ne pourrons rien faire plus tard, malheureusement.",
+                        "correct": false,
+                        "feedback": "Incorrect! Les vices cachés (défauts qui apparaissent plus tard) peuvent être réclamés jusqu'à 90 jours pour les produits durables."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Conclusion",
+                "client_speech": "Génial! Alors je peux échanger pour l'autre modèle? Le produit est encore scellé et j'ai le ticket de caisse.",
+                "options": [
+                    {
+                        "text": "Je ne peux pas faire l'échange car, comme je l'ai expliqué, ce n'est pas une obligation légale du magasin.",
+                        "correct": false,
+                        "feedback": "Réponse inadéquate. Le client remplit les conditions de la politique commerciale (produit scellé + ticket)."
+                    },
+                    {
+                        "text": "Avec le produit scellé et le ticket, je peux faire l'échange oui! Quel modèle préférez-vous?",
+                        "correct": true,
+                        "feedback": "Félicitations! Vous avez terminé le service de manière positive, confirmant que le client remplit les conditions et procédant à l'échange."
+                    },
+                    {
+                        "text": "Je dois appeler mon gérant pour autoriser ce type de procédure d'échange ici.",
+                        "correct": false,
+                        "feedback": "Inutile dans ce cas. Comme le client remplit les conditions de la politique (scellé + ticket), vous pouvez résoudre sans avoir besoin d'escalader."
+                    }
+                ]
+            }
+        ]
+    }
+}

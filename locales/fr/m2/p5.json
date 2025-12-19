@@ -1,0 +1,17 @@
+{
+    "title": "Avantages de la Consultation Correcte",
+    "intro": "Vous avez vu comme il est simple de consulter l'Intranet. Mais quels sont les avantages réels de cette pratique?",
+    "tip_title": "Conseil en Or",
+    "tip_text": "Gardez l'Intranet toujours ouvert dans un onglet du navigateur pendant les heures de travail. Ainsi, vous gagnez du temps à chaque interaction!",
+    "quiz": {
+        "question": "Maîtriser la consultation d'informations sur l'Intranet contribue à:",
+        "opt_a": "A) Augmenter le temps de service.",
+        "feedback_wrong_a": "La consultation correcte sur l'Intranet RÉDUIT le temps de service, car vous trouvez rapidement l'information sans avoir à demander à des collègues.",
+        "opt_b": "B) Réduire la standardisation des réponses.",
+        "feedback_wrong_b": "L'Intranet AUGMENTE la standardisation, car tout le monde consulte la même source officielle, garantissant des réponses cohérentes.",
+        "opt_c": "C) Garantir agilité, assertivité et une meilleure expérience pour le client.",
+        "opt_d": "D) Rendre le service plus informel.",
+        "feedback_wrong_d": "La consultation de sources officielles rend le service plus PROFESSIONNEL, pas informel. Cela montre de la préparation et de l'engagement.",
+        "feedback": "<strong>Réponse Correcte!</strong> Un client heureux est un client servi avec agilité et précision."
+    }
+}

@@ -6,67 +6,67 @@ const Tutorial = {
     currentStep: 0,
     isActive: false,
 
-    // Passos do tutorial com seletor do elemento e texto explicativo
+    // Passos do tutorial com seletor do elemento e chave i18n
     steps: [
         {
             selector: '#sidebar',
-            text: '📋 <strong>Menu Lateral</strong><br>Aqui você encontra todos os módulos e páginas do curso. Clique no título de um módulo para expandir ou recolher.',
+            textKey: 's1',
             position: 'right'
         },
         {
             selector: '[data-module-id="extras"] .module-title',
-            text: '🧠 <strong>Menu de Fixação</strong><br>Após concluir os módulos, acesse atividades extras para reforçar seu aprendizado: resumos, questionários, flashcards e muito mais!',
+            textKey: 's2',
             position: 'right'
         },
         {
             selector: '#btn-menu',
-            text: '☰ <strong>Recolher Menu</strong><br>Clique aqui para recolher ou expandir o menu lateral, dando mais espaço para o conteúdo.',
+            textKey: 's3',
             position: 'bottom'
         },
         {
             selector: '#btn-settings',
-            text: '⚙️ <strong>Configurações</strong><br>Abra para personalizar: modo escuro, tamanho da fonte, velocidade de voz, e idioma.',
+            textKey: 's4',
             position: 'bottom'
         },
         {
             selector: '.settings-row:has(#btn-dyslexia)',
-            text: '📖 <strong>Assistência de Leitura</strong><br>Ative para melhorar a legibilidade com espaçamento maior entre letras e linhas.',
+            textKey: 's5',
             position: 'bottom',
             openSettings: true
         },
         {
             selector: '.settings-row:has(#btn-auto-read)',
-            text: '🔄 <strong>Leitura Automática</strong><br>Quando ativada, o conteúdo será lido automaticamente ao carregar cada página.',
+            textKey: 's6',
             position: 'bottom',
             openSettings: true
         },
         {
             selector: '.settings-row-vertical:has(#voice-select)',
-            text: '🎤 <strong>Voz de Leitura</strong><br>Escolha a voz que prefere para a leitura. Vozes com ⭐ são recomendadas por maior qualidade.',
+            textKey: 's7',
             position: 'bottom',
             openSettings: true
         },
         {
             selector: '#tts-controls',
-            text: '🔊 <strong>Leitura de Página</strong><br>Clique no botão para ouvir o conteúdo. Use o controle de volume ao lado para ajustar.',
+            textKey: 's8',
             position: 'bottom',
             closeSettings: true
         },
         {
             selector: '#tutorial-interactive-demo',
-            text: '👆 <strong>Elementos Interativos</strong><br>Ao longo do curso, elementos como este que <em>tremem</em> são clicáveis! Clique neles para revelar conteúdo adicional.',
+            textKey: 's9',
             position: 'bottom',
             showInteractiveDemo: true
         },
         {
             selector: '.content-nav',
-            text: '➡️ <strong>Navegação</strong><br>Use "Anterior" e "Próximo" para navegar entre as páginas do curso.',
+            textKey: 's10',
             position: 'top',
             hideInteractiveDemo: true
         },
         {
             selector: '.content-nav',
-            text: '⌨️ <strong>Atalhos de Teclado</strong><br>Você também pode navegar usando o teclado:<br>• <kbd>←</kbd> Página anterior<br>• <kbd>→</kbd> Próxima página<br>• <kbd>Esc</kbd> Fechar popups<br>• <kbd>M</kbd> Abrir/fechar menu<br>• <kbd>?</kbd> Ver atalhos',
+            textKey: 's11',
             position: 'top'
         }
     ],
@@ -185,17 +185,28 @@ const Tutorial = {
                 this.positionTooltip(element, step.position);
             }, 300);
 
-            // Atualizar texto e indicador
-            document.getElementById('tutorial-text').innerHTML = step.text;
-            document.getElementById('tutorial-step-indicator').textContent =
-                `${stepIndex + 1} de ${this.steps.length}`;
+            // Atualizar texto (usar I18n.t se disponível)
+            const stepText = (typeof I18n !== 'undefined' && I18n.t(`tutorial.steps.${step.textKey}`))
+                ? I18n.t(`tutorial.steps.${step.textKey}`)
+                : step.textKey;
+            document.getElementById('tutorial-text').innerHTML = stepText;
 
-            // Botão de próximo ou finalizar
+            const stepIndicator = (typeof I18n !== 'undefined' && I18n.t('tutorial.step_indicator'))
+                ? I18n.t('tutorial.step_indicator')
+                : 'de';
+            document.getElementById('tutorial-step-indicator').textContent =
+                `${stepIndex + 1} ${stepIndicator} ${this.steps.length}`;
+
+            // Botão de próximo ou finalizar (usar I18n.t se disponível)
             const nextBtn = document.getElementById('tutorial-next');
             if (stepIndex === this.steps.length - 1) {
-                nextBtn.textContent = 'Finalizar ✓';
+                nextBtn.textContent = (typeof I18n !== 'undefined' && I18n.t('tutorial.buttons.finish'))
+                    ? I18n.t('tutorial.buttons.finish')
+                    : 'Finalizar ✓';
             } else {
-                nextBtn.textContent = 'Próximo →';
+                nextBtn.textContent = (typeof I18n !== 'undefined' && I18n.t('tutorial.buttons.next'))
+                    ? I18n.t('tutorial.buttons.next')
+                    : 'Próximo →';
             }
         }, step.openSettings || step.closeSettings || step.showInteractiveDemo ? 300 : 0);
     },

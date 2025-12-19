@@ -1,0 +1,26 @@
+{
+    "title": "Why are deadlines important?",
+    "intro": "Another essential point in Customer Service work is meeting response deadlines. Well-defined deadlines ensure organization, predictability and efficiency, as well as demonstrating respect for the customer and strengthening trust in the brand. Additionally, following defined deadlines helps the team maintain the organization of internal processes, avoiding rework or unnecessary escalations.",
+    "standard_box": {
+        "title": "⏳ Standard Deadlines",
+        "comment": "These deadlines ensure agility, organization and consistency in day-to-day service.",
+        "l1": "<strong>Requests:</strong> up to 3 business days",
+        "l2": "<strong>Information:</strong> up to 2 business days",
+        "l3": "<strong>Complaints:</strong> up to 2 business days"
+    },
+    "special_box": {
+        "title": "⚠ Special Deadlines",
+        "comment": "These cases require more detailed analysis, so they have longer deadlines.",
+        "l1": "<strong>Damages:</strong> up to 5 business days for response",
+        "l2": "<strong>Duplicate payment:</strong> up to 8 business days"
+    },
+    "text_footer": "⚠️ <strong>IMPORTANT:</strong> The correct registration of the service category is fundamental so that the appropriate deadline is respected and the customer receives a response at the correct time.",
+    "quiz": {
+        "question": "A customer reports paying an invoice twice. You need to register the service so they can be reimbursed. Why is it crucial to select the 'Duplicate payment' category instead of a generic 'Complaint' category?",
+        "opt_a": "A) Because 'Duplicate' has a specific deadline (up to 8 business days) for detailed financial analysis, avoiding false promises of quick resolution.",
+        "opt_b": "B) Because 'Complaint' is a category that should only be used for poor service at the physical store.",
+        "opt_c": "C) It makes no practical difference, as the deadline for customer response is always 2 business days for any case.",
+        "opt_d": "D) Just to comply with a bureaucratic formality, with no real impact on case handling.",
+        "feedback": "<strong>Correct Answer!</strong> The correct category defines the correct deadline (8 days), managing customer expectations."
+    }
+}

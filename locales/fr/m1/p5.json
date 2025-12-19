@@ -1,0 +1,45 @@
+{
+    "title": "Quand réaliser des contacts sortants?",
+    "intro": "En plus des interactions entrantes (réceptives), le Service Client réalise des contacts actifs avec les clients, notamment dans les campagnes promotionnelles et les actions liées aux Cartes du Groupe:",
+    "timeline": {
+        "t1": {
+            "title": "1. Activation de cartes",
+            "text": "Contacter les clients pour activer les nouvelles cartes émises."
+        },
+        "t2": {
+            "title": "2. Mise à jour des données",
+            "text": "Maintenir les données des clients toujours à jour."
+        },
+        "t3": {
+            "title": "3. Communication de promotions",
+            "text": "Informer sur les offres exclusives et les avantages."
+        },
+        "t4": {
+            "title": "4. Récupération de résiliations",
+            "text": "Travailler pour retenir les clients qui souhaitent annuler des services."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Gestion et Amélioration Continue",
+            "l1": "Organiser et tabuler les données, élaborer des rapports et soutenir les demandes de l'équipe.",
+            "l2": "Agir de manière proactive dans l'identification d'améliorations dans les scripts et les normes de service.",
+            "l3": "Contribuer à l'évolution constante du service fourni."
+        },
+        "a2": {
+            "title": "🎓 Développement professionnel",
+            "text": "La connaissance des responsabilités vous permet d'agir avec plus de sécurité et d'assertivité, contribuant à votre évolution de carrière."
+        }
+    },
+    "quiz": {
+        "question": "Vous remarquez que plusieurs clients appellent avec la même question sur une nouvelle promotion. Quelle est la meilleure attitude alignée sur les responsabilités d'amélioration continue du Service Client?",
+        "opt_a": "A) Continuer à répondre à chacun individuellement sans signaler le fait.",
+        "feedback_wrong_a": "Continuer à répondre individuellement ne résout pas le problème structurel et maintient le volume d'appels inutiles.",
+        "opt_b": "B) Se plaindre aux collègues que les clients ne savent pas lire le règlement.",
+        "feedback_wrong_b": "Se plaindre n'est pas productif et ne contribue pas à l'amélioration du processus.",
+        "opt_c": "C) Signaler le modèle observé au superviseur afin que la communication de la promotion soit ajustée.",
+        "opt_d": "D) Dire au client de chercher l'information sur le site.",
+        "feedback_wrong_d": "Envoyer le client chercher l'information seul démontre un manque de soin et ne résout pas la question.",
+        "feedback": "<strong>Réponse Correcte!</strong> La proactivité dans l'identification des tendances aide à améliorer le processus pour tous."
+    }
+}

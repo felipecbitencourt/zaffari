@@ -1,0 +1,50 @@
+{
+    "title": "Where to look up store data?",
+    "lead": "All essential information is available on the company's <strong>Intranet</strong>.",
+    "intro_p": "It's your main work tool for quick and accurate queries.",
+    "highlight_title": "Step by Step",
+    "highlight_text": "Intranet → Branches → Registration data and schedules",
+    "slider_title": "📍 How to search on the Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Step 1: Access the Intranet",
+            "text": "Access the company's internal page (Intranet)."
+        },
+        "s2": {
+            "title": "Step 2: Navigate to Branches",
+            "text": "Click on the <strong>'Branches'</strong> option."
+        },
+        "s3": {
+            "title": "Step 3: Registration Data",
+            "text": "Then click on <strong>'Registration data and schedules'</strong>."
+        },
+        "s4": {
+            "title": "Step 4: Query and Inform",
+            "text": "Now you can query information from all group units, including: Address, Opening hours and Contact methods to guide the customer!"
+        }
+    },
+    "list_intro": "What you can query:",
+    "list_items": {
+        "l1": "Store addresses",
+        "l2": "Opening hours",
+        "l3": "Contact methods"
+    },
+    "quiz1": {
+        "question": "A customer calls asking if the Downtown store is open on tomorrow's holiday. You don't know this off the top of your head. What's the fastest and safest procedure?",
+        "opt_a": "A) Quickly ask in the team WhatsApp group to see if anyone knows.",
+        "opt_b": "B) Check the Intranet in 'Branches' > 'Registration data and schedules' to get official information.",
+        "opt_c": "C) Search on Google Maps, as it's always updated there.",
+        "opt_d": "D) Inform that it's probably closed, to prevent the customer from wasting a trip.",
+        "feedback": "<strong>Correct Answer!</strong> The Intranet is the only official and reliable source for branch schedules."
+    },
+    "importance_title": "Why does this matter?",
+    "importance_text": "Mastering this query ensures <strong>agility</strong> in service, more <strong>assertive</strong> responses, <strong>standardization</strong> of information and a <strong>more positive experience</strong> for the customer.",
+    "quiz2": {
+        "question": "Mastering information queries on the Intranet contributes to:",
+        "opt_a": "A) Increasing service time.",
+        "opt_b": "B) Reducing response standardization.",
+        "opt_c": "C) Ensuring agility, assertiveness and better customer experience.",
+        "opt_d": "D) Making service more informal.",
+        "feedback": "<strong>Correct Answer!</strong> Happy customer is a customer served with agility and accuracy."
+    }
+}

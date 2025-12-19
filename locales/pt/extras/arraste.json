@@ -1,0 +1,69 @@
+{
+    "title": "🎯 Arraste e Solte",
+    "lead": "Associe conceitos e categorias arrastando os itens para os lugares corretos.",
+    "back_btn": "← Voltar ao Menu",
+    "phases": {
+        "phase1": {
+            "title": "Fase 1: Tipos de Atendimento",
+            "instruction": "Arraste cada tipo de atendimento para sua descrição correta",
+            "progress": "de 3 corretos"
+        },
+        "phase2": {
+            "title": "Fase 2: Prazos de Atendimento",
+            "instruction": "Arraste cada tipo de demanda para o prazo correto",
+            "progress": "de 5 corretos"
+        },
+        "phase3": {
+            "title": "Fase 3: Responsabilidades do SAC",
+            "instruction": "Classifique: o que é e o que NÃO é responsabilidade do SAC",
+            "progress": "de 8 corretos"
+        }
+    },
+    "items": {
+        "multicanal": "Atendimento Multicanal",
+        "receptivo": "Atendimento Receptivo",
+        "ativo": "Atendimento Ativo",
+        "solicitacoes": "Solicitações",
+        "informacoes": "Informações",
+        "reclamacoes": "Reclamações",
+        "danos": "Danos",
+        "duplicidade": "Duplicidade de pagamento",
+        "atendimento": "Atendimento receptivo e ativo",
+        "relatorios": "Elaborar relatórios",
+        "scripts": "Propor melhorias em scripts",
+        "suporte": "Suporte a colaboradores",
+        "leis": "Definir leis de proteção ao consumidor",
+        "orcamento": "Aprovar orçamento da empresa",
+        "contratar": "Contratar funcionários",
+        "contratos": "Negociar contratos com fornecedores"
+    },
+    "zones": {
+        "multicanal_desc": "Telefone, e-mail, chat e meios eletrônicos",
+        "receptivo_desc": "Receber reclamações, sugestões e elogios",
+        "ativo_desc": "Ativação de cartões, promoções e reversão",
+        "ate_2dias": "Até 2 dias úteis",
+        "ate_3dias": "Até 3 dias úteis",
+        "ate_5dias": "Até 5 dias úteis",
+        "ate_8dias": "Até 8 dias úteis",
+        "sac_faz": "✅ SAC faz",
+        "sac_nao_faz": "❌ SAC não faz",
+        "solte_aqui": "Solte aqui",
+        "solte_aqui_2": "Solte aqui (2 itens)",
+        "solte_aqui_4": "Solte aqui (4 itens)"
+    },
+    "completion": {
+        "title": "Parabéns!",
+        "message": "Você completou todas as 3 fases do jogo de Arraste e Solte!",
+        "restart_btn": "🔄 Jogar Novamente",
+        "next_btn": "Próxima Fase →"
+    },
+    "popup": {
+        "phase1_title": "Fase 1 Completa!",
+        "phase1_msg": "Você dominou os tipos de atendimento!",
+        "phase2_title": "Fase 2 Completa!",
+        "phase2_msg": "Excelente! Os prazos não são mais segredo!",
+        "phase3_title": "Todas as Fases Completas!",
+        "phase3_msg": "Você é um expert no SAC!",
+        "default_msg": "Excelente trabalho!"
+    }
+}

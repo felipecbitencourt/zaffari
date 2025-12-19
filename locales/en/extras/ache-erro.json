@@ -1,0 +1,107 @@
+{
+    "title": "🔍 Spot the Error",
+    "lead": "Analyze the fictitious customer service emails and identify the errors by clicking directly on the incorrect phrases.",
+    "back_btn": "← Back to Extras Menu",
+    "ui": {
+        "email_tabs": {
+            "email1": "📧 Email 1",
+            "email2": "📧 Email 2",
+            "email3": "📧 Email 3",
+            "email4": "📧 Email 4"
+        },
+        "inbox": "Inbox",
+        "from": "From:",
+        "to": "To:",
+        "subject": "Subject:",
+        "errors_found": "Errors found:",
+        "errors_identified": "✅ Errors Identified:"
+    },
+    "completion": {
+        "title": "Congratulations!",
+        "message": "You found all errors in this email!",
+        "next_btn": "Next Email →",
+        "final_title": "Game Over!",
+        "final_message": "You completed all emails!",
+        "restart_btn": "🔄 Play Again",
+        "view_summary": "View Final Summary",
+        "total_stars": "Total: {count}/{max} stars"
+    },
+    "emails": [
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "joao.silva@email.com",
+            "assunto": "Re: Exchange Request #12345",
+            "corpo": "Dear João,\n\nThank you for contacting us. Regarding your request to exchange the product purchased in our physical store, we inform you that <span class=\"erro\" data-erro=\"1\">you have a guaranteed legal right to exchange</span> within <span class=\"erro\" data-erro=\"2\">7 working days</span>.\n\nPlease, <span class=\"erro\" data-erro=\"3\">send the product to our technical assistance</span> so we can proceed.\n\nSincerely,\nSAC Team",
+            "erros": {
+                "1": {
+                    "texto": "you have a guaranteed legal right to exchange",
+                    "explicacao": "The exchange of a product WITHOUT DEFECT in a physical store is a COMMERCIAL POLICY (store courtesy), not a right guaranteed by law. The CDC only mandates exchange in case of defect."
+                },
+                "2": {
+                    "texto": "7 working days",
+                    "explicacao": "When applicable (online purchases), the Right of Repentance period is 7 CALENDAR days, not working days."
+                },
+                "3": {
+                    "texto": "send the product to our technical assistance",
+                    "explicacao": "A product WITHOUT DEFECT should not be sent to technical assistance. Technical assistance is for repairing products WITH DEFECTS."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "maria.santos@email.com",
+            "assunto": "Re: Purchase Withdrawal #67890",
+            "corpo": "Dear Maria,\n\nWe received your request to withdraw from the purchase made in our physical store last week.\n\nWe inform you that <span class=\"erro\" data-erro=\"1\">you can exercise the right of repentance</span> normally. Upon returning the product, <span class=\"erro\" data-erro=\"2\">we will refund 80% of the amount paid</span>.\n\nWe remind you that <span class=\"erro\" data-erro=\"3\">after the return, there will be no further possibility of complaining about the product</span>.\n\nSincerely,\nSAC Team",
+            "erros": {
+                "1": {
+                    "texto": "you can exercise the right of repentance",
+                    "explicacao": "The Right of Repentance (7 days) only applies to ONLINE purchases or those made outside the commercial establishment. It does NOT apply to purchases in physical stores."
+                },
+                "2": {
+                    "texto": "we will refund 80% of the amount paid",
+                    "explicacao": "When repentance is applicable, the refund must be FULL (100%), including shipping. It can never be partial."
+                },
+                "3": {
+                    "texto": "after the return, there will be no further possibility of complaining about the product",
+                    "explicacao": "The customer always retains the right to complain about HIDDEN DEFECTS (defects that appear later), even after previous returns or exchanges."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "carlos.oliveira@email.com",
+            "assunto": "Re: Defect in appliance #11223",
+            "corpo": "Dear Carlos,\n\nWe apologize for the inconvenience with your home appliance. According to the Consumer Protection Code, <span class=\"erro\" data-erro=\"1\">you have up to 15 days to resolve the problem through technical assistance</span>.\n\nIf the problem is not solved within this period, <span class=\"erro\" data-erro=\"2\">we will only offer a proportional abatement in the value</span>.\n\nPlease proceed to the brand's authorized technical assistance for evaluation.\n\nSincerely,\nSAC Team",
+            "erros": {
+                "1": {
+                    "texto": "you have up to 15 days to resolve the problem through technical assistance",
+                    "explicacao": "The correct deadline is 30 DAYS for the supplier to resolve the defect via technical assistance, not 15 days."
+                },
+                "2": {
+                    "texto": "we will only offer a proportional abatement in the value",
+                    "explicacao": "After 30 days without a solution, the customer has THREE options: product exchange, proportional abatement, OR full refund. Not just one option."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "ana.costa@email.com",
+            "assunto": "Re: Food Exchange #44556",
+            "corpo": "Dear Ana,\n\nRegarding your request to exchange the food product, we inform you that <span class=\"erro\" data-erro=\"1\">you can return the product to any store in our chain</span>.\n\nTo speed up the process, <span class=\"erro\" data-erro=\"2\">it is not necessary to bring the tax coupon</span>. Just bring the product.\n\nAfter analysis, <span class=\"erro\" data-erro=\"3\">we will exchange it for any product of your choice of the same value</span>.\n\nSincerely,\nSAC Team",
+            "erros": {
+                "1": {
+                    "texto": "you can return the product to any store in our chain",
+                    "explicacao": "Food products must be taken to the STORE WHERE THE PURCHASE WAS MADE, along with the tax coupon, for management evaluation."
+                },
+                "2": {
+                    "texto": "it is not necessary to bring the tax coupon",
+                    "explicacao": "The TAX COUPON IS MANDATORY to validate the purchase and proceed with any complaint or product exchange."
+                },
+                "3": {
+                    "texto": "we will exchange it for any product of your choice of the same value",
+                    "explicacao": "The exchange of food products only occurs when the product is UNFIT FOR CONSUMPTION, not due to customer preference. Reason, brand, and batch must be evaluated."
+                }
+            }
+        }
+    ]
+}

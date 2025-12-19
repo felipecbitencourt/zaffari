@@ -1,0 +1,36 @@
+{
+    "title": "Cuando hay defecto, ¿qué hacer?",
+    "intro": "El proveedor tiene hasta <strong>30 días</strong> para solucionar el defecto por medio de la asistencia técnica autorizada.",
+    "accordion": {
+        "options_title": "🔄 Opciones del cliente si no hay solución en 30 días",
+        "l1": "<strong>Cambio del producto</strong> por otro igual o similar",
+        "l2": "<strong>Abatimiento proporcional</strong> del valor pagado",
+        "l3": "<strong>Devolución integral</strong> del valor pagado"
+    },
+    "attention_text": "<strong>Plazo para reclamar:</strong> 90 días para productos durables.",
+    "h3_assist": "Asistencia Técnica 🔧",
+    "accordion_electro": {
+        "title": "📦 Procedimiento para productos Electro",
+        "text": "Productos <strong>Electro</strong> deben ser remitidos a la asistencia técnica de la marca. Si después de 30 días no hay solución, la empresa podrá realizar el cambio mediante orden de servicio."
+    },
+    "accordion_registro": {
+        "title": "📝 Cómo registrar en el sistema",
+        "intro": "Cuando el cliente solicite información sobre asistencia técnica:",
+        "path_title": "Camino en el Sistema",
+        "path": "<strong>INFORMACIÓN → COMPRAS → DATOS DE ASISTENCIA TÉCNICA</strong>",
+        "l1": "Oriente al cliente a remitir el producto a la asistencia de la marca",
+        "l2": "Informe el plazo de 30 días para solución",
+        "l3": "Si no resuelve en 30 días, la empresa puede realizar el cambio <strong>con orden de servicio</strong>"
+    },
+    "quiz": {
+        "question": "Una clienta compró una batidora hace 2 meses y el motor dejó de funcionar. ¿Dónde registras esta atención y qué orientas?",
+        "opt_a": "A) Registro en RECLAMO > ELECTRO e informo que puede cambiar directamente en la tienda.",
+        "feedback_wrong_a": "Realizar cambio directo en la tienda no es el procedimiento correcto para productos Electro. Ellos deben primero ir a la asistencia técnica.",
+        "opt_b": "B) Registro en INFORMACIÓN > COMPRAS > DATOS DE ASISTENCIA TÉCNICA y oriento a enviar a la asistencia de la marca.",
+        "opt_c": "C) Informo que como pasó de 30 días de la compra, no podemos ayudar.",
+        "feedback_wrong_c": "Decir que no podemos ayudar es incorrecto. El plazo de 90 días para reclamar defectos de productos durables aún es válido.",
+        "opt_d": "D) Registro en DEVOLUCIÓN y solicito reembolso inmediato.",
+        "feedback_wrong_d": "Solicitar devolución de valor no es el primer paso. La ley da al proveedor 30 días para intentar resolver vía asistencia técnica.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Productos Electro deben ser remitidos a la asistencia técnica de la marca primero."
+    }
+}

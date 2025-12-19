@@ -1,0 +1,29 @@
+{
+    "title": "¿Por qué los plazos son importantes?",
+    "intro": "Otro punto esencial en el trabajo del SAC es el cumplimiento de los plazos de atención. Plazos bien definidos garantizan organización, previsibilidad y eficiencia, además de demostrar respeto al cliente y fortalecer la confianza en la marca. Además, seguir los plazos definidos ayuda al equipo a mantener la organización de los procesos internos, evitando retrabajos o escalamientos innecesarios.",
+    "standard_box": {
+        "title": "⏳ Plazos Estándar",
+        "comment": "Estos plazos garantizan agilidad, organización y consistencia en la atención del día a día.",
+        "l1": "<strong>Solicitudes:</strong> hasta 3 días hábiles",
+        "l2": "<strong>Informaciones:</strong> hasta 2 días hábiles",
+        "l3": "<strong>Reclamos:</strong> hasta 2 días hábiles"
+    },
+    "special_box": {
+        "title": "⚠ Plazos Especiales",
+        "comment": "Estas atenciones exigen análisis más detallados, por eso cuentan con plazos mayores.",
+        "l1": "<strong>Daños:</strong> hasta 5 días hábiles para retorno",
+        "l2": "<strong>Duplicidad de pago:</strong> hasta 8 días hábiles"
+    },
+    "text_footer": "⚠️ <strong>IMPORTANTE:</strong> El correcto registro de la categoría de atención es fundamental para que el plazo adecuado sea respetado y el cliente reciba retorno en el tiempo correcto.",
+    "quiz": {
+        "question": "Un cliente informa que pagó la factura dos veces. Necesitas registrar la atención para que sea reembolsado. ¿Por qué es crucial seleccionar la categoría 'Duplicidad de pago' en vez de una categoría genérica de 'Reclamo'?",
+        "opt_a": "A) Porque 'Duplicidad' tiene un plazo específico (hasta 8 días hábiles) para análisis financiero detallado, evitando promesas falsas de solución rápida.",
+        "opt_b": "B) Porque 'Reclamo' es una categoría que solo debe ser usada para mala atención en la tienda física.",
+        "feedback_wrong_b": "La categoría 'Reclamo' no está restringida a atención en tienda física. Sirve para insatisfacciones generales, pero cada tipo de demanda tiene su plazo específico.",
+        "opt_c": "C) No hace diferencia práctica, pues el plazo de retorno al cliente es siempre de 2 días hábiles para cualquier caso.",
+        "feedback_wrong_c": "¡Hace mucha diferencia! Duplicidad de pago necesita 8 días hábiles para análisis financiero. Si prometemos 2 días, creamos una expectativa que no podemos cumplir.",
+        "opt_d": "D) Solo para cumplir una formalidad burocrática, sin impacto real en el tratamiento del caso.",
+        "feedback_wrong_d": "La categorización correcta impacta directamente en el tratamiento del caso: define plazos, encaminamientos y expectativas. No es burocracia, es gestión eficiente.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> La categoría correcta define el plazo correcto (8 días), gestionando la expectativa del cliente."
+    }
+}

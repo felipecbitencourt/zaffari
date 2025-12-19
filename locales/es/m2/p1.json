@@ -1,0 +1,21 @@
+{
+    "title": "¿Por qué necesitamos saber buscar?",
+    "intro_p1": "Durante la atención, es común que los clientes tengan dudas sobre información básica de las tiendas, como dirección, horario de atención y formas de contacto.",
+    "intro_p2": "Saber dónde encontrar esta información y cómo orientarlos correctamente demuestra:",
+    "cards": {
+        "c1": {
+            "title": "Seguridad",
+            "text": "Transmita confianza al cliente con información correcta y actualizada."
+        },
+        "c2": {
+            "title": "Agilidad",
+            "text": "Resuelva dudas de forma rápida y eficaz, promoviendo la satisfacción de los clientes."
+        },
+        "c3": {
+            "title": "Cuidado",
+            "text": "Demuestre atención y celo por el cliente en cada interacción."
+        }
+    },
+    "box_title": "Objetivo del Módulo",
+    "box_text": "¡Vamos a aprender dónde encontrar toda esta información para una atención más ágil y precisa!"
+}

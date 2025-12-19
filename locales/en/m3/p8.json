@@ -1,0 +1,73 @@
+{
+    "title": "📝 What did we learn in the course?",
+    "lead": "Congratulations! You've reached the end of 'Inside Customer Service'. 🎉",
+    "intro_summary": "Before closing, here's a summary of the main questions we answered about CDC:",
+    "accordion": {
+        "a1": {
+            "title": "❓ What is CDC and why know it?",
+            "text": "<strong>✅ Answer:</strong> CDC (Law No. 8,078/90) protects consumers and ensures fair consumption relations. Knowing it is essential to:",
+            "l1": "Respond with confidence",
+            "l2": "Avoid rework",
+            "l3": "Convey credibility to the customer"
+        },
+        "a2": {
+            "title": "❓ When can the customer exchange a product without defect?",
+            "text": "<strong>✅ Answer:</strong>",
+            "l1": "<strong>Physical store:</strong> CDC does NOT require exchange - it's a commercial policy (courtesy)",
+            "l2": "<strong>Online store:</strong> Customer has Right of Withdrawal (up to 7 calendar days after receipt)"
+        },
+        "a3": {
+            "title": "❓ When there's a defect, what's the procedure?",
+            "text": "<strong>✅ Answer:</strong> The supplier has up to <strong>30 days</strong> to fix via technical assistance. If not resolved, customer can opt for:",
+            "l1": "Product exchange",
+            "l2": "Proportional discount on value",
+            "l3": "Refund of amount paid",
+            "note": "<em>Deadline to complain: 90 days for durable products.</em>"
+        },
+        "a4": {
+            "title": "❓ How to forward product complaints?",
+            "text": "<strong>✅ Answer:</strong>",
+            "l1": "<strong>Food:</strong> Customer brings product + receipt to store (management evaluation)",
+            "l2": "<strong>Non-food:</strong> Product + receipt to store (except Appliances → Technical Assistance)",
+            "l3": "<strong>Wrong purchase:</strong> Non-perishables can be exchanged if unopened; perishables we don't exchange"
+        }
+    },
+    "quiz_final": {
+        "question": "After this entire journey, you receive a new colleague on the team who asks: 'In the end, what's most important here?'. Which answer best summarizes the CS mission we learned?",
+        "opt_a": "A) 'The most important thing is to respond fast to hit the time target, whether it's resolved or not.'",
+        "feedback_wrong_a": "Speed without resolution generates dissatisfaction. The customer wants their problem solved, not just to be served quickly. Time metrics are important, but not the main goal.",
+        "opt_b": "B) 'The important thing is to follow the law rigorously so the company doesn't get sued, the rest is detail.'",
+        "feedback_wrong_b": "Following the law is fundamental, but not sufficient. CS goes beyond: seeks delight, loyalty and relationship building. Law is the minimum, excellence is the goal.",
+        "opt_c": "C) 'Our mission is to be the strategic bridge between company and customer, solving problems with efficiency, humanity and respect for laws.'",
+        "opt_d": "D) 'The main focus is to avoid at all costs the customer asking to speak with management.'",
+        "feedback_wrong_d": "Avoiding escalation is not the goal - it is a consequence of good service. If the customer needs to speak with management, it is not necessarily a failure. The focus should be on solving the problem.",
+        "feedback": "<strong>Correct Answer!</strong> You captured the essence of Customer Service! 👏👏👏"
+    },
+    "accordion_extra": {
+        "a5": {
+            "title": "❓ What are the system paths for each situation?",
+            "text": "<strong>✅ Answer:</strong> Each type of demand has its specific path:",
+            "box_title": "System Paths",
+            "l1": "<strong>Durable Product with Defect:</strong><br>INFORMATION → PURCHASES → TECHNICAL ASSISTANCE DATA",
+            "l2": "<strong>Wrong Size/Color/Voltage Purchase:</strong><br>INFORMATION → PURCHASES → MERCHANDISE EXCHANGE",
+            "l3": "<strong>Exchange not performed in store:</strong><br>COMPLAINT → MERCHANDISE EXCHANGE"
+        },
+        "a6": {
+            "title": "❓ What is the deadline for exchanging perishables online?",
+            "text": "<strong>✅ Answer:</strong> Perishable products with short shelf life (meats, produce, bakery, cold cuts, dairy) bought online have a special deadline of <strong>24 hours</strong> after delivery.",
+            "attention": "⚠️ This ensures food safety for the customer and company.",
+            "note": "<em>Different from the 7 days of Right of Withdrawal, which applies to non-perishable products.</em>"
+        },
+        "a7": {
+            "title": "❓ What are the best practices for quality service?",
+            "text": "<strong>✅ Answer:</strong> The 4 essential practices are:",
+            "l1": "<strong>👂 Active Listening:</strong> Listen attentively without interrupting",
+            "l2": "<strong>🔍 Complete Probing:</strong> Ask questions to understand the situation",
+            "l3": "<strong>💚 Cordiality and Empathy:</strong> Be kind and understanding",
+            "l4": "<strong>📝 Precise Recording:</strong> Document all data correctly",
+            "note": "<em>These practices ensure clear, organized and rework-free service.</em>"
+        }
+    },
+    "success_title": "Thank you for participating!",
+    "success_text": "Keep moving forward - every interaction is an opportunity to make a difference."
+}

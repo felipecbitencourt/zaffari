@@ -69,7 +69,8 @@
             data-i18n="m3.p7.btn_submit">Enviar Reflexão</button>
         <div id="feedback-desafio"
             style="display: none; margin-top: 15px; padding: 15px; background: #e8f5e9; border-radius: var(--radius-md); border-left: 4px solid #4caf50;">
-            <p style="margin: 0; color: #2e7d32;"><strong>✅ Reflexão registrada!</strong> Muito bom! Registros completos
+            <p style="margin: 0; color: #2e7d32;" data-i18n="[html]m3.p7.feedback_success"><strong>✅ Reflexão
+                    registrada!</strong> Muito bom! Registros completos
                 e detalhados são essenciais para um atendimento de qualidade. Continue aplicando esse pensamento no seu
                 dia a dia.</p>
         </div>
@@ -88,7 +89,15 @@
                 // Mostrar feedback
                 feedback.style.display = 'block';
                 btn.disabled = true;
-                btn.textContent = '✔ Enviado';
+                // btn.textContent = '✔ Enviado'; // OLD HARDCODED
+                // Use global/module key if available or just hardcode if JS i18n is tricky without a helper. 
+                // However, user has I18n.t() typically? existing code didn't show it.
+                // But we can check if I18n is available globally.
+                // Or easier: set a data attribute on the button that has the translated text, and use that?
+                // Or since this is a simple script, we can't easily inject the string unless we put it in the DOM first.
+                // Let's rely on data-i18n replacement if we reload, but this is a click handler.
+                // A trick: put the text in a hidden span or attribute we can read.
+                btn.textContent = (window.I18n && window.I18n.t) ? window.I18n.t('m3.p7.btn_sent') : '✔ Enviado';
                 btn.style.background = '#4caf50';
                 textarea.disabled = true;
 

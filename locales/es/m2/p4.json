@@ -1,0 +1,17 @@
+{
+    "title": "Poniendo en Práctica",
+    "intro": "Ahora que conoce el camino de la Intranet, ¡vamos a probar en la práctica!",
+    "quiz": {
+        "question": "Un cliente llama preguntando si la tienda del Centro está abierta en el feriado de mañana. Usted no sabe esa información de memoria. ¿Cuál es el procedimiento más ágil y seguro?",
+        "opt_a": "A) Preguntar rápidamente en el grupo de WhatsApp del equipo para ver si alguien sabe.",
+        "feedback_wrong_a": "Preguntar en el grupo de WhatsApp puede traer información desactualizada o incorrecta. La fuente oficial es siempre la Intranet.",
+        "opt_b": "B) Consultar la Intranet en 'Sucursales' > 'Datos catastrales y horarios' para tener la información oficial.",
+        "opt_c": "C) Buscar en Google Maps, pues allí siempre está actualizado.",
+        "feedback_wrong_c": "Google Maps no siempre está actualizado con horarios especiales de feriados. La Intranet es la única fuente oficial de la empresa.",
+        "opt_d": "D) Informar que probablemente estará cerrada, para evitar que el cliente pierda el viaje.",
+        "feedback_wrong_d": "Dar una información sin certeza puede causar frustración al cliente. Nunca 'asuma' respuestas - consulte la fuente oficial.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> La Intranet es la única fuente oficial y confiable para horarios de sucursales."
+    },
+    "importance_title": "¿Por qué esto importa?",
+    "importance_text": "Dominar esta consulta garantiza <strong>agilidad</strong> en la atención, respuestas más <strong>asertivas</strong>, <strong>estandarización</strong> de la información y una <strong>experiencia más positiva</strong> para el cliente."
+}

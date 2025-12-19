@@ -1,0 +1,32 @@
+{
+    "title": "¿Dónde consultar datos de las tiendas?",
+    "lead": "Toda la información esencial está disponible en la <strong>Intranet</strong> de la empresa.",
+    "intro_p": "Ella es su principal herramienta de trabajo para consultas rápidas y precisas.",
+    "highlight_title": "Paso a Paso",
+    "highlight_text": "Intranet → Sucursales → Datos catastrales y horarios",
+    "slider_title": "📍 Cómo consultar en la Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Paso 1: Acceder a la Intranet",
+            "text": "Acceda a la página interna de la empresa (Intranet)."
+        },
+        "s2": {
+            "title": "Paso 2: Navegar hasta Sucursales",
+            "text": "Haga clic en la opción <strong>'Sucursales'</strong>."
+        },
+        "s3": {
+            "title": "Paso 3: Datos Catastrales",
+            "text": "Luego, haga clic en <strong>'Datos catastrales y horarios'</strong>."
+        },
+        "s4": {
+            "title": "Paso 4: Consultar e Informar",
+            "text": "Ahora puede consultar información de todas las unidades del grupo, incluyendo: Dirección, Horario de atención y Formas de contacto para orientar al cliente."
+        }
+    },
+    "list_intro": "Qué puede consultar:",
+    "list_items": {
+        "l1": "Dirección de las tiendas",
+        "l2": "Horarios de atención",
+        "l3": "Formas de contacto"
+    }
+}

@@ -1,37 +1,84 @@
 /**
  * Sistema de Internacionalização (i18n) simples
  * Carrega arquivos JSON e substitui textos na página
+ * MODO: 100% MODULAR - Carrega JSONs individuais por página
  */
 
 const I18n = {
     currentLang: 'pt',
     translations: {},
 
-    // Inicializa o sistema
+    // Inicializa o sistema (modo modular)
     async init() {
         // Tenta pegar do localStorage ou usa 'pt' como padrão
         this.currentLang = localStorage.getItem('courseLanguage') || 'pt';
 
-        // Carrega o arquivo de tradução do idioma atual
-        await this.loadTranslations(this.currentLang);
+        // Carrega traduções base necessárias para a UI global
+        await this.loadBaseTranslations(this.currentLang);
 
-        console.log(`[i18n] Sistema inicializado em: ${this.currentLang}`);
+        console.log(`[i18n] Sistema inicializado em modo MODULAR: ${this.currentLang}`);
 
-        // Aplica traduções na página atual
+        // Aplica traduções na página atual (header, sidebar, etc)
         this.translatePage();
     },
 
-    // Carrega o JSON de tradução
-    async loadTranslations(lang) {
-        try {
-            const response = await fetch(`locales/${lang}.json`);
-            if (!response.ok) throw new Error(`Falha ao carregar locales/${lang}.json`);
-            this.translations = await response.json();
-            document.documentElement.lang = lang; // Atualiza lang do HTML
-        } catch (error) {
-            console.error('[i18n] Erro ao carregar traduções:', error);
+    // Carrega traduções base para UI global (modo modular)
+    async loadBaseTranslations(lang) {
+        document.documentElement.lang = lang;
+
+        // Carregar JSONs base necessários para interface global
+        const baseFiles = [
+            { path: 'ui.json', mount: 'ui' },
+            { path: 'settings.json', mount: 'settings' },
+            { path: 'tutorial.json', mount: 'tutorial' },
+            { path: 'global.json', mount: 'global' },
+            { path: 'menu.json', mount: 'menu' }
+        ];
+
+        for (const file of baseFiles) {
+            await this.loadPageTranslation(lang, file.path, file.mount);
         }
     },
+
+
+    // Carrega traduções modulares para uma página específica
+    async loadPageTranslation(lang, pagePath, mountPoint) {
+        try {
+            const response = await fetch(`locales/${lang}/${pagePath}`);
+            if (!response.ok) {
+                console.warn(`[i18n] Arquivo modular não encontrado: locales/${lang}/${pagePath}`);
+                return false;
+            }
+            const pageTranslations = await response.json();
+
+            // Mescla as traduções no mountPoint especificado
+            this.setNestedTranslation(mountPoint, pageTranslations);
+            console.log(`[i18n] Traduções carregadas: ${pagePath} -> ${mountPoint}`);
+            return true;
+        } catch (error) {
+            console.warn(`[i18n] Erro ao carregar tradução modular: ${pagePath}`, error);
+            return false;
+        }
+    },
+
+    // Define valor em objeto aninhado usando path "chave.subchave"
+    setNestedTranslation(path, value) {
+        const keys = path.split('.');
+        let current = this.translations;
+
+        for (let i = 0; i < keys.length - 1; i++) {
+            if (!current[keys[i]]) current[keys[i]] = {};
+            current = current[keys[i]];
+        }
+
+        const lastKey = keys[keys.length - 1];
+        if (typeof current[lastKey] === 'object' && typeof value === 'object') {
+            Object.assign(current[lastKey], value);
+        } else {
+            current[lastKey] = value;
+        }
+    },
+
 
     // Muda o idioma e recarrega a página
     async setLanguage(lang) {
@@ -40,12 +87,15 @@ const I18n = {
         this.currentLang = lang;
         localStorage.setItem('courseLanguage', lang);
 
-        // Recarrega traduções e aplica
-        await this.loadTranslations(lang);
-        this.translatePage();
+        // Limpa traduções e recarrega para novo idioma
+        this.translations = {};
+        await this.loadBaseTranslations(lang);
 
         // Dispara evento para outros componentes se atualizarem
         document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+
+        // Recarrega a página atual para carregar traduções modulares
+        location.reload();
     },
 
     // Traduz a página atual procurando por elementos com data-i18n
@@ -53,7 +103,15 @@ const I18n = {
         const elements = document.querySelectorAll('[data-i18n]');
 
         elements.forEach(el => {
-            const key = el.getAttribute('data-i18n');
+            let key = el.getAttribute('data-i18n');
+            let useHtml = false;
+
+            // Detectar e remover prefixo [html] se presente
+            if (key.startsWith('[html]')) {
+                useHtml = true;
+                key = key.substring(6); // Remove '[html]' (6 caracteres)
+            }
+
             const translation = this.getNestedTranslation(key);
 
             if (translation) {
@@ -65,6 +123,7 @@ const I18n = {
                 } else if (el.tagName === 'IMG') {
                     el.setAttribute('alt', translation);
                 } else {
+                    // Usa innerHTML (permite HTML nas traduções)
                     el.innerHTML = translation;
                 }
             } else {
@@ -87,6 +146,9 @@ const I18n = {
         return this.getNestedTranslation(key) || key;
     }
 };
+
+// Expor para o escopo global
+window.I18n = I18n;
 
 // Auto-inicialização se carregado no browser (opcional, melhor controlar via app.js)
 // document.addEventListener('DOMContentLoaded', () => I18n.init());

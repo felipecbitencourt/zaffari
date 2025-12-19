@@ -1,0 +1,27 @@
+{
+    "sidebar": {
+        "title": "Por Dentro do SAC",
+        "toggle_menu": "Alternar menu",
+        "progress": "Progresso"
+    },
+    "navigation": {
+        "next": "Próximo",
+        "previous": "Anterior",
+        "complete": "Concluir",
+        "skip": "Pular"
+    },
+    "buttons": {
+        "start": "Iniciar",
+        "continue": "Continuar",
+        "finish": "Finalizar",
+        "back": "Voltar",
+        "close": "Fechar",
+        "save": "Salvar",
+        "cancel": "Cancelar"
+    },
+    "messages": {
+        "loading": "Carregando...",
+        "error": "Ocorreu um erro. Tente novamente.",
+        "success": "Operação realizada com sucesso!"
+    }
+}

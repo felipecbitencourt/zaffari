@@ -1,0 +1,73 @@
+{
+    "title": "📝 ¿Qué aprendimos en el curso?",
+    "lead": "¡Felicidades! Has llegado al final del curso 'Dentro del SAC'. 🎉",
+    "intro_summary": "Antes de terminar, ve un resumen de las principales preguntas que respondimos sobre el CDC:",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Qué es el CDC y por qué conocerlo?",
+            "text": "<strong>✅ Respuesta:</strong> El CDC (Ley nº 8.078/90) protege a los consumidores y garantiza relaciones de consumo justas. Conocerlo es esencial para:",
+            "l1": "Responder con seguridad",
+            "l2": "Evitar retrabajo",
+            "l3": "Transmitir credibilidad al cliente"
+        },
+        "a2": {
+            "title": "❓ ¿Cuándo el cliente puede cambiar un producto sin defecto?",
+            "text": "<strong>✅ Respuesta:</strong>",
+            "l1": "<strong>Tienda física:</strong> El CDC NO obliga el cambio - es una política comercial (cortesía)",
+            "l2": "<strong>Tienda online:</strong> El cliente tiene el Derecho de Arrepentimiento (hasta 7 días corridos tras recepción)"
+        },
+        "a3": {
+            "title": "❓ Cuando hay defecto, ¿cuál es el procedimiento?",
+            "text": "<strong>✅ Respuesta:</strong> El proveedor tiene hasta <strong>30 días</strong> para solucionar vía asistencia técnica. Caso no resuelva, el cliente puede optar por:",
+            "l1": "Cambio del producto",
+            "l2": "Abatimiento proporcional del valor",
+            "l3": "Devolución del valor pagado",
+            "note": "<em>Plazo para reclamar: 90 días para productos durables.</em>"
+        },
+        "a4": {
+            "title": "❓ ¿Cómo encaminar reclamos de productos?",
+            "text": "<strong>✅ Respuesta:</strong>",
+            "l1": "<strong>Alimenticios:</strong> Cliente lleva producto + cupón a la tienda (evaluación de la gerencia)",
+            "l2": "<strong>No alimenticios:</strong> Producto + cupón a la tienda (excepto Electro → Asistencia Técnica)",
+            "l3": "<strong>Compra equivocada:</strong> No perecederos pueden ser cambiados si no violados; perecederos no cambiamos"
+        }
+    },
+    "quiz_final": {
+        "question": "Después de toda esta jornada, recibes un nuevo colega en el equipo que pregunta: 'Al final de cuentas, ¿qué es más importante aquí?'. ¿Qué respuesta resume mejor la misión del SAC que aprendimos?",
+        "opt_a": "A) 'Lo más importante es atender rápido para cumplir la meta de tiempo, no importa si resolvió o no.'",
+        "feedback_wrong_a": "Velocidad sin resolución no genera satisfacción. El cliente quiere su problema resuelto, no solo ser atendido rápidamente. Métricas de tiempo son importantes, pero no son el objetivo principal.",
+        "opt_b": "B) 'Lo importante es seguir la ley rigurosamente para que la empresa no sea procesada, el resto es detalle.'",
+        "feedback_wrong_b": "Seguir la ley es fundamental, pero no es suficiente. El SAC va más allá: busca encanto, fidelización y construcción de relación. Ley es el mínimo, excelencia es el objetivo.",
+        "opt_c": "C) 'Nuestra misión es ser el puente estratégico entre la empresa y el cliente, resolviendo problemas con eficiencia, humanidad y respeto a las leyes.'",
+        "opt_d": "D) 'El foco principal es evitar al máximo que el cliente pida hablar con la gerencia.'",
+        "feedback_wrong_d": "Evitar escalamiento no es objetivo - es consecuencia de una buena atención. Si el cliente necesita hablar con la gerencia, eso no es necesariamente una falla. El foco debe ser resolver el problema.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> ¡Haz captado la esencia del SAC! 👏👏👏"
+    },
+    "accordion_extra": {
+        "a5": {
+            "title": "❓ ¿Cuáles son los caminos del sistema para cada situación?",
+            "text": "<strong>✅ Respuesta:</strong> Cada tipo de demanda tiene su camino específico:",
+            "box_title": "Caminos del Sistema",
+            "l1": "<strong>Producto Electro con defecto:</strong><br>INFORMACIÓN → COMPRAS → DATOS DE ASISTENCIA TÉCNICA",
+            "l2": "<strong>Compra en tamaño/color/voltaje equivocado:</strong><br>INFORMACIÓN → COMPRAS → CAMBIO DE MERCANCÍAS",
+            "l3": "<strong>Cambio no realizado en la tienda:</strong><br>RECLAMO → CAMBIO DE MERCANCÍAS"
+        },
+        "a6": {
+            "title": "❓ ¿Cuál es el plazo para cambio de perecederos online?",
+            "text": "<strong>✅ Respuesta:</strong> Productos perecederos con validez corta (carnes, hortifrutis, panes, fiambres, lácteos) comprados online tienen plazo especial de <strong>24 horas</strong> tras la entrega.",
+            "attention": "⚠️ Esto garantiza la seguridad alimentaria del cliente y de la empresa.",
+            "note": "<em>Diferente de los 7 días del Derecho de Arrepentimiento, que vale para productos no perecederos.</em>"
+        },
+        "a7": {
+            "title": "❓ ¿Cuáles son las buenas prácticas para atención de calidad?",
+            "text": "<strong>✅ Respuesta:</strong> Las 4 prácticas esenciales son:",
+            "l1": "<strong>👂 Escucha activa:</strong> Oír atentamente sin interrumpir",
+            "l2": "<strong>🔍 Sondeo completo:</strong> Hacer preguntas para entender la situación",
+            "l3": "<strong>💚 Cordialidad y empatía:</strong> Ser gentil y comprensivo",
+            "l4": "<strong>📝 Registro preciso:</strong> Documentar todos los datos correctamente",
+            "note": "<em>Estas prácticas garantizan atenciones claras, organizadas y sin retrabajo.</em>"
+        }
+    },
+    "success_title": "¡Gracias por participar!",
+    "success_text": "Siga siempre adelante - cada atención es una oportunidad de hacer la diferencia."
+}

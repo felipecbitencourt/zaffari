@@ -1,0 +1,28 @@
+{
+    "title": "Où consulter les offres?",
+    "intro": "Le Service Client oriente également les clients sur les offres et promotions. Utilisez les <strong>prospectus</strong> et le <strong>site officiel</strong> de l'entreprise pour obtenir des données essentielles.",
+    "accordion": {
+        "a1": {
+            "title": "📰 Prospectus et Site Officiel",
+            "text": "Consultez les prospectus mis à jour pour informer sur les offres en vigueur. Le site officiel dispose également d'une section de promotions constamment mise à jour.",
+            "l1": "<strong>Prospectus:</strong> disponibles en magasin et sur l'Intranet",
+            "l2": "<strong>Site:</strong> section offres et promotions"
+        },
+        "a2": {
+            "title": "📱 WhatsApp des Offres",
+            "text": "Une forme pratique de communication est le WhatsApp des offres. Grâce à lui, le client reçoit des promotions directement sur son portable, de manière personnalisée.",
+            "step": "<strong>Pas à pas:</strong> Sélectionner le magasin → Accéder à la communauté via le lien ou QR Code → Recevoir les offres"
+        }
+    },
+    "quiz": {
+        "question": "Madame Maria est en ligne et dit que 'ma voisine reçoit des offres de Zaffari sur son portable et moi non'. Comment devez-vous l'orienter pour adhérer au service de manière sûre et officielle?",
+        "opt_a": "A) 'Madame Maria, s'il vous plaît, donnez-moi votre numéro et je vous inscris tout de suite dans le système.'",
+        "feedback_wrong_a": "Nous ne devons jamais demander les données personnelles du client pour l'inscrire directement. Le processus d'adhésion doit être fait par le client lui-même, en toute sécurité.",
+        "opt_b": "B) 'Vous devez sélectionner votre magasin préféré et accéder à la communauté via le lien officiel ou le QR Code.'",
+        "opt_c": "C) 'Demandez à votre voisine de vous ajouter à son groupe, c'est plus facile.'",
+        "feedback_wrong_c": "Orienter le client vers des groupes non officiels est dangereux. Cela peut exposer la cliente à des arnaques et de fausses informations. Dirigez toujours vers les canaux officiels.",
+        "opt_d": "D) 'Ce service a été temporairement suspendu, suivez seulement sur le site.'",
+        "feedback_wrong_d": "Donner une information incorrecte est grave. Le service fonctionne normalement. Vérifiez toujours avant d'informer le client sur la disponibilité des services.",
+        "feedback": "<strong>Réponse Correcte!</strong> Le client doit entrer activement via le Lien ou QR Code du magasin spécifique."
+    }
+}

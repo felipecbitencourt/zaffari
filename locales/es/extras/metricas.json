@@ -1,0 +1,24 @@
+{
+    "title": "📊 Seguimiento de Métricas",
+    "disclaimer": "⚠️ <strong>Importante:</strong> Estos datos son solo para su seguimiento personal y autoconocimiento. <strong>No impactan</strong> su aprobación o nota final en el curso.",
+    "time": {
+        "title": "Tiempo de Estudio",
+        "desc": "Tiempo total dedicado al curso"
+    },
+    "progress": {
+        "title": "Progreso General",
+        "modules": "Módulos:",
+        "modules_completed": "concluidos",
+        "pages": "Páginas:",
+        "pages_viewed": "visualizadas"
+    },
+    "quiz_stats": {
+        "title": "Desempeño en los Cuestionarios",
+        "answered": "Respondidos",
+        "correct": "Aciertos",
+        "average": "Promedio de Aciertos",
+        "msg_keep_practicing": "¡Continúa practicando para mejorar tus resultados!",
+        "msg_great_job": "¡Excelente desempeño! ¡Sigue así!",
+        "msg_perfect": "¡Perfecto! ¡Dominaste el contenido!"
+    }
+}

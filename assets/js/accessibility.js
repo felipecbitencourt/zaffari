@@ -649,7 +649,7 @@ const AccessibilityManager = {
         });
 
         // Set initial active button
-        const currentLang = typeof App !== 'undefined' ? App.currentLang : 'pt';
+        const currentLang = (typeof I18n !== 'undefined' && I18n.currentLang) ? I18n.currentLang : 'pt';
         this.updateLangButtons(currentLang);
     },
 

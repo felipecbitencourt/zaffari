@@ -1,0 +1,107 @@
+{
+    "title": "🔍 Ache o Erro",
+    "lead": "Analise os e-mails fictícios do SAC e identifique os erros clicando diretamente nas frases incorretas.",
+    "back_btn": "← Voltar ao Menu de Extras",
+    "ui": {
+        "email_tabs": {
+            "email1": "📧 E-mail 1",
+            "email2": "📧 E-mail 2",
+            "email3": "📧 E-mail 3",
+            "email4": "📧 E-mail 4"
+        },
+        "inbox": "Caixa de Entrada",
+        "from": "De:",
+        "to": "Para:",
+        "subject": "Assunto:",
+        "errors_found": "Erros encontrados:",
+        "errors_identified": "✅ Erros Identificados:"
+    },
+    "completion": {
+        "title": "Parabéns!",
+        "message": "Você encontrou todos os erros deste e-mail!",
+        "next_btn": "Próximo E-mail →",
+        "final_title": "Jogo Concluído!",
+        "final_message": "Você completou todos os e-mails!",
+        "restart_btn": "🔄 Jogar Novamente",
+        "view_summary": "Ver Resumo Final",
+        "total_stars": "Total: {count}/{max} estrelas"
+    },
+    "emails": [
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "joao.silva@email.com",
+            "assunto": "Re: Solicitação de troca #12345",
+            "corpo": "Prezado João,\n\nAgradecemos seu contato. Sobre sua solicitação de troca do produto adquirido em nossa loja física, informamos que <span class=\"erro\" data-erro=\"1\">você tem direito garantido por lei à troca</span> em até <span class=\"erro\" data-erro=\"2\">7 dias úteis</span>.\n\nPor favor, <span class=\"erro\" data-erro=\"3\">envie o produto para nossa assistência técnica</span> para darmos andamento.\n\nAtenciosamente,\nEquipe SAC",
+            "erros": {
+                "1": {
+                    "texto": "você tem direito garantido por lei à troca",
+                    "explicacao": "A troca de produto SEM DEFEITO em loja física é uma POLÍTICA COMERCIAL (cortesia da empresa), não um direito garantido por lei. O CDC só obriga troca em caso de defeito."
+                },
+                "2": {
+                    "texto": "7 dias úteis",
+                    "explicacao": "Quando aplicável (compras online), o prazo do Direito de Arrependimento é de 7 dias CORRIDOS, não úteis."
+                },
+                "3": {
+                    "texto": "envie o produto para nossa assistência técnica",
+                    "explicacao": "Produto SEM DEFEITO não deve ser encaminhado para assistência técnica. A assistência técnica é para reparos de produtos COM DEFEITO."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "maria.santos@email.com",
+            "assunto": "Re: Desistência de compra #67890",
+            "corpo": "Prezada Maria,\n\nRecebemos sua solicitação de desistência da compra realizada em nossa loja física na última semana.\n\nInformamos que <span class=\"erro\" data-erro=\"1\">você pode exercer o direito de arrependimento</span> normalmente. Ao devolver o produto, <span class=\"erro\" data-erro=\"2\">devolveremos 80% do valor pago</span>.\n\nLembramos que <span class=\"erro\" data-erro=\"3\">após a devolução, não haverá mais possibilidade de reclamação sobre o produto</span>.\n\nAtenciosamente,\nEquipe SAC",
+            "erros": {
+                "1": {
+                    "texto": "você pode exercer o direito de arrependimento",
+                    "explicacao": "O Direito de Arrependimento (7 dias) só se aplica a compras ONLINE ou realizadas fora do estabelecimento comercial. NÃO se aplica a compras em loja física."
+                },
+                "2": {
+                    "texto": "devolveremos 80% do valor pago",
+                    "explicacao": "Quando o arrependimento é aplicável, a devolução do valor deve ser INTEGRAL (100%), incluindo frete. Nunca parcial."
+                },
+                "3": {
+                    "texto": "após a devolução, não haverá mais possibilidade de reclamação sobre o produto",
+                    "explicacao": "O cliente sempre mantém o direito de reclamar de VÍCIOS OCULTOS (defeitos que aparecem depois), mesmo após devoluções ou trocas anteriores."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "carlos.oliveira@email.com",
+            "assunto": "Re: Defeito em eletrodoméstico #11223",
+            "corpo": "Prezado Carlos,\n\nLamentamos o inconveniente com seu eletrodoméstico. Conforme o Código de Defesa do Consumidor, <span class=\"erro\" data-erro=\"1\">você tem até 15 dias para resolver o problema através da assistência técnica</span>.\n\nCaso o problema não seja solucionado neste prazo, <span class=\"erro\" data-erro=\"2\">faremos apenas o abatimento proporcional no valor</span>.\n\nPor favor, dirija-se à assistência técnica autorizada da marca para avaliação.\n\nAtenciosamente,\nEquipe SAC",
+            "erros": {
+                "1": {
+                    "texto": "você tem até 15 dias para resolver o problema através da assistência técnica",
+                    "explicacao": "O prazo correto é de 30 DIAS para o fornecedor solucionar o defeito via assistência técnica, não 15 dias."
+                },
+                "2": {
+                    "texto": "faremos apenas o abatimento proporcional no valor",
+                    "explicacao": "Após os 30 dias sem solução, o cliente tem TRÊS opções: troca do produto, abatimento proporcional OU devolução integral do valor. Não apenas uma opção."
+                }
+            }
+        },
+        {
+            "de": "sac@zaffari.com.br",
+            "para": "ana.costa@email.com",
+            "assunto": "Re: Troca de alimento #44556",
+            "corpo": "Prezada Ana,\n\nSobre sua solicitação de troca do produto alimentício, informamos que <span class=\"erro\" data-erro=\"1\">você pode devolver o produto a qualquer loja da nossa rede</span>.\n\nPara agilizar o processo, <span class=\"erro\" data-erro=\"2\">não é necessário trazer o cupom fiscal</span>. Basta trazer o produto.\n\nApós análise, <span class=\"erro\" data-erro=\"3\">trocaremos por qualquer produto de sua escolha no mesmo valor</span>.\n\nAtenciosamente,\nEquipe SAC",
+            "erros": {
+                "1": {
+                    "texto": "você pode devolver o produto a qualquer loja da nossa rede",
+                    "explicacao": "Produtos alimentícios devem ser levados à LOJA ONDE FOI REALIZADA A COMPRA, junto com o cupom fiscal, para avaliação da gerência."
+                },
+                "2": {
+                    "texto": "não é necessário trazer o cupom fiscal",
+                    "explicacao": "O CUPOM FISCAL É OBRIGATÓRIO para validar a compra e proceder com qualquer reclamação ou troca de produtos."
+                },
+                "3": {
+                    "texto": "trocaremos por qualquer produto de sua escolha no mesmo valor",
+                    "explicacao": "A troca de alimentícios só ocorre quando o produto está IMPRÓPRIO PARA CONSUMO, não por preferência do cliente. É necessário avaliar motivo, marca e lote."
+                }
+            }
+        }
+    ]
+}

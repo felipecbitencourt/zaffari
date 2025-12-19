@@ -1,0 +1,27 @@
+{
+    "title": "🏆 Are you ready for the challenge?",
+    "intro": "Service quality depends on attention, active listening, empathy and complete and correct records.",
+    "practices_title": "✅ Best Service Practices",
+    "practices": {
+        "p1": {
+            "title": "Active Listening",
+            "text": "Listen attentively to the customer's report without interrupting. Show that you are paying attention."
+        },
+        "p2": {
+            "title": "Complete Inquiry",
+            "text": "Ask questions to fully understand the situation. Don't assume anything before having all the facts."
+        },
+        "p3": {
+            "title": "Cordiality and Empathy",
+            "text": "Be cordial and empathetic. The quality of this relationship is in your hands."
+        },
+        "p4": {
+            "title": "Precise Recording",
+            "text": "Record all necessary data accurately and completely. This ensures clear service without rework."
+        }
+    },
+    "box_title": "💭 Reflect",
+    "box_text": "Imagine you're a supervisor analyzing an old complaint case. You find a previous record that only says 'Customer complained'. How does this affect your ability to solve the problem today? Reflect on the impact of details.",
+    "placeholder": "Your answer...",
+    "btn_submit": "Submit Reflection"
+}

@@ -1,0 +1,24 @@
+{
+    "title": "📊 Suivi des Métriques",
+    "disclaimer": "⚠️ <strong>Important:</strong> Ces données sont uniquement pour votre suivi personnel et votre auto-connaissance. Elles <strong>n'impactent pas</strong> votre approbation ou note finale au cours.",
+    "time": {
+        "title": "Temps d'Étude",
+        "desc": "Temps total consacré au cours"
+    },
+    "progress": {
+        "title": "Progrès Général",
+        "modules": "Modules:",
+        "modules_completed": "terminés",
+        "pages": "Pages:",
+        "pages_viewed": "vues"
+    },
+    "quiz_stats": {
+        "title": "Performance aux Questionnaires",
+        "answered": "Répondus",
+        "correct": "Bonnes réponses",
+        "average": "Moyenne de bonnes réponses",
+        "msg_keep_practicing": "Continuez à pratiquer pour améliorer vos résultats!",
+        "msg_great_job": "Excellente performance! Continuez comme ça!",
+        "msg_perfect": "Parfait! Vous avez maîtrisé le contenu!"
+    }
+}

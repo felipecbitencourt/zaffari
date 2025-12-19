@@ -1,0 +1,33 @@
+{
+    "title": "When there's a defect, what to do?",
+    "intro": "The supplier has up to <strong>30 days</strong> to fix the defect through authorized technical assistance.",
+    "accordion": {
+        "options_title": "🔄 Customer options if not resolved in 30 days",
+        "l1": "<strong>Product exchange</strong> for an equal or similar one",
+        "l2": "<strong>Proportional discount</strong> on the amount paid",
+        "l3": "<strong>Full refund</strong> of the amount paid"
+    },
+    "attention_text": "<strong>Deadline to complain:</strong> 90 days for durable products.",
+    "h3_assist": "Technical Assistance 🔧",
+    "accordion_electro": {
+        "title": "📦 Procedure for Appliances",
+        "text": "<strong>Appliances</strong> must be sent to the brand's technical assistance. If after 30 days there's no solution, the company may exchange with a service order."
+    },
+    "accordion_registro": {
+        "title": "📝 How to register in the system",
+        "intro": "When the customer requests information about technical assistance:",
+        "path_title": "System Path",
+        "path": "<strong>INFORMATION → PURCHASES → TECHNICAL ASSISTANCE DATA</strong>",
+        "l1": "Guide the customer to send the product to the brand's assistance",
+        "l2": "Inform the 30-day deadline for resolution",
+        "l3": "If not resolved in 30 days, the company can exchange <strong>with a service order</strong>"
+    },
+    "quiz": {
+        "question": "A customer bought a mixer 2 months ago and the motor stopped working. Where do you register this service and what do you advise?",
+        "opt_a": "A) Register in COMPLAINT > APPLIANCES and inform they can exchange directly at the store.",
+        "opt_b": "B) Register in INFORMATION > PURCHASES > TECHNICAL ASSISTANCE DATA and advise to send to the brand's assistance.",
+        "opt_c": "C) Inform that since it's been over 30 days from purchase, we can't help.",
+        "opt_d": "D) Register in RETURN and request immediate refund.",
+        "feedback": "<strong>Correct Answer!</strong> Appliances must first be sent to the brand's technical assistance."
+    }
+}

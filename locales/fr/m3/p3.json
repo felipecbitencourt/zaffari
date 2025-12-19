@@ -1,0 +1,41 @@
+{
+    "title": "Quand échanger sans défaut?",
+    "h3_physical": "Échange de produits sans défaut – Magasin Physique",
+    "p_physical_1": "Le CDC <strong>n'oblige pas</strong> l'échange lorsque le produit est en parfait état et que le client souhaite échanger par préférence (couleur, taille).",
+    "p_physical_2": "Dans ces cas, l'échange est une <strong>politique commerciale</strong> de l'entreprise, une courtoisie, et non un droit légal.",
+    "quiz1": {
+        "question": "Un client a acheté une chemise au Magasin Physique, l'a essayée en cabine et l'a emportée. Deux jours plus tard, il revient pour l'échanger car sa femme dit que la couleur ne lui va pas. Le produit est parfait et avec l'étiquette. Le magasin est-il obligé par la loi de l'échanger?",
+        "opt_a": "A) Oui, le CDC garantit 7 jours pour l'échange pour n'importe quelle raison.",
+        "feedback_wrong_a": "Le droit de 7 jours de rétractation ne s'applique qu'aux achats EN LIGNE. En magasin physique, où le client peut essayer le produit, il n'y a pas cette obligation légale.",
+        "opt_b": "B) Non, mais il peut échanger par libéralité (politique commerciale de courtoisie) pour fidéliser le client.",
+        "opt_c": "C) Oui, mais seulement si le client paie une taxe de 10%.",
+        "feedback_wrong_c": "Il n'y a pas de prévision de taxe de 10% pour les échanges. Si l'entreprise accepte d'échanger par courtoisie, elle ne doit pas facturer de frais supplémentaires.",
+        "opt_d": "D) Non, et il est interdit au magasin d'accepter l'échange pour ne pas générer de perte.",
+        "feedback_wrong_d": "Il n'est PAS interdit au magasin d'accepter. L'échange par courtoisie est une stratégie de fidélisation. Le client satisfait revient et recommande le magasin.",
+        "feedback": "<strong>Réponse Correcte!</strong> C'est une politique commerciale (courtoisie), pas une loi pour les magasins physiques."
+    },
+    "h3_online": "Échange de produits sans défaut – Magasin en Ligne",
+    "p_online_1": "Pour les achats en ligne, le CDC garantit le <strong>Droit de Rétractation</strong>.",
+    "p_online_2": "Le client peut se désister de l'achat jusqu'à <strong>7 jours calendaires</strong> après la réception. Important: Cela ne s'applique pas aux achats en magasin physique!",
+    "accordion_online": {
+        "cond_title": "📦 Conditions de retour en ligne",
+        "cond_intro": "Pour exercer le Droit de Rétractation, le produit doit être:",
+        "cond_l1": "<strong>Sans utilisation</strong> - ne doit pas avoir été utilisé",
+        "cond_l2": "<strong>Emballage d'origine</strong> - avec tous les accessoires et manuels",
+        "cond_l3": "<strong>Sans signes de mauvais usage</strong> - en parfait état de conservation",
+        "perec_title": "🥩 Périssables: délai spécial de 24 heures",
+        "perec_text": "<strong>⚠️ Attention:</strong> Pour les produits périssables à courte durée de vie (viandes, fruits et légumes, pains, charcuterie, produits laitiers), l'échange doit avoir lieu jusqu'à <strong>24 heures</strong> après la livraison.",
+        "perec_reason": "Cela garantit la sécurité alimentaire du client et de l'entreprise."
+    },
+    "quiz2": {
+        "question": "Jean a acheté une cafetière sur le site. En la recevant, il a vu qu'elle est trop grande pour sa cuisine, bien qu'elle fonctionne parfaitement. Il appelle le 5ème jour pour la rendre. Que lui dites-vous?",
+        "opt_a": "A) 'Monsieur, comme elle n'a pas de défaut, nous ne pouvons pas accepter le retour.'",
+        "feedback_wrong_a": "Cette réponse est fausse! Pour les achats EN LIGNE, le client A le droit de retourner même sans défaut (Droit de Rétractation - 7 jours).",
+        "opt_b": "B) 'Monsieur, vous pouvez exercer votre Droit de Rétractation et retourner le produit, en recevant le remboursement intégral, car vous êtes dans le délai de 7 jours.'",
+        "opt_c": "C) 'Nous pouvons échanger, mais vous payez les frais de retour.'",
+        "feedback_wrong_c": "Dans le Droit de Rétractation, TOUS les coûts de retour sont à la charge du fournisseur, y compris le fret. Le client ne paie rien.",
+        "opt_d": "D) 'Vous devriez essayer de la vendre à une connaissance, car la vente a été finalisée.'",
+        "feedback_wrong_d": "Cette orientation est complètement inadéquate et viole le CDC. Le client a le droit légal de retourner dans les 7 jours.",
+        "feedback": "<strong>Réponse Correcte!</strong> Les achats en ligne ont une garantie de rétractation (7 jours), indépendamment de défauts."
+    }
+}

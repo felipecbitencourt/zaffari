@@ -66,14 +66,19 @@ const FeedbackManager = {
         // Set Content
         this.msgEl.textContent = message;
 
+        // Títulos traduzíveis (usa I18n.t se disponível)
+        const getTitle = (key, fallback) => {
+            return (typeof I18n !== 'undefined' && I18n.t(key)) ? I18n.t(key) : fallback;
+        };
+
         if (type === 'success') {
-            this.titleEl.textContent = '🎉 Muito Bem!';
+            this.titleEl.textContent = getTitle('global.feedback.modal_title_success', '🎉 Muito Bem!');
             if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
         } else if (type === 'error') {
-            this.titleEl.textContent = '❌ Atenção';
+            this.titleEl.textContent = getTitle('global.feedback.modal_title_error', '❌ Atenção');
             if (typeof AudioManager !== 'undefined') AudioManager.playError();
         } else {
-            this.titleEl.textContent = 'ℹ️ Informação';
+            this.titleEl.textContent = getTitle('global.feedback.modal_title_info', 'ℹ️ Informação');
         }
 
         // Show
@@ -136,15 +141,20 @@ const FeedbackManager = {
                     if (feedback) feedback.style.display = 'block';
 
                     // Show Success Feedback with sound
-                    this.show("Resposta Correta! Você demonstrou conhecimento.", 'success');
+                    const successMsg = (typeof I18n !== 'undefined' && I18n.t('global.feedback.modal_correct_msg'))
+                        ? I18n.t('global.feedback.modal_correct_msg')
+                        : "Resposta Correta! Você demonstrou conhecimento.";
+                    this.show(successMsg, 'success');
 
                 } else {
                     btn.classList.add('incorrect');
                     btn.style.backgroundColor = '#ffcdd2';
 
                     // Obter feedback detalhado do atributo data-feedback-wrong
-                    const detailedFeedback = btn.dataset.feedbackWrong ||
-                        "Esta não é a resposta correta. Pense novamente sobre o conceito apresentado.";
+                    const defaultWrongMsg = (typeof I18n !== 'undefined' && I18n.t('global.feedback.modal_wrong_default'))
+                        ? I18n.t('global.feedback.modal_wrong_default')
+                        : "Esta não é a resposta correta. Pense novamente sobre o conceito apresentado.";
+                    const detailedFeedback = btn.dataset.feedbackWrong || defaultWrongMsg;
 
                     // Show Error Feedback with detailed explanation
                     setTimeout(() => {

@@ -1,11 +1,12 @@
 <!-- Extras - Roleplay -->
 <div class="content-header">
-    <h1>🎭 Roleplay - Simulação de Atendimento</h1>
+    <h1 data-i18n="extras.roleplay.title">🎭 Roleplay - Simulação de Atendimento</h1>
 </div>
 
 <div class="content-body">
     <!-- INICIO DO TEXTO EDITÁVEL -->
-    <p class="lead">Pratique suas habilidades de atendimento! Você é o atendente SAC e deve escolher as melhores
+    <p class="lead" data-i18n="extras.roleplay.lead">Pratique suas habilidades de atendimento! Você é o atendente SAC e
+        deve escolher as melhores
         respostas.</p>
 
     <div class="roleplay-game" id="roleplay-game">
@@ -23,7 +24,7 @@
 
             <!-- Balão de Fala do Cliente -->
             <div class="roleplay-speech-bubble" id="speech-bubble">
-                <p id="cliente-fala">Carregando...</p>
+                <p id="cliente-fala" data-i18n="extras.roleplay.ui.loading">Carregando...</p>
             </div>
 
             <!-- Personagem Atendente (oculto até resposta correta) -->
@@ -50,17 +51,19 @@
         <!-- Feedback -->
         <div class="roleplay-feedback" id="roleplay-feedback" style="display: none;">
             <div class="feedback-content" id="feedback-content"></div>
-            <button class="btn-continuar" id="btn-continuar">Continuar →</button>
+            <button class="btn-continuar" id="btn-continuar" data-i18n="extras.roleplay.ui.continue_btn">Continuar
+                →</button>
         </div>
 
         <!-- Resultado Final -->
         <div class="roleplay-resultado" id="roleplay-resultado" style="display: none;">
             <div class="resultado-content">
                 <span class="resultado-icon">🎉</span>
-                <h3>Parabéns!</h3>
-                <p>Você completou a simulação de atendimento!</p>
+                <h3 data-i18n="extras.roleplay.completion.title">Parabéns!</h3>
+                <p data-i18n="extras.roleplay.completion.message">Você completou a simulação de atendimento!</p>
                 <div class="resultado-score" id="resultado-score"></div>
-                <button class="btn-reiniciar-roleplay" id="btn-reiniciar-roleplay">🔄 Jogar Novamente</button>
+                <button class="btn-reiniciar-roleplay" id="btn-reiniciar-roleplay"
+                    data-i18n="extras.roleplay.completion.restart_btn">🔄 Jogar Novamente</button>
             </div>
         </div>
 
@@ -69,7 +72,8 @@
             <div class="roleplay-modal">
                 <div class="roleplay-modal-icon">❌</div>
                 <div class="roleplay-modal-text" id="roleplay-modal-text"></div>
-                <button class="roleplay-modal-btn" id="btn-fechar-modal">Tentar Novamente</button>
+                <button class="roleplay-modal-btn" id="btn-fechar-modal"
+                    data-i18n="extras.roleplay.ui.try_again_btn">Tentar Novamente</button>
             </div>
         </div>
     </div>
@@ -170,105 +174,35 @@
 
 <script>
     function initRoleplay() {
-        // Dados do Cenário
-        const cenario = {
-            titulo: "Troca de Produto",
-            etapas: [
-                {
-                    id: 1,
-                    nome: "Apresentação",
-                    clienteFala: "Olá, boa tarde! Comprei esse liquidificador aqui ontem e gostaria de trocar por outro modelo.",
-                    opcoes: [
-                        {
-                            texto: "Boa tarde! Claro, posso ajudá-lo com isso. O produto apresenta algum defeito ou problema?",
-                            correta: true,
-                            feedback: "Excelente! Você cumprimentou o cliente de forma cordial e já fez uma pergunta importante para entender a situação."
-                        },
-                        {
-                            texto: "Infelizmente não é possível trocar produtos que já foram comprados e levados para casa.",
-                            correta: false,
-                            feedback: "Essa resposta é muito negativa e não acolhe o cliente. Sempre devemos primeiro entender a situação antes de negar algo."
-                        },
-                        {
-                            texto: "Pode deixar o produto aí no balcão que depois alguém vai verificar para você.",
-                            correta: false,
-                            feedback: "Essa resposta é informal demais e não demonstra interesse em ajudar o cliente. O atendimento deve ser sempre cordial e profissional."
-                        }
-                    ]
-                },
-                {
-                    id: 2,
-                    nome: "Questão do Cliente",
-                    clienteFala: "Não, não está com defeito. É que eu vi outro modelo que me agradou mais. Vi na internet que tenho direito de trocar em 7 dias, não é?",
-                    opcoes: [
-                        {
-                            texto: "Sim, com certeza! Você tem esse direito garantido por lei. Vamos fazer a troca agora mesmo.",
-                            correta: false,
-                            feedback: "Cuidado! O direito de arrependimento de 7 dias só vale para compras ONLINE. Em loja física, a troca é política comercial, não direito legal."
-                        },
-                        {
-                            texto: "O direito de 7 dias vale para compras online. Em loja física é cortesia. Posso verificar nossa política!",
-                            correta: true,
-                            feedback: "Perfeito! Você explicou corretamente a diferença entre o direito legal (compras online) e a política comercial (loja física), sem negar ajuda ao cliente."
-                        },
-                        {
-                            texto: "Essa regra dos 7 dias é só para compras online, então aqui não se aplica. Sinto muito.",
-                            correta: false,
-                            feedback: "Embora a informação sobre o online esteja correta, a resposta é muito negativa. Sempre devemos buscar alternativas para ajudar o cliente."
-                        }
-                    ]
-                },
-                {
-                    id: 3,
-                    nome: "Dúvida Adicional",
-                    clienteFala: "Ah entendi... então vocês não vão trocar? E se o produto tiver defeito depois, posso reclamar?",
-                    opcoes: [
-                        {
-                            texto: "Pode sim! Para defeitos você tem 90 dias. E nossa política permite troca em 30 dias com nota fiscal!",
-                            correta: true,
-                            feedback: "Excelente! Você informou corretamente o prazo de 90 dias para reclamar de defeitos em produtos duráveis E ainda ofereceu a possibilidade de troca pela política da empresa."
-                        },
-                        {
-                            texto: "Para defeitos você pode reclamar sim, mas o prazo é de apenas 7 dias após a compra.",
-                            correta: false,
-                            feedback: "Incorreto! O prazo para reclamar de defeitos em produtos duráveis é de 90 DIAS, não 7 dias."
-                        },
-                        {
-                            texto: "Se o produto não apresenta defeito agora, depois não temos como fazer nada, infelizmente.",
-                            correta: false,
-                            feedback: "Incorreto! Vícios ocultos (defeitos que aparecem depois) podem ser reclamados em até 90 dias para produtos duráveis."
-                        }
-                    ]
-                },
-                {
-                    id: 4,
-                    nome: "Fechamento",
-                    clienteFala: "Que ótimo! Então eu posso trocar pelo outro modelo? O produto ainda está lacrado e tenho a nota fiscal.",
-                    opcoes: [
-                        {
-                            texto: "Não posso fazer a troca porque, como expliquei, não é uma obrigação legal da loja.",
-                            correta: false,
-                            feedback: "Resposta inadequada. O cliente atende aos requisitos da política comercial (produto lacrado + nota fiscal)."
-                        },
-                        {
-                            texto: "Com produto lacrado e nota fiscal, posso fazer a troca sim! Qual modelo você prefere?",
-                            correta: true,
-                            feedback: "Parabéns! Você finalizou o atendimento de forma positiva, confirmando que o cliente atende aos requisitos e prosseguindo com a troca."
-                        },
-                        {
-                            texto: "Preciso chamar meu gerente para autorizar esse tipo de procedimento de troca aqui.",
-                            correta: false,
-                            feedback: "Desnecessário neste caso. Como o cliente atende aos requisitos da política (lacrado + nota), você pode resolver sem precisar escalar."
-                        }
-                    ]
-                }
-            ]
-        };
+        // Dados do Cenário via I18n
+        let cenario;
+
+        // DEBUG: Verificar estrutura
+        console.log("I18n Global:", window.I18n);
+        if (window.I18n) console.log("Translations:", window.I18n.translations);
+
+        try {
+            // Tentar carregar do objeto I18n global se possível
+            // Estrutura correta: I18n.translations.extras.roleplay.scenario
+            if (window.I18n && window.I18n.translations &&
+                window.I18n.translations.extras &&
+                window.I18n.translations.extras.roleplay) {
+                cenario = window.I18n.translations.extras.roleplay.scenario;
+            }
+        } catch (e) {
+            console.error("Erro ao carregar cenário do I18n", e);
+        }
+
+        // Fallback: cenário hardcoded removido. Se não carregar, mostrar erro ou objeto vazio.
+        if (!cenario) {
+            console.warn("Cenário não encontrado nas traduções. Verifique o arquivo roleplay.json.");
+            cenario = { title: "Error", etapas: [] };
+        }
 
         // Estado do jogo
         let currentStep = 0;
         let acertos = 0;
-        let totalSteps = cenario.etapas.length;
+        let totalSteps = cenario.steps.length;
 
         // ===== AUDIO SETUP =====
         // Música de fundo (volume baixo)
@@ -417,7 +351,7 @@
 
         // Carregar etapa
         function loadStep(stepIndex) {
-            const etapa = cenario.etapas[stepIndex];
+            const etapa = cenario.steps[stepIndex];
             currentStep = stepIndex;
 
             // Atualizar indicador
@@ -435,12 +369,12 @@
             optionsContainer.innerHTML = '';
 
             // Efeito typewriter na fala do cliente
-            typeWriter(clienteFala, etapa.clienteFala, 30, function () {
+            typeWriter(clienteFala, etapa.client_speech, 30, function () {
                 // Mostrar opções depois que o texto terminar
-                etapa.opcoes.forEach((opcao, index) => {
+                etapa.options.forEach((opcao, index) => {
                     const btn = document.createElement('button');
                     btn.className = 'roleplay-option';
-                    btn.innerHTML = `<span class="option-letter">${String.fromCharCode(65 + index)}</span> ${opcao.texto}`;
+                    btn.innerHTML = `<span class="option-letter">${String.fromCharCode(65 + index)}</span> ${opcao.text}`;
                     btn.addEventListener('click', function () {
                         handleOptionClick(opcao, btn);
                     });
@@ -467,7 +401,7 @@
             const atendenteFala = document.getElementById('atendente-fala');
             const atendenteImg = document.getElementById('atendente-img');
 
-            if (opcao.correta) {
+            if (opcao.correct) {
                 btn.classList.add('correct');
                 acertos++;
                 if (typeof AudioManager !== 'undefined') AudioManager.playSuccess();
@@ -487,7 +421,7 @@
                     atendenteBubble.style.display = 'block';
 
                     // Typewriter para resposta do atendente (treme o atendente)
-                    typeWriterAtendente(atendenteFala, opcao.texto, 25, function () {
+                    typeWriterAtendente(atendenteFala, opcao.text, 25, function () {
                         // Após terminar, mostrar feedback
                         feedbackContent.innerHTML = `
                             <div class="feedback-icon">✅</div>
@@ -539,23 +473,27 @@
             let mensagem = '';
             let estrelas = '';
 
+            const t = (window.I18n && window.I18n.t) ? window.I18n.t : (k) => k;
+
             if (porcentagem === 100) {
-                mensagem = 'Perfeito! Você demonstrou excelente conhecimento!';
+                mensagem = t('extras.roleplay.results.perfect');
                 estrelas = '⭐⭐⭐';
             } else if (porcentagem >= 75) {
-                mensagem = 'Muito bem! Você está no caminho certo!';
+                mensagem = t('extras.roleplay.results.good');
                 estrelas = '⭐⭐';
             } else if (porcentagem >= 50) {
-                mensagem = 'Bom, mas você pode melhorar. Revise o conteúdo!';
+                mensagem = t('extras.roleplay.results.average');
                 estrelas = '⭐';
             } else {
-                mensagem = 'Precisa estudar mais. Revise os módulos do curso!';
+                mensagem = t('extras.roleplay.results.needs_work');
                 estrelas = '';
             }
 
+            const scoreText = t('extras.roleplay.completion.correct_count').replace('{correct}', acertos).replace('{total}', totalSteps);
+
             document.getElementById('resultado-score').innerHTML = `
                 <div class="score-estrelas">${estrelas}</div>
-                <div class="score-texto">Você acertou ${acertos} de ${totalSteps} respostas</div>
+                <div class="score-texto">${scoreText}</div>
                 <div class="score-mensagem">${mensagem}</div>
             `;
         }

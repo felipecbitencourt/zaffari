@@ -1,0 +1,40 @@
+{
+    "title": "📝 ¿Qué aprendimos en el Módulo 1?",
+    "lead": "¡Felicitaciones por concluir el primer módulo! Ve abajo las principales cuestiones que exploramos y sus respuestas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Qué espera el cliente al contactarnos?",
+            "text": "<strong>✅ Respuesta:</strong> El cliente espera más que la solución del problema. Busca:",
+            "l1": "Ser escuchado con atención y empatía",
+            "l2": "Recibir una atención ágil y eficiente",
+            "l3": "Sentir que la empresa se preocupa por él",
+            "l4": "Tener claridad sobre los próximos pasos",
+            "l5": "Salir satisfecho, incluso cuando la respuesta no sea la ideal"
+        },
+        "a2": {
+            "title": "❓ ¿Cuál es el papel del SAC además de resolver problemas?",
+            "text": "<strong>✅ Respuesta:</strong> El SAC representa la <strong>voz de la empresa</strong> en el contacto directo con el cliente. Más que un sector operativo, es un área estratégica esencial para:",
+            "l1": "Mantener valores y reputación de la marca",
+            "l2": "Construir confianza y fortalecer vínculos",
+            "l3": "Contribuir a la fidelización de los clientes"
+        },
+        "a3": {
+            "title": "❓ ¿Cuáles son las responsabilidades de nuestro equipo?",
+            "text": "<strong>✅ Respuesta:</strong> Las principales responsabilidades incluyen:",
+            "l1": "<strong>Atención Multicanal:</strong> teléfono, e-mail, chat y medios electrónicos",
+            "l2": "<strong>Atención Receptiva:</strong> informaciones, reclamos, sugerencias y elogios",
+            "l3": "<strong>Atenciones Activas:</strong> campañas, activación de tarjetas, actualizaciones catastrales",
+            "l4": "<strong>Gestión:</strong> organizar datos, elaborar informes, proponer mejoras"
+        },
+        "a4": {
+            "title": "❓ ¿Por qué importan los plazos de atención?",
+            "text": "<strong>✅ Respuesta:</strong> Plazos bien definidos garantizan organización, previsibilidad y eficiencia. El correcto registro de la categoría de atención es fundamental porque el sistema calcula el plazo basado en ella.",
+            "prazos_padrao": "<strong>Plazos Estándar:</strong> Solicitudes: hasta 3 días hábiles | Informaciones: hasta 2 días hábiles | Reclamos: hasta 2 días hábiles",
+            "prazos_especiais": "<strong>Plazos Especiales:</strong> Daños: hasta 5 días hábiles | Duplicidad de pago: hasta 8 días hábiles"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusión del Módulo 1",
+        "text": "Ahora entiendes <strong>por qué el SAC es estratégico</strong> para la empresa. ¡En el próximo módulo, vamos a descubrir <strong>dónde encontrar las informaciones</strong> que el cliente necesita!"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "title": "What is Consumer Protection Code?",
+    "intro_p1": "The <strong>⚖️ Consumer Protection Code (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Law No. 8,078, of September 11, 1990'>Law No. 8,078/90</span>, was created to protect consumers and ensure fair and balanced consumer relations.",
+    "intro_p2": "It establishes rights, duties, deadlines, conduct standards and penalties for suppliers and service providers.",
+    "sabia_title": "Did You Know?",
+    "sabia_text": "The Brazilian CDC is considered one of the most complete in the world!",
+    "btn_saiba_mais": "Learn more",
+    "modal": {
+        "title": "📚 Curiosities about CDC",
+        "text": "The Brazilian Consumer Protection Code was enacted in <strong>1990</strong> and serves as a model for legislation in other countries.",
+        "l1": "It's considered one of the most advanced in the world",
+        "l2": "Protects the consumer in all phases of the consumption relationship",
+        "l3": "Provides for reversal of burden of proof in favor of the consumer",
+        "l4": "Establishes objective liability of the supplier",
+        "link_cdc_pdf": "📄 Full CDC (PDF)",
+        "link_cdc_news": "🔗 News: 35 Years of CDC (Gov.br)"
+    }
+}

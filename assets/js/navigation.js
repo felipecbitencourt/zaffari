@@ -112,12 +112,15 @@ const NavigationManager = {
             const pagesContainer = document.createElement('div');
             pagesContainer.className = 'module-pages';
 
+            // Usar tradução do menu.json ou fallback para título do content.json
+            const moduleTitle = I18n.t(`menu.modules.${mod.id}`) || mod.title;
+
             const title = document.createElement('button');
             title.className = 'module-title';
             title.setAttribute('type', 'button');
             title.setAttribute('aria-expanded', 'true');
             title.innerHTML = `
-                <span class="module-title-text">${mod.title}</span>
+                <span class="module-title-text">${moduleTitle}</span>
                 <span class="module-toggle-icon">▼</span>
             `;
 
@@ -132,12 +135,15 @@ const NavigationManager = {
             group.appendChild(title);
 
             mod.pages.forEach(page => {
+                // Usar tradução do menu.json ou fallback para título do content.json
+                const pageTitle = I18n.t(`menu.pages.${page.id}`) || page.title;
+
                 const link = document.createElement('a');
                 link.href = "#";
                 link.className = 'menu-link locked';
                 link.dataset.id = page.id;
                 link.dataset.moduleId = mod.id;
-                link.textContent = page.title;
+                link.textContent = pageTitle;
                 link.onclick = (e) => {
                     e.preventDefault();
                     // Find global index
