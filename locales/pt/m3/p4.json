@@ -1,4 +1,36 @@
 {
-    "title": "⚖️ Importância do CDC para o SAC",
-    "intro": "O Código de Defesa do Consumidor é a base legal que orienta todo o trabalho do SAC. Conhecê-lo é essencial para um atendimento correto e eficiente."
+  "title": "⚖️ Importância do CDC para o SAC",
+  "intro": "O Código de Defesa do Consumidor é a base legal que orienta todo o trabalho do SAC. Conhecê-lo é essencial para um atendimento correto e eficiente.",
+  "m3": {
+    "p1": {
+      "cards": {
+        "c1": {
+          "title": "Segurança",
+          "text": "Segurança na orientação ao cliente, sabendo exatamente o que a lei permite ou não."
+        },
+        "c2": {
+          "title": "Conformidade",
+          "text": "Respostas corretas e alinhadas à lei, evitando problemas jurídicos para a empresa."
+        },
+        "c3": {
+          "title": "Eficiência",
+          "text": "Redução de retrabalho ao resolver questões corretamente na primeira vez."
+        },
+        "c4": {
+          "title": "Credibilidade",
+          "text": "Mais profissionalismo, confiança e credibilidade no atendimento."
+        }
+      },
+      "attention_title": "Atenção",
+      "quiz": {
+        "question": "Um cliente afirma exaltado: 'O Código de Defesa do Consumidor diz que eu tenho razão sempre! Por isso vocês são obrigados a fazer o que eu quero!'. Com base no equilíbrio proposto pelo CDC, como você interpreta essa fala?",
+        "opt_a": "A) 'O cliente está sempre certo', e o CDC foi criado justamente para garantir que sua vontade prevaleça em qualquer situação.",
+        "opt_b": "B) O cliente está equivocado. O CDC busca equilibrar a relação, protegendo a parte mais fraca (consumidor), mas também estabelecendo deveres e limites para evitar abusos.",
+        "opt_c": "C) O cliente está errado, pois o CDC é uma lei que serve apenas para punir empresas que cometem crimes contra a economia popular.",
+        "opt_d": "D) O cliente tem razão parcial, o CDC garante que ele tenha razão, mas apenas se ele apresentar a nota fiscal original.",
+        "feedback": "<strong>Resposta Correta!</strong> O objetivo do CDC é a harmonia e equilíbrio nas relações de consumo, não o favorecimento cego."
+      },
+      "attention_text": "Conhecer o CDC não significa decorar todos os artigos, mas sim entender os <strong>princípios básicos</strong> que guiam as relações de consumo."
+    }
+  }
 }

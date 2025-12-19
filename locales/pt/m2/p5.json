@@ -1,4 +1,18 @@
 {
-    "title": "Por que consultar corretamente?",
-    "intro": "Consultar a fonte oficial evita erros e garante a satisfação do cliente."
+  "title": "Por que consultar corretamente?",
+  "intro": "Consultar a fonte oficial evita erros e garante a satisfação do cliente.",
+  "m2": {
+    "p2": {
+      "quiz2": {
+        "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão.",
+        "question": "Dominar a consulta de informações na Intranet contribui para:",
+        "opt_a": "A) Aumentar o tempo de atendimento.",
+        "opt_b": "B) Reduzir a padronização das respostas.",
+        "opt_c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
+        "opt_d": "D) Tornar o atendimento mais informal."
+      }
+    }
+  },
+  "tip_title": "TODO: Adicionar tradução",
+  "tip_text": "TODO: Adicionar tradução"
 }

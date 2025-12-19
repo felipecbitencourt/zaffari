@@ -1,16 +1,51 @@
 {
-    "title": "Quando há defeito, o que fazer?",
-    "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
-    "accordion": {
-        "options_title": "🔄 Opções do cliente se não houver solução em 30 dias",
+  "title": "Quando há defeito, o que fazer?",
+  "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
+  "accordion": {
+    "options_title": "🔄 Opções do cliente se não houver solução em 30 dias",
+    "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
+    "l2": "<strong>Abatimento proporcional</strong> do valor pago",
+    "l3": "<strong>Devolução integral</strong> do valor pago"
+  },
+  "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
+  "h3_assist": "Assistência Técnica 🔧",
+  "accordion_electro": {
+    "title": "📦 Procedimento para produtos Eletro",
+    "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+  },
+  "m3": {
+    "p5": {
+      "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
+      "accordion": {
         "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
         "l2": "<strong>Abatimento proporcional</strong> do valor pago",
         "l3": "<strong>Devolução integral</strong> do valor pago"
-    },
-    "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
-    "h3_assist": "Assistência Técnica 🔧",
-    "accordion_electro": {
-        "title": "📦 Procedimento para produtos Eletro",
+      },
+      "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
+      "accordion_electro": {
         "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+      },
+      "accordion_registro": {
+        "l3": "TODO: Adicionar tradução"
+      },
+      "quiz": {
+        "feedback": "TODO: Adicionar tradução"
+      }
     }
+  },
+  "accordion_registro": {
+    "title": "TODO: Adicionar tradução",
+    "intro": "TODO: Adicionar tradução",
+    "path_title": "TODO: Adicionar tradução",
+    "path": "TODO: Adicionar tradução",
+    "l1": "TODO: Adicionar tradução",
+    "l2": "TODO: Adicionar tradução"
+  },
+  "quiz": {
+    "question": "TODO: Adicionar tradução",
+    "opt_a": "TODO: Adicionar tradução",
+    "opt_b": "TODO: Adicionar tradução",
+    "opt_c": "TODO: Adicionar tradução",
+    "opt_d": "TODO: Adicionar tradução"
+  }
 }

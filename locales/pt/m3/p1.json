@@ -1,45 +1,53 @@
 {
-    "title": "O que é o CDC?",
-    "intro_p1": "O <strong>⚖️ Código de Defesa do Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Lei nº 8.078, de 11 de setembro de 1990'>Lei nº 8.078/90</span>, foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.",
-    "intro_p2": "Ele estabelece direitos, deveres, prazos, padrões de conduta e penalidades para fornecedores e prestadores de serviços.",
-    "sabia_title": "Você Sabia?",
-    "sabia_text": "O CDC brasileiro é considerado um dos mais completos do mundo!",
-    "btn_saiba_mais": "Saiba mais",
-    "modal": {
-        "title": "📚 Curiosidades sobre o CDC",
-        "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países.",
-        "l1": "É considerado um dos mais avançados do mundo",
-        "l2": "Protege o consumidor em todas as fases da relação de consumo",
-        "l3": "Prevê inversão do ônus da prova em favor do consumidor",
-        "l4": "Estabelece responsabilidade objetiva do fornecedor"
+  "title": "O que é o CDC?",
+  "intro_p1": "O <strong>⚖️ Código de Defesa do Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Lei nº 8.078, de 11 de setembro de 1990'>Lei nº 8.078/90</span>, foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.",
+  "intro_p2": "Ele estabelece direitos, deveres, prazos, padrões de conduta e penalidades para fornecedores e prestadores de serviços.",
+  "sabia_title": "Você Sabia?",
+  "sabia_text": "O CDC brasileiro é considerado um dos mais completos do mundo!",
+  "btn_saiba_mais": "Saiba mais",
+  "modal": {
+    "title": "📚 Curiosidades sobre o CDC",
+    "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países.",
+    "l1": "É considerado um dos mais avançados do mundo",
+    "l2": "Protege o consumidor em todas as fases da relação de consumo",
+    "l3": "Prevê inversão do ônus da prova em favor do consumidor",
+    "l4": "Estabelece responsabilidade objetiva do fornecedor"
+  },
+  "importance_title": "Por que é importante para o SAC?",
+  "cards": {
+    "c1": {
+      "title": "Segurança",
+      "text": "Segurança na orientação ao cliente, sabendo exatamente o que a lei permite ou não."
     },
-    "importance_title": "Por que é importante para o SAC?",
-    "cards": {
-        "c1": {
-            "title": "Segurança",
-            "text": "Segurança na orientação ao cliente, sabendo exatamente o que a lei permite ou não."
-        },
-        "c2": {
-            "title": "Conformidade",
-            "text": "Respostas corretas e alinhadas à lei, evitando problemas jurídicos para a empresa."
-        },
-        "c3": {
-            "title": "Eficiência",
-            "text": "Redução de retrabalho ao resolver questões corretamente na primeira vez."
-        },
-        "c4": {
-            "title": "Credibilidade",
-            "text": "Mais profissionalismo, confiança e credibilidade no atendimento."
-        }
+    "c2": {
+      "title": "Conformidade",
+      "text": "Respostas corretas e alinhadas à lei, evitando problemas jurídicos para a empresa."
     },
-    "attention_title": "Atenção",
-    "attention_text": "Conhecer o CDC não significa decorar todos os artigos, mas sim entender os <strong>princípios básicos</strong> que guiam as relações de consumo.",
-    "quiz": {
-        "question": "Um cliente afirma exaltado: 'O Código de Defesa do Consumidor diz que eu tenho razão sempre! Por isso vocês são obrigados a fazer o que eu quero!'. Com base no equilíbrio proposto pelo CDC, como você interpreta essa fala?",
-        "opt_a": "A) 'O cliente está sempre certo', e o CDC foi criado justamente para garantir que sua vontade prevaleça em qualquer situação.",
-        "opt_b": "B) O cliente está equivocado. O CDC busca equilibrar a relação, protegendo a parte mais fraca (consumidor), mas também estabelecendo deveres e limites para evitar abusos.",
-        "opt_c": "C) O cliente está errado, pois o CDC é uma lei que serve apenas para punir empresas que cometem crimes contra a economia popular.",
-        "opt_d": "D) O cliente tem razão parcial, o CDC garante que ele tenha razão, mas apenas se ele apresentar a nota fiscal original.",
-        "feedback": "<strong>Resposta Correta!</strong> O objetivo do CDC é a harmonia e equilíbrio nas relações de consumo, não o favorecimento cego."
+    "c3": {
+      "title": "Eficiência",
+      "text": "Redução de retrabalho ao resolver questões corretamente na primeira vez."
+    },
+    "c4": {
+      "title": "Credibilidade",
+      "text": "Mais profissionalismo, confiança e credibilidade no atendimento."
     }
+  },
+  "attention_title": "Atenção",
+  "attention_text": "Conhecer o CDC não significa decorar todos os artigos, mas sim entender os <strong>princípios básicos</strong> que guiam as relações de consumo.",
+  "quiz": {
+    "question": "Um cliente afirma exaltado: 'O Código de Defesa do Consumidor diz que eu tenho razão sempre! Por isso vocês são obrigados a fazer o que eu quero!'. Com base no equilíbrio proposto pelo CDC, como você interpreta essa fala?",
+    "opt_a": "A) 'O cliente está sempre certo', e o CDC foi criado justamente para garantir que sua vontade prevaleça em qualquer situação.",
+    "opt_b": "B) O cliente está equivocado. O CDC busca equilibrar a relação, protegendo a parte mais fraca (consumidor), mas também estabelecendo deveres e limites para evitar abusos.",
+    "opt_c": "C) O cliente está errado, pois o CDC é uma lei que serve apenas para punir empresas que cometem crimes contra a economia popular.",
+    "opt_d": "D) O cliente tem razão parcial, o CDC garante que ele tenha razão, mas apenas se ele apresentar a nota fiscal original.",
+    "feedback": "<strong>Resposta Correta!</strong> O objetivo do CDC é a harmonia e equilíbrio nas relações de consumo, não o favorecimento cego."
+  },
+  "m3": {
+    "p1": {
+      "intro_p1": "O <strong>⚖️ Código de Defesa do Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Lei nº 8.078, de 11 de setembro de 1990'>Lei nº 8.078/90</span>, foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.",
+      "modal": {
+        "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países."
+      }
+    }
+  }
 }

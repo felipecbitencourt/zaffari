@@ -7,69 +7,35 @@ const Tutorial = {
     isActive: false,
 
     // Passos do tutorial com seletor do elemento e texto explicativo
-    steps: [
-        {
-            selector: '#sidebar',
-            text: '📋 <strong>Menu Lateral</strong><br>Aqui você encontra todos os módulos e páginas do curso. Clique no título de um módulo para expandir ou recolher.',
-            position: 'right'
-        },
-        {
-            selector: '[data-module-id="extras"] .module-title',
-            text: '🧠 <strong>Menu de Fixação</strong><br>Após concluir os módulos, acesse atividades extras para reforçar seu aprendizado: resumos, questionários, flashcards e muito mais!',
-            position: 'right'
-        },
-        {
-            selector: '#btn-menu',
-            text: '☰ <strong>Recolher Menu</strong><br>Clique aqui para recolher ou expandir o menu lateral, dando mais espaço para o conteúdo.',
-            position: 'bottom'
-        },
-        {
-            selector: '#btn-settings',
-            text: '⚙️ <strong>Configurações</strong><br>Abra para personalizar: modo escuro, tamanho da fonte, velocidade de voz, e idioma.',
-            position: 'bottom'
-        },
-        {
-            selector: '.settings-row:has(#btn-dyslexia)',
-            text: '📖 <strong>Assistência de Leitura</strong><br>Ative para melhorar a legibilidade com espaçamento maior entre letras e linhas.',
-            position: 'bottom',
-            openSettings: true
-        },
-        {
-            selector: '.settings-row:has(#btn-auto-read)',
-            text: '🔄 <strong>Leitura Automática</strong><br>Quando ativada, o conteúdo será lido automaticamente ao carregar cada página.',
-            position: 'bottom',
-            openSettings: true
-        },
-        {
-            selector: '.settings-row-vertical:has(#voice-select)',
-            text: '🎤 <strong>Voz de Leitura</strong><br>Escolha a voz que prefere para a leitura. Vozes com ⭐ são recomendadas por maior qualidade.',
-            position: 'bottom',
-            openSettings: true
-        },
-        {
-            selector: '#tts-controls',
-            text: '🔊 <strong>Leitura de Página</strong><br>Clique no botão para ouvir o conteúdo. Use o controle de volume ao lado para ajustar.',
-            position: 'bottom',
-            closeSettings: true
-        },
-        {
-            selector: '#tutorial-interactive-demo',
-            text: '👆 <strong>Elementos Interativos</strong><br>Ao longo do curso, elementos como este que <em>tremem</em> são clicáveis! Clique neles para revelar conteúdo adicional.',
-            position: 'bottom',
-            showInteractiveDemo: true
-        },
-        {
-            selector: '.content-nav',
-            text: '➡️ <strong>Navegação</strong><br>Use "Anterior" e "Próximo" para navegar entre as páginas do curso.',
-            position: 'top',
-            hideInteractiveDemo: true
-        },
-        {
-            selector: '.content-nav',
-            text: '⌨️ <strong>Atalhos de Teclado</strong><br>Você também pode navegar usando o teclado:<br>• <kbd>←</kbd> Página anterior<br>• <kbd>→</kbd> Próxima página<br>• <kbd>Esc</kbd> Fechar popups<br>• <kbd>M</kbd> Abrir/fechar menu<br>• <kbd>?</kbd> Ver atalhos',
-            position: 'top'
+    steps: [], // Will be loaded from i18n
+
+    /**
+     * Load tutorial steps from i18n
+     */
+    async loadSteps() {
+        // Load tutorial translations if not already loaded
+        if (!I18n.translations.tutorial) {
+            await I18n.loadPageTranslations('tutorial.json', 'tutorial');
         }
-    ],
+
+        // Build steps array from translations
+        const tutorialData = I18n.t('tutorial.steps');
+        if (Array.isArray(tutorialData)) {
+            this.steps = [
+                { selector: '#sidebar', text: tutorialData[0].text, position: 'right' },
+                { selector: '[data-module-id="extras"] .module-title', text: tutorialData[1].text, position: 'right' },
+                { selector: '#btn-menu', text: tutorialData[2].text, position: 'bottom' },
+                { selector: '#btn-settings', text: tutorialData[3].text, position: 'bottom' },
+                { selector: '.settings-row:has(#btn-dyslexia)', text: tutorialData[4].text, position: 'bottom', openSettings: true },
+                { selector: '.settings-row:has(#btn-auto-read)', text: tutorialData[5].text, position: 'bottom', openSettings: true },
+                { selector: '.settings-row-vertical:has(#voice-select)', text: tutorialData[6].text, position: 'bottom', openSettings: true },
+                { selector: '#tts-controls', text: tutorialData[7].text, position: 'bottom', closeSettings: true },
+                { selector: '#tutorial-interactive-demo', text: tutorialData[8].text, position: 'bottom', showInteractiveDemo: true },
+                { selector: '.content-nav', text: tutorialData[9].text, position: 'top', hideInteractiveDemo: true },
+                { selector: '.content-nav', text: tutorialData[10].text, position: 'top' }
+            ];
+        }
+    },
 
     init: function () {
         // Bind do botão de iniciar tutorial (se existir na página carregada)
@@ -97,8 +63,14 @@ const Tutorial = {
         });
     },
 
-    start: function () {
+    async start() {
         if (typeof AudioManager !== 'undefined') AudioManager.playClick();
+
+        // Load tutorial steps if not loaded
+        if (this.steps.length === 0) {
+            await this.loadSteps();
+        }
+
         this.currentStep = 0;
         this.isActive = true;
         document.body.classList.add('tutorial-active');
@@ -188,14 +160,14 @@ const Tutorial = {
             // Atualizar texto e indicador
             document.getElementById('tutorial-text').innerHTML = step.text;
             document.getElementById('tutorial-step-indicator').textContent =
-                `${stepIndex + 1} de ${this.steps.length}`;
+                `${stepIndex + 1} ${I18n.t('tutorial.ui.step_indicator')} ${this.steps.length}`;
 
             // Botão de próximo ou finalizar
             const nextBtn = document.getElementById('tutorial-next');
             if (stepIndex === this.steps.length - 1) {
-                nextBtn.textContent = 'Finalizar ✓';
+                nextBtn.textContent = I18n.t('tutorial.ui.btn_finish');
             } else {
-                nextBtn.textContent = 'Próximo →';
+                nextBtn.textContent = I18n.t('tutorial.ui.btn_next');
             }
         }, step.openSettings || step.closeSettings || step.showInteractiveDemo ? 300 : 0);
     },

@@ -24,8 +24,10 @@ const App = {
     init: async function () {
         console.log("Initializing App...");
 
-        // 1. Initialize I18n (Loads Global)
+        // 1. Initialize I18n (Loads Global + UI + Settings)
         await I18n.init();
+        await I18n.loadPageTranslations('ui.json', 'ui');
+        await I18n.loadPageTranslations('settings.json', 'settings');
 
         // 2. Initialize SCORM
         scorm.init();

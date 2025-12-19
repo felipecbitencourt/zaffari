@@ -1,0 +1,32 @@
+{
+    "title": "⚙️ Configurações",
+    "close_aria": "Fechar",
+    "dark_mode": {
+        "label": "Modo Escuro",
+        "aria": "Modo Escuro"
+    },
+    "font_size": {
+        "label": "Tamanho da Fonte",
+        "decrease_aria": "Diminuir Fonte",
+        "increase_aria": "Aumentar Fonte"
+    },
+    "reading_assistance": {
+        "label": "Assistência de Leitura",
+        "aria": "Assistência de Leitura"
+    },
+    "auto_read": {
+        "label": "Leitura Automática",
+        "aria": "Leitura Automática"
+    },
+    "reading_speed": {
+        "label": "Velocidade de Leitura"
+    },
+    "voice": {
+        "label": "Voz de Leitura",
+        "loading": "Carregando vozes...",
+        "btn_test": "▶ Testar"
+    },
+    "language": {
+        "label": "Idioma"
+    }
+}

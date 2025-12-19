@@ -46,17 +46,17 @@
         <!-- Menu Lateral -->
         <nav id="sidebar" aria-label="Menu do Curso">
             <div class="sidebar-header">
-                <h1>Por Dentro do SAC</h1>
+                <h1 data-i18n="ui.sidebar.course_title"></h1>
             </div>
 
             <div id="menu-content" class="menu-items">
                 <!-- Itens do menu gerados via JS -->
-                <p class="loading-text">Carregando curso...</p>
+                <p class="loading-text" data-i18n="ui.sidebar.loading"></p>
             </div>
 
             <div class="sidebar-footer-logo">
-                <img src="assets/marca/Logo-Grupo-Zaffari_Preto.png" alt="Logo Grupo Zaffari" class="sidebar-logo-img"
-                    id="sidebar-logo-img">
+                <img src="assets/marca/Logo-Grupo-Zaffari_Preto.png" data-i18n="ui.sidebar.logo_alt"
+                    alt="Logo Grupo Zaffari" class="sidebar-logo-img" id="sidebar-logo-img">
             </div>
 
             <button id="toggle-sidebar" aria-label="Recolher Menu">«</button>
@@ -72,10 +72,10 @@
             <footer class="content-nav">
                 <button id="btn-prev" disabled>
                     <span class="btn-icon">←</span>
-                    <span class="btn-text">Anterior</span>
+                    <span class="btn-text" data-i18n="ui.navigation.previous"></span>
                 </button>
                 <button id="btn-next" disabled>
-                    <span class="btn-text">Próximo</span>
+                    <span class="btn-text" data-i18n="ui.navigation.next"></span>
                     <span class="btn-icon">→</span>
                 </button>
             </footer>
@@ -92,12 +92,13 @@
     <div id="modal-feedback" class="modal-overlay feedback-modal">
         <div class="modal">
             <div class="modal-header">
-                <h3 id="feedback-title">Feedback</h3>
-                <button class="modal-close" id="btn-feedback-close" aria-label="Fechar">×</button>
+                <h3 id="feedback-title" data-i18n="ui.feedback_modal.title"></h3>
+                <button class="modal-close" id="btn-feedback-close" data-i18n="ui.feedback_modal.btn_close_aria"
+                    aria-label="Fechar">×</button>
             </div>
             <div class="modal-body">
                 <p id="feedback-message">Mensagem aqui</p>
-                <button id="feedback-btn" class="btn-primary">OK</button>
+                <button id="feedback-btn" class="btn-primary" data-i18n="ui.feedback_modal.btn_ok"></button>
             </div>
         </div>
     </div>
@@ -106,8 +107,9 @@
     <div id="modal-settings" class="modal-overlay">
         <div class="modal settings-modal">
             <div class="modal-header">
-                <h3>⚙️ Configurações</h3>
-                <button class="modal-close" id="btn-settings-close" aria-label="Fechar">×</button>
+                <h3 data-i18n="settings.title"></h3>
+                <button class="modal-close" id="btn-settings-close" data-i18n="settings.close_aria"
+                    aria-label="Fechar">×</button>
             </div>
             <div class="modal-body settings-body">
 
@@ -115,9 +117,10 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🌙</span>
-                        <span>Modo Escuro</span>
+                        <span data-i18n="settings.dark_mode.label"></span>
                     </div>
-                    <button id="btn-contrast" class="toggle-btn" aria-label="Modo Escuro">
+                    <button id="btn-contrast" class="toggle-btn" data-i18n="settings.dark_mode.aria"
+                        aria-label="Modo Escuro">
                         <span class="toggle-slider"></span>
                     </button>
                 </div>
@@ -126,12 +129,14 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🔤</span>
-                        <span>Tamanho da Fonte</span>
+                        <span data-i18n="settings.font_size.label"></span>
                     </div>
                     <div class="font-controls">
-                        <button id="btn-decrease-font" class="font-btn" aria-label="Diminuir Fonte">A-</button>
+                        <button id="btn-decrease-font" class="font-btn" data-i18n="settings.font_size.decrease_aria"
+                            aria-label="Diminuir Fonte">A-</button>
                         <span id="font-size-display">100%</span>
-                        <button id="btn-increase-font" class="font-btn" aria-label="Aumentar Fonte">A+</button>
+                        <button id="btn-increase-font" class="font-btn" data-i18n="settings.font_size.increase_aria"
+                            aria-label="Aumentar Fonte">A+</button>
                     </div>
                 </div>
 
@@ -139,9 +144,10 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">📖</span>
-                        <span>Assistência de Leitura</span>
+                        <span data-i18n="settings.reading_assistance.label"></span>
                     </div>
-                    <button id="btn-dyslexia" class="toggle-btn" aria-label="Assistência de Leitura">
+                    <button id="btn-dyslexia" class="toggle-btn" data-i18n="settings.reading_assistance.aria"
+                        aria-label="Assistência de Leitura">
                         <span class="toggle-slider"></span>
                     </button>
                 </div>
@@ -150,9 +156,10 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🔄</span>
-                        <span>Leitura Automática</span>
+                        <span data-i18n="settings.auto_read.label"></span>
                     </div>
-                    <button id="btn-auto-read" class="toggle-btn" aria-label="Leitura Automática">
+                    <button id="btn-auto-read" class="toggle-btn" data-i18n="settings.auto_read.aria"
+                        aria-label="Leitura Automática">
                         <span class="toggle-slider"></span>
                     </button>
                 </div>
@@ -164,7 +171,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">⏩</span>
-                        <span>Velocidade de Leitura</span>
+                        <span data-i18n="settings.reading_speed.label"></span>
                     </div>
                     <div class="speed-controls">
                         <button class="speed-btn" data-speed="0.75">0.75x</button>
@@ -179,13 +186,14 @@
                 <div class="settings-row settings-row-vertical">
                     <div class="settings-label">
                         <span class="settings-icon">🎤</span>
-                        <span>Voz de Leitura</span>
+                        <span data-i18n="settings.voice.label"></span>
                     </div>
                     <div class="voice-controls">
                         <select id="voice-select" class="voice-select">
-                            <option value="">Carregando vozes...</option>
+                            <option value="" data-i18n="settings.voice.loading"></option>
                         </select>
-                        <button id="btn-voice-preview" class="btn-secondary-sm">▶ Testar</button>
+                        <button id="btn-voice-preview" class="btn-secondary-sm"
+                            data-i18n="settings.voice.btn_test"></button>
                     </div>
                 </div>
 
@@ -196,7 +204,7 @@
                 <div class="settings-row">
                     <div class="settings-label">
                         <span class="settings-icon">🌐</span>
-                        <span>Idioma</span>
+                        <span data-i18n="settings.language.label"></span>
                     </div>
                     <div class="lang-controls">
                         <button id="btn-lang-pt" class="lang-btn active">PT</button>
@@ -221,7 +229,7 @@
         <div class="tutorial-tooltip-actions">
             <span id="tutorial-step-indicator"></span>
             <div class="tutorial-buttons">
-                <button id="tutorial-skip" class="tutorial-btn-skip">Pular</button>
+                <button id="tutorial-skip" class="tutorial-btn-skip" data-i18n="tutorial.ui.btn_skip"></button>
                 <button id="tutorial-next" class="tutorial-btn-next">Próximo →</button>
             </div>
         </div>

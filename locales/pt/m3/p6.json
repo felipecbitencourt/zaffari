@@ -1,18 +1,48 @@
 {
-    "title": "Como encaminhar reclamações?",
-    "intro": "Cada tipo de produto exige um procedimento específico de reclamação. Clique em cada categoria para ver os detalhes:",
-    "accordion": {
-        "food_title": "🍎 Produtos Alimentícios",
+  "title": "Como encaminhar reclamações?",
+  "intro": "Cada tipo de produto exige um procedimento específico de reclamação. Clique em cada categoria para ver os detalhes:",
+  "accordion": {
+    "food_title": "🍎 Produtos Alimentícios",
+    "food_intro": "A troca ocorre apenas quando o produto está <strong>impróprio para consumo</strong>.",
+    "food_l1": "Cliente deve levar produto + cupom à loja",
+    "food_l2": "Avaliação da gerência",
+    "food_l3": "Preenchimento correto de <strong>Motivo, Marca e Lote</strong> é essencial",
+    "nonfood_title": "📦 Produtos Não Alimentícios",
+    "nonfood_intro": "Devem ser registradas com todas as informações sobre o defeito.",
+    "nonfood_box": "Cliente leva produto + cupom à loja (exceto Eletro → Assistência Técnica).",
+    "wrong_title": "❌ Compra Errada",
+    "wrong_l1": "<strong>Não perecíveis:</strong> item não pode estar violado",
+    "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)",
+    "wrong_attention": "⚠️ Perecíveis uma vez retirados da loja não podem ser reacondicionados por questões de segurança alimentar.",
+    "wrong_intro": "TODO: Adicionar tradução",
+    "wrong_path_title": "TODO: Adicionar tradução",
+    "wrong_path": "TODO: Adicionar tradução",
+    "notdone_title": "TODO: Adicionar tradução",
+    "notdone_intro": "TODO: Adicionar tradução",
+    "notdone_path_title": "TODO: Adicionar tradução",
+    "notdone_path": "TODO: Adicionar tradução",
+    "notdone_l1": "TODO: Adicionar tradução",
+    "notdone_l2": "TODO: Adicionar tradução",
+    "notdone_l3": "TODO: Adicionar tradução"
+  },
+  "m3": {
+    "p6": {
+      "accordion": {
         "food_intro": "A troca ocorre apenas quando o produto está <strong>impróprio para consumo</strong>.",
-        "food_l1": "Cliente deve levar produto + cupom à loja",
-        "food_l2": "Avaliação da gerência",
         "food_l3": "Preenchimento correto de <strong>Motivo, Marca e Lote</strong> é essencial",
-        "nonfood_title": "📦 Produtos Não Alimentícios",
-        "nonfood_intro": "Devem ser registradas com todas as informações sobre o defeito.",
-        "nonfood_box": "Cliente leva produto + cupom à loja (exceto Eletro → Assistência Técnica).",
-        "wrong_title": "❌ Compra Errada",
         "wrong_l1": "<strong>Não perecíveis:</strong> item não pode estar violado",
-        "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)",
-        "wrong_attention": "⚠️ Perecíveis uma vez retirados da loja não podem ser reacondicionados por questões de segurança alimentar."
+        "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)"
+      },
+      "quiz": {
+        "feedback": "TODO: Adicionar tradução"
+      }
     }
+  },
+  "quiz": {
+    "question": "TODO: Adicionar tradução",
+    "opt_a": "TODO: Adicionar tradução",
+    "opt_b": "TODO: Adicionar tradução",
+    "opt_c": "TODO: Adicionar tradução",
+    "opt_d": "TODO: Adicionar tradução"
+  }
 }

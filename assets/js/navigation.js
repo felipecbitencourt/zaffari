@@ -80,10 +80,10 @@ const NavigationManager = {
             const btnMenu = document.getElementById('btn-menu');
             if (sidebar.classList.contains('collapsed')) {
                 btnMenu.classList.add('active');
-                btnMenu.setAttribute('aria-label', 'Abrir Menu');
+                btnMenu.setAttribute('aria-label', I18n.t('ui.sidebar.toggle_expand'));
             } else {
                 btnMenu.classList.remove('active');
-                btnMenu.setAttribute('aria-label', 'Fechar Menu');
+                btnMenu.setAttribute('aria-label', I18n.t('ui.sidebar.toggle_collapse'));
             }
         };
 

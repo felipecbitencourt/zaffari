@@ -1,0 +1,19 @@
+{
+    "sidebar": {
+        "course_title": "Por Dentro do SAC",
+        "loading": "Carregando curso...",
+        "toggle_collapse": "Recolher Menu",
+        "toggle_expand": "Abrir Menu",
+        "logo_alt": "Logo Grupo Zaffari"
+    },
+    "navigation": {
+        "previous": "Anterior",
+        "next": "Próximo"
+    },
+    "feedback_modal": {
+        "title": "Feedback",
+        "message_placeholder": "Mensagem aqui",
+        "btn_ok": "OK",
+        "btn_close_aria": "Fechar"
+    }
+}
