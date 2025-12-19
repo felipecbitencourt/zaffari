@@ -1,0 +1,16 @@
+{
+    "title": "Cambio de Productos con Defecto",
+    "intro": "El proveedor tiene hasta <strong>30 días</strong> para solucionar el defecto por medio de la asistencia técnica autorizada.",
+    "accordion": {
+        "options_title": "🔄 Opciones del cliente si no hay solución en 30 días",
+        "l1": "<strong>Cambio del producto</strong> por otro igual o similar",
+        "l2": "<strong>Descuento proporcional</strong> del valor pagado",
+        "l3": "<strong>Devolución integral</strong> del valor pagado"
+    },
+    "attention_text": "<strong>Plazo para reclamar:</strong> 90 días para productos durables.",
+    "h3_assist": "Asistencia Técnica 🔧",
+    "accordion_electro": {
+        "title": "📦 Procedimiento para productos Electro",
+        "text": "Productos <strong>Electro</strong> deben ser derivados a la asistencia técnica de la marca. Si después de 30 días no hay solución, la empresa podrá realizar el cambio mediante orden de servicio."
+    }
+}

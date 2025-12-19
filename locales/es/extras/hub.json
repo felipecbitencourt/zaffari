@@ -1,0 +1,66 @@
+{
+    "title": "🧠 Menú de Fijación",
+    "lead": "¡Explore recursos adicionales para reforzar su aprendizaje! Complete los módulos para desbloquear los materiales.",
+    "sections": {
+        "acompanhamento": {
+            "title": "📚 Seguimiento",
+            "subtitle": "Materiales que acompañan su progreso - se liberan gradualmente a medida que avanza."
+        },
+        "especiais": {
+            "title": "⭐ Especiales",
+            "subtitle": "Actividades exclusivas desbloqueadas al completar módulos específicos."
+        },
+        "referencias": {
+            "title": "🔗 Referencias",
+            "subtitle": "Materiales complementarios y enlaces útiles."
+        }
+    },
+    "cards": {
+        "resumo": {
+            "title": "Resumen del Curso",
+            "desc": "Revise los conceptos principales y puntos clave de todos los módulos en un solo lugar."
+        },
+        "flashcard": {
+            "title": "Flash Cards",
+            "desc": "Memorice conceptos importantes con tarjetas de estudio interactivas."
+        },
+        "quiz": {
+            "title": "Cuestionarios",
+            "desc": "Ponga a prueba sus conocimientos con todos los cuestionarios del curso reunidos en un solo lugar."
+        },
+        "drag_drop": {
+            "title": "Arrastrar y Soltar",
+            "desc": "Asocie conceptos y categorías arrastrando los elementos a los lugares correctos."
+        },
+        "find_error": {
+            "title": "Encuentra el Error",
+            "desc": "Identifique errores en situaciones de atención y aprenda cómo corregirlos."
+        },
+        "roleplay": {
+            "title": "Roleplay",
+            "desc": "Practique situaciones reales de atención a través de simulaciones interactivas."
+        },
+        "ref1": {
+            "title": "Impacto del Mal Servicio",
+            "desc": "Artículo: 65% de los consumidores consideran cambiar de marca tras experiencia negativa."
+        },
+        "ref2": {
+            "title": "35 Años del CDC",
+            "desc": "Noticia: Código de Defensa del Consumidor cumple 35 años como referencia."
+        },
+        "ref3": {
+            "title": "Código de Defensa del Consumidor",
+            "desc": "PDF completo del CDC (2013) para consulta y descarga."
+        },
+        "ref4": {
+            "title": "Estrategia de CX (Oracle)",
+            "desc": "Brief ejecutivo sobre estrategias de ejecución de Customer Service."
+        }
+    },
+    "lock_msg": "Complete los módulos para desbloquear",
+    "lock_msg_m1": "Complete el Módulo 1 para desbloquear",
+    "lock_msg_m2": "Complete el Módulo 2 para desbloquear",
+    "lock_msg_m3": "Complete el Módulo 3 para desbloquear",
+    "tip": "💡 <strong>Consejo:</strong> Complete los módulos del curso para desbloquear todos los materiales. ¡Cada módulo concede medallas que liberan nuevos recursos!",
+    "unlocked_msg": "de 3 módulos desbloqueados"
+}

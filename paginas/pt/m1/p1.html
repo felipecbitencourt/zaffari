@@ -1,0 +1,124 @@
+<!-- Módulo 1 - Página 1: Boas-vindas -->
+<div class="content-header">
+    <h1 data-i18n="m1.p1.title"></h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+
+    <!-- Texto de importância do treinamento (azul, sem emoji) -->
+    <div class="highlight-box"
+        style="margin-bottom: var(--spacing-lg); background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #1976d2;">
+        <div class="highlight-box-content">
+            <h4 data-i18n="m1.p1.accordion.a2.title" style="color: #1565c0;"></h4>
+            <p data-i18n="m1.p1.accordion.a2.text"></p>
+        </div>
+    </div>
+
+    <p data-i18n="m1.p1.learning_path"></p>
+
+    <!-- CARDS INTERATIVOS -->
+    <div class="interactive-cards">
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">⚙️</span>
+                <span data-i18n="m1.p1.cards.c1.title"></span>
+            </div>
+            <div class="interactive-card-content">
+                <p data-i18n="m1.p1.cards.c1.text"></p>
+            </div>
+        </div>
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">🎯</span>
+                <span data-i18n="m1.p1.cards.c2.title"></span>
+            </div>
+            <div class="interactive-card-content">
+                <p data-i18n="m1.p1.cards.c2.text"></p>
+            </div>
+        </div>
+        <div class="interactive-card">
+            <div class="interactive-card-header">
+                <span class="icon">⭐</span>
+                <span data-i18n="m1.p1.cards.c3.title"></span>
+            </div>
+            <div class="interactive-card-content">
+                <p data-i18n="m1.p1.cards.c3.text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOCÊ SABIA? - Card Especial com Flip -->
+    <div class="flip-card" style="margin: var(--spacing-lg) 0; perspective: 1000px; cursor: pointer;"
+        onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner"
+            style="position: relative; width: 100%; transition: transform 0.6s; transform-style: preserve-3d;">
+            <!-- Frente do card -->
+            <div class="flip-card-front"
+                style="background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #ffc107;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span style="font-size: 2.5rem; animation: pulse 2s infinite;">💡</span>
+                    <div>
+                        <h4 style="margin: 0; color: #f57c00;" data-i18n="m1.p1.sabia.title"></h4>
+                        <p style="margin: 0.5rem 0 0; opacity: 0.8; font-size: 0.9rem;" data-i18n="m1.p1.sabia.hint">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Verso do card -->
+            <div class="flip-card-back"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #ff9800; transform: rotateY(180deg); backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center;">
+                <p style="margin: 0; font-size: 1.1rem;" data-i18n="m1.p1.sabia.text"></p>
+                <a href="../../assets/PDFs/cx-service-exec-strategy-brief-1856861.pdf" target="_blank"
+                    style="margin-top: 0.75rem; font-size: 0.85rem; font-style: italic; color: #e65100; text-decoration: underline;"
+                    onclick="event.stopPropagation();" data-i18n="m1.p1.sabia.source"></a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card .flip-card-front {
+            backface-visibility: hidden;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+
+    <!-- QUESTÃO REFLEXIVA -->
+    <div class="highlight-box atencao">
+        <span class="icon">🤔</span>
+        <div class="highlight-box-content">
+            <h4 data-i18n="m1.p1.reflexao.title"></h4>
+            <p data-i18n="m1.p1.reflexao.text"></p>
+        </div>
+    </div>
+
+    <!-- REVELAR RESPOSTA -->
+    <div class="reveal-container">
+        <button class="reveal-btn" data-i18n="m1.p1.reveal.btn"></button>
+        <div class="reveal-content">
+            <p><strong data-i18n="m1.p1.reveal.title"></strong></p>
+            <ul>
+                <li data-i18n="m1.p1.reveal.l1"></li>
+                <li data-i18n="m1.p1.reveal.l2"></li>
+                <li data-i18n="m1.p1.reveal.l3"></li>
+                <li data-i18n="m1.p1.reveal.l4"></li>
+                <li data-i18n="m1.p1.reveal.l5"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>

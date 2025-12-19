@@ -1,0 +1,25 @@
+{
+    "title": "📊 Meu Desempenho",
+    "disclaimer": "⚠️ Estas métricas são baseadas no seu progresso local. Os dados são salvos apenas neste navegador.",
+    "time": {
+        "title": "Tempo de Estudo",
+        "desc": "Tempo total gasto no curso"
+    },
+    "progress": {
+        "title": "Progresso Geral",
+        "modules": "Módulos:",
+        "modules_count": "/3 concluídos",
+        "pages": "Páginas:",
+        "pages_count": "visualizadas"
+    },
+    "quiz": {
+        "section_title": "Desempenho nos Questionários",
+        "answered": "Respondidos",
+        "correct": "Acertos",
+        "average": "Média de Acertos",
+        "msg_good": "Parabéns! Você está com um ótimo desempenho.",
+        "msg_improve": "Continue revisando o conteúdo para aumentar sua média.",
+        "msg_practice": "Continue praticando para melhorar seus resultados!"
+    },
+    "back_btn": "← Voltar ao Menu de Extras"
+}

@@ -1,0 +1,66 @@
+{
+    "title": "🧠 Menu de Fixação",
+    "lead": "Explore recursos adicionais para reforçar seu aprendizado! Complete os módulos para desbloquear os materiais.",
+    "sections": {
+        "acompanhamento": {
+            "title": "📚 Acompanhamento",
+            "subtitle": "Materiais que acompanham seu progresso - liberam gradualmente conforme você avança."
+        },
+        "especiais": {
+            "title": "⭐ Especiais",
+            "subtitle": "Atividades exclusivas desbloqueadas ao completar módulos específicos."
+        },
+        "referencias": {
+            "title": "🔗 References",
+            "subtitle": "Complementary materials and useful links."
+        }
+    },
+    "cards": {
+        "resumo": {
+            "title": "Resumo do Curso",
+            "desc": "Revise os principais conceitos e pontos-chave de todos os módulos em um só lugar."
+        },
+        "flashcard": {
+            "title": "Flash Cards",
+            "desc": "Memorize conceitos importantes com cartões de estudo interativos."
+        },
+        "quiz": {
+            "title": "Questionários",
+            "desc": "Teste seus conhecimentos com todos os questionários do curso reunidos em um só lugar."
+        },
+        "drag_drop": {
+            "title": "Arraste e Solte",
+            "desc": "Associe conceitos e categorias arrastando os itens para os lugares corretos."
+        },
+        "find_error": {
+            "title": "Ache o Erro",
+            "desc": "Identifique erros em situações de atendimento e aprenda como corrigi-los."
+        },
+        "roleplay": {
+            "title": "Roleplay",
+            "desc": "Pratique situações reais de atendimento através de simulações interativas."
+        },
+        "ref1": {
+            "title": "Bad Service Impact",
+            "desc": "Article: 65% of Consumers Say Negative Interactions Motivate Them to Switch Brands."
+        },
+        "ref2": {
+            "title": "CDC 35th Anniversary",
+            "desc": "News: Consumer Protection Code turns 35 as a reference in consumption relations."
+        },
+        "ref3": {
+            "title": "Consumer Protection Code",
+            "desc": "Full PDF of the Brazilian CDC (2013) for consultation."
+        },
+        "ref4": {
+            "title": "CX Strategy (Oracle)",
+            "desc": "Executive brief on Customer Service execution strategies."
+        }
+    },
+    "lock_msg": "Complete os módulos para desbloquear",
+    "lock_msg_m1": "Complete o Módulo 1 para desbloquear",
+    "lock_msg_m2": "Complete o Módulo 2 para desbloquear",
+    "lock_msg_m3": "Complete o Módulo 3 para desbloquear",
+    "tip": "💡 <strong>Dica:</strong> Complete os módulos do curso para desbloquear todos os materiais. Cada módulo concede medalhas que liberam novos recursos!",
+    "unlocked_msg": "de 3 módulos desbloqueados"
+}

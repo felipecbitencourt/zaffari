@@ -8,7 +8,7 @@
                 {
                     "id": "intro-p1",
                     "title": "Bem-vindo ao Curso",
-                    "file": "paginas/pt/intro-curso.html",
+                    "file": "paginas/pt/intro/p1.html",
                     "type": "intro"
                 }
             ]
@@ -20,43 +20,43 @@
                 {
                     "id": "m1-abertura",
                     "title": "📍 Por que o SAC é estratégico?",
-                    "file": "paginas/pt/m1-abertura.html",
+                    "file": "paginas/pt/m1/abertura.html",
                     "type": "module_start"
                 },
                 {
                     "id": "m1-p1",
                     "title": "O que o cliente espera?",
-                    "file": "paginas/pt/m1-p1-boas-vindas.html",
+                    "file": "paginas/pt/m1/p1.html",
                     "type": "content"
                 },
                 {
                     "id": "m1-p2",
                     "title": "Qual o papel do SAC?",
-                    "file": "paginas/pt/m1-p2-papel-estrategico.html",
+                    "file": "paginas/pt/m1/p2.html",
                     "type": "content"
                 },
                 {
                     "id": "m1-p3",
                     "title": "Quais são nossas responsabilidades?",
-                    "file": "paginas/pt/m1-p3-responsabilidades.html",
+                    "file": "paginas/pt/m1/p3.html",
                     "type": "content"
                 },
                 {
                     "id": "m1-p4",
                     "title": "Por que prazos são importantes?",
-                    "file": "paginas/pt/m1-p4-atividade.html",
+                    "file": "paginas/pt/m1/p4.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m1-p5",
                     "title": "📝 O que aprendemos no Módulo 1?",
-                    "file": "paginas/pt/m1-p6-resumo.html",
+                    "file": "paginas/pt/m1/p5.html",
                     "type": "summary"
                 },
                 {
                     "id": "m1-conquistas",
                     "title": "🏆 Conquistas do Módulo 1",
-                    "file": "paginas/pt/m1-conquistas.html",
+                    "file": "paginas/pt/m1/conquistas.html",
                     "type": "rewards"
                 }
             ]
@@ -68,49 +68,49 @@
                 {
                     "id": "m2-abertura",
                     "title": "📍 Onde encontrar informações?",
-                    "file": "paginas/pt/m2-abertura.html",
+                    "file": "paginas/pt/m2/abertura.html",
                     "type": "module_start"
                 },
                 {
                     "id": "m2-p1",
                     "title": "Por que precisamos saber buscar?",
-                    "file": "paginas/pt/m2-p1-intro.html",
+                    "file": "paginas/pt/m2/p1.html",
                     "type": "content"
                 },
                 {
                     "id": "m2-p2",
                     "title": "Onde consultar dados das lojas?",
-                    "file": "paginas/pt/m2-p2-intranet.html",
+                    "file": "paginas/pt/m2/p2.html",
                     "type": "content"
                 },
                 {
                     "id": "m2-p3",
                     "title": "Onde consultar ofertas?",
-                    "file": "paginas/pt/m2-p3-atividade.html",
+                    "file": "paginas/pt/m2/p3.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p4",
                     "title": "Como encontrar no encarte?",
-                    "file": "paginas/pt/m2-p4-encartes.html",
+                    "file": "paginas/pt/m2/p4.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p5",
                     "title": "Por que consultar corretamente?",
-                    "file": "paginas/pt/m2-p5-whatsapp.html",
+                    "file": "paginas/pt/m2/p5.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m2-p6",
                     "title": "📝 O que aprendemos no Módulo 2?",
-                    "file": "paginas/pt/m2-p6-resumo.html",
+                    "file": "paginas/pt/m2/p6.html",
                     "type": "summary"
                 },
                 {
                     "id": "m2-conquistas",
                     "title": "🏆 Conquistas do Módulo 2",
-                    "file": "paginas/pt/m2-conquistas.html",
+                    "file": "paginas/pt/m2/conquistas.html",
                     "type": "rewards"
                 }
             ]
@@ -122,61 +122,61 @@
                 {
                     "id": "m3-abertura",
                     "title": "📍 Como aplicar o CDC?",
-                    "file": "paginas/pt/m3-abertura.html",
+                    "file": "paginas/pt/m3/abertura.html",
                     "type": "module_start"
                 },
                 {
                     "id": "m3-p1",
                     "title": "O que é o CDC?",
-                    "file": "paginas/pt/m3-p1-intro-cdc.html",
+                    "file": "paginas/pt/m3/p1.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p2",
                     "title": "Qual a diferença: produto x serviço?",
-                    "file": "paginas/pt/m3-p2-conceitos.html",
+                    "file": "paginas/pt/m3/p2.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p3",
                     "title": "Quando trocar sem defeito?",
-                    "file": "paginas/pt/m3-p3-trocas-sem-defeito.html",
+                    "file": "paginas/pt/m3/p3.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p4",
                     "title": "Por que o CDC é importante?",
-                    "file": "paginas/pt/m3-p4-estudo-caso.html",
+                    "file": "paginas/pt/m3/p4.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p5",
                     "title": "Quando há defeito, o que fazer?",
-                    "file": "paginas/pt/m3-p5-trocas-com-defeito.html",
+                    "file": "paginas/pt/m3/p5.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p6",
                     "title": "Como encaminhar reclamações?",
-                    "file": "paginas/pt/m3-p6-reclamacoes.html",
+                    "file": "paginas/pt/m3/p6.html",
                     "type": "content"
                 },
                 {
                     "id": "m3-p7",
                     "title": "🏆 Você está pronto para o desafio?",
-                    "file": "paginas/pt/m3-p7-desafio-final.html",
+                    "file": "paginas/pt/m3/p7.html",
                     "type": "quiz_integrated"
                 },
                 {
                     "id": "m3-p8",
                     "title": "📝 O que aprendemos no curso?",
-                    "file": "paginas/pt/m3-p8-encerramento.html",
+                    "file": "paginas/pt/m3/p8.html",
                     "type": "summary"
                 },
                 {
                     "id": "m3-conquistas",
                     "title": "🏆 Conquistas do Módulo 3",
-                    "file": "paginas/pt/m3-conquistas.html",
+                    "file": "paginas/pt/m3/conquistas.html",
                     "type": "rewards"
                 }
             ]
@@ -188,49 +188,49 @@
                 {
                     "id": "extras-hub",
                     "title": "🧠 Menu de Fixação",
-                    "file": "paginas/pt/extras-hub.html",
+                    "file": "paginas/pt/extras/hub.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-metricas",
                     "title": "📊 Meu Desempenho",
-                    "file": "paginas/pt/extras-metricas.html",
+                    "file": "paginas/pt/extras/metricas.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-resumo",
                     "title": "📖 Resumo do Curso",
-                    "file": "paginas/pt/extras-resumo.html",
+                    "file": "paginas/pt/extras/resumo.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-questionarios",
                     "title": "📝 Questionários",
-                    "file": "paginas/pt/extras-questionarios.html",
+                    "file": "paginas/pt/extras/questionarios.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-flashcards",
                     "title": "🃏 Flash Cards",
-                    "file": "paginas/pt/extras-flashcards.html",
+                    "file": "paginas/pt/extras/flashcards.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-arraste",
                     "title": "🎯 Arraste e Solte",
-                    "file": "paginas/pt/extras-arraste.html",
+                    "file": "paginas/pt/extras/arraste.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-ache-erro",
                     "title": "🔍 Ache o Erro",
-                    "file": "paginas/pt/extras-ache-erro.html",
+                    "file": "paginas/pt/extras/ache-erro.html",
                     "type": "extras"
                 },
                 {
                     "id": "extras-roleplay",
                     "title": "🎭 Roleplay",
-                    "file": "paginas/pt/extras-roleplay.html",
+                    "file": "paginas/pt/extras/roleplay.html",
                     "type": "extras"
                 }
             ]

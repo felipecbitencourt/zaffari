@@ -1,0 +1,22 @@
+{
+    "title": "¿Cuándo realizar llamadas activas?",
+    "intro": "Además de la atención receptiva, el SAC realiza contactos activos con clientes, especialmente en campañas promocionales y acciones relacionadas con Tarjetas del Grupo:",
+    "timeline": {
+        "t1": {
+            "title": "1. Activación de tarjetas",
+            "text": "Contactar clientes para activar nuevas tarjetas emitidas."
+        },
+        "t2": {
+            "title": "2. Actualización catastral",
+            "text": "Mantener los datos de los clientes siempre actualizados."
+        },
+        "t3": {
+            "title": "3. Comunicación de promociones",
+            "text": "Informar sobre ofertas exclusivas y beneficios."
+        },
+        "t4": {
+            "title": "4. Reversión de cancelaciones",
+            "text": "Trabajar para retener clientes que desean cancelar servicios."
+        }
+    }
+}

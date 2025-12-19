@@ -1,0 +1,26 @@
+{
+    "title": "Por que prazos são importantes?",
+    "intro": "Outro ponto essencial no trabalho do SAC é o cumprimento dos prazos de atendimento. Prazos bem definidos garantem organização, previsibilidade e eficiência, além de demonstrarem respeito ao cliente e fortalecerem a confiança na marca. Além disso, seguir os prazos definidos ajuda o time a manter a organização dos processos internos, evitando retrabalhos ou escalonamentos desnecessários.",
+    "standard_box": {
+        "title": "⏳ Prazos Padrão",
+        "comment": "Esses prazos garantem agilidade, organização e consistência no atendimento do dia a dia.",
+        "l1": "<strong>Solicitações:</strong> até 3 dias úteis",
+        "l2": "<strong>Informações:</strong> até 2 dias úteis",
+        "l3": "<strong>Reclamações:</strong> até 2 dias úteis"
+    },
+    "special_box": {
+        "title": "⚠ Prazos Especiais",
+        "comment": "Esses atendimentos exigem análises mais detalhadas, por isso contam com prazos maiores.",
+        "l1": "<strong>Danos:</strong> até 5 dias úteis para retorno",
+        "l2": "<strong>Duplicidade de pagamento:</strong> até 8 dias úteis"
+    },
+    "text_footer": "⚠️ <strong>IMPORTANTE:</strong> O correto registro da categoria de atendimento é fundamental para que o prazo adequado seja respeitado e o cliente receba retorno no tempo correto.",
+    "quiz": {
+        "question": "Um cliente informa que pagou a fatura duas vezes. Você precisa registrar o atendimento para que ele seja ressarcido. Por que é crucial selecionar a categoria 'Duplicidade de pagamento' em vez de uma categoria genérica de 'Reclamação'?",
+        "opt_a": "A) Porque 'Duplicidade' tem um prazo específico (até 8 dias úteis) para análise financeira detalhada, evitando promessas falsas de solução rápida.",
+        "opt_b": "B) Porque 'Reclamação' é uma categoria que só deve ser usada para mau atendimento na loja física.",
+        "opt_c": "C) Não faz diferença prática, pois o prazo de retorno ao cliente é sempre de 2 dias úteis para qualquer caso.",
+        "opt_d": "D) Apenas para cumprir uma formalidade burocrática, sem impacto real no tratamento do caso.",
+        "feedback": "<strong>Resposta Correta!</strong> A categoria correta define o prazo correto (8 dias), gerenciando a expectativa do cliente."
+    }
+}

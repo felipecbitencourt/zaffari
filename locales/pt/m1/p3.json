@@ -1,0 +1,65 @@
+{
+    "title": "Quais são nossas responsabilidades?",
+    "intro_list": "Entre as principais responsabilidades do Serviço de Atendimento ao Cliente, destacam-se:",
+    "intro_p": "",
+    "img_alt": "Equipe de call center trabalhando em ambiente moderno",
+    "cards": {
+        "c1": {
+            "title": "Atendimento Multicanal",
+            "text": "Oferecer atendimento de excelência por meio de diferentes canais: telefone, e-mail, chat e meios eletrônicos."
+        },
+        "c2": {
+            "title": "Atendimento Receptivo",
+            "text": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções de primeiro nível sempre que possível."
+        },
+        "c3": {
+            "title": "Atendimentos Ativos",
+            "text": "Realizar contatos ativos com clientes, especialmente em campanhas promocionais e ações de marketing relacionadas aos Cartões do Grupo. Isso inclui ativação de cartões, atualização cadastral, comunicação de promoções e reversão de cancelamentos."
+        },
+        "c4": {
+            "title": "Organização e Tabulação",
+            "text": "Organizar e tabular dados, elaborar relatórios e dar suporte às demandas da equipe de apoio e da Coordenação."
+        }
+    },
+    "proatividade": "Os profissionais do SAC também atuam de forma proativa, identificando melhorias nos scripts e nos padrões de atendimento, com base na observação do dia a dia e na análise de oportunidades. Essas contribuições são essenciais para a evolução constante do serviço prestado e para a manutenção da excelência no relacionamento com o cliente.",
+    "active_title": "📢 Atendimentos Ativos",
+    "active_text": "Realizar atendimentos ativos, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
+    "timeline": {
+        "t1": {
+            "title": "1. Ativação de cartões",
+            "text": "Contatar clientes para ativar novos cartões emitidos."
+        },
+        "t2": {
+            "title": "2. Atualização cadastral",
+            "text": "Manter os dados dos clientes sempre atualizados."
+        },
+        "t3": {
+            "title": "3. Comunicação de promoções",
+            "text": "Informar sobre ofertas exclusivas e benefícios."
+        },
+        "t4": {
+            "title": "4. Reversão de cancelamentos",
+            "text": "Trabalhar para reter clientes que desejam cancelar serviços."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Gestão e Melhoria Contínua",
+            "l1": "Organizar e tabular dados, elaborar relatórios e dar suporte às demandas da equipe.",
+            "l2": "Atuar de forma proativa na identificação de melhorias em scripts e padrões de atendimento.",
+            "l3": "Contribuir para a evolução contínua do serviço prestado."
+        },
+        "a2": {
+            "title": "🎓 Desenvolvimento profissional",
+            "text": "O conhecimento das responsabilidades permite que você atue com mais segurança e assertividade, contribuindo para sua evolução na carreira."
+        }
+    },
+    "quiz": {
+        "question": "Você percebe que vários clientes estão ligando com a mesma dúvida sobre uma nova promoção. Qual a melhor atitude alinhada às responsabilidades de melhoria contínua do SAC?",
+        "opt_a": "A) Continuar atendendo cada um individualmente sem relatar o fato.",
+        "opt_b": "B) Reclamar com os colegas que os clientes não sabem ler o regulamento.",
+        "opt_c": "C) Relatar o padrão observado ao supervisor para que a comunicação da promoção seja ajustada.",
+        "opt_d": "D) Dizer ao cliente para procurar a informação no site.",
+        "feedback": "<strong>Resposta Correta!</strong> Proatividade em identificar padrões ajuda a melhorar o processo para todos."
+    }
+}

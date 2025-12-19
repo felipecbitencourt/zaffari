@@ -1,0 +1,17 @@
+{
+    "title": "Félicitations !",
+    "subtitle": "Vous avez terminé le <strong>Module 1 : Pourquoi le SAC est-il stratégique ?</strong>",
+    "badges_title": "Médailles Obtenues",
+    "badges_subtitle": "Ces médailles aident à débloquer les matériels de Révision !",
+    "badges": {
+        "resumo": "Résumé",
+        "quiz": "Questionnaire",
+        "flashcard": "Flashcard",
+        "drag_drop": "Glisser-Déposer",
+        "m1_desc": "Module 1",
+        "exclusive_desc": "Exclusif"
+    },
+    "progress_label": "Progrès vers la Révision",
+    "progress_text": "1 sur 3 modules terminés",
+    "footer_text": "Continuez vers le prochain module et gagnez plus de médailles !"
+}

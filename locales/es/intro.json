@@ -1,0 +1,56 @@
+{
+    "hero": {
+        "welcome": "Bienvenido al curso",
+        "title": "Dentro del SAC",
+        "subtitle": "Capacítese para ofrecer un <strong>Servicio de Atención al Cliente</strong> de excelencia y transformar cada interacción en una experiencia positiva.",
+        "badge": "✨ Entrenamiento Oficial",
+        "img_alt": "Operador de call center confiado conversando con cliente"
+    },
+    "stats": {
+        "modules": "Módulos",
+        "activities": "Actividades",
+        "certification": "Certificación"
+    },
+    "journey": {
+        "title": "Jornada de Aprendizaje",
+        "m1": {
+            "title": "Rol Estratégico",
+            "desc": "Entienda cómo el SAC influye en la reputación de la marca y sus responsabilidades.",
+            "tag": "Conceptos"
+        },
+        "m2": {
+            "title": "Herramientas y Procesos",
+            "desc": "Domine la intranet, folletos y canales para respuestas rápidas y precisas.",
+            "tag": "Práctico"
+        },
+        "m3": {
+            "title": "Legislación y Reclamos",
+            "desc": "Aplique el CDC en el día a día y reduzca reclamos con conocimiento.",
+            "tag": "Legal"
+        }
+    },
+    "fixation": {
+        "title": "Fijación",
+        "quiz": {
+            "title": "Cuestionarios",
+            "desc": "Pruebe sus conocimientos con quiz de todos los módulos.",
+            "tag": "Evaluación"
+        },
+        "resume": {
+            "title": "Resúmenes",
+            "desc": "Revise los principales conceptos y puntos clave del curso.",
+            "tag": "Revisión"
+        },
+        "activities": {
+            "title": "Actividades",
+            "desc": "Ejercicios interactivos, flashcards y simulaciones prácticas.",
+            "tag": "Práctica"
+        }
+    },
+    "cta": {
+        "title": "¿Primera vez aquí?",
+        "desc": "Descubra los recursos de accesibilidad y aprenda a navegar por la plataforma.",
+        "btn": "▶ Iniciar Tutorial"
+    },
+    "start_msg": "Por favor, haga clic en <strong>\"Iniciar Tutorial\"</strong> antes de continuar."
+}

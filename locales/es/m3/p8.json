@@ -1,0 +1,45 @@
+{
+    "title": "📝 Resumen y Cierre",
+    "lead": "¡Felicitaciones! Has llegado al final del curso 'Por Dentro del SAC'. 🎉",
+    "intro_summary": "Antes de terminar, revisa un resumen de las principales preguntas que respondimos sobre el CDC:",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Qué es el CDC y por qué conocerlo?",
+            "text": "<strong>✅ Respuesta:</strong> El CDC (Ley nº 8.078/90) protege a los consumidores y garantiza relaciones de consumo justas. Conocerlo es esencial para:",
+            "l1": "Responder con seguridad",
+            "l2": "Evitar retrabajo",
+            "l3": "Transmitir credibilidad al cliente"
+        },
+        "a2": {
+            "title": "❓ ¿Cuándo puede el cliente cambiar un producto sin defecto?",
+            "text": "<strong>✅ Respuesta:</strong>",
+            "l1": "<strong>Tienda física:</strong> El CDC NO obliga el cambio - es una política comercial (cortesía)",
+            "l2": "<strong>Tienda online:</strong> El cliente tiene el Derecho de Arrepentimiento (hasta 7 días corridos después de la recepción)"
+        },
+        "a3": {
+            "title": "❓ ¿Cuándo hay defecto, cuál es el procedimiento?",
+            "text": "<strong>✅ Respuesta:</strong> El proveedor tiene hasta <strong>30 días</strong> para solucionar vía asistencia técnica. Si no resuelve, el cliente puede optar por:",
+            "l1": "Cambio del producto",
+            "l2": "Descuento proporcional del valor",
+            "l3": "Devolución del valor pagado",
+            "note": "<em>Plazo para reclamar: 90 días para productos durables.</em>"
+        },
+        "a4": {
+            "title": "❓ ¿Cómo derivar reclamos de productos?",
+            "text": "<strong>✅ Respuesta:</strong>",
+            "l1": "<strong>Alimenticios:</strong> Cliente lleva producto + ticket a la tienda (evaluación de gerencia)",
+            "l2": "<strong>No alimenticios:</strong> Producto + ticket a la tienda (excepto Electro → Asistencia Técnica)",
+            "l3": "<strong>Compra equivocada:</strong> No perecederos pueden cambiarse si no están violados; perecederos no cambiamos"
+        }
+    },
+    "quiz_final": {
+        "question": "Un nuevo colega pregunta: 'Al final del día, ¿cuál es nuestra verdadera misión aquí en el SAC?'",
+        "opt_a": "A) Atender el máximo de llamadas por hora.",
+        "opt_b": "B) Memorizar el Código de Protección al Consumidor.",
+        "opt_c": "C) Resolver problemas, encantar al cliente y asegurar que siga confiando en nuestra marca.",
+        "opt_d": "D) Evitar que la empresa sea demandada.",
+        "feedback": "<strong>¡Correcto!</strong> ¡Captaste la esencia del SAC! 👏👏👏"
+    },
+    "success_title": "¡Gracias por participar!",
+    "success_text": "Sigue siempre adelante - cada atención es una oportunidad de hacer la diferencia."
+}

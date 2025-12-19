@@ -1,0 +1,56 @@
+{
+    "hero": {
+        "welcome": "Bienvenue à la formation",
+        "title": "Au Cœur du SAC",
+        "subtitle": "Formez-vous pour offrir un <strong>Service Client</strong> d'excellence et transformer chaque interaction en une expérience positive.",
+        "badge": "✨ Formation Officielle",
+        "img_alt": "Opérateur de centre d'appels confiant en conversation avec un client"
+    },
+    "stats": {
+        "modules": "Modules",
+        "activities": "Activités",
+        "certification": "Certification"
+    },
+    "journey": {
+        "title": "Parcours d'Apprentissage",
+        "m1": {
+            "title": "Rôle Stratégique",
+            "desc": "Comprenez comment le SAC influence la réputation de la marque et ses responsabilités.",
+            "tag": "Concepts"
+        },
+        "m2": {
+            "title": "Outils et Processus",
+            "desc": "Maîtrisez l'intranet, les brochures et les canaux pour des réponses rapides et précises.",
+            "tag": "Pratique"
+        },
+        "m3": {
+            "title": "Législation et Réclamations",
+            "desc": "Appliquez le Code de la Consommation au quotidien et réduisez les réclamations.",
+            "tag": "Juridique"
+        }
+    },
+    "fixation": {
+        "title": "Révision",
+        "quiz": {
+            "title": "Questionnaires",
+            "desc": "Testez vos connaissances avec des quiz de tous les modules.",
+            "tag": "Évaluation"
+        },
+        "resume": {
+            "title": "Résumés",
+            "desc": "Révisez les concepts clés et les points essentiels du cours.",
+            "tag": "Révision"
+        },
+        "activities": {
+            "title": "Activités",
+            "desc": "Exercices interactifs, flashcards et simulations pratiques.",
+            "tag": "Pratique"
+        }
+    },
+    "cta": {
+        "title": "Première visite ?",
+        "desc": "Découvrez les fonctionnalités d'accessibilité et apprenez à naviguer sur la plateforme.",
+        "btn": "▶ Démarrer le Tutoriel"
+    },
+    "start_msg": "Veuillez cliquer sur <strong>\"Démarrer le Tutoriel\"</strong> avant de continuer."
+}

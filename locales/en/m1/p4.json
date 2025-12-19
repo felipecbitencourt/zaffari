@@ -1,0 +1,24 @@
+{
+    "title": "Why register correctly?",
+    "intro": "Another essential point in Customer Service work is meeting response deadlines. Well-defined deadlines ensure organization, predictability and efficiency, in addition to showing respect to the customer and strengthening trust in the brand.",
+    "standard_box": {
+        "title": "⏳ Standard Deadlines",
+        "l1": "<strong>Requests:</strong> up to 3 business days",
+        "l2": "<strong>Information:</strong> up to 2 business days",
+        "l3": "<strong>Complaints:</strong> up to 2 business days"
+    },
+    "special_box": {
+        "title": "⚠ Special Deadlines",
+        "l1": "<strong>Damages:</strong> up to 5 business days for response",
+        "l2": "<strong>Duplicate payment:</strong> up to 8 business days"
+    },
+    "text_footer": "Correct registration of the service category is essential so that the appropriate deadline is respected and the customer receives a response at the right time.",
+    "quiz": {
+        "question": "A customer reports they paid the invoice twice. You need to register the service so they can be reimbursed. Why is it crucial to select the 'Duplicate payment' category instead of a generic 'Complaint' category?",
+        "opt_a": "A) Because 'Duplicate' has a specific deadline (up to 8 business days) for detailed financial analysis, avoiding false promises of quick resolution.",
+        "opt_b": "B) Because 'Complaint' is a category that should only be used for poor service at the physical store.",
+        "opt_c": "C) It makes no practical difference, as the customer response deadline is always 2 business days for any case.",
+        "opt_d": "D) Just to comply with a bureaucratic formality, with no real impact on case handling.",
+        "feedback": "<strong>Correct Answer!</strong> The correct category defines the correct deadline (8 days), managing customer expectations."
+    }
+}

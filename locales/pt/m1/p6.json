@@ -1,0 +1,40 @@
+{
+    "title": "📝 O que aprendemos no Módulo 1?",
+    "lead": "Parabéns por concluir o primeiro módulo! Veja abaixo as principais questões que exploramos e suas respostas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ O que o cliente espera ao nos contatar?",
+            "text": "O cliente espera mais do que a solução do problema. Ele busca:",
+            "l1": "Ser ouvido com atenção e empatia",
+            "l2": "Receber um atendimento ágil e eficiente",
+            "l3": "Sentir que a empresa se importa com ele",
+            "l4": "Ter clareza sobre os próximos passos",
+            "l5": "Sair satisfeito, mesmo quando a resposta não é a ideal"
+        },
+        "a2": {
+            "title": "❓ Qual o papel do SAC além de resolver problemas?",
+            "text": "O SAC representa a <strong>voz da empresa</strong> no contato direto com o cliente. Mais do que um setor operacional, é uma área estratégica essencial para:",
+            "l1": "Manter valores e reputação da marca",
+            "l2": "Construir confiança e fortalecer vínculos",
+            "l3": "Contribuir para a fidelização dos clientes"
+        },
+        "a3": {
+            "title": "❓ Quais são as responsabilidades do nosso time?",
+            "text": "As principais responsabilidades incluem:",
+            "l1": "<strong>Atendimento Multicanal:</strong> telefone, e-mail, chat e meios eletrônicos",
+            "l2": "<strong>Atendimento Receptivo:</strong> informações, reclamações, sugestões e elogios",
+            "l3": "<strong>Atendimentos Ativos:</strong> campanhas, ativação de cartões, atualizações cadastrais",
+            "l4": "<strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias"
+        },
+        "a4": {
+            "title": "❓ Por que os prazos de atendimento importam?",
+            "text": "Prazos bem definidos garantem organização, previsibilidade e eficiência. O correto registro da categoria de atendimento é fundamental porque o sistema calcula o prazo baseado nela.",
+            "prazos_padrao": "<strong>Prazos Padrões:</strong> Solicitações: até 3 dias úteis | Informações: até 2 dias úteis | Reclamações: até 2 dias úteis",
+            "prazos_especiais": "<strong>Prazos Especiais:</strong> Danos: até 5 dias úteis | Duplicidade de pagamento: até 8 dias úteis"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusão do Módulo 1",
+        "text": "Agora você entende <strong>por que o SAC é estratégico</strong> para a empresa. No próximo módulo, vamos descobrir <strong>onde encontrar as informações</strong> que o cliente precisa!"
+    }
+}

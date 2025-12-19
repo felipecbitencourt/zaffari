@@ -1,0 +1,22 @@
+{
+    "title": "When to perform outbound services?",
+    "intro": "In addition to inbound services, Customer Service performs outbound contacts with customers, especially in promotional campaigns and actions related to Group Cards:",
+    "timeline": {
+        "t1": {
+            "title": "1. Card activation",
+            "text": "Contact customers to activate new cards issued."
+        },
+        "t2": {
+            "title": "2. Profile update",
+            "text": "Keep customer data always updated."
+        },
+        "t3": {
+            "title": "3. Promotion communication",
+            "text": "Inform about exclusive offers and benefits."
+        },
+        "t4": {
+            "title": "4. Cancellation reversal",
+            "text": "Work to retain customers wishing to cancel services."
+        }
+    }
+}

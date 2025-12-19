@@ -1,0 +1,17 @@
+{
+    "title": "🏆 What were my achievements?",
+    "subtitle": "You completed <strong>Module 1: Why is SAC strategic?</strong>",
+    "badges_title": "Badges Earned",
+    "badges_subtitle": "These badges help unlock Review materials!",
+    "badges": {
+        "resumo": "Summary",
+        "quiz": "Quiz",
+        "flashcard": "Flashcard",
+        "drag_drop": "Drag and Drop",
+        "m1_desc": "Module 1",
+        "exclusive_desc": "Exclusive"
+    },
+    "progress_label": "Progress to Review",
+    "progress_text": "1 of 3 modules complete",
+    "footer_text": "Continue to the next module and earn more badges!"
+}

@@ -1,0 +1,128 @@
+{
+    "title": "📝 Questionários",
+    "lead": "Teste seus conhecimentos com todos os questionários do curso reunidos em um só lugar.",
+    "lock_msg": "🔒 Conclua o módulo para desbloquear",
+    "unlock_msg": "✓ Disponível",
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Papel Estratégico do SAC",
+            "count": "3 questões",
+            "overlay": "Complete o Módulo 1 para desbloquear estes questionários",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Questão 1:</strong> Qual das alternativas melhor representa o papel estratégico do SAC?",
+                    "options": {
+                        "a": "A) Atender ligações e registrar reclamações.",
+                        "b": "B) Resolver problemas pontuais sem impacto na imagem da empresa.",
+                        "c": "C) Representar a voz da empresa no contato direto com o cliente e fortalecer a reputação da marca.",
+                        "d": "D) Atuar apenas quando outros setores não conseguem resolver demandas."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> O SAC é a voz da empresa e fortalece a reputação da marca."
+                },
+                "q2": {
+                    "text": "<strong>Questão 2:</strong> Qual das atividades abaixo <strong>não</strong> faz parte das responsabilidades do SAC?",
+                    "options": {
+                        "a": "A) Atendimento receptivo e ativo.",
+                        "b": "B) Organização de dados e elaboração de relatórios.",
+                        "c": "C) Definição das leis de proteção ao consumidor.",
+                        "d": "D) Proposição de melhorias em scripts e padrões de atendimento."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> O SAC segue as leis, mas quem as define é o governo (Legislativo)."
+                },
+                "q3": {
+                    "text": "<strong>Questão 3 (Verdadeiro ou Falso):</strong> O correto registro da categoria de atendimento influencia diretamente o prazo de retorno ao cliente.",
+                    "options": {
+                        "a": "A) Verdadeiro",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> O sistema calcula o prazo baseado na categoria registrada."
+                }
+            }
+        },
+        "m2": {
+            "title": "Módulo 2: Onde encontrar informações?",
+            "count": "3 questões",
+            "overlay": "Complete o Módulo 2 para desbloquear estes questionários",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Questão 1:</strong> Para consultar endereço, horário de funcionamento e formas de contato das lojas, o atendente deve acessar:",
+                    "options": {
+                        "a": "A) O site da empresa.",
+                        "b": "B) A Intranet → Filiais → Dados cadastrais e horários.",
+                        "c": "C) O Google Maps.",
+                        "d": "D) Um grupo interno de mensagens."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> A Intranet é a fonte oficial e segura."
+                },
+                "q2": {
+                    "text": "<strong>Questão 2:</strong> Dominar a consulta de informações na Intranet contribui para:",
+                    "options": {
+                        "a": "A) Aumentar o tempo de atendimento.",
+                        "b": "B) Reduzir a padronização das respostas.",
+                        "c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
+                        "d": "D) Tornar o atendimento mais informal."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão."
+                },
+                "q3": {
+                    "text": "<strong>Questão 3:</strong> Qual é a sequência correta para o cliente começar a receber ofertas pelo WhatsApp?",
+                    "options": {
+                        "a": "A) Acessar o site → escolher produtos → cadastrar telefone.",
+                        "b": "B) Selecionar a loja → acessar a comunidade pelo link ou QR Code → receber ofertas.",
+                        "c": "C) Entrar em contato com o SAC → solicitar cadastro → aguardar confirmação.",
+                        "d": "D) Baixar um aplicativo exclusivo → criar login → aceitar termos."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> Simples e direto: Loja -> QR Code/Link -> Ofertas."
+                }
+            }
+        },
+        "m3": {
+            "title": "Módulo 3: CDC e Legislação",
+            "count": "4 questões",
+            "overlay": "Complete o Módulo 3 para desbloquear estes questionários",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Questão 1:</strong> Por que o conhecimento do Código de Defesa do Consumidor é essencial para quem atua no SAC?",
+                    "options": {
+                        "a": "A) Apenas para cumprir exigências legais.",
+                        "b": "B) Para responder com segurança, evitar retrabalho e transmitir credibilidade ao cliente.",
+                        "c": "C) Para substituir as políticas internas da empresa.",
+                        "d": "D) Apenas para lidar com reclamações formais."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> Conhecimento gera segurança e credibilidade."
+                },
+                "q2": {
+                    "text": "<strong>Questão 2 (Verdadeiro ou Falso):</strong> A troca de produtos sem defeito em loja física é um direito garantido pelo Código de Defesa do Consumidor.",
+                    "options": {
+                        "a": "A) Verdadeiro",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei."
+                },
+                "q3": {
+                    "text": "<strong>Questão 3:</strong> O direito de arrependimento permite que o cliente:",
+                    "options": {
+                        "a": "A) Troque qualquer produto comprado em loja física em até 7 dias.",
+                        "b": "B) Desista de uma compra online em até 7 dias corridos após o recebimento.",
+                        "c": "C) Solicite devolução apenas de produtos com defeito.",
+                        "d": "D) Exija troca imediata sem análise."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> Exclusivo para compras fora do estabelecimento comercial (online/telefone)."
+                },
+                "q4": {
+                    "text": "<strong>Questão 4 (Síntese Final):</strong> Após concluir o curso, qual das alternativas melhor resume o papel do SAC?",
+                    "options": {
+                        "a": "A) Resolver problemas pontuais de clientes.",
+                        "b": "B) Atender ligações e registrar informações.",
+                        "c": "C) Atuar de forma estratégica, humanizada e alinhada à legislação, fortalecendo a experiência do cliente e a reputação da marca.",
+                        "d": "D) Encaminhar demandas para outros setores."
+                    },
+                    "feedback": "<strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏"
+                }
+            }
+        }
+    },
+    "tip_box": "💡 Refaça os questionários quantas vezes quiser para fixar o conhecimento!",
+    "feedback_incorrect": "<strong>Resposta Incorreta!</strong> Veja a alternativa correta destacada em verde.",
+    "back_btn": "← Voltar ao Menu de Extras"
+}

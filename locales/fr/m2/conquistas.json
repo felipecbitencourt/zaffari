@@ -1,0 +1,17 @@
+{
+    "title": "Félicitations !",
+    "subtitle": "Vous avez terminé le <strong>Module 2 : Où trouver les informations ?</strong>",
+    "badges_title": "Médailles Obtenues",
+    "badges_subtitle": "Ces médailles aident à débloquer les matériels de Révision !",
+    "badges": {
+        "resumo": "Résumé",
+        "quiz": "Questionnaire",
+        "flashcard": "Flashcard",
+        "find_error": "Trouvez l'Erreur",
+        "m2_desc": "Module 2",
+        "exclusive_desc": "Exclusif"
+    },
+    "progress_label": "Progrès vers la Révision",
+    "progress_text": "2 sur 3 modules terminés",
+    "footer_text": "Continuez vers le prochain module et gagnez plus de médailles !"
+}

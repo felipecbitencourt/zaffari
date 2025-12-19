@@ -1,0 +1,17 @@
+{
+    "title": "🏆 What were my achievements?",
+    "subtitle": "You completed <strong>Module 3: How to apply CDC?</strong>",
+    "badges_title": "Badges Earned",
+    "badges_subtitle": "You earned all badges! The Review section is fully unlocked!",
+    "badges": {
+        "resumo": "Summary",
+        "quiz": "Quiz",
+        "flashcard": "Flashcard",
+        "roleplay": "Role Play",
+        "m3_desc": "Module 3",
+        "exclusive_desc": "Exclusive"
+    },
+    "progress_label": "🎊 Review Unlocked!",
+    "progress_text": "3 of 3 modules complete",
+    "footer_text": "🌟 All badges earned! Return to the home page to access the Review material."
+}

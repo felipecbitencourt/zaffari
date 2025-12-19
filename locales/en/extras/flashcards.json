@@ -1,0 +1,140 @@
+{
+    "title": "🃏 Flash Cards",
+    "lead": "Memorize os conceitos do curso com cartões de estudo interativos. Clique no cartão para revelar a resposta!",
+    "ui": {
+        "back_to_modules": "← Voltar aos Módulos",
+        "back_menu": "← Voltar ao Menu de Extras",
+        "card_counter": "Card <span id=\"fc-current\">1</span> de <span id=\"fc-total\">8</span>",
+        "hint_front": "👆 Clique para ver a resposta",
+        "hint_back": "👆 Clique para voltar",
+        "prev": "← Anterior",
+        "next": "Próximo →",
+        "shuffle": "🔀 Embaralhar",
+        "tip": "💡 <strong>Dica:</strong> Revise os flash cards regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!"
+    },
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Papel Estratégico",
+            "desc": "Papel Estratégico do SAC",
+            "count": "8 cards",
+            "lock_msg": "🔒 Conclua o módulo",
+            "unlock_msg": "✓ Disponível",
+            "cards": {
+                "c1": {
+                    "q": "O que 86% dos consumidores estão dispostos a fazer por uma experiência de atendimento melhor?",
+                    "a": "Pagar mais! Estudos mostram que 86% dos consumidores pagam mais por uma experiência de atendimento melhor."
+                },
+                "c2": {
+                    "q": "Qual é o papel do SAC além de resolver problemas?",
+                    "a": "O SAC representa a VOZ DA EMPRESA no contato direto com o cliente. É uma área estratégica, essencial para preservar valores, reputação e credibilidade da marca."
+                },
+                "c3": {
+                    "q": "O que o cliente geralmente espera ao contatar o SAC?",
+                    "a": "Ser ouvido com atenção e empatia, receber atendimento ágil e eficiente, sentir que a empresa se importa, ter clareza sobre os próximos passos e sair satisfeito."
+                },
+                "c4": {
+                    "q": "Quais são os canais de Atendimento Multicanal do SAC?",
+                    "a": "Telefone, e-mail, chat e meios eletrônicos."
+                },
+                "c5": {
+                    "q": "O que inclui o Atendimento Receptivo do SAC?",
+                    "a": "Prestar informações, acolher reclamações, sugestões e elogios, lidar com objeções e oferecer soluções."
+                },
+                "c6": {
+                    "q": "Quais são as ações realizadas no Atendimento Ativo?",
+                    "a": "Ativação de cartões, atualização cadastral, comunicação de promoções e reversão de cancelamentos."
+                },
+                "c7": {
+                    "q": "Qual o prazo padrão para Solicitações?",
+                    "a": "Até 3 dias úteis."
+                },
+                "c8": {
+                    "q": "Qual o prazo padrão para Informações e Reclamações?",
+                    "a": "Até 2 dias úteis."
+                }
+            }
+        },
+        "m2": {
+            "title": "Módulo 2: Onde encontrar informações",
+            "desc": "Onde encontrar informações?",
+            "count": "6 cards",
+            "lock_msg": "🔒 Conclua o módulo",
+            "unlock_msg": "✓ Disponível",
+            "cards": {
+                "c1": {
+                    "q": "Qual é a principal fonte de informações sobre as lojas?",
+                    "a": "A Intranet da empresa! É a principal ferramenta de trabalho para consultas rápidas e precisas."
+                },
+                "c2": {
+                    "q": "Qual o caminho na Intranet para consultar dados das lojas?",
+                    "a": "Intranet → Filiais → Dados cadastrais e horários."
+                },
+                "c3": {
+                    "q": "Que informações podem ser consultadas na seção de Filiais da Intranet?",
+                    "a": "Endereço das lojas, horários de funcionamento e formas de contato."
+                },
+                "c4": {
+                    "q": "Quais benefícios de dominar a consulta de informações na Intranet?",
+                    "a": "Agilidade no atendimento, respostas mais assertivas, padronização das informações e melhor experiência para o cliente."
+                },
+                "c5": {
+                    "q": "Onde o cliente pode consultar ofertas e promoções?",
+                    "a": "Nos encartes (físicos e digitais), no site oficial da empresa e no WhatsApp de ofertas."
+                },
+                "c6": {
+                    "q": "Como funciona a sequência do WhatsApp de ofertas?",
+                    "a": "1) Selecionar a loja de interesse, 2) Acessar a comunidade pelo link ou QR Code, 3) Receber ofertas personalizadas no celular."
+                }
+            }
+        },
+        "m3": {
+            "title": "Módulo 3: CDC e Legislação",
+            "desc": "CDC e Legislação",
+            "count": "10 cards",
+            "lock_msg": "🔒 Conclua o módulo",
+            "unlock_msg": "✓ Disponível",
+            "cards": {
+                "c1": {
+                    "q": "O que é o CDC e qual sua lei?",
+                    "a": "É o Código de Defesa do Consumidor, Lei nº 8.078/90, criado para proteger consumidores e garantir relações de consumo justas e equilibradas."
+                },
+                "c2": {
+                    "q": "Por que conhecer o CDC é importante para o SAC?",
+                    "a": "Para responder com segurança, evitar retrabalho e transmitir credibilidade ao cliente."
+                },
+                "c3": {
+                    "q": "O CDC obriga a troca de produtos sem defeito em loja física?",
+                    "a": "NÃO! A troca de produtos sem defeito em loja física é uma POLÍTICA COMERCIAL (cortesia da empresa), não um direito legal."
+                },
+                "c4": {
+                    "q": "O que é o Direito de Arrependimento e quando se aplica?",
+                    "a": "É o direito de desistir de uma compra em até 7 DIAS CORRIDOS após o recebimento. Aplica-se apenas a compras ONLINE ou fora do estabelecimento comercial."
+                },
+                "c5": {
+                    "q": "Quantos dias o fornecedor tem para solucionar defeito via assistência técnica?",
+                    "a": "Até 30 DIAS para solucionar o defeito."
+                },
+                "c6": {
+                    "q": "Se o defeito não for solucionado em 30 dias, quais opções o cliente tem?",
+                    "a": "Troca do produto por outro igual ou similar, abatimento proporcional do valor pago, ou devolução integral do valor pago."
+                },
+                "c7": {
+                    "q": "Qual o prazo para reclamar de defeitos em produtos duráveis?",
+                    "a": "90 DIAS a partir da constatação do defeito."
+                },
+                "c8": {
+                    "q": "Como proceder com reclamação de produtos alimentícios?",
+                    "a": "Cliente leva produto + cupom à loja. Avaliação é feita pela gerência. Preenchimento de Motivo, Marca e Lote é essencial."
+                },
+                "c9": {
+                    "q": "Por que produtos perecíveis não podem ser trocados após compra errada?",
+                    "a": "Porque uma vez retirados da loja não podem ser reacondicionados por questões de segurança alimentar (risco de temperatura)."
+                },
+                "c10": {
+                    "q": "Qual o procedimento para produtos Eletro com defeito?",
+                    "a": "Devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa realiza troca mediante ordem de serviço."
+                }
+            }
+        }
+    }
+}

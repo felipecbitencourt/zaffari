@@ -1,0 +1,20 @@
+{
+    "title": "What is the role of Customer Service?",
+    "text1": "The <strong>Customer Service</strong> department is responsible for managing customer relationship channels, including electronic and telephone services.",
+    "text2": "More than an operational sector, Customer Service is a <strong>strategic area</strong>, essential for preserving the values, reputation and credibility of the Group's brands.",
+    "card_text": "Humanized, efficient and high-quality service not only resolves demands: it builds trust, strengthens bonds and directly contributes to customer loyalty.",
+    "text3": "In addition to the external public, Customer Service also plays a fundamental role in supporting company employees, clarifying doubts about processes, systems and service standards. This action contributes to standardization, internal organization and service excellence.",
+    "box_attention": {
+        "title": "Curiosity",
+        "text": "Customer experience studies indicate that a single negative interaction can impact brand perception more than several positive interactions. That's why <strong>every contact counts</strong>."
+    },
+    "text4": "Customer Service goes far beyond answering calls. It represents the company's voice in direct contact with the customer. Every interaction influences how the consumer perceives the brand and evaluates their experience.",
+    "quiz": {
+        "question": "A frustrated customer contacts because their problem has not yet been resolved. How should a Customer Service operator with a strategic vision approach this service?",
+        "opt_a": "A) As an annoyance that should be ended as quickly as possible.",
+        "opt_b": "B) As an opportunity to reverse a negative experience and strengthen trust in the brand.",
+        "opt_c": "C) As a failure of another department that is not their responsibility.",
+        "opt_d": "D) Just following the standard script without showing empathy.",
+        "feedback": "<strong>Correct Answer!</strong> Strategic vision transforms crises into loyalty opportunities."
+    }
+}

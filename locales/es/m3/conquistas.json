@@ -1,0 +1,17 @@
+{
+    "title": "¡Felicitaciones!",
+    "subtitle": "Has completado el <strong>Módulo 3: ¿Cómo aplicar el CDC?</strong>",
+    "badges_title": "Medallas Ganadas",
+    "badges_subtitle": "¡Estas medallas ayudan a desbloquear los materiales de Fijación!",
+    "badges": {
+        "resumo": "Resumen",
+        "quiz": "Cuestionario",
+        "flashcard": "Flashcard",
+        "roleplay": "Role Play",
+        "m3_desc": "Módulo 3",
+        "exclusive_desc": "Exclusivo"
+    },
+    "progress_label": "🎊 Fijación Desbloqueada!",
+    "progress_text": "3 de 3 módulos completados",
+    "footer_text": "¡Continúa al siguiente módulo y gana más medallas!"
+}

@@ -1,0 +1,22 @@
+{
+    "title": "Quando realizar atendimentos ativos?",
+    "intro": "Além dos atendimentos receptivos, o SAC realiza contatos ativos com clientes, especialmente em campanhas promocionais e ações relacionadas aos Cartões do Grupo:",
+    "timeline": {
+        "t1": {
+            "title": "1. Ativação de cartões",
+            "text": "Entrar em contato com clientes para ativar novos cartões emitidos."
+        },
+        "t2": {
+            "title": "2. Atualização cadastral",
+            "text": "Manter os dados dos clientes sempre atualizados."
+        },
+        "t3": {
+            "title": "3. Comunicação de promoções",
+            "text": "Informar sobre ofertas exclusivas e benefícios."
+        },
+        "t4": {
+            "title": "4. Reversão de cancelamentos",
+            "text": "Trabalhar para reter clientes que desejam cancelar serviços."
+        }
+    }
+}

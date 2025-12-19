@@ -1,0 +1,38 @@
+{
+    "title": "📝 Summary: Questions and Answers",
+    "lead": "Excellent! You completed the module on information query. Review the main questions addressed.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Why do we need to know where to search?",
+            "text": "Knowing where to find information demonstrates to the customer:",
+            "l1": "<strong>Security</strong> - conveying trust",
+            "l2": "<strong>Agility</strong> - solving quickly",
+            "l3": "<strong>Care</strong> - showing that we care"
+        },
+        "a2": {
+            "title": "❓ Where to consult store data?",
+            "text": "On the company's <strong>Intranet</strong>!",
+            "box_title": "The Shortcut",
+            "box_text": "Intranet → Branches → Registration data and hours",
+            "footer": "There you find: store address, opening hours, and contact methods."
+        },
+        "a3": {
+            "title": "❓ Where to consult offers and promotions?",
+            "text": "Offers can be consulted in:",
+            "l1": "<strong>Leaflets</strong> - physical and digital promotional materials",
+            "l2": "<strong>Official website</strong> of the company",
+            "l3": "<strong>Offers WhatsApp</strong> - direct channel with the customer"
+        },
+        "a4": {
+            "title": "❓ How does the Offers WhatsApp work?",
+            "text": "It's simple and direct! The sequence is:",
+            "l1": "<strong>Select the store</strong> of interest",
+            "l2": "<strong>Access the community</strong> via link or QR Code",
+            "l3": "<strong>Receive personalized offers</strong> on mobile"
+        }
+    },
+    "conclusion": {
+        "title": "Module 2 Conclusion",
+        "text": "Now you know <strong>where to find the information</strong> the customer needs. In the next module, we will learn <strong>how to apply the CDC</strong> in service!"
+    }
+}

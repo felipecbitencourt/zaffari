@@ -1,0 +1,50 @@
+{
+    "title": "Where to consult store data?",
+    "lead": "All essential information is available on the company's <strong>Intranet</strong>.",
+    "intro_p": "It is your main work tool for quick and accurate queries.",
+    "highlight_title": "The Shortcut",
+    "highlight_text": "Intranet → Branches → Registration data and hours",
+    "slider_title": "📍 How to consult on the Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Step 1: Access the Intranet",
+            "text": "Open your browser and access the company's internal portal. Log in with your corporate credentials."
+        },
+        "s2": {
+            "title": "Step 2: Navigate to Branches",
+            "text": "In the main menu, locate and click on the option <strong>'Branches'</strong> or <strong>'Stores'</strong>."
+        },
+        "s3": {
+            "title": "Step 3: Registration Data",
+            "text": "Select <strong>'Registration data and hours'</strong> to access complete information for each store."
+        },
+        "s4": {
+            "title": "Step 4: Consult and Inform",
+            "text": "Now you can check the address, phone number, and opening hours to guide the customer!"
+        }
+    },
+    "list_intro": "There you can check:",
+    "list_items": {
+        "l1": "Store address",
+        "l2": "Opening hours",
+        "l3": "Contact methods"
+    },
+    "quiz1": {
+        "question": "A customer calls asking if the Downtown store is open on tomorrow's holiday. You don't know this information by heart. What is the most agile and safe procedure?",
+        "opt_a": "A) Ask quickly in the team's WhatsApp group to see if anyone knows.",
+        "opt_b": "B) Consult the Intranet under 'Branches' > 'Registration data and hours' to have the official information.",
+        "opt_c": "C) Search on Google Maps, as it is always updated there.",
+        "opt_d": "D) Inform that it will probably be closed, to avoid the customer making a wasted trip.",
+        "feedback": "<strong>Correct Answer!</strong> The Intranet is the only official and reliable source for branch hours."
+    },
+    "importance_title": "Why does this matter?",
+    "importance_text": "Mastering this query ensures <strong>agility</strong> in service, more <strong>assertive</strong> answers, standardization of information, and a more positive customer experience.",
+    "quiz2": {
+        "question": "Mastering information query on the Intranet contributes to:",
+        "opt_a": "A) Increasing service time.",
+        "opt_b": "B) Reducing response standardization.",
+        "opt_c": "C) Ensuring agility, assertiveness, and better customer experience.",
+        "opt_d": "D) Making the service more informal.",
+        "feedback": "<strong>Correct Answer!</strong> A happy customer is a customer served with agility and precision."
+    }
+}

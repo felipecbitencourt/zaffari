@@ -1,0 +1,82 @@
+{
+    "title": "🎯 Arraste e Solte",
+    "lead": "Associe conceitos e categorias arrastando os itens para os lugares corretos.",
+    "phase1": {
+        "title": "Fase 1: Tipos de Atendimento",
+        "instruction": "Arraste cada tipo de atendimento para sua descrição correta",
+        "progress": "de 3 corretos",
+        "items": {
+            "multicanal": "Atendimento Multicanal",
+            "receptivo": "Atendimento Receptivo",
+            "ativo": "Atendimento Ativo"
+        },
+        "zones": {
+            "multicanal": "Telefone, e-mail, chat e meios eletrônicos",
+            "receptivo": "Receber reclamações, sugestões e elogios",
+            "ativo": "Ativação de cartões, promoções e reversão"
+        },
+        "drop_here": "Solte aqui"
+    },
+    "phase2": {
+        "title": "Fase 2: Prazos de Atendimento",
+        "instruction": "Arraste cada tipo de demanda para o prazo correto",
+        "progress": "de 5 corretos",
+        "items": {
+            "solicitacoes": "Solicitações",
+            "informacoes": "Informações",
+            "reclamacoes": "Reclamações",
+            "danos": "Danos",
+            "duplicidade": "Duplicidade de pagamento"
+        },
+        "zones": {
+            "2dias": "Até 2 dias úteis",
+            "3dias": "Até 3 dias úteis",
+            "5dias": "Até 5 dias úteis",
+            "8dias": "Até 8 dias úteis"
+        },
+        "drop_here": "Solte aqui",
+        "drop_here_2": "Solte aqui (2 itens)"
+    },
+    "phase3": {
+        "title": "Fase 3: Responsabilidades do SAC",
+        "instruction": "Classifique: o que é e o que NÃO é responsabilidade do SAC",
+        "progress": "de 8 corretos",
+        "items": {
+            "atendimento": "Atendimento receptivo e ativo",
+            "relatorios": "Elaborar relatórios",
+            "scripts": "Propor melhorias em scripts",
+            "suporte": "Suporte a colaboradores",
+            "leis": "Definir leis de proteção ao consumidor",
+            "orcamento": "Aprovar orçamento da empresa",
+            "contratar": "Contratar funcionários",
+            "contratos": "Negociar contratos com fornecedores"
+        },
+        "zones": {
+            "yes": "✅ SAC faz",
+            "no": "❌ SAC não faz"
+        },
+        "drop_here_4": "Solte aqui (4 itens)"
+    },
+    "complete": {
+        "icon": "🎉",
+        "title": "Parabéns!",
+        "text": "Você completou todas as 3 fases do jogo de Arraste e Solte!",
+        "btn_restart": "🔄 Jogar Novamente",
+        "btn_back": "← Voltar ao Menu"
+    },
+    "popup": {
+        "phase1": {
+            "title": "Fase 1 Completa!",
+            "message": "Você dominou os tipos de atendimento!"
+        },
+        "phase2": {
+            "title": "Fase 2 Completa!",
+            "message": "Excelente! Os prazos não são mais segredo!"
+        },
+        "phase3": {
+            "title": "Todas as Fases Completas!",
+            "message": "Você é um expert no SAC!"
+        }
+    },
+    "btn_next": "Próxima Fase →"
+}

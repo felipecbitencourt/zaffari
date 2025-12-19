@@ -1,0 +1,12 @@
+{
+    "title": "Conceptos Básicos del CDC",
+    "intro": "Para aplicar el CDC, necesitamos entender dos conceptos fundamentales:",
+    "accordion": {
+        "service_title": "Servicio",
+        "service_text": "Actividad ofrecida mediante remuneración, como atención al cliente, entrega de productos y servicios financieros de las Tarjetas del Grupo.",
+        "product_title": "Producto",
+        "product_text": "Toda mercancía vendida en las tiendas.",
+        "product_l1": "<strong>Durable:</strong> electrodomésticos, electrónicos y utilidades durables.",
+        "product_l2": "<strong>No durable:</strong> alimentos, higiene, limpieza, perfumería, frutas/verduras y panadería."
+    }
+}

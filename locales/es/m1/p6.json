@@ -1,0 +1,43 @@
+{
+    "title": "📝 Resumen: Preguntas y Respuestas",
+    "lead": "¡Felicitaciones por completar el primer módulo! Revisa las principales preguntas que exploramos y sus respuestas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Qué espera el cliente al contactarnos?",
+            "text": "El cliente espera más que la solución del problema. Busca:",
+            "l1": "Ser escuchado con atención y empatía",
+            "l2": "Recibir una atención ágil y eficiente",
+            "l3": "Sentir que la empresa se preocupa por él",
+            "l4": "Tener claridad sobre los próximos pasos",
+            "l5": "Salir satisfecho, incluso cuando la respuesta no es la ideal"
+        },
+        "a2": {
+            "title": "❓ ¿Cuál el rol del SAC más allá de resolver problemas?",
+            "text": "El SAC representa la <strong>voz de la empresa</strong> en el contacto directo con el cliente. Más que un sector operativo, es un área estratégica esencial para:",
+            "l1": "Preservar valores y reputación de la marca",
+            "l2": "Construir confianza y fortalecer vínculos",
+            "l3": "Contribuir a la fidelización de los clientes"
+        },
+        "a3": {
+            "title": "❓ ¿Cuáles son las responsabilidades de nuestro equipo?",
+            "text": "Las principales responsabilidades incluyen:",
+            "l1": "<strong>Atención Multicanal:</strong> teléfono, e-mail, chat y medios electrónicos",
+            "l2": "<strong>Atención Receptiva:</strong> información, quejas, sugerencias y elogios",
+            "l3": "<strong>Atenciones Activas:</strong> campañas, activación de tarjetas, actualizaciones de datos",
+            "l4": "<strong>Gestión:</strong> organizar datos, elaborar informes, proponer mejoras",
+            "note": "Nota: Definir leyes de protección al consumidor NO es responsabilidad del SAC - el SAC sigue las leyes."
+        },
+        "a4": {
+            "title": "❓ ¿Por qué importan los plazos de atención?",
+            "text": "Plazos bien definidos garantizan organización, previsibilidad y eficiencia. El correcto registro de la categoría de atención es fundamental porque el sistema calcula el plazo basado en ella.",
+            "box_title": "Plazos Estándar",
+            "l1": "<strong>Solicitudes:</strong> hasta 3 días hábiles",
+            "l2": "<strong>Información:</strong> hasta 2 días hábiles",
+            "l3": "<strong>Quejas:</strong> hasta 2 días hábiles"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusión del Módulo 1",
+        "text": "Ahora entiendes <strong>por qué el SAC es estratégico</strong> para la empresa. En el próximo módulo, descubriremos <strong>dónde encontrar la información</strong> que el cliente necesita."
+    }
+}

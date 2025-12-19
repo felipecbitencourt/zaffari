@@ -1,0 +1,66 @@
+{
+    "title": "🧠 Menu de Révision",
+    "lead": "Explorez des ressources supplémentaires pour renforcer votre apprentissage ! Complétez les modules pour débloquer les matériels.",
+    "sections": {
+        "acompanhamento": {
+            "title": "📚 Suivi",
+            "subtitle": "Matériels qui accompagnent votre progression - se débloquent progressivement au fur et à mesure que vous avancez."
+        },
+        "especiais": {
+            "title": "⭐ Spéciaux",
+            "subtitle": "Activités exclusives débloquées en complétant des modules spécifiques."
+        },
+        "referencias": {
+            "title": "🔗 Références",
+            "subtitle": "Matériaux complémentaires et liens utiles."
+        }
+    },
+    "cards": {
+        "resumo": {
+            "title": "Résumé du Cours",
+            "desc": "Révisez les concepts clés et les points essentiels de tous les modules en un seul endroit."
+        },
+        "flashcard": {
+            "title": "Flash Cards",
+            "desc": "Mémorisez des concepts importants avec des cartes d'étude interactives."
+        },
+        "quiz": {
+            "title": "Questionnaires",
+            "desc": "Testez vos connaissances avec tous les questionnaires du cours réunis en un seul endroit."
+        },
+        "drag_drop": {
+            "title": "Glisser-Déposer",
+            "desc": "Associez concepts et catégories en faisant glisser les éléments vers les bons endroits."
+        },
+        "find_error": {
+            "title": "Trouvez l'Erreur",
+            "desc": "Identifiez les erreurs dans les situations de service et apprenez à les corriger."
+        },
+        "roleplay": {
+            "title": "Jeu de Rôle",
+            "desc": "Pratique des situations de service réelles à travers des simulations interactives."
+        },
+        "ref1": {
+            "title": "Impact du Mauvais Service",
+            "desc": "Article : 65% des consommateurs envisagent de changer de marque après une expérience négative."
+        },
+        "ref2": {
+            "title": "35 Ans du CDC",
+            "desc": "Actualité : Le Code de Protection du Consommateur fête ses 35 ans."
+        },
+        "ref3": {
+            "title": "Code de Protection du Consommateur",
+            "desc": "PDF complet du CDC brésilien (2013) pour consultation."
+        },
+        "ref4": {
+            "title": "Stratégie CX (Oracle)",
+            "desc": "Brief exécutif sur les stratégies d'exécution du Customer Service."
+        }
+    },
+    "lock_msg": "Complétez les modules pour débloquer",
+    "lock_msg_m1": "Complétez le Module 1 pour débloquer",
+    "lock_msg_m2": "Complétez le Module 2 pour débloquer",
+    "lock_msg_m3": "Complétez le Module 3 pour débloquer",
+    "tip": "💡 <strong>Conseil :</strong> Complétez les modules du cours pour débloquer tous les matériels. Chaque module vous accorde des médailles qui débloquent de nouvelles ressources !",
+    "unlocked_msg": "sur 3 modules débloqués"
+}

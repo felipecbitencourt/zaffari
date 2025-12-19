@@ -1,0 +1,43 @@
+{
+    "title": "📝 Résumé : Questions et Réponses",
+    "lead": "Félicitations pour avoir terminé le premier module ! Voici ci-dessous les principales questions que nous avons explorées et leurs réponses.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Qu'attend le client lorsqu'il nous contacte ?",
+            "text": "Le client attend plus que la résolution du problème. Il recherche :",
+            "l1": "Être écouté avec attention et empathie",
+            "l2": "Recevoir un service rapide et efficace",
+            "l3": "Sentir que l'entreprise se soucie de lui",
+            "l4": "Avoir de la clarté sur les prochaines étapes",
+            "l5": "Repartir satisfait, même lorsque la réponse n'est pas idéale"
+        },
+        "a2": {
+            "title": "❓ Quel est le rôle du SAC au-delà de la résolution des problèmes ?",
+            "text": "Le SAC représente la <strong>voix de l'entreprise</strong> dans le contact direct avec le client. Plus qu'un secteur opérationnel, c'est un domaine stratégique essentiel pour :",
+            "l1": "Préserver les valeurs et la réputation de la marque",
+            "l2": "Créer la confiance et renforcer les liens",
+            "l3": "Contribuer à la fidélisation des clients"
+        },
+        "a3": {
+            "title": "❓ Quelles sont les responsabilités de notre équipe ?",
+            "text": "Les principales responsabilités comprennent :",
+            "l1": "<strong>Service Multicanal :</strong> téléphone, e-mail, chat et moyens électroniques",
+            "l2": "<strong>Service Réceptif :</strong> informations, réclamations, suggestions et éloges",
+            "l3": "<strong>Services Actifs :</strong> campagnes, activation de cartes, mises à jour des données",
+            "l4": "<strong>Gestion :</strong> organiser les données, élaborer des rapports, proposer des améliorations",
+            "note": "Note : Définir les lois de protection du consommateur N'EST PAS une responsabilité du SAC - le SAC suit les lois."
+        },
+        "a4": {
+            "title": "❓ Pourquoi les délais de service sont-ils importants ?",
+            "text": "Des délais bien définis garantissent l'organisation, la prévisibilité et l'efficacité. L'enregistrement correct de la catégorie de service est fondamental car le système calcule le délai en fonction de celle-ci.",
+            "box_title": "Délais Standard",
+            "l1": "<strong>Demandes :</strong> jusqu'à 3 jours ouvrables",
+            "l2": "<strong>Informations :</strong> jusqu'à 2 jours ouvrables",
+            "l3": "<strong>Réclamations :</strong> jusqu'à 2 jours ouvrables"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusion du Module 1",
+        "text": "Vous comprenez maintenant <strong>pourquoi le SAC est stratégique</strong> pour l'entreprise. Dans le prochain module, nous découvrirons <strong>où trouver les informations</strong> dont le client a besoin !"
+    }
+}

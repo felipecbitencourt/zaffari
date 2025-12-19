@@ -1,0 +1,128 @@
+{
+    "title": "📝 Cuestionarios",
+    "lead": "Pon a prueba tus conocimientos con todos los cuestionarios del curso reunidos en un solo lugar.",
+    "lock_msg": "🔒 Completa el módulo para desbloquear",
+    "unlock_msg": "✓ Disponible",
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Rol Estratégico del SAC",
+            "count": "3 preguntas",
+            "overlay": "Completa el Módulo 1 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Pregunta 1:</strong> ¿Cuál de las alternativas representa mejor el rol estratégico del SAC?",
+                    "options": {
+                        "a": "A) Atender llamadas y registrar reclamos.",
+                        "b": "B) Resolver problemas puntuales sin impacto en la imagen de la empresa.",
+                        "c": "C) Representar la voz de la empresa en el contacto directo con el cliente y fortalecer la reputación de la marca.",
+                        "d": "D) Actuar solo cuando otros sectores no pueden resolver demandas."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El SAC es la voz de la empresa y fortalece la reputación de la marca."
+                },
+                "q2": {
+                    "text": "<strong>Pregunta 2:</strong> ¿Cuál de las actividades abajo <strong>no</strong> forma parte de las responsabilidades del SAC?",
+                    "options": {
+                        "a": "A) Atención receptiva y activa.",
+                        "b": "B) Organización de datos y elaboración de informes.",
+                        "c": "C) Definición de las leyes de protección al consumidor.",
+                        "d": "D) Propuestas de mejoras en scripts y estándares de atención."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El SAC sigue las leyes, pero quien las define es el gobierno (Legislativo)."
+                },
+                "q3": {
+                    "text": "<strong>Pregunta 3 (Verdadero o Falso):</strong> El registro correcto de la categoría de atención influye directamente en el plazo de retorno al cliente.",
+                    "options": {
+                        "a": "A) Verdadero",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> El sistema calcula el plazo basándose en la categoría registrada."
+                }
+            }
+        },
+        "m2": {
+            "title": "Módulo 2: ¿Dónde encontrar información?",
+            "count": "3 preguntas",
+            "overlay": "Completa el Módulo 2 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Pregunta 1:</strong> Para consultar dirección, horario de funcionamiento y formas de contacto de las tiendas, el atendiente debe acceder:",
+                    "options": {
+                        "a": "A) El sitio web de la empresa.",
+                        "b": "B) La Intranet → Filiales → Datos de registro y horarios.",
+                        "c": "C) Google Maps.",
+                        "d": "D) Un grupo interno de mensajes."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> La Intranet es la fuente oficial y segura."
+                },
+                "q2": {
+                    "text": "<strong>Pregunta 2:</strong> Dominar la consulta de información en la Intranet contribuye para:",
+                    "options": {
+                        "a": "A) Aumentar el tiempo de atención.",
+                        "b": "B) Reducir la estandarización de las respuestas.",
+                        "c": "C) Garantizar agilidad, asertividad y mejor experiencia para el cliente.",
+                        "d": "D) Hacer la atención más informal."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Cliente feliz es cliente atendido con agilidad y precisión."
+                },
+                "q3": {
+                    "text": "<strong>Pregunta 3:</strong> ¿Cuál es la secuencia correcta para que el cliente comience a recibir ofertas por WhatsApp?",
+                    "options": {
+                        "a": "A) Acceder al sitio → elegir productos → registrar teléfono.",
+                        "b": "B) Seleccionar la tienda → acceder a la comunidad por el link o QR Code → recibir ofertas.",
+                        "c": "C) Contactar al SAC → solicitar registro → esperar confirmación.",
+                        "d": "D) Descargar una aplicación exclusiva → crear login → aceptar términos."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Simple y directo: Tienda -> QR Code/Link -> Ofertas."
+                }
+            }
+        },
+        "m3": {
+            "title": "Módulo 3: CDC y Legislación",
+            "count": "4 preguntas",
+            "overlay": "Completa el Módulo 3 para desbloquear estos cuestionarios",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Pregunta 1:</strong> ¿Por qué el conocimiento del Código de Defensa del Consumidor es esencial para quien actúa en el SAC?",
+                    "options": {
+                        "a": "A) Solo para cumplir exigencias legales.",
+                        "b": "B) Para responder con seguridad, evitar retrabajo y transmitir credibilidade al cliente.",
+                        "c": "C) Para sustituir las políticas internas de la empresa.",
+                        "d": "D) Solo para lidiar con reclamos formales."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Conocimiento genera seguridad y credibilidad."
+                },
+                "q2": {
+                    "text": "<strong>Pregunta 2 (Verdadero o Falso):</strong> El cambio de productos sin defecto en tienda física es un derecho garantizado por el Código de Defensa del Consumidor.",
+                    "options": {
+                        "a": "A) Verdadero",
+                        "b": "B) Falso"
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Es una política comercial (cortesía), no ley."
+                },
+                "q3": {
+                    "text": "<strong>Pregunta 3:</strong> El derecho de arrepentimiento permite que el cliente:",
+                    "options": {
+                        "a": "A) Cambie cualquier producto comprado en tienda física en hasta 7 días.",
+                        "b": "B) Desista de una compra online en hasta 7 días corridos después de la recepción.",
+                        "c": "C) Solicite devolución solo de productos con defecto.",
+                        "d": "D) Exija cambio inmediato sin análisis."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> Exclusivo para compras fuera del establecimiento comercial (online/teléfono)."
+                },
+                "q4": {
+                    "text": "<strong>Pregunta 4 (Síntesis Final):</strong> Después de completar el curso, ¿cuál de las alternativas resume mejor el rol del SAC?",
+                    "options": {
+                        "a": "A) Resolver problemas puntuales de clientes.",
+                        "b": "B) Atender llamadas y registrar información.",
+                        "c": "C) Actuar de forma estratégica, humanizada y alineada a la legislación, fortaleciendo la experiencia del cliente y la reputación de la marca.",
+                        "d": "D) Derivar demandas a otros sectores."
+                    },
+                    "feedback": "<strong>¡Respuesta Correcta!</strong> ¡Captaste la esencia del SAC! 👏👏👏"
+                }
+            }
+        }
+    },
+    "tip_box": "💡 ¡Vuelve a hacer los cuestionarios cuantas veces quieras para fijar el conocimiento!",
+    "feedback_incorrect": "<strong>¡Respuesta Incorrecta!</strong> Mira la alternativa correcta destacada en verde.",
+    "back_btn": "← Volver al Menú de Extras"
+}

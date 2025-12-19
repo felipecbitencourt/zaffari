@@ -1,0 +1,56 @@
+{
+    "hero": {
+        "welcome": "Welcome to the course",
+        "title": "Inside the Customer Service",
+        "subtitle": "Empower yourself to deliver excellent <strong>Customer Service</strong> and transform every interaction into a positive experience.",
+        "badge": "✨ Official Training",
+        "img_alt": "Confident call center operator talking to customer"
+    },
+    "stats": {
+        "modules": "Modules",
+        "activities": "Activities",
+        "certification": "Certification"
+    },
+    "journey": {
+        "title": "Learning Journey",
+        "m1": {
+            "title": "Strategic Role",
+            "desc": "Understand how Customer Service influences brand reputation and its responsibilities.",
+            "tag": "Concepts"
+        },
+        "m2": {
+            "title": "Tools and Processes",
+            "desc": "Master the intranet, flyers and channels for quick and accurate responses.",
+            "tag": "Practical"
+        },
+        "m3": {
+            "title": "Legislation and Complaints",
+            "desc": "Apply the Consumer Protection Code daily and reduce complaints with knowledge.",
+            "tag": "Legal"
+        }
+    },
+    "fixation": {
+        "title": "Review",
+        "quiz": {
+            "title": "Quizzes",
+            "desc": "Test your knowledge with quizzes from all modules.",
+            "tag": "Assessment"
+        },
+        "resume": {
+            "title": "Summaries",
+            "desc": "Review the main concepts and key points of the course.",
+            "tag": "Review"
+        },
+        "activities": {
+            "title": "Activities",
+            "desc": "Interactive exercises, flashcards and practical simulations.",
+            "tag": "Practice"
+        }
+    },
+    "cta": {
+        "title": "First time here?",
+        "desc": "Discover accessibility features and learn to navigate the platform.",
+        "btn": "▶ Start Tutorial"
+    },
+    "start_msg": "Please click on <strong>\"Start Tutorial\"</strong> before continuing."
+}

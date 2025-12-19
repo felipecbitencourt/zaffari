@@ -1,0 +1,16 @@
+{
+    "title": "Quando há defeito, o que fazer?",
+    "intro": "O fornecedor tem até <strong>30 dias</strong> para solucionar o defeito por meio da assistência técnica autorizada.",
+    "accordion": {
+        "options_title": "🔄 Opções do cliente se não houver solução em 30 dias",
+        "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
+        "l2": "<strong>Abatimento proporcional</strong> do valor pago",
+        "l3": "<strong>Devolução integral</strong> do valor pago"
+    },
+    "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
+    "h3_assist": "Assistência Técnica 🔧",
+    "accordion_electro": {
+        "title": "📦 Procedimento para produtos Eletro",
+        "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+    }
+}

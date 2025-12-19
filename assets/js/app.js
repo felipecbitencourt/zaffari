@@ -16,11 +16,7 @@
  */
 
 const App = {
-    data: null, // content.json
-    flatPages: [], // Flattened list of pages for linear navigation
-    currentIndex: 0,
-    maxIndexReached: 0,
-    currentLang: 'pt',
+    manifest: null, // pages-manifest.json
 
     /**
      * Inicializa a aplicação
@@ -28,21 +24,22 @@ const App = {
     init: async function () {
         console.log("Initializing App...");
 
-        // 1. Initialize I18n
+        // 1. Initialize I18n (Loads Global)
         await I18n.init();
 
         // 2. Initialize SCORM
         scorm.init();
 
-        // 3. Initialize Audio (if available)
-        if (typeof AudioManager !== 'undefined') {
-            AudioManager.init();
-        }
+        // 3. Initialize Audio
+        if (typeof AudioManager !== 'undefined') AudioManager.init();
 
-        // 4. Load Content Structure
-        await this.loadContent();
+        // 4. Load Content & Manifest
+        await Promise.all([
+            this.loadContent(),
+            this.loadManifest()
+        ]);
 
-        // 5. Initialize Navigation Manager
+        // 5. Initialize Navigation
         NavigationManager.init(this);
 
         // 6. Restore Progress
@@ -50,32 +47,39 @@ const App = {
 
         // 7. Render Interface
         NavigationManager.renderMenu();
-        this.loadPage(this.currentIndex);
 
-        // 8. Initialize Feedback Manager
+        // Load initial page (will trigger translation load)
+        await this.loadPage(this.currentIndex);
+
+        // 8-10. Other inits
         FeedbackManager.init();
         FeedbackManager.bindQuizHandler(document.getElementById('content-area'));
-
-        // 9. Initialize Accessibility Manager
         AccessibilityManager.init();
+        if (typeof Analytics !== 'undefined') Analytics.init();
 
-        // 10. Initialize Analytics
-        if (typeof Analytics !== 'undefined') {
-            Analytics.init();
-        }
+        // Listen for language changes
+        document.addEventListener('languageChanged', async () => {
+            // Reload global is already done by i18n, we just need to reload current page translation
+            const pageData = this.flatPages[this.currentIndex];
+            const manifestEntry = this.getManifestEntry(pageData.id);
+            if (manifestEntry) {
+                await I18n.loadPageTranslations(manifestEntry.translation, manifestEntry.mountPoint);
+            }
+            I18n.translatePage();
+        });
 
         console.log("App initialized successfully!");
     },
 
     /**
-     * Carrega estrutura de conteúdo do content.json
+     * Carrega estrutura de conteúdo
      */
     loadContent: async function () {
         try {
             const response = await fetch('content.json');
             this.data = await response.json();
 
-            // Flatten pages for easy linear navigation
+            // Flatten pages
             this.flatPages = [];
             this.data.modules.forEach(mod => {
                 mod.pages.forEach(page => {
@@ -86,12 +90,28 @@ const App = {
                     });
                 });
             });
-
-            console.log("Content loaded. Total pages:", this.flatPages.length);
         } catch (error) {
             console.error("Failed to load content.json", error);
-            document.getElementById('content-area').innerHTML = "<p class='error'>Erro ao carregar conteúdo.</p>";
         }
+    },
+
+    /**
+     * Carrega manifesto de páginas
+     */
+    loadManifest: async function () {
+        try {
+            const response = await fetch('pages-manifest.json');
+            const data = await response.json();
+            // Map for quick lookup
+            this.manifest = new Map(data.pages.map(p => [p.id, p]));
+        } catch (e) {
+            console.error("Failed to load pages-manifest.json", e);
+        }
+    },
+
+    getManifestEntry: function (pageId) {
+        if (!this.manifest) return null;
+        return this.manifest.get(pageId);
     },
 
     /**
@@ -102,34 +122,33 @@ const App = {
         const pageData = this.flatPages[index];
         const contentArea = document.getElementById('content-area');
 
-        // Usar sempre o mesmo template (i18n cuida da tradução via JSON)
-        let fileUrl = pageData.file;
-
-        // Cleanup de páginas anteriores (ex: parar música do roleplay)
+        // Cleanup
         if (typeof window.roleplayCleanup === 'function') {
             window.roleplayCleanup();
-            window.roleplayCleanup = null; // Limpar referência
+            window.roleplayCleanup = null;
         }
 
-        // Analytics: rastrear entrada na página
         if (typeof Analytics !== 'undefined') {
             Analytics.trackPageEnter(pageData.id, index, this.flatPages.length);
         }
 
+        // --- NEW: Load Page Specific Translations FIRST ---
+        const manifestEntry = this.getManifestEntry(pageData.id);
+        if (manifestEntry && manifestEntry.translation) {
+            await I18n.loadPageTranslations(manifestEntry.translation, manifestEntry.mountPoint);
+        }
+        // --------------------------------------------------
+
         // Fetch HTML content
+        let fileUrl = pageData.file;
         try {
             const res = await fetch(fileUrl);
             if (res.ok) {
                 let html = await res.text();
 
-                // Check for Markdown
-                if (fileUrl.toLowerCase().endsWith('.md')) {
-                    if (typeof SimpleMarkdown !== 'undefined') {
-                        html = SimpleMarkdown.parse(html);
-                    } else {
-                        console.warn('SimpleMarkdown not found, rendering raw text');
-                        html = `<pre>${html}</pre>`;
-                    }
+                // Markdown support
+                if (fileUrl.toLowerCase().endsWith('.md') && typeof SimpleMarkdown !== 'undefined') {
+                    html = SimpleMarkdown.parse(html);
                 }
 
                 // Inject

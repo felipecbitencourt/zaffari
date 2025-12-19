@@ -1,0 +1,114 @@
+{
+    "title": "🔍 Find the Error",
+    "lead": "Analyze the fictitious SAC emails and identify the errors by clicking directly on the incorrect phrases.",
+    "email_tabs": [
+        "📧 Email 1",
+        "📧 Email 2",
+        "📧 Email 3",
+        "📧 Email 4"
+    ],
+    "status": {
+        "errors_found": "Errors found:"
+    },
+    "email_header": {
+        "inbox": "Inbox",
+        "from": "From:",
+        "to": "To:",
+        "subject": "Subject:"
+    },
+    "feedback": {
+        "title": "✅ Errors Identified:"
+    },
+    "complete": {
+        "title": "Congratulations!",
+        "text": "You found all the errors in this email!",
+        "btn_next": "Next Email →",
+        "btn_summary": "View Final Summary"
+    },
+    "summary": {
+        "title": "Game Complete!",
+        "text": "You completed all emails!",
+        "total": "Total:",
+        "stars": "stars",
+        "btn_restart": "🔄 Play Again"
+    },
+    "btn_back": "← Back to Extras Menu",
+    "emails": [
+        {
+            "from": "sac@zaffari.com.br",
+            "to": "joao.silva@email.com",
+            "subject": "Re: Exchange Request #12345",
+            "body": "Dear João,\n\nThank you for contacting us. Regarding your exchange request for the product purchased at our physical store, we inform you that <span class=\"erro\" data-erro=\"1\">you have a right guaranteed by law to exchange</span> within <span class=\"erro\" data-erro=\"2\">7 business days</span>.\n\nPlease <span class=\"erro\" data-erro=\"3\">send the product to our technical support</span> to proceed.\n\nBest regards,\nSAC Team",
+            "errors": {
+                "1": {
+                    "text": "you have a right guaranteed by law to exchange",
+                    "explanation": "The exchange of a product WITHOUT DEFECT at a physical store is a COMMERCIAL POLICY (courtesy of the company), not a right guaranteed by law. The CDC only requires exchange in case of defect."
+                },
+                "2": {
+                    "text": "7 business days",
+                    "explanation": "When applicable (online purchases), the Right of Withdrawal period is 7 CALENDAR days, not business days."
+                },
+                "3": {
+                    "text": "send the product to our technical support",
+                    "explanation": "A product WITHOUT DEFECT should not be sent to technical support. Technical support is for repairs of products WITH DEFECTS."
+                }
+            }
+        },
+        {
+            "from": "sac@zaffari.com.br",
+            "to": "maria.santos@email.com",
+            "subject": "Re: Purchase Cancellation #67890",
+            "body": "Dear Maria,\n\nWe received your cancellation request for the purchase made at our physical store last week.\n\nWe inform you that <span class=\"erro\" data-erro=\"1\">you can exercise the right of withdrawal</span> normally. Upon returning the product, <span class=\"erro\" data-erro=\"2\">we will refund 80% of the amount paid</span>.\n\nWe remind you that <span class=\"erro\" data-erro=\"3\">after the return, there will be no further possibility of complaint about the product</span>.\n\nBest regards,\nSAC Team",
+            "errors": {
+                "1": {
+                    "text": "you can exercise the right of withdrawal",
+                    "explanation": "The Right of Withdrawal (7 days) only applies to ONLINE purchases or those made outside the commercial establishment. It does NOT apply to purchases at physical stores."
+                },
+                "2": {
+                    "text": "we will refund 80% of the amount paid",
+                    "explanation": "When withdrawal is applicable, the refund must be FULL (100%), including shipping. Never partial."
+                },
+                "3": {
+                    "text": "after the return, there will be no further possibility of complaint about the product",
+                    "explanation": "The customer always retains the right to complain about HIDDEN DEFECTS (defects that appear later), even after previous returns or exchanges."
+                }
+            }
+        },
+        {
+            "from": "sac@zaffari.com.br",
+            "to": "carlos.oliveira@email.com",
+            "subject": "Re: Appliance Defect #11223",
+            "body": "Dear Carlos,\n\nWe apologize for the inconvenience with your appliance. According to the Consumer Protection Code, <span class=\"erro\" data-erro=\"1\">you have up to 15 days to resolve the problem through technical support</span>.\n\nIf the problem is not solved within this period, <span class=\"erro\" data-erro=\"2\">we will only make a proportional discount on the value</span>.\n\nPlease go to the brand's authorized technical support for evaluation.\n\nBest regards,\nSAC Team",
+            "errors": {
+                "1": {
+                    "text": "you have up to 15 days to resolve the problem through technical support",
+                    "explanation": "The correct period is 30 DAYS for the supplier to solve the defect through technical support, not 15 days."
+                },
+                "2": {
+                    "text": "we will only make a proportional discount on the value",
+                    "explanation": "After 30 days without solution, the customer has THREE options: product exchange, proportional discount OR full refund. Not just one option."
+                }
+            }
+        },
+        {
+            "from": "sac@zaffari.com.br",
+            "to": "ana.costa@email.com",
+            "subject": "Re: Food Exchange #44556",
+            "body": "Dear Ana,\n\nRegarding your request to exchange the food product, we inform you that <span class=\"erro\" data-erro=\"1\">you can return the product to any store in our network</span>.\n\nTo expedite the process, <span class=\"erro\" data-erro=\"2\">it is not necessary to bring the receipt</span>. Just bring the product.\n\nAfter analysis, <span class=\"erro\" data-erro=\"3\">we will exchange it for any product of your choice of the same value</span>.\n\nBest regards,\nSAC Team",
+            "errors": {
+                "1": {
+                    "text": "you can return the product to any store in our network",
+                    "explanation": "Food products must be taken to THE STORE WHERE THE PURCHASE WAS MADE, along with the receipt, for management evaluation."
+                },
+                "2": {
+                    "text": "it is not necessary to bring the receipt",
+                    "explanation": "The RECEIPT IS MANDATORY to validate the purchase and proceed with any complaint or product exchange."
+                },
+                "3": {
+                    "text": "we will exchange it for any product of your choice of the same value",
+                    "explanation": "Food exchange only occurs when the product is UNFIT FOR CONSUMPTION, not by customer preference. The reason, brand, and batch must be evaluated."
+                }
+            }
+        }
+    ]
+}

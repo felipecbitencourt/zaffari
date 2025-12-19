@@ -1,0 +1,25 @@
+{
+    "title": "Où consulter les offres ?",
+    "intro": "Le SAC oriente également les clients sur les offres et promotions. Utilisez les <strong>brochures</strong> et le <strong>site officiel</strong> de l'entreprise pour obtenir les données essentielles.",
+    "accordion": {
+        "a1": {
+            "title": "📰 Brochures et Site Officiel",
+            "text": "Consultez les brochures mises à jour pour informer sur les offres en cours. Le site officiel dispose également d'une section promotions constamment actualisée.",
+            "l1": "<strong>Brochures :</strong> disponibles en magasin et sur l'Intranet",
+            "l2": "<strong>Site :</strong> section offres et promotions"
+        },
+        "a2": {
+            "title": "📱 WhatsApp des Offres",
+            "text": "Un moyen pratique de communication est le WhatsApp des offres. Par ce canal, le client reçoit des promotions directement sur son téléphone, de manière personnalisée.",
+            "step": "<strong>Étapes :</strong> Sélectionner le magasin → Accéder à la communauté via le lien ou QR Code → Recevoir les offres"
+        }
+    },
+    "quiz": {
+        "question": "Mme Marie est en ligne et dit que 'ma voisine reçoit des offres sur son téléphone et pas moi'. Comment devez-vous l'orienter pour adhérer au service de manière sûre et officielle ?",
+        "opt_a": "A) 'Mme Marie, donnez-moi votre numéro et je vous inscris tout de suite dans le système.'",
+        "opt_b": "B) 'Vous devez sélectionner votre magasin de préférence et accéder à la communauté via le lien officiel ou QR Code.'",
+        "opt_c": "C) 'Demandez à votre voisine de vous ajouter à son groupe, c'est plus facile.'",
+        "opt_d": "D) 'Ce service a été temporairement suspendu, suivez uniquement sur le site.'",
+        "feedback": "<strong>Bonne Réponse !</strong> Le client doit entrer activement via le Lien ou QR Code du magasin spécifique."
+    }
+}

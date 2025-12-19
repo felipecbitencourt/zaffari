@@ -1,0 +1,140 @@
+{
+    "title": "🃏 Flash Cards",
+    "lead": "Mémorisez les concepts du cours avec des cartes d'étude interactives. Cliquez sur la carte pour révéler la réponse !",
+    "ui": {
+        "back_to_modules": "← Retour aux Modules",
+        "back_menu": "← Retour au Menu Extras",
+        "card_counter": "Carte <span id=\"fc-current\">1</span> sur <span id=\"fc-total\">8</span>",
+        "hint_front": "👆 Cliquez pour voir la réponse",
+        "hint_back": "👆 Cliquez pour retourner",
+        "prev": "← Précédent",
+        "next": "Suivant →",
+        "shuffle": "🔀 Mélanger",
+        "tip": "💡 <strong>Conseil :</strong> Révisez les flash cards régulièrement pour fixer les connaissances. La technique de répétition espacée est l'une des plus efficaces pour la mémorisation !"
+    },
+    "modules": {
+        "m1": {
+            "title": "Module 1 : Rôle Stratégique",
+            "desc": "Rôle Stratégique du SAC",
+            "count": "8 cartes",
+            "lock_msg": "🔒 Complétez le module",
+            "unlock_msg": "✓ Disponible",
+            "cards": {
+                "c1": {
+                    "q": "Que sont prêts à faire 86% des consommateurs pour une meilleure expérience de service ?",
+                    "a": "Payer plus ! Des études montrent que 86% des consommateurs paient plus pour une meilleure expérience de service."
+                },
+                "c2": {
+                    "q": "Quel est le rôle du SAC au-delà de la résolution des problèmes ?",
+                    "a": "Le SAC représente la VOIX DE L'ENTREPRISE dans le contact direct avec le client. C'est un domaine stratégique, essentiel pour préserver les valeurs, la réputation et la crédibilité de la marque."
+                },
+                "c3": {
+                    "q": "Qu'attend généralement le client lorsqu'il contacte le SAC ?",
+                    "a": "Être écouté avec attention et empathie, recevoir un service rapide et efficace, sentir que l'entreprise se soucie de lui, avoir de la clarté sur les prochaines étapes et repartir satisfait."
+                },
+                "c4": {
+                    "q": "Quels sont les canaux du Service Multicanal du SAC ?",
+                    "a": "Téléphone, e-mail, chat et moyens électroniques."
+                },
+                "c5": {
+                    "q": "Que comprend le Service Réceptif du SAC ?",
+                    "a": "Fournir des informations, accueillir les réclamations, suggestions et éloges, gérer les objections et proposer des solutions."
+                },
+                "c6": {
+                    "q": "Quelles sont les actions réalisées dans le Service Actif ?",
+                    "a": "Activation de cartes, mise à jour des données, communication des promotions et rétention des annulations."
+                },
+                "c7": {
+                    "q": "Quel est le délai standard pour les Demandes ?",
+                    "a": "Jusqu'à 3 jours ouvrables."
+                },
+                "c8": {
+                    "q": "Quel est le délai standard pour les Informations et Réclamations ?",
+                    "a": "Jusqu'à 2 jours ouvrables."
+                }
+            }
+        },
+        "m2": {
+            "title": "Module 2 : Où trouver les informations",
+            "desc": "Où trouver les informations ?",
+            "count": "6 cartes",
+            "lock_msg": "🔒 Complétez le module",
+            "unlock_msg": "✓ Disponible",
+            "cards": {
+                "c1": {
+                    "q": "Quelle est la principale source d'informations sur les magasins ?",
+                    "a": "L'Intranet de l'entreprise ! C'est le principal outil de travail pour des consultations rapides et précises."
+                },
+                "c2": {
+                    "q": "Quel est le chemin sur l'Intranet pour consulter les données des magasins ?",
+                    "a": "Intranet → Filiales → Données d'inscription et horaires."
+                },
+                "c3": {
+                    "q": "Quelles informations peuvent être consultées dans la section Filiales de l'Intranet ?",
+                    "a": "Adresse des magasins, horaires d'ouverture et moyens de contact."
+                },
+                "c4": {
+                    "q": "Quels sont les avantages de maîtriser la consultation d'informations sur l'Intranet ?",
+                    "a": "Rapidité dans le service, réponses plus précises, standardisation des informations et meilleure expérience pour le client."
+                },
+                "c5": {
+                    "q": "Où le client peut-il consulter les offres et promotions ?",
+                    "a": "Dans les brochures (physiques et numériques), sur le site officiel de l'entreprise et sur le WhatsApp des offres."
+                },
+                "c6": {
+                    "q": "Comment fonctionne la séquence du WhatsApp des offres ?",
+                    "a": "1) Sélectionner le magasin d'intérêt, 2) Accéder à la communauté via le lien ou QR Code, 3) Recevoir des offres personnalisées sur le téléphone."
+                }
+            }
+        },
+        "m3": {
+            "title": "Module 3 : CDC et Législation",
+            "desc": "CDC et Législation",
+            "count": "10 cartes",
+            "lock_msg": "🔒 Complétez le module",
+            "unlock_msg": "✓ Disponible",
+            "cards": {
+                "c1": {
+                    "q": "Qu'est-ce que le CDC et quelle est sa loi ?",
+                    "a": "C'est le Code de Défense du Consommateur, Loi nº 8.078/90, créé pour protéger les consommateurs et garantir des relations de consommation justes et équilibrées."
+                },
+                "c2": {
+                    "q": "Pourquoi connaître le CDC est-il important pour le SAC ?",
+                    "a": "Pour répondre avec sécurité, éviter le travail supplémentaire et transmettre de la crédibilité au client."
+                },
+                "c3": {
+                    "q": "Le CDC oblige-t-il l'échange de produits sans défaut en magasin physique ?",
+                    "a": "NON ! L'échange de produits sans défaut en magasin physique est une POLITIQUE COMMERCIALE (courtoisie de l'entreprise), pas un droit légal."
+                },
+                "c4": {
+                    "q": "Qu'est-ce que le Droit de Rétractation et quand s'applique-t-il ?",
+                    "a": "C'est le droit d'annuler un achat dans les 7 JOURS CALENDAIRES après réception. S'applique uniquement aux achats EN LIGNE ou en dehors de l'établissement commercial."
+                },
+                "c5": {
+                    "q": "Combien de jours le fournisseur a-t-il pour résoudre un défaut via le service après-vente ?",
+                    "a": "Jusqu'à 30 JOURS pour résoudre le défaut."
+                },
+                "c6": {
+                    "q": "Si le défaut n'est pas résolu en 30 jours, quelles options le client a-t-il ?",
+                    "a": "Échange du produit par un autre identique ou similaire, réduction proportionnelle du montant payé, ou remboursement intégral du montant payé."
+                },
+                "c7": {
+                    "q": "Quel est le délai pour réclamer des défauts sur les produits durables ?",
+                    "a": "90 JOURS à partir de la constatation du défaut."
+                },
+                "c8": {
+                    "q": "Comment procéder avec une réclamation de produits alimentaires ?",
+                    "a": "Le client apporte le produit + ticket au magasin. L'évaluation est faite par la direction. Le remplissage du Motif, Marque et Lot est essentiel."
+                },
+                "c9": {
+                    "q": "Pourquoi les produits périssables ne peuvent-ils pas être échangés après un achat erroné ?",
+                    "a": "Parce qu'une fois retirés du magasin ils ne peuvent pas être reconditionnés pour des raisons de sécurité alimentaire (risque de température)."
+                },
+                "c10": {
+                    "q": "Quelle est la procédure pour les produits Électro avec défaut ?",
+                    "a": "Ils doivent être envoyés au service après-vente de la marque. Si après 30 jours il n'y a pas de solution, l'entreprise effectue l'échange via un ordre de service."
+                }
+            }
+        }
+    }
+}

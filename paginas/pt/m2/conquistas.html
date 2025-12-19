@@ -1,0 +1,61 @@
+<!-- Página de Conquistas - Módulo 2 -->
+<div class="conquistas-page">
+    <div class="conquistas-header">
+        <div class="conquistas-celebration-row">
+            <img src="assets/marca/mascote.png" alt="Mascote Zaffari celebrando" class="conquistas-mascot">
+            <div class="conquistas-celebration">🎉</div>
+        </div>
+        <h1 data-i18n="m2.conquistas.title"></h1>
+        <p data-i18n="m2.conquistas.subtitle"></p>
+    </div>
+
+    <div class="conquistas-content">
+        <h2 data-i18n="m2.conquistas.badges_title"></h2>
+        <p class="conquistas-subtitle" data-i18n="m2.conquistas.badges_subtitle"></p>
+
+        <div class="conquistas-badges">
+            <div class="conquista-item" data-badge="resumo">
+                <span class="conquista-icon">📄</span>
+                <span class="conquista-name" data-i18n="m2.conquistas.badges.resumo"></span>
+                <span class="conquista-desc" data-i18n="m2.conquistas.badges.m2_desc"></span>
+            </div>
+            <div class="conquista-item" data-badge="quiz">
+                <span class="conquista-icon">❓</span>
+                <span class="conquista-name" data-i18n="m2.conquistas.badges.quiz"></span>
+                <span class="conquista-desc" data-i18n="m2.conquistas.badges.m2_desc"></span>
+            </div>
+            <div class="conquista-item" data-badge="flashcard">
+                <span class="conquista-icon">🃏</span>
+                <span class="conquista-name" data-i18n="m2.conquistas.badges.flashcard"></span>
+                <span class="conquista-desc" data-i18n="m2.conquistas.badges.m2_desc"></span>
+            </div>
+            <div class="conquista-item special" data-badge="find-error">
+                <span class="conquista-icon">🔍</span>
+                <span class="conquista-name" data-i18n="m2.conquistas.badges.find_error"></span>
+                <span class="conquista-desc" data-i18n="m2.conquistas.badges.exclusive_desc"></span>
+            </div>
+        </div>
+
+        <div class="conquistas-progress">
+            <div class="progress-label" data-i18n="m2.conquistas.progress_label"></div>
+            <div class="progress-bar-conquistas">
+                <div class="progress-fill" style="width: 66%;"></div>
+            </div>
+            <div class="progress-text" data-i18n="m2.conquistas.progress_text"></div>
+        </div>
+    </div>
+
+    <div class="conquistas-footer">
+        <p data-i18n="m2.conquistas.footer_text"></p>
+    </div>
+</div>
+
+<script>
+    // Salvar insígnias do Módulo 2 no localStorage
+    (function () {
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+        badges.m2 = ['resumo', 'quiz', 'flashcard', 'find-error'];
+        localStorage.setItem('badges', JSON.stringify(badges));
+        console.log('Módulo 2 concluído! Insígnias salvas:', badges.m2);
+    })();
+</script>

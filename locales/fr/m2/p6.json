@@ -1,0 +1,38 @@
+{
+    "title": "📝 Résumé : Questions et Réponses",
+    "lead": "Excellent ! Vous avez terminé le module sur la consultation d'informations. Révisez les principales questions abordées.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Pourquoi devons-nous savoir où chercher les informations ?",
+            "text": "Savoir où trouver les informations démontre au client :",
+            "l1": "<strong>Sécurité</strong> - transmettre confiance",
+            "l2": "<strong>Rapidité</strong> - résoudre rapidement",
+            "l3": "<strong>Attention</strong> - montrer que nous nous soucions"
+        },
+        "a2": {
+            "title": "❓ Où consulter les données des magasins ?",
+            "text": "Sur l'<strong>Intranet</strong> de l'entreprise !",
+            "box_title": "Le Chemin à Suivre",
+            "box_text": "Intranet → Filiales → Données d'inscription et horaires",
+            "footer": "Vous y trouverez : adresse des magasins, horaires d'ouverture et moyens de contact."
+        },
+        "a3": {
+            "title": "❓ Où consulter les offres et promotions ?",
+            "text": "Les offres peuvent être consultées sur :",
+            "l1": "<strong>Brochures</strong> - matériels promotionnels physiques et numériques",
+            "l2": "<strong>Site officiel</strong> de l'entreprise",
+            "l3": "<strong>WhatsApp des offres</strong> - canal direct avec le client"
+        },
+        "a4": {
+            "title": "❓ Comment fonctionne le WhatsApp des offres ?",
+            "text": "C'est simple et direct ! La séquence est :",
+            "l1": "<strong>Sélectionner le magasin</strong> d'intérêt",
+            "l2": "<strong>Accéder à la communauté</strong> via le lien ou QR Code",
+            "l3": "<strong>Recevoir des offres</strong> personnalisées sur le téléphone"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusion du Module 2",
+        "text": "Vous savez maintenant <strong>où trouver les informations</strong> dont le client a besoin. Dans le prochain module, nous apprendrons <strong>comment appliquer le Code de la Consommation</strong> dans le service !"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Quand échanger sans défaut ?",
+    "h3_physical": "Échange de produits sans défaut – Magasin Physique",
+    "p_physical_1": "Le CDC <strong>n'oblige pas</strong> l'échange lorsque le produit est en parfait état et que le client souhaite l'échanger par préférence (couleur, taille).",
+    "p_physical_2": "Dans ces cas, l'échange est une <strong>politique commerciale</strong> de l'entreprise, une courtoisie, et non un droit légal.",
+    "quiz1": {
+        "question": "Un client a acheté une chemise en Magasin Physique, l'a essayée en cabine et l'a emportée. Deux jours plus tard, il revient voulant l'échanger parce que sa femme dit que la couleur ne lui va pas. Le produit est parfait et avec l'étiquette. Le magasin est-il obligé par la loi d'échanger ?",
+        "opt_a": "A) Oui, le CDC garantit 7 jours pour échange pour n'importe quelle raison.",
+        "opt_b": "B) Non, mais peut échanger par libéralité (politique commerciale de courtoisie) pour fidéliser le client.",
+        "opt_c": "C) Oui, mais seulement si le client paie une taxe de 10%.",
+        "opt_d": "D) Non, et le magasin est interdit d'accepter l'échange pour ne pas générer de perte.",
+        "feedback": "<strong>Bonne Réponse !</strong> C'est une politique commerciale (courtoisie), pas une loi pour les magasins physiques."
+    },
+    "h3_online": "Échange de produits sans défaut – Boutique en Ligne",
+    "p_online_1": "Pour les achats en ligne, le CDC garantit le <strong>Droit de Rétractation</strong>.",
+    "p_online_2": "Le client peut annuler l'achat dans les <strong>7 jours calendaires</strong> après réception. Important : Cela ne s'applique pas aux achats en magasin physique !",
+    "quiz2": {
+        "question": "Jean a acheté une cafetière sur le site. À la réception, il a vu qu'elle est trop grande pour sa cuisine, bien qu'elle fonctionne parfaitement. Il appelle au 5ème jour voulant la retourner. Que lui informez-vous ?",
+        "opt_a": "A) 'Monsieur, comme il n'y a pas de défaut, nous ne pouvons pas accepter le retour.'",
+        "opt_b": "B) 'Vous pouvez exercer votre Droit de Rétractation et retourner le produit, recevant le remboursement intégral, car vous êtes dans le délai de 7 jours.'",
+        "opt_c": "C) 'Nous pouvons échanger, mais vous payez les frais de retour.'",
+        "opt_d": "D) 'Vous devriez essayer de vendre à une connaissance, car la vente est finalisée.'",
+        "feedback": "<strong>Bonne Réponse !</strong> Les achats en ligne ont une garantie de rétractation (7 jours), indépendamment du défaut."
+    }
+}

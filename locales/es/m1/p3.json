@@ -1,0 +1,56 @@
+{
+    "title": "Principales Responsabilidades del SAC",
+    "intro_list": "Entre las principales atribuciones del Servicio de Atención al Cliente, se destacan:",
+    "intro_p": "El SAC actúa como la voz de la empresa para el cliente y la voz del cliente para la empresa, garantizando un flujo constante de información y mejoras.",
+    "img_alt": "Equipo de call center trabajando en un ambiente moderno",
+    "cards": {
+        "c1": {
+            "title": "Atención Multicanal",
+            "text": "Ofrecer atención de excelencia a través de diferentes canales: teléfono, correo electrónico, chat y medios electrónicos."
+        },
+        "c2": {
+            "title": "Atención Receptiva",
+            "text": "Brindar información, recibir quejas, sugerencias y elogios, manejar objeciones y ofrecer soluciones."
+        }
+    },
+    "active_title": "📢 Atenciones Activas",
+    "active_text": "Realizar atenciones activas, especialmente en campañas promocionales y acciones relacionadas con las Tarjetas del Grupo:",
+    "timeline": {
+        "t1": {
+            "title": "1. Activación de tarjetas",
+            "text": "Contactar clientes para activar nuevas tarjetas emitidas."
+        },
+        "t2": {
+            "title": "2. Actualización de datos",
+            "text": "Mantener los datos de los clientes siempre actualizados."
+        },
+        "t3": {
+            "title": "3. Comunicación de promociones",
+            "text": "Informar sobre ofertas exclusivas y beneficios."
+        },
+        "t4": {
+            "title": "4. Reversión de cancelaciones",
+            "text": "Trabajar para retener clientes que desean cancelar servicios."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Gestión y Mejora Continua",
+            "l1": "Organizar y tabular datos, elaborar informes y dar soporte a las demandas del equipo.",
+            "l2": "Actuar de forma proactiva en la identificación de mejoras en scripts y estándares de atención.",
+            "l3": "Contribuir a la evolución continua del servicio prestado."
+        },
+        "a2": {
+            "title": "🎓 Desarrollo profesional",
+            "text": "El conocimiento de las responsabilidades te permite actuar con más seguridad y asertividad, contribuyendo a tu evolución en la carrera."
+        }
+    },
+    "quiz": {
+        "question": "Notas que varios clientes llaman con la misma duda sobre una nueva promoción. ¿Cuál es la mejor actitud alineada con las responsabilidades de mejora continua del SAC?",
+        "opt_a": "A) Seguir atendiendo a cada uno individualmente sin reportar el hecho.",
+        "opt_b": "B) Quejarse con los colegas de que los clientes no saben leer el reglamento.",
+        "opt_c": "C) Reportar el patrón observado al supervisor para que se ajuste la comunicación de la promoción.",
+        "opt_d": "D) Decirle al cliente que busque la información en el sitio web.",
+        "feedback": "<strong>¡Correcto!</strong> Identificar patrones y sugerir mejoras previene futuros contactos repetitivos y mejora la experiencia general."
+    }
+}

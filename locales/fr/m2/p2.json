@@ -1,0 +1,50 @@
+{
+    "title": "Où consulter les données des magasins ?",
+    "lead": "Toutes les informations essentielles sont disponibles sur l'<strong>Intranet</strong> de l'entreprise.",
+    "intro_p": "C'est votre principal outil de travail pour des consultations rapides et précises.",
+    "highlight_title": "Le Chemin à Suivre",
+    "highlight_text": "Intranet → Filiales → Données d'inscription et horaires",
+    "slider_title": "📍 Comment consulter sur l'Intranet :",
+    "slider_steps": {
+        "s1": {
+            "title": "Étape 1 : Accéder à l'Intranet",
+            "text": "Ouvrez le navigateur et accédez au portail interne de l'entreprise. Connectez-vous avec vos identifiants."
+        },
+        "s2": {
+            "title": "Étape 2 : Naviguer vers Filiales",
+            "text": "Dans le menu principal, localisez et cliquez sur l'option <strong>'Filiales'</strong> ou <strong>'Magasins'</strong>."
+        },
+        "s3": {
+            "title": "Étape 3 : Données d'inscription",
+            "text": "Sélectionnez <strong>'Données d'inscription et horaires'</strong> pour accéder aux informations complètes de chaque magasin."
+        },
+        "s4": {
+            "title": "Étape 4 : Consulter et Informer",
+            "text": "Vous pouvez maintenant consulter l'adresse, le téléphone et les horaires d'ouverture pour orienter le client !"
+        }
+    },
+    "list_intro": "Vous pouvez y consulter :",
+    "list_items": {
+        "l1": "Adresse des magasins",
+        "l2": "Horaires d'ouverture",
+        "l3": "Moyens de contact"
+    },
+    "quiz1": {
+        "question": "Un client appelle pour demander si le magasin du Centre est ouvert pendant le jour férié de demain. Vous ne connaissez pas cette information par cœur. Quelle est la procédure la plus rapide et sûre ?",
+        "opt_a": "A) Demander rapidement dans le groupe WhatsApp de l'équipe pour voir si quelqu'un sait.",
+        "opt_b": "B) Consulter l'Intranet dans 'Filiales' > 'Données d'inscription et horaires' pour avoir l'information officielle.",
+        "opt_c": "C) Chercher sur Google Maps, car c'est toujours à jour là-bas.",
+        "opt_d": "D) Informer qu'il sera probablement fermé, pour éviter que le client ne se déplace pour rien.",
+        "feedback": "<strong>Bonne Réponse !</strong> L'Intranet est la seule source officielle et fiable pour les horaires des filiales."
+    },
+    "importance_title": "Pourquoi c'est important ?",
+    "importance_text": "Maîtriser cette consultation garantit <strong>rapidité</strong> dans le service, des réponses plus <strong>précises</strong>, une standardisation des informations et une expérience plus positive pour le client.",
+    "quiz2": {
+        "question": "Maîtriser la consultation d'informations sur l'Intranet contribue à :",
+        "opt_a": "A) Augmenter le temps de service.",
+        "opt_b": "B) Réduire la standardisation des réponses.",
+        "opt_c": "C) Garantir rapidité, précision et meilleure expérience pour le client.",
+        "opt_d": "D) Rendre le service plus informel.",
+        "feedback": "<strong>Bonne Réponse !</strong> Client satisfait est client servi avec rapidité et précision."
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "title": "🎭 Roleplay - Simulação de Atendimento",
+    "lead": "Pratique suas habilidades de atendimento! Você é o atendente SAC e deve escolher as melhores respostas.",
+    "loading": "Carregando...",
+    "btn_continue": "Continuar →",
+    "btn_restart": "🔄 Jogar Novamente",
+    "btn_back": "← Voltar ao Menu de Extras",
+    "btn_try_again": "Tentar Novamente",
+    "result": {
+        "title": "Parabéns!",
+        "text": "Você completou a simulação de atendimento!",
+        "perfect": "Perfeito! Você demonstrou excelente conhecimento!",
+        "great": "Muito bem! Você está no caminho certo!",
+        "good": "Bom, mas você pode melhorar. Revise o conteúdo!",
+        "needs_work": "Precisa estudar mais. Revise os módulos do curso!",
+        "score_text": "Você acertou {correct} de {total} respostas"
+    },
+    "scenario": {
+        "title": "Troca de Produto",
+        "steps": [
+            {
+                "id": 1,
+                "name": "Apresentação",
+                "clientSays": "Olá, boa tarde! Comprei esse liquidificador aqui ontem e gostaria de trocar por outro modelo.",
+                "options": [
+                    {
+                        "text": "Boa tarde! Claro, posso ajudá-lo com isso. O produto apresenta algum defeito ou problema?",
+                        "correct": true,
+                        "feedback": "Excelente! Você cumprimentou o cliente de forma cordial e já fez uma pergunta importante para entender a situação."
+                    },
+                    {
+                        "text": "Infelizmente não é possível trocar produtos que já foram comprados e levados para casa.",
+                        "correct": false,
+                        "feedback": "Essa resposta é muito negativa e não acolhe o cliente. Sempre devemos primeiro entender a situação antes de negar algo."
+                    },
+                    {
+                        "text": "Pode deixar o produto aí no balcão que depois alguém vai verificar para você.",
+                        "correct": false,
+                        "feedback": "Essa resposta é informal demais e não demonstra interesse em ajudar o cliente. O atendimento deve ser sempre cordial e profissional."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Questão do Cliente",
+                "clientSays": "Não, não está com defeito. É que eu vi outro modelo que me agradou mais. Vi na internet que tenho direito de trocar em 7 dias, não é?",
+                "options": [
+                    {
+                        "text": "Sim, com certeza! Você tem esse direito garantido por lei. Vamos fazer a troca agora mesmo.",
+                        "correct": false,
+                        "feedback": "Cuidado! O direito de arrependimento de 7 dias só vale para compras ONLINE. Em loja física, a troca é política comercial, não direito legal."
+                    },
+                    {
+                        "text": "O direito de 7 dias vale para compras online. Em loja física é cortesia. Posso verificar nossa política!",
+                        "correct": true,
+                        "feedback": "Perfeito! Você explicou corretamente a diferença entre o direito legal (compras online) e a política comercial (loja física), sem negar ajuda ao cliente."
+                    },
+                    {
+                        "text": "Essa regra dos 7 dias é só para compras online, então aqui não se aplica. Sinto muito.",
+                        "correct": false,
+                        "feedback": "Embora a informação sobre o online esteja correta, a resposta é muito negativa. Sempre devemos buscar alternativas para ajudar o cliente."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Dúvida Adicional",
+                "clientSays": "Ah entendi... então vocês não vão trocar? E se o produto tiver defeito depois, posso reclamar?",
+                "options": [
+                    {
+                        "text": "Pode sim! Para defeitos você tem 90 dias. E nossa política permite troca em 30 dias com nota fiscal!",
+                        "correct": true,
+                        "feedback": "Excelente! Você informou corretamente o prazo de 90 dias para reclamar de defeitos em produtos duráveis E ainda ofereceu a possibilidade de troca pela política da empresa."
+                    },
+                    {
+                        "text": "Para defeitos você pode reclamar sim, mas o prazo é de apenas 7 dias após a compra.",
+                        "correct": false,
+                        "feedback": "Incorreto! O prazo para reclamar de defeitos em produtos duráveis é de 90 DIAS, não 7 dias."
+                    },
+                    {
+                        "text": "Se o produto não apresenta defeito agora, depois não temos como fazer nada, infelizmente.",
+                        "correct": false,
+                        "feedback": "Incorreto! Vícios ocultos (defeitos que aparecem depois) podem ser reclamados em até 90 dias para produtos duráveis."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Fechamento",
+                "clientSays": "Que ótimo! Então eu posso trocar pelo outro modelo? O produto ainda está lacrado e tenho a nota fiscal.",
+                "options": [
+                    {
+                        "text": "Não posso fazer a troca porque, como expliquei, não é uma obrigação legal da loja.",
+                        "correct": false,
+                        "feedback": "Resposta inadequada. O cliente atende aos requisitos da política comercial (produto lacrado + nota fiscal)."
+                    },
+                    {
+                        "text": "Com produto lacrado e nota fiscal, posso fazer a troca sim! Qual modelo você prefere?",
+                        "correct": true,
+                        "feedback": "Parabéns! Você finalizou o atendimento de forma positiva, confirmando que o cliente atende aos requisitos e prosseguindo com a troca."
+                    },
+                    {
+                        "text": "Preciso chamar meu gerente para autorizar esse tipo de procedimento de troca aqui.",
+                        "correct": false,
+                        "feedback": "Desnecessário neste caso. Como o cliente atende aos requisitos da política (lacrado + nota), você pode resolver sem precisar escalar."
+                    }
+                ]
+            }
+        ]
+    }
+}

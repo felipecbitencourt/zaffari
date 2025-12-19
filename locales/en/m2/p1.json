@@ -1,0 +1,21 @@
+{
+    "title": "Why we need to know how to search?",
+    "intro_p1": "During service, it is common for customers to have questions about basic store information, such as address, opening hours, and contact methods.",
+    "intro_p2": "Knowing where to find this information and how to guide them correctly demonstrates:",
+    "cards": {
+        "c1": {
+            "title": "Security",
+            "text": "Convey confidence to the customer with correct and updated information."
+        },
+        "c2": {
+            "title": "Agility",
+            "text": "Resolve questions quickly, without needing to transfer or consult third parties."
+        },
+        "c3": {
+            "title": "Care",
+            "text": "Demonstrate attention and care for the customer in every interaction."
+        }
+    },
+    "box_title": "Module Objective",
+    "box_text": "Let's learn where to find all this information for faster and more accurate service!"
+}

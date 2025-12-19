@@ -1,0 +1,51 @@
+﻿<!-- Módulo 3 - Página 1: Introdução CDC -->
+<div class="content-header">
+    <h1 data-i18n="m3.p1.title"></h1>
+</div>
+
+<div class="content-body">
+    <!-- INICIO DO TEXTO EDITÁVEL -->
+    <p data-i18n="[html]m3.p1.intro_p1"></p>
+
+    <p data-i18n="m3.p1.intro_p2"></p>
+
+    <!-- DESTAQUE: Você Sabia? com Modal -->
+    <div class="highlight-box sabia">
+        <span class="icon">💡</span>
+        <div class="highlight-box-content">
+            <h4 data-i18n="m3.p1.sabia_title"></h4>
+            <p><span data-i18n="m3.p1.sabia_text"></span>
+                <button class="btn-modal-trigger" data-modal="modal-cdc" data-i18n="m3.p1.btn_saiba_mais"></button>
+            </p>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal-cdc" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 data-i18n="m3.p1.modal.title"></h3>
+                <button class="modal-close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal-body">
+                <p data-i18n="[html]m3.p1.modal.text"></p>
+                <ul>
+                    <li data-i18n="m3.p1.modal.l1"></li>
+                    <li data-i18n="m3.p1.modal.l2"></li>
+                    <li data-i18n="m3.p1.modal.l3"></li>
+                    <li data-i18n="m3.p1.modal.l4"></li>
+                </ul>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                    <a href="../../assets/PDFs/cdc-portugues-2013.pdf" target="_blank"
+                        style="font-size: 0.85rem; font-style: italic; color: #c62828; text-decoration: underline;">📄
+                        CDC na Íntegra (PDF)</a>
+                    <a href="https://www.gov.br/mj/pt-br/assuntos/noticias/codigo-de-defesa-do-consumidor-completa-35-anos-como-referencia-nas-relacoes-de-consumo"
+                        target="_blank"
+                        style="font-size: 0.85rem; font-style: italic; color: #1565c0; text-decoration: underline;">🔗
+                        Notícia: 35 Anos do CDC (Gov.br)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO TEXTO EDITÁVEL -->
+</div>

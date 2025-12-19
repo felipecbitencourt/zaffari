@@ -1,0 +1,58 @@
+{
+    "title": "📖 Resumen del Curso",
+    "lead": "Revisa los principales conceptos abordados en cada módulo del entrenamiento.",
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Rol Estratégico del SAC",
+            "lock": "🔒 Completa el módulo para desbloquear",
+            "unlock": "✓ Disponible",
+            "overlay": "Completa el Módulo 1 para desbloquear este resumen"
+        },
+        "m2": {
+            "title": "Módulo 2: ¿Dónde encontrar información?",
+            "lock": "🔒 Completa el módulo para desbloquear",
+            "unlock": "✓ Disponible",
+            "overlay": "Completa el Módulo 2 para desbloquear este resumen"
+        },
+        "m3": {
+            "title": "Módulo 3: CDC y Legislación",
+            "lock": "🔒 Completa el módulo para desbloquear",
+            "unlock": "✓ Disponible",
+            "overlay": "Completa el Módulo 3 para desbloquear este resumen"
+        }
+    },
+    "content": {
+        "m1": {
+            "q1": "❓ ¿Qué espera el cliente al contactarnos?",
+            "a1": "<p><strong>✅ Respuesta:</strong> El cliente espera más que la solución del problema. Busca:</p><ul><li>Ser escuchado con atención y empatía</li><li>Recibir una atención ágil y eficiente</li><li>Sentir que la empresa se preocupa por él</li><li>Tener claridad sobre los próximos pasos</li><li>Salir satisfecho, aunque la respuesta no sea la ideal</li></ul>",
+            "q2": "❓ ¿Cuál es el rol del SAC más allá de resolver problemas?",
+            "a2": "<p><strong>✅ Respuesta:</strong> El SAC representa la <strong>voz de la empresa</strong> en el contacto directo con el cliente. Más que un sector operacional, es un área estratégica esencial para:</p><ul><li>Preservar valores y reputación de la marca</li><li>Construir confianza y fortalecer vínculos</li><li>Contribuir a la fidelización de los clientes</li></ul>",
+            "q3": "❓ ¿Cuáles son las responsabilidades de nuestro equipo?",
+            "a3": "<p><strong>✅ Respuesta:</strong> Las principales responsabilidades incluyen:</p><ul><li><strong>Atención Multicanal:</strong> teléfono, e-mail, chat y medios electrónicos</li><li><strong>Atención Receptiva:</strong> informaciones, reclamos, sugerencias y elogios</li><li><strong>Atenciones Activas:</strong> campañas, activación de tarjetas, actualizaciones de registro</li><li><strong>Gestión:</strong> organizar datos, elaborar informes, proponer mejoras</li></ul><p><em>Nota: Definir leyes de protección al consumidor NO es responsabilidad del SAC - el SAC sigue las leyes.</em></p>",
+            "q4": "❓ ¿Por qué importan los plazos de atención?",
+            "a4": "<p><strong>✅ Respuesta:</strong> Plazos bien definidos garantizan organización, previsibilidad y eficiencia. El correcto registro de la categoría de atención es fundamental porque el sistema calcula el plazo basándose en ella.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Plazos Estándar</h4><ul><li><strong>Solicitudes:</strong> hasta 3 días hábiles</li><li><strong>Informaciones:</strong> hasta 2 días hábiles</li><li><strong>Reclamos:</strong> hasta 2 días hábiles</li></ul></div></div>"
+        },
+        "m2": {
+            "q1": "❓ ¿Por qué necesitamos saber dónde buscar información?",
+            "a1": "<p><strong>✅ Respuesta:</strong> Saber dónde encontrar información demuestra al cliente:</p><ul><li><strong>Seguridad</strong> - transmitir confianza</li><li><strong>Agilidad</strong> - resolver rápidamente</li><li><strong>Cuidado</strong> - mostrar que nos importamos</li></ul>",
+            "q2": "❓ ¿Dónde consultar datos de las tiendas?",
+            "a2": "<p><strong>✅ Respuesta:</strong> En la <strong>Intranet</strong> de la empresa!</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>El Camino de las Piedras</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Filiales → Datos de registro y horarios</strong></p></div></div><p>Allí encuentras: dirección de las tiendas, horarios de funcionamiento y formas de contacto.</p>",
+            "q3": "❓ ¿Dónde consultar ofertas y promociones?",
+            "a3": "<p><strong>✅ Respuesta:</strong> Las ofertas pueden consultarse en:</p><ul><li><strong>Folletos</strong> - materiales promocionales físicos y digitales</li><li><strong>Sitio oficial</strong> de la empresa</li><li><strong>WhatsApp de ofertas</strong> - canal directo con el cliente</li></ul>",
+            "q4": "❓ ¿Cómo funciona el WhatsApp de ofertas?",
+            "a4": "<p><strong>✅ Respuesta:</strong> ¡Es simple y directo! La secuencia es:</p><ol><li><strong>Seleccionar la tienda</strong> de interés</li><li><strong>Acceder a la comunidad</strong> por el link o QR Code</li><li><strong>Recibir ofertas</strong> personalizadas en el celular</li></ol>"
+        },
+        "m3": {
+            "q1": "❓ ¿Qué es el CDC y por qué conocerlo?",
+            "a1": "<p><strong>✅ Respuesta:</strong> El CDC (Ley nº 8.078/90) protege a los consumidores y garantiza relaciones de consumo justas. Conocerlo es esencial para:</p><ul><li>Responder con seguridad</li><li>Evitar retrabajo</li><li>Transmitir credibilidad al cliente</li></ul>",
+            "q2": "❓ ¿Cuándo el cliente puede cambiar un producto sin defecto?",
+            "a2": "<p><strong>✅ Respuesta:</strong></p><ul><li><strong>Tienda física:</strong> El CDC NO obliga el cambio - es una política comercial (cortesía)</li><li><strong>Tienda online:</strong> El cliente tiene el Derecho de Arrepentimiento (hasta 7 días corridos después de recibir)</li></ul>",
+            "q3": "❓ ¿Cuándo hay defecto, cuál es el procedimiento?",
+            "a3": "<p><strong>✅ Respuesta:</strong> El proveedor tiene hasta <strong>30 días</strong> para solucionar vía asistencia técnica. Si no resuelve, el cliente puede optar por:</p><ul><li>Cambio del producto</li><li>Descuento proporcional del valor</li><li>Devolución del valor pagado</li></ul><p><em>Plazo para reclamar: 90 días para productos durables.</em></p>",
+            "q4": "❓ ¿Cómo derivar reclamos de productos?",
+            "a4": "<p><strong>✅ Respuesta:</strong></p><ul><li><strong>Alimentícios:</strong> Cliente lleva producto + ticket a la tienda (evaluación de gerencia)</li><li><strong>No alimenticios:</strong> Producto + ticket a la tienda (excepto Electro → Asistencia Técnica)</li><li><strong>Compra equivocada:</strong> No perecederos pueden cambiarse si no están violados; perecederos no cambiamos</li></ul>"
+        }
+    },
+    "tip_box": "💡 Usa este resumen como material de consulta rápida durante tu trabajo.",
+    "back_btn": "← Volver al Menú de Extras"
+}

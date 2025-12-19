@@ -1,0 +1,45 @@
+{
+    "title": "Qu'est-ce que le Code de la Consommation ?",
+    "intro_p1": "Le <strong>⚖️ Code de Défense du Consommateur (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Loi nº 8.078, du 11 septembre 1990'>Loi nº 8.078/90</span>, a été créé pour protéger les consommateurs et garantir des relations de consommation justes et équilibrées.",
+    "intro_p2": "Il établit des droits, des devoirs, des délais, des normes de conduite et des pénalités pour les fournisseurs et prestataires de services.",
+    "sabia_title": "Le Saviez-Vous ?",
+    "sabia_text": "Le CDC brésilien est considéré comme l'un des plus complets au monde !",
+    "btn_saiba_mais": "En savoir plus",
+    "modal": {
+        "title": "📚 Curiosités sur le CDC",
+        "text": "Le Code de Défense du Consommateur brésilien a été promulgué en <strong>1990</strong> et sert de modèle pour les législations d'autres pays.",
+        "l1": "Il est considéré comme l'un des plus avancés au monde",
+        "l2": "Il protège le consommateur à toutes les étapes de la relation de consommation",
+        "l3": "Il prévoit l'inversion de la charge de la preuve en faveur du consommateur",
+        "l4": "Il établit la responsabilité objective du fournisseur"
+    },
+    "importance_title": "Pourquoi est-ce important pour le SAC ?",
+    "cards": {
+        "c1": {
+            "title": "Sécurité",
+            "text": "Sécurité dans l'orientation du client, sachant exactement ce que la loi permet ou non."
+        },
+        "c2": {
+            "title": "Conformité",
+            "text": "Réponses correctes et alignées avec la loi, évitant les problèmes juridiques pour l'entreprise."
+        },
+        "c3": {
+            "title": "Efficacité",
+            "text": "Réduction du travail supplémentaire en résolvant les questions correctement dès la première fois."
+        },
+        "c4": {
+            "title": "Crédibilité",
+            "text": "Plus de professionnalisme, de confiance et de crédibilité dans le service."
+        }
+    },
+    "attention_title": "Attention",
+    "attention_text": "Connaître le CDC ne signifie pas mémoriser tous les articles, mais comprendre les <strong>principes de base</strong> qui guident les relations de consommation.",
+    "quiz": {
+        "question": "Un client affirme avec véhémence : 'Le Code de la Consommation dit que j'ai toujours raison ! Donc vous êtes obligés de faire ce que je veux !'. Basé sur l'équilibre proposé par le CDC, comment interprétez-vous cette déclaration ?",
+        "opt_a": "A) 'Le client a toujours raison', et le CDC a été créé justement pour garantir que sa volonté prévale dans toute situation.",
+        "opt_b": "B) Le client se trompe. Le CDC cherche à équilibrer la relation, protégeant la partie la plus faible (consommateur), mais établissant également des devoirs et des limites pour éviter les abus.",
+        "opt_c": "C) Le client a tort, car le CDC est une loi qui sert uniquement à punir les entreprises qui commettent des crimes contre l'économie populaire.",
+        "opt_d": "D) Le client a partiellement raison, le CDC garantit qu'il a raison, mais seulement s'il présente la facture originale.",
+        "feedback": "<strong>Bonne Réponse !</strong> L'objectif du CDC est l'harmonie et l'équilibre dans les relations de consommation, pas le favoritisme aveugle."
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Pourquoi devons-nous savoir chercher ?",
+    "intro_p1": "Pendant le service, il est courant que les clients aient des questions sur les informations de base des magasins, comme l'adresse, les horaires d'ouverture et les moyens de contact.",
+    "intro_p2": "Savoir où trouver ces informations et comment les orienter correctement démontre :",
+    "cards": {
+        "c1": {
+            "title": "Sécurité",
+            "text": "Transmettez confiance au client avec des informations correctes et à jour."
+        },
+        "c2": {
+            "title": "Rapidité",
+            "text": "Résolvez les questions rapidement, sans avoir besoin de transférer ou de consulter des tiers."
+        },
+        "c3": {
+            "title": "Attention",
+            "text": "Démontrez attention et soin pour le client à chaque interaction."
+        }
+    },
+    "box_title": "Objectif du Module",
+    "box_text": "Nous allons apprendre où trouver toutes ces informations pour un service plus rapide et précis !"
+}

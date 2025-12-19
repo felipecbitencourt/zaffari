@@ -1,0 +1,38 @@
+{
+    "title": "📝 Resumen: Preguntas y Respuestas",
+    "lead": "¡Excelente! Completaste el módulo sobre consulta de información. Revisa las principales preguntas abordadas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ ¿Por qué necesitamos saber dónde buscar información?",
+            "text": "Saber dónde encontrar información demuestra al cliente:",
+            "l1": "<strong>Seguridad</strong> - transmitir confianza",
+            "l2": "<strong>Agilidad</strong> - resolver rápidamente",
+            "l3": "<strong>Cuidado</strong> - mostrar que nos importa"
+        },
+        "a2": {
+            "title": "❓ ¿Dónde consultar datos de las tiendas?",
+            "text": "¡En la <strong>Intranet</strong> de la empresa!",
+            "box_title": "El Camino",
+            "box_text": "Intranet → Sucursales → Datos de registro y horarios",
+            "footer": "Allí encuentras: dirección de las tiendas, horarios de funcionamiento y formas de contacto."
+        },
+        "a3": {
+            "title": "❓ ¿Dónde consultar ofertas y promociones?",
+            "text": "Las ofertas se pueden consultar en:",
+            "l1": "<strong>Folletos</strong> - materiales promocionales físicos y digitales",
+            "l2": "<strong>Sitio web oficial</strong> de la empresa",
+            "l3": "<strong>WhatsApp de ofertas</strong> - canal directo con el cliente"
+        },
+        "a4": {
+            "title": "❓ ¿Cómo funciona el WhatsApp de ofertas?",
+            "text": "¡Es simple y directo! La secuencia es:",
+            "l1": "<strong>Seleccionar la tienda</strong> de interés",
+            "l2": "<strong>Acceder a la comunidad</strong> por el link o QR Code",
+            "l3": "<strong>Recibir ofertas</strong> personalizadas en el celular"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusión del Módulo 2",
+        "text": "Ahora sabes <strong>dónde encontrar la información</strong> que el cliente necesita. En el próximo módulo, aprenderemos <strong>cómo aplicar el CDC</strong> en la atención."
+    }
+}

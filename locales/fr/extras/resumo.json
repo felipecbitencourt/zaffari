@@ -1,0 +1,58 @@
+{
+    "title": "📖 Résumé du Cours",
+    "lead": "Révisez les concepts clés abordés dans chaque module de la formation.",
+    "modules": {
+        "m1": {
+            "title": "Module 1 : Rôle Stratégique du SAC",
+            "lock": "🔒 Complétez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 1 pour débloquer ce résumé"
+        },
+        "m2": {
+            "title": "Module 2 : Où trouver les informations ?",
+            "lock": "🔒 Complétez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 2 pour débloquer ce résumé"
+        },
+        "m3": {
+            "title": "Module 3 : CDC et Législation",
+            "lock": "🔒 Complétez le module pour débloquer",
+            "unlock": "✓ Disponible",
+            "overlay": "Complétez le Module 3 pour débloquer ce résumé"
+        }
+    },
+    "content": {
+        "m1": {
+            "q1": "❓ Qu'attend le client lorsqu'il nous contacte ?",
+            "a1": "<p><strong>✅ Réponse :</strong> Le client attend plus que la résolution du problème. Il recherche :</p><ul><li>Être écouté avec attention et empathie</li><li>Recevoir un service rapide et efficace</li><li>Sentir que l'entreprise se soucie de lui</li><li>Avoir de la clarté sur les prochaines étapes</li><li>Repartir satisfait, même lorsque la réponse n'est pas idéale</li></ul>",
+            "q2": "❓ Quel est le rôle du SAC au-delà de la résolution des problèmes ?",
+            "a2": "<p><strong>✅ Réponse :</strong> Le SAC représente la <strong>voix de l'entreprise</strong> dans le contact direct avec le client. Plus qu'un secteur opérationnel, c'est un domaine stratégique essentiel pour :</p><ul><li>Préserver les valeurs et la réputation de la marque</li><li>Créer la confiance et renforcer les liens</li><li>Contribuer à la fidélisation des clients</li></ul>",
+            "q3": "❓ Quelles sont les responsabilités de notre équipe ?",
+            "a3": "<p><strong>✅ Réponse :</strong> Les principales responsabilités comprennent :</p><ul><li><strong>Service Multicanal :</strong> téléphone, e-mail, chat et moyens électroniques</li><li><strong>Service Réceptif :</strong> informations, réclamations, suggestions et éloges</li><li><strong>Services Actifs :</strong> campagnes, activation de cartes, mises à jour des données</li><li><strong>Gestion :</strong> organiser les données, élaborer des rapports, proposer des améliorations</li></ul><p><em>Note : Définir les lois de protection du consommateur N'EST PAS une responsabilité du SAC - le SAC suit les lois.</em></p>",
+            "q4": "❓ Pourquoi les délais de service sont-ils importants ?",
+            "a4": "<p><strong>✅ Réponse :</strong> Des délais bien définis garantissent l'organisation, la prévisibilité et l'efficacité. L'enregistrement correct de la catégorie de service est fondamental car le système calcule le délai en fonction de celle-ci.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Délais Standard</h4><ul><li><strong>Demandes :</strong> jusqu'à 3 jours ouvrables</li><li><strong>Informations :</strong> jusqu'à 2 jours ouvrables</li><li><strong>Réclamations :</strong> jusqu'à 2 jours ouvrables</li></ul></div></div>"
+        },
+        "m2": {
+            "q1": "❓ Pourquoi devons-nous savoir où chercher les informations ?",
+            "a1": "<p><strong>✅ Réponse :</strong> Savoir où trouver les informations démontre au client :</p><ul><li><strong>Sécurité</strong> - transmettre confiance</li><li><strong>Rapidité</strong> - résoudre rapidement</li><li><strong>Attention</strong> - montrer que nous nous soucions</li></ul>",
+            "q2": "❓ Où consulter les données des magasins ?",
+            "a2": "<p><strong>✅ Réponse :</strong> Sur l'<strong>Intranet</strong> de l'entreprise !</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>Le Chemin à Suivre</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Filiales → Données d'inscription et horaires</strong></p></div></div><p>Vous y trouverez : adresse des magasins, horaires d'ouverture et moyens de contact.</p>",
+            "q3": "❓ Où consulter les offres et promotions ?",
+            "a3": "<p><strong>✅ Réponse :</strong> Les offres peuvent être consultées sur :</p><ul><li><strong>Brochures</strong> - matériels promotionnels physiques et numériques</li><li><strong>Site officiel</strong> de l'entreprise</li><li><strong>WhatsApp des offres</strong> - canal direct avec le client</li></ul>",
+            "q4": "❓ Comment fonctionne le WhatsApp des offres ?",
+            "a4": "<p><strong>✅ Réponse :</strong> C'est simple et direct ! La séquence est :</p><ol><li><strong>Sélectionner le magasin</strong> d'intérêt</li><li><strong>Accéder à la communauté</strong> via le lien ou QR Code</li><li><strong>Recevoir des offres</strong> personnalisées sur le téléphone</li></ol>"
+        },
+        "m3": {
+            "q1": "❓ Qu'est-ce que le CDC et pourquoi le connaître ?",
+            "a1": "<p><strong>✅ Réponse :</strong> Le CDC (Loi nº 8.078/90) protège les consommateurs et garantit des relations de consommation justes. Le connaître est essentiel pour :</p><ul><li>Répondre avec sécurité</li><li>Éviter le travail supplémentaire</li><li>Transmettre de la crédibilité au client</li></ul>",
+            "q2": "❓ Quand le client peut-il échanger un produit sans défaut ?",
+            "a2": "<p><strong>✅ Réponse :</strong></p><ul><li><strong>Magasin physique :</strong> Le CDC N'oblige PAS l'échange - c'est une politique commerciale (courtoisie)</li><li><strong>Boutique en ligne :</strong> Le client a le Droit de Rétractation (jusqu'à 7 jours calendaires après réception)</li></ul>",
+            "q3": "❓ Quand il y a un défaut, quelle est la procédure ?",
+            "a3": "<p><strong>✅ Réponse :</strong> Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre via le service après-vente. S'il ne résout pas, le client peut opter pour :</p><ul><li>Échange du produit</li><li>Réduction proportionnelle du montant</li><li>Remboursement du montant payé</li></ul><p><em>Délai pour réclamer : 90 jours pour les produits durables.</em></p>",
+            "q4": "❓ Comment orienter les réclamations de produits ?",
+            "a4": "<p><strong>✅ Réponse :</strong></p><ul><li><strong>Alimentaires :</strong> Le client apporte le produit + ticket au magasin (évaluation de la direction)</li><li><strong>Non alimentaires :</strong> Produit + ticket au magasin (sauf Électro → Service Après-Vente)</li><li><strong>Achat erroné :</strong> Les non périssables peuvent être échangés si non ouverts ; les périssables ne sont pas échangés</li></ul>"
+        }
+    },
+    "tip_box": "💡 Utilisez ce résumé comme référence rapide pendant votre travail.",
+    "back_btn": "← Retour au Menu Extras"
+}

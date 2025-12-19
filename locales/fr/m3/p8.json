@@ -1,0 +1,45 @@
+{
+    "title": "📝 Résumé et Conclusion",
+    "lead": "Félicitations ! Vous êtes arrivé à la fin du cours 'Au Cœur du SAC'. 🎉",
+    "intro_summary": "Avant de terminer, voici un résumé des principales questions auxquelles nous avons répondu sur le CDC :",
+    "accordion": {
+        "a1": {
+            "title": "❓ Qu'est-ce que le CDC et pourquoi le connaître ?",
+            "text": "<strong>✅ Réponse :</strong> Le CDC (Loi nº 8.078/90) protège les consommateurs et garantit des relations de consommation justes. Le connaître est essentiel pour :",
+            "l1": "Répondre avec sécurité",
+            "l2": "Éviter le travail supplémentaire",
+            "l3": "Transmettre de la crédibilité au client"
+        },
+        "a2": {
+            "title": "❓ Quand le client peut-il échanger un produit sans défaut ?",
+            "text": "<strong>✅ Réponse :</strong>",
+            "l1": "<strong>Magasin physique :</strong> Le CDC N'oblige PAS l'échange - c'est une politique commerciale (courtoisie)",
+            "l2": "<strong>Boutique en ligne :</strong> Le client a le Droit de Rétractation (jusqu'à 7 jours calendaires après réception)"
+        },
+        "a3": {
+            "title": "❓ Quand il y a un défaut, quelle est la procédure ?",
+            "text": "<strong>✅ Réponse :</strong> Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre via le service après-vente. S'il ne résout pas, le client peut opter pour :",
+            "l1": "Échange du produit",
+            "l2": "Réduction proportionnelle du montant",
+            "l3": "Remboursement du montant payé",
+            "note": "<em>Délai pour réclamer : 90 jours pour les produits durables.</em>"
+        },
+        "a4": {
+            "title": "❓ Comment orienter les réclamations de produits ?",
+            "text": "<strong>✅ Réponse :</strong>",
+            "l1": "<strong>Alimentaires :</strong> Le client apporte le produit + ticket au magasin (évaluation de la direction)",
+            "l2": "<strong>Non alimentaires :</strong> Produit + ticket au magasin (sauf Électro → Service Après-Vente)",
+            "l3": "<strong>Achat erroné :</strong> Les non périssables peuvent être échangés si non ouverts ; les périssables ne sont pas échangés"
+        }
+    },
+    "quiz_final": {
+        "question": "Après tout ce parcours, vous accueillez un nouveau collègue dans l'équipe qui demande : 'Au final, qu'est-ce qui est le plus important ici ?'. Quelle réponse résume le mieux la mission du SAC que nous avons apprise ?",
+        "opt_a": "A) 'Le plus important est de servir rapidement pour atteindre l'objectif de temps, peu importe si c'est résolu ou non.'",
+        "opt_b": "B) 'L'important est de suivre la loi rigoureusement pour que l'entreprise ne soit pas poursuivie, le reste est détail.'",
+        "opt_c": "C) 'Notre mission est d'être le pont stratégique entre l'entreprise et le client, résolvant les problèmes avec efficacité, humanité et respect des lois.'",
+        "opt_d": "D) 'L'objectif principal est d'éviter au maximum que le client demande à parler à la direction.'",
+        "feedback": "<strong>Bonne Réponse !</strong> Vous avez capté l'essence du SAC ! 👏👏👏"
+    },
+    "success_title": "Merci de votre participation !",
+    "success_text": "Continuez toujours à avancer - chaque service est une opportunité de faire la différence."
+}

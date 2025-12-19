@@ -1,0 +1,45 @@
+{
+    "title": "📝 Resumo e Encerramento",
+    "lead": "Parabéns! Você chegou ao final do curso 'Por Dentro do SAC'. 🎉",
+    "intro_summary": "Antes de encerrar, veja um resumo das principais questões que respondemos sobre o CDC:",
+    "accordion": {
+        "a1": {
+            "title": "❓ O que é o CDC e por que conhecê-lo?",
+            "text": "<strong>✅ Resposta:</strong> O CDC (Lei nº 8.078/90) protege os consumidores e garante relações de consumo justas. Conhecê-lo é essencial para:",
+            "l1": "Responder com segurança",
+            "l2": "Evitar retrabalho",
+            "l3": "Transmitir credibilidade ao cliente"
+        },
+        "a2": {
+            "title": "❓ Quando o cliente pode trocar um produto sem defeito?",
+            "text": "<strong>✅ Resposta:</strong>",
+            "l1": "<strong>Loja física:</strong> O CDC NÃO obriga a troca - é uma política comercial (cortesia)",
+            "l2": "<strong>Loja online:</strong> O cliente tem o Direito de Arrependimento (até 7 dias corridos após recebimento)"
+        },
+        "a3": {
+            "title": "❓ Quando há defeito, qual o procedimento?",
+            "text": "<strong>✅ Resposta:</strong> O fornecedor tem até <strong>30 dias</strong> para solucionar via assistência técnica. Caso não resolva, o cliente pode optar por:",
+            "l1": "Troca do produto",
+            "l2": "Abatimento proporcional do valor",
+            "l3": "Devolução do valor pago",
+            "note": "<em>Prazo para reclamar: 90 dias para produtos duráveis.</em>"
+        },
+        "a4": {
+            "title": "❓ Como encaminhar reclamações de produtos?",
+            "text": "<strong>✅ Resposta:</strong>",
+            "l1": "<strong>Alimentícios:</strong> Cliente leva produto + cupom à loja (avaliação da gerência)",
+            "l2": "<strong>Não alimentícios:</strong> Produto + cupom à loja (exceto Eletro → Assistência Técnica)",
+            "l3": "<strong>Compra errada:</strong> Não perecíveis podem ser trocados se não violados; perecíveis não trocamos"
+        }
+    },
+    "quiz_final": {
+        "question": "Depois de toda essa jornada, você recebe um novo colega na equipe que pergunta: 'No final das contas, o que é mais importante aqui?'. Qual resposta resume melhor a missão do SAC que aprendemos?",
+        "opt_a": "A) 'O mais importante é atender rápido para bater a meta de tempo, não importa se resolveu ou não.'",
+        "opt_b": "B) 'O importante é seguir a lei rigorosamente para a empresa não ser processada, o resto é detalhe.'",
+        "opt_c": "C) 'Nossa missão é ser a ponte estratégica entre a empresa e o cliente, resolvendo problemas com eficiência, humanidade e respeito às leis.'",
+        "opt_d": "D) 'O foco principal é evitar ao máximo que o cliente peça para falar com a gerência.'",
+        "feedback": "<strong>Resposta Correta!</strong> Você captou a essência do SAC! 👏👏👏"
+    },
+    "success_title": "Obrigado por participar!",
+    "success_text": "Siga sempre em frente - cada atendimento é uma oportunidade de fazer a diferença."
+}

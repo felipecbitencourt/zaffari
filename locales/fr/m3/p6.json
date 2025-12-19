@@ -1,0 +1,18 @@
+{
+    "title": "Comment orienter les réclamations ?",
+    "intro": "Chaque type de produit nécessite une procédure de réclamation spécifique. Cliquez sur chaque catégorie pour voir les détails :",
+    "accordion": {
+        "food_title": "🍎 Produits Alimentaires",
+        "food_intro": "L'échange n'a lieu que lorsque le produit est <strong>impropre à la consommation</strong>.",
+        "food_l1": "Le client doit apporter le produit + ticket au magasin",
+        "food_l2": "Évaluation de la direction",
+        "food_l3": "Remplissage correct du <strong>Motif, Marque et Lot</strong> est essentiel",
+        "nonfood_title": "📦 Produits Non Alimentaires",
+        "nonfood_intro": "Doivent être enregistrées avec toutes les informations sur le défaut.",
+        "nonfood_box": "Le client apporte le produit + ticket au magasin (sauf Électro → Service Après-Vente).",
+        "wrong_title": "❌ Achat Erroné",
+        "wrong_l1": "<strong>Non périssables :</strong> l'article ne peut pas être ouvert",
+        "wrong_l2": "<strong>Périssables :</strong> nous n'échangeons pas (risque de température)",
+        "wrong_attention": "⚠️ Les périssables une fois retirés du magasin ne peuvent pas être reconditionnés pour des raisons de sécurité alimentaire."
+    }
+}

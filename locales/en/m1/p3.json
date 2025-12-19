@@ -1,0 +1,56 @@
+{
+    "title": "What are our responsibilities?",
+    "intro_list": "Among the main duties of Customer Service, the following stand out:",
+    "intro_p": "Customer Service acts as the voice of the company to the customer and the voice of the customer to the company, ensuring a constant flow of information and improvements.",
+    "img_alt": "Call center team working in modern environment",
+    "cards": {
+        "c1": {
+            "title": "Multichannel Service",
+            "text": "Offer excellent service through different channels: phone, email, chat and electronic means."
+        },
+        "c2": {
+            "title": "Inbound Service",
+            "text": "Provide information, receive complaints, suggestions and compliments, handle objections and offer solutions."
+        }
+    },
+    "active_title": "📢 Outbound Services",
+    "active_text": "Perform outbound services, especially in promotional campaigns and actions related to the Group's Cards:",
+    "timeline": {
+        "t1": {
+            "title": "1. Card activation",
+            "text": "Contact customers to activate newly issued cards."
+        },
+        "t2": {
+            "title": "2. Profile update",
+            "text": "Keep customer data always up to date."
+        },
+        "t3": {
+            "title": "3. Promotion communication",
+            "text": "Inform about exclusive offers and benefits."
+        },
+        "t4": {
+            "title": "4. Cancellation reversal",
+            "text": "Work to retain customers who wish to cancel services."
+        }
+    },
+    "accordion": {
+        "a1": {
+            "title": "📋 Management and Continuous Improvement",
+            "l1": "Organize and tabulate data, prepare reports and support team demands.",
+            "l2": "Act proactively in identifying improvements in scripts and service standards.",
+            "l3": "Contribute to the continuous evolution of the service provided."
+        },
+        "a2": {
+            "title": "🎓 Professional development",
+            "text": "Knowledge of responsibilities allows you to act with more confidence and assertiveness, contributing to your career evolution."
+        }
+    },
+    "quiz": {
+        "question": "You notice that several customers are calling with the same question about a new promotion. What is the best attitude aligned with Customer Service's continuous improvement responsibilities?",
+        "opt_a": "A) Continue serving each one individually without reporting the fact.",
+        "opt_b": "B) Complain to colleagues that customers can't read the terms.",
+        "opt_c": "C) Report the observed pattern to the supervisor so that the promotion communication can be adjusted.",
+        "opt_d": "D) Tell the customer to look for the information on the website.",
+        "feedback": "<strong>Correct Answer!</strong> Proactivity in identifying patterns helps improve the process for everyone."
+    }
+}

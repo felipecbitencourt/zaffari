@@ -1,0 +1,17 @@
+{
+    "title": "🏆 Quais foram minhas conquistas?",
+    "subtitle": "Você completou o <strong>Módulo 3: Como aplicar o CDC?</strong>",
+    "badges_title": "Medalhas Conquistadas",
+    "badges_subtitle": "Você conquistou todas as medalhas! A seção Fixação está totalmente desbloqueada!",
+    "badges": {
+        "resumo": "Resumo",
+        "quiz": "Questionário",
+        "flashcard": "Flashcard",
+        "roleplay": "Role Play",
+        "m3_desc": "Módulo 3",
+        "exclusive_desc": "Exclusivo"
+    },
+    "progress_label": "🎊 Fixação Desbloqueada!",
+    "progress_text": "3 de 3 módulos completos",
+    "footer_text": "🌟 Todas as medalhas conquistadas! Volte à página inicial para acessar o material de Fixação."
+}

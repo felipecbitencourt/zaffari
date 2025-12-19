@@ -1,0 +1,43 @@
+{
+    "title": "📝 Summary: Questions and Answers",
+    "lead": "Congratulations on completing the first module! See below the main questions we explored and their answers.",
+    "accordion": {
+        "a1": {
+            "title": "❓ What does the customer expect when contacting us?",
+            "text": "The customer expects more than just solving the problem. They seek:",
+            "l1": "To be heard with attention and empathy",
+            "l2": "To receive fast and efficient service",
+            "l3": "To feel that the company cares about them",
+            "l4": "To have clarity about the next steps",
+            "l5": "To leave satisfied, even when the answer is not ideal"
+        },
+        "a2": {
+            "title": "❓ What is the role of Customer Service beyond solving problems?",
+            "text": "Customer Service represents the <strong>company's voice</strong> in direct contact with the customer. More than an operational sector, it is an essential strategic area for:",
+            "l1": "Preserving brand values and reputation",
+            "l2": "Building trust and strengthening bonds",
+            "l3": "Contributing to customer loyalty"
+        },
+        "a3": {
+            "title": "❓ What are our team's responsibilities?",
+            "text": "The main responsibilities include:",
+            "l1": "<strong>Multichannel Service:</strong> phone, email, chat and electronic means",
+            "l2": "<strong>Inbound Service:</strong> information, complaints, suggestions and compliments",
+            "l3": "<strong>Outbound Services:</strong> campaigns, card activation, profile updates",
+            "l4": "<strong>Management:</strong> organize data, prepare reports, propose improvements",
+            "note": "Note: Defining consumer protection laws is NOT the responsibility of Customer Service - Customer Service follows the laws."
+        },
+        "a4": {
+            "title": "❓ Why do response times matter?",
+            "text": "Well-defined deadlines ensure organization, predictability and efficiency. Correct registration of the service category is essential because the system calculates the deadline based on it.",
+            "box_title": "Standard Deadlines",
+            "l1": "<strong>Requests:</strong> up to 3 business days",
+            "l2": "<strong>Information:</strong> up to 2 business days",
+            "l3": "<strong>Complaints:</strong> up to 2 business days"
+        }
+    },
+    "conclusion": {
+        "title": "Module 1 Conclusion",
+        "text": "Now you understand <strong>why Customer Service is strategic</strong> for the company. In the next module, we will discover <strong>where to find the information</strong> the customer needs!"
+    }
+}

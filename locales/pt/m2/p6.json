@@ -1,0 +1,38 @@
+{
+    "title": "📝 O que aprendemos no Módulo 2?",
+    "lead": "Excelente! Você concluiu o módulo sobre consulta de informações. Revise as principais questões abordadas.",
+    "accordion": {
+        "a1": {
+            "title": "❓ Por que precisamos saber onde buscar informações?",
+            "text": "Saber onde encontrar informações demonstra ao cliente:",
+            "l1": "<strong>Segurança</strong> - transmitir confiança",
+            "l2": "<strong>Agilidade</strong> - resolver rapidamente",
+            "l3": "<strong>Cuidado</strong> - mostrar que nos importamos"
+        },
+        "a2": {
+            "title": "❓ Onde consultar dados das lojas?",
+            "text": "Na <strong>Intranet</strong> da empresa!",
+            "box_title": "Passo a Passo",
+            "box_text": "Intranet → Filiais → Dados cadastrais e horários",
+            "footer": "Lá você encontra: endereço das lojas, horários de funcionamento e formas de contato."
+        },
+        "a3": {
+            "title": "❓ Onde consultar ofertas e promoções?",
+            "text": "As ofertas podem ser consultadas em:",
+            "l1": "<strong>Encartes</strong> - materiais promocionais físicos e digitais",
+            "l2": "<strong>Site oficial</strong> da empresa",
+            "l3": "<strong>WhatsApp de ofertas</strong> - canal direto com o cliente"
+        },
+        "a4": {
+            "title": "❓ Como funciona o WhatsApp de ofertas?",
+            "text": "Passo a passo para instruir o cliente:",
+            "l1": "<strong>Selecionar a loja</strong> de interesse",
+            "l2": "<strong>Acessar a comunidade</strong> pelo link ou QR Code",
+            "l3": "<strong>Receber ofertas</strong> personalizadas no celular"
+        }
+    },
+    "conclusion": {
+        "title": "Conclusão do Módulo 2",
+        "text": "Agora você sabe <strong>onde encontrar as informações</strong> que o cliente precisa. No próximo módulo, vamos aprender <strong>como aplicar o CDC (Código de Defesa do Consumidor)</strong> no atendimento!"
+    }
+}

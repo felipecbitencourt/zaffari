@@ -1,0 +1,17 @@
+{
+    "title": "Félicitations !",
+    "subtitle": "Vous avez terminé le <strong>Module 3 : Comment appliquer le Code de la Consommation ?</strong>",
+    "badges_title": "Médailles Obtenues",
+    "badges_subtitle": "Vous avez obtenu toutes les médailles ! La section Révision est entièrement débloquée !",
+    "badges": {
+        "resumo": "Résumé",
+        "quiz": "Questionnaire",
+        "flashcard": "Flashcard",
+        "roleplay": "Jeu de Rôle",
+        "m3_desc": "Module 3",
+        "exclusive_desc": "Exclusif"
+    },
+    "progress_label": "🎊 Révision Débloquée !",
+    "progress_text": "3 sur 3 modules terminés",
+    "footer_text": "🌟 Toutes les médailles obtenues ! Retournez à la page d'accueil pour accéder au matériel de Révision."
+}

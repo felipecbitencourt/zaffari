@@ -1,0 +1,276 @@
+{
+    "pages": [
+        {
+            "id": "intro-p1",
+            "file": "paginas/pt/intro/p1.html",
+            "translation": "intro.json",
+            "mountPoint": "intro",
+            "title": "Bem-vindo ao Curso",
+            "module": "intro"
+        },
+        {
+            "id": "m1-abertura",
+            "file": "paginas/pt/m1/abertura.html",
+            "translation": "m1/abertura.json",
+            "mountPoint": "m1.abertura",
+            "title": "📍 Por que o SAC é estratégico?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-p1",
+            "file": "paginas/pt/m1/p1.html",
+            "translation": "m1/p1.json",
+            "mountPoint": "m1.p1",
+            "title": "O que o cliente espera?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-p2",
+            "file": "paginas/pt/m1/p2.html",
+            "translation": "m1/p2.json",
+            "mountPoint": "m1.p2",
+            "title": "Qual o papel do SAC?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-p3",
+            "file": "paginas/pt/m1/p3.html",
+            "translation": "m1/p3.json",
+            "mountPoint": "m1.p3",
+            "title": "Quais são nossas responsabilidades?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-p4",
+            "file": "paginas/pt/m1/p4.html",
+            "translation": "m1/p4.json",
+            "mountPoint": "m1.p4",
+            "title": "Por que prazos são importantes?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-p5",
+            "file": "paginas/pt/m1/p5.html",
+            "translation": "m1/p6.json",
+            "mountPoint": "m1.p6",
+            "title": "📝 O que aprendemos no Módulo 1?",
+            "module": "m1"
+        },
+        {
+            "id": "m1-conquistas",
+            "file": "paginas/pt/m1/conquistas.html",
+            "translation": "m1/conquistas.json",
+            "mountPoint": "m1.conquistas",
+            "title": "🏆 Conquistas do Módulo 1",
+            "module": "m1"
+        },
+        {
+            "id": "m2-abertura",
+            "file": "paginas/pt/m2/abertura.html",
+            "translation": "m2/abertura.json",
+            "mountPoint": "m2.abertura",
+            "title": "📍 Onde encontrar informações?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p1",
+            "file": "paginas/pt/m2/p1.html",
+            "translation": "m2/p1.json",
+            "mountPoint": "m2.p1",
+            "title": "Por que precisamos saber buscar?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p2",
+            "file": "paginas/pt/m2/p2.html",
+            "translation": "m2/p2.json",
+            "mountPoint": "m2.p2",
+            "title": "Onde consultar dados das lojas?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p3",
+            "file": "paginas/pt/m2/p3.html",
+            "translation": "m2/p3.json",
+            "mountPoint": "m2.p3",
+            "title": "Onde consultar ofertas?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p4",
+            "file": "paginas/pt/m2/p4.html",
+            "translation": "m2/p4.json",
+            "mountPoint": "m2.p4",
+            "title": "Como encontrar no encarte?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p5",
+            "file": "paginas/pt/m2/p5.html",
+            "translation": "m2/p5.json",
+            "mountPoint": "m2.p5",
+            "title": "Por que consultar corretamente?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-p6",
+            "file": "paginas/pt/m2/p6.html",
+            "translation": "m2/p6.json",
+            "mountPoint": "m2.p6",
+            "title": "📝 O que aprendemos no Módulo 2?",
+            "module": "m2"
+        },
+        {
+            "id": "m2-conquistas",
+            "file": "paginas/pt/m2/conquistas.html",
+            "translation": "m2/conquistas.json",
+            "mountPoint": "m2.conquistas",
+            "title": "🏆 Conquistas do Módulo 2",
+            "module": "m2"
+        },
+        {
+            "id": "m3-abertura",
+            "file": "paginas/pt/m3/abertura.html",
+            "translation": "m3/abertura.json",
+            "mountPoint": "m3.abertura",
+            "title": "📍 Como aplicar o CDC?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p1",
+            "file": "paginas/pt/m3/p1.html",
+            "translation": "m3/p1.json",
+            "mountPoint": "m3.p1",
+            "title": "O que é o CDC?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p2",
+            "file": "paginas/pt/m3/p2.html",
+            "translation": "m3/p2.json",
+            "mountPoint": "m3.p2",
+            "title": "Qual a diferença: produto x serviço?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p3",
+            "file": "paginas/pt/m3/p3.html",
+            "translation": "m3/p3.json",
+            "mountPoint": "m3.p3",
+            "title": "Quando trocar sem defeito?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p4",
+            "file": "paginas/pt/m3/p4.html",
+            "translation": "m3/p4.json",
+            "mountPoint": "m3.p4",
+            "title": "Por que o CDC é importante?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p5",
+            "file": "paginas/pt/m3/p5.html",
+            "translation": "m3/p5.json",
+            "mountPoint": "m3.p5",
+            "title": "Quando há defeito, o que fazer?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p6",
+            "file": "paginas/pt/m3/p6.html",
+            "translation": "m3/p6.json",
+            "mountPoint": "m3.p6",
+            "title": "Como encaminhar reclamações?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p7",
+            "file": "paginas/pt/m3/p7.html",
+            "translation": "m3/p7.json",
+            "mountPoint": "m3.p7",
+            "title": "🏆 Você está pronto para o desafio?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-p8",
+            "file": "paginas/pt/m3/p8.html",
+            "translation": "m3/p8.json",
+            "mountPoint": "m3.p8",
+            "title": "📝 O que aprendemos no curso?",
+            "module": "m3"
+        },
+        {
+            "id": "m3-conquistas",
+            "file": "paginas/pt/m3/conquistas.html",
+            "translation": "m3/conquistas.json",
+            "mountPoint": "m3.conquistas",
+            "title": "🏆 Conquistas do Módulo 3",
+            "module": "m3"
+        },
+        {
+            "id": "extras-hub",
+            "file": "paginas/pt/extras/hub.html",
+            "translation": "extras/hub.json",
+            "mountPoint": "extras.hub",
+            "title": "🧠 Menu de Fixação",
+            "module": "extras"
+        },
+        {
+            "id": "extras-metricas",
+            "file": "paginas/pt/extras/metricas.html",
+            "translation": "extras/metricas.json",
+            "mountPoint": "extras.metricas",
+            "title": "📊 Meu Desempenho",
+            "module": "extras"
+        },
+        {
+            "id": "extras-resumo",
+            "file": "paginas/pt/extras/resumo.html",
+            "translation": "extras/resumo.json",
+            "mountPoint": "extras.resumo",
+            "title": "📖 Resumo do Curso",
+            "module": "extras"
+        },
+        {
+            "id": "extras-questionarios",
+            "file": "paginas/pt/extras/questionarios.html",
+            "translation": "extras/quiz.json",
+            "mountPoint": "extras.quiz",
+            "title": "📝 Questionários",
+            "module": "extras"
+        },
+        {
+            "id": "extras-flashcards",
+            "file": "paginas/pt/extras/flashcards.html",
+            "translation": "extras/flashcards.json",
+            "mountPoint": "extras.flashcards",
+            "title": "🃏 Flash Cards",
+            "module": "extras"
+        },
+        {
+            "id": "extras-arraste",
+            "file": "paginas/pt/extras/arraste.html",
+            "translation": "extras/arraste.json",
+            "mountPoint": "extras.arraste",
+            "title": "🎯 Arraste e Solte",
+            "module": "extras"
+        },
+        {
+            "id": "extras-ache-erro",
+            "file": "paginas/pt/extras/ache-erro.html",
+            "translation": "extras/ache-erro.json",
+            "mountPoint": "extras.ache-erro",
+            "title": "🔍 Ache o Erro",
+            "module": "extras"
+        },
+        {
+            "id": "extras-roleplay",
+            "file": "paginas/pt/extras/roleplay.html",
+            "translation": "extras/roleplay.json",
+            "mountPoint": "extras.roleplay",
+            "title": "🎭 Roleplay",
+            "module": "extras"
+        }
+    ]
+}

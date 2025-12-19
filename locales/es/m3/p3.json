@@ -1,0 +1,25 @@
+{
+    "title": "Cambios y Procedimientos",
+    "h3_physical": "Cambio de productos sin defecto – Tienda Física",
+    "p_physical_1": "El CDC <strong>no obliga</strong> al cambio cuando el producto está en perfecto estado y el cliente desea cambiarlo por preferencia (color, tamaño).",
+    "p_physical_2": "En estos casos, el cambio es una <strong>política comercial</strong> de la empresa, una cortesía, y no un derecho legal.",
+    "quiz1": {
+        "question": "Un cliente compró una cafetera roja en la tienda física ayer, pero hoy decidió que prefiere la negra. La cafetera no tiene defecto y no fue usada. ¿La tienda está obligada a cambiarla?",
+        "opt_a": "A) Sí, la ley garantiza el cambio por gusto hasta en 7 días.",
+        "opt_b": "B) No, para compras en tienda física, el cambio por gusto es una cortesía de la empresa, no una obligación legal.",
+        "opt_c": "C) Sí, si trae la factura es obligatorio.",
+        "opt_d": "D) Depende del humor del gerente.",
+        "feedback": "<strong>¡Correcto!</strong> En tienda física, 'cambio por gusto' es una gentileza para fidelizar, no una ley del CDC."
+    },
+    "h3_online": "Cambio de productos sin defecto – Tienda Online",
+    "p_online_1": "Para compras online, el CDC garantiza el <strong>Derecho de Arrepentimiento</strong>.",
+    "p_online_2": "El cliente puede desistir de la compra hasta <strong>7 días corridos</strong> después del recibimiento. Importante: ¡Esto no aplica para compras en tienda física!",
+    "quiz2": {
+        "question": "¿Y si esa misma cafetera hubiera sido comprada en el SITIO WEB? El cliente la recibió hoy y no le gustó el color. ¿Qué puede hacer?",
+        "opt_a": "A) Nada, la compró porque quiso.",
+        "opt_b": "B) Tiene el Derecho de Arrepentimiento: puede devolverla hasta 7 días corridos después de recibirla, sin necesidad de justificar, y recibir el valor de vuelta.",
+        "opt_c": "C) Puede cambiarla solo si paga el flete de devolución.",
+        "opt_d": "D) Solo puede cambiarla si tiene defecto.",
+        "feedback": "<strong>¡Correcto!</strong> En compras a distancia (sitio web, teléfono), el cliente no tuvo contacto con el producto, por eso la ley garantiza la devolución sin justificación (Arrepentimiento) en 7 días."
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "title": "Onde consultar dados das lojas?",
+    "lead": "Todas as informações essenciais estão disponíveis na <strong>Intranet</strong> da empresa.",
+    "intro_p": "Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.",
+    "highlight_title": "Passo a Passo",
+    "highlight_text": "Intranet → Filiais → Dados cadastrais e horários",
+    "slider_title": "📍 Como consultar na Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Passo 1: Acessar a Intranet",
+            "text": "Acesse a página interna da empresa (Intranet)."
+        },
+        "s2": {
+            "title": "Passo 2: Navegar até Filiais",
+            "text": "Clique na opção <strong>'Filiais'</strong>."
+        },
+        "s3": {
+            "title": "Passo 3: Dados Cadastrais",
+            "text": "Em seguida, clique em <strong>'Dados cadastrais e horários'</strong>."
+        },
+        "s4": {
+            "title": "Passo 4: Consultar e Informar",
+            "text": "Agora você pode consultar informações de todas as unidades do grupo, incluindo: Endereço, Horário de funcionamento e Formas de contato para orientar o cliente!"
+        }
+    },
+    "list_intro": "O que você consegue consultar:",
+    "list_items": {
+        "l1": "Endereço das lojas",
+        "l2": "Horários de funcionamento",
+        "l3": "Formas de contato"
+    },
+    "quiz1": {
+        "question": "Um cliente liga perguntando se a loja do Centro está aberta no feriado de amanhã. Você não sabe essa informação de cabeça. Qual o procedimento mais ágil e seguro?",
+        "opt_a": "A) Perguntar rapidamente no grupo de WhatsApp da equipe para ver se alguém sabe.",
+        "opt_b": "B) Consultar a Intranet em 'Filiais' > 'Dados cadastrais e horários' para ter a informação oficial.",
+        "opt_c": "C) Procurar no Google Maps, pois lá sempre está atualizado.",
+        "opt_d": "D) Informar que provavelmente estará fechada, para evitar que o cliente perca a viagem.",
+        "feedback": "<strong>Resposta Correta!</strong> A Intranet é a única fonte oficial e confiável para horários de filiais."
+    },
+    "importance_title": "Por que isso importa?",
+    "importance_text": "Dominar essa consulta garante <strong>agilidade</strong> no atendimento, respostas mais <strong>assertivas</strong>, <strong>padronização</strong> das informações e uma <strong>experiência mais positiva</strong> para o cliente.",
+    "quiz2": {
+        "question": "Dominar a consulta de informações na Intranet contribui para:",
+        "opt_a": "A) Aumentar o tempo de atendimento.",
+        "opt_b": "B) Reduzir a padronização das respostas.",
+        "opt_c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
+        "opt_d": "D) Tornar o atendimento mais informal.",
+        "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão."
+    }
+}

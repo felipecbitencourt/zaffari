@@ -1,0 +1,18 @@
+{
+    "title": "Tipos de Reclamos",
+    "intro": "Cada tipo de producto exige un procedimiento específico de reclamo. Haz clic en cada categoría para ver los detalles:",
+    "accordion": {
+        "food_title": "🍎 Productos Alimenticios",
+        "food_intro": "El cambio ocurre solo cuando el producto está <strong>impropio para consumo</strong>.",
+        "food_l1": "Cliente debe llevar producto + ticket a la tienda",
+        "food_l2": "Evaluación de la gerencia",
+        "food_l3": "Llenado correcto de <strong>Motivo, Marca y Lote</strong> es esencial",
+        "nonfood_title": "📦 Productos No Alimenticios",
+        "nonfood_intro": "Deben ser registrados con toda la información sobre el defecto.",
+        "nonfood_box": "Cliente lleva producto + ticket a la tienda (excepto Electro → Asistencia Técnica).",
+        "wrong_title": "❌ Compra Equivocada",
+        "wrong_l1": "<strong>No perecederos:</strong> el artículo no puede estar abierto",
+        "wrong_l2": "<strong>Perecederos:</strong> no cambiamos (riesgo de temperatura)",
+        "wrong_attention": "⚠️ Los perecederos una vez retirados de la tienda no pueden ser reacondicionados por cuestiones de seguridad alimentaria."
+    }
+}

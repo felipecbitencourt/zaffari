@@ -1,0 +1,24 @@
+{
+    "title": "Pourquoi enregistrer correctement ?",
+    "intro": "Un autre point essentiel dans le travail du SAC est le respect des délais de service. Des délais bien définis garantissent l'organisation, la prévisibilité et l'efficacité, en plus de démontrer du respect pour le client et de renforcer la confiance dans la marque.",
+    "standard_box": {
+        "title": "⏳ Délais Standard",
+        "l1": "<strong>Demandes :</strong> jusqu'à 3 jours ouvrables",
+        "l2": "<strong>Informations :</strong> jusqu'à 2 jours ouvrables",
+        "l3": "<strong>Réclamations :</strong> jusqu'à 2 jours ouvrables"
+    },
+    "special_box": {
+        "title": "⚠ Délais Spéciaux",
+        "l1": "<strong>Dommages :</strong> jusqu'à 5 jours ouvrables pour retour",
+        "l2": "<strong>Double paiement :</strong> jusqu'à 8 jours ouvrables"
+    },
+    "text_footer": "L'enregistrement correct de la catégorie de service est fondamental pour que le délai approprié soit respecté et que le client reçoive un retour dans les temps.",
+    "quiz": {
+        "question": "Un client vous informe qu'il a payé sa facture deux fois. Vous devez enregistrer le service pour qu'il soit remboursé. Pourquoi est-il crucial de sélectionner la catégorie 'Double paiement' au lieu d'une catégorie générique de 'Réclamation' ?",
+        "opt_a": "A) Parce que 'Double paiement' a un délai spécifique (jusqu'à 8 jours ouvrables) pour une analyse financière détaillée, évitant de fausses promesses de solution rapide.",
+        "opt_b": "B) Parce que 'Réclamation' est une catégorie qui ne doit être utilisée que pour un mauvais service en magasin.",
+        "opt_c": "C) Cela ne fait pas de différence pratique, car le délai de retour au client est toujours de 2 jours ouvrables pour tout cas.",
+        "opt_d": "D) Uniquement pour respecter une formalité bureaucratique, sans impact réel sur le traitement du cas.",
+        "feedback": "<strong>Bonne Réponse !</strong> La catégorie correcte définit le délai correct (8 jours), gérant les attentes du client."
+    }
+}

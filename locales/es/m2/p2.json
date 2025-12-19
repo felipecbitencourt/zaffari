@@ -1,0 +1,50 @@
+{
+    "title": "Información de las Tiendas",
+    "lead": "Toda la información esencial está disponible en la <strong>Intranet</strong> de la empresa.",
+    "intro_p": "Es tu principal herramienta de trabajo para consultas rápidas y precisas.",
+    "highlight_title": "El Camino de las Piedras",
+    "highlight_text": "Intranet → Sucursales → Datos de registro y horarios",
+    "slider_title": "📍 Cómo consultar en la Intranet:",
+    "slider_steps": {
+        "s1": {
+            "title": "Paso 1: Acceder a la Intranet",
+            "text": "Abre el navegador y accede al portal interno de la empresa. Inicia sesión con tus credenciales corporativas."
+        },
+        "s2": {
+            "title": "Paso 2: Navegar hasta Sucursales",
+            "text": "En el menú principal, localiza y haz clic en la opción <strong>'Sucursales'</strong> o <strong>'Tiendas'</strong>."
+        },
+        "s3": {
+            "title": "Paso 3: Datos de Registro",
+            "text": "Selecciona <strong>'Datos de registro y horarios'</strong> para acceder a la información completa de cada tienda."
+        },
+        "s4": {
+            "title": "Paso 4: Consultar e Informar",
+            "text": "¡Ahora puedes consultar dirección, teléfono y horarios de funcionamiento para orientar al cliente!"
+        }
+    },
+    "list_intro": "Allí es posible consultar:",
+    "list_items": {
+        "l1": "Dirección de las tiendas",
+        "l2": "Horarios de funcionamiento",
+        "l3": "Formas de contacto"
+    },
+    "quiz1": {
+        "question": "Un cliente llama preguntando el horario de funcionamiento de la tienda del Shopping Bourbon Ipiranga en un día feriado. No lo sabes de memoria. ¿Cuál es el procedimiento más ágil y seguro?",
+        "opt_a": "A) Pedir al cliente que espere, ir a la sala del supervisor y preguntar.",
+        "opt_b": "B) Consultar en Google, ya que la información allí siempre es correcta.",
+        "opt_c": "C) Acceder a la Intranet > Sucursales > Datos catastrales y horarios al instante, garantizando la información oficial.",
+        "opt_d": "D) Decir que probablemente es horario de domingo para no hacer esperar al cliente.",
+        "feedback": "<strong>¡Correcto!</strong> La Intranet es la única fuente de información actualizada y oficial para estos casos."
+    },
+    "importance_title": "¿Por qué esto importa?",
+    "importance_text": "Dominar esta consulta garantiza <strong>agilidad</strong> en la atención, respuestas más <strong>precisas</strong>, estandarización de la información y una experiencia más positiva para el cliente.",
+    "quiz2": {
+        "question": "Dominar la consulta de información en la Intranet contribuye a:",
+        "opt_a": "A) Aumentar el tiempo de atención.",
+        "opt_b": "B) Reducir la estandarización de las respuestas.",
+        "opt_c": "C) Garantizar agilidad, precisión y mejor experiencia para el cliente.",
+        "opt_d": "D) Hacer la atención más informal.",
+        "feedback": "<strong>¡Respuesta Correcta!</strong> Cliente feliz es cliente atendido con agilidad y precisión."
+    }
+}

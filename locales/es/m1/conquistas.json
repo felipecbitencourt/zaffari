@@ -1,0 +1,17 @@
+{
+    "title": "¡Felicitaciones!",
+    "subtitle": "Has completado el <strong>Módulo 1: ¿Por qué el SAC es estratégico?</strong>",
+    "badges_title": "Medallas Ganadas",
+    "badges_subtitle": "¡Estas medallas ayudan a desbloquear los materiales de Fijación!",
+    "badges": {
+        "resumo": "Resumen",
+        "quiz": "Cuestionario",
+        "flashcard": "Flashcard",
+        "drag_drop": "Arrarrrar y Soltar",
+        "m1_desc": "Módulo 1",
+        "exclusive_desc": "Exclusivo"
+    },
+    "progress_label": "Progreso para Fijación",
+    "progress_text": "1 de 3 módulos completados",
+    "footer_text": "¡Continúa al siguiente módulo y gana más medallas!"
+}

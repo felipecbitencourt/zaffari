@@ -1,0 +1,20 @@
+{
+    "title": "Quel est le rôle du SAC ?",
+    "text1": "Le <strong>Service Client</strong> est responsable de la gestion des canaux de relation avec les clients, y compris les services électroniques et téléphoniques.",
+    "text2": "Plus qu'un secteur opérationnel, le SAC est un <strong>domaine stratégique</strong>, essentiel pour préserver les valeurs, la réputation et la crédibilité des marques du Groupe.",
+    "card_text": "Un service humanisé, efficace et de haute qualité ne résout pas seulement les demandes : il crée la confiance, renforce les liens et contribue directement à la fidélisation des clients.",
+    "text3": "En plus du public externe, le SAC joue également un rôle fondamental dans le soutien aux employés de l'entreprise, clarifiant les doutes sur les processus, les systèmes et les normes de service. Cette action contribue à la standardisation, à l'organisation interne et à l'excellence du service fourni.",
+    "box_attention": {
+        "title": "Curiosité",
+        "text": "Des études sur l'expérience client indiquent qu'une seule interaction négative peut avoir plus d'impact sur la perception de la marque que plusieurs interactions positives. C'est pourquoi <strong>chaque contact compte</strong>."
+    },
+    "text4": "Le SAC va bien au-delà de répondre aux appels. Il représente la voix de l'entreprise dans le contact direct avec le client. Chaque service influence la façon dont le consommateur perçoit la marque et évalue son expérience.",
+    "quiz": {
+        "question": "Un client vous contacte frustré parce que son problème n'a toujours pas été résolu. Comment un opérateur SAC avec une vision stratégique devrait-il aborder ce service ?",
+        "opt_a": "A) Comme un inconvénient qui doit être terminé le plus rapidement possible.",
+        "opt_b": "B) Comme une opportunité de renverser une expérience négative et de renforcer la confiance dans la marque.",
+        "opt_c": "C) Comme une défaillance d'un autre secteur qui n'est pas de sa responsabilité.",
+        "opt_d": "D) En suivant simplement le script standard sans montrer d'empathie.",
+        "feedback": "<strong>Bonne Réponse !</strong> La vision stratégique transforme les crises en opportunités de fidélisation."
+    }
+}

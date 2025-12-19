@@ -1,0 +1,82 @@
+{
+    "title": "🎯 Drag and Drop",
+    "lead": "Match concepts and categories by dragging items to the correct places.",
+    "phase1": {
+        "title": "Phase 1: Types of Service",
+        "instruction": "Drag each type of service to its correct description",
+        "progress": "of 3 correct",
+        "items": {
+            "multicanal": "Multichannel Service",
+            "receptivo": "Receptive Service",
+            "ativo": "Active Service"
+        },
+        "zones": {
+            "multicanal": "Phone, email, chat and electronic means",
+            "receptivo": "Receive complaints, suggestions and compliments",
+            "ativo": "Card activation, promotions and reversal"
+        },
+        "drop_here": "Drop here"
+    },
+    "phase2": {
+        "title": "Phase 2: Service Deadlines",
+        "instruction": "Drag each type of request to the correct deadline",
+        "progress": "of 5 correct",
+        "items": {
+            "solicitacoes": "Requests",
+            "informacoes": "Information",
+            "reclamacoes": "Complaints",
+            "danos": "Damages",
+            "duplicidade": "Duplicate payment"
+        },
+        "zones": {
+            "2dias": "Up to 2 business days",
+            "3dias": "Up to 3 business days",
+            "5dias": "Up to 5 business days",
+            "8dias": "Up to 8 business days"
+        },
+        "drop_here": "Drop here",
+        "drop_here_2": "Drop here (2 items)"
+    },
+    "phase3": {
+        "title": "Phase 3: SAC Responsibilities",
+        "instruction": "Classify: what IS and what is NOT a SAC responsibility",
+        "progress": "of 8 correct",
+        "items": {
+            "atendimento": "Receptive and active service",
+            "relatorios": "Prepare reports",
+            "scripts": "Propose script improvements",
+            "suporte": "Support to employees",
+            "leis": "Define consumer protection laws",
+            "orcamento": "Approve company budget",
+            "contratar": "Hire employees",
+            "contratos": "Negotiate contracts with suppliers"
+        },
+        "zones": {
+            "yes": "✅ SAC does",
+            "no": "❌ SAC doesn't do"
+        },
+        "drop_here_4": "Drop here (4 items)"
+    },
+    "complete": {
+        "icon": "🎉",
+        "title": "Congratulations!",
+        "text": "You completed all 3 phases of Drag and Drop!",
+        "btn_restart": "🔄 Play Again",
+        "btn_back": "← Back to Menu"
+    },
+    "popup": {
+        "phase1": {
+            "title": "Phase 1 Complete!",
+            "message": "You mastered service types!"
+        },
+        "phase2": {
+            "title": "Phase 2 Complete!",
+            "message": "Excellent! Deadlines are no longer a secret!"
+        },
+        "phase3": {
+            "title": "All Phases Complete!",
+            "message": "You are a SAC expert!"
+        }
+    },
+    "btn_next": "Next Phase →"
+}

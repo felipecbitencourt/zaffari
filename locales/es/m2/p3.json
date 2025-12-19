@@ -1,0 +1,25 @@
+{
+    "title": "Ofertas y WhatsApp",
+    "intro": "El SAC también orienta a los clientes sobre ofertas y promociones. Utiliza los <strong>folletos</strong> y el <strong>sitio oficial</strong> de la empresa para obtener datos esenciales.",
+    "accordion": {
+        "a1": {
+            "title": "📰 Folletos y Sitio Oficial",
+            "text": "Consulta los folletos actualizados para informar sobre ofertas vigentes. El sitio oficial también tiene una sección de promociones constantemente actualizada.",
+            "l1": "<strong>Folletos:</strong> disponibles en la tienda y en la Intranet",
+            "l2": "<strong>Sitio:</strong> sección de ofertas y promociones"
+        },
+        "a2": {
+            "title": "📱 WhatsApp de Ofertas",
+            "text": "Una forma práctica de comunicación es el WhatsApp de ofertas. A través de él, el cliente recibe promociones directamente en el celular, de forma personalizada.",
+            "step": "<strong>Paso a paso:</strong> Seleccionar la tienda → Acceder a la comunidad por el link o QR Code → Recibir ofertas"
+        }
+    },
+    "quiz": {
+        "question": "La clienta Doña María, de 65 años, llama diciendo que le encanta recibir las ofertas, pero que ya no las recibe en WhatsApp. ¿Qué debes hacer?",
+        "opt_a": "A) Decir que es un problema de su celular.",
+        "opt_b": "B) Orientarla a guardar el número oficial de 'WhatsApp de Ofertas' en su agenda y enviar un 'Hola' para reactivar la recepción.",
+        "opt_c": "C) Anotar su número en una nota adhesiva y pasarlo a marketing después.",
+        "opt_d": "D) Explicar que el sistema cancela a quien no compra todas las semanas.",
+        "feedback": "<strong>¡Correcto!</strong> Problema común, solución proactiva: a menudo solo falta reactivar el contacto."
+    }
+}

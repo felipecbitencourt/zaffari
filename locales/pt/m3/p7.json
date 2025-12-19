@@ -1,0 +1,29 @@
+{
+    "title": "🏆 Você está pronto para o desafio?",
+    "intro": "A qualidade do atendimento depende de atenção, escuta ativa, empatia e registros completos e corretos.",
+    "practices_title": "🎯 Boas Práticas para um Atendimento de Qualidade",
+    "practices": {
+        "p1": {
+            "title": "Escuta Ativa",
+            "text": "Ouvir atentamente sem interromper"
+        },
+        "p2": {
+            "title": "Sondagem Completa",
+            "text": "Fazer perguntas para entender a situação"
+        },
+        "p3": {
+            "title": "Cordialidade e Empatia",
+            "text": "Ser gentil e compreensivo"
+        },
+        "p4": {
+            "title": "Registro Preciso",
+            "text": "Documentar todos os dados corretamente"
+        }
+    },
+    "box_title": "💭 Para Refletir",
+    "box_text": "<strong>Imagine que você é um supervisor analisando um caso de reclamação antiga. Você encontra um registro anterior que diz apenas 'Cliente reclamou'. Como isso afeta sua capacidade de resolver o problema hoje? Reflita sobre o impacto dos detalhes.</strong>",
+    "placeholder": "Sua resposta...",
+    "btn_submit": "📨 Enviar Reflexão",
+    "feedback": "<strong>✅ Reflexão registrada!</strong> Muito bom! Registros completos e detalhados são essenciais para um atendimento de qualidade. Continue aplicando esse pensamento no seu dia a dia.",
+    "btn_sent": "✔ Enviado"
+}

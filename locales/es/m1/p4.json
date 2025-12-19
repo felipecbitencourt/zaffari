@@ -1,0 +1,24 @@
+{
+    "title": "Importancia de los Plazos de Atención",
+    "intro": "Otro punto esencial en el trabajo del SAC es el cumplimiento de los plazos de atención. Plazos bien definidos garantizan organización, previsibilidad y eficiencia, además de demostrar respeto al cliente y fortalecer la confianza en la marca.",
+    "standard_box": {
+        "title": "⏳ Plazos Estándar",
+        "l1": "<strong>Solicitudes:</strong> hasta 3 días hábiles",
+        "l2": "<strong>Información:</strong> hasta 2 días hábiles",
+        "l3": "<strong>Quejas:</strong> hasta 2 días hábiles"
+    },
+    "special_box": {
+        "title": "⚠ Plazos Especiales",
+        "l1": "<strong>Daños:</strong> hasta 5 días hábiles para respuesta",
+        "l2": "<strong>Duplicidad de pago:</strong> hasta 8 días hábiles"
+    },
+    "text_footer": "El correcto registro de la categoría de atención es fundamental para que el plazo adecuado sea respetado y el cliente reciba una respuesta en el tiempo correcto.",
+    "quiz": {
+        "question": "Un cliente informa que pagó la factura dos veces. Debe registrar la atención para que se le reembolse. ¿Por qué es crucial seleccionar la categoría 'Duplicidad de pago' en lugar de una categoría genérica de 'Reclamación'?",
+        "opt_a": "A) Porque 'Duplicidad' tiene un plazo específico (hasta 8 días hábiles) para un análisis financiero detallado, evitando falsas promesas.",
+        "opt_b": "B) Porque 'Reclamación' es una categoría que solo debe usarse para mal servicio en la tienda física.",
+        "opt_c": "C) No hay diferencia práctica, el plazo es siempre el mismo.",
+        "opt_d": "D) Solo para cumplir con una formalidad burocrática.",
+        "feedback": "<strong>¡Correcto!</strong> Categorías específicas tienen flujos y plazos específicos (SLA). Usar la categoría incorrecta puede generar atrasos y frustración."
+    }
+}

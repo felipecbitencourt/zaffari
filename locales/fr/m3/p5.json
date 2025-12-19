@@ -1,0 +1,16 @@
+{
+    "title": "Quand il y a un défaut, que faire ?",
+    "intro": "Le fournisseur a jusqu'à <strong>30 jours</strong> pour résoudre le défaut via le service après-vente autorisé.",
+    "accordion": {
+        "options_title": "🔄 Options du client si pas de solution en 30 jours",
+        "l1": "<strong>Échange du produit</strong> par un autre identique ou similaire",
+        "l2": "<strong>Réduction proportionnelle</strong> du montant payé",
+        "l3": "<strong>Remboursement intégral</strong> du montant payé"
+    },
+    "attention_text": "<strong>Délai pour réclamer :</strong> 90 jours pour les produits durables.",
+    "h3_assist": "Service Après-Vente 🔧",
+    "accordion_electro": {
+        "title": "📦 Procédure pour les produits Électro",
+        "text": "Les produits <strong>Électro</strong> doivent être envoyés au service après-vente de la marque. Si après 30 jours il n'y a pas de solution, l'entreprise pourra effectuer l'échange via un ordre de service."
+    }
+}

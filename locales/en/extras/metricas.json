@@ -1,0 +1,25 @@
+{
+    "title": "📊 My Performance",
+    "disclaimer": "⚠️ These metrics are based on your local progress. Data is saved only in this browser.",
+    "time": {
+        "title": "Study Time",
+        "desc": "Total time spent on the course"
+    },
+    "progress": {
+        "title": "Overall Progress",
+        "modules": "Modules:",
+        "modules_count": "/3 completed",
+        "pages": "Pages:",
+        "pages_count": "viewed"
+    },
+    "quiz": {
+        "section_title": "Quiz Performance",
+        "answered": "Answered",
+        "correct": "Correct",
+        "average": "Average Score",
+        "msg_good": "Congratulations! You're doing great.",
+        "msg_improve": "Keep reviewing the content to improve your average.",
+        "msg_practice": "Keep practicing to improve your results!"
+    },
+    "back_btn": "← Back to Extras Menu"
+}

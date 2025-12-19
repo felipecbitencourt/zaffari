@@ -1,0 +1,304 @@
+<!-- Página Extras - Métricas de Aprendizado -->
+<div class="content-header">
+    <h1 data-i18n="extras.metrics.title"></h1>
+</div>
+
+<div class="content-body">
+    <!-- Aviso Importante -->
+    <div class="box-attention" style="margin-bottom: 25px;">
+        <p data-i18n="extras.metrics.disclaimer"></p>
+    </div>
+
+    <!-- Visão Geral -->
+    <div class="metrics-grid">
+        <!-- Tempo de Estudo -->
+        <div class="metric-card">
+            <div class="metric-icon">⏱️</div>
+            <h3 data-i18n="extras.metrics.time.title"></h3>
+            <div class="metric-value" id="metric-time">00:00:00</div>
+            <p class="metric-desc" data-i18n="extras.metrics.time.desc"></p>
+        </div>
+
+        <!-- Progresso Geral -->
+        <div class="metric-card">
+            <div class="metric-icon">🏆</div>
+            <h3 data-i18n="extras.metrics.progress.title"></h3>
+            <div class="metric-value" id="metric-progress">0%</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="metric-progress-bar" style="width: 0%;"></div>
+            </div>
+            <p class="metric-desc" style="font-size: 0.85em; margin-top: 5px;">
+                <span data-i18n="extras.metricas.progress.modules"></span> <span id="metric-modules-count">0</span><span
+                    data-i18n="extras.metricas.progress.modules_count"></span><br>
+                <span data-i18n="extras.metricas.progress.pages"></span> <span id="metric-pages-count">0</span>/<span
+                    id="metric-pages-total">0</span> <span data-i18n="extras.metricas.progress.pages_count"></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Estatísticas dos Questionários -->
+    <h3 class="section-title" style="margin-top: 30px; margin-bottom: 20px;"
+        data-i18n="extras.metricas.quiz.section_title"></h3>
+
+    <div class="quiz-stats-container">
+        <div class="metric-card quiz-card">
+            <div class="quiz-stat-item">
+                <span class="quiz-stat-label" data-i18n="extras.metricas.quiz.answered"></span>
+                <span class="quiz-stat-value" id="quiz-count">0</span>
+            </div>
+            <div class="quiz-stat-divider"></div>
+            <div class="quiz-stat-item">
+                <span class="quiz-stat-label" data-i18n="extras.metricas.quiz.correct"></span>
+                <span class="quiz-stat-value" id="quiz-correct">0</span>
+            </div>
+            <div class="quiz-stat-divider"></div>
+            <div class="quiz-stat-item">
+                <span class="quiz-stat-label" data-i18n="extras.metricas.quiz.average"></span>
+                <span class="quiz-stat-value highlight" id="quiz-average">0%</span>
+            </div>
+        </div>
+        <p class="quiz-footer-msg" id="quiz-msg" data-i18n="extras.metricas.quiz.msg_practice"></p>
+    </div>
+
+    <!-- Botão Voltar -->
+    <div class="extras-back-container" style="margin-top: 40px; text-align: center;">
+        <button class="btn-extras-back" onclick="navigateToPage('extras-hub')" data-i18n="extras.back_btn"></button>
+    </div>
+</div>
+
+<script>
+    (function () {
+        // 1. Tempo Total - Usar dados do Analytics (persistidos em localStorage) + tempo real
+
+        function getStoredTime() {
+            let storedSeconds = 0;
+            // Tentar obter do objeto Analytics global
+            if (typeof Analytics !== 'undefined' && Analytics.data && Analytics.data.pageTime) {
+                storedSeconds = Object.values(Analytics.data.pageTime).reduce((a, b) => a + b, 0);
+            } else {
+                // Fallback: tentar carregar diretamente do localStorage
+                try {
+                    const analyticsData = JSON.parse(localStorage.getItem('curso_analytics') || '{}');
+                    if (analyticsData.pageTime) {
+                        storedSeconds = Object.values(analyticsData.pageTime).reduce((a, b) => a + b, 0);
+                    }
+                } catch (e) {
+                    console.warn('Não foi possível carregar dados de tempo');
+                }
+            }
+            return storedSeconds;
+        }
+
+        function formatTime(seconds) {
+            const h = Math.floor(seconds / 3600).toString().padStart(2, '0');
+            const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+            const s = (seconds % 60).toString().padStart(2, '0');
+            return `${h}:${m}:${s}`;
+        }
+
+        // Tempo base armazenado + contador em tempo real
+        const baseTime = getStoredTime();
+        const pageEnterTime = Date.now();
+
+        function updateTime() {
+            const elapsedOnThisPage = Math.floor((Date.now() - pageEnterTime) / 1000);
+            const totalSeconds = baseTime + elapsedOnThisPage;
+            document.getElementById('metric-time').textContent = formatTime(totalSeconds);
+        }
+
+        // Atualizar imediatamente e depois a cada segundo
+        updateTime();
+        setInterval(updateTime, 1000);
+
+
+        // 2. Progresso Geral (Refinado: Páginas + Módulos)
+        let totalPages = 0;
+        let visitedPages = 0;
+        let percent = 0;
+
+        // Tentar acessar objeto App global para contagem precisa
+        if (typeof App !== 'undefined' && App.flatPages) {
+            // Filtrar apenas páginas de conteúdo (ignorar extras para contagem de progresso geral do curso)
+            const contentPages = App.flatPages.filter(p => p.moduleId !== 'extras');
+            totalPages = contentPages.length;
+
+            // App.maxIndexReached é o índice global base 0.
+            // Precisamos saber quantas dessas paginas de conteudo estão dentro do range alcançado.
+            // Simplificação: Count content pages where index <= maxIndexReached
+            visitedPages = contentPages.filter(p => {
+                const globalIndex = App.flatPages.indexOf(p);
+                return globalIndex <= App.maxIndexReached;
+            }).length;
+
+            percent = totalPages > 0 ? Math.round((visitedPages / totalPages) * 100) : 0;
+        } else {
+            // Fallback se App não acessível
+            percent = 0;
+        }
+
+        // Módulos Completos (Badges)
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+        let modulesCompleted = 0;
+        if (badges.m1 && badges.m1.length > 0) modulesCompleted++;
+        if (badges.m2 && badges.m2.length > 0) modulesCompleted++;
+        if (badges.m3 && badges.m3.length > 0) modulesCompleted++;
+
+        document.getElementById('metric-progress').textContent = percent + '%';
+        document.getElementById('metric-progress-bar').style.width = percent + '%';
+
+        document.getElementById('metric-pages-count').textContent = visitedPages;
+        document.getElementById('metric-pages-total').textContent = totalPages;
+        document.getElementById('metric-modules-count').textContent = modulesCompleted;
+
+
+        // 3. Estatísticas de Quiz (Novo Layout)
+        const quizProgress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
+        const quizKeys = Object.keys(quizProgress);
+        const answeredCount = quizKeys.length;
+
+        let correctCount = 0;
+        let average = 0;
+
+        if (answeredCount > 0) {
+            correctCount = quizKeys.filter(k => quizProgress[k] === true).length;
+            average = Math.round((correctCount / answeredCount) * 100);
+
+            document.getElementById('quiz-msg').textContent = average >= 70
+                ? "Parabéns! Você está com um ótimo desempenho."
+                : "Continue revisando o conteúdo para aumentar sua média.";
+
+            if (average >= 70) document.getElementById('quiz-average').style.color = 'var(--success-color)';
+            else if (average < 50) document.getElementById('quiz-average').style.color = '#ff9800';
+        }
+
+        document.getElementById('quiz-count').textContent = answeredCount;
+        document.getElementById('quiz-correct').textContent = correctCount;
+        document.getElementById('quiz-average').textContent = average + '%';
+
+    })();
+</script>
+
+<style>
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .metric-card {
+        background: var(--bg-card);
+        padding: 20px;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        border: 1px solid var(--border-color);
+        transition: transform 0.3s ease;
+    }
+
+    .metric-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .metric-icon {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .metric-card h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.1em;
+        color: var(--text-secondary);
+    }
+
+    .metric-value {
+        font-size: 2em;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 5px;
+    }
+
+    .metric-desc {
+        font-size: 0.9em;
+        color: var(--text-tertiary);
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .progress-bar-container {
+        width: 100%;
+        height: 8px;
+        background: #eee;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .progress-bar-fill {
+        height: 100%;
+        background: var(--success-color);
+        border-radius: 4px;
+        transition: width 1s ease;
+    }
+
+    /* Quiz Stats Specifics */
+    .quiz-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .quiz-stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-stat-label {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-bottom: 5px;
+    }
+
+    .quiz-stat-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-primary);
+    }
+
+    .quiz-stat-value.highlight {
+        color: var(--primary-color);
+        font-size: 2.2rem;
+    }
+
+    .quiz-stat-divider {
+        width: 1px;
+        height: 40px;
+        background-color: var(--border-color);
+    }
+
+    .quiz-footer-msg {
+        text-align: center;
+        margin-top: 15px;
+        font-style: italic;
+        color: var(--text-secondary);
+    }
+
+    @media (max-width: 600px) {
+        .metrics-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .quiz-card {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .quiz-stat-divider {
+            width: 80%;
+            height: 1px;
+        }
+    }
+</style>

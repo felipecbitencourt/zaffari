@@ -1,0 +1,128 @@
+{
+    "title": "📝 Questionnaires",
+    "lead": "Testez vos connaissances avec tous les questionnaires du cours réunis en un seul endroit.",
+    "lock_msg": "🔒 Complétez le module pour débloquer",
+    "unlock_msg": "✓ Disponible",
+    "modules": {
+        "m1": {
+            "title": "Module 1 : Rôle Stratégique du SAC",
+            "count": "3 questions",
+            "overlay": "Complétez le Module 1 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1 :</strong> Quelle alternative représente le mieux le rôle stratégique du SAC ?",
+                    "options": {
+                        "a": "A) Répondre aux appels et enregistrer les réclamations.",
+                        "b": "B) Résoudre des problèmes ponctuels sans impact sur l'image de l'entreprise.",
+                        "c": "C) Représenter la voix de l'entreprise dans le contact direct avec le client et renforcer la réputation de la marque.",
+                        "d": "D) Agir uniquement lorsque d'autres secteurs ne peuvent pas résoudre les demandes."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Le SAC est la voix de l'entreprise et renforce la réputation de la marque."
+                },
+                "q2": {
+                    "text": "<strong>Question 2 :</strong> Laquelle des activités suivantes <strong>ne fait pas</strong> partie des responsabilités du SAC ?",
+                    "options": {
+                        "a": "A) Service réceptif et actif.",
+                        "b": "B) Organisation des données et élaboration de rapports.",
+                        "c": "C) Définition des lois de protection du consommateur.",
+                        "d": "D) Proposition d'améliorations des scripts et normes de service."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Le SAC suit les lois, mais c'est le gouvernement (Législatif) qui les définit."
+                },
+                "q3": {
+                    "text": "<strong>Question 3 (Vrai ou Faux) :</strong> L'enregistrement correct de la catégorie de service influence directement le délai de retour au client.",
+                    "options": {
+                        "a": "A) Vrai",
+                        "b": "B) Faux"
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Le système calcule le délai en fonction de la catégorie enregistrée."
+                }
+            }
+        },
+        "m2": {
+            "title": "Module 2 : Où trouver les informations ?",
+            "count": "3 questions",
+            "overlay": "Complétez le Module 2 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1 :</strong> Pour consulter l'adresse, les horaires d'ouverture et les moyens de contact des magasins, l'agent doit accéder à :",
+                    "options": {
+                        "a": "A) Le site de l'entreprise.",
+                        "b": "B) L'Intranet → Filiales → Données d'inscription et horaires.",
+                        "c": "C) Google Maps.",
+                        "d": "D) Un groupe interne de messages."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> L'Intranet est la source officielle et sûre."
+                },
+                "q2": {
+                    "text": "<strong>Question 2 :</strong> Maîtriser la consultation d'informations sur l'Intranet contribue à :",
+                    "options": {
+                        "a": "A) Augmenter le temps de service.",
+                        "b": "B) Réduire la standardisation des réponses.",
+                        "c": "C) Garantir rapidité, précision et meilleure expérience pour le client.",
+                        "d": "D) Rendre le service plus informel."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Client satisfait est client servi avec rapidité et précision."
+                },
+                "q3": {
+                    "text": "<strong>Question 3 :</strong> Quelle est la séquence correcte pour que le client commence à recevoir des offres via WhatsApp ?",
+                    "options": {
+                        "a": "A) Accéder au site → choisir des produits → enregistrer le téléphone.",
+                        "b": "B) Sélectionner le magasin → accéder à la communauté via le lien ou QR Code → recevoir les offres.",
+                        "c": "C) Contacter le SAC → demander l'inscription → attendre la confirmation.",
+                        "d": "D) Télécharger une application exclusive → créer un login → accepter les conditions."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Simple et direct : Magasin -> QR Code/Lien -> Offres."
+                }
+            }
+        },
+        "m3": {
+            "title": "Module 3 : CDC et Législation",
+            "count": "4 questions",
+            "overlay": "Complétez le Module 3 pour débloquer ces questionnaires",
+            "questions": {
+                "q1": {
+                    "text": "<strong>Question 1 :</strong> Pourquoi la connaissance du Code de la Consommation est-elle essentielle pour ceux qui travaillent au SAC ?",
+                    "options": {
+                        "a": "A) Uniquement pour respecter les exigences légales.",
+                        "b": "B) Pour répondre avec sécurité, éviter le travail supplémentaire et transmettre de la crédibilité au client.",
+                        "c": "C) Pour remplacer les politiques internes de l'entreprise.",
+                        "d": "D) Uniquement pour traiter les réclamations formelles."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> La connaissance génère sécurité et crédibilité."
+                },
+                "q2": {
+                    "text": "<strong>Question 2 (Vrai ou Faux) :</strong> L'échange de produits sans défaut en magasin physique est un droit garanti par le Code de la Consommation.",
+                    "options": {
+                        "a": "A) Vrai",
+                        "b": "B) Faux"
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> C'est une politique commerciale (courtoisie), pas une loi."
+                },
+                "q3": {
+                    "text": "<strong>Question 3 :</strong> Le droit de rétractation permet au client de :",
+                    "options": {
+                        "a": "A) Échanger tout produit acheté en magasin physique dans les 7 jours.",
+                        "b": "B) Annuler un achat en ligne dans les 7 jours calendaires après réception.",
+                        "c": "C) Demander un remboursement uniquement pour les produits défectueux.",
+                        "d": "D) Exiger un échange immédiat sans analyse."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Exclusif aux achats en dehors de l'établissement commercial (en ligne/téléphone)."
+                },
+                "q4": {
+                    "text": "<strong>Question 4 (Synthèse Finale) :</strong> Après avoir terminé le cours, quelle alternative résume le mieux le rôle du SAC ?",
+                    "options": {
+                        "a": "A) Résoudre des problèmes ponctuels de clients.",
+                        "b": "B) Répondre aux appels et enregistrer des informations.",
+                        "c": "C) Agir de manière stratégique, humanisée et alignée sur la législation, renforçant l'expérience client et la réputation de la marque.",
+                        "d": "D) Transférer les demandes à d'autres secteurs."
+                    },
+                    "feedback": "<strong>Bonne Réponse !</strong> Vous avez capté l'essence du SAC ! 👏👏👏"
+                }
+            }
+        }
+    },
+    "tip_box": "💡 Refaites les questionnaires autant de fois que vous le souhaitez pour fixer les connaissances !",
+    "feedback_incorrect": "<strong>Réponse Incorrecte !</strong> Voir l'alternative correcte mise en évidence en vert.",
+    "back_btn": "← Retour au Menu Extras"
+}

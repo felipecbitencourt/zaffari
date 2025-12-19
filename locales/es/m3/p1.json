@@ -1,0 +1,45 @@
+{
+    "title": "Código de Defensa del Consumidor (CDC)",
+    "intro_p1": "El <strong>⚖️ Código de Defensa del Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Ley nº 8.078, de 11 de septiembre de 1990'>Ley nº 8.078/90</span>, fue creado para proteger a los consumidores y garantizar relaciones de consumo justas y equilibradas.",
+    "intro_p2": "Establece derechos, deberes, plazos, estándares de conducta y penalidades para proveedores y prestadores de servicios.",
+    "sabia_title": "¿Sabías que...?",
+    "sabia_text": "¡El CDC brasileño es considerado uno de los más completos del mundo!",
+    "btn_saiba_mais": "Saber más",
+    "modal": {
+        "title": "📚 Curiosidades sobre el CDC",
+        "text": "El Código de Defensa del Consumidor brasileño fue promulgado en <strong>1990</strong> y sirve de modelo para legislaciones de otros países.",
+        "l1": "Es considerado uno de los más avanzados del mundo",
+        "l2": "Protege al consumidor en todas las fases de la relación de consumo",
+        "l3": "Prevé inversión de la carga de la prueba a favor del consumidor",
+        "l4": "Establece responsabilidad objetiva del proveedor"
+    },
+    "importance_title": "¿Por qué es importante para el SAC?",
+    "cards": {
+        "c1": {
+            "title": "Seguridad",
+            "text": "Seguridad en la orientación al cliente, sabiendo exactamente lo que la ley permite o no."
+        },
+        "c2": {
+            "title": "Conformidad",
+            "text": "Respuestas correctas y alineadas a la ley, evitando problemas jurídicos para la empresa."
+        },
+        "c3": {
+            "title": "Eficiencia",
+            "text": "Reducción de retrabajo al resolver cuestiones correctamente en el primer intento."
+        },
+        "c4": {
+            "title": "Credibilidad",
+            "text": "Más profesionalismo, confianza y credibilidad en la atención."
+        }
+    },
+    "attention_title": "Atención",
+    "attention_text": "Conocer el CDC no significa memorizar todos los artículos, sino entender los <strong>principios básicos</strong> que guían las relaciones de consumo.",
+    "quiz": {
+        "question": "Un cliente se altera y dice que '¡según el Código de Protección al Consumidor siempre tengo la razón!'. ¿Cómo interpretas esto?",
+        "opt_a": "A) Tiene razón, el cliente siempre tiene la razón.",
+        "opt_b": "B) El CDC existe para equilibrar la relación, garantizando derechos pero también deberes para ambas partes. El objetivo es la armonía, no la ventaja indebida.",
+        "opt_c": "C) El CDC solo protege a la empresa contra demandas.",
+        "opt_d": "D) Se debe ignorar el CDC y seguir solo las reglas internas de la empresa.",
+        "feedback": "<strong>¡Correcto!</strong> El CDC busca el equilibrio (armonía de las relaciones de consumo), no privilegiar ciegamente una parte."
+    }
+}

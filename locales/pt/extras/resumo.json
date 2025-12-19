@@ -1,0 +1,68 @@
+{
+    "title": "📖 Resumo do Curso",
+    "lead": "Revise os principais conceitos abordados em cada módulo do treinamento.",
+    "modules": {
+        "m1": {
+            "title": "Módulo 1: Papel Estratégico do SAC",
+            "lock": "🔒 Conclua o módulo para desbloquear",
+            "unlock": "✓ Disponível",
+            "overlay": "Complete o Módulo 1 para desbloquear este resumo"
+        },
+        "m2": {
+            "title": "Módulo 2: Onde encontrar informações?",
+            "lock": "🔒 Conclua o módulo para desbloquear",
+            "unlock": "✓ Disponível",
+            "overlay": "Complete o Módulo 2 para desbloquear este resumo"
+        },
+        "m3": {
+            "title": "Módulo 3: CDC e Legislação",
+            "lock": "🔒 Conclua o módulo para desbloquear",
+            "unlock": "✓ Disponível",
+            "overlay": "Complete o Módulo 3 para desbloquear este resumo"
+        }
+    },
+    "content": {
+        "m1": {
+            "q1": "❓ O que o cliente espera ao nos contatar?",
+            "a1": "<p><strong>✅ Resposta:</strong> O cliente espera mais do que a solução do problema. Ele busca:</p><ul><li>Ser ouvido com atenção e empatia</li><li>Receber um atendimento ágil e eficiente</li><li>Sentir que a empresa se importa com ele</li><li>Ter clareza sobre os próximos passos</li><li>Sair satisfeito, mesmo quando a resposta não é a ideal</li></ul>",
+            "q2": "❓ Qual o papel do SAC além de resolver problemas?",
+            "a2": "<p><strong>✅ Resposta:</strong> O SAC representa a <strong>voz da empresa</strong> no contato direto com o cliente. Mais do que um setor operacional, é uma área estratégica essencial para:</p><ul><li>Preservar valores e reputação da marca</li><li>Construir confiança e fortalecer vínculos</li><li>Contribuir para a fidelização dos clientes</li></ul>",
+            "q3": "❓ Quais são as responsabilidades do nosso time?",
+            "a3": "<p><strong>✅ Resposta:</strong> As principais responsabilidades incluem:</p><ul><li><strong>Atendimento Multicanal:</strong> telefone, e-mail, chat e meios eletrônicos</li><li><strong>Atendimento Receptivo:</strong> informações, reclamações, sugestões e elogios</li><li><strong>Atendimentos Ativos:</strong> campanhas, ativação de cartões, atualizações cadastrais</li><li><strong>Gestão:</strong> organizar dados, elaborar relatórios, propor melhorias</li></ul><p><em>Nota: Definir leis de proteção ao consumidor NÃO é responsabilidade do SAC - o SAC segue as leis.</em></p>",
+            "q4": "❓ Por que os prazos de atendimento importam?",
+            "a4": "<p><strong>✅ Resposta:</strong> Prazos bem definidos garantem organização, previsibilidade e eficiência. O correto registro da categoria de atendimento é fundamental porque o sistema calcula o prazo baseado nela.</p><div class=\"highlight-box dica\"><span class=\"icon\">⏳</span><div class=\"highlight-box-content\"><h4>Prazos Padrão</h4><ul><li><strong>Solicitações:</strong> até 3 dias úteis</li><li><strong>Informações:</strong> até 2 dias úteis</li><li><strong>Reclamações:</strong> até 2 dias úteis</li></ul></div></div>",
+            "q5": "❓ O que são atendimentos ativos?",
+            "a5": "<p><strong>✅ Resposta:</strong> São contatos que o SAC inicia proativamente com os clientes, especialmente relacionados aos Cartões do Grupo:</p><ul><li><strong>Ativação de cartões:</strong> contatar clientes para ativar novos cartões</li><li><strong>Atualização cadastral:</strong> manter dados dos clientes atualizados</li><li><strong>Comunicação de promoções:</strong> informar ofertas e benefícios</li><li><strong>Reversão de cancelamentos:</strong> trabalhar para reter clientes</li></ul><p><em>Nota: Diferente do atendimento receptivo, onde o cliente inicia o contato.</em></p>",
+            "q6": "❓ Como contribuir para a melhoria contínua do SAC?",
+            "a6": "<p><strong>✅ Resposta:</strong> Além de atender bem, o time do SAC contribui para a evolução do serviço:</p><ul><li><strong>Identificar padrões:</strong> perceber quando vários clientes têm a mesma dúvida</li><li><strong>Sinalizar problemas:</strong> comunicar ao supervisor para ajustar processos</li><li><strong>Propor melhorias:</strong> sugerir ajustes em scripts e padrões de atendimento</li><li><strong>Elaborar relatórios:</strong> organizar dados que ajudam a empresa a melhorar</li></ul>"
+        },
+        "m2": {
+            "q1": "❓ Por que precisamos saber onde buscar informações?",
+            "a1": "<p><strong>✅ Resposta:</strong> Saber onde encontrar informações demonstra ao cliente:</p><ul><li><strong>Segurança</strong> - transmitir confiança</li><li><strong>Agilidade</strong> - resolver rapidamente</li><li><strong>Cuidado</strong> - mostrar que nos importamos</li></ul>",
+            "q2": "❓ Onde consultar dados das lojas?",
+            "a2": "<p><strong>✅ Resposta:</strong> Na <strong>Intranet</strong> da empresa!</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>O Caminho das Pedras</h4><p style=\"font-size: 1.1em;\"><strong>Intranet → Filiais → Dados cadastrais e horários</strong></p></div></div><p>Lá você encontra: endereço das lojas, horários de funcionamento e formas de contato.</p>",
+            "q3": "❓ Onde consultar ofertas e promoções?",
+            "a3": "<p><strong>✅ Resposta:</strong> As ofertas podem ser consultadas em:</p><ul><li><strong>Encartes</strong> - materiais promocionais físicos e digitais</li><li><strong>Site oficial</strong> da empresa</li><li><strong>WhatsApp de ofertas</strong> - canal direto com o cliente</li></ul>",
+            "q4": "❓ Como funciona o WhatsApp de ofertas?",
+            "a4": "<p><strong>✅ Resposta:</strong> É simples e direto! A sequência é:</p><ol><li><strong>Selecionar a loja</strong> de interesse</li><li><strong>Acessar a comunidade</strong> pelo link ou QR Code</li><li><strong>Receber ofertas</strong> personalizadas no celular</li></ol>"
+        },
+        "m3": {
+            "q1": "❓ O que é o CDC e por que conhecê-lo?",
+            "a1": "<p><strong>✅ Resposta:</strong> O CDC (Lei nº 8.078/90) protege os consumidores e garante relações de consumo justas. Conhecê-lo é essencial para:</p><ul><li>Responder com segurança</li><li>Evitar retrabalho</li><li>Transmitir credibilidade ao cliente</li></ul>",
+            "q2": "❓ Quando o cliente pode trocar um produto sem defeito?",
+            "a2": "<p><strong>✅ Resposta:</strong></p><ul><li><strong>Loja física:</strong> O CDC NÃO obriga a troca - é uma política comercial (cortesia)</li><li><strong>Loja online:</strong> O cliente tem o Direito de Arrependimento (até 7 dias corridos após recebimento)</li></ul>",
+            "q3": "❓ Quando há defeito, qual o procedimento?",
+            "a3": "<p><strong>✅ Resposta:</strong> O fornecedor tem até <strong>30 dias</strong> para solucionar via assistência técnica. Caso não resolva, o cliente pode optar por:</p><ul><li>Troca do produto</li><li>Abatimento proporcional do valor</li><li>Devolução do valor pago</li></ul><p><em>Prazo para reclamar: 90 dias para produtos duráveis.</em></p>",
+            "q4": "❓ Como encaminhar reclamações de produtos?",
+            "a4": "<p><strong>✅ Resposta:</strong></p><ul><li><strong>Alimentícios:</strong> Cliente leva produto + cupom à loja (avaliação da gerência)</li><li><strong>Não alimentícios:</strong> Produto + cupom à loja (exceto Eletro → Assistência Técnica)</li><li><strong>Compra errada:</strong> Não perecíveis podem ser trocados se não violados; perecíveis não trocamos</li></ul>",
+            "q5": "❓ Quais são os caminhos do sistema para cada situação?",
+            "a5": "<p><strong>✅ Resposta:</strong> Cada tipo de demanda tem seu caminho específico:</p><div class=\"highlight-box dica\"><span class=\"icon\">🎯</span><div class=\"highlight-box-content\"><h4>Caminhos do Sistema</h4><ul><li><strong>Produto Eletro com defeito:</strong><br>INFORMAÇÃO → COMPRAS → DADOS DA ASSISTÊNCIA TÉCNICA</li><li><strong>Compra no tamanho/cor/voltagem errada:</strong><br>INFORMAÇÃO → COMPRAS → TROCA DE MERCADORIAS</li><li><strong>Troca não realizada na loja:</strong><br>RECLAMAÇÃO → TROCA DE MERCADORIAS</li></ul></div></div>",
+            "q6": "❓ Qual o prazo para troca de perecíveis online?",
+            "a6": "<p><strong>✅ Resposta:</strong> Produtos perecíveis com validade curta (carnes, hortifruti, pães, frios, laticínios) comprados online têm prazo especial de <strong>24 horas</strong> após a entrega.</p><div class=\"box-attention\"><p>⚠️ Isso garante a segurança alimentar do cliente e da empresa.</p></div>",
+            "q7": "❓ Quais são as boas práticas para atendimento de qualidade?",
+            "a7": "<p><strong>✅ Resposta:</strong> As 4 práticas essenciais são:</p><ul><li><strong>👂 Escuta ativa:</strong> Ouvir atentamente sem interromper</li><li><strong>🔍 Sondagem completa:</strong> Fazer perguntas para entender a situação</li><li><strong>💚 Cordialidade e empatia:</strong> Ser gentil e compreensivo</li><li><strong>📝 Registro preciso:</strong> Documentar todos os dados corretamente</li></ul><p><em>Essas práticas garantem atendimentos claros, organizados e sem retrabalho.</em></p>"
+        }
+    },
+    "tip_box": "💡 Use este resumo como material de consulta rápida durante seu trabalho.",
+    "back_btn": "← Voltar ao Menu de Extras"
+}
