@@ -141,7 +141,39 @@
     "flashcards": {
       "ui": {
         "card_counter": "Card <span id=\"fc-current\">1</span> de <span id=\"fc-total\">8</span>",
-        "tip": "💡 <strong>Dica:</strong> Revise os flash cards regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!"
+        "tip": "💡 <strong>Dica:</strong> Revise os flash cards regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!",
+        "back_to_modules": "←\n                Voltar aos Módulos",
+        "hint_front": "👆 Clique para ver a\n                            resposta",
+        "hint_back": "👆 Clique para\n                            voltar",
+        "prev": "←\n                Anterior",
+        "shuffle": "🔀\n                Embaralhar",
+        "next": "Próximo →",
+        "back_menu": "← Voltar ao Menu de Extras"
+      },
+      "title": "🃏 Flash Cards",
+      "lead": "Memorize os conceitos do curso com cartões de estudo interativos.\n        Clique no cartão para revelar a\n        resposta!",
+      "modules": {
+        "m1": {
+          "title": "Módulo 1: Papel Estratégico",
+          "desc": "Papel Estratégico do SAC",
+          "lock_msg": "🔒 Conclua o\n                    módulo",
+          "unlock_msg": "✓ Disponível",
+          "count": "8 cards"
+        },
+        "m2": {
+          "title": "Módulo 2: Onde encontrar informações",
+          "desc": "Onde encontrar informações?",
+          "lock_msg": "🔒 Conclua o\n                    módulo",
+          "unlock_msg": "✓ Disponível",
+          "count": "6 cards"
+        },
+        "m3": {
+          "title": "Módulo 3: CDC e Legislação",
+          "desc": "CDC e Legislação",
+          "lock_msg": "🔒 Conclua o\n                    módulo",
+          "unlock_msg": "✓ Disponível",
+          "count": "10 cards"
+        }
       }
     }
   }

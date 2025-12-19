@@ -11,6 +11,12 @@
         "opt_c": "C) Garantir agilidade, assertividade e melhor experiência para o cliente.",
         "opt_d": "D) Tornar o atendimento mais informal."
       }
+    },
+    "p5": {
+      "title": "Benefícios da Consulta Correta",
+      "intro": "Você viu como é simples consultar a Intranet. Mas quais são os benefícios\n        reais dessa prática?",
+      "tip_title": "Dica de Ouro",
+      "tip_text": "Mantenha a Intranet sempre aberta em uma aba do navegador durante o\n                expediente. Assim você ganha tempo em cada atendimento!"
     }
   },
   "tip_title": "TODO: Adicionar tradução",

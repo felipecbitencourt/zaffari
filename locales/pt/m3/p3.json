@@ -27,19 +27,36 @@
       "p_physical_1": "O CDC <strong>não obriga</strong> a troca quando o produto está em perfeito estado e o cliente deseja trocar por preferência (cor, tamanho).",
       "p_physical_2": "Nesses casos, a troca é uma <strong>política comercial</strong> da empresa, uma cortesia, e não um direito legal.",
       "quiz1": {
-        "feedback": "<strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei para lojas físicas."
+        "feedback": "<strong>Resposta Correta!</strong> É uma política comercial (cortesia), não lei para lojas físicas.",
+        "question": "Um cliente comprou uma camisa na Loja Física, provou no\n            provador e levou. Dois dias depois,\n            retorna querendo trocar porque a esposa disse que a cor não combina com ele. O produto está perfeito e com\n            etiqueta. A loja é obrigada por lei a trocar?",
+        "opt_a": "A)\n                Sim, o CDC garante 7 dias\n                para troca por qualquer\n                motivo.",
+        "opt_b": "B) Não, mas pode trocar por\n                liberalidade (política comercial\n                de cortesia) para fidelizar o cliente.",
+        "opt_c": "C)\n                Sim, mas apenas se o\n                cliente pagar uma taxa de\n                10%.",
+        "opt_d": "D)\n                Não, e a loja é proibida\n                de aceitar a troca para não\n                gerar prejuízo."
       },
       "p_online_1": "Para compras online, o CDC garante o <strong>Direito de Arrependimento</strong>.",
       "p_online_2": "O cliente pode desistir da compra em até <strong>7 dias corridos</strong> após o recebimento. Importante: Isso não vale para compra em loja física!",
       "accordion_online": {
-        "cond_l1": "TODO: Adicionar tradução",
-        "cond_l2": "TODO: Adicionar tradução",
-        "cond_l3": "TODO: Adicionar tradução",
-        "perec_text": "TODO: Adicionar tradução"
+        "cond_l1": "<strong>Sem uso</strong> - não pode ter sido\n                    utilizado</li>\n                <li data-i18n=\"[html]m3.p3.accordion_online.cond_l2\"><strong>Embalagem original</strong> - com todos os\n                    acessórios e manuais</li>\n                <li data-i18n=\"[html]m3.p3.accordion_online.cond_l3\"><strong>Sem sinais de mau uso</strong> - em\n                    perfeito estado de conservação</li>\n            </ul>",
+        "cond_l2": "<strong>Embalagem original</strong> - com todos os\nacessórios e manuais",
+        "cond_l3": "<strong>Sem sinais de mau uso</strong> - em\nperfeito estado de conservação",
+        "perec_text": "<strong>⚠️ Atenção:</strong> Para produtos\n                    perecíveis\n                    com validade curta (carnes, hortifruti, pães, frios, laticínios), a troca deve ocorrer em até\n                    <strong>24 horas</strong> após a entrega.",
+        "cond_title": "📦 Condições para devolução online",
+        "cond_intro": "Para exercer o Direito de Arrependimento, o produto deve\n                estar:",
+        "perec_title": "🥩 Perecíveis: prazo especial de 24 horas",
+        "perec_reason": "Isso garante a segurança alimentar do cliente e da\n                empresa."
       },
       "quiz2": {
-        "feedback": "<strong>Resposta Correta!</strong> Compras online têm garantia de arrependimento (7 dias), independente de defeito."
-      }
+        "feedback": "<strong>Resposta Correta!</strong> Compras online têm garantia de arrependimento (7 dias), independente de defeito.",
+        "question": "João comprou uma cafeteira pelo site. Ao receber, viu que é\n            muito grande para sua cozinha,\n            embora funcione perfeitamente. Ele liga no 5º dia querendo devolver. O que você informa?",
+        "opt_a": "A)\n                \"Senhor, como não tem\n                defeito, não podemos aceitar a\n                devolução.\"",
+        "opt_b": "B) \"O senhor pode exercer seu\n                Direito de Arrependimento e\n                devolver o produto, recebendo o reembolso integral, pois está dentro do prazo de 7 dias.\"",
+        "opt_c": "C)\n                \"Podemos trocar, mas o\n                senhor arca com o frete de\n                devolução.\"",
+        "opt_d": "D)\n                \"O senhor deve tentar\n                vender para um conhecido, pois a\n                venda foi finalizada.\""
+      },
+      "title": "Quando trocar sem defeito?",
+      "h3_physical": "Troca de produtos sem defeito – Loja Física",
+      "h3_online": "Troca de produtos sem defeito – Loja Online"
     }
   },
   "accordion_online": {

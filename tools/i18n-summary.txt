@@ -1,0 +1,485 @@
+================================================================================
+📊 RESUMO DE PROBLEMAS i18n
+================================================================================
+
+Total de páginas: 37
+Páginas OK: 23
+Páginas com problemas: 14
+Total de chaves faltando: 123
+
+================================================================================
+📄 PROBLEMAS POR ARQUIVO HTML
+================================================================================
+
+📄 paginas/pt/extras/questionarios.html
+   Chaves faltando: 30
+   → extras/quiz.json: 30 chaves
+
+📄 paginas/pt/extras/resumo.html
+   Chaves faltando: 22
+   → extras/resumo.json: 22 chaves
+
+📄 paginas/pt/m3/p8.html
+   Chaves faltando: 21
+   → m3/p8.json: 21 chaves
+
+📄 paginas/pt/extras/ache-erro.html
+   Chaves faltando: 15
+   → extras/ache-erro.json: 15 chaves
+
+📄 paginas/pt/m3/p3.html
+   Chaves faltando: 10
+   → m3/p3.json: 10 chaves
+
+📄 paginas/pt/m3/p5.html
+   Chaves faltando: 8
+   → m3/p5.json: 8 chaves
+
+📄 paginas/pt/m3/p6.html
+   Chaves faltando: 5
+   → m3/p6.json: 5 chaves
+
+📄 paginas/pt/extras/flashcards.html
+   Chaves faltando: 2
+   → extras/flashcards.json: 2 chaves
+
+📄 paginas/pt/m3/p1.html
+   Chaves faltando: 2
+   → m3/p1.json: 2 chaves
+
+📄 paginas/pt/m3/p2.html
+   Chaves faltando: 2
+   → m3/p2.json: 2 chaves
+
+📄 paginas/pt/m3/p4.html
+   Chaves faltando: 2
+   → m3/p4.json: 2 chaves
+
+📄 paginas/pt/m3/p7.html
+   Chaves faltando: 2
+   → m3/p7.json: 2 chaves
+
+📄 paginas/pt/extras/hub.html
+   Chaves faltando: 1
+   → extras/hub.json: 1 chaves
+
+📄 paginas/pt/m3/conquistas.html
+   Chaves faltando: 1
+   → m3/conquistas.json: 1 chaves
+
+================================================================================
+📋 PROBLEMAS POR ARQUIVO JSON
+================================================================================
+
+📋 extras/quiz.json
+   Chaves faltando: 30
+   ← paginas/pt/extras/questionarios.html: 30 chaves
+
+📋 extras/resumo.json
+   Chaves faltando: 22
+   ← paginas/pt/extras/resumo.html: 22 chaves
+
+📋 m3/p8.json
+   Chaves faltando: 21
+   ← paginas/pt/m3/p8.html: 21 chaves
+
+📋 extras/ache-erro.json
+   Chaves faltando: 15
+   ← paginas/pt/extras/ache-erro.html: 15 chaves
+
+📋 m3/p3.json
+   Chaves faltando: 10
+   ← paginas/pt/m3/p3.html: 10 chaves
+
+📋 m3/p5.json
+   Chaves faltando: 8
+   ← paginas/pt/m3/p5.html: 8 chaves
+
+📋 m3/p6.json
+   Chaves faltando: 5
+   ← paginas/pt/m3/p6.html: 5 chaves
+
+📋 extras/flashcards.json
+   Chaves faltando: 2
+   ← paginas/pt/extras/flashcards.html: 2 chaves
+
+📋 m3/p1.json
+   Chaves faltando: 2
+   ← paginas/pt/m3/p1.html: 2 chaves
+
+📋 m3/p2.json
+   Chaves faltando: 2
+   ← paginas/pt/m3/p2.html: 2 chaves
+
+📋 m3/p4.json
+   Chaves faltando: 2
+   ← paginas/pt/m3/p4.html: 2 chaves
+
+📋 m3/p7.json
+   Chaves faltando: 2
+   ← paginas/pt/m3/p7.html: 2 chaves
+
+📋 extras/hub.json
+   Chaves faltando: 1
+   ← paginas/pt/extras/hub.html: 1 chaves
+
+📋 m3/conquistas.json
+   Chaves faltando: 1
+   ← paginas/pt/m3/conquistas.html: 1 chaves
+
+================================================================================
+🔍 DETALHAMENTO COMPLETO
+================================================================================
+
+📌 🔍 Ache o Erro
+   HTML: paginas/pt/extras/ache-erro.html
+   JSON: extras/ache-erro.json
+   Chaves faltando: 15
+
+   1. HTML: extras.ache_erro.title
+      JSON: extras.ache_erro.title
+   2. HTML: extras.ache_erro.lead
+      JSON: extras.ache_erro.lead
+   3. HTML: extras.ache_erro.status.errors_found
+      JSON: extras.ache_erro.status.errors_found
+   4. HTML: extras.ache_erro.email_header.inbox
+      JSON: extras.ache_erro.email_header.inbox
+   5. HTML: extras.ache_erro.email_header.from
+      JSON: extras.ache_erro.email_header.from
+   6. HTML: extras.ache_erro.email_header.to
+      JSON: extras.ache_erro.email_header.to
+   7. HTML: extras.ache_erro.email_header.subject
+      JSON: extras.ache_erro.email_header.subject
+   8. HTML: extras.ache_erro.feedback.title
+      JSON: extras.ache_erro.feedback.title
+   9. HTML: extras.ache_erro.complete.title
+      JSON: extras.ache_erro.complete.title
+   10. HTML: extras.ache_erro.complete.text
+      JSON: extras.ache_erro.complete.text
+   11. HTML: extras.ache_erro.complete.btn_next
+      JSON: extras.ache_erro.complete.btn_next
+   12. HTML: extras.ache_erro.summary.title
+      JSON: extras.ache_erro.summary.title
+   13. HTML: extras.ache_erro.summary.text
+      JSON: extras.ache_erro.summary.text
+   14. HTML: extras.ache_erro.summary.btn_restart
+      JSON: extras.ache_erro.summary.btn_restart
+   15. HTML: extras.ache_erro.btn_back
+      JSON: extras.ache_erro.btn_back
+
+📌 🃏 Flash Cards
+   HTML: paginas/pt/extras/flashcards.html
+   JSON: extras/flashcards.json
+   Chaves faltando: 2
+
+   1. HTML: [html]extras.flashcards.ui.card_counter
+      JSON: [html]extras.flashcards.ui.card_counter
+   2. HTML: [html]extras.flashcards.ui.tip
+      JSON: [html]extras.flashcards.ui.tip
+
+📌 🧠 Menu de Fixação
+   HTML: paginas/pt/extras/hub.html
+   JSON: extras/hub.json
+   Chaves faltando: 1
+
+   1. HTML: [html]extras.hub.tip
+      JSON: [html]extras.hub.tip
+
+📌 📝 Questionários
+   HTML: paginas/pt/extras/questionarios.html
+   JSON: extras/quiz.json
+   Chaves faltando: 30
+
+   1. HTML: [html]extras.quiz.modules.m1.questions.q1.text
+      JSON: [html]extras.quiz.modules.m1.questions.q1.text
+   2. HTML: [html]extras.quiz.modules.m1.questions.q1.feedback
+      JSON: [html]extras.quiz.modules.m1.questions.q1.feedback
+   3. HTML: [html]extras.quiz.modules.m1.questions.q2.text
+      JSON: [html]extras.quiz.modules.m1.questions.q2.text
+   4. HTML: [html]extras.quiz.modules.m1.questions.q2.feedback
+      JSON: [html]extras.quiz.modules.m1.questions.q2.feedback
+   5. HTML: [html]extras.quiz.modules.m1.questions.q3.text
+      JSON: [html]extras.quiz.modules.m1.questions.q3.text
+   6. HTML: [html]extras.quiz.modules.m1.questions.q3.feedback
+      JSON: [html]extras.quiz.modules.m1.questions.q3.feedback
+   7. HTML: [html]extras.quiz.modules.m1.questions.q4.text
+      JSON: [html]extras.quiz.modules.m1.questions.q4.text
+   8. HTML: [html]extras.quiz.modules.m1.questions.q4.feedback
+      JSON: [html]extras.quiz.modules.m1.questions.q4.feedback
+   9. HTML: [html]extras.quiz.modules.m1.questions.q5.text
+      JSON: [html]extras.quiz.modules.m1.questions.q5.text
+   10. HTML: [html]extras.quiz.modules.m1.questions.q5.feedback
+      JSON: [html]extras.quiz.modules.m1.questions.q5.feedback
+   11. HTML: [html]extras.quiz.modules.m2.questions.q1.text
+      JSON: [html]extras.quiz.modules.m2.questions.q1.text
+   12. HTML: [html]extras.quiz.modules.m2.questions.q1.feedback
+      JSON: [html]extras.quiz.modules.m2.questions.q1.feedback
+   13. HTML: [html]extras.quiz.modules.m2.questions.q2.text
+      JSON: [html]extras.quiz.modules.m2.questions.q2.text
+   14. HTML: [html]extras.quiz.modules.m2.questions.q2.feedback
+      JSON: [html]extras.quiz.modules.m2.questions.q2.feedback
+   15. HTML: [html]extras.quiz.modules.m2.questions.q3.text
+      JSON: [html]extras.quiz.modules.m2.questions.q3.text
+   16. HTML: [html]extras.quiz.modules.m2.questions.q3.feedback
+      JSON: [html]extras.quiz.modules.m2.questions.q3.feedback
+   17. HTML: [html]extras.quiz.modules.m3.questions.q1.text
+      JSON: [html]extras.quiz.modules.m3.questions.q1.text
+   18. HTML: [html]extras.quiz.modules.m3.questions.q1.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q1.feedback
+   19. HTML: [html]extras.quiz.modules.m3.questions.q2.text
+      JSON: [html]extras.quiz.modules.m3.questions.q2.text
+   20. HTML: [html]extras.quiz.modules.m3.questions.q2.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q2.feedback
+   21. HTML: [html]extras.quiz.modules.m3.questions.q3.text
+      JSON: [html]extras.quiz.modules.m3.questions.q3.text
+   22. HTML: [html]extras.quiz.modules.m3.questions.q3.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q3.feedback
+   23. HTML: [html]extras.quiz.modules.m3.questions.q4.text
+      JSON: [html]extras.quiz.modules.m3.questions.q4.text
+   24. HTML: [html]extras.quiz.modules.m3.questions.q4.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q4.feedback
+   25. HTML: [html]extras.quiz.modules.m3.questions.q5.text
+      JSON: [html]extras.quiz.modules.m3.questions.q5.text
+   26. HTML: [html]extras.quiz.modules.m3.questions.q5.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q5.feedback
+   27. HTML: [html]extras.quiz.modules.m3.questions.q6.text
+      JSON: [html]extras.quiz.modules.m3.questions.q6.text
+   28. HTML: [html]extras.quiz.modules.m3.questions.q6.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q6.feedback
+   29. HTML: [html]extras.quiz.modules.m3.questions.q7.text
+      JSON: [html]extras.quiz.modules.m3.questions.q7.text
+   30. HTML: [html]extras.quiz.modules.m3.questions.q7.feedback
+      JSON: [html]extras.quiz.modules.m3.questions.q7.feedback
+
+📌 📖 Resumo do Curso
+   HTML: paginas/pt/extras/resumo.html
+   JSON: extras/resumo.json
+   Chaves faltando: 22
+
+   1. HTML: [html]extras.resumo.content.m1.a1
+      JSON: [html]extras.resumo.content.m1.a1
+   2. HTML: [html]extras.resumo.content.m1.a2
+      JSON: [html]extras.resumo.content.m1.a2
+   3. HTML: [html]extras.resumo.content.m1.a3
+      JSON: [html]extras.resumo.content.m1.a3
+   4. HTML: [html]extras.resumo.content.m1.a4
+      JSON: [html]extras.resumo.content.m1.a4
+   5. HTML: extras.resumo.content.m1.q5
+      JSON: content.m1.q5
+   6. HTML: [html]extras.resumo.content.m1.a5
+      JSON: [html]extras.resumo.content.m1.a5
+   7. HTML: extras.resumo.content.m1.q6
+      JSON: content.m1.q6
+   8. HTML: [html]extras.resumo.content.m1.a6
+      JSON: [html]extras.resumo.content.m1.a6
+   9. HTML: [html]extras.resumo.content.m2.a1
+      JSON: [html]extras.resumo.content.m2.a1
+   10. HTML: [html]extras.resumo.content.m2.a2
+      JSON: [html]extras.resumo.content.m2.a2
+   11. HTML: [html]extras.resumo.content.m2.a3
+      JSON: [html]extras.resumo.content.m2.a3
+   12. HTML: [html]extras.resumo.content.m2.a4
+      JSON: [html]extras.resumo.content.m2.a4
+   13. HTML: [html]extras.resumo.content.m3.a1
+      JSON: [html]extras.resumo.content.m3.a1
+   14. HTML: [html]extras.resumo.content.m3.a2
+      JSON: [html]extras.resumo.content.m3.a2
+   15. HTML: [html]extras.resumo.content.m3.a3
+      JSON: [html]extras.resumo.content.m3.a3
+   16. HTML: [html]extras.resumo.content.m3.a4
+      JSON: [html]extras.resumo.content.m3.a4
+   17. HTML: extras.resumo.content.m3.q5
+      JSON: content.m3.q5
+   18. HTML: [html]extras.resumo.content.m3.a5
+      JSON: [html]extras.resumo.content.m3.a5
+   19. HTML: extras.resumo.content.m3.q6
+      JSON: content.m3.q6
+   20. HTML: [html]extras.resumo.content.m3.a6
+      JSON: [html]extras.resumo.content.m3.a6
+   21. HTML: extras.resumo.content.m3.q7
+      JSON: content.m3.q7
+   22. HTML: [html]extras.resumo.content.m3.a7
+      JSON: [html]extras.resumo.content.m3.a7
+
+📌 🏆 Conquistas do Módulo 3
+   HTML: paginas/pt/m3/conquistas.html
+   JSON: m3/conquistas.json
+   Chaves faltando: 1
+
+   1. HTML: [html]m3.conquistas.subtitle
+      JSON: [html]m3.conquistas.subtitle
+
+📌 O que é o CDC?
+   HTML: paginas/pt/m3/p1.html
+   JSON: m3/p1.json
+   Chaves faltando: 2
+
+   1. HTML: [html]m3.p1.intro_p1
+      JSON: [html]m3.p1.intro_p1
+   2. HTML: [html]m3.p1.modal.text
+      JSON: [html]m3.p1.modal.text
+
+📌 Qual a diferença: produto x serviço?
+   HTML: paginas/pt/m3/p2.html
+   JSON: m3/p2.json
+   Chaves faltando: 2
+
+   1. HTML: [html]m3.p2.accordion.product_l1
+      JSON: [html]m3.p2.accordion.product_l1
+   2. HTML: [html]m3.p2.accordion.product_l2
+      JSON: [html]m3.p2.accordion.product_l2
+
+📌 Quando trocar sem defeito?
+   HTML: paginas/pt/m3/p3.html
+   JSON: m3/p3.json
+   Chaves faltando: 10
+
+   1. HTML: [html]m3.p3.p_physical_1
+      JSON: [html]m3.p3.p_physical_1
+   2. HTML: [html]m3.p3.p_physical_2
+      JSON: [html]m3.p3.p_physical_2
+   3. HTML: [html]m3.p3.quiz1.feedback
+      JSON: [html]m3.p3.quiz1.feedback
+   4. HTML: [html]m3.p3.p_online_1
+      JSON: [html]m3.p3.p_online_1
+   5. HTML: [html]m3.p3.p_online_2
+      JSON: [html]m3.p3.p_online_2
+   6. HTML: [html]m3.p3.accordion_online.cond_l1
+      JSON: [html]m3.p3.accordion_online.cond_l1
+   7. HTML: [html]m3.p3.accordion_online.cond_l2
+      JSON: [html]m3.p3.accordion_online.cond_l2
+   8. HTML: [html]m3.p3.accordion_online.cond_l3
+      JSON: [html]m3.p3.accordion_online.cond_l3
+   9. HTML: [html]m3.p3.accordion_online.perec_text
+      JSON: [html]m3.p3.accordion_online.perec_text
+   10. HTML: [html]m3.p3.quiz2.feedback
+      JSON: [html]m3.p3.quiz2.feedback
+
+📌 Por que o CDC é importante?
+   HTML: paginas/pt/m3/p4.html
+   JSON: m3/p4.json
+   Chaves faltando: 2
+
+   1. HTML: [html]m3.p1.attention_text
+      JSON: [html]m3.p1.attention_text
+   2. HTML: [html]m3.p1.quiz.feedback
+      JSON: [html]m3.p1.quiz.feedback
+
+📌 Quando há defeito, o que fazer?
+   HTML: paginas/pt/m3/p5.html
+   JSON: m3/p5.json
+   Chaves faltando: 8
+
+   1. HTML: [html]m3.p5.intro
+      JSON: [html]m3.p5.intro
+   2. HTML: [html]m3.p5.accordion.l1
+      JSON: [html]m3.p5.accordion.l1
+   3. HTML: [html]m3.p5.accordion.l2
+      JSON: [html]m3.p5.accordion.l2
+   4. HTML: [html]m3.p5.accordion.l3
+      JSON: [html]m3.p5.accordion.l3
+   5. HTML: [html]m3.p5.attention_text
+      JSON: [html]m3.p5.attention_text
+   6. HTML: [html]m3.p5.accordion_electro.text
+      JSON: [html]m3.p5.accordion_electro.text
+   7. HTML: [html]m3.p5.accordion_registro.l3
+      JSON: [html]m3.p5.accordion_registro.l3
+   8. HTML: [html]m3.p5.quiz.feedback
+      JSON: [html]m3.p5.quiz.feedback
+
+📌 Como encaminhar reclamações?
+   HTML: paginas/pt/m3/p6.html
+   JSON: m3/p6.json
+   Chaves faltando: 5
+
+   1. HTML: [html]m3.p6.accordion.food_intro
+      JSON: [html]m3.p6.accordion.food_intro
+   2. HTML: [html]m3.p6.accordion.food_l3
+      JSON: [html]m3.p6.accordion.food_l3
+   3. HTML: [html]m3.p6.accordion.wrong_l1
+      JSON: [html]m3.p6.accordion.wrong_l1
+   4. HTML: [html]m3.p6.accordion.wrong_l2
+      JSON: [html]m3.p6.accordion.wrong_l2
+   5. HTML: [html]m3.p6.quiz.feedback
+      JSON: [html]m3.p6.quiz.feedback
+
+📌 🏆 Você está pronto para o desafio?
+   HTML: paginas/pt/m3/p7.html
+   JSON: m3/p7.json
+   Chaves faltando: 2
+
+   1. HTML: [placeholder]m3.p7.placeholder
+      JSON: [placeholder]m3.p7.placeholder
+   2. HTML: [html]m3.p7.feedback
+      JSON: [html]m3.p7.feedback
+
+📌 📝 O que aprendemos no curso?
+   HTML: paginas/pt/m3/p8.html
+   JSON: m3/p8.json
+   Chaves faltando: 21
+
+   1. HTML: [html]m3.p8.accordion.a1.text
+      JSON: [html]m3.p8.accordion.a1.text
+   2. HTML: [html]m3.p8.accordion.a2.text
+      JSON: [html]m3.p8.accordion.a2.text
+   3. HTML: [html]m3.p8.accordion.a2.l1
+      JSON: [html]m3.p8.accordion.a2.l1
+   4. HTML: [html]m3.p8.accordion.a2.l2
+      JSON: [html]m3.p8.accordion.a2.l2
+   5. HTML: [html]m3.p8.accordion.a3.text
+      JSON: [html]m3.p8.accordion.a3.text
+   6. HTML: [html]m3.p8.accordion.a3.note
+      JSON: [html]m3.p8.accordion.a3.note
+   7. HTML: [html]m3.p8.accordion.a4.text
+      JSON: [html]m3.p8.accordion.a4.text
+   8. HTML: [html]m3.p8.accordion.a4.l1
+      JSON: [html]m3.p8.accordion.a4.l1
+   9. HTML: [html]m3.p8.accordion.a4.l2
+      JSON: [html]m3.p8.accordion.a4.l2
+   10. HTML: [html]m3.p8.accordion.a4.l3
+      JSON: [html]m3.p8.accordion.a4.l3
+   11. HTML: [html]m3.p8.accordion.a5.text
+      JSON: [html]m3.p8.accordion.a5.text
+   12. HTML: [html]m3.p8.accordion.a5.l1
+      JSON: [html]m3.p8.accordion.a5.l1
+   13. HTML: [html]m3.p8.accordion.a5.l2
+      JSON: [html]m3.p8.accordion.a5.l2
+   14. HTML: [html]m3.p8.accordion.a5.l3
+      JSON: [html]m3.p8.accordion.a5.l3
+   15. HTML: [html]m3.p8.accordion.a6.text
+      JSON: [html]m3.p8.accordion.a6.text
+   16. HTML: [html]m3.p8.accordion.a7.text
+      JSON: [html]m3.p8.accordion.a7.text
+   17. HTML: [html]m3.p8.accordion.a7.l1
+      JSON: [html]m3.p8.accordion.a7.l1
+   18. HTML: [html]m3.p8.accordion.a7.l2
+      JSON: [html]m3.p8.accordion.a7.l2
+   19. HTML: [html]m3.p8.accordion.a7.l3
+      JSON: [html]m3.p8.accordion.a7.l3
+   20. HTML: [html]m3.p8.accordion.a7.l4
+      JSON: [html]m3.p8.accordion.a7.l4
+   21. HTML: [html]m3.p8.quiz_final.feedback
+      JSON: [html]m3.p8.quiz_final.feedback
+
+================================================================================
+📊 TABELA RESUMIDA
+================================================================================
+
+Arquivo HTML                                       Arquivo JSON                   Chaves    
+------------------------------------------------------------------------------------------
+ache-erro.html                                     ache-erro.json                 15        
+flashcards.html                                    flashcards.json                2         
+hub.html                                           hub.json                       1         
+questionarios.html                                 quiz.json                      30        
+resumo.html                                        resumo.json                    22        
+conquistas.html                                    conquistas.json                1         
+p1.html                                            p1.json                        2         
+p2.html                                            p2.json                        2         
+p3.html                                            p3.json                        10        
+p4.html                                            p4.json                        2         
+p5.html                                            p5.json                        8         
+p6.html                                            p6.json                        5         
+p7.html                                            p7.json                        2         
+p8.html                                            p8.json                        21        
+
+================================================================================

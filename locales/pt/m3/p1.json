@@ -46,8 +46,18 @@
     "p1": {
       "intro_p1": "O <strong>⚖️ Código de Defesa do Consumidor (CDC)</strong>, <span class='tooltip-trigger' data-tooltip='Lei nº 8.078, de 11 de setembro de 1990'>Lei nº 8.078/90</span>, foi criado para proteger os consumidores e garantir relações de consumo justas e equilibradas.",
       "modal": {
-        "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países."
-      }
+        "text": "O Código de Defesa do Consumidor brasileiro foi promulgado em <strong>1990</strong> e serve de modelo para legislações de outros países.",
+        "title": "📚 Curiosidades sobre o CDC",
+        "l1": "É considerado um dos mais avançados do mundo",
+        "l2": "Protege o consumidor em todas as fases da relação de consumo",
+        "l3": "Prevê inversão do ônus da prova em favor do consumidor",
+        "l4": "Estabelece responsabilidade objetiva do fornecedor"
+      },
+      "title": "O que é o CDC?",
+      "intro_p2": "Ele estabelece direitos, deveres, prazos, padrões de conduta e penalidades para\n        fornecedores e prestadores de\n        serviços.",
+      "sabia_title": "Você Sabia?",
+      "sabia_text": "O CDC brasileiro é considerado um dos mais completos do mundo!",
+      "btn_saiba_mais": "Saiba\n                    mais"
     }
   }
 }

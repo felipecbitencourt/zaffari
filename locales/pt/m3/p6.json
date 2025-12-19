@@ -31,11 +31,34 @@
         "food_intro": "A troca ocorre apenas quando o produto está <strong>impróprio para consumo</strong>.",
         "food_l3": "Preenchimento correto de <strong>Motivo, Marca e Lote</strong> é essencial",
         "wrong_l1": "<strong>Não perecíveis:</strong> item não pode estar violado",
-        "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)"
+        "wrong_l2": "<strong>Perecíveis:</strong> não trocamos (risco de temperatura)",
+        "food_title": "🍎 Produtos Alimentícios",
+        "food_l1": "Cliente deve levar produto + cupom à loja",
+        "food_l2": "Avaliação da gerência",
+        "nonfood_title": "📦 Produtos Não Alimentícios",
+        "nonfood_intro": "Devem ser registradas com todas as informações sobre o defeito.",
+        "nonfood_box": "Cliente leva produto + cupom à loja (exceto Eletro →\n                        Assistência Técnica).",
+        "wrong_title": "❌ Compra Errada",
+        "wrong_intro": "Se o cliente comprou o produto no tamanho, cor ou voltagem\n                errada:",
+        "wrong_path_title": "Caminho no Sistema",
+        "wrong_attention": "⚠️ Perecíveis uma vez retirados da loja não podem ser\n                    reacondicionados por questões de segurança\n                    alimentar.",
+        "notdone_title": "⚠️ Troca não realizada na loja",
+        "notdone_intro": "Se o cliente relata que foi à loja e a troca não foi concluída:",
+        "notdone_path_title": "Caminho no Sistema",
+        "notdone_l1": "Verifique se existe registro anterior com posição da gerência",
+        "notdone_l2": "Se não houver, informar que o caso será encaminhado para\n                    verificação",
+        "notdone_l3": "Se houver posição da gerência negando a troca, manter a\n                    orientação da empresa e encerrar"
       },
       "quiz": {
-        "feedback": "TODO: Adicionar tradução"
-      }
+        "feedback": "<strong>Resposta Correta!</strong> Troca por compra errada vai em INFORMAÇÃO > COMPRAS > TROCA DE\n            MERCADORIAS.",
+        "question": "Um cliente liga dizendo que comprou um vestido no tamanho\n            errado\n            e quer trocar. Está lacrado e com etiqueta. Onde você registra e o que orienta?",
+        "opt_a": "A)\n                Registro em RECLAMAÇÃO > TROCA e oriento ir à loja.",
+        "opt_b": "B) Registro em INFORMAÇÃO >\n                COMPRAS > TROCA DE MERCADORIAS e oriento ir à loja com produto + nota fiscal.",
+        "opt_c": "C)\n                Informo que como não tem defeito, não há possibilidade de troca.",
+        "opt_d": "D)\n                Informo o direito de arrependimento de 7 dias e processo a devolução."
+      },
+      "title": "Como encaminhar reclamações?",
+      "intro": "Cada tipo de produto exige um procedimento específico de reclamação. Clique em cada\n        categoria para ver os\n        detalhes:"
     }
   },
   "quiz": {

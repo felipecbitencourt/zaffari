@@ -48,7 +48,38 @@
     "feedback": "<strong>Resposta Correta!</strong> Cliente feliz é cliente atendido com agilidade e precisão."
   },
   "global": {
-    "btn_anterior": "TODO: Adicionar tradução",
-    "btn_proximo": "TODO: Adicionar tradução"
+    "btn_anterior": "Anterior",
+    "btn_proximo": "Próximo"
+  },
+  "m2": {
+    "p2": {
+      "title": "Onde consultar dados das lojas?",
+      "intro_p": "Ela é sua principal ferramenta de trabalho para consultas rápidas e precisas.",
+      "highlight_title": "O Caminho das Pedras",
+      "highlight_text": "Intranet → Filiais → Dados cadastrais\n                    e horários",
+      "slider_title": "📍 Como consultar na Intranet:",
+      "slider_steps": {
+        "s1": {
+          "title": "Passo 1: Acessar a Intranet",
+          "text": "Abra o navegador e acesse o portal interno da empresa. Faça login\n                com suas credenciais corporativas."
+        },
+        "s2": {
+          "title": "Passo 2: Navegar até Filiais"
+        },
+        "s3": {
+          "title": "Passo 3: Dados Cadastrais"
+        },
+        "s4": {
+          "title": "Passo 4: Consultar e Informar",
+          "text": "Agora você pode consultar endereço, telefone e horários de\n                funcionamento para orientar o cliente!"
+        }
+      },
+      "list_intro": "Lá é possível consultar:",
+      "list_items": {
+        "l1": "Endereço das lojas",
+        "l2": "Horários de funcionamento",
+        "l3": "Formas de contato"
+      }
+    }
   }
 }

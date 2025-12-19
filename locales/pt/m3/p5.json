@@ -19,18 +19,32 @@
       "accordion": {
         "l1": "<strong>Troca do produto</strong> por outro igual ou similar",
         "l2": "<strong>Abatimento proporcional</strong> do valor pago",
-        "l3": "<strong>Devolução integral</strong> do valor pago"
+        "l3": "<strong>Devolução integral</strong> do valor pago",
+        "options_title": "🔄 Opções do cliente se não houver solução em 30 dias"
       },
       "attention_text": "<strong>Prazo para reclamar:</strong> 90 dias para produtos duráveis.",
       "accordion_electro": {
-        "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço."
+        "text": "Produtos <strong>Eletro</strong> devem ser encaminhados à assistência técnica da marca. Se após 30 dias não houver solução, a empresa poderá realizar a troca mediante ordem de serviço.",
+        "title": "📦 Procedimento para produtos Eletro"
       },
       "accordion_registro": {
-        "l3": "TODO: Adicionar tradução"
+        "l3": "Se não resolver em 30 dias, a empresa pode realizar a\n                    troca <strong>com ordem de serviço</strong></li>\n            </ul>",
+        "title": "📝 Como registrar no sistema",
+        "intro": "Quando o cliente solicitar informações sobre assistência\n                técnica:",
+        "path_title": "Caminho no Sistema",
+        "l1": "Oriente o cliente a encaminhar o produto à assistência da\n                    marca",
+        "l2": "Informe o prazo de 30 dias para solução"
       },
       "quiz": {
-        "feedback": "TODO: Adicionar tradução"
-      }
+        "feedback": "<strong>Resposta Correta!</strong> Produtos Eletro devem ser encaminhados à assistência técnica da marca\n            primeiro.",
+        "question": "Uma cliente comprou uma batedeira há 2 meses e o motor parou\n            de funcionar.\n            Onde você registra esse atendimento e o que orienta?",
+        "opt_a": "A)\n                Registro em RECLAMAÇÃO > ELETRO e informo que pode trocar diretamente na loja.",
+        "opt_b": "B) Registro em INFORMAÇÃO >\n                COMPRAS > DADOS DA ASSISTÊNCIA TÉCNICA e oriento a enviar à assistência da marca.",
+        "opt_c": "C)\n                Informo que como passou de 30 dias da compra, não podemos ajudar.",
+        "opt_d": "D)\n                Registro em DEVOLUÇÃO e solicito reembolso imediato."
+      },
+      "title": "Quando há defeito, o que fazer?",
+      "h3_assist": "Assistência Técnica 🔧"
     }
   },
   "accordion_registro": {

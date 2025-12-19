@@ -1,0 +1,3478 @@
+{
+  "pt": {
+    "language": "pt",
+    "exists": true,
+    "total_pages": 37,
+    "pages_ok": 29,
+    "pages_with_issues": 2,
+    "total_missing_keys": 37,
+    "issues": [
+      {
+        "title": "📖 Resumo do Curso",
+        "file": "extras/resumo.html",
+        "json": "extras/resumo.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.resumo.content.m1.a1",
+            "json_key": "[html]extras.resumo.content.m1.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a2",
+            "json_key": "[html]extras.resumo.content.m1.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a3",
+            "json_key": "[html]extras.resumo.content.m1.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a4",
+            "json_key": "[html]extras.resumo.content.m1.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q5",
+            "json_key": "content.m1.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a5",
+            "json_key": "[html]extras.resumo.content.m1.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q6",
+            "json_key": "content.m1.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a6",
+            "json_key": "[html]extras.resumo.content.m1.a6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a1",
+            "json_key": "[html]extras.resumo.content.m2.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a2",
+            "json_key": "[html]extras.resumo.content.m2.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a3",
+            "json_key": "[html]extras.resumo.content.m2.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a4",
+            "json_key": "[html]extras.resumo.content.m2.a4"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a1",
+            "json_key": "[html]extras.resumo.content.m3.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a2",
+            "json_key": "[html]extras.resumo.content.m3.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a3",
+            "json_key": "[html]extras.resumo.content.m3.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a4",
+            "json_key": "[html]extras.resumo.content.m3.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q5",
+            "json_key": "content.m3.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a5",
+            "json_key": "[html]extras.resumo.content.m3.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q6",
+            "json_key": "content.m3.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a6",
+            "json_key": "[html]extras.resumo.content.m3.a6"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q7",
+            "json_key": "content.m3.q7"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a7",
+            "json_key": "[html]extras.resumo.content.m3.a7"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🔍 Ache o Erro",
+        "file": "extras/ache-erro.html",
+        "json": "extras/ache-erro.json",
+        "missing": [
+          {
+            "html_key": "extras.ache_erro.title",
+            "json_key": "extras.ache_erro.title"
+          },
+          {
+            "html_key": "extras.ache_erro.lead",
+            "json_key": "extras.ache_erro.lead"
+          },
+          {
+            "html_key": "extras.ache_erro.status.errors_found",
+            "json_key": "extras.ache_erro.status.errors_found"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.inbox",
+            "json_key": "extras.ache_erro.email_header.inbox"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.from",
+            "json_key": "extras.ache_erro.email_header.from"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.to",
+            "json_key": "extras.ache_erro.email_header.to"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.subject",
+            "json_key": "extras.ache_erro.email_header.subject"
+          },
+          {
+            "html_key": "extras.ache_erro.feedback.title",
+            "json_key": "extras.ache_erro.feedback.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.title",
+            "json_key": "extras.ache_erro.complete.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.text",
+            "json_key": "extras.ache_erro.complete.text"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.btn_next",
+            "json_key": "extras.ache_erro.complete.btn_next"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.title",
+            "json_key": "extras.ache_erro.summary.title"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.text",
+            "json_key": "extras.ache_erro.summary.text"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.btn_restart",
+            "json_key": "extras.ache_erro.summary.btn_restart"
+          },
+          {
+            "html_key": "extras.ache_erro.btn_back",
+            "json_key": "extras.ache_erro.btn_back"
+          }
+        ],
+        "json_missing": false
+      }
+    ]
+  },
+  "en": {
+    "language": "en",
+    "exists": true,
+    "total_pages": 37,
+    "pages_ok": 11,
+    "pages_with_issues": 20,
+    "total_missing_keys": 174,
+    "issues": [
+      {
+        "title": "🃏 Flash Cards",
+        "file": "extras/flashcards.html",
+        "json": "extras/flashcards.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.flashcards.ui.card_counter",
+            "json_key": "[html]extras.flashcards.ui.card_counter"
+          },
+          {
+            "html_key": "[html]extras.flashcards.ui.tip",
+            "json_key": "[html]extras.flashcards.ui.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🧠 Menu de Fixação",
+        "file": "extras/hub.html",
+        "json": "extras/hub.json",
+        "missing": [
+          {
+            "html_key": "extras.hub.cards.metrics.title",
+            "json_key": "cards.metrics.title"
+          },
+          {
+            "html_key": "extras.hub.cards.metrics.desc",
+            "json_key": "cards.metrics.desc"
+          },
+          {
+            "html_key": "[html]extras.hub.tip",
+            "json_key": "[html]extras.hub.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📖 Resumo do Curso",
+        "file": "extras/resumo.html",
+        "json": "extras/resumo.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.resumo.content.m1.a1",
+            "json_key": "[html]extras.resumo.content.m1.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a2",
+            "json_key": "[html]extras.resumo.content.m1.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a3",
+            "json_key": "[html]extras.resumo.content.m1.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a4",
+            "json_key": "[html]extras.resumo.content.m1.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q5",
+            "json_key": "content.m1.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a5",
+            "json_key": "[html]extras.resumo.content.m1.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q6",
+            "json_key": "content.m1.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a6",
+            "json_key": "[html]extras.resumo.content.m1.a6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a1",
+            "json_key": "[html]extras.resumo.content.m2.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a2",
+            "json_key": "[html]extras.resumo.content.m2.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a3",
+            "json_key": "[html]extras.resumo.content.m2.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a4",
+            "json_key": "[html]extras.resumo.content.m2.a4"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a1",
+            "json_key": "[html]extras.resumo.content.m3.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a2",
+            "json_key": "[html]extras.resumo.content.m3.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a3",
+            "json_key": "[html]extras.resumo.content.m3.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a4",
+            "json_key": "[html]extras.resumo.content.m3.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q5",
+            "json_key": "content.m3.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a5",
+            "json_key": "[html]extras.resumo.content.m3.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q6",
+            "json_key": "content.m3.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a6",
+            "json_key": "[html]extras.resumo.content.m3.a6"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q7",
+            "json_key": "content.m3.q7"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a7",
+            "json_key": "[html]extras.resumo.content.m3.a7"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🔍 Ache o Erro",
+        "file": "extras/ache-erro.html",
+        "json": "extras/ache-erro.json",
+        "missing": [
+          {
+            "html_key": "extras.ache_erro.title",
+            "json_key": "extras.ache_erro.title"
+          },
+          {
+            "html_key": "extras.ache_erro.lead",
+            "json_key": "extras.ache_erro.lead"
+          },
+          {
+            "html_key": "extras.ache_erro.status.errors_found",
+            "json_key": "extras.ache_erro.status.errors_found"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.inbox",
+            "json_key": "extras.ache_erro.email_header.inbox"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.from",
+            "json_key": "extras.ache_erro.email_header.from"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.to",
+            "json_key": "extras.ache_erro.email_header.to"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.subject",
+            "json_key": "extras.ache_erro.email_header.subject"
+          },
+          {
+            "html_key": "extras.ache_erro.feedback.title",
+            "json_key": "extras.ache_erro.feedback.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.title",
+            "json_key": "extras.ache_erro.complete.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.text",
+            "json_key": "extras.ache_erro.complete.text"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.btn_next",
+            "json_key": "extras.ache_erro.complete.btn_next"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.title",
+            "json_key": "extras.ache_erro.summary.title"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.text",
+            "json_key": "extras.ache_erro.summary.text"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.btn_restart",
+            "json_key": "extras.ache_erro.summary.btn_restart"
+          },
+          {
+            "html_key": "extras.ache_erro.btn_back",
+            "json_key": "extras.ache_erro.btn_back"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encontrar no encarte?",
+        "file": "m2/p4.html",
+        "json": "m2/p4.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz1.question",
+            "json_key": "m2.p2.quiz1.question"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_a",
+            "json_key": "m2.p2.quiz1.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_b",
+            "json_key": "m2.p2.quiz1.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_c",
+            "json_key": "m2.p2.quiz1.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_d",
+            "json_key": "m2.p2.quiz1.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz1.feedback",
+            "json_key": "m2.p2.quiz1.feedback"
+          },
+          {
+            "html_key": "m2.p2.importance_title",
+            "json_key": "m2.p2.importance_title"
+          },
+          {
+            "html_key": "m2.p2.importance_text",
+            "json_key": "m2.p2.importance_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que consultar corretamente?",
+        "file": "m2/p5.html",
+        "json": "m2/p5.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz2.question",
+            "json_key": "m2.p2.quiz2.question"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_a",
+            "json_key": "m2.p2.quiz2.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_b",
+            "json_key": "m2.p2.quiz2.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_c",
+            "json_key": "m2.p2.quiz2.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_d",
+            "json_key": "m2.p2.quiz2.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz2.feedback",
+            "json_key": "m2.p2.quiz2.feedback"
+          },
+          {
+            "html_key": "m2.p5.tip_title",
+            "json_key": "tip_title"
+          },
+          {
+            "html_key": "m2.p5.tip_text",
+            "json_key": "tip_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Onde consultar dados das lojas?",
+        "file": "m2/p2.html",
+        "json": "m2/p2.json",
+        "missing": [
+          {
+            "html_key": "global.btn_anterior",
+            "json_key": "global.btn_anterior"
+          },
+          {
+            "html_key": "global.btn_proximo",
+            "json_key": "global.btn_proximo"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encaminhar reclamações?",
+        "file": "m3/p6.html",
+        "json": "m3/p6.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p6.accordion.food_intro",
+            "json_key": "[html]m3.p6.accordion.food_intro"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.food_l3",
+            "json_key": "[html]m3.p6.accordion.food_l3"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_intro",
+            "json_key": "accordion.wrong_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path_title",
+            "json_key": "accordion.wrong_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path",
+            "json_key": "accordion.wrong_path"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l1",
+            "json_key": "[html]m3.p6.accordion.wrong_l1"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l2",
+            "json_key": "[html]m3.p6.accordion.wrong_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_title",
+            "json_key": "accordion.notdone_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_intro",
+            "json_key": "accordion.notdone_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path_title",
+            "json_key": "accordion.notdone_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path",
+            "json_key": "accordion.notdone_path"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l1",
+            "json_key": "accordion.notdone_l1"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l2",
+            "json_key": "accordion.notdone_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l3",
+            "json_key": "accordion.notdone_l3"
+          },
+          {
+            "html_key": "m3.p6.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p6.quiz.feedback",
+            "json_key": "[html]m3.p6.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando trocar sem defeito?",
+        "file": "m3/p3.html",
+        "json": "m3/p3.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p3.p_physical_1",
+            "json_key": "[html]m3.p3.p_physical_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_physical_2",
+            "json_key": "[html]m3.p3.p_physical_2"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz1.feedback",
+            "json_key": "[html]m3.p3.quiz1.feedback"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_1",
+            "json_key": "[html]m3.p3.p_online_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_2",
+            "json_key": "[html]m3.p3.p_online_2"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_title",
+            "json_key": "accordion_online.cond_title"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_intro",
+            "json_key": "accordion_online.cond_intro"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l1",
+            "json_key": "[html]m3.p3.accordion_online.cond_l1"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l2",
+            "json_key": "[html]m3.p3.accordion_online.cond_l2"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l3",
+            "json_key": "[html]m3.p3.accordion_online.cond_l3"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_title",
+            "json_key": "accordion_online.perec_title"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.perec_text",
+            "json_key": "[html]m3.p3.accordion_online.perec_text"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_reason",
+            "json_key": "accordion_online.perec_reason"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz2.feedback",
+            "json_key": "[html]m3.p3.quiz2.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que o CDC é importante?",
+        "file": "m3/p4.html",
+        "json": "m3/p4.json",
+        "missing": [
+          {
+            "html_key": "m3.p1.cards.c1.title",
+            "json_key": "m3.p1.cards.c1.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c1.text",
+            "json_key": "m3.p1.cards.c1.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.title",
+            "json_key": "m3.p1.cards.c2.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.text",
+            "json_key": "m3.p1.cards.c2.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.title",
+            "json_key": "m3.p1.cards.c3.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.text",
+            "json_key": "m3.p1.cards.c3.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.title",
+            "json_key": "m3.p1.cards.c4.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.text",
+            "json_key": "m3.p1.cards.c4.text"
+          },
+          {
+            "html_key": "m3.p1.attention_title",
+            "json_key": "m3.p1.attention_title"
+          },
+          {
+            "html_key": "[html]m3.p1.attention_text",
+            "json_key": "[html]m3.p1.attention_text"
+          },
+          {
+            "html_key": "m3.p1.quiz.question",
+            "json_key": "m3.p1.quiz.question"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_a",
+            "json_key": "m3.p1.quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_b",
+            "json_key": "m3.p1.quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_c",
+            "json_key": "m3.p1.quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_d",
+            "json_key": "m3.p1.quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p1.quiz.feedback",
+            "json_key": "[html]m3.p1.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Você está pronto para o desafio?",
+        "file": "m3/p7.html",
+        "json": "m3/p7.json",
+        "missing": [
+          {
+            "html_key": "[placeholder]m3.p7.placeholder",
+            "json_key": "[placeholder]m3.p7.placeholder"
+          },
+          {
+            "html_key": "[html]m3.p7.feedback",
+            "json_key": "[html]m3.p7.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Conquistas do Módulo 3",
+        "file": "m3/conquistas.html",
+        "json": "m3/conquistas.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.conquistas.subtitle",
+            "json_key": "[html]m3.conquistas.subtitle"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando há defeito, o que fazer?",
+        "file": "m3/p5.html",
+        "json": "m3/p5.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p5.intro",
+            "json_key": "[html]m3.p5.intro"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l1",
+            "json_key": "[html]m3.p5.accordion.l1"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l2",
+            "json_key": "[html]m3.p5.accordion.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l3",
+            "json_key": "[html]m3.p5.accordion.l3"
+          },
+          {
+            "html_key": "[html]m3.p5.attention_text",
+            "json_key": "[html]m3.p5.attention_text"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_electro.text",
+            "json_key": "[html]m3.p5.accordion_electro.text"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.title",
+            "json_key": "accordion_registro.title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.intro",
+            "json_key": "accordion_registro.intro"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path_title",
+            "json_key": "accordion_registro.path_title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path",
+            "json_key": "accordion_registro.path"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l1",
+            "json_key": "accordion_registro.l1"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l2",
+            "json_key": "accordion_registro.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_registro.l3",
+            "json_key": "[html]m3.p5.accordion_registro.l3"
+          },
+          {
+            "html_key": "m3.p5.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p5.quiz.feedback",
+            "json_key": "[html]m3.p5.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📝 O que aprendemos no curso?",
+        "file": "m3/p8.html",
+        "json": "m3/p8.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p8.accordion.a1.text",
+            "json_key": "[html]m3.p8.accordion.a1.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.text",
+            "json_key": "[html]m3.p8.accordion.a2.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l1",
+            "json_key": "[html]m3.p8.accordion.a2.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l2",
+            "json_key": "[html]m3.p8.accordion.a2.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.text",
+            "json_key": "[html]m3.p8.accordion.a3.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.note",
+            "json_key": "[html]m3.p8.accordion.a3.note"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.text",
+            "json_key": "[html]m3.p8.accordion.a4.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l1",
+            "json_key": "[html]m3.p8.accordion.a4.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l2",
+            "json_key": "[html]m3.p8.accordion.a4.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l3",
+            "json_key": "[html]m3.p8.accordion.a4.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.title",
+            "json_key": "accordion.a5.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.text",
+            "json_key": "[html]m3.p8.accordion.a5.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.box_title",
+            "json_key": "accordion.a5.box_title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l1",
+            "json_key": "[html]m3.p8.accordion.a5.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l2",
+            "json_key": "[html]m3.p8.accordion.a5.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l3",
+            "json_key": "[html]m3.p8.accordion.a5.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.title",
+            "json_key": "accordion.a6.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a6.text",
+            "json_key": "[html]m3.p8.accordion.a6.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.warning",
+            "json_key": "accordion.a6.warning"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.note",
+            "json_key": "accordion.a6.note"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.title",
+            "json_key": "accordion.a7.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.text",
+            "json_key": "[html]m3.p8.accordion.a7.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l1",
+            "json_key": "[html]m3.p8.accordion.a7.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l2",
+            "json_key": "[html]m3.p8.accordion.a7.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l3",
+            "json_key": "[html]m3.p8.accordion.a7.l3"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l4",
+            "json_key": "[html]m3.p8.accordion.a7.l4"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.note",
+            "json_key": "accordion.a7.note"
+          },
+          {
+            "html_key": "[html]m3.p8.quiz_final.feedback",
+            "json_key": "[html]m3.p8.quiz_final.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual a diferença: produto x serviço?",
+        "file": "m3/p2.html",
+        "json": "m3/p2.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p2.accordion.product_l1",
+            "json_key": "[html]m3.p2.accordion.product_l1"
+          },
+          {
+            "html_key": "[html]m3.p2.accordion.product_l2",
+            "json_key": "[html]m3.p2.accordion.product_l2"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que é o CDC?",
+        "file": "m3/p1.html",
+        "json": "m3/p1.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p1.intro_p1",
+            "json_key": "[html]m3.p1.intro_p1"
+          },
+          {
+            "html_key": "[html]m3.p1.modal.text",
+            "json_key": "[html]m3.p1.modal.text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quais são nossas responsabilidades?",
+        "file": "m1/p3.html",
+        "json": "m1/p3.json",
+        "missing": [
+          {
+            "html_key": "m1.p3.cards.c3.title",
+            "json_key": "cards.c3.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c3.text",
+            "json_key": "cards.c3.text"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.title",
+            "json_key": "cards.c4.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.text",
+            "json_key": "cards.c4.text"
+          },
+          {
+            "html_key": "m1.p3.proatividade",
+            "json_key": "proatividade"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que prazos são importantes?",
+        "file": "m1/p4.html",
+        "json": "m1/p4.json",
+        "missing": [
+          {
+            "html_key": "m1.p4.standard_box.comment",
+            "json_key": "standard_box.comment"
+          },
+          {
+            "html_key": "m1.p4.special_box.comment",
+            "json_key": "special_box.comment"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual o papel do SAC?",
+        "file": "m1/p2.html",
+        "json": "m1/p2.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.img_alt",
+            "json_key": "m1.p1.img_alt"
+          },
+          {
+            "html_key": "m1.p2.box_attention.hint",
+            "json_key": "box_attention.hint"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que o cliente espera?",
+        "file": "m1/p1.html",
+        "json": "m1/p1.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.sabia.hint",
+            "json_key": "sabia.hint"
+          }
+        ],
+        "json_missing": false
+      }
+    ]
+  },
+  "es": {
+    "language": "es",
+    "exists": true,
+    "total_pages": 37,
+    "pages_ok": 8,
+    "pages_with_issues": 23,
+    "total_missing_keys": 256,
+    "issues": [
+      {
+        "title": "🃏 Flash Cards",
+        "file": "extras/flashcards.html",
+        "json": "extras/flashcards.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.flashcards.ui.card_counter",
+            "json_key": "[html]extras.flashcards.ui.card_counter"
+          },
+          {
+            "html_key": "[html]extras.flashcards.ui.tip",
+            "json_key": "[html]extras.flashcards.ui.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📊 Meu Desempenho",
+        "file": "extras/metricas.html",
+        "json": "extras/metricas.json",
+        "missing": [
+          {
+            "html_key": "extras.metricas.disclaimer",
+            "json_key": "disclaimer"
+          },
+          {
+            "html_key": "extras.metricas.time.title",
+            "json_key": "time.title"
+          },
+          {
+            "html_key": "extras.metricas.time.desc",
+            "json_key": "time.desc"
+          },
+          {
+            "html_key": "extras.metricas.progress.title",
+            "json_key": "progress.title"
+          },
+          {
+            "html_key": "extras.metricas.progress.modules",
+            "json_key": "progress.modules"
+          },
+          {
+            "html_key": "extras.metricas.progress.modules_count",
+            "json_key": "progress.modules_count"
+          },
+          {
+            "html_key": "extras.metricas.progress.pages",
+            "json_key": "progress.pages"
+          },
+          {
+            "html_key": "extras.metricas.progress.pages_count",
+            "json_key": "progress.pages_count"
+          },
+          {
+            "html_key": "extras.metricas.quiz.section_title",
+            "json_key": "quiz.section_title"
+          },
+          {
+            "html_key": "extras.metricas.quiz.answered",
+            "json_key": "quiz.answered"
+          },
+          {
+            "html_key": "extras.metricas.quiz.correct",
+            "json_key": "quiz.correct"
+          },
+          {
+            "html_key": "extras.metricas.quiz.average",
+            "json_key": "quiz.average"
+          },
+          {
+            "html_key": "extras.metricas.quiz.msg_practice",
+            "json_key": "quiz.msg_practice"
+          },
+          {
+            "html_key": "extras.metricas.back_btn",
+            "json_key": "back_btn"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🧠 Menu de Fixação",
+        "file": "extras/hub.html",
+        "json": "extras/hub.json",
+        "missing": [
+          {
+            "html_key": "extras.hub.cards.metrics.title",
+            "json_key": "cards.metrics.title"
+          },
+          {
+            "html_key": "extras.hub.cards.metrics.desc",
+            "json_key": "cards.metrics.desc"
+          },
+          {
+            "html_key": "[html]extras.hub.tip",
+            "json_key": "[html]extras.hub.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📖 Resumo do Curso",
+        "file": "extras/resumo.html",
+        "json": "extras/resumo.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.resumo.content.m1.a1",
+            "json_key": "[html]extras.resumo.content.m1.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a2",
+            "json_key": "[html]extras.resumo.content.m1.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a3",
+            "json_key": "[html]extras.resumo.content.m1.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a4",
+            "json_key": "[html]extras.resumo.content.m1.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q5",
+            "json_key": "content.m1.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a5",
+            "json_key": "[html]extras.resumo.content.m1.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q6",
+            "json_key": "content.m1.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a6",
+            "json_key": "[html]extras.resumo.content.m1.a6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a1",
+            "json_key": "[html]extras.resumo.content.m2.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a2",
+            "json_key": "[html]extras.resumo.content.m2.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a3",
+            "json_key": "[html]extras.resumo.content.m2.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a4",
+            "json_key": "[html]extras.resumo.content.m2.a4"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a1",
+            "json_key": "[html]extras.resumo.content.m3.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a2",
+            "json_key": "[html]extras.resumo.content.m3.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a3",
+            "json_key": "[html]extras.resumo.content.m3.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a4",
+            "json_key": "[html]extras.resumo.content.m3.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q5",
+            "json_key": "content.m3.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a5",
+            "json_key": "[html]extras.resumo.content.m3.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q6",
+            "json_key": "content.m3.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a6",
+            "json_key": "[html]extras.resumo.content.m3.a6"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q7",
+            "json_key": "content.m3.q7"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a7",
+            "json_key": "[html]extras.resumo.content.m3.a7"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🎭 Roleplay",
+        "file": "extras/roleplay.html",
+        "json": "extras/roleplay.json",
+        "missing": [
+          {
+            "html_key": "extras.roleplay.lead",
+            "json_key": "lead"
+          },
+          {
+            "html_key": "extras.roleplay.loading",
+            "json_key": "loading"
+          },
+          {
+            "html_key": "extras.roleplay.btn_continue",
+            "json_key": "btn_continue"
+          },
+          {
+            "html_key": "extras.roleplay.result.title",
+            "json_key": "result.title"
+          },
+          {
+            "html_key": "extras.roleplay.result.text",
+            "json_key": "result.text"
+          },
+          {
+            "html_key": "extras.roleplay.btn_restart",
+            "json_key": "btn_restart"
+          },
+          {
+            "html_key": "extras.roleplay.btn_try_again",
+            "json_key": "btn_try_again"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🎯 Arraste e Solte",
+        "file": "extras/arraste.html",
+        "json": "extras/arraste.json",
+        "missing": [
+          {
+            "html_key": "extras.arraste.lead",
+            "json_key": "lead"
+          },
+          {
+            "html_key": "extras.arraste.phase1.title",
+            "json_key": "phase1.title"
+          },
+          {
+            "html_key": "extras.arraste.phase1.instruction",
+            "json_key": "phase1.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase1.progress",
+            "json_key": "phase1.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.multicanal",
+            "json_key": "phase1.items.multicanal"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.receptivo",
+            "json_key": "phase1.items.receptivo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.ativo",
+            "json_key": "phase1.items.ativo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.multicanal",
+            "json_key": "phase1.zones.multicanal"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.receptivo",
+            "json_key": "phase1.zones.receptivo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.ativo",
+            "json_key": "phase1.zones.ativo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.title",
+            "json_key": "phase2.title"
+          },
+          {
+            "html_key": "extras.arraste.phase2.instruction",
+            "json_key": "phase2.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase2.progress",
+            "json_key": "phase2.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.solicitacoes",
+            "json_key": "phase2.items.solicitacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.informacoes",
+            "json_key": "phase2.items.informacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.reclamacoes",
+            "json_key": "phase2.items.reclamacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.danos",
+            "json_key": "phase2.items.danos"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.duplicidade",
+            "json_key": "phase2.items.duplicidade"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.2dias",
+            "json_key": "phase2.zones.2dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here_2",
+            "json_key": "phase2.drop_here_2"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.3dias",
+            "json_key": "phase2.zones.3dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.5dias",
+            "json_key": "phase2.zones.5dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.8dias",
+            "json_key": "phase2.zones.8dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase3.title",
+            "json_key": "phase3.title"
+          },
+          {
+            "html_key": "extras.arraste.phase3.instruction",
+            "json_key": "phase3.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase3.progress",
+            "json_key": "phase3.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.atendimento",
+            "json_key": "phase3.items.atendimento"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.relatorios",
+            "json_key": "phase3.items.relatorios"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.scripts",
+            "json_key": "phase3.items.scripts"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.suporte",
+            "json_key": "phase3.items.suporte"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.leis",
+            "json_key": "phase3.items.leis"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.orcamento",
+            "json_key": "phase3.items.orcamento"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.contratar",
+            "json_key": "phase3.items.contratar"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.contratos",
+            "json_key": "phase3.items.contratos"
+          },
+          {
+            "html_key": "extras.arraste.phase3.zones.yes",
+            "json_key": "phase3.zones.yes"
+          },
+          {
+            "html_key": "extras.arraste.phase3.drop_here_4",
+            "json_key": "phase3.drop_here_4"
+          },
+          {
+            "html_key": "extras.arraste.phase3.zones.no",
+            "json_key": "phase3.zones.no"
+          },
+          {
+            "html_key": "extras.arraste.phase3.drop_here_4",
+            "json_key": "phase3.drop_here_4"
+          },
+          {
+            "html_key": "extras.arraste.complete.icon",
+            "json_key": "complete.icon"
+          },
+          {
+            "html_key": "extras.arraste.complete.title",
+            "json_key": "complete.title"
+          },
+          {
+            "html_key": "extras.arraste.complete.text",
+            "json_key": "complete.text"
+          },
+          {
+            "html_key": "extras.arraste.complete.btn_restart",
+            "json_key": "complete.btn_restart"
+          },
+          {
+            "html_key": "extras.arraste.complete.btn_back",
+            "json_key": "complete.btn_back"
+          },
+          {
+            "html_key": "extras.arraste.btn_next",
+            "json_key": "btn_next"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🔍 Ache o Erro",
+        "file": "extras/ache-erro.html",
+        "json": "extras/ache-erro.json",
+        "missing": [
+          {
+            "html_key": "extras.ache_erro.title",
+            "json_key": "extras.ache_erro.title"
+          },
+          {
+            "html_key": "extras.ache_erro.lead",
+            "json_key": "extras.ache_erro.lead"
+          },
+          {
+            "html_key": "extras.ache_erro.status.errors_found",
+            "json_key": "extras.ache_erro.status.errors_found"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.inbox",
+            "json_key": "extras.ache_erro.email_header.inbox"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.from",
+            "json_key": "extras.ache_erro.email_header.from"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.to",
+            "json_key": "extras.ache_erro.email_header.to"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.subject",
+            "json_key": "extras.ache_erro.email_header.subject"
+          },
+          {
+            "html_key": "extras.ache_erro.feedback.title",
+            "json_key": "extras.ache_erro.feedback.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.title",
+            "json_key": "extras.ache_erro.complete.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.text",
+            "json_key": "extras.ache_erro.complete.text"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.btn_next",
+            "json_key": "extras.ache_erro.complete.btn_next"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.title",
+            "json_key": "extras.ache_erro.summary.title"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.text",
+            "json_key": "extras.ache_erro.summary.text"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.btn_restart",
+            "json_key": "extras.ache_erro.summary.btn_restart"
+          },
+          {
+            "html_key": "extras.ache_erro.btn_back",
+            "json_key": "extras.ache_erro.btn_back"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encontrar no encarte?",
+        "file": "m2/p4.html",
+        "json": "m2/p4.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz1.question",
+            "json_key": "m2.p2.quiz1.question"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_a",
+            "json_key": "m2.p2.quiz1.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_b",
+            "json_key": "m2.p2.quiz1.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_c",
+            "json_key": "m2.p2.quiz1.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_d",
+            "json_key": "m2.p2.quiz1.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz1.feedback",
+            "json_key": "m2.p2.quiz1.feedback"
+          },
+          {
+            "html_key": "m2.p2.importance_title",
+            "json_key": "m2.p2.importance_title"
+          },
+          {
+            "html_key": "m2.p2.importance_text",
+            "json_key": "m2.p2.importance_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que consultar corretamente?",
+        "file": "m2/p5.html",
+        "json": "m2/p5.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz2.question",
+            "json_key": "m2.p2.quiz2.question"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_a",
+            "json_key": "m2.p2.quiz2.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_b",
+            "json_key": "m2.p2.quiz2.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_c",
+            "json_key": "m2.p2.quiz2.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_d",
+            "json_key": "m2.p2.quiz2.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz2.feedback",
+            "json_key": "m2.p2.quiz2.feedback"
+          },
+          {
+            "html_key": "m2.p5.tip_title",
+            "json_key": "tip_title"
+          },
+          {
+            "html_key": "m2.p5.tip_text",
+            "json_key": "tip_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Onde consultar dados das lojas?",
+        "file": "m2/p2.html",
+        "json": "m2/p2.json",
+        "missing": [
+          {
+            "html_key": "global.btn_anterior",
+            "json_key": "global.btn_anterior"
+          },
+          {
+            "html_key": "global.btn_proximo",
+            "json_key": "global.btn_proximo"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encaminhar reclamações?",
+        "file": "m3/p6.html",
+        "json": "m3/p6.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p6.accordion.food_intro",
+            "json_key": "[html]m3.p6.accordion.food_intro"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.food_l3",
+            "json_key": "[html]m3.p6.accordion.food_l3"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_intro",
+            "json_key": "accordion.wrong_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path_title",
+            "json_key": "accordion.wrong_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path",
+            "json_key": "accordion.wrong_path"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l1",
+            "json_key": "[html]m3.p6.accordion.wrong_l1"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l2",
+            "json_key": "[html]m3.p6.accordion.wrong_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_title",
+            "json_key": "accordion.notdone_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_intro",
+            "json_key": "accordion.notdone_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path_title",
+            "json_key": "accordion.notdone_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path",
+            "json_key": "accordion.notdone_path"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l1",
+            "json_key": "accordion.notdone_l1"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l2",
+            "json_key": "accordion.notdone_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l3",
+            "json_key": "accordion.notdone_l3"
+          },
+          {
+            "html_key": "m3.p6.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p6.quiz.feedback",
+            "json_key": "[html]m3.p6.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando trocar sem defeito?",
+        "file": "m3/p3.html",
+        "json": "m3/p3.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p3.p_physical_1",
+            "json_key": "[html]m3.p3.p_physical_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_physical_2",
+            "json_key": "[html]m3.p3.p_physical_2"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz1.feedback",
+            "json_key": "[html]m3.p3.quiz1.feedback"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_1",
+            "json_key": "[html]m3.p3.p_online_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_2",
+            "json_key": "[html]m3.p3.p_online_2"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_title",
+            "json_key": "accordion_online.cond_title"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_intro",
+            "json_key": "accordion_online.cond_intro"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l1",
+            "json_key": "[html]m3.p3.accordion_online.cond_l1"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l2",
+            "json_key": "[html]m3.p3.accordion_online.cond_l2"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l3",
+            "json_key": "[html]m3.p3.accordion_online.cond_l3"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_title",
+            "json_key": "accordion_online.perec_title"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.perec_text",
+            "json_key": "[html]m3.p3.accordion_online.perec_text"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_reason",
+            "json_key": "accordion_online.perec_reason"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz2.feedback",
+            "json_key": "[html]m3.p3.quiz2.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que o CDC é importante?",
+        "file": "m3/p4.html",
+        "json": "m3/p4.json",
+        "missing": [
+          {
+            "html_key": "m3.p4.intro",
+            "json_key": "intro"
+          },
+          {
+            "html_key": "m3.p1.cards.c1.title",
+            "json_key": "m3.p1.cards.c1.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c1.text",
+            "json_key": "m3.p1.cards.c1.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.title",
+            "json_key": "m3.p1.cards.c2.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.text",
+            "json_key": "m3.p1.cards.c2.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.title",
+            "json_key": "m3.p1.cards.c3.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.text",
+            "json_key": "m3.p1.cards.c3.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.title",
+            "json_key": "m3.p1.cards.c4.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.text",
+            "json_key": "m3.p1.cards.c4.text"
+          },
+          {
+            "html_key": "m3.p1.attention_title",
+            "json_key": "m3.p1.attention_title"
+          },
+          {
+            "html_key": "[html]m3.p1.attention_text",
+            "json_key": "[html]m3.p1.attention_text"
+          },
+          {
+            "html_key": "m3.p1.quiz.question",
+            "json_key": "m3.p1.quiz.question"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_a",
+            "json_key": "m3.p1.quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_b",
+            "json_key": "m3.p1.quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_c",
+            "json_key": "m3.p1.quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_d",
+            "json_key": "m3.p1.quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p1.quiz.feedback",
+            "json_key": "[html]m3.p1.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Você está pronto para o desafio?",
+        "file": "m3/p7.html",
+        "json": "m3/p7.json",
+        "missing": [
+          {
+            "html_key": "m3.p7.practices_title",
+            "json_key": "practices_title"
+          },
+          {
+            "html_key": "m3.p7.practices.p1.title",
+            "json_key": "practices.p1.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p1.text",
+            "json_key": "practices.p1.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p2.title",
+            "json_key": "practices.p2.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p2.text",
+            "json_key": "practices.p2.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p3.title",
+            "json_key": "practices.p3.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p3.text",
+            "json_key": "practices.p3.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p4.title",
+            "json_key": "practices.p4.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p4.text",
+            "json_key": "practices.p4.text"
+          },
+          {
+            "html_key": "[placeholder]m3.p7.placeholder",
+            "json_key": "[placeholder]m3.p7.placeholder"
+          },
+          {
+            "html_key": "m3.p7.btn_submit",
+            "json_key": "btn_submit"
+          },
+          {
+            "html_key": "[html]m3.p7.feedback",
+            "json_key": "[html]m3.p7.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Conquistas do Módulo 3",
+        "file": "m3/conquistas.html",
+        "json": "m3/conquistas.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.conquistas.subtitle",
+            "json_key": "[html]m3.conquistas.subtitle"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando há defeito, o que fazer?",
+        "file": "m3/p5.html",
+        "json": "m3/p5.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p5.intro",
+            "json_key": "[html]m3.p5.intro"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l1",
+            "json_key": "[html]m3.p5.accordion.l1"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l2",
+            "json_key": "[html]m3.p5.accordion.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l3",
+            "json_key": "[html]m3.p5.accordion.l3"
+          },
+          {
+            "html_key": "[html]m3.p5.attention_text",
+            "json_key": "[html]m3.p5.attention_text"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_electro.text",
+            "json_key": "[html]m3.p5.accordion_electro.text"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.title",
+            "json_key": "accordion_registro.title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.intro",
+            "json_key": "accordion_registro.intro"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path_title",
+            "json_key": "accordion_registro.path_title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path",
+            "json_key": "accordion_registro.path"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l1",
+            "json_key": "accordion_registro.l1"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l2",
+            "json_key": "accordion_registro.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_registro.l3",
+            "json_key": "[html]m3.p5.accordion_registro.l3"
+          },
+          {
+            "html_key": "m3.p5.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p5.quiz.feedback",
+            "json_key": "[html]m3.p5.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📝 O que aprendemos no curso?",
+        "file": "m3/p8.html",
+        "json": "m3/p8.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p8.accordion.a1.text",
+            "json_key": "[html]m3.p8.accordion.a1.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.text",
+            "json_key": "[html]m3.p8.accordion.a2.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l1",
+            "json_key": "[html]m3.p8.accordion.a2.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l2",
+            "json_key": "[html]m3.p8.accordion.a2.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.text",
+            "json_key": "[html]m3.p8.accordion.a3.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.note",
+            "json_key": "[html]m3.p8.accordion.a3.note"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.text",
+            "json_key": "[html]m3.p8.accordion.a4.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l1",
+            "json_key": "[html]m3.p8.accordion.a4.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l2",
+            "json_key": "[html]m3.p8.accordion.a4.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l3",
+            "json_key": "[html]m3.p8.accordion.a4.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.title",
+            "json_key": "accordion.a5.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.text",
+            "json_key": "[html]m3.p8.accordion.a5.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.box_title",
+            "json_key": "accordion.a5.box_title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l1",
+            "json_key": "[html]m3.p8.accordion.a5.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l2",
+            "json_key": "[html]m3.p8.accordion.a5.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l3",
+            "json_key": "[html]m3.p8.accordion.a5.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.title",
+            "json_key": "accordion.a6.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a6.text",
+            "json_key": "[html]m3.p8.accordion.a6.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.warning",
+            "json_key": "accordion.a6.warning"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.note",
+            "json_key": "accordion.a6.note"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.title",
+            "json_key": "accordion.a7.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.text",
+            "json_key": "[html]m3.p8.accordion.a7.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l1",
+            "json_key": "[html]m3.p8.accordion.a7.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l2",
+            "json_key": "[html]m3.p8.accordion.a7.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l3",
+            "json_key": "[html]m3.p8.accordion.a7.l3"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l4",
+            "json_key": "[html]m3.p8.accordion.a7.l4"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.note",
+            "json_key": "accordion.a7.note"
+          },
+          {
+            "html_key": "[html]m3.p8.quiz_final.feedback",
+            "json_key": "[html]m3.p8.quiz_final.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual a diferença: produto x serviço?",
+        "file": "m3/p2.html",
+        "json": "m3/p2.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p2.accordion.product_l1",
+            "json_key": "[html]m3.p2.accordion.product_l1"
+          },
+          {
+            "html_key": "[html]m3.p2.accordion.product_l2",
+            "json_key": "[html]m3.p2.accordion.product_l2"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que é o CDC?",
+        "file": "m3/p1.html",
+        "json": "m3/p1.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p1.intro_p1",
+            "json_key": "[html]m3.p1.intro_p1"
+          },
+          {
+            "html_key": "[html]m3.p1.modal.text",
+            "json_key": "[html]m3.p1.modal.text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quais são nossas responsabilidades?",
+        "file": "m1/p3.html",
+        "json": "m1/p3.json",
+        "missing": [
+          {
+            "html_key": "m1.p3.cards.c3.title",
+            "json_key": "cards.c3.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c3.text",
+            "json_key": "cards.c3.text"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.title",
+            "json_key": "cards.c4.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.text",
+            "json_key": "cards.c4.text"
+          },
+          {
+            "html_key": "m1.p3.proatividade",
+            "json_key": "proatividade"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que prazos são importantes?",
+        "file": "m1/p4.html",
+        "json": "m1/p4.json",
+        "missing": [
+          {
+            "html_key": "m1.p4.standard_box.comment",
+            "json_key": "standard_box.comment"
+          },
+          {
+            "html_key": "m1.p4.special_box.comment",
+            "json_key": "special_box.comment"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual o papel do SAC?",
+        "file": "m1/p2.html",
+        "json": "m1/p2.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.img_alt",
+            "json_key": "m1.p1.img_alt"
+          },
+          {
+            "html_key": "m1.p2.box_attention.hint",
+            "json_key": "box_attention.hint"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que o cliente espera?",
+        "file": "m1/p1.html",
+        "json": "m1/p1.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.sabia.hint",
+            "json_key": "sabia.hint"
+          }
+        ],
+        "json_missing": false
+      }
+    ]
+  },
+  "fr": {
+    "language": "fr",
+    "exists": true,
+    "total_pages": 37,
+    "pages_ok": 8,
+    "pages_with_issues": 23,
+    "total_missing_keys": 256,
+    "issues": [
+      {
+        "title": "🃏 Flash Cards",
+        "file": "extras/flashcards.html",
+        "json": "extras/flashcards.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.flashcards.ui.card_counter",
+            "json_key": "[html]extras.flashcards.ui.card_counter"
+          },
+          {
+            "html_key": "[html]extras.flashcards.ui.tip",
+            "json_key": "[html]extras.flashcards.ui.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📊 Meu Desempenho",
+        "file": "extras/metricas.html",
+        "json": "extras/metricas.json",
+        "missing": [
+          {
+            "html_key": "extras.metricas.disclaimer",
+            "json_key": "disclaimer"
+          },
+          {
+            "html_key": "extras.metricas.time.title",
+            "json_key": "time.title"
+          },
+          {
+            "html_key": "extras.metricas.time.desc",
+            "json_key": "time.desc"
+          },
+          {
+            "html_key": "extras.metricas.progress.title",
+            "json_key": "progress.title"
+          },
+          {
+            "html_key": "extras.metricas.progress.modules",
+            "json_key": "progress.modules"
+          },
+          {
+            "html_key": "extras.metricas.progress.modules_count",
+            "json_key": "progress.modules_count"
+          },
+          {
+            "html_key": "extras.metricas.progress.pages",
+            "json_key": "progress.pages"
+          },
+          {
+            "html_key": "extras.metricas.progress.pages_count",
+            "json_key": "progress.pages_count"
+          },
+          {
+            "html_key": "extras.metricas.quiz.section_title",
+            "json_key": "quiz.section_title"
+          },
+          {
+            "html_key": "extras.metricas.quiz.answered",
+            "json_key": "quiz.answered"
+          },
+          {
+            "html_key": "extras.metricas.quiz.correct",
+            "json_key": "quiz.correct"
+          },
+          {
+            "html_key": "extras.metricas.quiz.average",
+            "json_key": "quiz.average"
+          },
+          {
+            "html_key": "extras.metricas.quiz.msg_practice",
+            "json_key": "quiz.msg_practice"
+          },
+          {
+            "html_key": "extras.metricas.back_btn",
+            "json_key": "back_btn"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🧠 Menu de Fixação",
+        "file": "extras/hub.html",
+        "json": "extras/hub.json",
+        "missing": [
+          {
+            "html_key": "extras.hub.cards.metrics.title",
+            "json_key": "cards.metrics.title"
+          },
+          {
+            "html_key": "extras.hub.cards.metrics.desc",
+            "json_key": "cards.metrics.desc"
+          },
+          {
+            "html_key": "[html]extras.hub.tip",
+            "json_key": "[html]extras.hub.tip"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📖 Resumo do Curso",
+        "file": "extras/resumo.html",
+        "json": "extras/resumo.json",
+        "missing": [
+          {
+            "html_key": "[html]extras.resumo.content.m1.a1",
+            "json_key": "[html]extras.resumo.content.m1.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a2",
+            "json_key": "[html]extras.resumo.content.m1.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a3",
+            "json_key": "[html]extras.resumo.content.m1.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a4",
+            "json_key": "[html]extras.resumo.content.m1.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q5",
+            "json_key": "content.m1.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a5",
+            "json_key": "[html]extras.resumo.content.m1.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m1.q6",
+            "json_key": "content.m1.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m1.a6",
+            "json_key": "[html]extras.resumo.content.m1.a6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a1",
+            "json_key": "[html]extras.resumo.content.m2.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a2",
+            "json_key": "[html]extras.resumo.content.m2.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a3",
+            "json_key": "[html]extras.resumo.content.m2.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m2.a4",
+            "json_key": "[html]extras.resumo.content.m2.a4"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a1",
+            "json_key": "[html]extras.resumo.content.m3.a1"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a2",
+            "json_key": "[html]extras.resumo.content.m3.a2"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a3",
+            "json_key": "[html]extras.resumo.content.m3.a3"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a4",
+            "json_key": "[html]extras.resumo.content.m3.a4"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q5",
+            "json_key": "content.m3.q5"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a5",
+            "json_key": "[html]extras.resumo.content.m3.a5"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q6",
+            "json_key": "content.m3.q6"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a6",
+            "json_key": "[html]extras.resumo.content.m3.a6"
+          },
+          {
+            "html_key": "extras.resumo.content.m3.q7",
+            "json_key": "content.m3.q7"
+          },
+          {
+            "html_key": "[html]extras.resumo.content.m3.a7",
+            "json_key": "[html]extras.resumo.content.m3.a7"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🎭 Roleplay",
+        "file": "extras/roleplay.html",
+        "json": "extras/roleplay.json",
+        "missing": [
+          {
+            "html_key": "extras.roleplay.lead",
+            "json_key": "lead"
+          },
+          {
+            "html_key": "extras.roleplay.loading",
+            "json_key": "loading"
+          },
+          {
+            "html_key": "extras.roleplay.btn_continue",
+            "json_key": "btn_continue"
+          },
+          {
+            "html_key": "extras.roleplay.result.title",
+            "json_key": "result.title"
+          },
+          {
+            "html_key": "extras.roleplay.result.text",
+            "json_key": "result.text"
+          },
+          {
+            "html_key": "extras.roleplay.btn_restart",
+            "json_key": "btn_restart"
+          },
+          {
+            "html_key": "extras.roleplay.btn_try_again",
+            "json_key": "btn_try_again"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🎯 Arraste e Solte",
+        "file": "extras/arraste.html",
+        "json": "extras/arraste.json",
+        "missing": [
+          {
+            "html_key": "extras.arraste.lead",
+            "json_key": "lead"
+          },
+          {
+            "html_key": "extras.arraste.phase1.title",
+            "json_key": "phase1.title"
+          },
+          {
+            "html_key": "extras.arraste.phase1.instruction",
+            "json_key": "phase1.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase1.progress",
+            "json_key": "phase1.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.multicanal",
+            "json_key": "phase1.items.multicanal"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.receptivo",
+            "json_key": "phase1.items.receptivo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.items.ativo",
+            "json_key": "phase1.items.ativo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.multicanal",
+            "json_key": "phase1.zones.multicanal"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.receptivo",
+            "json_key": "phase1.zones.receptivo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase1.zones.ativo",
+            "json_key": "phase1.zones.ativo"
+          },
+          {
+            "html_key": "extras.arraste.phase1.drop_here",
+            "json_key": "phase1.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.title",
+            "json_key": "phase2.title"
+          },
+          {
+            "html_key": "extras.arraste.phase2.instruction",
+            "json_key": "phase2.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase2.progress",
+            "json_key": "phase2.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.solicitacoes",
+            "json_key": "phase2.items.solicitacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.informacoes",
+            "json_key": "phase2.items.informacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.reclamacoes",
+            "json_key": "phase2.items.reclamacoes"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.danos",
+            "json_key": "phase2.items.danos"
+          },
+          {
+            "html_key": "extras.arraste.phase2.items.duplicidade",
+            "json_key": "phase2.items.duplicidade"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.2dias",
+            "json_key": "phase2.zones.2dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here_2",
+            "json_key": "phase2.drop_here_2"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.3dias",
+            "json_key": "phase2.zones.3dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.5dias",
+            "json_key": "phase2.zones.5dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase2.zones.8dias",
+            "json_key": "phase2.zones.8dias"
+          },
+          {
+            "html_key": "extras.arraste.phase2.drop_here",
+            "json_key": "phase2.drop_here"
+          },
+          {
+            "html_key": "extras.arraste.phase3.title",
+            "json_key": "phase3.title"
+          },
+          {
+            "html_key": "extras.arraste.phase3.instruction",
+            "json_key": "phase3.instruction"
+          },
+          {
+            "html_key": "extras.arraste.phase3.progress",
+            "json_key": "phase3.progress"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.atendimento",
+            "json_key": "phase3.items.atendimento"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.relatorios",
+            "json_key": "phase3.items.relatorios"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.scripts",
+            "json_key": "phase3.items.scripts"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.suporte",
+            "json_key": "phase3.items.suporte"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.leis",
+            "json_key": "phase3.items.leis"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.orcamento",
+            "json_key": "phase3.items.orcamento"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.contratar",
+            "json_key": "phase3.items.contratar"
+          },
+          {
+            "html_key": "extras.arraste.phase3.items.contratos",
+            "json_key": "phase3.items.contratos"
+          },
+          {
+            "html_key": "extras.arraste.phase3.zones.yes",
+            "json_key": "phase3.zones.yes"
+          },
+          {
+            "html_key": "extras.arraste.phase3.drop_here_4",
+            "json_key": "phase3.drop_here_4"
+          },
+          {
+            "html_key": "extras.arraste.phase3.zones.no",
+            "json_key": "phase3.zones.no"
+          },
+          {
+            "html_key": "extras.arraste.phase3.drop_here_4",
+            "json_key": "phase3.drop_here_4"
+          },
+          {
+            "html_key": "extras.arraste.complete.icon",
+            "json_key": "complete.icon"
+          },
+          {
+            "html_key": "extras.arraste.complete.title",
+            "json_key": "complete.title"
+          },
+          {
+            "html_key": "extras.arraste.complete.text",
+            "json_key": "complete.text"
+          },
+          {
+            "html_key": "extras.arraste.complete.btn_restart",
+            "json_key": "complete.btn_restart"
+          },
+          {
+            "html_key": "extras.arraste.complete.btn_back",
+            "json_key": "complete.btn_back"
+          },
+          {
+            "html_key": "extras.arraste.btn_next",
+            "json_key": "btn_next"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🔍 Ache o Erro",
+        "file": "extras/ache-erro.html",
+        "json": "extras/ache-erro.json",
+        "missing": [
+          {
+            "html_key": "extras.ache_erro.title",
+            "json_key": "extras.ache_erro.title"
+          },
+          {
+            "html_key": "extras.ache_erro.lead",
+            "json_key": "extras.ache_erro.lead"
+          },
+          {
+            "html_key": "extras.ache_erro.status.errors_found",
+            "json_key": "extras.ache_erro.status.errors_found"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.inbox",
+            "json_key": "extras.ache_erro.email_header.inbox"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.from",
+            "json_key": "extras.ache_erro.email_header.from"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.to",
+            "json_key": "extras.ache_erro.email_header.to"
+          },
+          {
+            "html_key": "extras.ache_erro.email_header.subject",
+            "json_key": "extras.ache_erro.email_header.subject"
+          },
+          {
+            "html_key": "extras.ache_erro.feedback.title",
+            "json_key": "extras.ache_erro.feedback.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.title",
+            "json_key": "extras.ache_erro.complete.title"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.text",
+            "json_key": "extras.ache_erro.complete.text"
+          },
+          {
+            "html_key": "extras.ache_erro.complete.btn_next",
+            "json_key": "extras.ache_erro.complete.btn_next"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.title",
+            "json_key": "extras.ache_erro.summary.title"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.text",
+            "json_key": "extras.ache_erro.summary.text"
+          },
+          {
+            "html_key": "extras.ache_erro.summary.btn_restart",
+            "json_key": "extras.ache_erro.summary.btn_restart"
+          },
+          {
+            "html_key": "extras.ache_erro.btn_back",
+            "json_key": "extras.ache_erro.btn_back"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encontrar no encarte?",
+        "file": "m2/p4.html",
+        "json": "m2/p4.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz1.question",
+            "json_key": "m2.p2.quiz1.question"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_a",
+            "json_key": "m2.p2.quiz1.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_b",
+            "json_key": "m2.p2.quiz1.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_c",
+            "json_key": "m2.p2.quiz1.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz1.opt_d",
+            "json_key": "m2.p2.quiz1.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz1.feedback",
+            "json_key": "m2.p2.quiz1.feedback"
+          },
+          {
+            "html_key": "m2.p2.importance_title",
+            "json_key": "m2.p2.importance_title"
+          },
+          {
+            "html_key": "m2.p2.importance_text",
+            "json_key": "m2.p2.importance_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que consultar corretamente?",
+        "file": "m2/p5.html",
+        "json": "m2/p5.json",
+        "missing": [
+          {
+            "html_key": "m2.p2.quiz2.question",
+            "json_key": "m2.p2.quiz2.question"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_a",
+            "json_key": "m2.p2.quiz2.opt_a"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_b",
+            "json_key": "m2.p2.quiz2.opt_b"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_c",
+            "json_key": "m2.p2.quiz2.opt_c"
+          },
+          {
+            "html_key": "m2.p2.quiz2.opt_d",
+            "json_key": "m2.p2.quiz2.opt_d"
+          },
+          {
+            "html_key": "m2.p2.quiz2.feedback",
+            "json_key": "m2.p2.quiz2.feedback"
+          },
+          {
+            "html_key": "m2.p5.tip_title",
+            "json_key": "tip_title"
+          },
+          {
+            "html_key": "m2.p5.tip_text",
+            "json_key": "tip_text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Onde consultar dados das lojas?",
+        "file": "m2/p2.html",
+        "json": "m2/p2.json",
+        "missing": [
+          {
+            "html_key": "global.btn_anterior",
+            "json_key": "global.btn_anterior"
+          },
+          {
+            "html_key": "global.btn_proximo",
+            "json_key": "global.btn_proximo"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Como encaminhar reclamações?",
+        "file": "m3/p6.html",
+        "json": "m3/p6.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p6.accordion.food_intro",
+            "json_key": "[html]m3.p6.accordion.food_intro"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.food_l3",
+            "json_key": "[html]m3.p6.accordion.food_l3"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_intro",
+            "json_key": "accordion.wrong_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path_title",
+            "json_key": "accordion.wrong_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.wrong_path",
+            "json_key": "accordion.wrong_path"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l1",
+            "json_key": "[html]m3.p6.accordion.wrong_l1"
+          },
+          {
+            "html_key": "[html]m3.p6.accordion.wrong_l2",
+            "json_key": "[html]m3.p6.accordion.wrong_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_title",
+            "json_key": "accordion.notdone_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_intro",
+            "json_key": "accordion.notdone_intro"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path_title",
+            "json_key": "accordion.notdone_path_title"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_path",
+            "json_key": "accordion.notdone_path"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l1",
+            "json_key": "accordion.notdone_l1"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l2",
+            "json_key": "accordion.notdone_l2"
+          },
+          {
+            "html_key": "m3.p6.accordion.notdone_l3",
+            "json_key": "accordion.notdone_l3"
+          },
+          {
+            "html_key": "m3.p6.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p6.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p6.quiz.feedback",
+            "json_key": "[html]m3.p6.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando trocar sem defeito?",
+        "file": "m3/p3.html",
+        "json": "m3/p3.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p3.p_physical_1",
+            "json_key": "[html]m3.p3.p_physical_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_physical_2",
+            "json_key": "[html]m3.p3.p_physical_2"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz1.feedback",
+            "json_key": "[html]m3.p3.quiz1.feedback"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_1",
+            "json_key": "[html]m3.p3.p_online_1"
+          },
+          {
+            "html_key": "[html]m3.p3.p_online_2",
+            "json_key": "[html]m3.p3.p_online_2"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_title",
+            "json_key": "accordion_online.cond_title"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.cond_intro",
+            "json_key": "accordion_online.cond_intro"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l1",
+            "json_key": "[html]m3.p3.accordion_online.cond_l1"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l2",
+            "json_key": "[html]m3.p3.accordion_online.cond_l2"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.cond_l3",
+            "json_key": "[html]m3.p3.accordion_online.cond_l3"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_title",
+            "json_key": "accordion_online.perec_title"
+          },
+          {
+            "html_key": "[html]m3.p3.accordion_online.perec_text",
+            "json_key": "[html]m3.p3.accordion_online.perec_text"
+          },
+          {
+            "html_key": "m3.p3.accordion_online.perec_reason",
+            "json_key": "accordion_online.perec_reason"
+          },
+          {
+            "html_key": "[html]m3.p3.quiz2.feedback",
+            "json_key": "[html]m3.p3.quiz2.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que o CDC é importante?",
+        "file": "m3/p4.html",
+        "json": "m3/p4.json",
+        "missing": [
+          {
+            "html_key": "m3.p4.intro",
+            "json_key": "intro"
+          },
+          {
+            "html_key": "m3.p1.cards.c1.title",
+            "json_key": "m3.p1.cards.c1.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c1.text",
+            "json_key": "m3.p1.cards.c1.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.title",
+            "json_key": "m3.p1.cards.c2.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c2.text",
+            "json_key": "m3.p1.cards.c2.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.title",
+            "json_key": "m3.p1.cards.c3.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c3.text",
+            "json_key": "m3.p1.cards.c3.text"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.title",
+            "json_key": "m3.p1.cards.c4.title"
+          },
+          {
+            "html_key": "m3.p1.cards.c4.text",
+            "json_key": "m3.p1.cards.c4.text"
+          },
+          {
+            "html_key": "m3.p1.attention_title",
+            "json_key": "m3.p1.attention_title"
+          },
+          {
+            "html_key": "[html]m3.p1.attention_text",
+            "json_key": "[html]m3.p1.attention_text"
+          },
+          {
+            "html_key": "m3.p1.quiz.question",
+            "json_key": "m3.p1.quiz.question"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_a",
+            "json_key": "m3.p1.quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_b",
+            "json_key": "m3.p1.quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_c",
+            "json_key": "m3.p1.quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p1.quiz.opt_d",
+            "json_key": "m3.p1.quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p1.quiz.feedback",
+            "json_key": "[html]m3.p1.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Você está pronto para o desafio?",
+        "file": "m3/p7.html",
+        "json": "m3/p7.json",
+        "missing": [
+          {
+            "html_key": "m3.p7.practices_title",
+            "json_key": "practices_title"
+          },
+          {
+            "html_key": "m3.p7.practices.p1.title",
+            "json_key": "practices.p1.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p1.text",
+            "json_key": "practices.p1.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p2.title",
+            "json_key": "practices.p2.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p2.text",
+            "json_key": "practices.p2.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p3.title",
+            "json_key": "practices.p3.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p3.text",
+            "json_key": "practices.p3.text"
+          },
+          {
+            "html_key": "m3.p7.practices.p4.title",
+            "json_key": "practices.p4.title"
+          },
+          {
+            "html_key": "m3.p7.practices.p4.text",
+            "json_key": "practices.p4.text"
+          },
+          {
+            "html_key": "[placeholder]m3.p7.placeholder",
+            "json_key": "[placeholder]m3.p7.placeholder"
+          },
+          {
+            "html_key": "m3.p7.btn_submit",
+            "json_key": "btn_submit"
+          },
+          {
+            "html_key": "[html]m3.p7.feedback",
+            "json_key": "[html]m3.p7.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "🏆 Conquistas do Módulo 3",
+        "file": "m3/conquistas.html",
+        "json": "m3/conquistas.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.conquistas.subtitle",
+            "json_key": "[html]m3.conquistas.subtitle"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quando há defeito, o que fazer?",
+        "file": "m3/p5.html",
+        "json": "m3/p5.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p5.intro",
+            "json_key": "[html]m3.p5.intro"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l1",
+            "json_key": "[html]m3.p5.accordion.l1"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l2",
+            "json_key": "[html]m3.p5.accordion.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion.l3",
+            "json_key": "[html]m3.p5.accordion.l3"
+          },
+          {
+            "html_key": "[html]m3.p5.attention_text",
+            "json_key": "[html]m3.p5.attention_text"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_electro.text",
+            "json_key": "[html]m3.p5.accordion_electro.text"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.title",
+            "json_key": "accordion_registro.title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.intro",
+            "json_key": "accordion_registro.intro"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path_title",
+            "json_key": "accordion_registro.path_title"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.path",
+            "json_key": "accordion_registro.path"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l1",
+            "json_key": "accordion_registro.l1"
+          },
+          {
+            "html_key": "m3.p5.accordion_registro.l2",
+            "json_key": "accordion_registro.l2"
+          },
+          {
+            "html_key": "[html]m3.p5.accordion_registro.l3",
+            "json_key": "[html]m3.p5.accordion_registro.l3"
+          },
+          {
+            "html_key": "m3.p5.quiz.question",
+            "json_key": "quiz.question"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_a",
+            "json_key": "quiz.opt_a"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_b",
+            "json_key": "quiz.opt_b"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_c",
+            "json_key": "quiz.opt_c"
+          },
+          {
+            "html_key": "m3.p5.quiz.opt_d",
+            "json_key": "quiz.opt_d"
+          },
+          {
+            "html_key": "[html]m3.p5.quiz.feedback",
+            "json_key": "[html]m3.p5.quiz.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "📝 O que aprendemos no curso?",
+        "file": "m3/p8.html",
+        "json": "m3/p8.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p8.accordion.a1.text",
+            "json_key": "[html]m3.p8.accordion.a1.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.text",
+            "json_key": "[html]m3.p8.accordion.a2.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l1",
+            "json_key": "[html]m3.p8.accordion.a2.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a2.l2",
+            "json_key": "[html]m3.p8.accordion.a2.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.text",
+            "json_key": "[html]m3.p8.accordion.a3.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a3.note",
+            "json_key": "[html]m3.p8.accordion.a3.note"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.text",
+            "json_key": "[html]m3.p8.accordion.a4.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l1",
+            "json_key": "[html]m3.p8.accordion.a4.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l2",
+            "json_key": "[html]m3.p8.accordion.a4.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a4.l3",
+            "json_key": "[html]m3.p8.accordion.a4.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.title",
+            "json_key": "accordion.a5.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.text",
+            "json_key": "[html]m3.p8.accordion.a5.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a5.box_title",
+            "json_key": "accordion.a5.box_title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l1",
+            "json_key": "[html]m3.p8.accordion.a5.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l2",
+            "json_key": "[html]m3.p8.accordion.a5.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a5.l3",
+            "json_key": "[html]m3.p8.accordion.a5.l3"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.title",
+            "json_key": "accordion.a6.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a6.text",
+            "json_key": "[html]m3.p8.accordion.a6.text"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.warning",
+            "json_key": "accordion.a6.warning"
+          },
+          {
+            "html_key": "m3.p8.accordion.a6.note",
+            "json_key": "accordion.a6.note"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.title",
+            "json_key": "accordion.a7.title"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.text",
+            "json_key": "[html]m3.p8.accordion.a7.text"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l1",
+            "json_key": "[html]m3.p8.accordion.a7.l1"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l2",
+            "json_key": "[html]m3.p8.accordion.a7.l2"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l3",
+            "json_key": "[html]m3.p8.accordion.a7.l3"
+          },
+          {
+            "html_key": "[html]m3.p8.accordion.a7.l4",
+            "json_key": "[html]m3.p8.accordion.a7.l4"
+          },
+          {
+            "html_key": "m3.p8.accordion.a7.note",
+            "json_key": "accordion.a7.note"
+          },
+          {
+            "html_key": "[html]m3.p8.quiz_final.feedback",
+            "json_key": "[html]m3.p8.quiz_final.feedback"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual a diferença: produto x serviço?",
+        "file": "m3/p2.html",
+        "json": "m3/p2.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p2.accordion.product_l1",
+            "json_key": "[html]m3.p2.accordion.product_l1"
+          },
+          {
+            "html_key": "[html]m3.p2.accordion.product_l2",
+            "json_key": "[html]m3.p2.accordion.product_l2"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que é o CDC?",
+        "file": "m3/p1.html",
+        "json": "m3/p1.json",
+        "missing": [
+          {
+            "html_key": "[html]m3.p1.intro_p1",
+            "json_key": "[html]m3.p1.intro_p1"
+          },
+          {
+            "html_key": "[html]m3.p1.modal.text",
+            "json_key": "[html]m3.p1.modal.text"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Quais são nossas responsabilidades?",
+        "file": "m1/p3.html",
+        "json": "m1/p3.json",
+        "missing": [
+          {
+            "html_key": "m1.p3.cards.c3.title",
+            "json_key": "cards.c3.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c3.text",
+            "json_key": "cards.c3.text"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.title",
+            "json_key": "cards.c4.title"
+          },
+          {
+            "html_key": "m1.p3.cards.c4.text",
+            "json_key": "cards.c4.text"
+          },
+          {
+            "html_key": "m1.p3.proatividade",
+            "json_key": "proatividade"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Por que prazos são importantes?",
+        "file": "m1/p4.html",
+        "json": "m1/p4.json",
+        "missing": [
+          {
+            "html_key": "m1.p4.standard_box.comment",
+            "json_key": "standard_box.comment"
+          },
+          {
+            "html_key": "m1.p4.special_box.comment",
+            "json_key": "special_box.comment"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "Qual o papel do SAC?",
+        "file": "m1/p2.html",
+        "json": "m1/p2.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.img_alt",
+            "json_key": "m1.p1.img_alt"
+          },
+          {
+            "html_key": "m1.p2.box_attention.hint",
+            "json_key": "box_attention.hint"
+          }
+        ],
+        "json_missing": false
+      },
+      {
+        "title": "O que o cliente espera?",
+        "file": "m1/p1.html",
+        "json": "m1/p1.json",
+        "missing": [
+          {
+            "html_key": "m1.p1.sabia.hint",
+            "json_key": "sabia.hint"
+          }
+        ],
+        "json_missing": false
+      }
+    ]
+  }
+}
