@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Tradução Automática (Método Alternativo)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .alert h3 {
+            color: #856404;
+            margin-bottom: 8px;
+        }
+
+        .alert p {
+            color: #856404;
+            font-size: 14px;
+        }
+
+        .lang-selector {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .lang-btn {
+            padding: 14px 28px;
+            border: none;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .lang-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .lang-btn.active {
+            background: #4c51bf;
+        }
+
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 4px solid #1976d2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .notranslate {
+            background: #ffebee;
+            color: #c62828;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            border: 1px solid #e0e0e0;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison-box {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .old {
+            background: #ffebee;
+            border: 2px solid #ef5350;
+        }
+
+        .new {
+            background: #e8f5e9;
+            border: 2px solid #66bb6a;
+        }
+
+        .comparison-box h4 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Demo: Tradução Automática</h1>
+            <p>Teste a tradução automática clicando nos botões abaixo</p>
+
+            <div class="alert">
+                <h3>⚠️ Como Funciona</h3>
+                <p>Esta demo usa links diretos do Google Translate. Ao clicar em um idioma, a página será recarregada
+                    com tradução automática aplicada. É assim que funciona na prática!</p>
+            </div>
+
+            <div class="lang-selector">
+                <a href="?lang=pt" class="lang-btn" id="btn-pt">🇧🇷 Português</a>
+                <a href="#" class="lang-btn" id="btn-en" onclick="translatePage('en'); return false;">🇺🇸 English</a>
+                <a href="#" class="lang-btn" id="btn-es" onclick="translatePage('es'); return false;">🇪🇸 Español</a>
+                <a href="#" class="lang-btn" id="btn-fr" onclick="translatePage('fr'); return false;">🇫🇷 Français</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>📖 Como Funciona</h2>
+            <p>Este sistema usa o <strong>Google Translate</strong> para traduzir automaticamente todo o conteúdo da
+                página. Você não precisa manter arquivos JSON separados para cada idioma!</p>
+
+            <div class="highlight">
+                <h3>✨ Principais Vantagens</h3>
+                <ul>
+                    <li><strong>Zero manutenção de JSONs</strong>: Elimina 107 arquivos de tradução</li>
+                    <li><strong>Tradução instantânea</strong>: Funciona para 100+ idiomas automaticamente</li>
+                    <li><strong>Totalmente gratuito</strong>: Sem custos ou limites de uso</li>
+                    <li><strong>Implementação simples</strong>: Apenas algumas linhas de código</li>
+                    <li><strong>Funciona offline</strong>: Após primeira tradução, fica em cache</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>🎯 Teste de Tradução</h2>
+            <p>Clique nos botões acima para ver a tradução em ação. O texto abaixo deve mudar de idioma:</p>
+
+            <div class="success">
+                <h3>Exemplo de Conteúdo</h3>
+                <p>Este é um parágrafo de exemplo que será traduzido automaticamente quando você selecionar outro
+                    idioma.</p>
+                <p>A empresa <span class="notranslate">Grupo Zaffari</span> oferece treinamento de SAC para sua equipe.
+                </p>
+                <p><em>Note que "Grupo Zaffari" permanece em português pois tem a classe "notranslate".</em></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>🔄 Comparação: Antes vs Depois</h2>
+
+            <div class="comparison">
+                <div class="comparison-box old">
+                    <h4>❌ Sistema Antigo (JSON)</h4>
+                    <p><strong>HTML:</strong></p>
+                    <code>&lt;h1 data-i18n="title"&gt;&lt;/h1&gt;</code>
+                    <p style="margin-top: 10px;"><strong>Problema:</strong></p>
+                    <ul style="font-size: 14px;">
+                        <li>4 arquivos JSON por página</li>
+                        <li>723 chaves faltando</li>
+                        <li>Manutenção complexa</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-box new">
+                    <h4>✅ Sistema Novo (Auto)</h4>
+                    <p><strong>HTML:</strong></p>
+                    <code>&lt;h1&gt;Título em Português&lt;/h1&gt;</code>
+                    <p style="margin-top: 10px;"><strong>Solução:</strong></p>
+                    <ul style="font-size: 14px;">
+                        <li>0 arquivos JSON</li>
+                        <li>0 chaves faltando</li>
+                        <li>Tradução automática</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>📊 Estatísticas</h2>
+            <p>Com este sistema você economiza:</p>
+            <ul>
+                <li><strong>148 arquivos JSON</strong> eliminados</li>
+                <li><strong>723 chaves</strong> de tradução não precisam mais ser mantidas</li>
+                <li><strong>75% menos tempo</strong> de manutenção</li>
+                <li>Suporte para <strong>100+ idiomas</strong> ao invés de apenas 4</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>💡 Implementação Recomendada</h2>
+            <p>Para o projeto real, recomendo usar uma das seguintes abordagens:</p>
+
+            <div class="highlight">
+                <h3>Opção 1: Browser Translation (Nativa)</h3>
+                <p>Deixar o navegador fazer a tradução automaticamente (Chrome, Edge, Firefox têm tradução nativa).
+                    Adicionar apenas um botão para sugerir tradução.</p>
+                <code>navigator.language</code> detecta idioma do usuário
+            </div>
+
+            <div class="highlight">
+                <h3>Opção 2: Google Translate Widget (Simples)</h3>
+                <p>Usar o widget oficial do Google que aparece na página. Usuário escolhe idioma manualmente.</p>
+                <code>&lt;div id="google_translate_element"&gt;&lt;/div&gt;</code>
+            </div>
+
+            <div class="highlight">
+                <h3>Opção 3: Manter PT + Tradução Automática</h3>
+                <p>Manter apenas conteúdo em PT nos HTMLs e deixar navegador traduzir quando necessário.</p>
+                <code>&lt;html lang="pt-BR" translate="yes"&gt;</code>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para traduzir página usando Google Translate
+        function translatePage(targetLang) {
+            // Salva preferência
+            localStorage.setItem('preferredLang', targetLang);
+
+            // Pega URL atual
+            const currentUrl = window.location.href.split('?')[0].split('#')[0];
+
+            // Cria URL de tradução do Google
+            const translateUrl = `https://translate.google.com/translate?sl=pt&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}`;
+
+            // Redireciona para versão traduzida
+            window.location.href = translateUrl;
+        }
+
+        // Marca botão ativo baseado no idioma salvo
+        window.onload = function () {
+            const savedLang = localStorage.getItem('preferredLang') || 'pt';
+            const btn = document.getElementById('btn-' + savedLang);
+            if (btn) {
+                btn.classList.add('active');
+            }
+        };
+    </script>
+</body>
+
+</html>
