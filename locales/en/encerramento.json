@@ -1,0 +1,23 @@
+{
+    "title": "🎊 Congratulations!",
+    "subtitle": "You have completed the Inside SAC training!",
+    "thanks_title": "🌟",
+    "thanks_text": "Thank you for participating!",
+    "thanks_subtext": "Now you are prepared to provide excellent service to our customers.",
+    "stats": {
+        "modules": "Modules Completed",
+        "badges": "Badges Earned",
+        "time": "Study Time",
+        "completion": "Course Completed"
+    },
+    "next_steps_title": "📌 What's next?",
+    "next_steps_text": "Keep practicing in the Exercises Menu! There you'll find extra activities to reinforce your learning:",
+    "activities": {
+        "flashcards": "Cards",
+        "drag_drop": "Drag and Drop",
+        "find_error": "Find the Error",
+        "roleplay": "Simulation"
+    },
+    "go_exercises_btn": "🧠 Go to Exercises",
+    "footer_text": "💪 Great job! You are ready to delight our customers!"
+}

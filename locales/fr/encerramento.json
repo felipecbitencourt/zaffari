@@ -1,0 +1,23 @@
+{
+    "title": "🎊 Félicitations!",
+    "subtitle": "Vous avez terminé la formation Par Dedans du SAC!",
+    "thanks_title": "🌟",
+    "thanks_text": "Merci de votre participation!",
+    "thanks_subtext": "Vous êtes maintenant prêt à offrir un service d'excellence à nos clients.",
+    "stats": {
+        "modules": "Modules Complétés",
+        "badges": "Badges Obtenus",
+        "time": "Temps d'Étude",
+        "completion": "Cours Terminé"
+    },
+    "next_steps_title": "📌 Et maintenant?",
+    "next_steps_text": "Continuez à pratiquer dans le Menu d'Exercices! Vous y trouverez des activités supplémentaires pour renforcer votre apprentissage:",
+    "activities": {
+        "flashcards": "Cartes",
+        "drag_drop": "Glisser-Déposer",
+        "find_error": "Trouver l'Erreur",
+        "roleplay": "Simulation"
+    },
+    "go_exercises_btn": "🧠 Aller aux Exercices",
+    "footer_text": "💪 Bon travail! Vous êtes prêt à enchanter nos clients!"
+}

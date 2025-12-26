@@ -248,6 +248,7 @@ const App = {
             'm3-p7': { path: 'm3/p7.json', mount: 'm3.p7' },
             'm3-p8': { path: 'm3/p8.json', mount: 'm3.p8' },
             'm3-conquistas': { path: 'm3/conquistas.json', mount: 'm3.conquistas' },
+            'encerramento': { path: 'encerramento.json', mount: 'encerramento' },
 
             // Extras
             'extras-hub': { path: 'extras/hub.json', mount: 'extras.hub' },

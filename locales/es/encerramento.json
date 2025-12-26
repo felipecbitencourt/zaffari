@@ -1,0 +1,23 @@
+{
+    "title": "🎊 ¡Felicidades!",
+    "subtitle": "¡Has completado el entrenamiento Por Dentro del SAC!",
+    "thanks_title": "🌟",
+    "thanks_text": "¡Gracias por participar!",
+    "thanks_subtext": "Ahora estás preparado para ofrecer un servicio de excelencia a nuestros clientes.",
+    "stats": {
+        "modules": "Módulos Completados",
+        "badges": "Medallas Conquistadas",
+        "time": "Tiempo de Estudio",
+        "completion": "Curso Completado"
+    },
+    "next_steps_title": "📌 ¿Y ahora?",
+    "next_steps_text": "¡Sigue practicando en el Menú de Ejercicios! Allí encontrarás actividades extras para reforzar tu aprendizaje:",
+    "activities": {
+        "flashcards": "Cartas",
+        "drag_drop": "Arrastra y Suelta",
+        "find_error": "Encuentra el Error",
+        "roleplay": "Simulación"
+    },
+    "go_exercises_btn": "🧠 Ir a Ejercicios",
+    "footer_text": "💪 ¡Buen trabajo! ¡Estás listo para encantar a nuestros clientes!"
+}

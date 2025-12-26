@@ -400,12 +400,23 @@
 
     // Função para navegação
     function navigateToPage(pageId) {
-        if (typeof window.loadPage === 'function') {
-            window.loadPage(pageId);
-        } else if (typeof window.CourseNavigation !== 'undefined' && window.CourseNavigation.goToPage) {
-            window.CourseNavigation.goToPage(pageId);
-        } else {
-            console.warn('Navegação não disponível');
+        // Usar a API do App para navegar
+        if (typeof App !== 'undefined' && App.flatPages) {
+            const idx = App.flatPages.findIndex(p => p.id === pageId);
+            if (idx >= 0) {
+                App.currentIndex = idx;
+                App.loadPage(idx);
+                return;
+            }
         }
+
+        // Fallback: clicar no link do menu
+        const menuLink = document.querySelector(`.menu-link[data-id="${pageId}"]`);
+        if (menuLink) {
+            menuLink.click();
+            return;
+        }
+
+        console.warn('Navegação para', pageId, 'não disponível');
     }
 </script>
