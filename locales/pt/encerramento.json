@@ -1,0 +1,22 @@
+{
+    "title": "🎊 Parabéns!",
+    "subtitle": "Você concluiu o treinamento <strong>Por Dentro do SAC</strong>!",
+    "thanks_title": "Obrigado por participar!",
+    "thanks_text": "Agora você está preparado para oferecer um atendimento de excelência aos nossos clientes.",
+    "stats": {
+        "modules": "Módulos Completados",
+        "badges": "Medalhas Conquistadas",
+        "time": "Tempo de Estudo",
+        "completion": "Curso Concluído"
+    },
+    "next_steps_title": "📌 E agora?",
+    "next_steps_text": "Continue praticando no <strong>Menu de Exercícios</strong>! Lá você encontra atividades extras para reforçar seu aprendizado:",
+    "activities": {
+        "flashcards": "Cartas",
+        "drag_drop": "Arraste e Solte",
+        "find_error": "Ache o Erro",
+        "roleplay": "Simulação"
+    },
+    "go_exercises_btn": "🧠 Ir para Exercícios",
+    "footer_text": "💪 Bom trabalho! Você está pronto para encantar nossos clientes!"
+}

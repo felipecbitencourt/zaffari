@@ -4,9 +4,9 @@
   "p_physical_1": "O CDC <strong>não obriga</strong> a troca quando o produto está em perfeito estado e o cliente deseja trocar por preferência (cor, tamanho).",
   "p_physical_2": "Nesses casos, a troca é uma <strong>política comercial</strong> da empresa, uma cortesia, e não um direito legal.",
   "quiz1": {
-    "question": "Um cliente comprou uma camisa na Loja Física, provou no provador e levou. Dois dias depois, retorna querendo trocar porque a esposa disse que a cor não combina com ele. O produto está perfeito e com etiqueta. A loja é obrigada por lei a trocar?",
+    "question": "Um cliente comprou um jogo de panelas na Loja Física, verificou a embalagem e levou. Dois dias depois, retorna querendo trocar porque a esposa disse que a cor não combina com a cozinha. O produto está lacrado e em perfeito estado. A loja é obrigada por lei a trocar?",
     "opt_a": "A) Sim, o CDC garante 7 dias para troca por qualquer motivo.",
-    "feedback_wrong_a": "O direito de 7 dias de arrependimento só vale para compras ONLINE. Em loja física, onde o cliente pode provar o produto, não há essa obrigação legal.",
+    "feedback_wrong_a": "O direito de 7 dias de arrependimento só vale para compras ONLINE. Em loja física, onde o cliente pode verificar o produto, não há essa obrigação legal.",
     "opt_b": "B) Não, mas pode trocar por liberalidade (política comercial de cortesia) para fidelizar o cliente.",
     "opt_c": "C) Sim, mas apenas se o cliente pagar uma taxa de 10%.",
     "feedback_wrong_c": "Não existe previsão de taxa de 10% para trocas. Se a empresa aceita trocar por cortesia, não deve cobrar taxa adicional.",

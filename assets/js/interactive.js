@@ -105,6 +105,8 @@ const InteractiveComponents = {
     initInteractiveCards: function (contentArea) {
         contentArea.querySelectorAll('.interactive-card').forEach(card => {
             card.onclick = () => {
+                card.classList.add('user-interacted');
+                card.classList.remove('wiggle-animate');
                 card.classList.toggle('expanded');
                 if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
                 if (typeof Analytics !== 'undefined') Analytics.trackClick('interactive-card');
@@ -112,6 +114,8 @@ const InteractiveComponents = {
             card.onkeypress = (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
+                    card.classList.add('user-interacted');
+                    card.classList.remove('wiggle-animate');
                     card.classList.toggle('expanded');
                     if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
                     if (typeof Analytics !== 'undefined') Analytics.trackClick('interactive-card');
@@ -128,6 +132,7 @@ const InteractiveComponents = {
     initRevealButtons: function (contentArea) {
         contentArea.querySelectorAll('.reveal-btn').forEach(btn => {
             btn.onclick = () => {
+                btn.classList.remove('wiggle-animate');
                 const container = btn.closest('.reveal-container');
                 const content = container?.querySelector('.reveal-content');
                 if (content) {
@@ -147,6 +152,9 @@ const InteractiveComponents = {
     initAccordions: function (contentArea) {
         contentArea.querySelectorAll('.accordion details').forEach(details => {
             details.addEventListener('toggle', () => {
+                // Marcar como já interagido para nunca mais aplicar wiggle
+                details.classList.add('user-interacted');
+                details.classList.remove('wiggle-animate');
                 if (details.open) {
                     if (typeof AudioManager !== 'undefined') AudioManager.playExpand();
                     if (typeof Analytics !== 'undefined') Analytics.trackClick('accordion');
@@ -333,10 +341,11 @@ const InteractiveComponents = {
 
         const triggerWiggle = () => {
             // Selecionar APENAS elementos que são realmente clicáveis e expandem/revelam conteúdo
+            // Excluir elementos já interagidos pelo usuário (user-interacted)
             const elements = document.querySelectorAll(
-                '.interactive-card:not(.expanded), ' +
-                '.accordion details:not([open]), ' +
-                '.reveal-btn:not(.revealed), ' +
+                '.interactive-card:not(.expanded):not(.user-interacted), ' +
+                '.accordion details:not([open]):not(.user-interacted), ' +
+                '.reveal-btn:not(.revealed):not(.user-interacted), ' +
                 '#btn-start-tutorial'
             );
 

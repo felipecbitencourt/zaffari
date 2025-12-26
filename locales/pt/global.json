@@ -1,7 +1,7 @@
 {
   "btn_proximo": "Próximo",
   "btn_anterior": "Anterior",
-  "menu_fixacao": "Menu de Fixação",
+  "menu_fixacao": "Menu de Exercícios",
   "menu_videos": "Vídeos",
   "menu_atividades": "Atividades",
   "menu_impressao": "Impressão",
@@ -10,7 +10,7 @@
   "btn_cdc_pdf": "📄 CDC na Íntegra (PDF)",
   "btn_cdc_noticia": "🔗 35 Anos do CDC (Notícia)",
   "hints": {
-    "click_discover": "👆 Clique para descobrir",
+    "click_discover": "👆 Clique para revelar",
     "click_back": "👆 Clique para voltar",
     "drag_here": "Arraste para cá",
     "loading": "Carregando..."

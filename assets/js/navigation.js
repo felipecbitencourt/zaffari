@@ -301,14 +301,27 @@ const NavigationManager = {
     updateProgress: function () {
         // Contar apenas páginas de módulos (não extras)
         const modulePages = this.app.flatPages.filter(p => p.type !== 'extras');
-        const currentModuleIndex = modulePages.findIndex(p => p.id === this.app.flatPages[this.app.currentIndex].id);
 
-        // Se página atual é extras, usar a última posição de módulo conhecida
-        const effectiveIndex = currentModuleIndex >= 0 ? currentModuleIndex :
-            modulePages.findIndex(p => this.app.flatPages.indexOf(p) <= this.app.currentIndex);
+        // Usar maxIndexReached para não diminuir quando voltar páginas
+        const maxPage = this.app.flatPages[this.app.maxIndexReached];
+        const maxModuleIndex = maxPage ? modulePages.findIndex(p => p.id === maxPage.id) : -1;
+
+        // Se a página máxima é de extras, encontrar a última página de módulo visitada
+        let effectiveMaxIndex = maxModuleIndex;
+        if (effectiveMaxIndex < 0) {
+            // Procurar a última página de módulo antes do índice máximo
+            for (let i = this.app.maxIndexReached; i >= 0; i--) {
+                const page = this.app.flatPages[i];
+                const modIdx = modulePages.findIndex(p => p.id === page.id);
+                if (modIdx >= 0) {
+                    effectiveMaxIndex = modIdx;
+                    break;
+                }
+            }
+        }
 
         const percent = modulePages.length > 0 ?
-            Math.round(((Math.max(0, effectiveIndex) + 1) / modulePages.length) * 100) : 0;
+            Math.round(((Math.max(0, effectiveMaxIndex) + 1) / modulePages.length) * 100) : 0;
 
         const progressBar = document.getElementById('course-progress');
         const progressText = document.getElementById('progress-text');

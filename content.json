@@ -178,16 +178,22 @@
                     "title": "🏆 Conquistas do Módulo 3",
                     "file": "paginas/pt/m3-conquistas.html",
                     "type": "rewards"
+                },
+                {
+                    "id": "encerramento",
+                    "title": "🎊 Conclusão",
+                    "file": "paginas/pt/encerramento.html",
+                    "type": "completion"
                 }
             ]
         },
         {
             "id": "extras",
-            "title": "🧠 Fixação",
+            "title": "🧠 Exercícios",
             "pages": [
                 {
                     "id": "extras-hub",
-                    "title": "🧠 Menu de Fixação",
+                    "title": "🧠 Menu de Exercícios",
                     "file": "paginas/pt/extras-hub.html",
                     "type": "extras"
                 },

@@ -1,0 +1,411 @@
+<!-- Página de Encerramento do Curso -->
+<div class="encerramento-page">
+    <div class="encerramento-header">
+        <div class="encerramento-celebration">
+            <img src="assets/marca/mascote.png" alt="Mascote celebrando" class="encerramento-mascot bounce-animate">
+        </div>
+        <h1 data-i18n="encerramento.title">🎊 Parabéns!</h1>
+        <p class="encerramento-subtitle" data-i18n="[html]encerramento.subtitle">Você concluiu o treinamento <strong>Por
+                Dentro do SAC</strong>!</p>
+    </div>
+
+    <div class="encerramento-content">
+        <div class="encerramento-message">
+            <div class="message-icon">🌟</div>
+            <div class="message-text">
+                <h2 data-i18n="encerramento.thanks_title">Obrigado por participar!</h2>
+                <p data-i18n="[html]encerramento.thanks_text">Agora você está preparado para oferecer um atendimento de
+                    excelência aos nossos clientes.</p>
+            </div>
+        </div>
+
+        <div class="encerramento-stats">
+            <div class="stat-item">
+                <span class="stat-icon">📚</span>
+                <span class="stat-value">3</span>
+                <span class="stat-label" data-i18n="encerramento.stats.modules">Módulos Completados</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">🏆</span>
+                <span class="stat-value" id="total-badges">12</span>
+                <span class="stat-label" data-i18n="encerramento.stats.badges">Medalhas Conquistadas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">⏱️</span>
+                <span class="stat-value" id="total-time">--</span>
+                <span class="stat-label" data-i18n="encerramento.stats.time">Tempo de Estudo</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">✅</span>
+                <span class="stat-value">100%</span>
+                <span class="stat-label" data-i18n="encerramento.stats.completion">Curso Concluído</span>
+            </div>
+        </div>
+
+        <div class="encerramento-next-steps">
+            <h3 data-i18n="encerramento.next_steps_title">📌 E agora?</h3>
+            <p data-i18n="[html]encerramento.next_steps_text">Continue praticando no <strong>Menu de
+                    Exercícios</strong>! Lá você encontra atividades extras para reforçar seu aprendizado:</p>
+
+            <div class="next-steps-grid">
+                <div class="next-step-item">
+                    <span class="step-icon">🃏</span>
+                    <span class="step-name" data-i18n="encerramento.activities.flashcards">Cartas</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="step-icon">🎯</span>
+                    <span class="step-name" data-i18n="encerramento.activities.drag_drop">Arraste e Solte</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="step-icon">🔍</span>
+                    <span class="step-name" data-i18n="encerramento.activities.find_error">Ache o Erro</span>
+                </div>
+                <div class="next-step-item">
+                    <span class="step-icon">🎭</span>
+                    <span class="step-name" data-i18n="encerramento.activities.roleplay">Simulação</span>
+                </div>
+            </div>
+
+            <button class="btn-go-exercises" onclick="navigateToPage('extras-hub')">
+                <span data-i18n="encerramento.go_exercises_btn">🧠 Ir para Exercícios</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="encerramento-footer">
+        <p data-i18n="encerramento.footer_text">💪 Bom trabalho! Você está pronto para encantar nossos clientes!</p>
+    </div>
+</div>
+
+<style>
+    .encerramento-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .encerramento-header {
+        margin-bottom: 2rem;
+    }
+
+    .encerramento-celebration {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .encerramento-mascot {
+        width: 120px;
+        height: auto;
+    }
+
+    .encerramento-confetti {
+        position: absolute;
+        top: -10px;
+        right: -20px;
+        font-size: 2.5rem;
+        animation: confetti-pop 1s ease-out forwards;
+    }
+
+    @keyframes confetti-pop {
+        0% {
+            transform: scale(0) rotate(-20deg);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scale(1.3) rotate(10deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }
+    }
+
+    .bounce-animate {
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .encerramento-header h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color, #E53935);
+        margin-bottom: 0.5rem;
+    }
+
+    .encerramento-subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary, #666);
+    }
+
+    .encerramento-content {
+        background: var(--card-bg, #fff);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+
+    .encerramento-message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: linear-gradient(135deg, var(--success-bg, #e8f5e9) 0%, var(--success-light, #c8e6c9) 100%);
+        border-radius: 12px;
+    }
+
+    .message-icon {
+        font-size: 3rem;
+    }
+
+    .message-text {
+        text-align: left;
+    }
+
+    .message-text h2 {
+        margin: 0 0 0.5rem 0;
+        color: var(--success-color, #2e7d32);
+        font-size: 1.5rem;
+    }
+
+    .message-text p {
+        margin: 0;
+        color: var(--text-primary, #333);
+    }
+
+    .encerramento-stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border-color, #eee);
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .stat-icon {
+        font-size: 2rem;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-color, #E53935);
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-secondary, #666);
+    }
+
+    .encerramento-next-steps h3 {
+        margin-bottom: 0.5rem;
+        color: var(--text-primary, #333);
+    }
+
+    .encerramento-next-steps>p {
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary, #666);
+    }
+
+    .next-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .next-step-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border-radius: 12px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .next-step-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-icon {
+        font-size: 2rem;
+    }
+
+    .step-name {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-primary, #333);
+    }
+
+    .btn-go-exercises {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, var(--primary-color, #E53935) 0%, #c62828 100%);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-go-exercises:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+    }
+
+    .encerramento-footer {
+        padding: 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border-radius: 12px;
+    }
+
+    .encerramento-footer p {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--text-primary, #333);
+    }
+
+    /* Dark mode */
+    body.high-contrast .encerramento-content {
+        background: var(--card-bg, #1e1e1e);
+    }
+
+    body.high-contrast .encerramento-message {
+        background: linear-gradient(135deg, rgba(46, 125, 50, 0.2) 0%, rgba(46, 125, 50, 0.1) 100%);
+    }
+
+    body.high-contrast .next-step-item {
+        background: var(--bg-secondary, #2d2d2d);
+    }
+
+    body.high-contrast .encerramento-footer {
+        background: var(--bg-secondary, #2d2d2d);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        .encerramento-message {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .message-text {
+            text-align: center;
+        }
+
+        .encerramento-stats {
+            gap: 1rem;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<script>
+    // Marcar curso como completo
+    (function () {
+        // Calcular total de badges
+        const badges = JSON.parse(localStorage.getItem('badges') || '{}');
+        let totalBadges = 0;
+        Object.values(badges).forEach(arr => {
+            if (Array.isArray(arr)) totalBadges += arr.length;
+        });
+
+        const badgeElement = document.getElementById('total-badges');
+        if (badgeElement && totalBadges > 0) {
+            badgeElement.textContent = totalBadges;
+        }
+
+        // Calcular tempo total de estudo
+        const timeElement = document.getElementById('total-time');
+        if (timeElement) {
+            let totalSeconds = 0;
+
+            // Tentar obter do Analytics
+            if (typeof CourseAnalytics !== 'undefined' && CourseAnalytics.data && CourseAnalytics.data.pageTime) {
+                totalSeconds = Object.values(CourseAnalytics.data.pageTime).reduce((a, b) => a + b, 0);
+            }
+
+            // Fallback: tentar obter do localStorage
+            if (totalSeconds === 0) {
+                const analyticsData = JSON.parse(localStorage.getItem('courseAnalytics') || '{}');
+                if (analyticsData.pageTime) {
+                    totalSeconds = Object.values(analyticsData.pageTime).reduce((a, b) => a + b, 0);
+                }
+            }
+
+            // Formatar tempo
+            if (totalSeconds > 0) {
+                const minutes = Math.floor(totalSeconds / 60);
+                const hours = Math.floor(minutes / 60);
+                const remainingMinutes = minutes % 60;
+
+                if (hours > 0) {
+                    timeElement.textContent = hours + 'h ' + remainingMinutes + 'min';
+                } else {
+                    timeElement.textContent = minutes + ' min';
+                }
+            } else {
+                // Valor padrão estimado
+                timeElement.textContent = '~30 min';
+            }
+        }
+
+        // Marcar curso como completo no SCORM se disponível
+        if (typeof SCORM !== 'undefined' && SCORM.SetComplete) {
+            SCORM.SetComplete();
+        }
+
+        // Salvar estado de conclusão
+        localStorage.setItem('courseCompleted', 'true');
+        localStorage.setItem('courseCompletedDate', new Date().toISOString());
+
+        console.log('🎊 Curso concluído com sucesso!');
+    })();
+
+    // Função para navegação
+    function navigateToPage(pageId) {
+        if (typeof window.loadPage === 'function') {
+            window.loadPage(pageId);
+        } else if (typeof window.CourseNavigation !== 'undefined' && window.CourseNavigation.goToPage) {
+            window.CourseNavigation.goToPage(pageId);
+        } else {
+            console.warn('Navegação não disponível');
+        }
+    }
+</script>

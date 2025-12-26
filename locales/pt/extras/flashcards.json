@@ -1,5 +1,5 @@
 {
-  "title": "🃏 Flash Cards",
+  "title": "🃏 Cartas",
   "lead": "Memorize os conceitos do curso com cartões de estudo interativos. Clique no cartão para revelar a resposta!",
   "ui": {
     "back_to_modules": "← Voltar aos Módulos",
@@ -10,7 +10,7 @@
     "prev": "← Anterior",
     "next": "Próximo →",
     "shuffle": "🔀 Embaralhar",
-    "tip": "💡 <strong>Dica:</strong> Revise os flash cards regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!"
+    "tip": "💡 <strong>Dica:</strong> Revise as cartas regularmente para fixar o conhecimento. A técnica de repetição espaçada é uma das mais eficazes para memorização!"
   },
   "modules": {
     "m1": {
@@ -88,7 +88,7 @@
       }
     },
     "m3": {
-      "title": "Módulo 3: CDC e Legislação",
+      "title": "Módulo 3: CDC (Código de Defesa do Consumidor)",
       "desc": "CDC e Legislação",
       "count": "10 cards",
       "lock_msg": "🔒 Conclua o módulo",

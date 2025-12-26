@@ -1,5 +1,5 @@
 {
-  "title": "🧠 Menu de Fixação",
+  "title": "🧠 Menu de Exercícios",
   "lead": "Explore recursos adicionais para reforçar seu aprendizado! Complete os módulos para desbloquear os materiais.",
   "sections": {
     "acompanhamento": {
@@ -21,7 +21,7 @@
       "desc": "Revise os principais conceitos e pontos-chave de todos os módulos em um só lugar."
     },
     "flashcard": {
-      "title": "Flash Cards",
+      "title": "Cartas",
       "desc": "Memorize conceitos importantes com cartões de estudo interativos."
     },
     "quiz": {
@@ -41,7 +41,7 @@
       "desc": "Identifique erros em situações de atendimento e aprenda como corrigi-los."
     },
     "roleplay": {
-      "title": "Roleplay",
+      "title": "Simulação",
       "desc": "Pratique situações reais de atendimento através de simulações interativas."
     },
     "ref1": {

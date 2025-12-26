@@ -2,7 +2,7 @@
   "title": "🏆 Quais foram minhas conquistas?",
   "subtitle": "Você completou o <strong>Módulo 1: Por que o SAC é estratégico?</strong>",
   "badges_title": "Medalhas Conquistadas",
-  "badges_subtitle": "Essas medalhas ajudam a desbloquear os materiais de Fixação!",
+  "badges_subtitle": "Essas medalhas ajudam a desbloquear os Exercícios!",
   "badges": {
     "resumo": "Resumo",
     "quiz": "Questionário",
@@ -11,7 +11,7 @@
     "m1_desc": "Módulo 1",
     "exclusive_desc": "Exclusivo"
   },
-  "progress_label": "Progresso para Fixação",
+  "progress_label": "Progresso para Exercícios",
   "progress_text": "1 de 3 módulos completos",
   "footer_text": "Continue para o próximo módulo e conquiste mais medalhas!"
 }

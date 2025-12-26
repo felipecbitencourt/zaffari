@@ -4,8 +4,8 @@
         "intro": "🎯 Início",
         "m1": "1️⃣ Por que o SAC é estratégico?",
         "m2": "2️⃣ Onde encontrar informações?",
-        "m3": "3️⃣ Como aplicar o CDC?",
-        "extras": "🧠 Fixação"
+        "m3": "3️⃣ CDC (Código de Defesa do Consumidor)",
+        "extras": "🧠 Exercícios"
     },
     "pages": {
         "intro-p1": "Bem-vindo ao Curso",
@@ -24,7 +24,7 @@
         "m2-p5": "Por que consultar corretamente?",
         "m2-p6": "📝 O que aprendemos no Módulo 2?",
         "m2-conquistas": "🏆 Conquistas do Módulo 2",
-        "m3-abertura": "📍 Como aplicar o CDC?",
+        "m3-abertura": "📍 Como aplicar o CDC (Código de Defesa do Consumidor)?",
         "m3-p1": "O que é o CDC?",
         "m3-p2": "Qual a diferença: produto x serviço?",
         "m3-p3": "Quando trocar sem defeito?",
@@ -34,13 +34,14 @@
         "m3-p7": "🏆 Você está pronto para o desafio?",
         "m3-p8": "📝 O que aprendemos no curso?",
         "m3-conquistas": "🏆 Conquistas do Módulo 3",
-        "extras-hub": "🧠 Menu de Fixação",
+        "encerramento": "🎊 Conclusão",
+        "extras-hub": "🧠 Menu de Exercícios",
         "extras-metricas": "📊 Meu Desempenho",
         "extras-resumo": "📖 Resumo do Curso",
         "extras-questionarios": "📝 Questionários",
-        "extras-flashcards": "🃏 Flash Cards",
+        "extras-flashcards": "🃏 Cartas",
         "extras-arraste": "🎯 Arraste e Solte",
         "extras-ache-erro": "🔍 Ache o Erro",
-        "extras-roleplay": "🎭 Roleplay"
+        "extras-roleplay": "🎭 Simulação"
     }
 }
